@@ -1,0 +1,1 @@
+1.  REDIRECT [NAND](NAND "wikilink")
