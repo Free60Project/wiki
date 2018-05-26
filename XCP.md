@@ -6,8 +6,8 @@ distribution.
 
   - XCP stands for Xbox Content Package (from
     <http://forums.xbox-scene.com/index.php?s=&showtopic=462911&view=findpost&p=3067263>)
-  - They appear to have no headers and be symmetrically encrypted. (This
-    information from conversation in \#free60)
+  - XCP files are (in-order) encrypted and compressed (with zlib). Underneath, they are STFS containers.
+    - XCP files from some categories ("Full Game Demos" being one of them) are *not encrypted*
   - It may be possible to use the avatar downloads to glean more info
     about the file format.
   - The communication is pure http and you can redirect traffic to a
