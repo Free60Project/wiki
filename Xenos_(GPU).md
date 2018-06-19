@@ -27,7 +27,7 @@ transistors. For infos about Xenos Framebuffer/Xenosfb click
       - 4 ALU's per pipe for Vertex or Pixel Shader processing
   - Unified shader architecture (Beyond Shader Model 3.0)
   - Three SIMD engines with 16 processors per unit (The 48 shader
-    pipeline)Â
+    pipeline)
   - 16 Filtered & 16 unfiltered texture samples per clock
   - HDR Rendering
   - DirectX 9
