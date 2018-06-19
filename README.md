@@ -1,3 +1,14 @@
+# Free60.org Wiki archive
+
+Welcome to the archive of Free60.org Mediawiki.
+
+To submit changes:
+1. Fork the repo
+2. Make changes
+3. Send a Pull Request
+
+## Index
+
 [1bl Code](1bl_Code.md)
 
 [360FlashTool](360FlashTool.md)
