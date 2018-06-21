@@ -1,6 +1,6 @@
 The **System Management Controller (SMC)** is an
-[8051/8052](8051/8052 "wikilink") core inside the
-[Southbridge](Southbridge "wikilink"). It manages the power sequencing,
+[8051/8052](8051_8052.md) core inside the
+[Southbridge](Southbridge.md). It manages the power sequencing,
 and is always active when the Xbox 360 has (standby or full) power
 applied. It controls the frontpanel, has a Realtime clock, decodes IR,
 manages temperatures, fans, DVDROM tray and a bunch of other things. It
@@ -17,19 +17,18 @@ Communication between kernel and SMC happens over a bidirectional FIFO
 All messages and replies are 16 byte long and have the command id in the
 first byte.
 
-<code>
 
-`void smc_send(void *msg)`
-`{`
-`      while (!(readl(0xea001084) & 4))    // wait for FIFO ready`
-`              cpu_relax();`
+```
+void smc_send(void *msg)
+{
+      while (!(readl(0xea001084) & 4))    // wait for FIFO ready
+              cpu_relax();
 
-`      writel(4, 0xea001084);              // start message`
-`      writesl(0xea001080, msg, 4);        // send 16 bytes`
-`      writel(0, 0xea001084);              // end message`
-`}`
-
-</code>
+      writel(4, 0xea001084);              // start message
+      writesl(0xea001080, msg, 4);        // send 16 bytes
+      writel(0, 0xea001084);              // end message
+}
+```
 
 ### Receiving a Reply
 
@@ -37,20 +36,19 @@ Some messages have replies, which will be returned as 16 byte sequence
 similar to the message (they also have the command id in the first
 byte).
 
-<code>
+```
+int smc_read_reply(void *msg)
+{
+      if (!(readl(0xea001094) & 4))       // do we have a reply?
+              return 0;
 
-`int smc_read_reply(void *msg)`
-`{`
-`      if (!(readl(0xea001094) & 4))       // do we have a reply?`
-`              return 0;`
+      writel(4, 0xea001094);              // start reply
+      readsl(0xea001090, msg, 4);         // read 16 bytes
+      writel(0, 0xea001094);              // end reply
+      return 1;
+}
+```
 
-`      writel(4, 0xea001094);              // start reply`
-`      readsl(0xea001090, msg, 4);         // read 16 bytes`
-`      writel(0, 0xea001094);              // end reply`
-`      return 1;`
-`}`
-
-</code>
 
 ## Command Messages
 
