@@ -47,7 +47,7 @@ There was some research done in hopes to remove the maximum device size
 of 16 GB (for Xbox 360 storage) on exploited/development consoles, but
 it was later discovered that anything a few GB larger than the current
 maximum causes the console to crash.
-<http://www.xboxhacker.org/index.php?topic=16913.0>
+[http://www.xboxhacker.org/index.php?topic=16913.0](https://web.archive.org/web/20140515135820/http://www.xboxhacker.org/index.php?topic=16913.0)
 
 ### <span class="mw-headline"> Configuration file </span>
 
