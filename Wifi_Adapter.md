@@ -1,22 +1,10 @@
-# <span class="mw-headline"> Introduction </span>
-
-<div class="thumb tright">
-
-<div class="thumbinner" style="width: 182px">
+# Introduction
 
 [<File:Wlan>
 back.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_back.jpg)
 
-<div class="thumbcaption">
-
 FCC ID:C3K-WKS168
 IC: 3048A-WKS168
-
-</div>
-
-</div>
-
-</div>
 
 The [Wireless Network
 Adapter](http://www.xbox.com/en-US/hardware/x/xbox360wirelessnetadapter/)
@@ -27,63 +15,27 @@ onto the back of the console, it works when plugged into a standard USB
 port, given your operating system has accompanying device drivers. See
 below.
 
-# <span class="mw-headline"> Disassembly </span>
-
-<div class="thumb tnone">
-
-<div class="thumbinner" style="width: 182px">
+# Disassembly
 
 [<File:Wlan> all
 pieces.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_all_pieces.jpg)
 
-<div class="thumbcaption">
-
 Disassembled; bottom and top covers, PCB, USB cable and antenna
-
-</div>
-
-</div>
-
-</div>
-
-<div class="thumb tnone">
-
-<div class="thumbinner" style="width: 182px">
 
 [<File:Wlan> back
 opened.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_back_opened.jpg)
 
-<div class="thumbcaption">
-
 PCB underside, with [Hannstar Board
 Corp.](http://www.hannstarboard.com/index.htm) inscription.
 
-</div>
-
-</div>
-
-</div>
-
-# <span class="mw-headline"> Integrated Circuits </span>
-
-<div class="thumb tright">
-
-<div class="thumbinner" style="width: 182px">
+# Integrated Circuits
 
 [<File:Wlan> front
 opened.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_front_opened.jpg)
 
-<div class="thumbcaption">
-
 PCB upper-side, showing the major ICs
 
-</div>
-
-</div>
-
-</div>
-
-## <span class="mw-headline"> Marvell MVPG16 </span>
+## Marvell MVPG16
 
 `MG16R`
 `00A2R`
@@ -106,7 +58,7 @@ Product information page at
 
 
 
-## <span class="mw-headline"> Marvell 88W8388-BDK1 </span>
+## Marvell 88W8388-BDK1
 
 `88W8388-BDK1`
 `AGW1P .2`

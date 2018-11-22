@@ -8,9 +8,7 @@ considered as a cleaned-up version of it.
 Note that, while not part of the file system itself, the media which
 contain this file system do not have a master file table which describes
 which file system starts where. It is up to the consumer (Xbox 360,
-[geom_xbox360 kernel
-module](http://www.freebsd.org/cgi/query-pr.cgi?pr=kern/107707), ...) to
-know this.
+[geom_xbox360 kernel module](http://www.freebsd.org/cgi/query-pr.cgi?pr=kern/107707), ...) to know this.
 
 # File System Layout
 
@@ -49,7 +47,7 @@ it was later discovered that anything a few GB larger than the current
 maximum causes the console to crash.
 <http://www.xboxhacker.org/index.php?topic=16913.0>
 
-### <span class="mw-headline"> Configuration file </span>
+### Configuration file
 
 The configuration is the first 2 sectors (0x400 bytes) of the Data0000
 and is created when the device is configured. It contains info about the
@@ -168,8 +166,7 @@ previously formatted it.
 | ------ | ------ | ------------ | ------------ |
 | 0x0    | 0x4    | ascii string | "Josh" magic |
 
-The [Console Security
-Certificate](Console_Security_Certificate "wikilink")(Inc 0x80 sig)
+The [Console Security Certificate](Console_Security_Certificate "wikilink")(Inc 0x80 sig)
 then,
 
 | Offset | Length | Type                 | Information                              |
@@ -307,6 +304,5 @@ number.
 | Possible Cluster Sizes      | 4 KB (0x1000 bytes, 0x8 sectors per cluster), 8 KB (0x2000, 0x10 SPC),16 KB (0x4000, 0x20 SPC), 32 KB (0x8000, 0x40 SPC), 64 KB (0x10000, 0x80 SPC) |
 | File/Folder Name Characters | ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789                                                                                      |
 
-[Category:Xbox360 System
-Software](Category:Xbox360_System_Software "wikilink")
+[Category:Xbox360 System Software](Category:Xbox360_System_Software "wikilink")
 [Category:Xbox360_System_Software](Category:Xbox360_System_Software "wikilink")

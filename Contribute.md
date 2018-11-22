@@ -1,15 +1,5 @@
 ### From Free60
 
-<div id="contentSub">
-
-</div>
-
-<div id="jump-to-nav">
-
-Jump to: \[\#column-one navigation\], \[\#searchInput search\]
-
-</div>
-
 We really appreciate your interest in the [Free60](Main_Page "wikilink")
 Project, and especially your enthusiasm to want to contribute\! If you
 haven't yet, please have a look at our [Goals](Goals "wikilink").
