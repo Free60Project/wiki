@@ -18,7 +18,7 @@ according to the PCB sections (J *X* *Y* *N*).
 | J8C1 | 10     | CPU JTAG Header        |
 |  |
 
-## <span class="mw-headline"> J1D2, J2D1, J2D2 </span>
+## J1D2, J2D1, J2D2
 
 |        |     |         |             |
 | ------ | --- | ------- | ----------- |
