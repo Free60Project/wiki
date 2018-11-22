@@ -1,23 +1,9 @@
-<div class="thumb tright">
-
-<div class="thumbinner" style="width: 182px">
-
 [<File:Xbox360> bsod
 02.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Xbox360_bsod_02.jpg)
 
-<div class="thumbcaption">
-
 "System error. Contact Xbox Customer Support."
 
-</div>
-
-</div>
-
-</div>
-
-
-
-## <span class="mw-headline"> General Information </span>
+## General Information
 
 E64: Unknown
 
@@ -32,7 +18,7 @@ EDRAM and the Xenos core. It needs to be "trained" to be reliable.)
 
 E79: Unknown
 
-## <span class="mw-headline"> Confirmed facts </span>
+## Confirmed facts
 
 When the Xbox crashes half way loading a game disc (e.g. Due to bad
 unreadable sectors half way)
@@ -47,7 +33,7 @@ unreadable sectors half way)
     removes red light
   - The only way to get your box back is to unplug the power cable
 
-## <span class="mw-headline"> Speculation </span>
+## Speculation
 
 Error 79 has been known during obvious signs of graphic corruption.
 (Overheating?, Power supply insufficient?)
