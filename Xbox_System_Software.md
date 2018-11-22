@@ -48,23 +48,22 @@ files ([GPD](GPD "wikilink") (**G**amer **P**rogress
 The Xbox 360 uses various File Systems for storing games, user content
 and more.
 
-**[FATX](FATX "wikilink")** <span style="font-size:85%;">(**F**ile
-**A**llocation **T**able for **X**box)</span> is used as the storage
+**[FATX](FATX "wikilink")** (**F**ile
+**A**llocation **T**able for **X**box) is used as the storage
 filesystem on hard drives/memory units/USB devices/xlaunch.fdf files.
 
-**[GDFX](GDFX "wikilink")**/XSF <span style="font-size:85%;">(**G**ame
-**D**isc **F**ormat for **X**box)</span> is the filesystem used on X360
+**[GDFX](GDFX "wikilink")**/XSF (**G**ame
+**D**isc **F**ormat for **X**box) is the filesystem used on X360
 CD/DVD Media.
 
-**[STFS](STFS "wikilink")** <span style="font-size:85%;">(**S**ecure
-**T**ransacted **F**ile **S**ystem)</span> is used for game saves,
+**[STFS](STFS "wikilink")** (**S**ecure
+**T**ransacted **F**ile **S**ystem) is used for game saves,
 profiles, arcade games, downloadable content and more. STFS is also
 referred to as CON/LIVE/PIRS files, as they are all STFS files, just
 signed with a different header.
 
-**[SFCX](SFCX "wikilink")** <span style="font-size:85%;">(**S**ecure
-**F**ile **C**ache for **X**box)</span> is used for cache storage for
-games.
+**[(SFCX](SFCX "wikilink")** **S**ecure
+**F**ile **C**ache for **X**box) :is used for cache storage for games.
 
 **[NAND File System](NAND_File_System "wikilink")** is used to store the
 bootloaders, kernel, keyvault and other files on the
@@ -77,26 +76,26 @@ for storage of data, as storage on the Xbox is limited, these files are
 usually binary. [XeNTaX.com](http://wiki.XeNTaX.com) is a DataBase of
 hundreds of different file formats, which may be of help.
 
-**[PEC](PEC "wikilink")** <span style="font-size:85%;">(**P**rofile
-**E**mbedded **C**ontent)</span> is used as another layer of security
+**[PEC](PEC "wikilink")** (**P**rofile
+**E**mbedded **C**ontent) is used as another layer of security
 inside profiles.
 
-**[STFS](STFS "wikilink")** <span style="font-size:85%;">(**S**ecure
-**T**ransacted **F**ile **S**ystem)</span> is used for secure storage of
+**[STFS](STFS "wikilink")** (**S**ecure
+**T**ransacted **F**ile **S**ystem) is used for secure storage of
 files on memory
 devices.
 
 **[XDBF](XDBF "wikilink")**/**[GPD](GPD "wikilink")**/**[SPA](SPA "wikilink")**
-<span style="font-size:85%;">(**X**box **D**ash**b**oard
+(**X**box **D**ash**b**oard
 **F**ile/**G**amer **P**rofile **D**ata/**S**tatistics, **P**resence and
-**A**chievements)</span> is used for profiles
+**A**chievements) is used for profiles
 (achievements/settings/titles) and games (achievements/strings/ratings).
 
-**[XEX](XEX "wikilink")** <span style="font-size:85%;">(**X**enon
-**Ex**ecutable)</span> is the executable format used by the Xbox 360.
+**[XEX](XEX "wikilink")** (**X**enon
+**Ex**ecutable) is the executable format used by the Xbox 360.
 
-**[XMI](XMI "wikilink")** <span style="font-size:85%;">(**X**enon
-**M**usic **I**ndex)</span> is used to index music on the Xbox.
+**[XMI](XMI "wikilink")**(**X**enon
+**M**usic **I**ndex) is used to index music on the Xbox.
 
 [Category:Xbox360 System
 Software](Category:Xbox360_System_Software "wikilink")

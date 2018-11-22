@@ -1,4 +1,4 @@
-<b>IRC</b>
+## IRC
 
 Server ⇒ <font color="purple">irc.oftc.net</font>
 Channel ⇒ \#free60 ; \#free60-chat ; \#free60-dev
@@ -7,7 +7,7 @@ or if theres nobody replying try:
 Server ⇒ <font color="purple">irc.efnet.nl</font>
 Channel ⇒ \#libxenon
 
-\== <span class="mw-headline"> Want to Help? </span> ==
+\== Want to Help? ==
 
 Here is what you can do to help this project:
 
@@ -33,7 +33,7 @@ Here is what you can do to help this project:
   - Test and improve the Linux live CD images
   - Add useful ideas to this list.
 
-## <span class="mw-headline"> Seeking Information On </span>
+## Seeking Information On
 
 Some documentation must already exist, though perhaps not in the wild.
 We are seeking:
@@ -45,7 +45,7 @@ We are seeking:
   - Details of Multi-processor memory coherency and synchronization
     requirements
 
-## <span class="mw-headline"> Documentation To Develop </span>
+## Documentation To Develop
 
 Some documentation will either not exist, or won't be made available
 
@@ -58,7 +58,7 @@ Some documentation will either not exist, or won't be made available
   - Wireless hardware and software protocol for controllers
   - Xbox1 software emulation details
 
-## <span class="mw-headline"> XeLL / Libxenon </span>
+## XeLL / Libxenon
 
   - \[Libxenon\]: Improve Libxenon and write apps.
   - <s>\[Libxenon\]/\[XeLL\]: Fix the usb driver so it gets proper speed
@@ -70,7 +70,7 @@ Some documentation will either not exist, or won't be made available
   - <s>\[XeLL\]: Fix non-workin XeLL-XeLL implementation (chainload XeLL
     from a "base XeLL")</s> DONE
 
-## <span class="mw-headline"> Xenon linux kernel </span>
+## Xenon linux kernel
 
   - Needs urgent fixing: Linux Kernel - a hardware CPU bug causes
     powerpc locking primitives to fail between hyper threads unless a
@@ -81,7 +81,7 @@ Some documentation will either not exist, or won't be made available
   - Audio driver
   - If possible: Modify the ATI 3D driver to work with the Xenos-Chip
 
-## <span class="mw-headline"> Linux Live CD / Installer </span>
+## Linux Live CD / Installer
 
   - Open a Boot Menu with the following options:
       - Load \[Linux Kernel\] from HDD (default, 10s timeout? auto

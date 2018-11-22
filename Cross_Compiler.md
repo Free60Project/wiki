@@ -1,15 +1,5 @@
 ### From Free60
 
-<div id="contentSub">
-
-</div>
-
-<div id="jump-to-nav">
-
-Jump to: \[\#column-one navigation\], \[\#searchInput search\]
-
-</div>
-
 The Xbox 360 [CPU](http://www.free60.org/CPU) is based on IBM's Power
 Architecture. Unless you have a machine with PowerPC CPU and Linux
 running (such as an older Mac or a PS3), you need to set up a cross
@@ -28,8 +18,6 @@ Compiling a compiler on its own platform is already a quite complex
 task, compiling a compiler for a different platform adds even more
 caveats as not all versions of binutils, gcc and glibc work together
 well.
-
-## <span class="mw-headline"> Using Crosstool </span>
 
 The easiest way to set up a complete cross compiler toolchain is to use
 Dan Kegel's crosstool as it does most of the work automatically for you
@@ -84,7 +72,7 @@ variable.
 You're done. Feel free to configure and compile your [Linux
 Kernel](http://www.free60.org/Linux_Kernel).
 
-## <span class="mw-headline"> Using the Xenon Toolchain </span>
+## Using the Xenon Toolchain
 
 An alternative method is to use the [Xenon
 Toolchain](Compiling_the_Toolchain "wikilink"). Its using current gcc

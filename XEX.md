@@ -186,27 +186,15 @@ These appear to be important strings found in the update file
       - $UPDATES
       - MEDIA
 
-<!-- end list -->
-
   - \\Device\\CdRom0\\default.xex
-
-<!-- end list -->
 
   - installupdate.exe
 
-<!-- end list -->
-
   - The xboxkrnl is updated using the updates.
-
-<!-- end list -->
 
   - xam.xex
 
-<!-- end list -->
-
   - xboxkrnl.exe
-
-<!-- end list -->
 
   - Library includes:
       - XUIRNDR
@@ -224,33 +212,13 @@ These appear to be important strings found in the update file
 
 There are currently at least four XEX files freely available on the net:
 
-  - [Original Xbox Game Support November 2005
-    update](http://assets.xbox.com/en-us/backwardcompatibility/default.zip)
-    found on
-    <http://www.xbox.com/en-US/games/backwardscompatibility.htm>.
+  - [Original Xbox Game Support November 2005 update](http://assets.xbox.com/en-us/backwardcompatibility/default.zip) found on <http://www.xbox.com/en-US/games/backwardscompatibility.htm>.
 
-<!-- end list -->
+  - [Original Xbox Game Support December 2005 update](http://download.microsoft.com/download/5/8/a/58a10dbc-9445-4eed-83d5-22f8ad8ee855/default.zip) found on <http://www.xbox.com/en-US/games/backwardscompatibility.htm>.
 
-  - [Original Xbox Game Support December 2005
-    update](http://download.microsoft.com/download/5/8/a/58a10dbc-9445-4eed-83d5-22f8ad8ee855/default.zip)
-    found on
-    <http://www.xbox.com/en-US/games/backwardscompatibility.htm>.
+  - [Windows XP Media Center Edition Update Rollup 2](http://download.microsoft.com/download/2/8/5/28521E1E-120E-4D05-8310-3E43F2734431/XboxMCELite-ENU.exe) from <http://www.xbox.com/en-US/pcsetup/alldownloads.htm>. Use [cabextract](http://www.kyz.uklinux.net/cabextract.php) to extract the executable file, then do the same on mcrdinstaller/ehd.cab inside the archive. This cabinet file contains XboxMcx.xex.
 
-<!-- end list -->
-
-  - [Windows XP Media Center Edition Update
-    Rollup 2](http://download.microsoft.com/download/2/8/5/28521E1E-120E-4D05-8310-3E43F2734431/XboxMCELite-ENU.exe)
-    from <http://www.xbox.com/en-US/pcsetup/alldownloads.htm>. Use
-    [cabextract](http://www.kyz.uklinux.net/cabextract.php) to extract
-    the executable file, then do the same on mcrdinstaller/ehd.cab
-    inside the archive. This cabinet file contains XboxMcx.xex.
-
-<!-- end list -->
-
-  - [XBOX 360 HD DVD
-    Update](http://www.xbox.com/en-US/hardware/x/xbox360hddvdplayer/downloadredirect.htm)
-    found on
-    <http://www.xbox.com/en-us/hardware/x/xbox360hddvdplayer/download.htm#disc>
+  - [XBOX 360 HD DVD Update](http://www.xbox.com/en-US/hardware/x/xbox360hddvdplayer/downloadredirect.htm) found on <http://www.xbox.com/en-us/hardware/x/xbox360hddvdplayer/download.htm#disc>
 
 ## Programs
 
@@ -336,6 +304,5 @@ XEX files are the default executable format.
     0x184...0x184+(IDC*24)  ImageData0[8], ImageData1[8], ImageData2[8]
     </nowiki>
 
-[Category:Xbox360 System
-Software](Category:Xbox360_System_Software "wikilink")
+[Category:Xbox360 System Software](Category:Xbox360_System_Software "wikilink")
 [Category:Xbox360_System_Software](Category:Xbox360_System_Software "wikilink")
