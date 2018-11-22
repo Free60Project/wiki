@@ -1,5 +1,4 @@
-<span style="font-size: 8pt; float: right;">Back to [Xbox
-Software](Xbox_Software "wikilink")</span>
+Back to [Xbox Software](Xbox_Software "wikilink")</span>
 Name: **[Lflash](Lflash "wikilink")**
 
 Description: A NAND Flasher for xbox360, currently only working with
@@ -7,8 +6,7 @@ Description: A NAND Flasher for xbox360, currently only working with
 
 Official Site: www.free60.org
 
-Download: [Free60
-GIT](http://free60.git.sourceforge.net/git/gitweb.cgi?p=free60/tools;a=tree;f=lflash;hb=HEAD)
+Download: [Free60 GIT](http://free60.git.sourceforge.net/git/gitweb.cgi?p=free60/tools;a=tree;f=lflash;hb=HEAD)
 
 Name: **[Dumpana](Dumpana "wikilink")**
 
@@ -17,8 +15,7 @@ use with Linux.
 
 Official Site: www.free60.org
 
-Download: [Free60
-GIT](http://free60.git.sourceforge.net/git/gitweb.cgi?p=free60/tools;a=tree;f=dumpana;hb=HEAD)
+Download: [Free60 GIT](http://free60.git.sourceforge.net/git/gitweb.cgi?p=free60/tools;a=tree;f=dumpana;hb=HEAD)
 
 
 Name: **[Rawflash](Rawflash "wikilink")** v2

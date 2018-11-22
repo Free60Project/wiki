@@ -1,7 +1,5 @@
 # Attack
 
-<div id="bodyContent">
-
 ### From Free60
 
 This page was created when knowlage was low, everything on here is
@@ -21,15 +19,14 @@ possible or not**
 
 **Please do not erase wrong things but reply instead**
 
-<div id="toctitle">
 
-# <span class="mw-headline">Some basic knowledge</span>
+# Some basic knowledge
 
-# <span class="mw-headline">Ideas</span>
+# Ideas
 
-## <span class="mw-headline"> No void warranty </span>
+## No void warranty
 
-### <span class="mw-headline">Software</span>
+### Software
 
   - Old XBOX games
       - Known bugs on the old games
@@ -86,7 +83,7 @@ possible or not**
   - Decompression routines
       - Cause a buffer overflow
 
-### <span class="mw-headline">Hardware</span>
+### Hardware
 
   - DMA attack
       - Someone has developed an exploit for Firewire DMA [FireWire -
@@ -107,7 +104,7 @@ possible or not**
       - Webcam
       - IPod
 
-## <span class="mw-headline"> Torx and Solder </span>
+## Torx and Solder
 
   - [Boot](http://www.free60.org/index.php5?title=Boot&action=edit&redlink=1)
     suggests various CPU parameters including Hypervisor mode and boot
@@ -143,14 +140,14 @@ possible or not**
         those DAQ systems, i'm going to write a program for snatching
         data.
 
-## <span class="mw-headline"> Failed Vectors </span>
+## Failed Vectors
 
 To save people revisiting old ground please list any attempts that have
 failed here
 
-# <span class="mw-headline"> Discussion </span>
+# Discussion
 
-## <span class="mw-headline"> Page design </span>
+## Page design
 
 this is a stub or whatever you call this kind of page...
 
@@ -167,7 +164,7 @@ ment for this
 and if something cleen and verified can be produced we will make another
 "stable" page that developers should read
 
-## <span class="mw-headline"> IDEAS </span>
+## IDEAS 
 
 Xbox 360's OS has its root in the OS of the original Xbox (which is
 derivate from Windows 2000). I think that some bug and exploit in Xbox 1
@@ -212,7 +209,7 @@ ressourcesÂ :
 \- fuzzing file and network
 <http://rtos.trinux.org/secwiki/FuzzingTools>
 
-## <span class="mw-headline"> XEX executables </span>
+## XEX executables
 
 What security problems are known about the XEX files. They can be burned
 to DVD/CD and used to install the backwards compatability emulator, so
@@ -228,36 +225,28 @@ under a PC version of Windows.--Silence 10:59, 10 Mar 2006 (CET)
 
 First guy is absolutly retarded \>_\> -Thilo
 
-## <span class="mw-headline"> XNA </span>
+## XNA
 
 \- The XNA libraries are .Net wrappers around various DirectX libraries
 (XACT, XInput, Direct3D, etc), and runs on the .NET Compact Framework.
 Both frameworks are fairly large and complex and it could be a possible
 candy store for exploits.
 
-## <span class="mw-headline"> After all that </span>
+## After all that
 
 No No No and btw
     No
 
 ##### Views
 
-<div class="pBody">
-
   - [Page](http://www.free60.org/Attack)
   - [Discussion](http://www.free60.org/index.php5?title=Talk:Attack&action=edit&redlink=1)
   - [Edit](http://www.free60.org/index.php5?title=Attack&action=edit)
   - [History](http://www.free60.org/index.php5?title=Attack&action=history)
 
-</div>
-
-</div>
-
-<div id="p-personal" class="portlet">
 
 ##### Personal tools
 
-<div class="pBody">
 
   - [Log in / create
     account](http://www.free60.org/index.php5?title=Special:UserLogin&returnto=Attack)

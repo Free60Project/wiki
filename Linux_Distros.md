@@ -1,5 +1,4 @@
-<span style="font-size: 8pt; float: right;">Back to [Xbox
-Software](Xbox_Software "wikilink")</span>
+Back to [Xbox Software](Xbox_Software "wikilink")
 ♦ [LiveCD](LiveCD "wikilink")
 
 ♦ [Ubuntu7.10](Ubuntu7.10 "wikilink")
