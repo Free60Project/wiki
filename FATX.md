@@ -45,7 +45,7 @@ There was some research done in hopes to remove the maximum device size
 of 16 GB (for Xbox 360 storage) on exploited/development consoles, but
 it was later discovered that anything a few GB larger than the current
 maximum causes the console to crash.
-<http://www.xboxhacker.org/index.php?topic=16913.0>
+[http://www.xboxhacker.org/index.php?topic=16913.0](https://web.archive.org/web/20140515135820/http://www.xboxhacker.org/index.php?topic=16913.0)
 
 ### Configuration file
 
@@ -304,5 +304,4 @@ number.
 | Possible Cluster Sizes      | 4 KB (0x1000 bytes, 0x8 sectors per cluster), 8 KB (0x2000, 0x10 SPC),16 KB (0x4000, 0x20 SPC), 32 KB (0x8000, 0x40 SPC), 64 KB (0x10000, 0x80 SPC) |
 | File/Folder Name Characters | ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789                                                                                      |
 
-[Category:Xbox360 System Software](Category:Xbox360_System_Software "wikilink")
 [Category:Xbox360_System_Software](Category:Xbox360_System_Software "wikilink")

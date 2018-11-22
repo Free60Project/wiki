@@ -10,7 +10,7 @@ U1B2)
 
 ## ICS1893BF
 
-[Datasheet](http://www.dz863.com/downloadpdf-nalovdjulo-ICS1893BKLFT.pdf)
+[Datasheet](https://www.idt.com/document/dst/1893bfbk-datasheet)
 
 Comes from Integrated Circuit Systems, Inc.
 
@@ -19,7 +19,7 @@ Comes from Integrated Circuit Systems, Inc.
 
 ## BCM5241
 
-[Datasheet](http://www.datasheetcatalog.org/datasheet2/6/0rph5whyftf3gi8c6lyy5xp2037y.pdf)
+[Datasheet](https://docs.broadcom.com/docs/12358209)
 
 Comes from Integrated Circuit Systems, Inc.
 
