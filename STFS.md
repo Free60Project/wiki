@@ -263,50 +263,52 @@ determines where the file table begins. As it is a block number, you
 will have to convert it to an offset. Here is some code in C\# for
 converting:
 
-`       internal int BlockToOffset(int xBlock)`
-`       {`
-`           int xReturn = 0;`
-`           if (xBlock > 0xFFFFFF)`
-`               xReturn = -1;`
-`           else`
-`               xReturn = (((MetaData.HeaderSize + 0xFFF) & 0xF000) + (xBlock << 12));`
-`           return xReturn;`
-`       }`
-`       internal int ComputeDataBlockNumber(int xBlock)`
-`       {`
-`           int xBlockShift;`
-`           if(((MetaData.HeaderSize + 0xFFF) & 0xF000) == 0xB000)`
-`               xBlockShift = 1;`
-`           else`
-`               if((MetaData.Descriptor.BlockSeperation & 1) == 1)`
-`                   xBlockShift = 0;`
-`               else`
-`                   xBlockShift = 1;`
-`           `
-`           int xBase = ((xBlock + 0xAA) / 0xAA);`
-`           if(this.Header.Magic == XContent_Header.Header_Magic.CON)`
-`               xBase = (xBase << xBlockShift);`
-`           int xReturn = (xBase + xBlock);`
+```cs
+internal int BlockToOffset(int xBlock)
+{
+    int xReturn = 0;
+    if (xBlock > 0xFFFFFF)
+        xReturn = -1;
+    else
+        xReturn = (((MetaData.HeaderSize + 0xFFF) & 0xF000) + (xBlock << 12));
+    return xReturn;
+}
+internal int ComputeDataBlockNumber(int xBlock)
+{
+    int xBlockShift;
+    if (((MetaData.HeaderSize + 0xFFF) & 0xF000) == 0xB000)
+        xBlockShift = 1;
+    else
+    if ((MetaData.Descriptor.BlockSeperation & 1) == 1)
+        xBlockShift = 0;
+    else
+        xBlockShift = 1;
 
-`           if (xBlock > 0xAA)`
-`           {`
-`               xBase = ((xBlock + 0x70E4) / 0x70E4);`
-`               if (this.Header.Magic == XContent_Header.Header_Magic.CON)`
-`                   xBase = (xBase << xBlockShift);`
-`               xReturn += xBase;`
+    int xBase = ((xBlock + 0xAA) / 0xAA);
+    if (this.Header.Magic == XContent_Header.Header_Magic.CON)
+        xBase = (xBase << xBlockShift);
+    int xReturn = (xBase + xBlock);
 
-`               if (xBlock > 0x70E4)`
-`               {`
-`                   xBase = ((xBlock + 0x4AF768) / 0x4AF768);`
-`                   if (this.Header.Magic == xBlockShift)`
-`                       xBase = (xBase << 1);`
+    if (xBlock > 0xAA)
+    {
+        xBase = ((xBlock + 0x70E4) / 0x70E4);
+        if (this.Header.Magic == XContent_Header.Header_Magic.CON)
+            xBase = (xBase << xBlockShift);
+        xReturn += xBase;
 
-`                   xReturn = (xReturn + xBase);`
-`               }`
-`           }`
+        if (xBlock > 0x70E4)
+        {
+            xBase = ((xBlock + 0x4AF768) / 0x4AF768);
+            if (this.Header.Magic == xBlockShift)
+                xBase = (xBase << 1);
 
-`           return xReturn;`
-`       }`
+            xReturn = (xReturn + xBase);
+        }
+    }
+
+    return xReturn;
+}
+```
 
 Each embedded file starts at a 4096 byte boundary. The optional space
 between embedded files is filled with null bytes.
@@ -332,46 +334,46 @@ that all of the blocks in the file are consecutive. Bit 7 indicates that
 the file is a directory.
 The first 6 bits 0-5, are the length of the filename.
 
-```
-        public System.Boolean IsDirectory//bit 7
+```cs
+public System.Boolean IsDirectory//bit 7
+{
+    get
+    {
+        return (Flags & 128) == 128;
+    }
+    set
+    {
+        if (value != IsDirectory)
         {
-            get
-            {
-                return (Flags & 128) == 128;
-            }
-            set
-            {
-                if (value != IsDirectory)
-                {
-                    Flags ^= 128;
-                }
-            }
+            Flags ^= 128;
         }
-        //public System.Boolean IsUnknown//bit 6
-        //{
-        //    get
-        //    {
-        //        return (Flags & 64) == 64;
-        //    }
-        //    set
-        //    {
-        //        if (value != IsUnknown)
-        //        {
-        //            Flags ^= 64;
-        //        }
-        //    }
-        //}
-        public System.Byte NameLength//first 6 bits
-        {
-            get
-            {
-                return (System.Byte)(Flags & 63);
-            }
-            set
-            {
-                Flags ^= (System.Byte)(value ^ NameLength);
-            }
-        }
+    }
+}
+//public System.Boolean IsUnknown//bit 6
+//{
+//    get
+//    {
+//        return (Flags & 64) == 64;
+//    }
+//    set
+//    {
+//        if (value != IsUnknown)
+//        {
+//            Flags ^= 64;
+//        }
+//    }
+//}
+public System.Byte NameLength//first 6 bits
+{
+    get
+    {
+        return (System.Byte)(Flags & 63);
+    }
+    set
+    {
+        Flags ^= (System.Byte)(value ^ NameLength);
+    }
+}
 ```
 
 The path indicator indicates the path of the file. -1 (0xFFFF) means
@@ -418,80 +420,82 @@ Here is some C\# code for converting a block to it's hash table
 position(**it may not work
 perfectly\!**):
 
-`       internal int ComputeLevelNHashBlockNumber(int xBlock, int xLevel)`
-`       {`
-`           int xBlockShift;`
-`           if (((MetaData.HeaderSize + 0xFFF) & 0xF000) == 0xB000)`
-`               xBlockShift = 1;`
-`           else`
-`               if ((MetaData.Descriptor.BlockSeperation & 1) == 1)`
-`                   xBlockShift = 0;`
-`               else`
-`                   xBlockShift = 1;`
-`           int[] xBlockStep;`
-`           if (((MetaData.HeaderSize + 0xFFF) & 0xF000) == 0xB000)`
-`               xBlockStep = new[] { 0xAC, 0x723A };`
-`           else`
-`               if ((MetaData.Descriptor.BlockSeperation & 1) == 1)`
-`                   xBlockStep = new[] { 0xAB, 0x718F };`
-`               else`
-`                   xBlockStep = new[] { 0xAC, 0x723A };`
+```cs
+internal int ComputeLevelNHashBlockNumber(int xBlock, int xLevel)
+{
+    int xBlockShift;
+    if (((MetaData.HeaderSize + 0xFFF) & 0xF000) == 0xB000)
+        xBlockShift = 1;
+    else
+    if ((MetaData.Descriptor.BlockSeperation & 1) == 1)
+        xBlockShift = 0;
+    else
+        xBlockShift = 1;
+    int[] xBlockStep;
+    if (((MetaData.HeaderSize + 0xFFF) & 0xF000) == 0xB000)
+        xBlockStep = new[] { 0xAC, 0x723A };
+    else
+    if ((MetaData.Descriptor.BlockSeperation & 1) == 1)
+        xBlockStep = new[] { 0xAB, 0x718F };
+    else
+        xBlockStep = new[] { 0xAC, 0x723A };
 
-`           int xReturn;`
-`           int xBase;`
-`           int xStep = xBlockStep[1];`
+    int xReturn;
+    int xBase;
+    int xStep = xBlockStep[1];
 
-`           if (xLevel == 0)`
-`           {`
-`               xReturn = (xBlock / 0xAA);`
-`               xStep = (xReturn * xBlockStep[0]);`
-`               if (xReturn != 0)`
-`               {`
-`                   xReturn = (xBlock / 0x70E4);`
-`                   xBase = (xReturn + 1);`
+    if (xLevel == 0)
+    {
+        xReturn = (xBlock / 0xAA);
+        xStep = (xReturn * xBlockStep[0]);
+        if (xReturn != 0)
+        {
+            xReturn = (xBlock / 0x70E4);
+            xBase = (xReturn + 1);
 
-`                   if (this.Header.Magic == XContent_Header.Header_Magic.CON)`
-`                       xStep += (xBase << xBlockShift);`
-`                   else`
-`                       xStep += xBase;`
+            if (this.Header.Magic == XContent_Header.Header_Magic.CON)
+                xStep += (xBase << xBlockShift);
+            else
+                xStep += xBase;
 
-`                   if (xReturn == 0)`
-`                       return xStep;`
-`                   else`
-`                   {`
-`                       if (this.Header.Magic == XContent_Header.Header_Magic.CON)`
-`                           return (xStep + (1 << xBlockShift));`
-`                       else`
-`                           return (xStep + 1);`
-`                   }`
-`               }`
-`               else`
-`                   return xStep;`
-`           }`
-`           else if (xLevel == 1)`
-`           {`
-`               xReturn = (xBlock / 0x70E4);`
-`               xBase = (xReturn * xStep);`
-`               if (xReturn != 0)`
-`               {`
-`                   if (this.Header.Magic == XContent_Header.Header_Magic.CON)`
-`                       return (xBase + (1 << xBlockShift));`
-`                   else`
-`                       return (xBase + 1);`
-`               }`
-`               else`
-`                   return (xBase + xBlockStep[0]);`
-`           }`
-`           else if (xLevel == 2)`
-`           {`
-`               return xStep;`
-`           }`
-`           else`
-`           {`
-`               throw new Exception("Level Unknown: " + xLevel.ToString());`
-`               return 0xFFFFFF;`
-`           }`
-`       }`
+            if (xReturn == 0)
+                return xStep;
+            else
+            {
+                if (this.Header.Magic == XContent_Header.Header_Magic.CON)
+                    return (xStep + (1 << xBlockShift));
+                else
+                    return (xStep + 1);
+            }
+        }
+        else
+            return xStep;
+    }
+    else if (xLevel == 1)
+    {
+        xReturn = (xBlock / 0x70E4);
+        xBase = (xReturn * xStep);
+        if (xReturn != 0)
+        {
+            if (this.Header.Magic == XContent_Header.Header_Magic.CON)
+                return (xBase + (1 << xBlockShift));
+            else
+                return (xBase + 1);
+        }
+        else
+            return (xBase + xBlockStep[0]);
+    }
+    else if (xLevel == 2)
+    {
+        return xStep;
+    }
+    else
+    {
+        throw new Exception("Level Unknown: " + xLevel.ToString());
+        return 0xFFFFFF;
+    }
+}
+```
 
 # Tools
 
