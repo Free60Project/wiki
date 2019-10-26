@@ -1,1 +1,1 @@
-1.  REDIRECT [Xenon (CPU)](Xenon_\(CPU\) "wikilink")
+1.  REDIRECT [Xenon (CPU)](Xenon_(CPU) "wikilink")
