@@ -9,7 +9,7 @@ console to another. Please help making this idea real\!
 
 For every (hacked) hardware, there is a homebrew lib / toolchain:
 
-  - [Libxenon](http://www.free60.org/LibXenon) for guess what ;)
+  - [Libxenon](LibXenon) for guess what ;)
   - [libogc](http://www.devkitpro.org/category/libogc/) for Wii,
     GameCube
   - [OpenXDK](https://sourceforge.net/projects/openxdk/) for Xbox 1

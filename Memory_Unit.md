@@ -66,6 +66,7 @@ Other theory (less plausible) is that it might be a NXP (Philips)
 [P89LPC901FD
 microcontroller](http://www.nxp.com/pip/P89LPC901_902_903-05.html) with
 its die upside down?
+archive.org mirror: [here](https://web.archive.org/web/20070629141142/https://www.nxp.com/pip/P89LPC901_902_903-05.html)
 
 When supplying 3.3 volts to the Memory Unit:
 Measurements at pins 5, 6, and 7 show that there is a clock signal of

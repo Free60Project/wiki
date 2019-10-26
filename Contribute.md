@@ -82,7 +82,7 @@ A few guidelines to go by when editing pages on this wiki:
 ### Repair and Restoration
 
 As a negative side effect, wikis are also a target of and mostly
-vulnerable to [vandalism](http://en.wikipedia.org/wiki/Wiki_vandalism).
+vulnerable to [vandalism](https://web.archive.org/web/20060927204136/https://en.wikipedia.org/wiki/Wiki_vandalism.
 
 Spotting and reverting cases of vandalism can be anywhere from time
 consuming, to trivial a task. Either way, this is greatly appreciated.

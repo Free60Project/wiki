@@ -7,7 +7,7 @@ your file/nand.
 ## Source
 
 The source is available on the [free60 GIT
-Repository](http://www.free60.org/Free60_Git_Repository) in the tools
+Repository](Free60_Git_Repository) in the tools
 section.
 
 [Category:Xbox360_Homebrew_Software](Category:Xbox360_Homebrew_Software "wikilink")
