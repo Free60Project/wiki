@@ -17,11 +17,11 @@ Note: Do not use this, use the modified bash code posted at the bottom
 of this page.
 
 ` sudo su`
-` wget `<http://home.comcast.net/~ssmurf/debianinstall.sh>
+` wget `<https://web.archive.org/web/20121104151039/http://home.comcast.net/~ssmurf/debianinstall.sh>
 ` sh ./debianinstall.sh`
 
 Reboot the 360 when you are told. Boot with
-<http://home.comcast.net/~ssmurf/XeLL-Bootloader-sda2-v2.6.24.3.tar.gz>
+[http://home.comcast.net/~ssmurf/XeLL-Bootloader-sda2-v2.6.24.3.tar.gz](https://web.archive.org/web/20141025055552/http://home.comcast.net/~ssmurf/XeLL-Bootloader-sda2-v2.6.24.3.tar.gz)
 and login as root. You will be asked for a new password. The rest of the
 installation will start automatically. The download is about 600Mb.
 Select xenosfb when the script asks for
@@ -64,7 +64,7 @@ debianinstall.sh
 `   iface eth0 inet dhcp`
 `   EOF`
 `   cat > /mnt/debian/etc/apt/sources.list << EOF`
-`   deb `<ftp://archive.debian.org/debian/>`  etch main contrib non-free`
+`   deb `<archive.debian.org/debian/>`  etch main contrib non-free`
 `   EOF`
 `   #Change root-pwd inside chroot`
 `   chroot /mnt/debian`
@@ -82,10 +82,10 @@ debianinstall.sh
 `   /etc/init.d/networking restart`
 `   cd /usr/lib/xorg/modules/drivers/`
 `   rm -r -f *`
-`   wget `<http://home.comcast.net/~ssmurf/xenosfb_drv.so>
+`   wget `<https://web.archive.org/web/20141026185511/http://home.comcast.net/~ssmurf/xenosfb_drv.so>
 `   cd /etc/X11/`
 `   rm -r -f xorg.conf`
-`   wget `<http://home.comcast.net/~ssmurf/xorg.conf>
+`   wget `<https://web.archive.org/web/20141026185511/http://home.comcast.net/~ssmurf/xenosfb_drv.so>
 `   mkdir /lib/modules/2.6.21.1`
 `   touch /lib/modules/2.6.21.1/modules.dep`
 `   echo "" > /etc/gdm/gdm.conf-custom`
