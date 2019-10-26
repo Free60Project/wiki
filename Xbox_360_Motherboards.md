@@ -8,7 +8,7 @@ well as links to their respective pages.
 '''NOTE TO MAINTAINERS: ''' This page is often ripped apart by spam
 bots\! Please check and revert any unwanted changes regularly\!
 
-## [Xenon](Xenon_\(Motherboard\) "wikilink") (V1)
+## [Xenon](Xenon_(Motherboard) "wikilink") (V1)
 
 The original Xbox 360 configuration used in the initial Premium and Core
 machines released in the end of November 2005.
