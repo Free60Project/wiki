@@ -96,7 +96,7 @@ development systems):
   - Initialize phase 1 thread (?)
   - Phase 1 initialization and processors initialization
   - Initialize keyvault
-  - Initialize HAL [1](https://en.wikipedia.org/wiki/HAL_\(software\))
+  - Initialize HAL [1](https://en.wikipedia.org/wiki/HAL_(software))
     phase 1
   - Initialize SFC driver (?)
   - Initialize security (?)
