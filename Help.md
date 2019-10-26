@@ -1,6 +1,6 @@
 ## IRC
 
-Server ⇒ <font color="purple">irc.oftc.net</font>
+Server ⇒ <font color="purple">irc.oftc.net</font>(irc.oftc.net)
 Channel ⇒ \#free60 ; \#free60-chat ; \#free60-dev
 or if theres nobody replying try:
 
@@ -54,7 +54,7 @@ Some documentation will either not exist, or won't be made available
   - Chain of trust: how execution integrity is designed to work
   - Chinks in the armor: Holes in the chain of trust
   - <s>Hard drive locking (if any) and</s> filesystem details
-    ([Harddrive](http://www.free60.org/Harddrive))
+    ([Harddrive](HDD))
   - Wireless hardware and software protocol for controllers
   - Xbox1 software emulation details
 
