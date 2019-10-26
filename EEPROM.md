@@ -103,7 +103,7 @@ header:
 # The MAC address
 
 This is the MAC address of the Ethernet hardware, which has been issued
-by the IEEE (http://standards.ieee.org/regauth/oui/oui_public.txt).
+by the IEEE (http://standards-oui.ieee.org/oui/oui.txt).
 
 # DVD Region
 
