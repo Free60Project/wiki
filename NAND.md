@@ -10,7 +10,7 @@
 <!-- end list -->
 
   - SMT socket that should work if you choose to remove yours:
-    <http://www.emulation.com/cgi-cfm/insert_quantity.cfm?part_number=S%2DTSO%2DSM%2D048%2DA>,
+    <https://web.archive.org/web/20111206034431/http://www.emulation.com:80/cgi-cfm/insert_quantity.cfm?part_number=S%2DTSO%2DSM%2D048%2DA>,
 
 Attached to [Southbridge](Southbridge "wikilink")
 
