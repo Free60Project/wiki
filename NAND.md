@@ -5,7 +5,7 @@
 ![<File:nandpinout.png>](nandpinout.png
     "File:nandpinout.png")
 
-  - [Datasheet](http://www.hynix.com/datasheet/pdf/flash/HY27US\(08_16\)281A%20Series\(Rev0.6\).pdf)
+  - [Datasheet](https://web.archive.org/web/20150112073857/http://www.hynix.com/datasheet/pdf/flash/HY27US(08_16)281A%20Series(Rev0.6).pdf)
 
 <!-- end list -->
 
