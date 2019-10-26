@@ -100,7 +100,7 @@ some penguins.
 
 ### 8\. Install it to Harddisk (optional)
 
-Guide: [Here](http://forums.xbox-scene.com/index.php?showtopic=595543)
+Guide: [Here](https://web.archive.org/web/20100315185435/http://forums.xbox-scene.com/index.php?showtopic=595543
 
 [Debian etch](Debian-etch "wikilink") install Script (Recommended)
 
