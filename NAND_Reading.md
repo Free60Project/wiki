@@ -731,10 +731,10 @@ motherboards and the other ones).
 New Xenon exploit diagram: <http://i.imgur.com/Fdjmi.png>
 
 Diagram (including LPT & JTAG connections):
-<http://img710.imageshack.us/img710/31/spidiagramsandungas.png>
+<https://web.archive.org/web/20111202124409/http://img710.imageshack.us/img710/31/spidiagramsandungas.png>
 
 Another diagram (including LPT & JTAG connections):
-<http://img12.imageshack.us/img12/4983/xenondiagram.jpg>
+<https://web.archive.org/web/20111202142124/http://img12.imageshack.us/img12/4983/xenondiagram.jpg>
 
 Slim diagram: <http://imageshack.us/photo/my-images/32/lptslim.png/>
 
@@ -844,7 +844,7 @@ Degraded v1.1, which will highlight any errors.
 A NAND with bad blocks usually looks like
 this:
 
-:\*<http://www.infectus.biz/INFECTUS-BOOK/Tutorial_Eng/Xbox360/Timing_Attack_Infectus/File/Bad_Block_DUMP.jpg>
+:\*<https://web.archive.org/web/20111202132655/http://www.infectus.biz/INFECTUS-BOOK/Tutorial_Eng/Xbox360/Timing_Attack_Infectus/File/Bad_Block_DUMP.jpg>
 
 Note in this example that the bad block information has been located
 elsewhere, so you \*should\* be okay. Even so, it's advisable to run a
@@ -855,7 +855,7 @@ should be good to go.
 A good NAND dump might look like
 this:
 
-:\*<http://www.infectus.biz/INFECTUS-BOOK/Tutorial_Eng/Xbox360/Timing_Attack_Infectus/File/Degraded_1.jpg>
+:\*<https://web.archive.org/web/20111202140910/http://www.infectus.biz/INFECTUS-BOOK/Tutorial_Eng/Xbox360/Timing_Attack_Infectus/File/Degraded_1.jpg>
 
 If you get this, great :) Your NAND dump is about as good as it's gonna
 be\!
@@ -890,10 +890,10 @@ considered good, you will be warned if not all blocks can be recovered,
 in which case you'll need to get more reads or look for a good reason
 why your reads are so bad
 
-Official Site: <http://www.xboxhacker.net/index.php?topic=13208.0>
+Official Site: [http://www.xboxhacker.net/index.php?topic=13208.0](https://web.archive.org/web/20160307182008/http://www.xboxhacker.net/index.php?topic=13208.0)
 
 Download:
-<http://dwl.xbox-scene.com/xbox360pc/nandtools/NandCompare-v1.3.rar>
+[http://dwl.xbox-scene.com/xbox360pc/nandtools/NandCompare-v1.3.rar](https://web.archive.org/web/20141025002121/http://dwl.xbox-scene.com/xbox360pc/nandtools/NandCompare-v1.3.rar)
 
 (images taken from
-<http://www.infectus.biz/INFECTUS-BOOK/Tutorial_Eng/Xbox360/Timing_Attack_Infectus/pag3.htm>)
+[http://www.infectus.biz/INFECTUS-BOOK/Tutorial_Eng/Xbox360/Timing_Attack_Infectus/pag3.htm](https://web.archive.org/web/20111202155156/http://www.infectus.biz/INFECTUS-BOOK/Tutorial_Eng/Xbox360/Timing_Attack_Infectus/pag3.htm)\)
