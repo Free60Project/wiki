@@ -1,5 +1,5 @@
 Old notes on the Xbox 360 Hypervisor can be found here: [Hypervisor (Old
-Notes)](Hypervisor_\(Old_Notes\) "wikilink")
+Notes)](Hypervisor_(Old_Notes) "wikilink")
 
 # What is a Hypervisor?
 
