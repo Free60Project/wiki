@@ -5,7 +5,7 @@ In a leaked private e-mail to current Free60 project maintainer Georg
 Lukas, Microsoft Interactive Entertainment Business has stated to
 release a dashboard update for the Xbox 360 allowing to boot an "Other
 OS", similar to the functionality recently [disabled in the PS3 by
-Sony](http://www.haxnetwork.net/2010/03/otheros-will-not-be-removed-from-phat-ps3s/):
+Sony](https://web.archive.org/web/20100803155746/http://www.haxnetwork.net/2010/03/otheros-will-not-be-removed-from-phat-ps3s/):
 
     From: xxx <xxx@ieb.microsoft.com>
     To: Georg Lukas <georg@op-co.de>
