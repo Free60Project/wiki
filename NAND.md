@@ -171,7 +171,7 @@ to be a Atmel 25020 EEPROM. The chip model reads:
 `SU18`
 
 Datasheet can be found
-[here](http://www.atmel.com/dyn/resources/prod_documents/doc3348.pdf).
+[here](https://web.archive.org/web/20061005163428/http://www.atmel.com/dyn/resources/prod_documents/doc3348.pdf).
 
 This chip is a low power 2048 bit serial EEPROM according to the
 datasheet.
@@ -199,7 +199,7 @@ This chip reads:
 `SU18`
 
 Datasheet can be found
-[here](http://www.atmel.com/dyn/resources/prod_documents/doc0180.pdf)
+[here](https://web.archive.org/web/20061224151351/http://www.atmel.com/dyn/resources/prod_documents/doc0180.pdf)
 
 This chip is a low power 4096 bit serial EEPROM according to the
 datasheet.
