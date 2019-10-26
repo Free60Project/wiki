@@ -21,7 +21,7 @@ as Microsoft has corrected mistakes or added/improved existing features.
 ## Details
 
 The motherboard PCB has four layers (sources:
-[1](http://www.ccw.com.cn/notebook/pczx/sy/htm2005/20051028_16OMI.htm),
+[1](https://web.archive.org/web/20100328024533/http://www.ccw.com.cn/notebook/pczx/sy/htm2005/20051028_16OMI.htm),
 [2](http://www.anandtech.com/video/showdoc.aspx?i=2414)), implying that
 the top and bottom layers (the ones we can see and probe) contain most
 of the signals. This is a good thing :)
@@ -29,7 +29,7 @@ of the signals. This is a good thing :)
 ## CPU, GPU, & Front side bus
 
 According to
-[these](http://www.ccw.com.cn/notebook/pczx/sy/htm2005/20051028_16OMI.htm)
+[these](https://web.archive.org/web/20100328024533/http://www.ccw.com.cn/notebook/pczx/sy/htm2005/20051028_16OMI.htm)
 [three](http://www.cdrinfo.com/images/uploaded/Xbox_Architecture_large.gif)
 [sources](http://en.wikipedia.org/wiki/Xbox_360#Hardware_specifications)
 the FSB is a serial bus with 16 differential pairs in each direction,
@@ -55,7 +55,7 @@ information on an exposed bus again though.
 ## Photos
 
   - <http://arstechnica.com/articles/paedia/cpu/xbox360-1.ars>
-  - <http://g-prime.net/x360/open/>
-  - <http://www.darkmoon.org/xbox360_photos.htm>
+  - [http://g-prime.net/x360/open/](https://web.archive.org/web/20090110154123/http://www.g-prime.net/x360/open/) \(archive.org mirror\)
+  - [http://www.darkmoon.org/xbox360_photos.htm](https://web.archive.org/web/20150609103520/http://www.darkmoon.org/xbox360_photos.htm) \(archive.org mirror\)
 
 [Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
