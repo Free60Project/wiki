@@ -6,7 +6,7 @@ as Microsoft has corrected mistakes or added/improved existing features.
 
   - Known revisions include:
 
-:\*[Xenon](Xenon_\(Motherboard\) "wikilink") (Launch hardware)
+:\*[Xenon](Xenon_(Motherboard) "wikilink") (Launch hardware)
 
 :\*[Zephyr](Zephyr "wikilink") (Elite)
 
