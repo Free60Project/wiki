@@ -1,15 +1,15 @@
-'''XMENU source code by [User:cpasjuste](User:cpasjuste "wikilink"):
+'''XMENU source code by [User:cpasjuste]:
 '''
 Download:
 [libxenon.org](http://file.libxenon.org/free60/libxenon/xmenu_src_20090914.tar.gz)
 
 '''Genesis Plus + SMS Plus source code by
-[User:ced2911](User:ced2911 "wikilink"): '''
+[User:ced2911]: '''
 Genesis Plus: <http://www.multiupload.com/6QYQL218GB>
 SMS Plus: <http://www.multiupload.com/62T7RVYB5A>
 
 '''Controller Button test code by
-[User:ced2911](User:ced2911 "wikilink"): '''
+[User:ced2911]: '''
 Source Code (incl. Makefile):
 [Download](http://file.libxenon.org/free60/libxenon/LibXenon_HelloWorld.tar.gz)
 
