@@ -74,7 +74,7 @@ hardware threads available to games. Each individual core also includes
     written some time before 23 June 2004
   - [Ars Technica explains the Xenon
     CPU](http://arstechnica.com/old/content/2005/06/xbox360-2.ars)
-  - [Xbox360 CPU](http://en.wikipedia.org/wiki/Xenon_\(processor\)) at
+  - [Xbox360 CPU](http://en.wikipedia.org/wiki/Xenon_(processor)) at
     Wikipedia
   - [PowerPC 970](http://en.wikipedia.org/wiki/PowerPC_G5) at Wikipedia
   - [PowerPC](http://en.wikipedia.org/wiki/PowerPC) at Wikipedia
