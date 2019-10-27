@@ -32,12 +32,12 @@ A good explanation by arnezami
 `Because two kernel versions MS build (4532,4548) have a tiny flaw. And when we have our cpu key we can choose to`
 `run these (old) kernels and exploit them by running a patched KK game. After running the exploit we have complete`
 `control over the xbox (but not before that). This means to be able to run homebrew or linux we now have to start the`
-`game, press ok, insert a disc etc. `[`More`](http://www.xboxhacker.net/index.php?topic=8319.msg52847#msg52847)
+`game, press ok, insert a disc etc. `[`More`](https://web.archive.org/web/20100305163742/http://www.xboxhacker.net/index.php?topic=8319.msg52847)
 
 *Visual representation of the process:*
 
 ![Image:Timing attack visual
-representation.png](Timing_attack_visual_representation.png
+representation.png](./images/Timing_attack_visual_representation.png
 "Image:Timing attack visual representation.png")
 
 ## Memcmp Flaw
@@ -61,7 +61,7 @@ total 4096 tries. Statistically only half has to be tried, 2048 tries.
 
 The official documentation by robinsod for the downgrader hardware and
 downgrading process can be downloaded from the [Timing Attack
-thread](http://www.xboxhacker.net/index.php?topic=8555.msg54228#msg54228)
+thread](https://web.archive.org/web/20090927172952/http://www.xboxhacker.net/index.php?topic=8555.msg54228)
 over at XboxHacker.
 
 ### Dump NAND
@@ -81,7 +81,7 @@ LDV (LockDownValue) from the CF section in the NAND dump.*
 
 1.  Get the 1888 base kernel from the "usual places".
 2.  Download
-    [Degraded.exe](http://www.xboxhacker.net/index.php?topic=8555.msg54509#msg54509)
+    [Degraded.exe](https://web.archive.org/web/20090518120000/http://www.xboxhacker.net:80/index.php?topic=8555.msg54509)
     to automate the build of a new 1888 image with the SMC, Keyvault,
     CB, CD and CE sections from the NAND dump. The LDV (fuse count) will
     be corrected for CB (which is why you need to find a new hash) and
@@ -97,17 +97,17 @@ In Degraded.exe click 'Settings', set the 1BL Key to
 **'39**'.
 
 ![Image:Timing attack degraded
-settings.PNG](Timing_attack_degraded_settings.PNG
+settings.PNG](./images/Timing_attack_degraded_settings.PNG
 "Image:Timing attack degraded settings.PNG")
 
 Select the NAND dump file under 'Flash Dump' and click 'Build Downgrader
 Image'.
 
-![Image:Timing attack degraded.PNG](Timing_attack_degraded.PNG
+![Image:Timing attack degraded.PNG](./images/Timing_attack_degraded.PNG
 "Image:Timing attack degraded.PNG")
 
   - [Downgrading
-    Tools](http://www.xboxhacker.net/index.php?topic=8555.msg54509#msg54509)
+    Tools](https://web.archive.org/web/20090518120000/http://www.xboxhacker.net/index.php?topic=8555.msg54509)
 
 ### Flash Image
 
@@ -118,7 +118,7 @@ patched 1888 base kernel image.
 
   - [Xbox 360 Infectus Kernel Dump](Xbox_360_Infectus "wikilink")
 
-![Image:Infectus Write NAND.PNG](Infectus_Write_NAND.PNG
+![Image:Infectus Write NAND.PNG](./images/Infectus_Write_NAND.PNG
 "Image:Infectus Write NAND.PNG")
 
 ### Attack Hash
@@ -153,7 +153,7 @@ the last line of text should state **'BOOT\!**'.
   - [Xbox 360 Downgrader
     Hardware](Xbox_360_Downgrader_Hardware "wikilink")
 
-![Image:Timing attack dgtool.PNG](Timing_attack_dgtool.PNG
+![Image:Timing attack dgtool.PNG](./images/Timing_attack_dgtool.PNG
 "Image:Timing attack dgtool.PNG")
 
 ### Upgrade Kernel
@@ -168,7 +168,7 @@ Insert the CD-R into the Xbox 360 and you will be prompted that a update
 is required.
 
 ![Image:Timing attack 1888 boot
-success.jpg](Timing_attack_1888_boot_success.jpg
+success.jpg](./images/Timing_attack_1888_boot_success.jpg
 "Image:Timing attack 1888 boot success.jpg")
 
 ![Image:Xbox 4532 Kernel.JPG](Xbox_4532_Kernel.JPG
@@ -183,7 +183,7 @@ CPU Key.*
     exploit](King_Kong_Hack "wikilink") and burn it to a DVD+R Dual
     Layer disc.
 2.  Burn the latest Gentoo Xenon release (as of writing beta2) from
-    [free60.org](http://www.free60.org/) to a CD-R and insert the disc
+    [free60.org](https://github.com/Free60Project) to a CD-R and insert the disc
     after pressing 'Start' on the modified King Kong disc.
 3.  Download the
     [dump32](http://home.x-pec.com/~ivc/sites/ivc/xbox360/files/arnezamidump32.tgz)
@@ -195,7 +195,7 @@ machine.
 `cd arnezamidump32`
 `sudo ./dump32`
 
-![Image:Dump32 Finished and List.png](Dump32_Finished_and_List.png
+![Image:Dump32 Finished and List.png](./images/Dump32_Finished_and_List.png
 "Image:Dump32 Finished and List.png")
 
 Save the FUSES.TXT file to a USB memorystick, upload it to
@@ -206,7 +206,7 @@ The CPU Key is found by combining line 3 + 5 in the FUSES.TXT file.
 
 It is now possible to upgrade to latest kernel (as of writing 5787) and
 then downgrade to a lower version again using the [360 Flash
-Tool](http://www.xboxhacker.net/index.php?topic=7691.msg55126#msg55126).
+Tool](https://web.archive.org/web/20090523033421/http://www.xboxhacker.net/index.php?topic=7691.msg55126#msg55126).
 Insert the correct CPU Key in the 360 Flash Tool and patching the LDV
 (LockDownValue) in the CB/CE/CF section to that of the latest update.
 
@@ -226,24 +226,24 @@ arnezami:
 
 `MS cannot fix this problem by simply changing the memcmp function in a future kernel version. Thats not`
 `gonna help them. The weakness is that the byte-wise memcmp function is in the 1888 kernel/bootloader`
-`(and they cannot change that one anymore of course). `[`2`](http://www.xboxhacker.net/index.php?topic=8319.msg53026#msg53026)
+`(and they cannot change that one anymore of course). `[`2`](https://web.archive.org/web/20160406102612/http://www.xboxhacker.net/index.php?topic=8319.msg53026)
 
 tmbinc:
 
-`sure, microsoft can change the 2BL, and burn a fuse (of the fuseline 2) so that an old 2BL doesn't work anymore... `[`3`](http://www.xboxhacker.net/index.php?topic=8319.msg53055#msg53055)
+`sure, microsoft can change the 2BL, and burn a fuse (of the fuseline 2) so that an old 2BL doesn't work anymore... `[`3`](https://web.archive.org/web/20090522031302/http://www.xboxhacker.net/index.php?topic=8319.msg53055)
 
 arnezami:
 
 `Ah. Right. If they can indeed burn these fuses at row 2 than you wouldn't be able to run any of the lower `
-`kernel versions anymore. `[`4`](http://www.xboxhacker.net/index.php?topic=8319.msg53073#msg53073)
+`kernel versions anymore. `[`4`](hhttps://web.archive.org/web/20160406045828/http://www.xboxhacker.net/index.php?topic=8319.msg53073)
 
 `Been thinking about this. I'm now pretty sure when row 2 of the fuses is burned your xbox won't be able to `
-`downgrade or run homebrew anymore (it appears the fuse count number is indeed RSA signed). `[`5`](http://www.xboxhacker.net/index.php?topic=8319.msg53077#msg53077)
+`downgrade or run homebrew anymore (it appears the fuse count number is indeed RSA signed). `[`5`](https://web.archive.org/web/20160406102927/http://www.xboxhacker.net/index.php?topic=8319.msg53077)
 
 surrido:
 
 `you could if it makes you happy wire a switch to the R6T3 and keep it on while being in live and turn it `
-`of when you receive an update. `[`6`](http://www.xboxhacker.net/index.php?topic=8319.msg53191#msg53191)
+`of when you receive an update. `[`6`](https://web.archive.org/web/20160406121008/http://www.xboxhacker.net/index.php?topic=8319.msg53191)
 
 tmbinc:
 
@@ -252,11 +252,11 @@ tmbinc:
 
 `So his question is completely valid: If you remove the resistor, you could end up with an unbootable box `
 `after the next update. But at least you could restore a previous flash. (If you want, you could *then* `
-`re-attach the resistor, and update again, of course loosing the possibility to downgrade). `[`7`](http://www.xboxhacker.net/index.php?topic=8319.msg53197#msg53197)
+`re-attach the resistor, and update again, of course loosing the possibility to downgrade). `[`7`](https://web.archive.org/web/20160406060313/http://www.xboxhacker.net/index.php?topic=8319.msg53197)
 
 ## Current Situation
 
-The last [2007 fall update](http://free60.org/XboxKernel), 6683, is
+The last [2007 fall update](Kernel), 6683, is
 still vulnerable and can be downgraded by timing attacking the HMAC-hash
 value. The update is still vulnerable because the CB (2BL) section of
 the kernel did not change after the update, only the main CE/CF
@@ -267,7 +267,7 @@ The latest revisions of the Xbox 360, the
 [Falcon](Xbox_360_Revisions "wikilink"), has a newer basekernel and CB
 section, 1921, and this version is patched against the
 memcmp-vulnerability
-[8](http://www.xboxhacker.net/index.php?topic=8555.msg58882#msg58882).
+[8](https://web.archive.org/web/20090523022729/http://www.xboxhacker.net/index.php?topic=8555.msg58882).
 Making timing attack on these machines impossible until another
 vulnerability is found.
 
@@ -278,6 +278,6 @@ to fix the memcmp-function in CB.
 
   - [Original Wiki page - Thx
     ivc\!](http://beta.ivc.no/wiki/index.php/Xbox_360_Timing_Attack)
-  - [Timing Attack](http://www.xboxhacker.net/index.php?topic=8555.0)
+  - [Timing Attack](https://web.archive.org/web/20090801082642/http://www.xboxhacker.net/index.php?topic=8555.0)
   - [Timing Attach - Thanks and stupid
-    questions](http://www.xboxhacker.net/index.php?topic=8556.0)
+    questions](https://web.archive.org/web/20090529065610/http://www.xboxhacker.net/index.php?topic=8556.0)
