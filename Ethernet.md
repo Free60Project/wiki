@@ -14,7 +14,7 @@ U1B2)
 
 Comes from Integrated Circuit Systems, Inc.
 
-<./Images/ICS1893BF.jpg>
+![An Image](./Images/ICS1893BF.jpg)
 
 
 ## BCM5241
@@ -29,7 +29,7 @@ Pinout coming soon...
 
 ## 88W8786U-NAP2
 
-<./Images/88W8786U-NAP2.JPG>
+![An Image](./Images/88W8786U-NAP2.JPG)
 
 Comes from Marvell, Inc.
 
