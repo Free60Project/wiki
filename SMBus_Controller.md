@@ -56,7 +56,7 @@ bit 5: abort</p></td>
 </table>
 
 This is very similar (but not identical) to the AMD756/AMD766/AMD768
-SMBus controllers. The lm_sensors project (http://www.lm-sensors.nu/)
+SMBus controllers. The [lm_sensors project](https://web.archive.org/web/20150627102528/http://www.lm-sensors.org/)
 includes GPLed Linux kernel code for it since version 2.6.4
 (kernel/busses/i2c-amd756.c).
 
