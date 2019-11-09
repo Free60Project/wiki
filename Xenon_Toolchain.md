@@ -2,7 +2,7 @@
 
 ### Installing Cygwin
 
-1.  Download [Cygwin](http://www.cygwin.com/setup.exe). Once it's done,
+1.  Download [Cygwin](http://cygwin.com/install.html). Once it's done,
     run the installer. Set the Install Directory to C:\\Cygwin, or what
     ever your root drive path is.
 2.  When prompted for a server, select anyone, they all have the same
@@ -101,9 +101,9 @@ Do the following:
 `cd gcc-4.6.1`
 `wget `<ftp://ftp.gmplib.org/pub/gmp-5.0.2/gmp-5.0.2.tar.bz2>
 `tar xvjf gmp-5.0.2.tar.bz2 && mv gmp-5.0.2 gmp`
-`wget `<http://www.multiprecision.org/mpc/download/mpc-0.9.tar.gz>
+`wget `<http://www.multiprecision.org/downloads/mpc-0.9.tar.gz>
 `tar xvzf mpc-0.9.tar.gz && mv mpc-0.9 mpc `
-`wget `<http://www.mpfr.org/mpfr-current/mpfr-3.0.1.tar.gz>
+`wget `<https://www.mpfr.org/mpfr-3.0.1/mpfr-3.0.1.tar.gz>
 `tar xvzf mpfr-3.0.1.tar.gz && mv mpfr-3.0.1 mpfr`
 `cd ..`
 `./build-xenon-toolchain toolchain`
