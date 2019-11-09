@@ -25,7 +25,9 @@ to NAND, directly via LibXenon application
 
 Official Site: <http://www.libxenon.org>, by cOz
 
+Forum Discussion:
+[libxenon.org archive](https://github.com/Free60Project/libxenon.org-forum/blob/master/xbox-360/downloads/libxenon/212_rawflash-v4.md)
 Download:
-[libxenon.org](http://libxenon.org/index.php?topic=212.0)
+[libxenon.org archive](https://github.com/Free60Project/libxenon.org-forum/blob/master/_attachments/rawflash_v4.zip)
 
 [Category:Xbox360_Homebrew_Software](Category:Xbox360_Homebrew_Software "wikilink")
