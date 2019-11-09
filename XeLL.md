@@ -7,7 +7,7 @@ linux. Thus it also contains a flat device tree for linux. However, it
 should be able to load other ELF files as well, like apps based on
 [libXenon](libXenon "wikilink").
 
-lwIP (http://www.sics.se/~adam/lwip/) is used for networking. Network
+[lwIP](https://en.wikipedia.org/wiki/LwIP) is used for networking. Network
 config is currently hardcoded in network.c (and main.c), and probably
 needs to be modified if you want to use it.
 
