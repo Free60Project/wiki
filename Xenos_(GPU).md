@@ -61,10 +61,10 @@ framebuffer blit functions, or is everybody mmap()ing? -- Ge0rG 15:03,
   - [ATI Xenos: Xbox 360 Graphics
     Demystified](http://www.beyond3d.com/content/articles/4/) at
     Beyond3D
-  - [AMD R6xx R7xx 3D](http://www.x.org/docs/AMD/R6xx_R7xx_3D.pdf) at
+  - [AMD R6xx R7xx 3D](https://www.x.org/docs/AMD/old/R6xx_R7xx_3D.pdf) at
     Xorg.com
   - [R700 Instruction Set
-    Arch](http://developer.amd.com/gpu_assets/R700-Family_Instruction_Set_Architecture.pdf)
+    Arch](http://developer.amd.com/wordpress/media/2012/10/R700-Family_Instruction_Set_Architecture.pdf)
     at developer.amd.com
 
 [Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
