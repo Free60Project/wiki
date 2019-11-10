@@ -5,4 +5,4 @@ of an Xbox 360 [gamepad](gamepad "wikilink") via the
 It is available in the Xbox 360 [Messenger
 Kit](http://en.wikipedia.org/wiki/Xbox_360_accessories#Messenger_Kit).
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

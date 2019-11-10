@@ -8,4 +8,4 @@ The source is available on the [free60 GIT
 Repository](Free60_Git_Repository) in the tools
 section.
 
-[Category:Xbox360_Development](Category_Xbox360_Development.md "wikilink")
+[Category:Xbox360_Development](Category_Xbox360_Development)

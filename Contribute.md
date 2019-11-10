@@ -87,4 +87,4 @@ vulnerable to [vandalism](https://web.archive.org/web/20060927204136/https://en.
 Spotting and reverting cases of vandalism can be anywhere from time
 consuming, to trivial a task. Either way, this is greatly appreciated.
 
-[Category:Support](Category_Support.md "wikilink")
+[Category:Support](Category_Support)

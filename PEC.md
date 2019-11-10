@@ -35,4 +35,4 @@ From 0x1000 the rest of the file is the standard block portion of
 table 0 at 0x1000/0x2000. The PEC file always has 2 hash tables (type 1
 package).
 
-[Category:Xbox360_System_Software](Category_Xbox360_System_Software.md "wikilink")
+[Category:Xbox360_System_Software](Category_Xbox360_System_Software)

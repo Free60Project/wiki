@@ -18,5 +18,5 @@ You could start looking at a code example and write a program which
 (almost) everbody starts with: [Hello World
 :)](LibXenon_Examples "wikilink")
 
-[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software.md "wikilink")
-[Category:Xbox360_Development](Category_Xbox360_Development.md "wikilink")
+[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)
+[Category:Xbox360_Development](Category_Xbox360_Development)

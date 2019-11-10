@@ -211,4 +211,4 @@ datasheet.
 stoker25, open source and semi-complete, has code to do with
 bootloaders/keyvault/filesystem
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

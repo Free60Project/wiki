@@ -25,4 +25,4 @@ replaced with a single red power light on any errors.
   - No more RROD, simple red power light on error (unknown on more
     detail)
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

@@ -186,4 +186,4 @@ ubuntu_gutsy.sh
 ` echo "To finish the installation: Reboot and load the kernel with correct root= params."`
 ` echo "The install  may take up to two hours, depending on your internet connection"`
 
-[Category:Xbox360_Linux](Category_Xbox360_Linux.md "wikilink")
+[Category:Xbox360_Linux](Category_Xbox360_Linux)

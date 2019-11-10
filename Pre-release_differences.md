@@ -66,5 +66,5 @@ Also, console security certificate is incomplete-ish:
 \*Console type is weird, 0x80000002, normally when it ends in 02 it's
 retail :S
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")
-[Category:Xbox360 System Software](Category_Xbox360_System_Software.md "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category:Xbox360 System Software](Category_Xbox360_System_Software)

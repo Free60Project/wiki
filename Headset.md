@@ -6,4 +6,4 @@
   - The old Xbox Live headset will work with the Xbox 360 but volume
     control must then be done through the dashboard.
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

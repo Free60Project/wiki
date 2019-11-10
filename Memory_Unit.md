@@ -79,4 +79,4 @@ But [SPI](http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)
 needs four wires. It's more like I<sup>2</sup>C which needs only two
 lines (SDA, SCL) and optionally WP (Write Protect).
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

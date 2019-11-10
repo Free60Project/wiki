@@ -173,4 +173,4 @@ After that go back to gnome by typing Ctrl+Alt+F7.
 
 Reboot X by typing Ctrl+Alt+Backspace.
 
-[Category:Xbox360_Linux](Category_Xbox360_Linux.md "wikilink")
+[Category:Xbox360_Linux](Category_Xbox360_Linux)

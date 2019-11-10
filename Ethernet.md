@@ -33,4 +33,4 @@ Pinout coming soon...
 
 Comes from Marvell, Inc.
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

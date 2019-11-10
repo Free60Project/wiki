@@ -521,4 +521,4 @@ A new python library
 can read STFS
 files
 
-[Category:Xbox360 System Software](Category_Xbox360_System_Software.md "wikilink")
+[Category:Xbox360 System Software](Category_Xbox360_System_Software)

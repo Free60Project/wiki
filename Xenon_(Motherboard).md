@@ -15,4 +15,4 @@ GPU chip warps away from the motherboard because of excessive heat.
 motherboard.jpg](Xbox_360_revisions_xenon_motherboard.jpg
 "File:Xbox 360 revisions xenon motherboard.jpg")
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

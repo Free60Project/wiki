@@ -279,5 +279,5 @@ Source:
 [google-docs](https://web.archive.org/web/20100713001647/https://docs.google.com/View?id=dnfmv5h_23gw47ddgs) \(archive.org mirror\) &
 [XBH, posted by trancy](http://www.xboxhacker.org/index.php?topic=13618.0)
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")
-[Category:Xbox360 System Software](Category_Xbox360_System_Software.md "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category:Xbox360 System Software](Category_Xbox360_System_Software)

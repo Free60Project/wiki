@@ -304,4 +304,4 @@ XEX files are the default executable format.
     0x184...0x184+(IDC*24)  ImageData0[8], ImageData1[8], ImageData2[8]
     </nowiki>
 
-[Category:Xbox360_System_Software](Category_Xbox360_System_Software.md "wikilink")
+[Category:Xbox360_System_Software](Category_Xbox360_System_Software)

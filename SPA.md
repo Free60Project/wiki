@@ -249,4 +249,4 @@ string.
 | 2      | 2                 | UInt16 | String Length |
 | 4      | **String Length** | String | String        |
 
-[Category:Xbox360_System_Software](Category_Xbox360_System_Software.md "wikilink")
+[Category:Xbox360_System_Software](Category_Xbox360_System_Software)

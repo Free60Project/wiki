@@ -176,4 +176,4 @@ Corona Sources:
 [Source 1](http://en.wikipedia.org/wiki/Xbox_360_technical_specifications#List_of_revisions)
 [Source 2](https://web.archive.org/web/20160515071713/http://www.xboxhacker.org/index.php?topic=17143.0)
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

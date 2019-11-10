@@ -97,4 +97,4 @@ devices.
 **[XMI](XMI "wikilink")**(**X**enon
 **M**usic **I**ndex) is used to index music on the Xbox.
 
-[Category:Xbox360 System Software](Category_Xbox360_System_Software.md "wikilink")
+[Category:Xbox360 System Software](Category_Xbox360_System_Software)

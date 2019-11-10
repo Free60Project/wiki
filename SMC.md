@@ -81,4 +81,4 @@ byte).
 | \[\[SMC_Command_0x83 | 0x83\]\] | 2               | `83 64` |
 |  |
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

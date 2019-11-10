@@ -346,4 +346,4 @@ IDs in Sync List between last and next are
 pushed
 //confirm?
 
-[Category:Xbox360_System_Software](Category_Xbox360_System_Software.md "wikilink")
+[Category:Xbox360_System_Software](Category_Xbox360_System_Software)

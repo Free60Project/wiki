@@ -114,4 +114,4 @@ This table plus more info can be found in the electrical specification
 
   - <http://www.xbox-linux.org/wiki/Differences_between_Xbox_FATX_and_MS-DOS_FAT>
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

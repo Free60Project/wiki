@@ -13,4 +13,4 @@
 
 </onlyinclude>
 
-[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software.md "wikilink")
+[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)

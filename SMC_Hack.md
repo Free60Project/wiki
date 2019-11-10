@@ -726,5 +726,5 @@ By default, the following memory map is used:
 
 But this can be tweaked.
 
-[Category:Xbox360 System Software](Category_Xbox360_System_Software.md "wikilink")
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")
+[Category:Xbox360 System Software](Category_Xbox360_System_Software)
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

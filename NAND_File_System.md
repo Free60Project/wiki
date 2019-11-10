@@ -182,4 +182,4 @@ Xbox360 NAND-Image which is normally 16 MB or 64 MB.
     the original XeLL fails (Bad Update maybe) followed by the original
     XeLL.
 
-[Category:Xbox360 System Software](Category_Xbox360_System_Software.md "wikilink")
+[Category:Xbox360 System Software](Category_Xbox360_System_Software)

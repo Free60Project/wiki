@@ -106,4 +106,4 @@ Guide: [Here](https://web.archive.org/web/20100315185435/http://forums.xbox-scen
 
 [Ubuntu 7.10](Ubuntu7.10 "wikilink") install Script
 
-[Category:Support](Category_Support.md "wikilink")
+[Category:Support](Category_Support)

@@ -81,5 +81,5 @@ from
 
 *Baseband Processor Product Selection table*
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")
-[Category:Pages with missing images](Category_Pages_with_missing_images.md "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category:Pages with missing images](Category_Pages_with_missing_images)

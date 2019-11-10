@@ -41,4 +41,4 @@ controllers.
 TP17 is an unknown signal, connected to test pin TP17 on the RF module
 pcb
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

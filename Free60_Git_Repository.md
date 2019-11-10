@@ -16,4 +16,4 @@ For other repositories take a look at the webinterface of github:
 For LibXenon projects - check out the appropriate Github organization:
 <https://github.com/LibxenonProject>
 
-[Category:Xbox360_Development](Category_Xbox360_Development.md "wikilink")
+[Category:Xbox360_Development](Category_Xbox360_Development)

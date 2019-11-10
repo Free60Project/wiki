@@ -1,1 +1,1 @@
-[Category:Template documentation](Category_Template_documentation.md "wikilink")
+[Category:Template documentation](Category_Template_documentation)

@@ -78,4 +78,4 @@ An alternative method is to use the [Xenon
 Toolchain](Compiling_the_Toolchain "wikilink"). Its using current gcc
 and does not take as long as crossotool to compile.
 
-[Category:Xbox360_Development](Category_Xbox360_Development.md "wikilink")
+[Category:Xbox360_Development](Category_Xbox360_Development)

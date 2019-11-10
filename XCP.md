@@ -30,4 +30,4 @@ xcp files are not new to the Xbox 360.
   - Keys needed for extraction.
   - Need tools to create our own without the Xbox SDK
 
-[Category:Xbox360 System Software](Category_Xbox360_System_Software.md "wikilink")
+[Category:Xbox360 System Software](Category_Xbox360_System_Software)

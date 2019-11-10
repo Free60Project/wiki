@@ -67,4 +67,4 @@ framebuffer blit functions, or is everybody mmap()ing? -- Ge0rG 15:03,
     Arch](http://developer.amd.com/wordpress/media/2012/10/R700-Family_Instruction_Set_Architecture.pdf)
     at developer.amd.com
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
