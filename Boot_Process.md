@@ -139,4 +139,4 @@ It then unloads the following:
 By this time the console will have booted into the dashboard
 
 [Category:Xbox360 System
-Software](Category:Xbox360_System_Software "wikilink")
+Software](Category_Xbox360_System_Software.md "wikilink")

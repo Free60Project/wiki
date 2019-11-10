@@ -251,4 +251,4 @@ No No No and btw
   - [Log in / create
     account](http://www.free60.org/index.php5?title=Special:UserLogin&returnto=Attack)
 
-[Category:Support](Category:Support "wikilink")
+[Category:Support](Category_Support.md "wikilink")

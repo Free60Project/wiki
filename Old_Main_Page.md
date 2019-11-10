@@ -82,4 +82,4 @@ rights, please contact us so that we can find a quick solution.
 interoperable software under Sect. 1201 (f) Reverse Engineering
 exception of the DMCA.*
 
-[Category:Template documentation](Category:Template_documentation "wikilink")
+[Category:Template documentation](Category_Template_documentation.md "wikilink")

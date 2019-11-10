@@ -108,6 +108,5 @@ opening up the DVD-Rom drive from inside out, Inserting a large DVD,
 then lifting it up vertically to do not trigger the eject mode, and then
 inserting a Original XBOX disc will also give you access)
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
-[Category:Pages with missing
-images](Category:Pages_with_missing_images "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")
+[Category:Pages with missing images](Category_Pages_with_missing_images.md "wikilink")

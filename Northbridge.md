@@ -14,4 +14,4 @@ The Xbox 360's North Bridge is integrated into the system's [Xenos
   - 500MB/s read/write (1GB/s total) SIS
     [Southbridge](Southbridge "wikilink") interface (PCI express)
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")

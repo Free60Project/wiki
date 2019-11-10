@@ -79,4 +79,4 @@ hardware threads available to games. Each individual core also includes
   - [CPU Chip for Xbox 360 Manufacturing Overview, FSB, PPC Core, VMX & FPU, & L2 Cache block diagrams](https://web.archive.org/web/20100328024533/http://www.ccw.com.cn/notebook/pczx/sy/htm2005/20051028_16OMI.htm)
     from IBM
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")

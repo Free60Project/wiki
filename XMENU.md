@@ -45,5 +45,4 @@ Ge0rG and ssmurf, because they are nice guys :)
 Cpasjuste @ mydedibox.fr
 ```
 
-[Category:Xbox360_Homebrew_Software](Category:Xbox360_Homebrew_Software "wikilink")
-[Category:Xbox360_Homebrew_Software‏](Category:Xbox360_Homebrew_Software‏ "wikilink")
+[Category:Xbox360_Homebrew_Software‏](Category_Xbox360_Homebrew_Software.md‏ "wikilink")

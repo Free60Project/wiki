@@ -95,4 +95,4 @@ plus interactivity over serial / IR remote or USB controller), or
 possibly in a Linux initramfs (which is easier to implement, but locks
 the user in to one single kernel)
 
-[Category:Support](Category:Support "wikilink")
+[Category:Support](Category_Support.md "wikilink")

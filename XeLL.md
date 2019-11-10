@@ -65,5 +65,4 @@ Hack](Reset_Glitch_Hack "wikilink")- you can even upgrade XeLL via USB.
 **xell-serial.bin** to your Xbox360 and run
 it.
 
-[Category:Xbox360_Homebrew_Software‏](Category:Xbox360_Homebrew_Software‏ "wikilink")
-[Category:Xbox360_Homebrew_Software](Category:Xbox360_Homebrew_Software "wikilink")
+[Category:Xbox360_Homebrew_Software‏](Category_Xbox360_Homebrew_Software.md‏ "wikilink")

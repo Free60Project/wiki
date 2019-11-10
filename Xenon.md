@@ -14,4 +14,4 @@ Xbox 360's development, and mentions of it can still be found in some
 
   - [Xenos](Xenos "wikilink"), the GPU used by the Xbox 360
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")

@@ -72,5 +72,5 @@ move all the sourcecode-files of your project into a folder "source" so
 the Makefile can find
 them.
 
-[Category:Xbox360_Homebrew_Software](Category:Xbox360_Homebrew_Software "wikilink")
-[Category:Xbox360_Development](Category:Xbox360_Development "wikilink")
+[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software.md "wikilink")
+[Category:Xbox360_Development](Category_Xbox360_Development.md "wikilink")

@@ -10,5 +10,5 @@ The source is available on the [free60 GIT
 Repository](Free60_Git_Repository) in the tools
 section.
 
-[Category:Xbox360_Homebrew_Software](Category:Xbox360_Homebrew_Software "wikilink")
-[Category:Xbox360_Linux](Category:Xbox360_Linux "wikilink")
+[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software.md "wikilink")
+[Category:Xbox360_Linux](Category_Xbox360_Linux.md "wikilink")

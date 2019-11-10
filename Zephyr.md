@@ -19,4 +19,4 @@ different set of connections to
   - Shipping with Hitachi 78 or 79 and **BenQ** DVD-Drive. May also have
     Lite-On drive if it was refurbished.
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")

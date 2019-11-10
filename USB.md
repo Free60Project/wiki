@@ -32,4 +32,4 @@ Mod](https://web.archive.org/web/20141105161019/http://www.llamma.com/xbox360/mo
     act as a Slave, a driver \[on the xbox\] would still need to be
     present for any usb endpoints to exist.
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")

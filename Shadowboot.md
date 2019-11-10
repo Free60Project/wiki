@@ -216,5 +216,4 @@ checks. On both the cold boot as well as shadowboot, the 2BL is verified
 with a signature check, which subsequently verifies SD with a signature
 check.
 
-[Category:Xbox360 System
-Software](Category:Xbox360_System_Software "wikilink")
+[Category:Xbox360 System Software](Category_Xbox360_System_Software.md "wikilink")

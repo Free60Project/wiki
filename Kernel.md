@@ -149,4 +149,4 @@ Hack](SMC_Hack), you must not have installed any
 of the 849x kernel updates.
 
 [Category:Xbox360 System
-Software](Category:Xbox360_System_Software "wikilink")
+Software](Category_Xbox360_System_Software.md "wikilink")

@@ -58,4 +58,4 @@ according to the PCB sections (J *X* *Y* *N*).
 
 scheme: <https://web.archive.org/web/20070320235201/http://people.zeelandnet.nl/kbgeldof/j2b1_conn.JPG>
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")

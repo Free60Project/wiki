@@ -30,4 +30,4 @@ Forum Discussion:
 Download:
 [libxenon.org archive](https://github.com/Free60Project/libxenon.org-forum/blob/master/_attachments/rawflash_v4.zip)
 
-[Category:Xbox360_Homebrew_Software](Category:Xbox360_Homebrew_Software "wikilink")
+[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software.md "wikilink")

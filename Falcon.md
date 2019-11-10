@@ -39,4 +39,4 @@ they were shipped in.
   - **Opus only available from Xenon being repaired by MS**
   - Very Rare
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware.md "wikilink")

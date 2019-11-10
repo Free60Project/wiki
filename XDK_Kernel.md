@@ -51,4 +51,4 @@
 | 2.0.20500.1     | 2.0.13139.0       | XeDK                                                                                                                                                                                        |
 
 [Category:Xbox360 System
-Software](Category:Xbox360_System_Software "wikilink")
+Software](Category_Xbox360_System_Software.md "wikilink")

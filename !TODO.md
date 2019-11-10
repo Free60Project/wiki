@@ -1,5 +1,5 @@
-still broken links, comments etc:
-every category link at the end of the file is broken
+# still broken links, comments etc:
+
 
 Attack.md 109 perhabs link to early version of Boot_Process.md
 Attack.md 242-252 things from the website

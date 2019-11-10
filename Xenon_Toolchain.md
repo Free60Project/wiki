@@ -127,4 +127,4 @@ filename Press Ctrl+X for closing nano
 
 Have fun compiling your code ;)
 
-[Category:Xbox360_Development](Category:Xbox360_Development "wikilink")
+[Category:Xbox360_Development](Category_Xbox360_Development.md "wikilink")

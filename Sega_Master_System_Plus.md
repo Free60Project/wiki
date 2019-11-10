@@ -20,5 +20,4 @@ Source: <http://www.multiupload.com/62T7RVYB5A>
       Tmbinc
       Charles MacDonald
 
-[Category:Xbox360_Homebrew_Software](Category:Xbox360_Homebrew_Software "wikilink")
-[Category:Xbox360_Homebrew_Software](Category:Xbox360_Homebrew_Software "wikilink")
+[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software.md "wikilink")
