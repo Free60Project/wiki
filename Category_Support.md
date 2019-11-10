@@ -1,10 +1,10 @@
 # Category: Support
 
-<Attack.md>
-<Contribute.md>
-<FAQ.md>
-<Help.md>
-<IRC.md>
-<King_Kong_Hack.md>
-<Links.md>
-<Run_Code.md>
+<Attack>
+<Contribute>
+<FAQ>
+<Help>
+<IRC>
+<King_Kong_Hack>
+<Links>
+<Run_Code>

@@ -1,15 +1,15 @@
 # Category: Xbox 360 Linux
 
-<Debian-etch.md>
-<Debian-lenny.md>
-<Debian-squeeze.md>
-<Lflash.md>
-<Linux_Distros.md>
-<Linux_Kernel.md>
-<Linux_Kernel_Development.md>
-<List_of_Unix_Distributions.md>
-<LiveCD.md>
-<Ubuntu.md>
-<Ubuntu11.10.md>
-<Ubuntu7.10.md>
-<Xenos_Framebuffer.md>
+<Debian-etch>
+<Debian-lenny>
+<Debian-squeeze>
+<Lflash>
+<Linux_Distros>
+<Linux_Kernel>
+<Linux_Kernel_Development>
+<List_of_Unix_Distributions>
+<LiveCD>
+<Ubuntu>
+<Ubuntu11.10>
+<Ubuntu7.10>
+<Xenos_Framebuffer>
