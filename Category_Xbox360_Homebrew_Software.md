@@ -1,7 +1,7 @@
 # Category: Xbox 360 Homebrew Software
 
 [360FlashTool](360FlashTool)
-[Genesis Plud](Genesis_Plud)
+[Genesis Plus](Genesis_Plus)
 [Lflash](Lflash)
 [LibHomebrew](LibHomebrew)
 [LibXenon](LibXenon)
