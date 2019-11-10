@@ -1,5 +1,5 @@
 # Category: Template documentation
 
-<Old_Main_Page>
-<Other_OS_Loader>
-<Sandbox>
+[Old Main Page](Old_Main_Page)
+[Other OS Loader](Other_OS_Loader)
+[Sandbox](Sandbox)

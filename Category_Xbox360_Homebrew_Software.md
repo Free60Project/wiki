@@ -1,35 +1,35 @@
 # Category: Xbox 360 Homebrew Software
 
-<360FlashTool>
-<Genesis_Plud>
-<Lflash>
-<LibHomebrew>
-<LibXenon>
-<LibXenon_Examples>
-<List_of_homebrew_applications>
-<List_of_homebrew_emulators>
-<List_of_homebrew_games>
-<List_of_homebrew_loaders>
-<List_of_PC_utilities>
-<List_of_system_tools>
-<Mupen64-360>
-<NandCompare>
-<NANDPro>
-<PCSXR_Xenon>
-<PC_Software>
-<Pong>
-<Rawflash>
-<Run_Code>
-<SDLQuake>
-<Sega_Genesis_Plus_GX>
-<Sega_Master_System_Plus>
-<Snes9x-Gx>
-<Starting_Homebrew_Development>
-<Tanks_360>
-<UART>
-<Utilities>
-<XeLL>
-<XeLL_Reloaded>
-<XMENU>
-<XMPlayer>
-<ZLX_Browser>
+[360FlashTool](360FlashTool)
+[Genesis Plud](Genesis_Plud)
+[Lflash](Lflash)
+[LibHomebrew](LibHomebrew)
+[LibXenon](LibXenon)
+[LibXenon Examples](LibXenon_Examples)
+[List of homebrew applications](List_of_homebrew_applications)
+[List of homebrew emulators](List_of_homebrew_emulators)
+[List of homebrew games](List_of_homebrew_games)
+[List of homebrew_loaders](List_of_homebrew_loaders)
+[List of PC utilities](List_of_PC_utilities)
+[List of system tools](List_of_system_tools)
+[Mupen64-360](Mupen64-360)
+[NandCompare](NandCompare)
+[NANDPro](NANDPro)
+[PCSXR Xenon](PCSXR_Xenon)
+[PC Software](PC_Software)
+[Pong](Pong)
+[Rawflash](Rawflash)
+[Run Code](Run_Code)
+[SDLQuake](SDLQuake)
+[Sega Genesis_Plus_GX](Sega_Genesis_Plus_GX)
+[Sega Master_System_Plus](Sega_Master_System_Plus)
+[Snes9x-Gx](Snes9x-Gx)
+[Starting Homebrew Development](Starting_Homebrew_Development)
+[Tanks 360](Tanks_360)
+[UART](UART)
+[Utilities](Utilities)
+[XeLL](XeLL)
+[XeLL Reloaded](XeLL_Reloaded)
+[XMENU](XMENU)
+[XMPlayer](XMPlayer)
+[ZLX Browser](ZLX_Browser)

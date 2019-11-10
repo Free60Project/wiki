@@ -1,4 +1,4 @@
 # Category: Pages with missing images
 
-<DVD_Drive>
-<Wifi_Adapter>
+[VD Drive](DVD_Drive)
+[Wifi Adapter](Wifi_Adapter)
