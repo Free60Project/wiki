@@ -55,4 +55,4 @@
     your Non-Disclosure Agreement, while tainting the project at the
     same time. Note, however, IANAL and TINLA.
 
-[Category:Support](Category:Support "wikilink")
+[Category:Support](Category_Support)

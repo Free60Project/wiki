@@ -9,7 +9,7 @@ console to another. Please help making this idea real\!
 
 For every (hacked) hardware, there is a homebrew lib / toolchain:
 
-  - [Libxenon](http://www.free60.org/LibXenon) for guess what ;)
+  - [Libxenon](LibXenon) for guess what ;)
   - [libogc](http://www.devkitpro.org/category/libogc/) for Wii,
     GameCube
   - [OpenXDK](https://sourceforge.net/projects/openxdk/) for Xbox 1
@@ -93,5 +93,5 @@ looks like a promising ground. It contains its own libc implementation,
 whereas most homebrew projects are using newlib
 instead.
 
-[Category:Xbox360_Homebrew_Software](Category:Xbox360_Homebrew_Software "wikilink")
-[Category:Xbox360_Development](Category:Xbox360_Development "wikilink")
+[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)
+[Category:Xbox360_Development](Category_Xbox360_Development)

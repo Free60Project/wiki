@@ -97,7 +97,7 @@ Reboot X by typing Ctrl+Alt+Backspace.
 as it is broken, to attempt to install it
 <http://ubuntuforums.org/showthread.php?t=1116368> , or simply install
 this
-<http://3dslice.net/downloads/PrimeGen/ibm-j2sdk1.6_1.6.0_powerpc.deb>
+[http://3dslice.net/downloads/PrimeGen/ibm-j2sdk1.6_1.6.0_powerpc.deb](https://web.archive.org/web/20110810200730/http://3dslice.net/downloads/PrimeGen/ibm-j2sdk1.6_1.6.0_powerpc.deb)
 )
 
 
@@ -186,4 +186,4 @@ ubuntu_gutsy.sh
 ` echo "To finish the installation: Reboot and load the kernel with correct root= params."`
 ` echo "The install  may take up to two hours, depending on your internet connection"`
 
-[Category:Xbox360_Linux](Category:Xbox360_Linux "wikilink")
+[Category:Xbox360_Linux](Category_Xbox360_Linux)

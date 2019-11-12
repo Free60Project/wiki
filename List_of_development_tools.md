@@ -39,4 +39,4 @@ functionality.
 | --------------- | --------------- | ----------------------- |
 | \[\[Placeholder | Placeholder\]\] | Description Placeholder |
 
-[Category:Xbox360_Development](Category:Xbox360_Development "wikilink")
+[Category:Xbox360_Development](Category_Xbox360_Development)

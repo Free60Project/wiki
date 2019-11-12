@@ -24,4 +24,4 @@ It is possible to boot Ubuntu by using an Xbox 360 which has had the
 You find the current working Ubuntu-installationscript here:
 [Ubuntu7.10](Ubuntu7.10 "wikilink")
 
-[Category:Xbox360_Linux](Category:Xbox360_Linux "wikilink")
+[Category:Xbox360_Linux](Category_Xbox360_Linux)

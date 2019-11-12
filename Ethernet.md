@@ -14,8 +14,8 @@ U1B2)
 
 Comes from Integrated Circuit Systems, Inc.
 
-![<File:ICS1893BF.jpg>](ICS1893BF.jpg
-"File:ICS1893BF.jpg")
+![An Image](./images/ICS1893BF.jpg)
+
 
 ## BCM5241
 
@@ -29,8 +29,8 @@ Pinout coming soon...
 
 ## 88W8786U-NAP2
 
-![<File:88W8786U-NAP2.JPG>](88W8786U-NAP2.JPG "File:88W8786U-NAP2.JPG")
+![An Image](./images/88W8786U-NAP2.JPG)
 
 Comes from Marvell, Inc.
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

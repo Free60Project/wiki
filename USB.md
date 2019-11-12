@@ -13,7 +13,7 @@ the [FATX](FATX "wikilink") file system.
 Can be used to add hard disk and get around DRM.
 
 SEE: [USB Hard Drive
-Mod](http://www.llamma.com/xbox360/mods/USB%20Hard%20Drive%20Mod.htm)
+Mod](https://web.archive.org/web/20141105161019/http://www.llamma.com/xbox360/mods/USB%20Hard%20Drive%20Mod.htm)
 
 ## Speculation
 
@@ -32,4 +32,4 @@ Mod](http://www.llamma.com/xbox360/mods/USB%20Hard%20Drive%20Mod.htm)
     act as a Slave, a driver \[on the xbox\] would still need to be
     present for any usb endpoints to exist.
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

@@ -10,4 +10,4 @@ Back to [Xbox Software](Xbox_Software "wikilink")
 ♦ [Debian-squeeze](Debian-squeeze "wikilink")
 
 
-[Category:Xbox360_Linux](Category:Xbox360_Linux "wikilink")
+[Category:Xbox360_Linux](Category_Xbox360_Linux)

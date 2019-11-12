@@ -17,7 +17,7 @@ Source: <http://www.multiupload.com/6QYQL218GB>
               Folder Icon:  uda:/mddir.png
 
     Contact:
-      http://ced2911.wata.fr | cedric2911@free.fr
+      [http://ced2911.wata.fr](https://web.archive.org/web/20110108141423/http://ced2911.wata.fr:80/) | cedric2911@free.fr
 
     Thanks:
       Tmbinc
@@ -27,5 +27,4 @@ Source: <http://www.multiupload.com/6QYQL218GB>
       Authors of Genesis Plus Wii and Dc
       Charles MacDonald
 
-[Category:Xbox360_Homebrew_Software](Category:Xbox360_Homebrew_Software "wikilink")
-[Category:Xbox360_Homebrew_Software](Category:Xbox360_Homebrew_Software "wikilink")
+[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)

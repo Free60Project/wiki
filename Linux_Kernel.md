@@ -163,6 +163,6 @@ Remember, these patches are Experimental\!
 
 ## Pre-compiled Kernels
 
-<http://home.comcast.net/~ssmurf/XeLL-Bootloader-sda2-v2.6.24.3.tar.gz>
+[http://home.comcast.net/~ssmurf/XeLL-Bootloader-sda2-v2.6.24.3.tar.gz](https://web.archive.org/web/20141025055552/http://home.comcast.net/~ssmurf/XeLL-Bootloader-sda2-v2.6.24.3.tar.gz) \(archive.org)
 
-[Category:Xbox360_Linux](Category:Xbox360_Linux "wikilink")
+[Category:Xbox360_Linux](Category_Xbox360_Linux)

@@ -5,12 +5,12 @@
 ![<File:nandpinout.png>](nandpinout.png
     "File:nandpinout.png")
 
-  - [Datasheet](http://www.hynix.com/datasheet/pdf/flash/HY27US\(08_16\)281A%20Series\(Rev0.6\).pdf)
+  - [Datasheet](https://web.archive.org/web/20150112073857/http://www.hynix.com/datasheet/pdf/flash/HY27US(08_16)281A%20Series(Rev0.6).pdf)
 
 <!-- end list -->
 
   - SMT socket that should work if you choose to remove yours:
-    <http://www.emulation.com/cgi-cfm/insert_quantity.cfm?part_number=S%2DTSO%2DSM%2D048%2DA>,
+    <https://web.archive.org/web/20111206034431/http://www.emulation.com:80/cgi-cfm/insert_quantity.cfm?part_number=S%2DTSO%2DSM%2D048%2DA>,
 
 Attached to [Southbridge](Southbridge "wikilink")
 
@@ -171,7 +171,7 @@ to be a Atmel 25020 EEPROM. The chip model reads:
 `SU18`
 
 Datasheet can be found
-[here](http://www.atmel.com/dyn/resources/prod_documents/doc3348.pdf).
+[here](https://web.archive.org/web/20061005163428/http://www.atmel.com/dyn/resources/prod_documents/doc3348.pdf).
 
 This chip is a low power 2048 bit serial EEPROM according to the
 datasheet.
@@ -199,7 +199,7 @@ This chip reads:
 `SU18`
 
 Datasheet can be found
-[here](http://www.atmel.com/dyn/resources/prod_documents/doc0180.pdf)
+[here](https://web.archive.org/web/20061224151351/http://www.atmel.com/dyn/resources/prod_documents/doc0180.pdf)
 
 This chip is a low power 4096 bit serial EEPROM according to the
 datasheet.
@@ -211,4 +211,4 @@ datasheet.
 stoker25, open source and semi-complete, has code to do with
 bootloaders/keyvault/filesystem
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

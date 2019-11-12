@@ -97,12 +97,12 @@ This (probably) explains why normal 3.5" sata drives won't even spin up
 your own 12V.
 
 This table plus more info can be found in the electrical specification
-[here](http://www.sata-io.org/docs/PHYii%20Spec%20Rev%201_0%20052604.pdf).
+[here](https://web.archive.org/web/20060509104841/http://www.sata-io.org/docs/PHYii%20Spec%20Rev%201_0%20052604.pdf).
 (Table 17, Page 117)
 
 ## External Links
 
-  - <http://watertastesgood.com/xbox/delta.py>
+  - [http://watertastesgood.com/xbox/delta.py]()
       - Tool to help do binary diffs of HDD images, courtesy of
     Daeken
 
@@ -114,4 +114,4 @@ This table plus more info can be found in the electrical specification
 
   - <http://www.xbox-linux.org/wiki/Differences_between_Xbox_FATX_and_MS-DOS_FAT>
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

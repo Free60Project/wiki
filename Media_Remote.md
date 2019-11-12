@@ -311,4 +311,4 @@ linux. So 'if' a Mediacenter is ever ported to Xbox 360 Linux, you could
 use the official remote. (IR codes and info retrieved by Icekiller, with
 SMC.C from tmbinc, small remote by kwkward)
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

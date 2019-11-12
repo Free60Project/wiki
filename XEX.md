@@ -2,7 +2,7 @@
 
 XEX is the executable file format used by the Xbox 360 operating system.
 It seems to be a crypto and packing container for PPC PE executable
-files, comparable to [UPX](http://upx.sourceforge.net/) or TEEE Burneye.
+files, comparable to [UPX](https://upx.github.io/) or TEEE Burneye.
 It's likely the 360 knows how to grab the section it needs into memory
 and decrypt/decompress on demand, instead of traditional all at once
 extraction.
@@ -212,20 +212,20 @@ These appear to be important strings found in the update file
 
 There are currently at least four XEX files freely available on the net:
 
-  - [Original Xbox Game Support November 2005 update](http://assets.xbox.com/en-us/backwardcompatibility/default.zip) found on <http://www.xbox.com/en-US/games/backwardscompatibility.htm>.
+  - [Original Xbox Game Support November 2005 update](https://web.archive.org/web/20070311061307/http://assets.xbox.com/en-us/backwardcompatibility/default.zip) found on [http://www.xbox.com/en-US/games/backwardscompatibility.htm](https://web.archive.org/web/20090906002445/http://www.xbox.com/en-US/games/backwardscompatibility.htm).
 
-  - [Original Xbox Game Support December 2005 update](http://download.microsoft.com/download/5/8/a/58a10dbc-9445-4eed-83d5-22f8ad8ee855/default.zip) found on <http://www.xbox.com/en-US/games/backwardscompatibility.htm>.
+  - [Original Xbox Game Support December 2005 update](https://web.archive.org/web/20070315222633/http://download.microsoft.com/download/5/8/a/58a10dbc-9445-4eed-83d5-22f8ad8ee855/default.zip) found on [http://www.xbox.com/en-US/games/backwardscompatibility.htm](https://web.archive.org/web/20090906002445/http://www.xbox.com/en-US/games/backwardscompatibility.htm).
 
-  - [Windows XP Media Center Edition Update Rollup 2](http://download.microsoft.com/download/2/8/5/28521E1E-120E-4D05-8310-3E43F2734431/XboxMCELite-ENU.exe) from <http://www.xbox.com/en-US/pcsetup/alldownloads.htm>. Use [cabextract](http://www.kyz.uklinux.net/cabextract.php) to extract the executable file, then do the same on mcrdinstaller/ehd.cab inside the archive. This cabinet file contains XboxMcx.xex.
+  - [Windows XP Media Center Edition Update Rollup 2](https://web.archive.org/web/20070312113401/http://download.microsoft.com/download/2/8/5/28521E1E-120E-4D05-8310-3E43F2734431/XboxMCELite-ENU.exe) from [http://www.xbox.com/en-US/pcsetup/alldownloads.htm](https://web.archive.org/web/20091029113316/http://www.xbox.com/en-US/pcsetup/alldownloads.htm). Use [cabextract](https://www.cabextract.org.uk/) to extract the executable file, then do the same on mcrdinstaller/ehd.cab inside the archive. This cabinet file contains XboxMcx.xex.
 
-  - [XBOX 360 HD DVD Update](http://www.xbox.com/en-US/hardware/x/xbox360hddvdplayer/downloadredirect.htm) found on <http://www.xbox.com/en-us/hardware/x/xbox360hddvdplayer/download.htm#disc>
+  - [XBOX 360 HD DVD Update](https://web.archive.org/web/20090422010822/http://www.xbox.com/en-US/hardware/x/xbox360hddvdplayer/downloadredirect.htm) found on [http://www.xbox.com/en-us/hardware/x/xbox360hddvdplayer/download.htm#disc](https://web.archive.org/web/20090805081318/http://www.xbox.com/en-us/hardware/x/xbox360hddvdplayer/download.htm)
 
 ## Programs
 
-  - [xextools](http://www.neotokyo.phear.org/misc/xextools-0.2.tar.bz2)
+  - [xextools](https://web.archive.org/web/20070808071312/http://www.neotokyo.phear.org/misc/xextools-0.2.tar.bz2)
     -- A library and tools for manipulating xex files (xexread
     replacement).
-  - [xexdump](http://oskarsapps.mine.nu/xexdump) -- Dumps information
+  - [xexdump](https://web.archive.org/web/20060629000929/http://oskarsapps.mine.nu/xexdump) -- Dumps information
     about xex files (perl)
   - [xexdump](http://www.chaosorder.org/xexdump.zip) -- Dumps
     information about xex files (windows)
@@ -304,5 +304,4 @@ XEX files are the default executable format.
     0x184...0x184+(IDC*24)  ImageData0[8], ImageData1[8], ImageData2[8]
     </nowiki>
 
-[Category:Xbox360 System Software](Category:Xbox360_System_Software "wikilink")
-[Category:Xbox360_System_Software](Category:Xbox360_System_Software "wikilink")
+[Category:Xbox360_System_Software](Category_Xbox360_System_Software)

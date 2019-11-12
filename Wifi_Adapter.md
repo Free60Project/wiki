@@ -1,13 +1,12 @@
 # Introduction
 
-[<File:Wlan>
-back.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_back.jpg)
+[<File:Wlan>back.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_back.jpg)
 
 FCC ID:C3K-WKS168
 IC: 3048A-WKS168
 
 The [Wireless Network
-Adapter](http://www.xbox.com/en-US/hardware/x/xbox360wirelessnetadapter/)
+Adapter](https://web.archive.org/web/20150226023206/http://www.xbox.com:80/en-US/xbox-360/accessories/cablesnetworking/Xbox360WirelessNNetworkingAdapter)
 is a dual-band (2.4/5GHz) 802.11a/b/g interface for the Xbox 360.
 
 This is a standard USB 2.0 device, and although it is designed to clamp
@@ -17,21 +16,17 @@ below.
 
 # Disassembly
 
-[<File:Wlan> all
-pieces.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_all_pieces.jpg)
+[<File:Wlan> all pieces.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_all_pieces.jpg)
 
 Disassembled; bottom and top covers, PCB, USB cable and antenna
 
-[<File:Wlan> back
-opened.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_back_opened.jpg)
+[<File:Wlan> back opened.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_back_opened.jpg)
 
-PCB underside, with [Hannstar Board
-Corp.](http://www.hannstarboard.com/index.htm) inscription.
+PCB underside, with [Hannstar Board Corp.](http://www.hannstarboard.com/wps/wcm/connect/english/tw) inscription.
 
 # Integrated Circuits
 
-[<File:Wlan> front
-opened.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_front_opened.jpg)
+[<File:Wlan> front opened.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_front_opened.jpg)
 
 PCB upper-side, showing the major ICs
 
@@ -48,13 +43,13 @@ resistor.
 
 There's no readily available datasheet for this particular IC, however,
 one for it's modular *MDx-G16* counterpart is, for
-[download](http://www.marvell.com/products/power/dspswitchermodule/MV-S101948-00C.pdf).
+[download](https://web.archive.org/web/20071005220740/http://www.marvell.com/products/power/dspswitchermodule/MV-S101948-00C.pdf).
 There's a two-page
-[brochure](http://www.marvell.com/products/power/dspswitcher/DSPSwitcher_MVPG15_16_30_31.pdf)
+[brochure](https://web.archive.org/web/20070415092855/http://www.marvell.com/products/power/dspswitcher/DSPSwitcher_MVPG15_16_30_31.pdf)
 as well, but is rather lacking in the more technical details.
 
 Product information page at
-<http://www.marvell.com/products/power/dspswitcher/index.jsp>
+[http://www.marvell.com/products/power/dspswitcher/index.jsp](https://web.archive.org/web/20090603221217/http://www.marvell.com/products/power/dspswitcher/index.jsp)
 
 
 
@@ -66,7 +61,7 @@ Product information page at
 `TW`
 
 The 88W8388 is an 802.11a/b/g WLAN SoC from Marvell. Embedded are an
-[ARM946E-S](http://arm.com/products/CPUs/ARM946E-S.html) core (as per
+[ARM946E-S](https://web.archive.org/web/20100408074133/http://www.arm.com/products/processors/classic/arm9/arm946.php) core (as per
 the ARM [Networking.pdf Networking](http://www.arm.com/pdfs/116-4)
 brochure) and on-chip memory. Together with an integrated TCP/IP stack,
 this allows for off-loading the host processor of protocol processing.
@@ -75,7 +70,7 @@ phones, PDAs, video game consoles, etc.
 
 The 88W8388 is 88W88305-derived, as indicated below (table reproduced
 from
-<http://www.clv.macnica.co.jp/product/marvell/sub1.html>):
+[http://www.clv.macnica.co.jp/product/marvell/sub1.html](https://web.archive.org/web/20070624073712/http://www.clv.macnica.co.jp/product/marvell/sub1.html)\):
 
 | Part no. | b/g/a | Package option                                        | CLK Type                                              | Interface                 | Feature/Advantage                                             |
 | -------- | ----- | ----------------------------------------------------- | ----------------------------------------------------- | ------------------------- | ------------------------------------------------------------- |
@@ -86,6 +81,5 @@ from
 
 *Baseband Processor Product Selection table*
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
-[Category:Pages with missing
-images](Category:Pages_with_missing_images "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category:Pages with missing images](Category_Pages_with_missing_images)

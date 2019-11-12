@@ -59,7 +59,7 @@
     Xell hack released by the guys over at www.free60.org
 
     Build based off the sources from http://code.google.com/p/snes9x-gx/ & compiled
-    using LibXenon found at http://www.free60.org/wiki/Libxenon
+    using LibXenon found at https://github.com/LibxenonProject
 
     All Code used to create LibXenon & to compile this port, is opensourse &
     contains no Microsoft XDK code making it legal to distribute the .ELF files.
@@ -113,5 +113,4 @@
     -------------------------------------------------------------------------------
     -------------------------------------------------------------------------------
 
-[Category:Xbox360_Homebrew_Software](Category:Xbox360_Homebrew_Software "wikilink")
-[Category:Xbox360_Homebrew_Software](Category:Xbox360_Homebrew_Software "wikilink")
+[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)

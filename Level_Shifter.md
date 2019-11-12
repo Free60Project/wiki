@@ -14,4 +14,4 @@ Solder all according to this picture.
 Now you just hook it up like on the diagram showed on this page: [Serial
 Console](Serial_Console "wikilink")
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

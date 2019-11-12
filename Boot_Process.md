@@ -96,7 +96,7 @@ development systems):
   - Initialize phase 1 thread (?)
   - Phase 1 initialization and processors initialization
   - Initialize keyvault
-  - Initialize HAL [1](https://en.wikipedia.org/wiki/HAL_\(software\))
+  - Initialize HAL [1](https://en.wikipedia.org/wiki/HAL_(software))
     phase 1
   - Initialize SFC driver (?)
   - Initialize security (?)
@@ -139,4 +139,4 @@ It then unloads the following:
 By this time the console will have booted into the dashboard
 
 [Category:Xbox360 System
-Software](Category:Xbox360_System_Software "wikilink")
+Software](Category_Xbox360_System_Software)

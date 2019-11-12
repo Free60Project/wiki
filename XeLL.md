@@ -7,7 +7,7 @@ linux. Thus it also contains a flat device tree for linux. However, it
 should be able to load other ELF files as well, like apps based on
 [libXenon](libXenon "wikilink").
 
-lwIP (http://www.sics.se/~adam/lwip/) is used for networking. Network
+[lwIP](https://en.wikipedia.org/wiki/LwIP) is used for networking. Network
 config is currently hardcoded in network.c (and main.c), and probably
 needs to be modified if you want to use it.
 
@@ -65,5 +65,4 @@ Hack](Reset_Glitch_Hack "wikilink")- you can even upgrade XeLL via USB.
 **xell-serial.bin** to your Xbox360 and run
 it.
 
-[Category:Xbox360_Homebrew_Software‏](Category:Xbox360_Homebrew_Software‏ "wikilink")
-[Category:Xbox360_Homebrew_Software](Category:Xbox360_Homebrew_Software "wikilink")
+[Category:Xbox360_Homebrew_Software‏](Category_Xbox360_Homebrew_Software.md‏ "wikilink")

@@ -276,10 +276,8 @@ anyway and then look to the spare area for a relocated block.)
 \--[Xb0xGuru](User:Xb0xGuru "wikilink") 15:19, 24 February 2013 (UTC)
 
 Source:
-[google-docs](https://docs.google.com/View?id=dnfmv5h_23gw47ddgs) &
-[XBH, posted by
-trancy](http://www.xboxhacker.org/index.php?topic=13618.0)
+[google-docs](https://web.archive.org/web/20100713001647/https://docs.google.com/View?id=dnfmv5h_23gw47ddgs) \(archive.org mirror\) &
+[XBH, posted by trancy](http://www.xboxhacker.org/index.php?topic=13618.0)
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
-[Category:Xbox360 System
-Software](Category:Xbox360_System_Software "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category:Xbox360 System Software](Category_Xbox360_System_Software)

@@ -35,4 +35,4 @@ Both strings have to be ANSI, use RtlInitAnsiString to make them
 As above, use RtlInitAnsiString to make the string
 
 [Category:Xbox360 System
-Software](Category:Xbox360_System_Software "wikilink")
+Software](Category_Xbox360_System_Software)

@@ -307,6 +307,4 @@ number.
 | Possible Cluster Sizes      | 4 KB (0x1000 bytes, 0x8 sectors per cluster), 8 KB (0x2000, 0x10 SPC),16 KB (0x4000, 0x20 SPC), 32 KB (0x8000, 0x40 SPC), 64 KB (0x10000, 0x80 SPC) |
 | File/Folder Name Characters | ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789                                                                                      |
 
-[Category:Xbox360 System
-Software](Category:Xbox360_System_Software "wikilink")
-[Category:Xbox360_System_Software](Category:Xbox360_System_Software "wikilink")
+[Category:Xbox360_System_Software](Category_Xbox360_System_Software)

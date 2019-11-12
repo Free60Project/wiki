@@ -25,27 +25,27 @@ format K:2.0.XXXX.0, where XXXX is your kernel version.
 </tr>
 <tr class="odd">
 <td><p>2.0.2255.0</p></td>
-<td><p><a href="http://www.xbox.com/en-US/community/news/2006/0130-autoupdate.htm">January 30, 2006</a></p></td>
+<td><p><a href="https://web.archive.org/web/20090123053325/http://www.xbox.com/en-US/community/news/2006/0130-autoupdate.htm">January 30, 2006</a></p></td>
 <td><p>Blocklist for certain .xex file</p></td>
 </tr>
 <tr class="even">
 <td><p>2.0.2258.0</p></td>
-<td><p><a href="http://www.xbox.com/en-US/community/news/2006/0302-autoupdate.htm">March 2, 2006</a></p></td>
+<td><p><a href="https://web.archive.org/web/20090114221950/https://www.xbox.com/en-US/community/news/2006/0302-autoupdate.htm">March 2, 2006</a></p></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><p>2.0.2858.0</p></td>
-<td><p><a href="http://www.xbox.com/en-US/community/news/2006/0605-springrelease-features.htm">June 05, 2006</a></p></td>
+<td><p><a href="https://web.archive.org/web/20090123023903/http://www.xbox.com/en-US/community/news/2006/0605-springrelease-features.htm">June 05, 2006</a></p></td>
 <td></td>
 </tr>
 <tr class="even">
 <td><p>2.0.4532.0</p></td>
-<td><p><a href="http://www.xbox.com/en-US/community/news/2006/1030-novemberupdate-completelist.htm">October 31, 2006</a></p></td>
+<td><p><a href="https://web.archive.org/web/20090116101552/http://www.xbox.com/en-US/community/news/2006/1030-novemberupdate-completelist.htm">October 31, 2006</a></p></td>
 <td><p>New identifier X with value 2BB7-8E09-0188-D795</p></td>
 </tr>
 <tr class="odd">
 <td><p>2.0.4548.0</p></td>
-<td><p><a href="http://xbox360.qj.net/Dashboard-Update-The-1080p-fix/pg/49/aid/74661">November 30, 2006</a></p></td>
+<td><p><a href="https://web.archive.org/web/20090815175425/http://xbox360.qj.net/Dashboard-Update-The-1080p-fix/pg/49/aid/74661">November 30, 2006</a></p></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -55,22 +55,22 @@ format K:2.0.XXXX.0, where XXXX is your kernel version.
 </tr>
 <tr class="odd">
 <td><p>2.0.5759.0</p></td>
-<td><p><a href="http://www.xbox.com/en-US/community/news/2007/0408-im.htm">May 9, 2007</a></p></td>
+<td><p><a href="https://web.archive.org/web/20090124144219/http://www.xbox.com/en-US/community/news/2007/0408-im.htm">May 9, 2007</a></p></td>
 <td><p>Added Instant Messaging</p></td>
 </tr>
 <tr class="even">
 <td><p>2.0.5766.0</p></td>
-<td><p><a href="http://www.majornelson.com/archive/2007/08/07/xbox-360-system-update-august-07.aspx">August 7, 2007</a></p></td>
+<td><p><a href="https://web.archive.org/web/20101129094800/http://majornelson.com/archive/2007/08/07/xbox-360-system-update-august-07.aspx">August 7, 2007</a></p></td>
 <td><p>Wireless guitars Yet unknown fixes</p></td>
 </tr>
 <tr class="odd">
 <td><p>2.0.6683.0</p></td>
-<td><p><a href="http://www.xbox.com/en-US/support/systemupdates/20071204-features.htm">December 4, 2007</a></p></td>
+<td><p><a href="https://web.archive.org/web/20090129234833/http://www.xbox.com/en-US/support/systemupdates/20071204-features.htm">December 4, 2007</a></p></td>
 <td><p>Fall Update. Timing attack works (dependant on CB).</p></td>
 </tr>
 <tr class="even">
 <td><p>2.0.6717.0</p></td>
-<td><p><a href="http://majornelson.com/archive/2008/08/06/xbox-360-system-update-now-available-no-new-features-august-2008.aspx">August 6, 2008</a></p></td>
+<td><p><a href="https://web.archive.org/web/20101125055409/http://majornelson.com/archive/2008/08/06/xbox-360-system-update-now-available-no-new-features-august-2008.aspx">August 6, 2008</a></p></td>
 <td><p>Scalability Updates</p></td>
 </tr>
 <tr class="odd">
@@ -105,22 +105,22 @@ format K:2.0.XXXX.0, where XXXX is your kernel version.
 </tr>
 <tr class="odd">
 <td><p>2.0.8507.0</p></td>
-<td><p><a href="http://majornelson.com/archive/2009/09/23/xbox-360-system-update-rolling-out-no-new-feature.aspx">September 23, 2009</a></p></td>
+<td><p><a href="https://web.archive.org/web/20100529102042/http://majornelson.com/archive/2009/09/23/xbox-360-system-update-rolling-out-no-new-feature.aspx">September 23, 2009</a></p></td>
 <td><p>Preparation for newer dash</p></td>
 </tr>
 <tr class="even">
 <td><p>2.0.8955.0</p></td>
-<td><p><a href="http://majornelson.com/archive/2009/10/28/xbox-360-system-update-wireless-adapter-wpa2-support.aspx">October 28, 2009</a></p></td>
+<td><p><a href="https://web.archive.org/web/20100531091537/http://majornelson.com/archive/2009/10/28/xbox-360-system-update-wireless-adapter-wpa2-support.aspx">October 28, 2009</a></p></td>
 <td><p>Blocking 3rd party storage devices, adding WPA2 support for wireless adapters</p></td>
 </tr>
 <tr class="odd">
 <td><p>2.0.9199.0</p></td>
-<td><p><a href="http://majornelson.com/archive/2010/04/06/xbox-360-system-update-usb-memory-support.aspx">April 6, 2010</a></p></td>
+<td><p><a href="https://web.archive.org/web/20101212005004/http://majornelson.com/archive/2010/04/06/xbox-360-system-update-usb-memory-support.aspx">April 6, 2010</a></p></td>
 <td><p>USB storage support added</p></td>
 </tr>
 <tr class="even">
 <td><p>2.0.12611.0</p></td>
-<td><p><a href="http://majornelson.com/archive/2010/11/01/xbox-360-dashboard-update-is-now-available-november-2010.aspx">November 1, 2010</a></p></td>
+<td><p><a href="https://web.archive.org/web/20110310115019/https://majornelson.com/archive/2010/11/01/xbox-360-dashboard-update-is-now-available-november-2010.aspx">November 1, 2010</a></p></td>
 <td><p>GUI upgrade for Kinect release, ESPN on Xbox LIVE released</p></td>
 </tr>
 <tr class="odd">
@@ -145,8 +145,8 @@ Minor bugfix.<br />
 
 
 Please note: In order to use the [SMC
-Hack](http://www.free60.org/SMC_Hack), you must not have installed any
+Hack](SMC_Hack), you must not have installed any
 of the 849x kernel updates.
 
 [Category:Xbox360 System
-Software](Category:Xbox360_System_Software "wikilink")
+Software](Category_Xbox360_System_Software)

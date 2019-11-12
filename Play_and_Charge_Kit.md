@@ -16,4 +16,4 @@ serial EEPROM chip. Presumably the controller checks the EEPROM to
 verify that the battery pack has been charged fewer than a factory-set
 number of times and stops charging if that number is exceeded.
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

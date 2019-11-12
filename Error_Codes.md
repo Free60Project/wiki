@@ -42,6 +42,5 @@ Error 79 has been known during obvious signs of graphic corruption.
   - Error 74 can be fixed by disconnecting and reconnecting the hard
     drive. This would be in contrast to the Dennis-Mooney-Quote.
 
-[Category:Xbox360 System
-Software](Category:Xbox360_System_Software "wikilink")
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360 System Software](Category_Xbox360_System_Software)
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

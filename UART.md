@@ -93,6 +93,6 @@ It is also possible to use some cheap [cell phone data
 cables](http://wiki.openwrt.org/oldwiki/openwrtdocs/customizing/hardware/serial_console#cellphone.data.cables)
 as a PC interface.
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
-[Category:Xbox360_Development](Category:Xbox360_Development "wikilink")
-[Category:Xbox360_Homebrew_Software](Category:Xbox360_Homebrew_Software "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category:Xbox360_Development](Category_Xbox360_Development)
+[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)

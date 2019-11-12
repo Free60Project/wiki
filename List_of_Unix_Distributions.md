@@ -18,4 +18,4 @@
 
 </onlyinclude>
 
-[Category:Xbox360_Linux](Category:Xbox360_Linux "wikilink")
+[Category:Xbox360_Linux](Category_Xbox360_Linux)

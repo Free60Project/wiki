@@ -66,6 +66,7 @@ Other theory (less plausible) is that it might be a NXP (Philips)
 [P89LPC901FD
 microcontroller](http://www.nxp.com/pip/P89LPC901_902_903-05.html) with
 its die upside down?
+archive.org mirror: [here](https://web.archive.org/web/20070629141142/https://www.nxp.com/pip/P89LPC901_902_903-05.html)
 
 When supplying 3.3 volts to the Memory Unit:
 Measurements at pins 5, 6, and 7 show that there is a clock signal of
@@ -78,4 +79,4 @@ But [SPI](http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)
 needs four wires. It's more like I<sup>2</sup>C which needs only two
 lines (SDA, SCL) and optionally WP (Write Protect).
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

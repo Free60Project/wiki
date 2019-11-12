@@ -26,15 +26,13 @@ your Nand [Flash](Flash "wikilink")
 
 \- The JTAG points are available for a number of consoles
 
-**Xenon**: ![X_Jtag_free60.png‎](X_Jtag_free60.png‎
-"X_Jtag_free60.png‎")
+**Xenon**: ![X_Jtag_free60.png‎](./images/X_Jtag_free60.png "X_Jtag_free60.png‎")
 
 **Falcon**, **Zephyr**, **Opus** &*' Jasper*':
-![ZFOJ_Jtag_free60.jpg‎](ZFOJ_Jtag_free60.jpg‎
-"ZFOJ_Jtag_free60.jpg‎")
+![ZFOJ_Jtag_free60.jpg‎](./images/ZFOJ_Jtag_free60.jpg "ZFOJ_Jtag_free60.jpg‎")
 
 **Falcon**, **Zephyr**, **Opus** &*' Jasper*' Reverse Jtag:
-![Reversejatg.jpg‎](Reversejatg.jpg‎ "Reversejatg.jpg‎")
+![Reversejatg.jpg‎](.images/Reversejatg.jpg‎ "Reversejatg.jpg‎")
 
 \- To read and write the Nand Flash (using SPI protocol by LPT and a
 printer cable), there is a friendly tutorial at [NAND
@@ -728,6 +726,5 @@ By default, the following memory map is used:
 
 But this can be tweaked.
 
-[Category:Xbox360 System
-Software](Category:Xbox360_System_Software "wikilink")
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360 System Software](Category_Xbox360_System_Software)
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

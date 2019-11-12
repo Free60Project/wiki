@@ -4,7 +4,7 @@ and was originally exclusively available only with Elite consoles.
 
 Performing the [SMC Hack](SMC_Hack "wikilink") requires a slightly
 different set of connections to
-[Xenon](Xenon_\(Motherboard\) "wikilink") motherboards.
+[Xenon](Xenon_(Motherboard) "wikilink") motherboards.
 
   - Consoles: Arcade, Pro/Premium 20GB, Elite 120GB, and Halo 3 Console
   - 90nm IBM CPU & ATI GPU
@@ -19,4 +19,4 @@ different set of connections to
   - Shipping with Hitachi 78 or 79 and **BenQ** DVD-Drive. May also have
     Lite-On drive if it was refurbished.
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

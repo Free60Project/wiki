@@ -89,4 +89,4 @@ entry, workout the actual length of the free space table.
 \+ 24, 24 is the length of the
 header.
 
-[Category:Xbox360_System_Software](Category:Xbox360_System_Software "wikilink")
+[Category:Xbox360_System_Software](Category_Xbox360_System_Software)

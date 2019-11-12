@@ -151,6 +151,5 @@ This is how the bootloaders do it
         }
     }
 
-[Category:Xbox360 System
-Software](Category:Xbox360_System_Software "wikilink")
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360 System Software](Category_Xbox360_System_Software)
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

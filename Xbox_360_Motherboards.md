@@ -8,7 +8,7 @@ well as links to their respective pages.
 '''NOTE TO MAINTAINERS: ''' This page is often ripped apart by spam
 bots\! Please check and revert any unwanted changes regularly\!
 
-## [Xenon](Xenon_\(Motherboard\) "wikilink") (V1)
+## [Xenon](Xenon_(Motherboard) "wikilink") (V1)
 
 The original Xbox 360 configuration used in the initial Premium and Core
 machines released in the end of November 2005.
@@ -173,8 +173,7 @@ Reset Glitch Hack, so they removed the HANA Chip. So it seems Microsoft
 found the exploit days before GliGli brought it out for the public.
 
 Corona Sources:
-[Source 1](http://en.wikipedia.org/wiki/Xbox_360_hardware#List_of_revisions)
-[Source 2](http://www.xboxhacker.org/index.php?topic=17143.0)
+[Source 1](http://en.wikipedia.org/wiki/Xbox_360_technical_specifications#List_of_revisions)
+[Source 2](https://web.archive.org/web/20160515071713/http://www.xboxhacker.org/index.php?topic=17143.0)
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

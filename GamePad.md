@@ -61,4 +61,4 @@ inserting a 3.3 Volts positive regulator between VUSB (red) and VCC on
 rated for 5V - if anyone has a spare trash controller he could try it
 without fear of frying the pad...
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)

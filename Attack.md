@@ -44,7 +44,7 @@ possible or not**
         compromises the actual XBOX360 security.
   - Patched games
       - [Patching
-        (French)](http://www.presence-pc.com/actualite/kong-ubi-13474/)
+        (French)](https://web.archive.org/web/20100201124753/http://www.presence-pc.com/actualite/kong-ubi-13474/)
       - (early versions?) king kong will need a patch in order to be
         playable under some screens
       - The patch needs a hdd
@@ -79,7 +79,7 @@ possible or not**
       - Fuzzing services/network connections
   - File system drivers
       - Manipulating entries like the partition table, etc [Hard Drive
-        Mod.htm \[1](http://llamma.com/xbox360/mods/USB)\]
+        Mod.htm \[1](https://web.archive.org/web/20141105161019/http://llamma.com:80/xbox360/mods/USB%20Hard%20Drive%20Mod.htm)\]
   - Decompression routines
       - Cause a buffer overflow
 
@@ -88,13 +88,13 @@ possible or not**
   - DMA attack
       - Someone has developed an exploit for Firewire DMA [FireWire -
         all your memory belongs to
-        us](http://md.hudora.de/presentations/#firewire-cansecwest)
+        us](https://web.archive.org/web/20130216101933/http://md.hudora.de/presentations#firewire-cansecwest)
       - Firewire can copy data between two firewire hdd without using
         the cpu at all (no irq gestion ...)
       - Maybe retrieve some data that can't be retrieved
       - USB and IDE that have DMA
           - Maybe it doesn't work with non-Firewire devices
-      - Video: [\[2](http://lufgi4.informatik.rwth-aachen.de/movies/)\]
+      - Video: [\[2](https://web.archive.org/web/20060427215314/http://lufgi4.informatik.rwth-aachen.de/movies/)\]
         [for linux](http://libquicktime.sourceforge.net/)
 
 <!-- end list -->
@@ -116,7 +116,7 @@ possible or not**
     has some basic bitswapping and xor-ing which was defeated quickly,
     maybe potential to change it?
       - Good technical thread
-        [here](http://www.xboxhacker.net/forums/index.php?topic=76.0) at
+        [here]https://web.archive.org/web/20060820135835/http://www.xboxhacker.net:80/forums/index.php?topic=76.0) at
         xboxhacker.net. Unfortunately, it starts in the name of backups,
         but it contains large amounts of insight as to how the DVD
         system functions. Signing code would still be a problem, but
@@ -202,12 +202,12 @@ necessary)
 ressourcesÂ :
 
 \- metasploit, a huge DB for exloits and shellcodes
-<http://metasploit.com/>
+<https://metasploit.com/>
 
-\- milw0rm, exploits <http://milw0rm.com/>
+\- milw0rm, exploits [milw0rm.com](https://web.archive.org/web/20100528133654/http://www.milw0rm.com/)
 
 \- fuzzing file and network
-<http://rtos.trinux.org/secwiki/FuzzingTools>
+[http://rtos.trinux.org/secwiki/FuzzingTools](https://web.archive.org/web/20060715225715/http://rtos.trinux.org:80/secwiki/FuzzingTools)
 
 ## XEX executables
 
@@ -251,4 +251,4 @@ No No No and btw
   - [Log in / create
     account](http://www.free60.org/index.php5?title=Special:UserLogin&returnto=Attack)
 
-[Category:Support](Category:Support "wikilink")
+[Category:Support](Category_Support)

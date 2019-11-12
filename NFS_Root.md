@@ -6,7 +6,7 @@ This tutorial assumes that you already have [XeLL](XeLL "wikilink") and
 To do this you may have to edit your kernel on your host machine to
 enable nfs.
 For **Gentoo**:
-[Instructions](http://en.gentoo-wiki.com/wiki/NFS/Server).
+[Instructions](https://web.archive.org/web/20130412162546/http://en.gentoo-wiki.com/wiki/NFS/Server).
 For **Debian/Ubuntu**:
 [Instructions](http://www.cyberciti.biz/faq/nfs4-server-debian-ubuntu-linux)
 Your **/etc/exports** should look like this:

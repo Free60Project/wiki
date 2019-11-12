@@ -31,4 +31,4 @@ Notes](http://sourceforge.net/project/shownotes.php?group_id=139616&release_id=5
 
 `It is the second revision of the Gentoo LiveCD BETA including the latest kernel updates for the Xbox 360. Download size is around 621MB.`
 
-[Category:Xbox360_Linux](Category:Xbox360_Linux "wikilink")
+[Category:Xbox360_Linux](Category_Xbox360_Linux)

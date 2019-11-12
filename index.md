@@ -7,7 +7,23 @@ To submit changes:
 2. Make changes
 3. Send a Pull Request
 
+## Categories
+
+[Xbox360_Hardware](Category_Xbox360_Hardware "wikilink")
+[Xbox360 System Software](Category_Xbox360_System_Software "wikilink")
+
+[Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software "wikilink")
+[Xbox360_Linux](Category_Xbox360_Linux "wikilink")
+[Xbox360_Development](Category_Xbox360_Development "wikilink")
+
+[Support](Category_Support "wikilink")
+
+[Pages with missing images](Category_Pages_with_missing_images "wikilink")
+[Template documentation](Category_Template_documentation "wikilink")
+
 ## Index
+
+[TODO](!TODO.md)
 
 [1bl Code](1bl_Code.md)
 

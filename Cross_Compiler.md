@@ -1,10 +1,10 @@
 ### From Free60
 
-The Xbox 360 [CPU](http://www.free60.org/CPU) is based on IBM's Power
+The Xbox 360 [CPU](Xenon_(CPU)) is based on IBM's Power
 Architecture. Unless you have a machine with PowerPC CPU and Linux
 running (such as an older Mac or a PS3), you need to set up a cross
 compiler toolchain in order to compile code like the [Linux
-Kernel](http://www.free60.org/Linux_Kernel) for your Xbox 360.
+Kernel](Linux_Kernel) for your Xbox 360.
 
 A typical cross compiler toolchain for the GNU compiler collection
 usually consists of three major parts:
@@ -60,7 +60,7 @@ or use *sudo* like in the example:
 `    ./demo-powerpc-970.sh`
 
 **4. Get a drink**, go for a walk or use the time to remove the resistor
-[R6T3](http://www.free60.org/R6T3) from the mainboard of your Xbox
+[R6T3](R6T3) from the mainboard of your Xbox
 360... Compilation of your cross compiler will just take a while.
 
 **5. When finished**, you may want to add your cross compiler binaries
@@ -70,7 +70,7 @@ variable.
 `    export PATH=$PATH:/opt/crosstool/gcc-4.1.0-glibc-2.3.6/powerpc64-unknown-linux-gnu/bin`
 
 You're done. Feel free to configure and compile your [Linux
-Kernel](http://www.free60.org/Linux_Kernel).
+Kernel](Linux_Kernel).
 
 ## Using the Xenon Toolchain
 
@@ -78,4 +78,4 @@ An alternative method is to use the [Xenon
 Toolchain](Compiling_the_Toolchain "wikilink"). Its using current gcc
 and does not take as long as crossotool to compile.
 
-[Category:Xbox360_Development](Category:Xbox360_Development "wikilink")
+[Category:Xbox360_Development](Category_Xbox360_Development)

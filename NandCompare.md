@@ -68,5 +68,5 @@
       1.1 (2009/12/13) - support for 512mb nand (assumes same block size as 16mb)
       1.0 (2009/12/12) - first release
 
-[Category:Xbox360_Homebrew_Software](Category:Xbox360_Homebrew_Software "wikilink")
-[Category:Xbox360_Homebrew_Software](Category:Xbox360_Homebrew_Software "wikilink")
+
+[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)

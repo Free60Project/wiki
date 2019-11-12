@@ -11,4 +11,4 @@ chatting audio is heard through the microphone. They aren't as popular
 as they used to be probably because of the Kinect having all of these
 features and much more built in.
 
-[Category:Xbox360_Hardware](Category:Xbox360_Hardware "wikilink")
+[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
