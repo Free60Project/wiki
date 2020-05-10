@@ -1,0 +1,5 @@
+ 
+site_name: Free60 Wiki archive
+nav:
+    - Home: index.md
+theme: mkdocs
