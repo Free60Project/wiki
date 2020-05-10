@@ -1,13 +1,9 @@
-Back to [Xbox Software](Xbox_Software "wikilink")
-♦ [LiveCD](LiveCD "wikilink")
+# Linux distributions
 
-♦ [Ubuntu7.10](Ubuntu7.10 "wikilink")
+* [LiveCD](../LiveCD)
+* [Ubuntu7.10](../Ubuntu7.10)
+* [Debian-etch](../Debian-etch)
+* [Debian-lenny](../Debian-lenny)
+* [Debian-squeeze](../Debian-squeeze)
 
-♦ [Debian-etch](Debian-etch "wikilink")
-
-♦ [Debian-lenny](Debian-lenny "wikilink")
-
-♦ [Debian-squeeze](Debian-squeeze "wikilink")
-
-
-[Category:Xbox360_Linux](Category_Xbox360_Linux)
+[Category:Xbox360_Linux](../Category_Xbox360_Linux)

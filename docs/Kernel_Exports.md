@@ -1,3 +1,5 @@
+# Kernel exports
+
 ## RtlInitAnsiString
 
 **Parameters**: OUT PANSI_STRING OutputString, IN LPCSTR String
@@ -5,8 +7,10 @@
 **Prototype**: void RtlInitAnsiString( PANSI_STRING, LPCSTR );
 **Example**:
 
-    ANSI_STRING DeviceName;
-    RtlInitAnsiString(&DeviceName, "\\Device\\Harddisk0\\Partition1");
+```cpp
+ANSI_STRING DeviceName;
+RtlInitAnsiString(&DeviceName, "\\Device\\Harddisk0\\Partition1");
+```
 
 ## ObCreateSymbolicLink
 
@@ -17,8 +21,10 @@ DeviceName
 );
 **Example**:
 
-    int result = ObCreateSymbolicLink( "\\??\\hdd:", "\\Device\\Harddisk0\\Partition1" );
-    (wont actually work)
+```cpp
+int result = ObCreateSymbolicLink( "\\??\\hdd:", "\\Device\\Harddisk0\\Partition1" );
+(wont actually work)
+```
 
 Both strings have to be ANSI, use RtlInitAnsiString to make them
 
@@ -29,10 +35,11 @@ Both strings have to be ANSI, use RtlInitAnsiString to make them
 **Prototype**: int ObDeleteSymbolicLink( PANSI_STRING );
 **Example**:
 
-    int result = ObDeleteSymbolicLink( "\\??\\hdd:" );
-    (wont actually work)
+```cpp
+int result = ObDeleteSymbolicLink( "\\??\\hdd:" );
+(wont actually work)
+```
 
-As above, use RtlInitAnsiString to make the string
+As above, use `RtlInitAnsiString` to make the string
 
-[Category:Xbox360 System
-Software](Category_Xbox360_System_Software)
+[Category:Xbox360 System Software](../Category_Xbox360_System_Software)

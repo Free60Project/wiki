@@ -1,6 +1,6 @@
-## King Kong Hack (outdated)
+# King Kong Hack (outdated)
 
-### 1\. You need an Xbox with a kernel version of 4532 or 4548
+## 1. You need an Xbox with a kernel version of 4532 or 4548
 
 You can check your kernel version in "System -\> Console Settings -\>
 System Info". The line at the bottom contains your kernel version in the
@@ -17,9 +17,9 @@ kernel on brand new xbox 360s. Note, I have just bought a premium pack
 with a MFG date of 16th May 2006, and the kernel version was 5759, so a
 new kernel on a 2006's Xbox 360.
 
-Source: Run_Code
+Source: [Run_Code](../Run_Code)
 
-### 2\. Upgrading the kernel to 4532
+## 2. Upgrading the kernel to 4532
 
 If your kernel version is older than 4532 or 4548, you can update to one
 of these versions. Do not update to a version newer than 4598\! You
@@ -36,11 +36,11 @@ updater using the cached Kernel Updater, which is newer then the Kernel
 4532\! If you don't remove the HDD, then the Kernel Updater will use the
 cached Kernel Updater from the HDD and not from the CD\!
 
-Source: Run_Code
+Source: [Run_Code](../Run_Code)
 
 Download: [Here](http://www.360mods.net/Downloads/details/id=76.html)
 
-### 3\. Flashing the DVD-ROM Drive
+## 3. Flashing the DVD-ROM Drive
 
 Different tactics depending on the DVD model in your box. There are some
 excellent Firmware Flashing Tutorials on the net, which we won't link
@@ -48,19 +48,19 @@ here for site policy reasons. This does mean opening your Xbox 360 as
 such warranty is void, Microsoft are known to be working on a way of
 checking this and banning any flashed Xbox 360's from Xbox Live.
 
-### 4\. Buy King Kong and make an image
+## 4. Buy King Kong and make an image
 
 There are two versions of King Kong available. The patcher currently
 does not work with the newer "classics" version of "King Kong". If in
 doubt, buy the oldest version you can get. Backing up won't be covered
 here for site policy reasons, but the net is your friend again.
 
-### 5\. Patch your King Kong image
+## 5. Patch your King Kong image
 
 There are two King Kong patches available right now. The first was the
 one by Crawler360: Launch the modified game, press START on the title
 screen, and a very simple loader will be launched that allows uploading
-your code through a [serial cable](Serial_Console "wikilink"). There is
+your code through a [serial cable](../Serial_Console). There is
 a newer patch in the wild by xorloser, which allows booting directly
 from CDROM.
 
@@ -76,7 +76,7 @@ Source: Included readme
 Download:
 [Here](http://www.mydedibox.fr/~free60/get_file.php?file=KK_Shader_Exploit_XELL_READCD.zip)
 
-### 6\. Get Linux
+### 6. Get Linux
 
 ”This LiveCD is based on the BETA Gentoo LiveCD. It includes our X.org
 framebuffer driver and a Gnome Desktop environment. Download size is
@@ -91,19 +91,19 @@ Source: LiveCD
 Download:
 [Here](http://downloads.sourceforge.net/free60/gentoo-livecd-xenon-beta-v2.iso)
 
-### 7\. Get it started
+### 7. Get it started
 
 Switch on your Xbox 360, and load up the patched King Kong, and press
 **start** on the title screen. Wait until the tray opens. Insert the
 Linux CD. Close the tray. A few second later, you should be greeted by
 some penguins.
 
-### 8\. Install it to Harddisk (optional)
+### 8. Install it to Harddisk (optional)
 
 Guide: [Here](https://web.archive.org/web/20100315185435/http://forums.xbox-scene.com/index.php?showtopic=595543
 
-[Debian etch](Debian-etch "wikilink") install Script (Recommended)
+[Debian etch](../Debian-etch) install Script (Recommended)
 
-[Ubuntu 7.10](Ubuntu7.10 "wikilink") install Script
+[Ubuntu 7.10](../Ubuntu7.10) install Script
 
-[Category:Support](Category_Support)
+[Category:Support](../Category_Support)

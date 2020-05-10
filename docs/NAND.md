@@ -1,22 +1,22 @@
-![Flash.jpg](Flash.jpg "Flash.jpg")
+# NAND
+
+![Flash.jpg](../images/Flash.jpg "Flash.jpg")
 
 ## Flash memory
 
-![<File:nandpinout.png>](nandpinout.png
-    "File:nandpinout.png")
+![<File:nandpinout.png>](../images/nandpinout.png)
 
-  - [Datasheet](https://web.archive.org/web/20150112073857/http://www.hynix.com/datasheet/pdf/flash/HY27US(08_16)281A%20Series(Rev0.6).pdf)
+- [Datasheet](https://web.archive.org/web/20150112073857/http://www.hynix.com/datasheet/pdf/flash/HY27US(08_16)281A%20Series(Rev0.6).pdf)
 
-<!-- end list -->
 
-  - SMT socket that should work if you choose to remove yours:
-    <https://web.archive.org/web/20111206034431/http://www.emulation.com:80/cgi-cfm/insert_quantity.cfm?part_number=S%2DTSO%2DSM%2D048%2DA>,
+- SMT socket that should work if you choose to remove yours:
+  https://web.archive.org/web/20111206034431/http://www.emulation.com:80/cgi-cfm/insert_quantity.cfm?part_number=S%2DTSO%2DSM%2D048%2DA
 
-Attached to [Southbridge](Southbridge "wikilink")
+Attached to [Southbridge](../Southbridge)
 
 ## NAND Points on Motherboard for FAT
 
-![<File:Nandreadpins.jpg>](Nandreadpins.jpg "File:Nandreadpins.jpg")
+![<File:Nandreadpins.jpg>](../images/Nandreadpins.jpg)
 
 ## NAND Points on Motherboard for SLIM
 
@@ -25,10 +25,10 @@ comming soon
 ## Different Sizes
 
 On different Motherboard Revision also different NANDs were used.
-[Xenon](Xenon "wikilink")-, [Zephyr](Zephyr "wikilink")-,
-[Falcon](Falcon "wikilink")-, [Opus](Opus "wikilink")- and some
-[Jasper](Jasper "wikilink")-Consoles (Retails) are using 16MB NANDs,
-other [Jasper](Jasper "wikilink")-Consoles (Retail),Arcade Bundles which
+[Xenon](../Xenon)-, [Zephyr](../Zephyr)-,
+[Falcon](../Falcon)-, [Opus](../Opus)- and some
+[Jasper](../Jasper)-Consoles (Retails) are using 16MB NANDs,
+other [Jasper](../Jasper)-Consoles (Retail),Arcade Bundles which
 came without a HDD, got a 256MB or 512MB NAND onboard. Only 64MB of
 these 256/512MB NAND are used for system files, the rest is used as an
 internal Memory Unit. All Development-/Demo-/Reviewer-/Test-Kits got at
@@ -92,22 +92,19 @@ either small or large blocks.
 
 ## Simple Calculations
 
-Have an address which is without
-    ECC?
+Have an address which is without ECC?
 
-    realaddr = (addr / 512) * 528 + (realaddr % (mod) 512 > 0 ? realaddr % (mod) 512 : 0);
+`realaddr = (addr / 512) * 528 + (realaddr % (mod) 512 > 0 ? realaddr % (mod) 512 : 0);`
 
-This also works in
-    reverse:
+This also works in reverse:
 
-    addr = (realaddr / 528) * 512 + (realaddr % (mod) 528 > 0 ? realaddr % (mod) 528 : 0);
+`addr = (realaddr / 528) * 512 + (realaddr % (mod) 528 > 0 ? realaddr % (mod) 528 : 0);`
 
 ## Reading/Writing
 
 The Flash can be written or read using a number of methods. If you have
-the old shader hack running the easiest is using
-[lflash](lflash "wikilink"). You can also wire LPT directly to the flash
-using this
+the old shader hack running the easiest is using [lflash](../lflash).
+You can also wire LPT directly to the flash using this
 [diagram](http://img19.imageshack.us/img19/5198/wiringforxenondiagram.jpg).
 As well, you can build your own USB SPI Flasher with [this
 diagram](http://img35.imageshack.us/img35/8949/xbox360usbflasher.png)
@@ -120,7 +117,7 @@ is flashed, you can then install it using the drivers from NandPro or
 use TeamXecuters NANDX drivers.
 
 Once wired you can read/write to the chip using software such as
-[NandPro](NandPro "wikilink").
+[NandPro](../NandPro).
 
 In software the NAND is mapped to memory address 0x80000200C8000000.
 
@@ -131,9 +128,6 @@ In software the NAND is mapped to memory address 0x80000200C8000000.
 ## Sectors
 
   - 1: copyright notice, zeros, unencrypted numbers
-
-<!-- end list -->
-
   - 2: encrypted data
 
 @2MB filesystem, unencrypted, but content encrypted, config not
@@ -141,13 +135,12 @@ In software the NAND is mapped to memory address 0x80000200C8000000.
 ## NAND File System
 
 Informations about the Filesystem on the Xbox360 NAND Flash can be found
-[here](NAND_File_System "wikilink")
+[here](../NAND_File_System)
 
 ## Bad Blocks
 
 Its possible that bad blocks appears when reading/writing to the NAND.
-For solving these look at the following page: [Bad
-Blocks](NAND:Bad_Blocks "wikilink")
+For solving these look at the following page: [Bad Blocks](../NAND#Bad_Blocks)
 
 ## Small flash chip close to CPU
 
@@ -156,19 +149,20 @@ the following pictures.
 
 No chip:
 
-•![<File:x360Pro_noeeprom.jpg>](x360Pro_noeeprom.jpg
-"File:x360Pro_noeeprom.jpg")
+![<File:x360Pro_noeeprom.jpg>](../images/x360Pro_noeeprom.jpg)
 
 Here is a high-res picture of a premium box with the chip:
 
-•![eeprom.jpg](eeprom.jpg "eeprom.jpg")
+![eeprom.jpg](../images/eeprom.jpg)
 
 As discussed in this article on the xboxhacker.net forums, this appears
 to be a Atmel 25020 EEPROM. The chip model reads:
 
-`ATMEL524`
-`25020AN`
-`SU18`
+```
+ATMEL524
+25020AN
+SU18
+```
 
 Datasheet can be found
 [here](https://web.archive.org/web/20061005163428/http://www.atmel.com/dyn/resources/prod_documents/doc3348.pdf).
@@ -176,27 +170,27 @@ Datasheet can be found
 This chip is a low power 2048 bit serial EEPROM according to the
 datasheet.
 
-  - If the small chip near the CPU is removed the Xbox will boot up and
-    function just fine \[Darkmoon 360 experiments\]
+- If the small chip near the CPU is removed the Xbox will boot up and
+  function just fine \[Darkmoon 360 experiments\]
 
-<!-- end list -->
-
-  - According to IBM the CPU has "An interface for a serial EEPROM in
-    case patch logic configuration was needed during bring-up"
+- According to IBM the CPU has "An interface for a serial EEPROM in
+  case patch logic configuration was needed during bring-up"
 
 ## Small flash chip on front panel
 
 There is another Atmel chip on the front panel:
 
-<File:Atmel2.jpg>
+[<File:Atmel2.jpg>](../images/Atmel2.jpg)
 
 Atmel 528 serial EEPROM
 
 This chip reads:
 
-`ATMEL528`
-`24C04N`
-`SU18`
+```
+ATMEL528
+24C04N
+SU18
+```
 
 Datasheet can be found
 [here](https://web.archive.org/web/20061224151351/http://www.atmel.com/dyn/resources/prod_documents/doc0180.pdf)
@@ -211,4 +205,4 @@ datasheet.
 stoker25, open source and semi-complete, has code to do with
 bootloaders/keyvault/filesystem
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category:Xbox360_Hardware](../Category_Xbox360_Hardware)

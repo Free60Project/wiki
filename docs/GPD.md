@@ -1,14 +1,16 @@
+# GPD (Game Profile Data)
+
 **GPD** (**G**ame **P**rofile **D**ata) files are used by the Xbox 360
 to store information inside a profile. They are based on the
-[XDBF](XDBF "wikilink") format. Profiles are composed of many of these
+[XDBF](../XDBF) format. Profiles are composed of many of these
 files, each named under their respective titles id (e.g. 4D5307E6.gpd
-for Halo 3). The dashboard GPD (FFFE07D1.gpd) contains information and
+for Halo 3). The dashboard GPD (`FFFE07D1.gpd`) contains information and
 sync information about all the
 titles.
 
-# Entry Table
+## Entry Table
 
-## Entry Namespaces
+### Entry Namespaces
 
 | Value | Description                                                               |
 | ----- | ------------------------------------------------------------------------- |
@@ -20,7 +22,7 @@ titles.
 | 6     | Achievement Security (created by GFWL for offline unlocked achievements?) |
 | 6     | Avatar Award (360 only, this is only stored with in the \[\[PEC           |
 
-## Entry IDs
+### Entry IDs
 
 An ID of 0x100000000 indicates that the entry is a Sync List, an ID of
 0x200000000 means its a Sync Data entry. In **PEC** (**P**rofile
@@ -37,8 +39,8 @@ the id enclosed in the entry data.
 | ----------------------------------- | ----------- |
 | Sync List                           | 0x100000000 |
 | Sync Data                           | 0x200000000 |
-| Sync List (\[\[PEC                  | PEC\]\])    |
-| Sync Data (\[\[PEC                  | PEC\]\])    |
+| Sync List (PEC)                     | PEC         |
+| Sync Data (PEC)                     | PEC         |
 | Option Controller Vibration         | 0x10040003  |
 | Title Specific 1                    | 0x63E83FFF  |
 | Title Specific 2                    | 0x63E83FFE  |
@@ -77,12 +79,11 @@ the id enclosed in the entry data.
 | Avatar Image                        | 0x8007      |
 
 Setting IDs are largely deterministic, based on there type max length
-see [sample
-code](http://pastebin.com/mW3fmvpG)
+see [sample code](http://pastebin.com/mW3fmvpG)
 
-# Entry Structures
+## Entry Structures
 
-## Achievement Entries
+### Achievement Entries
 
 | Offset                                                 | Length          | Type                         | Information          |
 | ------------------------------------------------------ | --------------- | ---------------------------- | -------------------- |
@@ -98,85 +99,87 @@ code](http://pastebin.com/mW3fmvpG)
 
 ### Flags
 
-`       public enum AchievementTypes : byte`
-`       {`
-`           Completion = 1,`
-`           Leveling = 2,`
-`           Unlock = 3,`
-`           Event = 4,`
-`           Tournament = 5,`
-`           Checkpoint = 6,`
-`           Other = 7,`
-`       }`
+```cs
+public enum AchievementTypes : byte
+{
+    Completion = 1,
+    Leveling = 2,
+    Unlock = 3,
+    Event = 4,
+    Tournament = 5,
+    Checkpoint = 6,
+    Other = 7,
+}
 
-`       public System.UInt32 Flags;`
-`       public AchievementTypes AchievementType`
-`       {`
-`           get`
-`           {`
-`               return (AchievementTypes)(Flags & 7);`
-`           }`
-`           set`
-`           {`
-`               if ((System.Byte)value > 7) // to may bits in use :O`
-`                   throw new Exceptions.InvalidAchievement(new System.Exception("Invalid Type"));`
-`               if (value != Type)`
-`               {`
-`                   Flags ^= 4294967288; // Null the 3 bits`
-`                   Flags ^= (System.Byte)Type; // set the new`
-`               }`
-`           }`
-`       }`
-`       public System.Boolean AchievementShowUnachieved // !Sectet`
-`       {`
-`           get`
-`           {`
-`               return (Flags & 8) == 8;`
-`           }`
-`           set`
-`           {`
-`               if (value != ShowUnachieved)`
-`                   Flags ^= 8;`
-`           }`
-`       }`
-`       public System.Boolean AchievementEarnedOnline`
-`       {`
-`           get`
-`           {`
-`               return (Flags & 65536) == 65536;`
-`           }`
-`           set`
-`           {`
-`               if (value != AchievementEarnedOnline)`
-`                   Flags ^= 65536;`
-`           }`
-`       }`
-`       public System.Boolean AchievementEarned`
-`       {`
-`           get`
-`           {`
-`               return (Flags & 131072) == 131072;`
-`           }`
-`           set`
-`           {`
-`               if (value != Achieved)`
-`                   Flags ^= 131072;`
-`           }`
-`       }`
-`       public System.Boolean Edited //?`
-`       {`
-`           get`
-`           {`
-`               return (Flags & 1048576) == 1048576;`
-`           }`
-`           set`
-`           {`
-`               if (value != Edited)`
-`               {`
-`                   Flags ^= 1048576;`
-`               }`
-`           }`
-`       }`
+public System.UInt32 Flags;
+public AchievementTypes AchievementType
+{
+    get
+    {
+        return (AchievementTypes)(Flags & 7);
+    }
+    set
+    {
+        if ((System.Byte)value > 7) // to may bits in use :O
+            throw new Exceptions.InvalidAchievement(new System.Exception("Invalid Type"));
+        if (value != Type)
+        {
+            Flags ^= 4294967288; // Null the 3 bits
+            Flags ^= (System.Byte)Type; // set the new
+        }
+    }
+}
+public System.Boolean AchievementShowUnachieved // !Sectet
+{
+    get
+    {
+        return (Flags & 8) == 8;
+    }
+    set
+    {
+        if (value != ShowUnachieved)
+            Flags ^= 8;
+    }
+}
+public System.Boolean AchievementEarnedOnline
+{
+    get
+    {
+        return (Flags & 65536) == 65536;
+    }
+    set
+    {
+        if (value != AchievementEarnedOnline)
+            Flags ^= 65536;
+    }
+}
+public System.Boolean AchievementEarned
+{
+    get
+    {
+        return (Flags & 131072) == 131072;
+    }
+    set
+    {
+        if (value != Achieved)
+            Flags ^= 131072;
+    }
+}
+public System.Boolean Edited //?
+{
+    get
+    {
+        return (Flags & 1048576) == 1048576;
+    }
+    set
+    {
+        if (value != Edited)
+        {
+            Flags ^= 1048576;
+        }
+    }
+}
+```
 
 ## Setting Entries
 
@@ -209,31 +212,33 @@ length in the data blob.
 Image entries are PNG images. example
 code:
 
-`       public System.Byte[] Data`
-`       {`
-`           get`
-`           {`
-`               System.Byte[] TempData;`
-`               System.IO.MemoryStream TempStream = new System.IO.MemoryStream();`
-`               Img.Save(TempStream, System.Drawing.Imaging.ImageFormat.Png);`
-`               TempData = TempStream.ToArray();`
-`               TempStream.Close();`
-`               return TempData;`
-`           }`
-`           set`
-`           {`
-`               System.IO.MemoryStream TempStream = new System.IO.MemoryStream(value);`
-`               Img = System.Drawing.Image.FromStream(TempStream);`
-`               TempStream.Close();`
-`           }`
-`       }`
+```cs
+public System.Byte[] Data
+{
+    get
+    {
+        System.Byte[] TempData;
+        System.IO.MemoryStream TempStream = new System.IO.MemoryStream();
+        Img.Save(TempStream, System.Drawing.Imaging.ImageFormat.Png);
+        TempData = TempStream.ToArray();
+        TempStream.Close();
+        return TempData;
+    }
+    set
+    {
+        System.IO.MemoryStream TempStream = new System.IO.MemoryStream(value);
+        Img = System.Drawing.Image.FromStream(TempStream);
+        TempStream.Close();
+    }
+}
+```
 
 ## Title Entries
 
 These entries are only located in the FFFE07D1 gpd. To get to them, the
 id for the XDBF entry is the title ID of the game, and the XDBF entry
 type is String. For more information see
-[XDBF](XDBF "wikilink")
+[XDBF](../XDBF)
 
 | Offset | Length          | Type           | Information                       |
 | ------ | --------------- | -------------- | --------------------------------- |
@@ -265,28 +270,30 @@ These are not all the flags, it's just that I don't know the rest.
 
 Title images are also available online:
 
-IconURL
-"<http://image.xboxlive.com/global/t>." + ID.ToString("x8") +
+```cs
+// IconURL
+"http://image.xboxlive.com/global/t." + ID.ToString("x8") +
 "/icon/0/8000"
 
-LargeBoxArtURL
-"<http://tiles.xbox.com/consoleAssets/>" + ID.ToString("x8") +
+// LargeBoxArtURL
+"http://tiles.xbox.com/consoleAssets/" + ID.ToString("x8") +
 "/en-GB/largeboxart.jpg"
 
-SmallBoxArtURL
-"<http://tiles.xbox.com/consoleAssets/>" + ID.ToString("x8") +
+// SmallBoxArtURL
+"http://tiles.xbox.com/consoleAssets/" + ID.ToString("x8") +
 "/en-GB/smallboxart.jpg"
 
-BannerURL
-"<http://avatar.xboxlive.com/global/t>." + ID.ToString("x8") +
+// BannerURL
+"http://avatar.xboxlive.com/global/t." + ID.ToString("x8") +
 "/marketplace/0/1"
 
-MarketplaceURL
-"<http://marketplace.xbox.com/en-US/Title/>" + ID
+// MarketplaceURL
+"http://marketplace.xbox.com/en-US/Title/" + ID
+```
 
 ## Avatar Award Entries
 
-The entries are only supported within the [PEC](PEC "wikilink") version
+The entries are only supported within the [PEC](../PEC) version
 of the GPD. The images for the avatar awards, are stored in the game GPD
 for that
 game.
@@ -309,10 +316,12 @@ game.
 The Image stored in the GPD is stored in the normal GPD however you can
 grab the image from the server, using the GUID.
 
-"<http://download.xboxlive.com/content/4d530914/thumbnails/>" + size +
-"/" + ID.ToString() + ".png"); // size 64 128 300
-"<http://avatar.xboxlive.com/global/t>." + TitleID + "/avataritem/" +
-ID.ToString() + "/" + size // 64 or 128
+```cs
+"http://download.xboxlive.com/content/4d530914/thumbnails/" + size +
+    "/" + ID.ToString() + ".png"); // size 64 128 300
+"http://avatar.xboxlive.com/global/t." + TitleID + "/avataritem/" +
+    ID.ToString() + "/" + size // 64 or 128
+```
 
 ## String Entries
 
@@ -346,4 +355,4 @@ IDs in Sync List between last and next are
 pushed
 //confirm?
 
-[Category:Xbox360_System_Software](Category_Xbox360_System_Software)
+[Category:Xbox360_System_Software](../Category_Xbox360_System_Software)

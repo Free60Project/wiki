@@ -1,30 +1,23 @@
 # Attack
 
-### From Free60
+## From Free60
 
-This page was created when knowlage was low, everything on here is
+This page was created when knowledge was low, everything on here is
 impossible, due to the 360s hypervisor The only exploit there is and
 ever will be is the king kong/jtag(smc)/whatever hypervisor bug found in
 kernel 4532 -slasherking823
 
 Actually, upon further examination, this page was created by someone
-with no knowlage even when public knowlage existed
+with no knowlage even when public knowlage existed.
 
+Bad Ideas are as follows:
 
-Bade Ideas are as follows:
-
-
-**Please reply and comment each attack and tell us if such attacks are
-possible or not**
+**Please reply and comment each attack and tell us if such attacks are possible or not**
 
 **Please do not erase wrong things but reply instead**
 
 
-# Some basic knowledge
-
-# Ideas
-
-## No void warranty
+## Ideas
 
 ### Software
 
@@ -83,7 +76,7 @@ possible or not**
   - Decompression routines
       - Cause a buffer overflow
 
-### Hardware
+#### Hardware
 
   - DMA attack
       - Someone has developed an exploit for Firewire DMA [FireWire -
@@ -96,15 +89,12 @@ possible or not**
           - Maybe it doesn't work with non-Firewire devices
       - Video: [\[2](https://web.archive.org/web/20060427215314/http://lufgi4.informatik.rwth-aachen.de/movies/)\]
         [for linux](http://libquicktime.sourceforge.net/)
-
-<!-- end list -->
-
   - Manipulated USB
     device
       - Webcam
       - IPod
 
-## Torx and Solder
+#### Torx and Solder
 
   - [Boot](http://www.free60.org/index.php5?title=Boot&action=edit&redlink=1)
     suggests various CPU parameters including Hypervisor mode and boot
@@ -145,9 +135,9 @@ possible or not**
 To save people revisiting old ground please list any attempts that have
 failed here
 
-# Discussion
+### Discussion
 
-## Page design
+#### Page design
 
 this is a stub or whatever you call this kind of page...
 
@@ -164,52 +154,50 @@ ment for this
 and if something cleen and verified can be produced we will make another
 "stable" page that developers should read
 
-## IDEAS 
+### IDEAS 
 
 Xbox 360's OS has its root in the OS of the original Xbox (which is
 derivate from Windows 2000). I think that some bug and exploit in Xbox 1
 (or even 2000) still work on the 360, we have to try every
 bug/fuzzing/hole knowed to find exploits.
 
-IdeasÂ :
+Ideas :
 
-\- file format fuzzing (there are some tools in sourceforge), exampleÂ :
-image format like wmf (recent exploit in Win 2000 and XP plateform due
-to implementation of the fct escape() and not a BO\!\!\!\!\!)
+- file format fuzzing (there are some tools in sourceforge), exampleÂ :
+  image format like wmf (recent exploit in Win 2000 and XP plateform due
+  to implementation of the fct escape() and not a BO\!\!\!\!\!)
 
-XMA is a very good way to find some holes, and Sounds aren't signed
-(Demo DVD) Someone has Doc about XMAÂ ? maybe in XACTÂ ?
+- XMA is a very good way to find some holes, and Sounds aren't signed
+  (Demo DVD) Someone has Doc about XMAÂ ? maybe in XACTÂ ?
 
-\- by network UPnP (use XML), it's seems that the norm think about
-security like not permit to send XML break char, or limit ACL hack, but
-if there are an XML implementation (lib XML) there are chance to find an
-exploit.
+- by network UPnP (use XML), it's seems that the norm think about
+  security like not permit to send XML break char, or limit ACL hack, but
+  if there are an XML implementation (lib XML) there are chance to find an
+  exploit.
 
-We all know Microsoft's security in their implementation of norms (like
-IP stack or other).
+  We all know Microsoft's security in their implementation of norms (like
+  IP stack or other).
 
-\- by DMA, using USB (security hole in Win 2000\&XP ohcpi) other wayÂ :
-IDE (sata), we can try to access to DMA with a PC connected to the
-Xbox...by SATAÂ ;-) the idea is to use the PC like an IDE device for the
-Xbox 360. i'm reading the DMA-API and IDE doc for linux (if you have
-linux, interessting stuffs are in /include/Documentation/DMA-API.txt &
-DMA-mapping.txt and in /include/Drivers/ide/ )
+- by DMA, using USB (security hole in Win 2000\&XP ohcpi) other way :
+  IDE (sata), we can try to access to DMA with a PC connected to the
+  Xbox...by SATA ;-) the idea is to use the PC like an IDE device for the
+  Xbox 360. i'm reading the DMA-API and IDE doc for linux (if you have
+  linux, interessting stuffs are in /include/Documentation/DMA-API.txt &
+  DMA-mapping.txt and in /include/Drivers/ide/ )
 
-\- by threads, if we can use the GPU to access to RAM and acces to the
-same area as the CPU we can do some buggy things (in fact thread is not
-necessary)
+- by threads, if we can use the GPU to access to RAM and acces to the
+  same area as the CPU we can do some buggy things (in fact thread is not
+  necessary)
 
-ressourcesÂ :
+resources :
 
-\- metasploit, a huge DB for exloits and shellcodes
-<https://metasploit.com/>
+- metasploit, a huge DB for exloits and shellcodes <https://metasploit.com/>
 
-\- milw0rm, exploits [milw0rm.com](https://web.archive.org/web/20100528133654/http://www.milw0rm.com/)
+- milw0rm, exploits [milw0rm.com](https://web.archive.org/web/20100528133654/http://www.milw0rm.com/)
 
-\- fuzzing file and network
-[http://rtos.trinux.org/secwiki/FuzzingTools](https://web.archive.org/web/20060715225715/http://rtos.trinux.org:80/secwiki/FuzzingTools)
+- fuzzing file and network [http://rtos.trinux.org/secwiki/FuzzingTools](https://web.archive.org/web/20060715225715/http://rtos.trinux.org:80/secwiki/FuzzingTools)
 
-## XEX executables
+### XEX executables
 
 What security problems are known about the XEX files. They can be burned
 to DVD/CD and used to install the backwards compatability emulator, so
@@ -225,30 +213,11 @@ under a PC version of Windows.--Silence 10:59, 10 Mar 2006 (CET)
 
 First guy is absolutly retarded \>_\> -Thilo
 
-## XNA
+### XNA
 
-\- The XNA libraries are .Net wrappers around various DirectX libraries
-(XACT, XInput, Direct3D, etc), and runs on the .NET Compact Framework.
-Both frameworks are fairly large and complex and it could be a possible
-candy store for exploits.
-
-## After all that
-
-No No No and btw
-    No
-
-##### Views
-
-  - [Page](http://www.free60.org/Attack)
-  - [Discussion](http://www.free60.org/index.php5?title=Talk:Attack&action=edit&redlink=1)
-  - [Edit](http://www.free60.org/index.php5?title=Attack&action=edit)
-  - [History](http://www.free60.org/index.php5?title=Attack&action=history)
-
-
-##### Personal tools
-
-
-  - [Log in / create
-    account](http://www.free60.org/index.php5?title=Special:UserLogin&returnto=Attack)
+- The XNA libraries are .Net wrappers around various DirectX libraries
+  (XACT, XInput, Direct3D, etc), and runs on the .NET Compact Framework.
+  Both frameworks are fairly large and complex and it could be a possible
+  candy store for exploits.
 
 [Category:Support](Category_Support)

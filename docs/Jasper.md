@@ -1,13 +1,15 @@
+# Jasper
+
 **Jasper** is the codename of the fifth motherboard revision for the
 Xbox 360. On Jasper motherboards found within Arcade SKUs, this Xbox 360
-[Motherboard](Motherboard "wikilink") revision features an onboard
-[memory unit](Memory_Unit "wikilink") to facilitate the
-[NXE](NXE "wikilink") [Dashboard](Dashboard "wikilink").
+[Motherboard](../Motherboard) revision features an onboard
+[memory unit](../Memory_Unit) to facilitate the
+[NXE](../NXE) [Dashboard](../Dashboard).
 
-The connections required to [dump/flash the
-NAND](NAND_Reading "wikilink") are the **same** as all previous models.
+The connections required to [dump/flash the NAND](../NAND_Reading)
+are the **same** as all previous models.
 
-Performing the [SMC Hack](SMC_Hack "wikilink") requires the same wiring
+Performing the [SMC Hack](../SMC_Hack) requires the same wiring
 as Zephyr, Opus, and Falcon mainboards. This is a slightly different set
 of connections than those required for the Xenon mainboard.
 
@@ -37,7 +39,7 @@ Same as Jasper (V4) other than some minor changes.
   - Consoles: Arcade 512MB, Elite 120GB & 250GB, Modern Warfare 2
     consoles and Final Fantasy 13 consoles
   - 65nm eDRAM (?)
-  - New [Southbridge](Southbridge "wikilink") chipset
+  - New [Southbridge](../Southbridge) chipset
   - Arcade Edition Larger Flash 256MB and **512MB** to accommodate NXE
     (Removes 256MB Memory Card)
   - Shipping with Lite-On 8XXXV2/9XXX DVD-Drivers.
@@ -46,4 +48,4 @@ Same as Jasper (V4) other than some minor changes.
   - Special edition consoles: Modern Warfare 2 Consoles
   - Last of the original style 360 systems
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category:Xbox360_Hardware](../Category_Xbox360_Hardware)

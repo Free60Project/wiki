@@ -1,3 +1,4 @@
+# Kernel 
 Version 2.0.13146.0 is currently the latest public version.
 
 You can check your kernel version in "System -\> Console Settings -\>
@@ -144,9 +145,7 @@ Minor bugfix.<br />
 </table>
 
 
-Please note: In order to use the [SMC
-Hack](SMC_Hack), you must not have installed any
+Please note: In order to use the [SMC Hack](../SMC_Hack), you must not have installed any
 of the 849x kernel updates.
 
-[Category:Xbox360 System
-Software](Category_Xbox360_System_Software)
+[Category:Xbox360 System Software](../Category_Xbox360_System_Software)

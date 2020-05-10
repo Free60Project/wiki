@@ -1,8 +1,10 @@
-### From Free60
+# Contribute
 
-We really appreciate your interest in the [Free60](Main_Page "wikilink")
-Project, and especially your enthusiasm to want to contribute\! If you
-haven't yet, please have a look at our [Goals](Goals "wikilink").
+## From Free60
+
+We really appreciate your interest in the [Free60](../Main_Page)
+Project, and especially your enthusiasm to want to contribute! If you
+haven't yet, please have a look at our [Goals](../Goals).
 
 ## Eligibility
 
@@ -14,10 +16,10 @@ signed an NDA pertaining to the hardware or software used on the Xbox
 
 ### Who can contribute
 
-If you don't meet the above, congratulations\! You're eligible to
+If you don't meet the above, congratulations! You're eligible to
 participate in the project. There are still quite a few areas of
 expertise we are interested in and need information on, so please keep
-reading\!
+reading!
 
 ## Areas of Opportunity
 
@@ -33,12 +35,12 @@ Free60 please read on into the Editing the Wiki section.
 
 ### Donations
 
-Currently [Free60](Main_Page "wikilink") has no plans to incorporate or
+Currently [Free60](../Main_Page) has no plans to incorporate or
 provide other such means for easy monetary donations to the project as a
 whole. If you feel like you have hardware or money that you want to
 contribute to the project, feel free to donate directly to developers
-and members. Free60 is not responsible for such donations. Check [Stuff
-we need](Stuff_we_need "wikilink") for a list of items developers are
+and members. Free60 is not responsible for such donations.
+Check [Stuff we need](../Stuff_we_need) for a list of items developers are
 currently seeking.
 
 ## Editing The Wiki
@@ -53,38 +55,24 @@ Because of it's collaborative and freely-editable nature, writing,
 updating and maintaining documentation are the most important steps to
 keeping the system alive.
 
-If you are new to editing, please read through MediaWiki [help for
-editors](http://meta.wikimedia.org/wiki/Help:Contents#For_editors)
-first. There's a [Sandbox](Sandbox "wikilink") for you to play around
-with thereafter.
-
 A few guidelines to go by when editing pages on this wiki:
 
-  - Provide *accurate* information.
-
-<!-- end list -->
-
-  - Write an edit summary for your change. It takes the guess-work out
-    of browsing through the changelog.
-
-<!-- end list -->
-
-  - Avoid duplication. New pages that duplicate already existing
-    information are a bad idea. Work on-top of the existing content to
-    better it instead.
-
-<!-- end list -->
-
-  - Upload only those images that you own. Or at least get permission
-    from the owner to do so. Infringing on someone else's copyright does
-    no one any good, really.
+- Provide *accurate* information.
+- Write an edit summary for your change. It takes the guess-work out
+  of browsing through the changelog.
+- Avoid duplication. New pages that duplicate already existing
+  information are a bad idea. Work on-top of the existing content to
+  better it instead.
+- Upload only those images that you own. Or at least get permission
+  from the owner to do so. Infringing on someone else's copyright does
+  no one any good, really.
 
 ### Repair and Restoration
 
 As a negative side effect, wikis are also a target of and mostly
-vulnerable to [vandalism](https://web.archive.org/web/20060927204136/https://en.wikipedia.org/wiki/Wiki_vandalism.
+vulnerable to [vandalism](https://web.archive.org/web/20060927204136/https://en.wikipedia.org/wiki/Wiki_vandalism).
 
 Spotting and reverting cases of vandalism can be anywhere from time
 consuming, to trivial a task. Either way, this is greatly appreciated.
 
-[Category:Support](Category_Support)
+[Category:Support](../Category_Support)

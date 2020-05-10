@@ -1,3 +1,5 @@
+# Old Main page
+
 **Free60** is a project towards porting GNU/Linux, BSD, Darwin and related open-source operating systems to the Microsoft Xbox 360 video game console.
 	- 3-core **PowerPC**, **3.2** GHz
 	- **512 MB** of RAM
@@ -18,7 +20,7 @@ A preliminary second-stage boot loader exists.
 Patches for the Linux kernel to support a large part of the Xbox 360 hardware exist. As long as you're waiting for a convenient way to boot, you can set up your cross compiler environment.
 
 #### Linux Distributions
-Several [LiveCD](LiveCD.md) variants and installation howtos for [Debian-etch](Debian-etch.md), [Ubuntu7.04](Ubuntu7.04) and [Ubuntu7.10](Ubuntu7.10) are available.
+Several [LiveCD](../LiveCD) variants and installation howtos for [Debian-etch](../Debian-etch), [Ubuntu7.04](../Ubuntu7.04) and [Ubuntu7.10](../Ubuntu7.10) are available.
 
 ## Documentation
 

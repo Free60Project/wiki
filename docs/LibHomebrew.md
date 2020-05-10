@@ -1,3 +1,5 @@
+# LibHomebrew
+
 libhomebrew is the idea to create an abstract homebrew library, unifying
 access to different hardware, making it easy to port homebrew from one
 console to another. Please help making this idea real\!
@@ -5,7 +7,7 @@ console to another. Please help making this idea real\!
 (Some more background about the idea can be found
 [here](http://op-co.de/blog/posts/libhomebrew/))
 
-## <span class="mw-headline"> libhomebrew: Basic Idea </span>
+## libhomebrew: Basic Idea
 
 For every (hacked) hardware, there is a homebrew lib / toolchain:
 
@@ -24,7 +26,7 @@ reinventing/forking functionality for libc, *peripherals* (USB, SD/SDHC,
 NAND, ..), *functionality* (libz, libmad, ..), *storage* (FAT32),
 *networking* (lwip, TCP/IP, DHCP, ...), etc.
 
-**It would be really great to have a generic homebrew lib\!** Such a lib
+**It would be really great to have a generic homebrew lib!** Such a lib
 would contain backends / modules / hardware abstraction layers, which
 are specific to the hardware you want to deploy, and plentiful
 functionality on top of these modules.
@@ -33,7 +35,7 @@ All it would take to support homebrew on a new device would be writing
 some HAL code, et voila: all the homebrew apps based on libhomebrew run
 on your new shiny device.
 
-## <span class="mw-headline"> Scope </span>
+## Scope
 
 Homebrew libraries tend to cover these common areas:
 
@@ -46,19 +48,19 @@ Homebrew libraries tend to cover these common areas:
 
 These would be good areas to start with.
 
-## <span class="mw-headline"> What has to be done? </span>
+##What has to be done?
 
 First, we need some coders from different homebrew scenes to sit
 together and find similarities in their projects.
 
-Then we need them to write the codeÂ ;-)
+Then we need them to write the code ;-)
 
 Ok ok, all that needs to be done is an abstract interface *on top of the
 existing homebrew libraries*. Thats not so much to do after all. Then we
 can merge the different forks of generic functionality code together and
 remove it from the backends. Easy, eh?
 
-## <span class="mw-headline"> Why not taking Linux? </span>
+## Why not taking Linux?
 
 That might actually be an option, however the Linux kernel is rather
 bloated with its lengthy boot-up times, drivers for things you don't
@@ -76,11 +78,10 @@ while we get better homebrew. XBox 360 Linux XMBC DVBT HD Tuner can be a
 sexy combination that will take too much effort doing from scratch, for
 example.
 
-## <span class="mw-headline"> Why not taking L4? </span>
+## Why not taking L4?
 
-It has been suggested to use the [L4
-Microkernel](http://en.wikipedia.org/wiki/L4_microkernel_family) for
-aspects like multi-threading / scheduling / task switching. It has to be
+It has been suggested to use the [L4 Microkernel](http://en.wikipedia.org/wiki/L4_microkernel_family)
+for aspects like multi-threading / scheduling / task switching. It has to be
 evaluated if it is possible to add L4 as a library without building the
 whole system on top of it.
 
@@ -93,5 +94,5 @@ looks like a promising ground. It contains its own libc implementation,
 whereas most homebrew projects are using newlib
 instead.
 
-[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)
-[Category:Xbox360_Development](Category_Xbox360_Development)
+[Category:Xbox360_Homebrew_Software](../Category_Xbox360_Homebrew_Software)
+[Category:Xbox360_Development](../Category_Xbox360_Development)

@@ -1,6 +1,8 @@
+# List of development tools
+
 These **Development Tools** can help you develop legal homebrew
 applications and games for the Xbox 360. The most important tool for
-Xbox 360 development is [Xenon Toolchain](Xenon_Toolchain "wikilink"), a
+Xbox 360 development is [Xenon Toolchain](../Xenon_Toolchain), a
 port of the GCC toolchain along with supporting system libraries. The
 development tools listed below make development easier or to add
 additional
@@ -8,22 +10,22 @@ functionality.
 
 ## Core development
 
-| Title                | Description         | Author                                             |
-| -------------------- | ------------------- | -------------------------------------------------- |
-| \[\[Xenon_Toolchain | Xenon Toolchain\]\] | GCC Cross Compiler and associated utilities        |
-| \[\[LibXenon         | LibXenon\]\]        | Library to interact with xbox360 specific Hardware |
+| Title            | Description                                        |
+| ---------------- | -------------------------------------------------- |
+| Xenon_Toolchain  | GCC Cross Compiler and associated utilities        |
+| LibXenon         | Library to interact with xbox360 specific Hardware |
 
 ## Framework libraries
 
 | Title           | Description     | Author                  |
 | --------------- | --------------- | ----------------------- |
-| \[\[Placeholder | Placeholder\]\] | Description Placeholder |
+| Placeholder     | Placeholder     | Description Placeholder |
 
 ## Libraries
 
 | Title           | Description     | Author                  |
 | --------------- | --------------- | ----------------------- |
-| \[\[Placeholder | Placeholder\]\] | Description Placeholder |
+| Placeholder     | Placeholder     | Description Placeholder |
 
 ## Ported Libraries
 
@@ -37,6 +39,6 @@ functionality.
 
 | Title           | Description     | Author                  |
 | --------------- | --------------- | ----------------------- |
-| \[\[Placeholder | Placeholder\]\] | Description Placeholder |
+| Placeholder    | Placeholder      | Description Placeholder |
 
-[Category:Xbox360_Development](Category_Xbox360_Development)
+[Category:Xbox360_Development](../Category_Xbox360_Development)

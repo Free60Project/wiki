@@ -1,18 +1,18 @@
+# FATX - Filesystem
+
 **FATX** is the file system used by the Xbox and the Xbox 360, it is
 unsupported natively by Windows but has some functionality in Linux.
 Sometimes called "XTAF" (due to its little endian header), the file
-system is derived from the age-old [MS-DOS file
-system](http://en.wikipedia.org/wiki/File_Allocation_Table) and can be
-considered as a cleaned-up version of it.
+system is derived from the age-old [MS-DOS file system](http://en.wikipedia.org/wiki/File_Allocation_Table)
+and can be considered as a cleaned-up version of it.
 
 Note that, while not part of the file system itself, the media which
 contain this file system do not have a master file table which describes
-which file system starts where. It is up to the consumer (Xbox 360,
-[geom_xbox360 kernel
-module](http://www.freebsd.org/cgi/query-pr.cgi?pr=kern/107707), ...) to
-know this.
+which file system starts where. It is up to the consumer
+(Xbox 360, geom_xbox360 kernel module](http://www.freebsd.org/cgi/query-pr.cgi?pr=kern/107707)
+to know this.
 
-# File System Layout
+## File System Layout
 
 The file system is divided into 4 parts:
 
@@ -21,7 +21,7 @@ The file system is divided into 4 parts:
   - Root directory cluster/data region
 
 All multi-byte values contained in each part are
-[\[1](http://en.wikipedia.org/wiki/Endianness)\] big-endian.
+[1](http://en.wikipedia.org/wiki/Endiannes) big-endian.
 
 ## Difference Between Retail and Development Kit HDD
 
@@ -49,7 +49,7 @@ it was later discovered that anything a few GB larger than the current
 maximum causes the console to crash.
 [http://www.xboxhacker.org/index.php?topic=16913.0](https://web.archive.org/web/20140515135820/http://www.xboxhacker.org/index.php?topic=16913.0)
 
-### <span class="mw-headline"> Configuration file </span>
+### Configuration file
 
 The configuration is the first 2 sectors (0x400 bytes) of the Data0000
 and is created when the device is configured. It contains info about the
@@ -123,7 +123,7 @@ files. You could call it a Sub-Partition or Hidden-Partition as it's a
 
 | Offset   | Length       | Information  | Format   |
 | -------- | ------------ | ------------ | -------- |
-| 0x0      | 0x7FF000     | System Cache | \[\[SFCX |
+| 0x0      | 0x7FF000     | System Cache | SFCX     |
 | 0x7FF000 | end of drive | Data         | FATX     |
 
 ### Xbox 360 Hard Drive
@@ -131,8 +131,8 @@ files. You could call it a Sub-Partition or Hidden-Partition as it's a
 | Offset      | Length          | Information                    | Format                 |
 | ----------- | --------------- | ------------------------------ | ---------------------- |
 | 0x2000      | 0x204 - 0x80000 | Security Sector                | Binary                 |
-| 0x80000     | 0x80000000      | System Cache                   | \[\[SFCX               |
-| 0x80080000  | 0xA0E30000      | Game Cache                     | \[\[SFCX               |
+| 0x80000     | 0x80000000      | System Cache                   | SFCX                   |
+| 0x80080000  | 0xA0E30000      | Game Cache                     | SFCX                   |
 | 0x10C080000 | 0xCE30000       | SysExt                         | FATX ("Sub"-Partition) |
 | 0x118EB0000 | 0x8000000       | SysExt2                        | FATX ("Sub"-Partition) |
 | 0x120eb0000 | 0x10000000      | Xbox 1 Backwards Compatibility | FATX                   |
@@ -168,8 +168,7 @@ previously formatted it.
 | ------ | ------ | ------------ | ------------ |
 | 0x0    | 0x4    | ascii string | "Josh" magic |
 
-The [Console Security
-Certificate](Console_Security_Certificate "wikilink")(Inc 0x80 sig)
+The [Console Security Certificate](../Console_Security_Certificate)(Inc 0x80 sig)
 then,
 
 | Offset | Length | Type                 | Information                              |
@@ -296,15 +295,23 @@ directory tables. This means that it's only possible to go to the parent
 directory by remembering its cluster
 number.
 
-# Limitations
+## Limitations
 
-| Attribute                   | Limitation                                                                                                                                          |
-| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Maximum Filename Length     | 0x2A (42)                                                                                                                                           |
-| Maximum Path Length         | 240 Characters                                                                                                                                      |
-| Maximum File Size           | 4 GB (4294967296 bytes)                                                                                                                             |
-| Maximum File Per Directory  | 0x1000 (4096)                                                                                                                                       |
-| Possible Cluster Sizes      | 4 KB (0x1000 bytes, 0x8 sectors per cluster), 8 KB (0x2000, 0x10 SPC),16 KB (0x4000, 0x20 SPC), 32 KB (0x8000, 0x40 SPC), 64 KB (0x10000, 0x80 SPC) |
-| File/Folder Name Characters | ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789                                                                                      |
+| Attribute                   | Limitation                                                     |
+|-----------------------------|----------------------------------------------------------------|
+| Maximum Filename Length     | 0x2A (42)                                                      |
+| Maximum Path Length         | 240 Characters                                                 |
+| Maximum File Size           | 4 GB (4294967296 bytes)                                        |
+| Maximum File Per Directory  | 0x1000 (4096)                                                  |
+| File/Folder Name Characters | ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 |
+
+### Possible cluster sizes
+
+- 4 KB (0x1000 bytes, 0x8 sectors per cluster)
+- 8 KB (0x2000, 0x10 SPC)
+- 16 KB (0x4000, 0x20 SPC)
+- 32 KB (0x8000, 0x40 SPC)
+- 64 KB (0x10000, 0x80 SPC)
+
 
 [Category:Xbox360_System_Software](Category_Xbox360_System_Software)

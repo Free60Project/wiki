@@ -1,1 +1,0 @@
-1.  REDIRECT [Motherboard](Motherboard "wikilink")

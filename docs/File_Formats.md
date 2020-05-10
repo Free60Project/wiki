@@ -1,1 +1,0 @@
-1.  REDIRECT [:Category:File formats](:Category:File_formats "wikilink")

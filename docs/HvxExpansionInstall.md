@@ -1,11 +1,11 @@
-A system call for "installing" code under
-[Hypervisor](Hypervisor "wikilink") context. Registers an HvxExpansion
-structure in the expansion table
+# HvxExpansionInstall
 
-# Reversed Pseudocode
+A system call for "installing" code under [Hypervisor](../Hypervisor) context.
+Registers an HvxExpansion structure in the expansion table
 
-```
+## Reversed Pseudocode
 
+```cpp
 // r0 is 0x70
 // Parameters are taken in r3 and r4, respectively
 // r2, r5 - r9 are 0

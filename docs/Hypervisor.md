@@ -1,7 +1,10 @@
+# Hypervisor
+
+## Note
 Old notes on the Xbox 360 Hypervisor can be found here: [Hypervisor (Old
 Notes)](Hypervisor_(Old_Notes) "wikilink")
 
-# What is a Hypervisor?
+## What is a Hypervisor?
 
 Like in the PS3, Microsoft protects the integrity of its system with a
 **Hypervisor**. Using the virtualization technologies of today's
@@ -16,11 +19,11 @@ decryption and the enforcement of access restrictions on memory.
 Thanks to the
 [work](http://www.securityfocus.com/archive/1/461489/30/0/threaded) of
 an anonymous hacker, a flaw in the hypervisor has been discovered on
-certain versions of the [Xbox 360 kernel](Kernel "wikilink"), allowing
+certain versions of the [Xbox 360 kernel](../Kernel), allowing
 the injection of code, which has not been cryptographically signed by
 Microsoft.
 
-# How It Works
+## How It Works
 
 The Hypervisor (HV) is primarily made up of a series of interrupt
 vectors and system calls that are accompanied by a few cryptography
@@ -174,4 +177,4 @@ Hypervisor that can preform various tasks on the system, for example
 getting the value of a special cpu register or printing to the console's
 post bus. When a system call is preformed, the cpu generates a syscall
 interrupt and jumps to the appropriate handler. System calls are
-described more here: [System Calls](System_Calls "wikilink")
+described more here: [System Calls](../System_Calls)

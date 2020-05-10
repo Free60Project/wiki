@@ -1,3 +1,5 @@
+# Gamepad
+
 ## Speculation
 
   - ~~Rumors that both the wired gamepad and wireless dongle share the
@@ -34,22 +36,24 @@ compatible with the old Xbox headset. The pinout is shown below:
 
 **Wire Connector (Play'n'Charge Cable)**
 
+```
     | LT |         _______,__,______         | RT |
     ________       \ ------------- /      _________
          LB         ___,__,__,___/        RB
     --------         1 2 3 4 5 6 7        ---------
+```
 
 (View on Controller when turning 90 degrees towards user)
 
 Pin Functions:
 
-  - 1 GND (Ground, black wire of USB)
-  - 2 Data A (unknown function but likely paired with pin 7)
-  - 3 VCC (Supply Voltage, works good with 3.3V, *see note\!*)
-  - 4 Unknown (charge option?)
-  - 5 USB D+ (Data Line, greeen wire of USB)
-  - 6 USB D- (Data Line, white wire of USB)
-  - 7 Data B (unknown, see pin 2)
+- 1 GND (Ground, black wire of USB)
+- 2 Data A (unknown function but likely paired with pin 7)
+- 3 VCC (Supply Voltage, works good with 3.3V, *see note\!*)
+- 4 Unknown (charge option?)
+- 5 USB D+ (Data Line, greeen wire of USB)
+- 6 USB D- (Data Line, white wire of USB)
+- 7 Data B (unknown, see pin 2)
 
 *Note:* The supply voltage for Memory Units and other Accessories is
 always 3.3 Volts. The front side USB socket of the Xbox has a supply of
@@ -61,4 +65,4 @@ inserting a 3.3 Volts positive regulator between VUSB (red) and VCC on
 rated for 5V - if anyone has a spare trash controller he could try it
 without fear of frying the pad...
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category:Xbox360_Hardware](../Category_Xbox360_Hardware)

@@ -1,8 +1,9 @@
-The Xbox 360 system uses a series of bootloaders to load the hv/kernel
-and dashboard. These loaders are explained at [Boot
-Process](Boot_Process "wikilink").
+# Bootloaders
 
-# Header
+The Xbox 360 system uses a series of bootloaders to load the hv/kernel
+and dashboard. These loaders are explained at [Boot Process](../Boot_Process).
+
+## Header
 
 The header is at the start of the bootloader and is usually 0x20 bytes
 long.

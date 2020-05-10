@@ -1,4 +1,4 @@
-hypervisor
+# Hypervisor (old notes)
 
 no booting details known changes between beta hardware and final: alpha
 hardware = macintosh beta = ? looks like retail, but no encryption
@@ -16,13 +16,11 @@ read kernel + app (dashboard etc.), i.e. virtual memory is not encrypted
 kernel interesting to disassemble communication with hypervisor using
 syscalls
 
-hypervisor does
-interrupts/exceptions
+hypervisor does interrupts/exceptions
 
-syscalls:
+## Syscalls
 
-_________________________________________
-
+```
 final:
 
 SC 00: GetVersionCode (e.g. r3=072F8002)
@@ -102,7 +100,7 @@ SC 20: set power
 
 SC 21: shadow boot
 
-SC 22: f\*\*\* fuses
+SC 22: Burn fuses
 
 SC 23: FSB interrupt related
 
@@ -156,10 +154,9 @@ SC 3F: XeKeysSaveSystemUpdate
 
 SC 40:
 XeKeysExecute
+```
 
-___________________________________________________
-
-SC 22 =
+### SC 22 (Burn fuses)
 
 tested on 2 kernels
 

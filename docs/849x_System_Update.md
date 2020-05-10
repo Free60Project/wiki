@@ -1,7 +1,8 @@
-### From Free60
+# From Free60
 
-### Felix Domke, Michael Steil, Free60 Project **11 August 2009**
-## **Dangerous Xbox 360 Update Killing Homebrew**
+Felix Domke, Michael Steil, Free60 Project **11 August 2009**
+
+## Dangerous Xbox 360 Update Killing Homebrew**
 
 On Tuesday, Microsoft has released an Xbox 360 software update that overwrites the first stage bootloader of the system. Although there have been numerous software updates for Microsoft's gaming console in the past, this is the first one to overwrite the vital boot block. Any failure while updating this will break the Xbox 360 beyond repair. Statistics from other systems have shown that about one in a thousand bootloader updates goes wrong, and unless Microsoft has a novel solution to this problem, this puts tens of thousands of Xboxes at risk.
 
@@ -13,4 +14,4 @@ Free60 (www.free60.org) is a project that aims to enable Xbox 360 users to run h
 
 Felix and Michael have repeatedly argued that game console manufacturers should open up their platforms to Linux and homebrew, similar to what Sony has done with the PlayStation 3, before they removed the functionality of course.
 
-[Category:Xbox360 System Software](Category_Xbox360_System_Software)
+[Category:Xbox360 System Software](../Category_Xbox360_System_Software)

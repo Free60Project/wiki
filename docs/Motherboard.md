@@ -1,22 +1,24 @@
+# Motherboard
+
 (This page is riddled with speculation and extrapolation of information
 from dodgy sources, so take it with a grain of salt.)
 
 The Xbox 360 motherboard (or motherboard) has undergone a few revisions,
 as Microsoft has corrected mistakes or added/improved existing features.
 
-  - Known revisions include:
+- Known revisions include:
 
-:\*[Xenon](Xenon_(Motherboard) "wikilink") (Launch hardware)
+:\*[Xenon](../Xenon_(Motherboard)) (Launch hardware)
 
-:\*[Zephyr](Zephyr "wikilink") (Elite)
+:\*[Zephyr](../Zephyr) (Elite)
 
-:\*[Falcon](Falcon "wikilink") (65nm Chipset revision)
+:\*[Falcon](../Falcon) (65nm Chipset revision)
 
-:\*[Opus](Opus "wikilink")
+:\*[Opus](../Opus)
 
-:\*[Jasper](Jasper "wikilink") (Onboard Memory Unit)
+:\*[Jasper](../Jasper) (Onboard Memory Unit)
 
-:\*[Trinity](Trinity "wikilink") (Slim)
+:\*[Trinity](../Trinity) (Slim)
 
 ## Details
 
@@ -58,4 +60,4 @@ information on an exposed bus again though.
   - [http://g-prime.net/x360/open/](https://web.archive.org/web/20090110154123/http://www.g-prime.net/x360/open/) \(archive.org mirror\)
   - [http://www.darkmoon.org/xbox360_photos.htm](https://web.archive.org/web/20150609103520/http://www.darkmoon.org/xbox360_photos.htm) \(archive.org mirror\)
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category:Xbox360_Hardware](../Category_Xbox360_Hardware)

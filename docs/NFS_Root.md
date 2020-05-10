@@ -1,5 +1,7 @@
-This tutorial assumes that you already have [XeLL](XeLL "wikilink") and
-[Xenon Toolchain](Xenon_Toolchain "wikilink").
+# NFS Root
+
+This tutorial assumes that you already have [XeLL](../XeLL) and
+[Xenon Toolchain](../Xenon_Toolchain).
 
 ## Install and Setup a NFS Server
 
@@ -30,7 +32,7 @@ typing:
 
 `cd /mnt/nfsroot/squashfs-root && cp * -vaR /mnt/nfsroot`
 
-**Alternative:** [Debootstrap](Debootstrap "wikilink") a fresh powerpc
+**Alternative:** [Debootstrap](../Debootstrap) a fresh powerpc
 system (debian/ubuntu) and use it as NFSroot.
 
 Let the nfs-share re-export with:

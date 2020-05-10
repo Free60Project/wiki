@@ -1,3 +1,5 @@
+# DVD drive
+
 The **DVD Drive** is used by the Xbox 360 for playing games, movies,
 running executables, listening to music. The firmware of most **DVD
 Drive**s can be modified to play backups, or aid in the running of
@@ -17,62 +19,62 @@ was manufactured, what batch it was in and a lot of other factors.
 
 ## General Information
 
-<File:Dvd>` custom power connector.jpg MISSING FROM SERVER`
+![<File:Dvd>](../images/custom power connector.jpg)
 
 Close-up of the custom power connector.
 
-  - The Xbox 360 was launched with a standard dual layer DVD-ROM drive
-    manufactured by Hitachi-LG.
-  - The Xbox boots without any error when the DVD-ROM drive's SATA
-    connector and power cable are not connected. However, the power
-    light flashes rapidly, just like when the tray is ejecting.
-  - The drive uses the standard 7-pin Serial ATA connectors with a
-    non-standard power connector (2×6 pins, roughly 2mm spacing; Molex
-    Milli-Grid look similar, and Hirose make them, too).
-  - Xbox internally calls it \\Device\\CdRom0\\
-  - The raw file system ([XDVDFS](XDVDFS "wikilink")) on the disk is
-    similar to the file system on the original Xbox disks. Multiple
-    tools are out there that will extract raw ISOs.
-  - Modified firmware exists for every DVD Drive model, to allow playing
-    backup games. (Unsigned code still can't be run)
-  - Two different DVD-ROM versions can be interchanged between Xbox 360s
-    if the DVD key (stored in the drive firmware) is changed to match
-    that of the target 360's original drive. Some
-    [Kernel](Kernel "wikilink") versions (\>= 4532?) also require the
-    drive to report as the same model as the original drive.
+- The Xbox 360 was launched with a standard dual layer DVD-ROM drive
+  manufactured by Hitachi-LG.
+- The Xbox boots without any error when the DVD-ROM drive's SATA
+  connector and power cable are not connected. However, the power
+  light flashes rapidly, just like when the tray is ejecting.
+- The drive uses the standard 7-pin Serial ATA connectors with a
+  non-standard power connector (2×6 pins, roughly 2mm spacing; Molex
+  Milli-Grid look similar, and Hirose make them, too).
+- Xbox internally calls it `\\Device\\CdRom0\\`
+- The raw file system ([XDVDFS](../XDVDFS)) on the disk is
+  similar to the file system on the original Xbox disks. Multiple
+  tools are out there that will extract raw ISOs.
+- Modified firmware exists for every DVD Drive model, to allow playing
+  backup games. (Unsigned code still can't be run)
+- Two different DVD-ROM versions can be interchanged between Xbox 360s
+  if the DVD key (stored in the drive firmware) is changed to match
+  that of the target 360's original drive. Some
+  [Kernel](../Kernel) versions (\>= 4532?) also require the
+  drive to report as the same model as the original drive.
 
 ## Confirmed Facts
 
-<File:Dvdmobo.jpg>` MISSING FROM SERVER`
+![<File:Dvdmobo.jpg>](../images/Dvdmobo.jpg)
 
 Close-up of DVD-Drive Motherboard
 
-  - The main processor of the LG DVD-ROM drive is an Panasonic
-    MN103S94FDA
-  - Although present on the disc, The BCA is not used as a security
-    check.
-  - The XBOX 360 discs has a fake ToC (Table of Contents), containing
-    only the video section. However, using a hotswap method, we can read
-    a XBOX 360 disc using regular drive. First of all, we need to put a
-    full 8.5GB disc in the drive, then we need to hotswap it by a XBOX
-    360 disc (without eject, of course). With the right software, there
-    is a way to backup XBOX 360 discs using regular DVD+R DL drive.
+- The main processor of the LG DVD-ROM drive is an Panasonic
+  MN103S94FDA
+- Although present on the disc, The BCA is not used as a security
+  check.
+- The XBOX 360 discs has a fake ToC (Table of Contents), containing
+  only the video section. However, using a hotswap method, we can read
+  a XBOX 360 disc using regular drive. First of all, we need to put a
+  full 8.5GB disc in the drive, then we need to hotswap it by a XBOX
+  360 disc (without eject, of course). With the right software, there
+  is a way to backup XBOX 360 discs using regular DVD+R DL drive.
 
 ## Speculation
 
-  - A 12X DVD-ROM drive (DVD+R/RW) Single or dual-layer DVDs. The other
-    supported formats are: CD-DA, CD-ROM, CD-R/RW, WMACD, MP3CD, JPEG
-    Photo CD and original Xbox games for backwards compatibility.
-  - The DVD-ROM doesn't work on a standard PC workstation, yet.
-  - I found a very very thin ring on the underside of my DVD (PGR3).
-    It's located at the inner part of the dvd, it's very very thin so
-    you have to look very sharp for it\! Maybe this is the reason why
-    the DVD laser can't read the data part. It reads the video part and
-    then can't "jump" over the thin ring to read the data part.
+- A 12X DVD-ROM drive (DVD+R/RW) Single or dual-layer DVDs. The other
+  supported formats are: CD-DA, CD-ROM, CD-R/RW, WMACD, MP3CD, JPEG
+  Photo CD and original Xbox games for backwards compatibility.
+- The DVD-ROM doesn't work on a standard PC workstation, yet.
+- I found a very very thin ring on the underside of my DVD (PGR3).
+  It's located at the inner part of the dvd, it's very very thin so
+  you have to look very sharp for it\! Maybe this is the reason why
+  the DVD laser can't read the data part. It reads the video part and
+  then can't "jump" over the thin ring to read the data part.
 
 ## On-Disc format
 
-<File:Bca.jpg>` MISSING`
+![<File:Bca.jpg>](../images/Bca.jpg)
 
 the 2 different sections and the BCA area of the DVD-ROM are visible
 here.360 discs, like Xbox1 discs, have a lower number of sectors encoded
@@ -91,7 +93,7 @@ visible. It probably contains empty/weak sectors (reading really broken
 frames is always a bit difficult. Someone with the proper equipment
 might want to check this).
 
-<File:Bcatest6.jpg>` MISSING`
+![<File:Bcatest6.jpg>](../images/Bcatest6.jpg)
 
 Evidence that the BCA is not used by the Xbox 360. The tools which can
 be used for this are basically the same as for Xbox1, just that the data
@@ -108,5 +110,5 @@ opening up the DVD-Rom drive from inside out, Inserting a large DVD,
 then lifting it up vertically to do not trigger the eject mode, and then
 inserting a Original XBOX disc will also give you access)
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
-[Category:Pages with missing images](Category_Pages_with_missing_images)
+[Category:Xbox360_Hardware](../Category_Xbox360_Hardware)
+[Category:Pages with missing images](../Category_Pages_with_missing_images)

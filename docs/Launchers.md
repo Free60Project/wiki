@@ -1,1 +1,0 @@
-1.  REDIRECT [Homebrew Launchers](Homebrew_Launchers "wikilink")
