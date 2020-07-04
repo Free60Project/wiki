@@ -441,8 +441,8 @@ many solution to do this ... here are some of them :
 (If you don't have one, you can use GliGli's schematic to build a LPT
 JTAG Programmer)
 
-![H-Slim25.png](H-Slim25.png "H-Slim25.png")
-![H-Slim26.png](H-Slim26.png "H-Slim26.png")
+![H-Slim25.png](images/H-Slim25.png "H-Slim25.png")
+![H-Slim26.png](images/H-Slim26.png "H-Slim26.png")
 
   - **Launch "iMPACT"** (from XilinX Lab Tools) and let's start the
     programming ... just follow the images.
