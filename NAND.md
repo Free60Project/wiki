@@ -156,12 +156,12 @@ the following pictures.
 
 No chip:
 
-•![<File:x360Pro_noeeprom.jpg>](x360Pro_noeeprom.jpg
-"File:x360Pro_noeeprom.jpg")
+•![<File:X360Pro_noeeprom.jpg>](images/X360Pro_noeeprom.jpg
+"File:X360Pro_noeeprom.jpg")
 
 Here is a high-res picture of a premium box with the chip:
 
-•![eeprom.jpg](images/eeprom.jpg "eeprom.jpg")
+•![Eeprom.jpg](images/Eeprom.jpg "Eeprom.jpg")
 
 As discussed in this article on the xboxhacker.net forums, this appears
 to be a Atmel 25020 EEPROM. The chip model reads:
