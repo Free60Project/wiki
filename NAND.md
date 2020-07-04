@@ -2,7 +2,7 @@
 
 ## Flash memory
 
-![<File:nandpinout.png>](images/nandpinout.png
+![<File:nandpinout.png>](images/Nandpinout.png
     "File:nandpinout.png")
 
   - [Datasheet](https://web.archive.org/web/20150112073857/http://www.hynix.com/datasheet/pdf/flash/HY27US(08_16)281A%20Series(Rev0.6).pdf)
