@@ -432,7 +432,7 @@ many solution to do this ... here are some of them :
     pin 21 (GND) to a point of the motherboard like the legs of the
     various connector-metalcasing.
 
-![H-Slim23.gif](H-Slim23.gif "H-Slim23.gif")
+![H-Slim23.gif](images/H-Slim23.gif "H-Slim23.gif")
 ![H-Slim24.jpg](images/H-Slim24.jpg "H-Slim24.jpg")
 
   - Grab your LPT/USB XilinX JTAG programmer cable. **Connect the cable
