@@ -1,8 +1,8 @@
-![Flash.jpg](Flash.jpg "Flash.jpg")
+![Flash.jpg](images/Flash.jpg "Flash.jpg")
 
 ## Flash memory
 
-![<File:nandpinout.png>](nandpinout.png
+![<File:nandpinout.png>](images/nandpinout.png
     "File:nandpinout.png")
 
   - [Datasheet](https://web.archive.org/web/20150112073857/http://www.hynix.com/datasheet/pdf/flash/HY27US(08_16)281A%20Series(Rev0.6).pdf)
@@ -12,11 +12,11 @@
   - SMT socket that should work if you choose to remove yours:
     <https://web.archive.org/web/20111206034431/http://www.emulation.com:80/cgi-cfm/insert_quantity.cfm?part_number=S%2DTSO%2DSM%2D048%2DA>,
 
-Attached to [Southbridge](Southbridge "wikilink")
+Attached to [Southbridge](Southbridge.md "wikilink")
 
 ## NAND Points on Motherboard for FAT
 
-![<File:Nandreadpins.jpg>](Nandreadpins.jpg "File:Nandreadpins.jpg")
+![<File:Nandreadpins.jpg>](images/Nandreadpins.jpg "File:Nandreadpins.jpg")
 
 ## NAND Points on Motherboard for SLIM
 
@@ -106,7 +106,7 @@ This also works in
 
 The Flash can be written or read using a number of methods. If you have
 the old shader hack running the easiest is using
-[lflash](lflash "wikilink"). You can also wire LPT directly to the flash
+[lflash](lflash.md "wikilink"). You can also wire LPT directly to the flash
 using this
 [diagram](http://img19.imageshack.us/img19/5198/wiringforxenondiagram.jpg).
 As well, you can build your own USB SPI Flasher with [this
@@ -120,7 +120,7 @@ is flashed, you can then install it using the drivers from NandPro or
 use TeamXecuters NANDX drivers.
 
 Once wired you can read/write to the chip using software such as
-[NandPro](NandPro "wikilink").
+[NandPro](NandPro.md "wikilink").
 
 In software the NAND is mapped to memory address 0x80000200C8000000.
 
@@ -141,13 +141,13 @@ In software the NAND is mapped to memory address 0x80000200C8000000.
 ## NAND File System
 
 Informations about the Filesystem on the Xbox360 NAND Flash can be found
-[here](NAND_File_System "wikilink")
+[here](NAND_File_System.md "wikilink")
 
 ## Bad Blocks
 
 Its possible that bad blocks appears when reading/writing to the NAND.
 For solving these look at the following page: [Bad
-Blocks](NAND:Bad_Blocks "wikilink")
+Blocks](NAND_Bad_Blocks.md "wikilink")
 
 ## Small flash chip close to CPU
 
@@ -161,7 +161,7 @@ No chip:
 
 Here is a high-res picture of a premium box with the chip:
 
-•![eeprom.jpg](eeprom.jpg "eeprom.jpg")
+•![eeprom.jpg](images/eeprom.jpg "eeprom.jpg")
 
 As discussed in this article on the xboxhacker.net forums, this appears
 to be a Atmel 25020 EEPROM. The chip model reads:
