@@ -1,1 +1,1 @@
-1.  REDIRECT [SMC Hack](SMC_Hack "wikilink")
+1.  REDIRECT [SMC Hack](SMC_Hack.md "wikilink")

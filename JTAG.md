@@ -1,1 +1,1 @@
-1.  REDIRECT [JTAG](JTAG "wikilink")
+1.  REDIRECT [JTAG_Hack](JTAG_Hack.md "wikilink")
