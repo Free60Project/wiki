@@ -318,8 +318,8 @@ including running my own native code on it.
     the Xbo360
 motherboard.
 
-![XBOX360_Slim_NandPro_LPCH2148_PIC18F2455_Diagram.png](XBOX360_Slim_NandPro_LPCH2148_PIC18F2455_Diagram.png
-"XBOX360_Slim_NandPro_LPCH2148_PIC18F2455_Diagram.png")
+![XBOX360_Slim_NandPro_LPCH2148_PIC18F2455_Diagram.jpg](images/XBOX360_Slim_NandPro_LPCH2148_PIC18F2455_Diagram.jpg
+"XBOX360_Slim_NandPro_LPCH2148_PIC18F2455_Diagram.jpg")
 
   - Open windows' command prompt and launch **NandPro**.
 
@@ -334,7 +334,7 @@ motherboard.
 
 `fc /b  nanddumpname.bin nanddumpname2.bin `
 
-![H-Slim6.png](H-Slim6.png "H-Slim6.png")
+![H-Slim6.jpg](images/H-Slim6.jpg "H-Slim6.jpg")
 
 You should see something like **FC : No difference found**. If the two
 dumps don't match, do a new dump and check again.
@@ -343,37 +343,37 @@ dumps don't match, do a new dump and check again.
 
   - Install **Python 2.7 (32bit\!)** with the default settings :
 
-![H-Slim7.png](H-Slim7.png "H-Slim7.png") ![H-Slim8.png](H-Slim8.png
-"H-Slim8.png") ![H-Slim9.png](H-Slim9.png "H-Slim9.png")
-![H-Slim10.png](H-Slim10.png "H-Slim10.png")
+![H-Slim7.jpg](images/H-Slim7.jpg "H-Slim7.jpg") ![H-Slim8.jpg](images/H-Slim8.jpg
+"H-Slim8.jpg") ![H-Slim9.jpg](images/H-Slim9.jpg "H-Slim9.jpg")
+![H-Slim10.jpg](images/H-Slim10.jpg "H-Slim10.jpg")
 
   - Install **PyCrypto 2.3** with the default settings :
 
-![H-Slim11.png](H-Slim11.png "H-Slim11.png")
-![H-Slim12.png](H-Slim12.png "H-Slim12.png")
-![H-Slim13.png](H-Slim13.png "H-Slim13.png")
+![H-Slim11.jpg](images/H-Slim11.jpg "H-Slim11.jpg")
+![H-Slim12.jpg](images/H-Slim12.jpg "H-Slim12.jpg")
+![H-Slim13.jpg](images/H-Slim13.jpg "H-Slim13.jpg")
 
 To enable python in windows' command prompt, we will have to modify the
 environment variables .
 
   - Go in **Control Panel \> System \> Advanced system settings**
 
-![H-Slim14.png](H-Slim14.png "H-Slim14.png")
+![H-Slim14.jpg](images/H-Slim14.jpg "H-Slim14.jpg")
 
   - Click on environnement variables
 
-![H-Slim15.png](H-Slim15.png "H-Slim15.png")
+![H-Slim15.jpg](images/H-Slim15.jpg "H-Slim15.jpg")
 
   - Click on **new** in system variable
 
-![H-Slim16.png](images/H-Slim16.jpg "H-Slim16.png")
+![H-Slim16.jpg](images/H-Slim16.jpg "H-Slim16.jpg")
 
   - Add this for the name and the value of the variable :
 
 `PYTHONPATH`
 `%PYTHONPATH%;C:\Python2.7 ;`
 
-![H-Slim17.png](images/H-Slim17.jpg "H-Slim17.png")
+![H-Slim17.jpg](images/H-Slim17.jpg "H-Slim17.jpg")
 
 ## Creating the Hackimage
 
@@ -384,7 +384,7 @@ environment variables .
   - Put your original NAND dump in the root of the gggggg-folder and
     create an create a folder named "**ouput**" (in the root aswell).
 
-![H-Slim18.png](H-Slim18.png "H-Slim18.png")
+![H-Slim18.jpg](images/H-Slim18.jpg "H-Slim18.jpg")
 
   - Open windows' command prompt again and **navigate to the
     gggggg-folder**, then type this python command (don't forget to
@@ -393,15 +393,15 @@ environment variables .
 
 `python common\imgbuild\build.py nanddumpname.bin common\cdxell\CD common\xell\xell-gggggg.bin`
 
-![H-Slim19.png](H-Slim19.png "H-Slim19.png")
+![H-Slim19.jpg](images/H-Slim19.jpg "H-Slim19.jpg")
 
 You should see the following
 
-![H-Slim20.png](H-Slim20.png "H-Slim20.png")
+![H-Slim20.jpg](images/H-Slim20.jpg "H-Slim20.jpg")
 
 The file **image_00000000.ecc** is located in the output folder now.
 
-![H-Slim21.png](H-Slim21.png "H-Slim21.png")
+![H-Slim21.jpg](images/H-Slim21.jpg "H-Slim21.jpg")
 
   - **Copy this file into your nandpro folder** and navigate to the
     folder via commandprompt again
@@ -416,7 +416,7 @@ The file **image_00000000.ecc** is located in the output folder now.
 /\!\\ Pay attention that you have to use the **+w16** switch and not the
 -w16 one /\!\\
 
-![H-Slim22.png](H-Slim22.png "H-Slim22.png")
+![H-Slim22.jpg](images/H-Slim22.jpg "H-Slim22.jpg")
 
 The flashed file has a size of 50 blocks so you should see 004F when the
 flashing is done.
@@ -433,7 +433,7 @@ many solution to do this ... here are some of them :
     various connector-metalcasing.
 
 ![H-Slim23.gif](H-Slim23.gif "H-Slim23.gif")
-![H-Slim24.png](H-Slim24.png "H-Slim24.png")
+![H-Slim24.jpg](images/H-Slim24.jpg "H-Slim24.jpg")
 
   - Grab your LPT/USB XilinX JTAG programmer cable. **Connect the cable
     to the PC and the CPLD**.
@@ -441,8 +441,8 @@ many solution to do this ... here are some of them :
 (If you don't have one, you can use GliGli's schematic to build a LPT
 JTAG Programmer)
 
-![H-Slim25.png](images/H-Slim25.jpg "H-Slim25.png")
-![H-Slim26.png](images/H-Slim26.jpg "H-Slim26.png")
+![H-Slim25.jpg](images/H-Slim25.jpg "H-Slim25.jpg")
+![H-Slim26.jpg](images/H-Slim26.jpg "H-Slim26.jpg")
 
   - **Launch "iMPACT"** (from XilinX Lab Tools) and let's start the
     programming ... just follow the images.
@@ -450,47 +450,47 @@ JTAG Programmer)
 (You have to setup the compatibility mode only if your Programmer does
 not get detected right away)
 
-![H-Slim27.png](H-Slim27.png "H-Slim27.png")
-![H-Slim28.png](H-Slim28.png "H-Slim28.png")
-![H-Slim29.png](H-Slim29.png "H-Slim29.png")
-![H-Slim30.png](H-Slim30.png "H-Slim30.png")
-![H-Slim31.png](H-Slim31.png "H-Slim31.png")
-![H-Slim32.png](H-Slim32.png "H-Slim32.png")
-![H-Slim33.png](H-Slim33.png "H-Slim33.png")
-![H-Slim34.png](H-Slim34.png "H-Slim34.png")
-![H-Slim35.png](H-Slim35.png "H-Slim35.png")
-![H-Slim36.png](H-Slim36.png "H-Slim36.png")
-![H-Slim37.png](H-Slim37.png "H-Slim37.png")
+![H-Slim27.jpg](images/H-Slim27.jpg "H-Slim27.jpg")
+![H-Slim28.jpg](images/H-Slim28.jpg "H-Slim28.jpg")
+![H-Slim29.jpg](images/H-Slim29.jpg "H-Slim29.jpg")
+![H-Slim30.jpg](images/H-Slim30.jpg "H-Slim30.jpg")
+![H-Slim31.jpg](images/H-Slim31.jpg "H-Slim31.jpg")
+![H-Slim32.jpg](images/H-Slim32.jpg "H-Slim32.jpg")
+![H-Slim33.jpg](images/H-Slim33.jpg "H-Slim33.jpg")
+![H-Slim34.jpg](images/H-Slim34.jpg "H-Slim34.jpg")
+![H-Slim35.jpg](images/H-Slim35.jpg "H-Slim35.jpg")
+![H-Slim36.jpg](images/H-Slim36.jpg "H-Slim36.jpg")
+![H-Slim37.jpg](images/H-Slim37.jpg "H-Slim37.jpg")
 
 ## Wiring
 
   - On the CPLD, **remove the Resistor R2 and connect R2's upper pad to
     R1's lower pad**.
 
-![H-Slim38.png](H-Slim38.png "H-Slim38.png")
-![H-Slim39.png](H-Slim39.png "H-Slim39.png")
+![H-Slim38.jpg](images/H-Slim38.jpg "H-Slim38.jpg")
+![H-Slim39.jpg](images/H-Slim39.jpg "H-Slim39.jpg")
 
   - Place the CPLD on the motherboard like you see on the picture. We
     **recommend to use double coated tape + material to isolate the
     CPLD**.
 
-![H-Slim40.png](H-Slim40.png "H-Slim40.png")
+![H-Slim40.jpg](images/H-Slim40.jpg "H-Slim40.jpg")
 
   - Use the following diagram to solder all needed connections. **It's
     recommended to use a socket\!**
 
-![H-Slim41.png](H-Slim41.png "H-Slim41.png")
-![H-Slim42.png](H-Slim42.png "H-Slim42.png")
-![H-Slim43.png](H-Slim43.png "H-Slim43.png")
-![H-Slim44.png](H-Slim44.png "H-Slim44.png")
-![H-Slim45.png](H-Slim45.png "H-Slim45.png")
+![H-Slim41.jpg](images/H-Slim41.jpg "H-Slim41.jpg")
+![H-Slim42.jpg](images/H-Slim42.jpg "H-Slim42.jpg")
+![H-Slim43.jpg](images/H-Slim43.jpg "H-Slim43.jpg")
+![H-Slim44.jpg](images/H-Slim44.jpg "H-Slim44.jpg")
+![H-Slim45.jpg](images/H-Slim45.jpg "H-Slim45.jpg")
 
 ## ENJOY
 
   - You can now start your console normally and see XeLL boot within 2
     minutes. You can now **enjoy unsigned code on your slim**.
 
-![H-Slim46.png](H-Slim46.png "H-Slim46.png")
+![H-Slim46.jpg](images/H-Slim46.jpg "H-Slim46.jpg")
 
 ## CREDITS / THANKS
 
@@ -501,3 +501,4 @@ engineering and/or hacking work on the 360.
 
 [Category:Xbox360 System Software](Category_Xbox360_System_Software)
 [Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+
