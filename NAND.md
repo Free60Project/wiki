@@ -188,7 +188,7 @@ datasheet.
 
 There is another Atmel chip on the front panel:
 
-<File:Atmel2.jpg>
+[<File:Atmel2.jpg>](images/Atmel2.jpg "Atmel2.jpg")
 
 Atmel 528 serial EEPROM
 
