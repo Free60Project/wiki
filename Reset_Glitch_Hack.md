@@ -366,14 +366,14 @@ environment variables .
 
   - Click on **new** in system variable
 
-![H-Slim16.png](images/H-Slim16.png "H-Slim16.png")
+![H-Slim16.png](images/H-Slim16.jpg "H-Slim16.png")
 
   - Add this for the name and the value of the variable :
 
 `PYTHONPATH`
 `%PYTHONPATH%;C:\Python2.7 ;`
 
-![H-Slim17.png](images/H-Slim17.png "H-Slim17.png")
+![H-Slim17.png](images/H-Slim17.jpg "H-Slim17.png")
 
 ## Creating the Hackimage
 
