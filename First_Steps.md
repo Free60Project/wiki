@@ -1,1 +1,1 @@
-1.  REDIRECT [FAQ](FAQ "wikilink")
+1.  REDIRECT [FAQ](FAQ.md "wikilink")

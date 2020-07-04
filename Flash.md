@@ -1,1 +1,1 @@
-1.  REDIRECT [NAND](NAND "wikilink")
+1.  REDIRECT [NAND](NAND.md "wikilink")

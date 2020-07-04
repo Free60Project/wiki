@@ -1,1 +1,1 @@
-1.  REDIRECT [FATX](FATX "wikilink")
+1.  REDIRECT [FATX](FATX.md "wikilink")

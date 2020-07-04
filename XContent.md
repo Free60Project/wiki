@@ -1,1 +1,1 @@
-1.  REDIRECT [STFS](STFS "wikilink")
+1.  REDIRECT [STFS](STFS.md "wikilink")

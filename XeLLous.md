@@ -1,1 +1,1 @@
-1.  REDIRECT [XeLL](XeLL "wikilink")
+1.  REDIRECT [XeLL](XeLL.md "wikilink")

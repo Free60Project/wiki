@@ -1,1 +1,1 @@
-1.  REDIRECT [HDD](HDD "wikilink")
+1.  REDIRECT [HDD](HDD.md "wikilink")

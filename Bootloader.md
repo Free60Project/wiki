@@ -1,1 +1,1 @@
-1.  REDIRECT [Bootloaders](Bootloaders "wikilink")
+1.  REDIRECT [Bootloaders](Bootloaders.md "wikilink")
