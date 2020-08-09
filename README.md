@@ -1,6 +1,6 @@
 # Free60 wiki - archive
 
-[![Build Status](https://travis-ci.com/Free60Project/wiki.svg?branch=master)](https://travis-ci.com/Free60Project/wiki)
+[![GitHub Workflow - Build](https://img.shields.io/github/workflow/status/Free60Project/wiki/build?label=build)](https://github.com/Free60Project/wiki/actions?query=workflow%3Abuild)
 
 Free60 MediaWiki archive.
 
