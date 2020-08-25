@@ -12,3 +12,7 @@
 | 0x60C  | 0x200                                | unicode string               | Artist #2 (reason for duplicate unknown, locale?) |
 | 0x80C  | 0x200                                | unicode string               | Genre #1                                          |
 | 0xA0C  | 0x200                                | unicode string               | Genre #2 (reason for duplicate unknown, locale?)  |
+| 0xC0C  | 0x4                                  | unsigned int                 | Track Length (milliseconds, to nearest second)    |
+| 0xC10  | 0x4                                  | unsigned int                 | Track Number on Album (starts from 0x1)           |
+| 0xC14  | 0xF4                                 | bytes                        | Unknown, sometimes contains readable text         |
+| 0xD08  | ... (rest of the file)               | bytes                        | WMA 9.1 file containing audio as described above  |
