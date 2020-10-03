@@ -21,109 +21,41 @@ To submit changes:
 [Pages with missing images](Category_Pages_with_missing_images)
 [Template documentation](Category_Template_documentation)
 
-## Index
+## ToDo
 
 [TODO](!TODO.md)
 
-[1bl Code](1bl_Code.md)
+## Index
 
-[360FlashTool](360FlashTool.md)
+| Generic                       | Hardware                      | Software                                    |
+|-------------------------------|-------------------------------|---------------------------------------------|
+|[Attack](Attack.md)            | [8051 8052](8051_8052.md)     | [1bl Code](1bl_Code.md)                     |
+|[Boot Process](Boot_Process.md)| [CPU](CPU.md)                 | [360FlashTool](360FlashTool.md)             |
+|[Contribute](Contribute.md)    | [Case](Case.md)               | [849x System Update](849x_System_Update.md) |
+|[Error Codes](Error_Codes.md)  | [Chatpad](Chatpad.md)         | [Bootloader](Bootloaders.md)                |
+|[FAQ](FAQ.md)                  | [DVD Drive](DVD_Drive.md)     | [CB Code](CB_Code.md)                       |
+|                               | [Dump Flash the NAND](Dump_Flash_the_NAND.md)| [Toolchain](Compiling_the_Toolchain.md)     |
+|                               | [Ethernet](Ethernet.md)       | [Console Security Certificate](Console_Security_Certificate.md)|
+|                               | [Falcon](Falcon.md)           | [Cross Compiler](Cross_Compiler.md)         |
+|                               | [Finding the right timing](Finding_the_right_timing.md)| [Dashboard](Dashboard.md)|
+|                               | [Flash](Flash.md)             | [Debian-etch](Debian-etch.md)               |
+|                               | [Fusesets](Fusesets.md)       | [Debian-lenny](Debian-lenny.md)             |
+|                               | [GamePad](GamePad.md)         | [Debian-squeeze](Debian-squeeze.md)         |
+|                               | [Gamepad Keyboard](Gamepad_Keyboard.md)| [Dumpana](Dumpana.md)              |
+|                               | [GPU](GPU.md)                 |                                             |
+|                               | [HDD](HDD.md)                 | [Emulators](Emulators.md)                   |
+|                               | [Harddrive](Harddrive.md)     | [FATX](FATX.md)                             |
+|                               | [Headset](Headset.md)         |                                             |
+|                               | [Motherboard](Motherboard.md) | [Flash Filesystem](Flash_Filesystem.md)     |
+|                               | [Jasper](Jasper.md)           | [GDFX](GDFX.md)                             |
+|                               | [Level Shifter](Level_Shifter.md)|[GPD](GPD.md)                             |
 
-[8051 8052](8051_8052.md)
-
-[849x System Update](849x_System_Update.md)
-
-[Attack](Attack.md)
-
-[Boot Process](Boot_Process.md)
-
-[Bootloader](Bootloader.md)
-
-[Bootloaders](Bootloaders.md)
-
-[CB Code](CB_Code.md)
-
-[CPU](CPU.md)
-
-[Case](Case.md)
-
-[Chatpad](Chatpad.md)
-
-[Compiling the Toolchain](Compiling_the_Toolchain.md)
-
-[Console Security Certificate](Console_Security_Certificate.md)
-
-[Contribute](Contribute.md)
-
-[Cross Compiler](Cross_Compiler.md)
-
-[DVD](DVD.md)
-
-[DVD Drive](DVD_Drive.md)
-
-[Dashboard](Dashboard.md)
-
-[Debian-etch](Debian-etch.md)
-
-[Debian-lenny](Debian-lenny.md)
-
-[Debian-squeeze](Debian-squeeze.md)
-
-[Dump Flash the NAND](Dump_Flash_the_NAND.md)
-
-[Dumpana](Dumpana.md)
-
-[EEPROM](EEPROM.md)
-
-[Emulators](Emulators.md)
-
-[Error Codes](Error_Codes.md)
-
-[Ethernet](Ethernet.md)
-
-[FAQ](FAQ.md)
-
-[FATX](FATX.md)
-
-[Falcon](Falcon.md)
-
-[FileSystem](FileSystem.md)
-
-[File Formats](File_Formats.md)
-
-[File System](File_System.md)
-
-[Finding the right timing](Finding_the_right_timing.md)
-
-[First Steps](First_Steps.md)
-
-[Flash](Flash.md)
-
-[Flash Filesystem](Flash_Filesystem.md)
 
 [Free60 Git Repository](Free60_Git_Repository.md)
-
-[Fusesets](Fusesets.md)
-
-[GDFX](GDFX.md)
-
-[GPD](GPD.md)
-
-[GPU](GPU.md)
-
-[GamePad](GamePad.md)
-
-[Gamepad Keyboard](Gamepad_Keyboard.md)
 
 [Generic Xbox 360 File Container](Generic_Xbox_360_File_Container.md)
 
 [Genesis Plus](Genesis_Plus.md)
-
-[HDD](HDD.md)
-
-[Harddrive](Harddrive.md)
-
-[Headset](Headset.md)
 
 [Help](Help.md)
 
@@ -147,12 +79,6 @@ To submit changes:
 
 [IRC](IRC.md)
 
-[JTAG](JTAG.md)
-
-[JTAG Hack](JTAG_Hack.md)
-
-[Jasper](Jasper.md)
-
 [Kernel](Kernel.md)
 
 [Kernel Exports](Kernel_Exports.md)
@@ -160,8 +86,6 @@ To submit changes:
 [King Kong Hack](King_Kong_Hack.md)
 
 [Launchers](Launchers.md)
-
-[Level Shifter](Level_Shifter.md)
 
 [Lflash](Lflash.md)
 
@@ -220,10 +144,6 @@ To submit changes:
 [Memory Unit](Memory_Unit.md)
 
 [Modesetting](Modesetting.md)
-
-[Motherboard](Motherboard.md)
-
-[Motherboards](Motherboards.md)
 
 [Mupen64-360](Mupen64-360.md)
 
@@ -406,4 +326,3 @@ To submit changes:
 [ZLX Browser](ZLX_Browser.md)
 
 [Zephyr](Zephyr.md)
-
