@@ -2,5 +2,11 @@
 site_name: Free60 Wiki archive
 nav:
     - Home: "index.md"
+    - Hardware: "Category_Xbox360_Hardware.md"
+    - System Software: "Category_Xbox360_System_Software.md"
+    - Homebrew Software: "Category_Xbox360_Homebrew_Software.md"
+    - Linux: "Category_Xbox360_Linux.md"
+    - Development: "Category_Xbox360_Development.md"
+    - Support: "Category_Support.md"
     - ToDo: "!TODO.md"
 theme: material
