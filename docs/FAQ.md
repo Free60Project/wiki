@@ -1,6 +1,7 @@
 # FAQ - Frequently asked questions
 
-- Whats the status of the project?
+* Whats the status of the project?
+
   We can run unsigned code, [Linux](../Linux_Kernel) patches
   exist and a [second level boot loader](../XeLL) as well as
   several [LiveCDs](../LiveCD) have been released. But you
@@ -10,10 +11,11 @@
   you are looking for as it works without soldering a serial cable to
   the motherboard of your Xbox 360.
 
-- Is it possible to run unsigned code on the Xbox 360?
+* Is it possible to run unsigned code on the Xbox 360?
+
   Yes. Look at [Run Code](../Run_Code).
 
-- Which hack should I use for my xbox kernel version?
+* Which hack should I use for my xbox kernel version?
 
   Kernel lower than 2.0.4548: See [Timing Attack](../Timing_Attack)
 
@@ -23,23 +25,27 @@
   Kernel higher than 7371: The new [Reset Glitch Hack](../Reset_Glitch_Hack)
   supports many consoles with recent Kernels
 
-- Where can I find the latest news?
-  Relevant news items are posted on the [front
-  page](Main_Page "wikilink"). For what else has changed on the Wiki,
-  see the [recent changes](Special:RecentChanges "wikilink").
+* Where can I find the latest news?
 
-- Will I void my warranty by taking my machine apart?
+  Relevant news items are posted on the [front
+  page](Main_Page "wikilink"). For what else has changed on the Wiki, 
+  see the [recent changes](Special: RecentChanges "wikilink").
+
+* Will I void my warranty by taking my machine apart?
+
   Yes. There is a tamper-proof seal that must be broken to get any
   further than just removing the faceplate. Doing so automatically
   voids any warranty you might have had.
 
-- How can I subscribe to the free60.org mailinglist?
+* How can I subscribe to the free60.org mailinglist?
+
   Sorry, Mailing Lists aren't available anymore.
 
-- I have access to official documentation or official developer
+* I have access to official documentation or official developer
+
   software/hardware. May I help?
   No. Contributing any such information would put you in violation of
   your Non-Disclosure Agreement, while tainting the project at the
   same time. Note, however, IANAL and TINLA.
 
-[Category:Support](../Category_Support)
+[Category: Support](../Category_Support)

@@ -6,4 +6,4 @@
 * [Debian-lenny](../Debian-lenny)
 * [Debian-squeeze](../Debian-squeeze)
 
-[Category:Xbox360_Linux](../Category_Xbox360_Linux)
+[Category: Xbox360_Linux](../Category_Xbox360_Linux)

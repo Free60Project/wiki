@@ -234,7 +234,7 @@ Bit7: Profile Transfer
 
 # Profile Embedded Content (PEC)
 
-When extra security is needed for content which is already using STFS,
+When extra security is needed for content which is already using STFS, 
 PEC files may be used to add an extra layer on top. PEC files use the
 STFS descriptor and algorithms, but has no similarity with content
 packages.
@@ -264,7 +264,7 @@ determines where the file table begins. As it is a block number, you
 will have to convert it to an offset. Here is some code in C\# for
 converting:
 
-```cs
+``` cs
 internal int BlockToOffset(int xBlock)
 {
     int xReturn = 0;
@@ -335,7 +335,7 @@ that all of the blocks in the file are consecutive. Bit 7 indicates that
 the file is a directory.
 The first 6 bits 0-5, are the length of the filename.
 
-```cs
+``` cs
 public System.Boolean IsDirectory//bit 7
 {
     get
@@ -395,7 +395,8 @@ block and every 0xAA\*0xAA (0x70E4) blocks there is another table
 block number from a file listing you need to account for the hash tables
 which are not included in the block numbering system. For example block
 171 is actually located where you would expect block 172 to reside ((171
-+ int(171/170)) \* 0x1000 + 0xC000).
+
+* int(171/170)) \* 0x1000 + 0xC000).
 
 | Offset | Length | Type  | Information |
 | ------ | ------ | ----- | ----------- |
@@ -421,7 +422,7 @@ Here is some C\# code for converting a block to it's hash table
 position(**it may not work
 perfectly\!**):
 
-```cs
+``` cs
 internal int ComputeLevelNHashBlockNumber(int xBlock, int xLevel)
 {
     int xBlockShift;
@@ -522,4 +523,4 @@ A new python library
 can read STFS
 files
 
-[Category:Xbox360 System Software](Category_Xbox360_System_Software)
+[Category: Xbox360 System Software](Category_Xbox360_System_Software)

@@ -1,9 +1,10 @@
 # Kernel 
+
 Version 2.0.13146.0 is currently the latest public version.
 
 You can check your kernel version in "System -\> Console Settings -\>
 System Info". The line at the bottom contains your kernel version in the
-format K:2.0.XXXX.0, where XXXX is your kernel version.
+format K:2.0. XXXX.0, where XXXX is your kernel version.
 
 <table>
 <thead>
@@ -77,7 +78,7 @@ format K:2.0.XXXX.0, where XXXX is your kernel version.
 <tr class="odd">
 <td><p>2.0.7357.0</p></td>
 <td><p>November 19, 2008</p></td>
-<td><p>New dashboard (&quot;NXE&quot;)</p></td>
+<td><p>New dashboard (&quot; NXE&quot; )</p></td>
 </tr>
 <tr class="even">
 <td><p>2.0.7363.0</p></td>
@@ -144,8 +145,7 @@ Minor bugfix.<br />
 </tbody>
 </table>
 
-
 Please note: In order to use the [SMC Hack](../SMC_Hack), you must not have installed any
 of the 849x kernel updates.
 
-[Category:Xbox360 System Software](../Category_Xbox360_System_Software)
+[Category: Xbox360 System Software](../Category_Xbox360_System_Software)

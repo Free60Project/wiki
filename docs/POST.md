@@ -192,4 +192,4 @@ enabled.
 |              | 0xC8      | CG auth failed                                                                      |
 
 Please fill in all known POST Codes. (And create a better table if you
-can ;) )
+can ; ) )

@@ -2,9 +2,9 @@
 
 HvxKeysExecute is a syscall to execute a payload in privileged mode
 
-  - Microsoft uses it as a back door to xbox 360s
-  - On retails: Payloads must be signed
-  - On exploited consoles: Signature check must be patched
+  + Microsoft uses it as a back door to xbox 360s
+  + On retails: Payloads must be signed
+  + On exploited consoles: Signature check must be patched
 
 Because this function has to do with online related services, I have
 altered some function names, with the intention to reduce abusing this
@@ -15,7 +15,7 @@ in the xbox live auth process, that does not appear to be its main
 function. For example I have used it many times to help debug other HV
 system calls.
 
-```cpp
+``` cpp
 #define KEYS_PARAMETER_FAIL 0xC8000030
 #define KEYS_MAGIC_FAIL 0xC8000032
 #define KEYS_HVMAGIC_FAIL 0xC8000033

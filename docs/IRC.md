@@ -21,24 +21,29 @@ that way.
 
 ### Basic Guidelines
 
-  - Be polite. Flaming others and the like is considered bad netiquette,
+  + Be polite. Flaming others and the like is considered bad netiquette, 
+
     and is frowned upon. This will more than likely result in you and
     any participating parties being banned from the channel.
 
-  - Be on-topic. Off-topic discussion is considered noise and should be
+  + Be on-topic. Off-topic discussion is considered noise and should be
+
     directed elsewhere.
 
-  - Do not /msg people with on-topic discussion. Rather, discuss that
+  + Do not /msg people with on-topic discussion. Rather, discuss that
+
     in-channel.
 
-  - Do not overly repeat yourself. We heard you the first time.
+  + Do not overly repeat yourself. We heard you the first time.
 
-  - Please don't run any bots without prior permission from an op.
+  + Please don't run any bots without prior permission from an op.
 
-  - Channel opertator status is not a privilege, but rather a
+  + Channel opertator status is not a privilege, but rather a
+
     responsibilty. Asking for such will more than likely get you banned.
 
-  - \#free60 is NOT a distribution point for pirated/illegal material,
+  + \#free60 is NOT a distribution point for pirated/illegal material, 
+
     be it software or even documentation. We have zero-tolerance towards
     any related discussion. That also goes for use ofÂ \!list or other
     such commands. You have been warned.
@@ -47,45 +52,56 @@ that way.
 
 #### Before Asking
 
-  - Search the wiki for an answer.
-  - Search the mailing list.
+  + Search the wiki for an answer.
+  + Search the mailing list.
 
 #### While Asking
 
-  - Be polite.
-  - Be patient.
-  - Be pertinent -- that is make sure your question has something to do
+  + Be polite.
+  + Be patient.
+  + Be pertinent -- that is make sure your question has something to do
+
     with the channel you're in.
 
 #### After Asking
 
-  - If your question was answered and can't be found on the wiki please
+  + If your question was answered and can't be found on the wiki please
+
     post that info.
-  - Stick around to help others after you.
+
+  + Stick around to help others after you.
 
 ### Use the right channel
 
 There are two channels in OFTC currently for public use:
 
 1.  \#free60 is for technical and development discussion, for idle chat
+
     seek \#free60-chat.
+
 2.  \#free60-chat is for general discussion on or off topic for free60
+
     and is loosely controlled.
 
 And one public channel on EFNET
 
 1.  \#libxenon for everything from LibXenon and Linux till XeLL
 
-  - Currently neither channel is moderated ( m) though if conversations
+  + Currently neither channel is moderated ( m) though if conversations
+
     get out of hand or anything of that nature we reserve the right to
     place higher restrictions.
-  - Both channels will receive the same updates about important
+
+  + Both channels will receive the same updates about important
+
     information.
-  - You can hang out in both, but make sure you questions are for the
+
+  + You can hang out in both, but make sure you questions are for the
+
     right channel.
 
 ## Conclusion
 
 Thank you for your interest in Free60, enjoy your stay\!
 
-[Category:Support](../Category_Support)
+[Category: Support](../Category_Support)

@@ -16,4 +16,4 @@
 | Debian-lenny   | Linux Deboostrap-script for Debian 5 "lenny"       |
 | Debian-squeeze | Linux Deboostrap-script for Debian 6 "squeeze"     |
 
-[Category:Xbox360_Linux](../Category_Xbox360_Linux)
+[Category: Xbox360_Linux](../Category_Xbox360_Linux)

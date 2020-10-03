@@ -51,19 +51,24 @@ the internet.
 
 ### Care and Feeding
 
-Because of it's collaborative and freely-editable nature, writing,
+Because of it's collaborative and freely-editable nature, writing, 
 updating and maintaining documentation are the most important steps to
 keeping the system alive.
 
 A few guidelines to go by when editing pages on this wiki:
 
-- Provide *accurate* information.
-- Write an edit summary for your change. It takes the guess-work out
+* Provide *accurate* information.
+* Write an edit summary for your change. It takes the guess-work out
+
   of browsing through the changelog.
-- Avoid duplication. New pages that duplicate already existing
+
+* Avoid duplication. New pages that duplicate already existing
+
   information are a bad idea. Work on-top of the existing content to
   better it instead.
-- Upload only those images that you own. Or at least get permission
+
+* Upload only those images that you own. Or at least get permission
+
   from the owner to do so. Infringing on someone else's copyright does
   no one any good, really.
 
@@ -75,4 +80,4 @@ vulnerable to [vandalism](https://web.archive.org/web/20060927204136/https://en.
 Spotting and reverting cases of vandalism can be anywhere from time
 consuming, to trivial a task. Either way, this is greatly appreciated.
 
-[Category:Support](../Category_Support)
+[Category: Support](../Category_Support)

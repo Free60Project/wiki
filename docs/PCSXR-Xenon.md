@@ -2,7 +2,7 @@
 
 ### NFO
 
-```
+``` 
     Pcsxr-xenon - Release a 0.5
      ---------------------------
 
@@ -51,5 +51,4 @@
      Bug fixe on gpu plugin
 ```
 
-
-[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)
+[Category: Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)

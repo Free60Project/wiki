@@ -170,7 +170,7 @@ file?)
 | 16              | NameLength         | String   | (original?)filename  |
 | 16 + NameLength | Structure Size - 8 | Byte\[\] | Unknown(compressed?) |
 
-TODO:Unknown
+TODO: Unknown
 
 ### XSTC
 
@@ -208,7 +208,7 @@ Is StructureSize null for anyone else? only in this record.
 
 ### XVC2
 
-This record just stores a series of XPBM files, and (TODO:Unknown).
+This record just stores a series of XPBM files, and (TODO: Unknown).
 
 | Offset | Length | Type     | Information              |
 | ------ | ------ | -------- | ------------------------ |
@@ -249,4 +249,4 @@ string.
 | 2      | 2                 | UInt16 | String Length |
 | 4      | **String Length** | String | String        |
 
-[Category:Xbox360_System_Software](Category_Xbox360_System_Software)
+[Category: Xbox360_System_Software](Category_Xbox360_System_Software)

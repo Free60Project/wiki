@@ -13,31 +13,27 @@ For **Debian/Ubuntu**:
 [Instructions](http://www.cyberciti.biz/faq/nfs4-server-debian-ubuntu-linux)
 Your **/etc/exports** should look like this:
 
-`/mnt/nfsroot 192.168.1.*(rw,no_root_squash,no_subtree_check,async) `
-
+ `/mnt/nfsroot 192.168.1.*(rw,no_root_squash,no_subtree_check,async) `
 Change the IP scheme and path to fit your configuration.
 
 Make the **/mnt/nfsroot** directory and copy the **image.squashfs**
 (from a LiveCD) into it:
 
-`mkdir /mnt/nfsroot`
-`cp image.squashfs /mnt/nfsroot/`
-
+ `mkdir /mnt/nfsroot`
+ `cp image.squashfs /mnt/nfsroot/`
 Then extract the squashfs as root by doing:
 
-`unsquashfs image.squashfs`
-
+ `unsquashfs image.squashfs`
 Now copy everything from the squashfs-root folder to **/mnt/nfsroot** by
 typing:
 
-`cd /mnt/nfsroot/squashfs-root && cp * -vaR /mnt/nfsroot`
-
+ `cd /mnt/nfsroot/squashfs-root && cp * -vaR /mnt/nfsroot`
 **Alternative:** [Debootstrap](../Debootstrap) a fresh powerpc
 system (debian/ubuntu) and use it as NFSroot.
 
 Let the nfs-share re-export with:
 
-`exportfs -ra`
+ `exportfs -ra`
 
 ## Compile the kernel that you want to use
 
@@ -58,50 +54,46 @@ your kernel config and your patch are the same version.
 
 With the following command:
 
-`tar -xvjf linux-2.6.38.8.tar.bz2`
+ `tar -xvjf linux-2.6.38.8.tar.bz2`
 
 ### Patch the kernel
 
 With the following
 commands:
 
-`cd linux-2.6.38.8`
-`# assumes that the patch is in the directory above the kernel folder that you just changed into`
-`patch -p1 --dry-run <../patch-2.6.38.8-xbox0.11.1.diff`
-`# if the dry-run didn't show any errors do the following:`
-`patch -p1 <../patch-2.6.38.8-xbox0.11.1.diff`
+ `cd linux-2.6.38.8`
+ `# assumes that the patch is in the directory above the kernel folder that you just changed into`
+ `patch -p1 --dry-run <../patch-2.6.38.8-xbox0.11.1.diff`
+ `# if the dry-run didn't show any errors do the following:`
+ `patch -p1 <../patch-2.6.38.8-xbox0.11.1.diff`
 
 ### Copy and Edit the kernel config file
 
 Copy the kernel config to the extracted linux-kernel folder:
 
-`# The '.' in front of the filename is there on purpose!`
-`cp /path/to/xenon-config /path/to/extracted/linux-2.6.38.8/.config`
-
+ `# The '.' in front of the filename is there on purpose!`
+ `cp /path/to/xenon-config /path/to/extracted/linux-2.6.38.8/.config`
 Look for a line similar to
 this:
 
-`CONFIG_CMDLINE="root=/dev/nfs video=xenonfb nfsroot=192.168.1.100:/mnt/nfsroot rw ip=dhcp panic=60"`
-
+ `CONFIG_CMDLINE="root=/dev/nfs video=xenonfb nfsroot=192.168.1.100:/mnt/nfsroot rw ip=dhcp panic=60"`
 Edit the NFSroot to be your IP address and adjust the path correctly.
 
 Alternative: Use [kboot.conf](kboot.conf "wikilink") to pass a custom
 CMDLINE to the Server. If you want to do this you set:
 
-`CONFIG_CMDLINE_BOOL=n`
-`CONFIG_CMDLINE=n`
+ `CONFIG_CMDLINE_BOOL=n`
+ `CONFIG_CMDLINE=n`
 
 ### Build the kernel
 
 Do the following:
 
-`make ARCH=powerpc CROSS_COMPILE=xenon- menuconfig`
-
+ `make ARCH=powerpc CROSS_COMPILE=xenon- menuconfig`
 Load up your config file that you just edited and then exit and run the
 following command:
 
-`make ARCH=powerpc CROSS_COMPILE=xenon- all`
-
+ `make ARCH=powerpc CROSS_COMPILE=xenon- all`
 You might get an error if so you might need to edit
 arch/powerpc/kernel/pci_64.c line 149 and change the lh to llh both
 occurrences.
@@ -120,16 +112,13 @@ address. Then compile Xell.
 
 For **Gentoo** and 'atftpd' just type:
 
-`emerge -v atftp `
-
+ `emerge -v atftp `
 Then edit the atftp config file:
 
-`nano /etc/conf.d/atftp`
-
+ `nano /etc/conf.d/atftp`
 I changed mine to look like this:
 
-`TFTPD_ROOT="/tftpboot" `
-
+ `TFTPD_ROOT="/tftpboot" `
 just edit this line and leave the rest the way it is as it is already
 correct.
 
@@ -145,8 +134,7 @@ configuration. If your tftp-daemon has a path like
 **/var/lib/tftpboot/** set up you need to make a subdir **tftpboot** in
 there. Final path would look like:
 
-`/var/lib/tftpboot/tftpboot/`
-
+ `/var/lib/tftpboot/tftpboot/`
 Now if everything worked correctly you should be able to boot your 360
 via NFS.
 
@@ -161,26 +149,23 @@ forwarding all tftp requests to your tftp server.
 
 for ddwrt: enable DNSmasq
 
-`    Go to your Web-Interface and log in`
-`   Go to Setup->Basic Setup`
-`       Make sure that`
-`           DHCP Type = DHCP Server`
-`           DHCP Server = Enable`
-`           Use DNSMasq for DHCP = Checked`
-`           Use DNSMasq for DNS = Checked `
-
+ `    Go to your Web-Interface and log in`
+ `   Go to Setup->Basic Setup`
+ `       Make sure that`
+ `           DHCP Type = DHCP Server`
+ `           DHCP Server = Enable`
+ `           Use DNSMasq for DHCP = Checked`
+ `           Use DNSMasq for DNS = Checked `
 Go to Administration-\>Services
 
-`       LAN Domain = `<lan-name>
-`       DNSMasq = Enabled`
-`       Local DNS = Enabled`
-
+`       LAN Domain = ` <lan-name>
+ `       DNSMasq = Enabled`
+ `       Local DNS = Enabled`
 in DNSmasq additional options:
 
-`domain=lan-name-here`
-`local=/lan-name-here/`
-`expand-hosts`
-`dhcp-option=66,"tftp-server-address-here"`
-
+ `domain=lan-name-here`
+ `local=/lan-name-here/`
+ `expand-hosts`
+ `dhcp-option=66,"tftp-server-address-here"`
 Or edit /tmp/dnsmasq.conf with the correct settings (the above settings)
 *adding cisco conf next*

@@ -19,34 +19,32 @@ error. No official documentation or SDK has been used.
 
 It has following dependencies:
 
-  - libtool
-  - m4
-  - automake
-  - autoconf
-  - pkg-config
-  - xorg-dev
-  - xutils-dev
-  - x11-xserver-utils
-  - x11proto-randr-dev
-  - libxrandr-dev
+  + libtool
+  + m4
+  + automake
+  + autoconf
+  + pkg-config
+  + xorg-dev
+  + xutils-dev
+  + x11-xserver-utils
+  + x11proto-randr-dev
+  + libxrandr-dev
 
 Probably some of these packages contain each other.
 
 Extract the sourcecode and make sure autogen.sh has the executable flag
 set. Start the compiling process by executing
 
-`./autogen.sh`
-
+ `./autogen.sh`
 After successful Compiling you will find the driver-module in
 *\*builddir\*/src/.libs/xenosfb_drv.so* Copy it to
 */usr/lib/xorg/modules/drivers/* Also make sure */etc/X11/xorg.conf*
 holds at least the following:
 
-`Section "Device"`
-` Identifier    "Generic Video Card"`
-` Driver        "xenosfb"`
-` Option        "UseFBDev"      "true"`
-`EndSection`
-
-[Category:Xbox360_Development](Category_Xbox360_Development)
-[Category:Xbox360_Linux](Category_Xbox360_Linux)
+ `Section "Device"`
+ ` Identifier    "Generic Video Card"`
+ ` Driver        "xenosfb"`
+ ` Option        "UseFBDev"      "true"`
+ `EndSection`
+[Category: Xbox360_Development](Category_Xbox360_Development)
+[Category: Xbox360_Linux](Category_Xbox360_Linux)

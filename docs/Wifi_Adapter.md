@@ -1,8 +1,8 @@
 # Introduction
 
-[<File:Wlan>back.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_back.jpg)
+[<File: Wlan>back.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_back.jpg)
 
-FCC ID:C3K-WKS168
+FCC ID: C3K-WKS168
 IC: 3048A-WKS168
 
 The [Wireless Network
@@ -16,32 +16,31 @@ below.
 
 # Disassembly
 
-[<File:Wlan> all pieces.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_all_pieces.jpg)
+[<File: Wlan> all pieces.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_all_pieces.jpg)
 
 Disassembled; bottom and top covers, PCB, USB cable and antenna
 
-[<File:Wlan> back opened.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_back_opened.jpg)
+[<File: Wlan> back opened.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_back_opened.jpg)
 
 PCB underside, with [Hannstar Board Corp.](http://www.hannstarboard.com/wps/wcm/connect/english/tw) inscription.
 
 # Integrated Circuits
 
-[<File:Wlan> front opened.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_front_opened.jpg)
+[<File: Wlan> front opened.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_front_opened.jpg)
 
 PCB upper-side, showing the major ICs
 
 ## Marvell MVPG16
 
-`MG16R`
-`00A2R`
-`521AC`
-
+ `MG16R`
+ `00A2R`
+ `521AC`
 The MVPG16 is an integrated DC-DC synchronous step-down switching
 regulator. Input voltage ranges from 3.0V-5.5V. Output voltage ranges
 from 0.72V-3.63V and is user-programmable via a single external
 resistor.
 
-There's no readily available datasheet for this particular IC, however,
+There's no readily available datasheet for this particular IC, however, 
 one for it's modular *MDx-G16* counterpart is, for
 [download](https://web.archive.org/web/20071005220740/http://www.marvell.com/products/power/dspswitchermodule/MV-S101948-00C.pdf).
 There's a two-page
@@ -51,19 +50,16 @@ as well, but is rather lacking in the more technical details.
 Product information page at
 [http://www.marvell.com/products/power/dspswitcher/index.jsp](https://web.archive.org/web/20090603221217/http://www.marvell.com/products/power/dspswitcher/index.jsp)
 
-
-
 ## Marvell 88W8388-BDK1
 
-`88W8388-BDK1`
-`AGW1P .2`
-`0530 A2P`
-`TW`
-
+ `88W8388-BDK1`
+ `AGW1P .2`
+ `0530 A2P`
+ `TW`
 The 88W8388 is an 802.11a/b/g WLAN SoC from Marvell. Embedded are an
 [ARM946E-S](https://web.archive.org/web/20100408074133/http://www.arm.com/products/processors/classic/arm9/arm946.php) core (as per
 the ARM [Networking.pdf Networking](http://www.arm.com/pdfs/116-4)
-brochure) and on-chip memory. Together with an integrated TCP/IP stack,
+brochure) and on-chip memory. Together with an integrated TCP/IP stack, 
 this allows for off-loading the host processor of protocol processing.
 This SoC is targeted at small-footprint devices, eg. cellular/VoIP
 phones, PDAs, video game consoles, etc.
@@ -81,5 +77,5 @@ from
 
 *Baseband Processor Product Selection table*
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
-[Category:Pages with missing images](Category_Pages_with_missing_images)
+[Category: Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Pages with missing images](Category_Pages_with_missing_images)

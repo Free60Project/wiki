@@ -4,7 +4,7 @@
 to store information inside a profile. They are based on the
 [XDBF](../XDBF) format. Profiles are composed of many of these
 files, each named under their respective titles id (e.g. 4D5307E6.gpd
-for Halo 3). The dashboard GPD (`FFFE07D1.gpd`) contains information and
+for Halo 3). The dashboard GPD ( `FFFE07D1.gpd` ) contains information and
 sync information about all the
 titles.
 
@@ -92,14 +92,14 @@ see [sample code](http://pastebin.com/mW3fmvpG)
 | 0x8                                                    | 0x4             | unsigned int                 | Image ID             |
 | 0xC                                                    | 0x4             | signed int                   | Gamerscore           |
 | 0x10                                                   | 0x4             | unsigned int                 | Flags (see below)    |
-| 0x14                                                   | 0x8             | System.DateTime(signed long) | Unlock Time          |
+| 0x14                                                   | 0x8             | System. DateTime(signed long) | Unlock Time          |
 | 0x18                                                   | null terminated | unicode string               | Name                 |
 | 0x18 + **Name** length                                 | null terminated | unicode string               | Unlocked Description |
 | 0x18 + **Name** length + **Locked Description** length | null terminated | unicode string               | Locked Description   |
 
 ### Flags
 
-```cs
+``` cs
 public enum AchievementTypes : byte
 {
     Completion = 1,
@@ -212,7 +212,7 @@ length in the data blob.
 Image entries are PNG images. example
 code:
 
-```cs
+``` cs
 public System.Byte[] Data
 {
     get
@@ -270,7 +270,7 @@ These are not all the flags, it's just that I don't know the rest.
 
 Title images are also available online:
 
-```cs
+``` cs
 // IconURL
 "http://image.xboxlive.com/global/t." + ID.ToString("x8") +
 "/icon/0/8000"
@@ -301,7 +301,7 @@ game.
 | Offset                                               | Length          | Type        | Information                |
 | ---------------------------------------------------- | --------------- | ----------- | -------------------------- |
 | 0                                                    | 4               | int32       | Struct size (0x2C)         |
-| 4                                                    | 16              | System.Guid | ID                         |
+| 4                                                    | 16              | System. Guid | ID                         |
 | 20                                                   | 4               | UInt32      | ImageID                    |
 | 24                                                   | 4               | UInt32      | Flags(Same as achievement) |
 | 28                                                   | 8               | filetime    | Unlock Time                |
@@ -316,7 +316,7 @@ game.
 The Image stored in the GPD is stored in the normal GPD however you can
 grab the image from the server, using the GUID.
 
-```cs
+``` cs
 "http://download.xboxlive.com/content/4d530914/thumbnails/" + size +
     "/" + ID.ToString() + ".png"); // size 64 128 300
 "http://avatar.xboxlive.com/global/t." + TitleID + "/avataritem/" +
@@ -332,9 +332,9 @@ could be derived from the entry length.
 
 This is a list of "Sync Items".
 
-You can find the total sync items by,
+You can find the total sync items by, 
 
-((SyncList.Length / 16) - 1)
+((SyncList. Length / 16) - 1)
 
 ### Sync Item
 
@@ -355,4 +355,4 @@ IDs in Sync List between last and next are
 pushed
 //confirm?
 
-[Category:Xbox360_System_Software](../Category_Xbox360_System_Software)
+[Category: Xbox360_System_Software](../Category_Xbox360_System_Software)

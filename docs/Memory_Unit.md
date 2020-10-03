@@ -2,21 +2,28 @@
 
 ## General Information
 
-- Memory Units (64 MB) require no setup or configuration. (Plug &
+* Memory Units (64 MB) require no setup or configuration. (Plug &
+
   Play)
-- Xbox 360 accepts two Memory Units.
-- Each unit contains three IC's:
+
+* Xbox 360 accepts two Memory Units.
+* Each unit contains three IC's:
 
 1.  Custom Microsoft ASIC (marked as X805867-002)
 2.  Samsung NAND flash memory (IC model depends on memory size i.e.
+
     K9F1208U)
+
 3.  Perhaps an IC EEPROM memory (marked as X803122)
 
 ## Known Facts
 
-- The Memory card is required in absence of hard drive to play on Xbox
+* The Memory card is required in absence of hard drive to play on Xbox
+
   Live and to save game progress.
-- The memory cards are USB devices, albeit with custom connectors and
+
+* The memory cards are USB devices, albeit with custom connectors and
+
   with 3.3V power (not 5V).
 
 ## Inside the memory unit
@@ -57,7 +64,7 @@ The connections of the small 8-pin IC:
 
 At the bottom side of this chip is written:
 
-```
+``` 
 PHILK2B
 EL526
 901IA2
@@ -83,4 +90,4 @@ But [SPI](http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)
 needs four wires. It's more like I<sup>2</sup>C which needs only two
 lines (SDA, SCL) and optionally WP (Write Protect).
 
-[Category:Xbox360_Hardware](../Category_Xbox360_Hardware)
+[Category: Xbox360_Hardware](../Category_Xbox360_Hardware)

@@ -16,9 +16,9 @@ to know this.
 
 The file system is divided into 4 parts:
 
-  - Header (the BOOT sector on FAT file systems)
-  - File allocation table (FAT)
-  - Root directory cluster/data region
+  + Header (the BOOT sector on FAT file systems)
+  + File allocation table (FAT)
+  + Root directory cluster/data region
 
 All multi-byte values contained in each part are
 [1](http://en.wikipedia.org/wiki/Endiannes) big-endian.
@@ -169,7 +169,7 @@ previously formatted it.
 | 0x0    | 0x4    | ascii string | "Josh" magic |
 
 The [Console Security Certificate](../Console_Security_Certificate)(Inc 0x80 sig)
-then,
+then, 
 
 | Offset | Length | Type                 | Information                              |
 | ------ | ------ | -------------------- | ---------------------------------------- |
@@ -180,7 +180,7 @@ then,
 | 0x27C  | 0x4    | unsigned int         | TitleID(for the first VolumeDescriptor)  |
 | 0x280  | 0x4    | unsigned int         | TitleID(for the second VolumeDescriptor) |
 
-The upper 4 bits in the STFSVolumeDescriptor.Flags seem to always be set
+The upper 4 bits in the STFSVolumeDescriptor. Flags seem to always be set
 (maybe to signify it is cache)
 
 ## Security Sector
@@ -284,11 +284,11 @@ big-endian UTF-16 (Unicode string) starting at offset 0x2
 The following characters are found in XTAF file names from actual disk
 images:
 
-  - 0x20, 0x24, 0x2e ( SPACE $ . )
-  - 0x30-0x39 (digits 0-9)
-  - 0x41-0x5a (letters A-Z)
-  - 0x5f ( _ )
-  - 0x61-0x7a (letters a-z)
+  + 0x20, 0x24, 0x2e ( SPACE $ . )
+  + 0x30-0x39 (digits 0-9)
+  + 0x41-0x5a (letters A-Z)
+  + 0x5f ( _ )
+  + 0x61-0x7a (letters a-z)
 
 Unlike the FAT file system, XTAF has no "." and ".." entries in the
 directory tables. This means that it's only possible to go to the parent
@@ -307,11 +307,10 @@ number.
 
 ### Possible cluster sizes
 
-- 4 KB (0x1000 bytes, 0x8 sectors per cluster)
-- 8 KB (0x2000, 0x10 SPC)
-- 16 KB (0x4000, 0x20 SPC)
-- 32 KB (0x8000, 0x40 SPC)
-- 64 KB (0x10000, 0x80 SPC)
+* 4 KB (0x1000 bytes, 0x8 sectors per cluster)
+* 8 KB (0x2000, 0x10 SPC)
+* 16 KB (0x4000, 0x20 SPC)
+* 32 KB (0x8000, 0x40 SPC)
+* 64 KB (0x10000, 0x80 SPC)
 
-
-[Category:Xbox360_System_Software](Category_Xbox360_System_Software)
+[Category: Xbox360_System_Software](Category_Xbox360_System_Software)

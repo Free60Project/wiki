@@ -27,11 +27,11 @@ pre-1888 dashboards, for example two different 1838 keyvaults identify
 their console type as 0x80000002. If you want to check if something is
 devkit or retail, I'd suggest something like:
 
-```c
+``` c
 if(consoletype == 0x02)
     return retail;
 else
     return devkit;
 ```
 
-[Category:Xbox360_System_Software](../Category_Xbox360_System_Software)
+[Category: Xbox360_System_Software](../Category_Xbox360_System_Software)

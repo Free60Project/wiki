@@ -6,8 +6,8 @@ precisely. First you have to locate the used Video Encoder Chip\!
 ## Determine Video-Chip
 
 The VideoChip is located in the marked area:
-![<File:Vchip-location.jpg>](Vchip-location.jpg
-"File:Vchip-location.jpg")
+![<File: Vchip-location.jpg>](Vchip-location.jpg
+"File: Vchip-location.jpg")
 
 Find out which chip your xbox has\!
 
@@ -16,6 +16,7 @@ Find out which chip your xbox has\!
 "File:conextant_video.jpg")
 
 **FOCUS**
+
 ![<File:focus_video.jpg>](focus_video.jpg "File:focus_video.jpg")
 
 **XCALIBUR**
@@ -53,13 +54,13 @@ The serial number looks like this:
 
 i.e. LNNNNNN YWWFF
 
-L the number of the production line within the factory,
+L the number of the production line within the factory, 
 
-NNNNNN the number of the Xbox within this week,
+NNNNNN the number of the Xbox within this week, 
 
-Y the last digit of the production year,
+Y the last digit of the production year, 
 
-WW the number of the week of the production year,
+WW the number of the week of the production year, 
 
 FF is the code of the factory (02: Mexico, 03: Hungary, 05: China. 06:
 Taiwan).
@@ -98,7 +99,7 @@ week. For example, the serial "1111111 31205" is from week 12/2003.
 
 Now look up the box corresponding to the week and the production line in
 the following table. The legend below the table will tell you the
-meaning of the colors. *Note*:Anything After 18\\04 Is mainly Unknown
+meaning of the colors. *Note*: Anything After 18\\04 Is mainly Unknown
 and is most likly to be a version 1.6 or 1.6b.
 
 <table border="0">

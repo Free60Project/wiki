@@ -1,6 +1,7 @@
 # Hypervisor
 
 ## Note
+
 Old notes on the Xbox 360 Hypervisor can be found here: [Hypervisor (Old
 Notes)](Hypervisor_(Old_Notes) "wikilink")
 
@@ -9,11 +10,11 @@ Notes)](Hypervisor_(Old_Notes) "wikilink")
 Like in the PS3, Microsoft protects the integrity of its system with a
 **Hypervisor**. Using the virtualization technologies of today's
 processors, a hypervisor can act as a small piece of code with even
-higher privileges than the more complex operating system. In theory,
+higher privileges than the more complex operating system. In theory, 
 even potential flaws in the operating system cannot be exploited since
 the hypervisor puts up additional restrictions.
 
-In case of the Xbox 360, the hypervisor is responsible for encryption,
+In case of the Xbox 360, the hypervisor is responsible for encryption, 
 decryption and the enforcement of access restrictions on memory.
 
 Thanks to the
@@ -29,7 +30,7 @@ The Hypervisor (HV) is primarily made up of a series of interrupt
 vectors and system calls that are accompanied by a few cryptography
 related helper sub-routines. On the 360, the main job of the HV is to
 manage the security of the system and handle
-encryption/crypto-signatures of files that will be run. Because of this,
+encryption/crypto-signatures of files that will be run. Because of this, 
 the HV is only executed in Real-Mode, with the highest privileges.
 Memory paging is disabled and the HV can access any memory space on the
 system, including memory mapped devices, however code run from user-mode

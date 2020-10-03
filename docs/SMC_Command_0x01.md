@@ -5,7 +5,7 @@ the event which caused the X360 to power up.
 
 |          |                     |
 | -------- | ------------------- |
-| Message: | `01`                |
+| Message: | `01` |
 | Reply:   | `01 WW 00 XX YY ZZ` |
 
 | Data | Source | Meaning                |

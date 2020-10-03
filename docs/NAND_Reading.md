@@ -3,8 +3,8 @@
 This tutorial explains how to read the Xbox360's
 [NAND](NAND "wikilink")/Flash via a PC's parallel/"printer" port in as
 clean and easy as possible a way. The same method is used to dump all
-models of the Xbox 360 ([Xenon](Xenon "wikilink"),
-[Zephyr](Zephyr "wikilink"), [Falcon](Falcon "wikilink"),
+models of the Xbox 360 ([Xenon](Xenon "wikilink"), 
+[Zephyr](Zephyr "wikilink"), [Falcon](Falcon "wikilink"), 
 [Opus](Opus "wikilink"), [Jasper](Jasper "wikilink")).
 
 Please keep quick & dirty setups and speculation out or, in case some
@@ -28,11 +28,11 @@ skill level is similar to adding a modchip to a console.
 
 You'll need the following:
 
-  - Prerequisites:
+  + Prerequisites:
 
 :\*LPT (parallel) port (preferably supporting SPP)
 
-  - Components:
+  + Components:
 
 :\*1 × diode BAT41 - There are several diodes you can use. People on
 xboxhacker.net had the best experiences with BAT41, others used N4148. I
@@ -43,16 +43,16 @@ xboxhacker.net had the best experiences with BAT41, others used N4148. I
 :\*LPT cable - Hollow connector housings will make your life easier.
 Alternatively, use a bare DB25 male connector and wire.
 
-  - Tools:
+  + Tools:
 
 :\*Multimeter - (Voltmeter/Continuity)
 
 :\*Soldering Iron
 
-:\*A lot of patience and spare time ;) - A third hand will make your
+:\*A lot of patience and spare time ; ) - A third hand will make your
 life easier, too
 
-  - Software
+  + Software
 
 :\***32-bit OS/PC** - The necessary PortIO(?-Guessing) driver is
 available for 32-bit systems only. There is a 64-bit port, however
@@ -63,7 +63,7 @@ systems don't have a parallel port, this shouldn't affect many people.
 and libs'. Extract inpout32.dll from Win32 folder to nandpro folder.
 Rename inpout32.dll to DLPortIO.dll (credit)
 
-:\*NandPro - NandPro (by User:Tiros Tiros on xboxhacker.net - for
+:\*NandPro - NandPro (by User: Tiros Tiros on xboxhacker.net - for
 reading out the NAND image.) seems to work with Windows Vista 32-bit and
 Windows 7 32-bit. Windows XP Compatibility Mode or running with
 administrator rights may be necessary. XP or earlier is preferred.
@@ -105,7 +105,7 @@ compare single wires with those on the loose end. Otherwise it's time
 for your continuity tester. You will need to know which wire goes to
 which pin at the end. Write down the colour of the wire attached to each
 pin. Since there are only seven needed wires, you don't have to trace
-every wire. The following pins need to be connected: 1, 2, 11, 14, 16,
+every wire. The following pins need to be connected: 1, 2, 11, 14, 16, 
 17, 18. In case a pin isn't connected, just resolder a wire from an
 unneeded pin (e.g., 15) to the needed one (e.g., 14).
 
@@ -551,7 +551,7 @@ Xbox 360
 
 </tr>
 
-<tr style="background-color: rgb(255, 128, 128);">
+<tr style="background-color: rgb(255, 128, 128); ">
 
 <td>
 
@@ -559,7 +559,7 @@ DB25.1
 
 </td>
 
-<td style="color: rgb(0, 0, 128);">
+<td style="color: rgb(0, 0, 128); ">
 
 resistor
 
@@ -573,7 +573,7 @@ J1D2.2
 
 </tr>
 
-<tr style="background-color: rgb(255, 128, 128);">
+<tr style="background-color: rgb(255, 128, 128); ">
 
 <td>
 
@@ -581,7 +581,7 @@ DB25.2
 
 </td>
 
-<td style="color: rgb(0, 0, 128);">
+<td style="color: rgb(0, 0, 128); ">
 
 resistor
 
@@ -595,7 +595,7 @@ J1D2.3
 
 </tr>
 
-<tr style="background-color: rgb(255, 128, 128);">
+<tr style="background-color: rgb(255, 128, 128); ">
 
 <td>
 
@@ -603,7 +603,7 @@ DB25.11
 
 </td>
 
-<td style="color: rgb(0, 128, 0);">
+<td style="color: rgb(0, 128, 0); ">
 
 diode
 
@@ -617,7 +617,7 @@ J1D2.4
 
 </tr>
 
-<tr style="background-color: rgb(255, 128, 128);">
+<tr style="background-color: rgb(255, 128, 128); ">
 
 <td>
 
@@ -625,7 +625,7 @@ DB25.14
 
 </td>
 
-<td style="color: rgb(0, 0, 128);">
+<td style="color: rgb(0, 0, 128); ">
 
 resistor
 
@@ -639,7 +639,7 @@ J1D2.1
 
 </tr>
 
-<tr style="background-color: rgb(128, 128, 255);">
+<tr style="background-color: rgb(128, 128, 255); ">
 
 <td>
 
@@ -647,7 +647,7 @@ DB25.16
 
 </td>
 
-<td style="color: rgb(0, 0, 128);">
+<td style="color: rgb(0, 0, 128); ">
 
 resistor
 
@@ -661,7 +661,7 @@ J2B1.6
 
 </tr>
 
-<tr style="background-color: rgb(128, 128, 255);">
+<tr style="background-color: rgb(128, 128, 255); ">
 
 <td>
 
@@ -669,7 +669,7 @@ DB25.17
 
 </td>
 
-<td style="color: rgb(0, 0, 128);">
+<td style="color: rgb(0, 0, 128); ">
 
 resistor
 
@@ -683,7 +683,7 @@ J2B1.5
 
 </tr>
 
-<tr style="background-color: rgb(128, 255, 128);">
+<tr style="background-color: rgb(128, 255, 128); ">
 
 <td>
 
@@ -722,11 +722,11 @@ black ring has to be in the direction of the Xbox board.** By
 "screwhole", we mean a screwhole. (The ground (or "earth") connection
 we're using is also present on J1D2.6 and J2B1.12, but those are
 difficult to solder.) Solder the wire from DB25.18 to one of those big
-reddish rings (where the long screws go through the DVD-ROM drive legs),
+reddish rings (where the long screws go through the DVD-ROM drive legs), 
 and fix it with insulation tape (NOT DUCT TAPE\! Otherwise you will
 damage your Xbox). '''It is important that you solder the diode directly
 to the board. It won't work if it's in the plug housing\! ''' LPT
-(parallel port) connections are the same for Xenon, Zephyr, Falcon,
+(parallel port) connections are the same for Xenon, Zephyr, Falcon, 
 Opus, and Jasper (but JTAG connections are different between Xenon
 motherboards and the other ones).
 
@@ -742,10 +742,13 @@ Slim diagram: <http://imageshack.us/photo/my-images/32/lptslim.png/>
 
 ### Checklist
 
-  - Is every wire connected to the correct pin?
-  - Are there any short circuits or doubly connected wires? (Watch out
+  + Is every wire connected to the correct pin?
+  + Are there any short circuits or doubly connected wires? (Watch out
+
     for sprawling solder\!)
-  - Have you taken everything out of the box that doesn't belong in
+
+  + Have you taken everything out of the box that doesn't belong in
+
     there?
 
 When you've checked that, plug the parallel cable into your turned-off
@@ -755,7 +758,7 @@ power outlet.
 ### Setting up your PC
 
 Turn on your PC. It's possible that your Xbox will turn on, too. Don't
-worry, just leave it turned on. As long as it doesn't start to smoke,
+worry, just leave it turned on. As long as it doesn't start to smoke, 
 smell, or anything else weird it will be fine. Later on, it should turn
 off the fans on its own, but the LEDs will remain blinking. If it
 doesn't turn on: don't worry, it doesn't have to be turned on while
@@ -776,8 +779,7 @@ error messages. Then: reboot.
 
 ### Reading/Dumping the nand twice and drinking coffee.
 
-`Prepare the coffee. ;) `
-
+ `Prepare the coffee. ;) `
 Windows should have booted up now. Open up Windows Command Prompt (press
 Windows Key + R to open up Run. Type cmd and press Enter).
 
@@ -787,12 +789,11 @@ lpt: -r16 nand1.bin and press enter. If everything's fine, it should
 output
 this:
 
-`Testing LPT device address:0378   // address can differ`
-`Using LPT device at address:0378  // address can differ`
-`FlashConfig:01198010              // must be the same (except Jasper boards, see next block)`
-`Starting Block:0x000000           // Starting and ending should be as shown here if you want`
-`Ending   Block:0x0003FF           // to read the whole flash [you want! :p]`
-
+ `Testing LPT device address:0378   // address can differ`
+ `Using LPT device at address:0378  // address can differ`
+ `FlashConfig:01198010              // must be the same (except Jasper boards, see next block)`
+ `Starting Block:0x000000           // Starting and ending should be as shown here if you want`
+ `Ending   Block:0x0003FF           // to read the whole flash [you want! :p]`
 If you get FlashConfig: 0012000 try soldering the diode directly to the
 motherboard instead on having it on the conector side. It worked for
 iD4rK, and others.
@@ -800,23 +801,22 @@ iD4rK, and others.
 The Flashconfig is dependant on the mainboard version, other valid
 values are:
 
-`FlashConfig - System Types`
-`01198010 - Xenon, Zephyr, Opus, Falcon`
-`00023010 - Jasper 16mb`
-`008A3020 - Jasper 256mb`
-`00AA3020 - Jasper 512mb`
-
+ `FlashConfig - System Types`
+ `01198010 - Xenon, Zephyr, Opus, Falcon`
+ `00023010 - Jasper 16mb`
+ `008A3020 - Jasper 256mb`
+ `00AA3020 - Jasper 512mb`
 Press any key to continue. It should start to count up addresses. If it
 starts to output stuff like "Error 0 .. blah blah" something's wrong.
 Recheck wiring, change LPT mode, or try a different computer. It is
-possible that there are one or two bad blocks on your NAND (error 25x),
+possible that there are one or two bad blocks on your NAND (error 25x), 
 so don't worry if you get that error once or twice.
 
 Well, the reading (dumping) process will take about half an hour. So
-head to your coffee machine. ;) Unfortunately, we will need at least two
+head to your coffee machine. ; ) Unfortunately, we will need at least two
 dumps to check whether there are really no failures in your dump. So
 once NandPro has finished dumping, press the up arrow key (or retype the
-command), CHANGE THE FILENAME TO NAND2.BIN, press Enter, and dump it a
+command), CHANGE THE FILENAME TO NAND2. BIN, press Enter, and dump it a
 second time. Get another coffee. Or turn on the TV. Maybe you have got a
 girlfriend?
 
@@ -888,7 +888,7 @@ to make sure it looks correct (e.g. has a microsoft copyright at the
 top, once you've reconstructed a nand open it in 360 flash tool and make
 sure it reads ok there) the tool works by comparing blocks between the 3
 files, any block found matching in 2 (or 3) of the files will be
-considered good, you will be warned if not all blocks can be recovered,
+considered good, you will be warned if not all blocks can be recovered, 
 in which case you'll need to get more reads or look for a good reason
 why your reads are so bad
 

@@ -23,7 +23,7 @@ below).
 # Notes
 
 The Console ID at 0x275 must match the Console ID located in the
-[Console Security Certificate](Console_Security_Certificate "wikilink"),
+[Console Security Certificate](Console_Security_Certificate "wikilink"), 
 otherwise the Xbox360 will see it as a corrupted file.
 
 The signature located in the [Console Security
@@ -35,4 +35,4 @@ From 0x1000 the rest of the file is the standard block portion of
 table 0 at 0x1000/0x2000. The PEC file always has 2 hash tables (type 1
 package).
 
-[Category:Xbox360_System_Software](Category_Xbox360_System_Software)
+[Category: Xbox360_System_Software](Category_Xbox360_System_Software)

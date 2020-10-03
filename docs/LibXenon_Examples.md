@@ -5,14 +5,16 @@
 Download: [libxenon.org](http://file.libxenon.org/free60/libxenon/xmenu_src_20090914.tar.gz)
 
 ## Genesis Plus + SMS Plus source code by **ced2911**
+
 Genesis Plus: <http://www.multiupload.com/6QYQL218GB>
 
 SMS Plus: <http://www.multiupload.com/62T7RVYB5A>
 
 ## Controller Button test code by **ced2911**
+
 Source Code (incl. Makefile): [Download](http://file.libxenon.org/free60/libxenon/LibXenon_HelloWorld.tar.gz)
 
-```cpp
+``` cpp
  #include <stdio.h>
  #include <stdlib.h>
  #include <input/input.h>
@@ -62,7 +64,7 @@ Source Code (incl. Makefile): [Download](http://file.libxenon.org/free60/libxeno
 All of these samples/programs include a Makefile, so its easy to compile
 them with the [Toolchain](../Compiling_the_Toolchain).
 
-```
+``` 
 cd into_the_directory
 make CROSS_COMPILE=xenon-
 ```
@@ -73,5 +75,5 @@ move all the sourcecode-files of your project into a folder "source" so
 the Makefile can find
 them.
 
-[Category:Xbox360_Homebrew_Software](../Category_Xbox360_Homebrew_Software)
-[Category:Xbox360_Development](../Category_Xbox360_Development)
+[Category: Xbox360_Homebrew_Software](../Category_Xbox360_Homebrew_Software)
+[Category: Xbox360_Development](../Category_Xbox360_Development)

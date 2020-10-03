@@ -2,7 +2,7 @@
 
 Have not reversed all of the hardware error subroutines.
 
-```c
+``` c
 // version 0x583
 
 #define STACK 0x800002000001F700 // r1

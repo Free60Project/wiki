@@ -14,8 +14,7 @@ Linux, which gives some advantages regarding system utilization.
 
 You can check out the source code using git with the following command:
 
-`git clone git://github.com/Free60Project/libxenon.git`
-
+ `git clone git://github.com/Free60Project/libxenon.git`
 (Windows users may want to try TortoiseGit)
 
 ## Installing libXenon
@@ -23,10 +22,9 @@ You can check out the source code using git with the following command:
 To use **libXenon** you need a proper isntallation of [Xenon Toolchain](../Compiling_the_Toolchain) first.
 You just go into the toolchain-directory which holds `build-xenon-toolchain` and execute:
 
-` ./build-xenon-toolchain libxenon`
-
+ ` ./build-xenon-toolchain libxenon`
 This will download and install a fresh copy of **libXenon** Libraries to
-the `$DEVKITXENON`-path (Which should be defined in your ~/.bashrc
+the `$DEVKITXENON` -path (Which should be defined in your ~/.bashrc
 already\! - See bottom of [Xenon Toolchain](../Compiling_the_Toolchain)-page if it isn't\!)
 
 ## Support
@@ -40,5 +38,5 @@ or in \#libXenon on EFnet IRC, <irc://irc.efnet.fr/libXenon>
 Example code illustrating **libXenon** use can be found on the [LibXenon Examples](../LibXenon_Examples)
 page.
 
-[Category:Xbox360_Homebrew_Software](../Category_Xbox360_Homebrew_Software)
-[Category:Xbox360_Development](../Category_Xbox360_Development)
+[Category: Xbox360_Homebrew_Software](../Category_Xbox360_Homebrew_Software)
+[Category: Xbox360_Development](../Category_Xbox360_Development)

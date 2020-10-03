@@ -38,7 +38,7 @@
 | 2.0.9328.0      | 2.0.8464.0        | XeDK - Remote includes 8464 and 7366                                                                                                                                                        |
 | 2.0.9328.5      | 2.0.8498.0        | XeDK                                                                                                                                                                                        |
 | 2.0.9328.8      | 2.0.????.0        | XeDK                                                                                                                                                                                        |
-| 2.0.9328.9      | 2.0.8955.0        | XeDK - **DO NOT RUN THE LEAKED ISO RECOVERY** it was edited by TheFallen93 (afaik) and others to brick kits. You can find the real 9328.9 iso around though with filesize 301,434,880 bytes |
+| 2.0.9328.9      | 2.0.8955.0        | XeDK - **DO NOT RUN THE LEAKED ISO RECOVERY** it was edited by TheFallen93 (afaik) and others to brick kits. You can find the real 9328.9 iso around though with filesize 301, 434, 880 bytes |
 | 2.0.11164.0     | 2.0.9189.0        | XeDK                                                                                                                                                                                        |
 | 2.0.11164.1     | 2.0.9189.0        | XeDK                                                                                                                                                                                        |
 | 2.0.11511.0     | 2.0.11025.0       | XeDK                                                                                                                                                                                        |
@@ -50,5 +50,5 @@
 | 2.0.20353.2     | 2.0.12625.0       | XeDK                                                                                                                                                                                        |
 | 2.0.20500.1     | 2.0.13139.0       | XeDK                                                                                                                                                                                        |
 
-[Category:Xbox360 System
+[Category: Xbox360 System
 Software](Category_Xbox360_System_Software)

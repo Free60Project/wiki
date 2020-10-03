@@ -5,7 +5,7 @@ Registers an HvxExpansion structure in the expansion table
 
 ## Reversed Pseudocode
 
-```cpp
+``` cpp
 // r0 is 0x70
 // Parameters are taken in r3 and r4, respectively
 // r2, r5 - r9 are 0

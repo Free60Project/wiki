@@ -15,5 +15,4 @@
 
 ### Video
 
-
-[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)
+[Category: Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)

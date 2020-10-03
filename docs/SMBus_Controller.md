@@ -66,31 +66,30 @@ The following two routines illustrate how to read and write data from
 and to an SMBus
 device:
 
-`int SMBusWriteCommand(unsigned char slave, unsigned char command, int isWord, unsigned short data) {`
-`again:`
-`    _outp(0xc004, (slave<<1)&0xfe);`
-`    _outp(0xc008, command);`
-`    _outpw(0xc006, data);`
-`    _outpw(0xc000, _inpw(0xc000));`
-`    _outp(0xc002, (isWord) ? 0x0b : 0x0a);`
-`    while ((_inp(0xc000) & 8)); /* wait while busy */`
-`    if (_inp(0xc000) & 0x02) goto again; /* retry transmission */`
-`    if (_inp(0xc000) & 0x34) return 0;  /* fatal error */`
-`    return 1;`
-`}`
-`int SMBusReadCommand(unsigned char slave, unsigned char command, int isWord, unsigned short *data) {`
-`again:`
-`    _outp(0xc004, (slave<<1)|0x01);`
-`    _outp(0xc008, command);`
-`    _outpw(0xc000, _inpw(0xc000));`
-`    _outp(0xc002, (isWord) ? 0x0b : 0x0a);`
-`    while ((_inp(0xc000) & 8)); /* wait while busy */`
-`    if (_inp(0xc000) & 0x02) goto again; /* retry transmission */`
-`    if (_inp(0xc000) & 0x34) return 0;  /* fatal error */`
-`    *data = _inpw(0xc006);`
-`    return 1;`
-`}`
-
+ `int SMBusWriteCommand(unsigned char slave, unsigned char command, int isWord, unsigned short data) {`
+ `again:`
+ `    _outp(0xc004, (slave<<1)&0xfe);`
+ `    _outp(0xc008, command);`
+ `    _outpw(0xc006, data);`
+ `    _outpw(0xc000, _inpw(0xc000));`
+ `    _outp(0xc002, (isWord) ? 0x0b : 0x0a);`
+ `    while ((_inp(0xc000) & 8)); /* wait while busy */`
+ `    if (_inp(0xc000) & 0x02) goto again; /* retry transmission */`
+ `    if (_inp(0xc000) & 0x34) return 0;  /* fatal error */`
+ `    return 1;`
+ `}`
+ `int SMBusReadCommand(unsigned char slave, unsigned char command, int isWord, unsigned short *data) {`
+ `again:`
+ `    _outp(0xc004, (slave<<1)|0x01);`
+ `    _outp(0xc008, command);`
+ `    _outpw(0xc000, _inpw(0xc000));`
+ `    _outp(0xc002, (isWord) ? 0x0b : 0x0a);`
+ `    while ((_inp(0xc000) & 8)); /* wait while busy */`
+ `    if (_inp(0xc000) & 0x02) goto again; /* retry transmission */`
+ `    if (_inp(0xc000) & 0x34) return 0;  /* fatal error */`
+ `    *data = _inpw(0xc006);`
+ `    return 1;`
+ `}`
 To avoid busy waiting of the CPU, the SMBus controller can also issue an
 interrupt when the operation is complete, by setting bit \#4 in the
 control port when initiating the transfer.
@@ -110,11 +109,11 @@ hardware address is 0x54 for the EEPROM: the actual address of the
 EEPROM on the i2c bus is 1010 (0xa), however, you will also notice that
 0x54 is 1010100 in binary, and it seems that this 100 is also appended
 onto the other devices as well (although their software address is
-naturally read as say 10101000 - obviously because of the left shifting,
+naturally read as say 10101000 - obviously because of the left shifting, 
 however, it could be speculated that it would be possible to communicate
 with devices over the SMBus that are connected via i2c, so long as you
 knew their base address.
 
 Retrieved from "<http://www.xbox-linux.org/wiki/SMBus_Controller>"
 
-[Category:Xbox_Hardware](Category:Xbox_Hardware "wikilink")
+[Category: Xbox_Hardware](Category: Xbox_Hardware "wikilink")

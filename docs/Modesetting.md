@@ -5,7 +5,7 @@ Ana memory and writing some values to the GPU registers. The registers
 affected and the information that gets written is the
 following:
 
-```
+``` 
 total_width, hsync_offset, real_active_width, total_height,
 vsync_offset, active_height, width, height,
 
@@ -31,7 +31,7 @@ drastically from what we can read on libxenon's xenos.c and, if they are
 valid, why the are not the values
 expected.
 
-```
+``` 
 0x6000, mode->total_width - 1
 
 1024x768:  0x0000053f

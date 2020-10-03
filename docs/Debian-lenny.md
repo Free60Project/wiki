@@ -29,7 +29,7 @@ network activity. Debian Etch works, same with Ubuntu 7.10.
 
 ## lennyinstall.sh
 
-```sh
+``` sh
 #!/bin/bash
 # set the date to anything except 1/1/1970 since this causes issues
 # time is now also set after first boot by .bashrc script below
@@ -69,7 +69,7 @@ auto eth0
 iface eth0 inet dhcp
 EOF
 cat > /mnt/debian/etc/apt/sources.list << EOF
-deb `<ftp://mirrors.kernel.org/debian/>` lenny main contrib non-free
+deb  `<ftp://mirrors.kernel.org/debian/>`  lenny main contrib non-free
 EOF
 #Change root-pwd inside chroot
 chroot /mnt/debian
@@ -103,4 +103,4 @@ echo "You may now shutdown the xbox360."
 echo "Then continue the install by booting the Xell-Bootloader-sda2."
 ```
 
-[Category:Xbox360_Linux](../Category_Xbox360_Linux)
+[Category: Xbox360_Linux](../Category_Xbox360_Linux)

@@ -40,21 +40,18 @@ Compiler](Cross_Compiler "wikilink") toolchain and
 
 1\. **Grab** the sources from the git repository:
 
-`   git clone `<git://github.com/Free60Project/xell.git>
+`   git clone ` <git://github.com/Free60Project/xell.git>
 
 2\. **Compile it** using your cross compiler (depending on the name of
 your cross compiler, you may have to adjust the name after CROSS=):
 
-`   cd xell`
-
+ `   cd xell`
 If you want to build XeLL NON-2stages sourcecode:
 
-`   git checkout master`
-
+ `   git checkout master`
 Now compile it
 
-`   make CROSS=powerpc64-unknown-linux-gnu-`
-
+ `   make CROSS=powerpc64-unknown-linux-gnu-`
 3a. Use the [JTAG Hack](JTAG_Hack "wikilink") or [Reset Glitch
 Hack](Reset_Glitch_Hack "wikilink")- you can even upgrade XeLL via USB.
 
@@ -65,4 +62,4 @@ Hack](Reset_Glitch_Hack "wikilink")- you can even upgrade XeLL via USB.
 **xell-serial.bin** to your Xbox360 and run
 it.
 
-[Category:Xbox360_Homebrew_Software‏](Category_Xbox360_Homebrew_Software.md‏ "wikilink")
+[Category: Xbox360_Homebrew_Software‏](Category_Xbox360_Homebrew_Software.md‏ "wikilink")

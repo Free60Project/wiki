@@ -5,8 +5,8 @@ additional proprietary software available.
 Ubuntu is composed of many software packages, of which the vast majority
 are distributed under a free software license (also known as open
 source). The main license used is the GNU General Public License (GNU
-GPL) which, along with the GNU Lesser General Public License (GNU LGPL),
-explicitly declares that users are free to run, copy, distribute, study,
+GPL) which, along with the GNU Lesser General Public License (GNU LGPL), 
+explicitly declares that users are free to run, copy, distribute, study, 
 change, develop and improve the software.
 
 Canonical, the company that endorses the Ubuntu project (as well as
@@ -24,4 +24,4 @@ It is possible to boot Ubuntu by using an Xbox 360 which has had the
 You find the current working Ubuntu-installationscript here:
 [Ubuntu7.10](Ubuntu7.10 "wikilink")
 
-[Category:Xbox360_Linux](Category_Xbox360_Linux)
+[Category: Xbox360_Linux](Category_Xbox360_Linux)

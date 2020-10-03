@@ -23,15 +23,17 @@ sh ./debian_squeeze.sh
 ``
 
 Reboot the 360 when you are told. Boot with
-(Linux kernel binary)[http://file.libxenon.org/latest_kern>],
+(Linux kernel binary)[http://file.libxenon.org/latest_kern>], 
 supply correct "root=" parameter via kboot.conf (\*kboot currently only supported via
 xell-reloaded-testing builds), boot the kernel/system and login as user:
 xbox, password: xbox. Have fun :)
 (If you are not having fun, let us know about the errors you are experiencing.)
 
 ## debootstrapping script
+
 **debian_squeeze.sh**
-```sh
+
+``` sh
 #!/bin/bash
 # set the date to anything except 1/1/1970 since this causes issues
 # time is now also set after first boot by .bashrc script below
@@ -115,21 +117,20 @@ umount /mnt/debian/dev /mnt/debian/proc /mnt/debian
 ## Fix possible xorg fail
 
 After it has finished installing and has rebooted into gnome open a new
-shell by typing *Ctrl+Alt+F6* or *Ctrl+Alt+F1* and type,
+shell by typing *Ctrl+Alt+F6* or *Ctrl+Alt+F1* and type, 
 
-`sudo dpkg-reconfigure xserver-xorg`
-
+ `sudo dpkg-reconfigure xserver-xorg`
 Then follow the instructions below.
 
 1. Attempt to autodetect video hardware? \> No
-2. X Server Driver: Xenosfb
+02. X Server Driver: Xenosfb
 3. Generic Video Card \> Enter
-4. Video card’s bus identifier: Press enter for default
-5. Amount of memory: Press enter for default
+04. Video card’s bus identifier: Press enter for default
+05. Amount of memory: Press enter for default
 6. Use kernel framebuffer device interface? \> Yes
 7. Autodetect keyboard layout? \> Yes
-8. Keyboard layout: us
-9. XKB rule set to use: xorg
+08. Keyboard layout: us
+09. XKB rule set to use: xorg
 10. Keyboard model: choose your rule set based on the options
 11. Keyboard variant: leave blank if you’re in the U.S.
 12. Keyboard options: Leave as default
@@ -149,4 +150,4 @@ After that go back to gnome by typing *Ctrl+Alt+F7*.
 
 Reboot X by typing *Ctrl+Alt+Backspace*.
 
-[Category:Xbox360_Linux](../Category_Xbox360_Linux)
+[Category: Xbox360_Linux](../Category_Xbox360_Linux)

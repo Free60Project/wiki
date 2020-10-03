@@ -7,9 +7,9 @@ mode)
 
 | Register value | Configuration |
 | -------------- | ------------- |
-| 0xE6010000     | 115200,8,N,1  |
-| 0xB2010000     | 38400,8,N,1   |
-| 0x63010000     | 19200,8,N,1   |
+| 0xE6010000     | 115200, 8, N, 1  |
+| 0xB2010000     | 38400, 8, N, 1   |
+| 0x63010000     | 19200, 8, N, 1   |
 
 To send a byte, do a 32 bit write to 0x8000 0200 EA00 1014. After you
 sent something to the serial port, the status should be read from 0x8000
@@ -19,7 +19,7 @@ sent something to the serial port, the status should be read from 0x8000
 
 Init UART speed:
 
-```
+``` 
     li        %r7, 0x0200
     oris      %r7, %r7, 0x8000
     sldi      %r7, %r7, 32
@@ -32,7 +32,7 @@ Init UART speed:
 
 Send char '\!' to the serial port (UART):
 
-```
+``` 
         li %r8, '!'
     slwi %r8, %r8, 24
     stw %r8, 0x1014(%r7)        # send the character
@@ -46,7 +46,7 @@ Send char '\!' to the serial port (UART):
 
 Get char from the serial port (UART):
 
-```
+``` 
      lis %r4, 0x8000
      ori %r4, %r4, 0x200
      rldicr %r4, %r4, 32,31
@@ -70,7 +70,7 @@ Process](Boot_Process "wikilink").
 
 ### Diagram FAT
 
-![<File:J2B1_SCON.png>](J2B1_SCON.png "File:J2B1_SCON.png")
+![<File: J2B1_SCON.png>](J2B1_SCON.png "File: J2B1_SCON.png")
 
 ### Diagram ALL
 
@@ -93,6 +93,6 @@ It is also possible to use some cheap [cell phone data
 cables](http://wiki.openwrt.org/oldwiki/openwrtdocs/customizing/hardware/serial_console#cellphone.data.cables)
 as a PC interface.
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
-[Category:Xbox360_Development](Category_Xbox360_Development)
-[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)
+[Category: Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Xbox360_Development](Category_Xbox360_Development)
+[Category: Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)

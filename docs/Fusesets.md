@@ -2,7 +2,7 @@
 
 The Xbox 360's Xenon CPU has 768 bits of eFUSE, a technology invented by
 IBM, and implemented in some of it's processors. eFUSEs are hardware
-fuses on the CPU, and can be "blown" to a binary value (1 being blown,
+fuses on the CPU, and can be "blown" to a binary value (1 being blown, 
 and 0 being un-blown) in the Xbox 360, there are 768 fuses, that make up
 the fusesets. Though each fuseset can be blown individually, they are
 blown in groups of 8 to make a hexadecimal value for the CPU key, and
@@ -12,12 +12,13 @@ display. Technically, there are only 192 viewable fuses.
 ## What They Look Like
 
 ![Xell_fusesets.jpg](../images/Xell_fusesets.jpg)
+
 ![Gentoo_fuses.jpg](../images/Gentoo_fuses.jpg)
 
 **Once you aquire the fusesets (From either XeLL or dump32 in Linux)
 they look like this:**
 
-```
+``` 
 fuseset 00: C0FFFFFFFFFFFFFF
 fuseset 01: 0F0F0F0F0F0F0FF0
 fuseset 02: 0F00000000000000
@@ -39,7 +40,7 @@ being an un-burned fuse, and 1 being a burned fuse) There should be 768
 ones and zeros here, hence the "768 Bits" of eFUSE. This doesn't mean
 anything, but is just to show how the eFUSE's are actually set up.**
 
-```
+``` 
 Fuseset 00: 1100011111111111111
 Fuseset 01: 0101010101010110
 Fuseset 02: 0100000000000000
@@ -60,7 +61,7 @@ These are burned at the factory, after the console is manufactured, they
 show whether the console is a devkit or not. They also disable CPU JTAG
 after the console's flash is programed.
 
-```
+``` 
 Retail fuseset 01: 0F0F0F0F0F0F0FF0
 Devkit fuseset 01: 0F0F0F0F0F0F0F0F
 ```
@@ -84,7 +85,7 @@ used to encrypt the keyvault, and the bootloader sections. The CPU key
 is unique to each console, and is sometimes refered to as the "per-box
 key" To find the CPU key, add fusesets 03, and 05, **OR** 04 and 06. For
 example, this console's CPU key would be
-`9FB0174015744DAFD569BAD6958DAE9D`.
+`9FB0174015744DAFD569BAD6958DAE9D` .
 
 ## Fusesets 07-11
 
@@ -111,7 +112,7 @@ as we please, so long as we have our CPU key.
 
 This is how the bootloaders do it
 
-```c
+``` c
 QWORD getFuseline(DWORD fuse)
 {
     if ((fuse * 0x40) < 0x300)
@@ -132,5 +133,5 @@ void DumpFuses()
 }
 ```
 
-[Category:Xbox360 System Software](../Category_Xbox360_System_Software)
-[Category:Xbox360_Hardware](../Category_Xbox360_Hardware)
+[Category: Xbox360 System Software](../Category_Xbox360_System_Software)
+[Category: Xbox360_Hardware](../Category_Xbox360_Hardware)

@@ -6,7 +6,7 @@ Source: <http://www.multiupload.com/6QYQL218GB>
 
 ## NFO
 
-```
+``` 
 Introduction:
   Genesis Plus is a freeware, open-source, portable emulator for the Genesis and MegaDrive consoles
 
@@ -31,4 +31,4 @@ Thanks:
   Charles MacDonald
 ```
 
-[Category:Xbox360_Homebrew_Software](../Category_Xbox360_Homebrew_Software)
+[Category: Xbox360_Homebrew_Software](../Category_Xbox360_Homebrew_Software)

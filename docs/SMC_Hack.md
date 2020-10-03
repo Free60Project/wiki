@@ -3,7 +3,7 @@
 There is a new hack which can boot homebrew code in less than 5 seconds.
 See at the end of this document for a description how the hack works.
 For now, all we need to know is that this is a new way to exploit the
-well-known 4532 kernel, in a way which also works on updated machines,
+well-known 4532 kernel, in a way which also works on updated machines, 
 unless they have been updated by the summer '09 update. It also works on
 all hardware types.
 
@@ -26,12 +26,16 @@ your Nand [Flash](Flash "wikilink")
 
 \- The JTAG points are available for a number of consoles
 
-**Xenon**: ![X_Jtag_free60.png‎](./images/X_Jtag_free60.png "X_Jtag_free60.png‎")
+**Xenon**: 
+
+![X_Jtag_free60.png‎](./images/X_Jtag_free60.png "X_Jtag_free60.png‎")
 
 **Falcon**, **Zephyr**, **Opus** &*' Jasper*':
+
 ![ZFOJ_Jtag_free60.jpg‎](./images/ZFOJ_Jtag_free60.jpg "ZFOJ_Jtag_free60.jpg‎")
 
 **Falcon**, **Zephyr**, **Opus** &*' Jasper*' Reverse Jtag:
+
 ![Reversejatg.jpg‎](.images/Reversejatg.jpg‎ "Reversejatg.jpg‎")
 
 \- To read and write the Nand Flash (using SPI protocol by LPT and a
@@ -41,7 +45,8 @@ Reading](NAND_Reading "wikilink")
 There are other ways to read and write the Nand Flash that are valid
 (such as infectus modchip)
 
-  - All the diodes used in SPI and JTAG are "switching diodes" proposed
+  + All the diodes used in SPI and JTAG are "switching diodes" proposed
+
     are: BAT41, 1N4148, or 1N4153
 
 ## Building a Homebrew-Kernel
@@ -50,8 +55,9 @@ There are other ways to read and write the Nand Flash that are valid
 
 #### What you need
 
-  - Latest build.py Script from GIT
-  - CB/CD-files matching for your Xbox Revision (called CB.xxxx/CD.xxxx
+  + Latest build.py Script from GIT
+  + CB/CD-files matching for your Xbox Revision (called CB.xxxx/CD.xxxx
+
     here, where xxxx is the version)
 
 \-Xenon: 1921
@@ -62,25 +68,28 @@ There are other ways to read and write the Nand Flash that are valid
 
 \-Jasper: 6712, 6723
 
-  - Hacked SMC Code matching your Xbox Revision (called smc_hacked.bin
+  + Hacked SMC Code matching your Xbox Revision (called smc_hacked.bin
+
     here) ATM only available for XENON / falcon / zephyr / opus(as of
     recently)
-  - The 1888 Basekernel (called 1888image.bin here)
-  - Xbox 360 Dashboard Update Version 4532 (HD_DVD_10-2006.zip)
-  - wxPirs to extract xboxupd.bin from 4532-Update
-  - Compiled XELL (xell-1f.bin, also the same file named
+
+  + The 1888 Basekernel (called 1888image.bin here)
+  + Xbox 360 Dashboard Update Version 4532 (HD_DVD_10-2006.zip)
+  + wxPirs to extract xboxupd.bin from 4532-Update
+  + Compiled XELL (xell-1f.bin, also the same file named
+
     xell-backup.bin)
 
 #### How-to
 
 1\. **Check out the latest free60-tools** with GIT
 
-`git clone `<git://free60.git.sourceforge.net/gitroot/free60/tools/>
+`git clone ` <git://free60.git.sourceforge.net/gitroot/free60/tools/>
 
 2\. **Extract xboxupd.bin** with WxPirs from the unzipped
 4532-Dashboard-Update
 
-3\. **Copy the files** xboxupd.bin, 1888image.bin, CB.xxxx/CB.xxxx,
+3\. **Copy the files** xboxupd.bin, 1888image.bin, CB.xxxx/CB.xxxx, 
 smc.hacked and the two XeLL files xell-1f.bin and xell-backup.bin to
 /tools/imgbuild/input (you need to create the folder first). Also create
 a folder "output" in /tools/imgbuild/
@@ -89,63 +98,60 @@ a folder "output" in /tools/imgbuild/
 (Example-Key:
 010F0E0C0ED669E7B56794FB68563EFA)
 
-`secret_1BL = "\x01\x0F\x0E\x0C\x0E\xD6\x69\xE7\xB5\x67\x94\xFB\x68\x56\x3E\xFA"`
-
+ `secret_1BL = "\x01\x0F\x0E\x0C\x0E\xD6\x69\xE7\xB5\x67\x94\xFB\x68\x56\x3E\xFA"`
 5\. **Start build.py** with the following
 command
 
-`python build.py input/1888image.bin input/CB.xxxx input/CD.xxxx input/xboxupd.bin input/xell-backup.bin input/xell-1f.bin input/smc_hacked.bin`
-
+ `python build.py input/1888image.bin input/CB.xxxx input/CD.xxxx input/xboxupd.bin input/xell-backup.bin input/xell-1f.bin input/smc_hacked.bin`
 If everything works out the Script should output something similar to
 this
 
-`* found flash image, unpacking and decrypting...`
-` ECC'ed - will unecc.`
-` Found 2BL (build 1888) at 00008000`
-` Found 4BL (build 1888) at 0000e1e0`
-` Found 5BL (build 1888) at 000138d0`
-` * found (hopefully) decrypted CB`
-` * found (hopefully) raw CD`
-` * found update`
-` Found 6BL (build 4532) at 00000000`
-` Found 7BL (build 4532) at 000044c0`
-` * found XeLL binary, must be linked to 1c000000`
-` * found XeLL binary, must be linked to 1c000000`
-` * found decrypted SMC`
-` * we found the following parts:`
-` CB: 1921`
-` CD: 1921`
-` CE: 1888`
-` CF: 4532`
-` CG: 4532`
-` * checking if all files decrypted properly... ok`
-` * checking required versions... ok`
-` * Fixing up the hacked SMC code with the target address`
-` * this image will be valid *only* for: xenon`
-` * zero-pairing...`
-` * constructing new image...`
-` * base size: 70000`
-` * compiling payload stub`
-` * Flash Layout:`
-` 0x00000000..0x000001ff (0x00000200 bytes) Header`
-` 0x00000200..0x000003ff (0x00000200 bytes) Exploit`
-` 0x00000400..0x00000fff (0x00000c00 bytes) Padding`
-` 0x00001000..0x00003fff (0x00003000 bytes) SMC`
-` 0x00004000..0x00007fff (0x00004000 bytes) Keyvault`
-` 0x00008000..0x000117ff (0x00009800 bytes) CB 1921`
-` 0x00011800..0x00016ebf (0x000056c0 bytes) CD 1921`
-` 0x00016ec0..0x0006cf2f (0x00056070 bytes) CE 1888`
-` 0x0006cf30..0x0006ffff (0x000030d0 bytes) Padding`
-` 0x00070000..0x000744bf (0x000044c0 bytes) CF 4532`
-` 0x000744c0..0x000a33ff (0x0002ef40 bytes) CG 4532`
-` 0x000a3400..0x000bffff (0x0001cc00 bytes) Padding`
-` 0x000c0000..0x000fffff (0x00040000 bytes) Xell (backup)`
-` 0x00100000..0x0013ffff (0x00040000 bytes) Xell (main)`
-` * Encoding ECC...`
-` Written into output/image_00000000.ecc`
-` ! please flash output/image_*.ecc, and setup your JTAG device to do the DMA read from 00000200`
-` `
-
+ `* found flash image, unpacking and decrypting...`
+ ` ECC'ed - will unecc.`
+ ` Found 2BL (build 1888) at 00008000`
+ ` Found 4BL (build 1888) at 0000e1e0`
+ ` Found 5BL (build 1888) at 000138d0`
+ ` * found (hopefully) decrypted CB`
+ ` * found (hopefully) raw CD`
+ ` * found update`
+ ` Found 6BL (build 4532) at 00000000`
+ ` Found 7BL (build 4532) at 000044c0`
+ ` * found XeLL binary, must be linked to 1c000000`
+ ` * found XeLL binary, must be linked to 1c000000`
+ ` * found decrypted SMC`
+ ` * we found the following parts:`
+ ` CB: 1921`
+ ` CD: 1921`
+ ` CE: 1888`
+ ` CF: 4532`
+ ` CG: 4532`
+ ` * checking if all files decrypted properly... ok`
+ ` * checking required versions... ok`
+ ` * Fixing up the hacked SMC code with the target address`
+ ` * this image will be valid *only* for: xenon`
+ ` * zero-pairing...`
+ ` * constructing new image...`
+ ` * base size: 70000`
+ ` * compiling payload stub`
+ ` * Flash Layout:`
+ ` 0x00000000..0x000001ff (0x00000200 bytes) Header`
+ ` 0x00000200..0x000003ff (0x00000200 bytes) Exploit`
+ ` 0x00000400..0x00000fff (0x00000c00 bytes) Padding`
+ ` 0x00001000..0x00003fff (0x00003000 bytes) SMC`
+ ` 0x00004000..0x00007fff (0x00004000 bytes) Keyvault`
+ ` 0x00008000..0x000117ff (0x00009800 bytes) CB 1921`
+ ` 0x00011800..0x00016ebf (0x000056c0 bytes) CD 1921`
+ ` 0x00016ec0..0x0006cf2f (0x00056070 bytes) CE 1888`
+ ` 0x0006cf30..0x0006ffff (0x000030d0 bytes) Padding`
+ ` 0x00070000..0x000744bf (0x000044c0 bytes) CF 4532`
+ ` 0x000744c0..0x000a33ff (0x0002ef40 bytes) CG 4532`
+ ` 0x000a3400..0x000bffff (0x0001cc00 bytes) Padding`
+ ` 0x000c0000..0x000fffff (0x00040000 bytes) Xell (backup)`
+ ` 0x00100000..0x0013ffff (0x00040000 bytes) Xell (main)`
+ ` * Encoding ECC...`
+ ` Written into output/image_00000000.ecc`
+ ` ! please flash output/image_*.ecc, and setup your JTAG device to do the DMA read from 00000200`
+ ` `
 6\. **Finished\!** Your ready-to-be-flashed Image is located in the
 output-folder, called image_00000000.ecc
 
@@ -153,11 +159,11 @@ output-folder, called image_00000000.ecc
 
 #### What you need
 
-  - Latest build.py Script from GIT
-  - Hacked Kernel-Image (hacked-image.bin)
-  - Xbox 360 Dashboard Update Version 4532 (HD_DVD_10-2006.zip)
-  - wxPirs to extract xboxupd.bin from 4532-Update
-  - Compiled XELL (xell-1f.bin)
+  + Latest build.py Script from GIT
+  + Hacked Kernel-Image (hacked-image.bin)
+  + Xbox 360 Dashboard Update Version 4532 (HD_DVD_10-2006.zip)
+  + wxPirs to extract xboxupd.bin from 4532-Update
+  + Compiled XELL (xell-1f.bin)
 
 #### How-to
 
@@ -168,8 +174,7 @@ output-folder, called image_00000000.ecc
 
 3\. **Start build.py** with following command:
 
-`python build.py hacked-image.bin xboxupd.bin xell-1f.bin`
-
+ `python build.py hacked-image.bin xboxupd.bin xell-1f.bin`
 4\. **Finished\!** Your updated hacked-image was written into the output
 directory and is ready to be flashed.
 
@@ -199,10 +204,10 @@ Drive** so it won't upgrade on the next startup.
 
 #### What you need
 
-  - Latest build.py Script from GIT
-  - Hacked Kernel-Image (hacked-image.bin)
-  - Xbox 360 Dashboard Update Version 4532 (HD_DVD_10-2006.zip)
-  - wxPirs to extract xboxupd.bin from 4532 Update
+  + Latest build.py Script from GIT
+  + Hacked Kernel-Image (hacked-image.bin)
+  + Xbox 360 Dashboard Update Version 4532 (HD_DVD_10-2006.zip)
+  + wxPirs to extract xboxupd.bin from 4532 Update
 
 #### How-to
 
@@ -213,8 +218,7 @@ and create a folder "output" there
 
 3\. **Start build.py** with following command
 
-`python build.py hacked-image.bin xboxupd.bin`
-
+ `python build.py hacked-image.bin xboxupd.bin`
 4\. **Finished\!** Decrypted SMC, CB and CD data was written into the
 output directory
 
@@ -224,15 +228,15 @@ Just use this simple command (input/backup.ecc is your nand backup, and
 output/full.ecc is a 16MB image you can
 flash)
 
-`cp input/backup.ecc output/full.ecc; dd if=output/image_00000000.ecc of=output/full.ecc conv=notrunc`
+ `cp input/backup.ecc output/full.ecc; dd if=output/image_00000000.ecc of=output/full.ecc conv=notrunc`
 
 ### Using the 1920to1921 script
 
 #### What you need
 
-  - Latest 1920to1921.py Script from GIT
-  - decrypted 1921 CB (2BL)
-  - decrypted 1920 CD (4BL)
+  + Latest 1920to1921.py Script from GIT
+  + decrypted 1921 CB (2BL)
+  + decrypted 1920 CD (4BL)
 
 #### How-to
 
@@ -244,15 +248,14 @@ to CD.1920
 3\. **Start 1920to1921.py** with following
 command:
 
-`python 1920to1921.py xxxx (where xxxx is the CD Version you want to create, i.e 1921, 4558, 5770)`
-
+ `python 1920to1921.py xxxx (where xxxx is the CD Version you want to create, i.e 1921, 4558, 5770)`
 4\. **Finished\!** Script should tell you "great, hash matches\!" and
 write the appropriative CD to the input folder.
 
 # Technical details
 
 To understand this new hack, let's first look at what made the KK
-exploit possible: A fatal bug in the Hypervisor's Syscall Handler,
+exploit possible: A fatal bug in the Hypervisor's Syscall Handler, 
 introduced in the 4532 kernel update. For more details, take a look at
 <http://www.securityfocus.com/archive/1/461489/30/0/threaded> which
 explains the problem in great detail.
@@ -273,17 +276,17 @@ The exploit basically allows jumping into any 32-bit address in
 hypervisor space. To jump into an arbitrary location, we just used a
 "mtctr, bctr"-register pair in hypervisor, which would redirect
 execution low into any 64-bit address. This is important, since we need
-to clear the upper 32bit (i.e.,set the MSB to disable the HRMO), since
+to clear the upper 32bit (i.e., set the MSB to disable the HRMO), since
 the code we want to jump to is in unencrypted memory.
 
-This code would usually load a second-stage loader, for example XeLL,
+This code would usually load a second-stage loader, for example XeLL, 
 into memory, and start it. XeLL would then attempt to catch all cpu
-threads (because just the primary thread is affected by our exploit),
+threads (because just the primary thread is affected by our exploit), 
 and load the user code, for example from DVD.
 
 So, the following memory areas are involved:
 
-  - Idle Thread context, at 00130360 in physical memory
+  + Idle Thread context, at 00130360 in physical memory
 
 This stores the stack pointer (and some other stuff) when the idle
 thread was suspended. By changing the stack pointer, and then waiting
@@ -291,29 +294,29 @@ for the kernel to switch to the idle thread, the stack pointer can be
 brought into our control. Part of the context switch is also a context
 restore, based on the new stack pointer.
 
-  - Context restore, part 1, arbitrary location, KK expl. uses 80130AF0
+  + Context restore, part 1, arbitrary location, KK expl. uses 80130AF0
 
 The thread-context restore doesn't restore all registers, but let's us
 control the NIP (the "next instruction" pointer). We setup NIP to point
 to the interrupt context restore, which does a SP-relative load of most
 registers.
 
-  - Context restore, part 2, same base location as part 1
+  + Context restore, part 2, same base location as part 1
 
 We just re-use the same stack pointer, because the areas where the first
 context restore and the interrupt context restore load from do not
 overlap. The second context restore allows us to pre-set all registers
 with arbitrary 64 bit values.
 
-  - The HV offset, at 00002080 for syscall 0x46 on 4532
+  + The HV offset, at 00002080 for syscall 0x46 on 4532
 
-Because of the HV bug, we can write this offset into unencrypted memory,
+Because of the HV bug, we can write this offset into unencrypted memory, 
 giving us the possibility to jump into any location in the hypervisor
 space (i.e. with a certain "encryption prefix"). We usually write
 00000350 here, which points to a "mtctr %r4; bctr" instruction pair in
 hypervisor, which lets us jump to %r4.
 
-  - Our loader code, at an arbitrary location
+  + Our loader code, at an arbitrary location
 
 This code will be executed from hypervisor. It's the first of our code
 which will be executed. %r4 on the syscall entry has to point to this
@@ -366,7 +369,7 @@ Well, that would be too easy. While most NAND registers are mapped, the
 DMA address registers (1c, 20) are not. We can DMA, but only to the
 default address of zero (or wherever the kernel last DMAed into). Fail.
 
-The GPU, the (H)ANA (the "scaler" - which in fact doesn't scale at all,
+The GPU, the (H)ANA (the "scaler" - which in fact doesn't scale at all, 
 it's "just" a set of DACs, and, since Zephyr, a DVI/HDMI encoder), the
 Southbridge and the CPU have their JTAG ports exposed on the board. They
 are unpopulated headers, but the signals are there. CPU JTAG is a
@@ -425,7 +428,7 @@ this is usually stored at address 0x3B1 /
 | - | ---- | ---------------- | ------ | -------------- | ------ | ------------------- |
 | 2 | 0003 | 1888, 1901, 1902 |        |                |        |                     |
 | 4 |      | 1920             |        |                |        | "new zeropair code" |
-| 5 | 0010 | 1921             | 4558   | 5760,5761,5770 | 6712   | TA-fixed            |
+| 5 | 0010 | 1921             | 4558   | 5760, 5761, 5770 | 6712   | TA-fixed            |
 
 It then verifies the pairing information stored in the 2BL header. Part
 of this verification is a checksum check of the NAND area which was used
@@ -435,12 +438,12 @@ It also contains a virtual machine and some code to run on this machine.
 The virtual machine code, which is pretty complicated, does the
 following things:
 
-  - Initialisation of the PCI-Bridge
-  - Disable the GPU PCIE JTAG test port
-  - initialize the serial port
-  - talk to the SMC to clear the "handshake"-bit
-  - initialize memory
-  - hopefully not: generate RROD if memory init fails
+  + Initialisation of the PCI-Bridge
+  + Disable the GPU PCIE JTAG test port
+  + initialize the serial port
+  + talk to the SMC to clear the "handshake"-bit
+  + initialize memory
+  + hopefully not: generate RROD if memory init fails
 
 After that, the external (512MB) memory will be initialized and usable.
 2BL then decrypts the 4BL into this memory. Memory encryption will
@@ -468,7 +471,9 @@ with a proprietary algorithm (LDIC).
 
 This is part of a system upgrade. Each console has a so-called "Base
 Kernel", which is the 1888 kernel which was available on launch back in
+
 2005. Then there are two "update slots" - areas of 64k each (128k on
+
 Jasper), which contain a 6BL and 7BL. 6BL is code which applies the
 update, using a clever delta-compression. 7BL is the actual
 delta-compressed update, essentially a binary diff.
@@ -480,7 +485,7 @@ Since 6BL doesn't contain a filesystem parser, a blockmap is added in
 
 ### Zero-Pairing
 
-Now there is a special situation: If the 2BL pairing block is all-zero,
+Now there is a special situation: If the 2BL pairing block is all-zero, 
 the pairing block will not be checked. However, a bit is set so that the
 kernel doesn't boot the dashboard binary, but a special binary called
 "MfgBootLauncher", where "Mfg" probably stands for "Manufacturing". So
@@ -516,8 +521,8 @@ is detected, the update slots are not ignored anymore. Instead, if the
 update-slots are zero-paired as well, they are applied.
 
 This change allows us to boot any kernel, provided we have a (1920 and
-up) 2BL/4BL set which runs on that machine. This is very important,
-because we can build up an image now which runs into the 4532 kernel,
+up) 2BL/4BL set which runs on that machine. This is very important, 
+because we can build up an image now which runs into the 4532 kernel, 
 regardless on how many update fuses are set. However, the 2BL revocation
 process must be passed, so we are not completely independent of the
 fuses, still. But since we use zero-pairing, the SMC hash doesn't matter
@@ -528,7 +533,7 @@ blinking thingie - you'll notice once you see it, it's very unique and
 doesn't look like any RROD or so). But thanks to the SMC/JTAG hack
 described above, this allows us to launch our attack from this state.
 
-Newer consoles (which have the TA fix) don't run 1920 anymore. They run,
+Newer consoles (which have the TA fix) don't run 1920 anymore. They run, 
 for example, 1921. The problem is that we cannot run HV code on these
 machines, so we don't know the CPU key. However, when comparing the 1921
 and 1920 2BL (which we can still decrypt), the only change is the
@@ -548,7 +553,7 @@ and Falcon have 80nm, Jasper has 60nm, so there are 3 GPU revisions in
 total).
 
 But the step from 1921 to, say, 4558, is even smaller. It's just the
-different version number, plus a slight difference in the memcpy code,
+different version number, plus a slight difference in the memcpy code, 
 which again can be ported over from 2BL.
 
 Jasper's 67xx is a different thing, since this code adds support for the
@@ -575,12 +580,14 @@ iron.
 A: The SMC code is invalid. This can be a misconnected flashrom, an
 illegal image, a bad flash or simply a bad SMC code. Verify:
 
-  - Electrical connections first.
-  - Did you flash with the proper ECC settings? The flash images we are
+  + Electrical connections first.
+  + Did you flash with the proper ECC settings? The flash images we are
+
     working with usually contain raw ECC information, i.e. 512+16 bytes
     per sector. Make sure your flash programmer is not modifying these
     16 bytes, but writing those as they are.
-  - Have you used the right SMC image?
+
+  + Have you used the right SMC image?
 
 ### Q: "The fans run at full speed immediately."
 
@@ -615,29 +622,33 @@ this via CPU jtag, or by measuring the 8 POST pins.
 
 Post code 6C:
 
-  - The exploit failed, somehow.
+  + The exploit failed, somehow.
 
 Post code 10:
 
-  - Our code is running\! That's great, but it failed copying the
+  + Our code is running\! That's great, but it failed copying the
+
     XeLL-payload from flash. Try booting into the alternate loader (see
     below in the "exploit loader" section), or reflash.
 
 Post code 11:
 
-  - Exploit code ran, and jumped into XeLL. XeLL crashed. Try alternate
+  + Exploit code ran, and jumped into XeLL. XeLL crashed. Try alternate
+
     loader, or do serial upload for recovery, if you really screwed up
     both the primary and secondary loader. (You failed, in that case.)
 
 Post codes \>= 0x80:
 
-  - Those are errors from the bootloader. Please check the disassembly
+  + Those are errors from the bootloader. Please check the disassembly
+
     of those loaders to see what's wrong exactly. It shouldn't happen
     unless you have a bad flash.
 
 Post code 0xA0:
 
-  - Your 2BL didn't want to run on your hardware due to the 2BL
+  + Your 2BL didn't want to run on your hardware due to the 2BL
+
     revocation fuses. Use a more recent 2BL/4BL set for your hardware.
     If you're already running {1921, 4558, 5770, 6712} then you're out
     of luck. Your box was already updated to a newer 2BL, which likely
@@ -650,7 +661,8 @@ the early time of the exploit. This affects:
 
 CPU:
 
-  - The CPU is initialized in low-power mode, where it runs at
+  + The CPU is initialized in low-power mode, where it runs at
+
     quarter-speed.
 
 Setting the CPU power mode is possible, of course, but needs to be
@@ -658,10 +670,13 @@ reverse-engineered from the corresponding hypervisor syscall.
 
 GPU:
 
-  - A full screen setup is required, including the programming of the
+  + A full screen setup is required, including the programming of the
+
     ANA-chip. Code is available for setting up a 640x480 VGA mode,
     support for other resolutions needs to be added.
-  - EDRAM must be "trained". This is what fails when the E-74 error is
+
+  + EDRAM must be "trained". This is what fails when the E-74 error is
+
     displayed. The code is rather complex, and has been
     reverse-enginnered, but doesn't run properly yet. However, it has
     been shown to work a bit, and can likely be tweaked to work
@@ -669,7 +684,8 @@ GPU:
 
 SATA:
 
-  - SATA likely needs some reset sequence. Linux kernel does this fine,
+  + SATA likely needs some reset sequence. Linux kernel does this fine, 
+
     but XeLL doesn't work.
 
 All of these issues are expected to be fixed.
@@ -692,15 +708,15 @@ you to not abuse this hack for piracy.
 The first own code which is executed is a small loader, which operates
 in the following way:
 
-  - If a character is present on the serial port, it will be read.
+  + If a character is present on the serial port, it will be read.
       - if that character is '@', we will enter serial upload mode.
       - if that character is ' ', we will use the backup bootloader
-  - if not serial upload mode:
+  + if not serial upload mode:
       - POST 0x10
       - read bootloader from flash (either backup or normal)
       - POST 0x11
       - run
-  - serial upload mode:
+  + serial upload mode:
       - output '\>'
       - receive characters
       - after 10 consecutive 'x', stop upload
@@ -712,9 +728,9 @@ bootloader.
 
 The used addresses are the following:
 
-  - FLASH_BASE is the location in flash of the backup bootloader,
-  - FLASH_BASE + 0x40000 is the location of the main bootloader,
-  - CODE_BASE is the memory address of the bootloader in ram.
+  + FLASH_BASE is the location in flash of the backup bootloader, 
+  + FLASH_BASE + 0x40000 is the location of the main bootloader, 
+  + CODE_BASE is the memory address of the bootloader in ram.
 
 By default, the following memory map is used:
 
@@ -726,5 +742,5 @@ By default, the following memory map is used:
 
 But this can be tweaked.
 
-[Category:Xbox360 System Software](Category_Xbox360_System_Software)
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Xbox360 System Software](Category_Xbox360_System_Software)
+[Category: Xbox360_Hardware](Category_Xbox360_Hardware)

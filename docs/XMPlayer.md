@@ -17,6 +17,7 @@
     ================================================================================
     What it does
     ================================================================================
+
     - Play video from usb, hard drive and disc drive
     - Support for ext2fs, ntfs, fat, xtaf and iso9660 partition
     - French and english translation
@@ -25,6 +26,7 @@
     ================================================================================
     What it does not do
     ================================================================================
+
     - Some 1080p are playing, some doesn't
     - No network support
     - No control when playing music files
@@ -33,12 +35,14 @@
     ================================================================================
     Know issues
     ================================================================================
+
     - Slowdown when using vsync
     - XTAF support is experimental
 
     ================================================================================
     What to do next
     ================================================================================
+
     - More tranlastions
     - Nand flasher/dumper
     - Nand fs
@@ -48,6 +52,7 @@
     ================================================================================
     Install
     ================================================================================
+
     - Copy all files at the root of an usb stick, launch it by xell or latest dashlaunch
 
     Thanks to
@@ -62,4 +67,4 @@
     tuxuser
     [c0z]
 
-[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)
+[Category: Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)

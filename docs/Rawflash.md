@@ -4,6 +4,7 @@
 
     place "nandflash.bin" on the root of a usb device
     start 2stage xell and shut off when prompted (replug power if you changed SMC)
+
     - by default it checks blocks before writing, and will NOT overwrite or erase any block with ecc/other issues (perfect for *** images with auto remaps)
 
     small change to libxenon was required to silence non-error messages
@@ -15,4 +16,4 @@
     v2: add big block support
     v1: initial version
 
-[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)
+[Category: Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)

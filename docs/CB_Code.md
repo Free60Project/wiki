@@ -2,19 +2,24 @@
 
 Some notes on the mfg version to start with:
 
-- In the mfg version of the CB_A, the cpukey is set to null and
+* In the mfg version of the CB_A, the cpukey is set to null and
+
   XeCryptHmacSha is given the null buffer to generate the next key
-- Other than that there is no other change in the mfg version, boot
+
+* Other than that there is no other change in the mfg version, boot
+
   process seems to continue as normal unless I'm overlooking a flag
   being set
-- It *seems* the mfg version is signed, which means we should be
+
+* It *seems* the mfg version is signed, which means we should be
+
   able to flash it to consoles without an issue and then we wouldn't
   have to worry about cpukeys for the cb at least. xebuild doesn't do
   that, I wonder why
 
 ## CB Dump
 
-```c
+``` c
 // BLKey = 1BL Key
 // Hvx methods are meant to be proxies to read HV memory from user mode.
 #define SPACE_NAND 0x80000200C8000000ULL
@@ -87,7 +92,7 @@ void DumpCB_B()
 
 Version: 9188 retail
 
-```c
+``` c
 // version: 0x23E4
 // entry: 0x3C0
 // size: 0x1AC0

@@ -18,8 +18,11 @@
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     -----------------------------------------------------------------------------------------------------------
+
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
+
     -----------------------------------------------------------------------------------------------------------
+
     CheckSum                      unsigned long               4           0x00
     Version                       unsigned long               4           0x04
     FirstPowerOnDate                 char[]                   5           0x08      // key 0x1 5 bytes
@@ -28,13 +31,15 @@
 
     -----------------------------------------------------------------------------------------------------------
 
-
     SMCBlock
     ~~~~~~~~
 
     -----------------------------------------------------------------------------------------------------------
+
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
+
     -----------------------------------------------------------------------------------------------------------
+
     StuctureVersion               unsigned char               1           0x0E
     ConfigSource                  unsigned char               1           0x0F
     ClockSelect                      char                     1           0x10
@@ -60,14 +65,15 @@
     pad5                         unsigned char[]              3           0x109
     DoNotUse                     unsigned char[]              2           0x10C
 
-
-
     FanOverride
     ~~~~~~~~~~~
 
     -----------------------------------------------------------------------------------------------------------
+
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
+
     -----------------------------------------------------------------------------------------------------------
+
     Cpu                    Struct_XCONFIG_STATIC_SETTINGS     1           0
     Gpu                    Struct_XCONFIG_STATIC_SETTINGS     1           0
 
@@ -84,21 +90,19 @@
     --------------
     Speed                        unsigned char                1           0              0                7
     Enable                       unsigned char                1           0              7                1
+
     -----------------------------------------------------------------------------------------------------------
-
-
-
-
 
     Temperature
     ~~~~~~~~~~~
 
     -------------------------------------------------------------------------------
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
+
     -----------------------------------------------------------------------------------------------------------
+
     TempCalData                  unsigned short[]             16          0
     Constant               Struct_XCONFIG_STATIC_SETTINGS     16          0
-
 
     TemperatureConstant
     -------------------
@@ -107,42 +111,39 @@
     Edram                  Struct_XCONFIG_STATIC_SETTINGS     4           8
     Board                  Struct_XCONFIG_STATIC_SETTINGS     4           12
 
-
     TemperatureConstantBoard
     ------------------------
     Gain                         unsigned short               2           0
     Offset                       unsigned short               2           2
-
 
     TemperatureConstantCpu
     ------------------------
     Gain                         unsigned short               2           0
     Offset                       unsigned short               2           2
 
-
     TemperatureConstantGpu
     ------------------------
     Gain                         unsigned short               2           0
     Offset                       unsigned short               2           2
 
-
     TemperatureConstantEdram
     ------------------------
     Gain                         unsigned short               2           0
     Offset                       unsigned short               2           2
+
     -----------------------------------------------------------------------------------------------------------
-
-
 
     Thermal
     ~~~~~~~
 
     -----------------------------------------------------------------------------------------------------------
+
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
+
     -----------------------------------------------------------------------------------------------------------
+
     SetPoint               Struct_XCONFIG_STATIC_SETTINGS     3           0
     Overload               Struct_XCONFIG_STATIC_SETTINGS     3           3
-
 
     ThermalSetPoint
     ---------------
@@ -150,33 +151,31 @@
     Gpu                          Unsigned char                1           1
     Edram                        Unsigned char                1           2
 
-
     ThermalOverload
     ---------------
     Cpu                          Unsigned char                1           0
     Gpu                          Unsigned char                1           1
     Edram                        Unsigned char                1           2
+
     -----------------------------------------------------------------------------------------------------------
-
-
 
     Viper
     ~~~~~
 
     ------------------------------------------------------------------------------------------------------------
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
+
     -----------------------------------------------------------------------------------------------------------
+
     Flags                 union_XCONFIG_STATIC_SETTINGS       1           0
     GpuTarget                    unsigned char                1           1
     MemoryTarget                 unsigned char                1           2
     Checksum                     unsigned char                1           3
 
-
     ViperFlags
     -----------
     AsUCHAR                      Unsigned char                1           0
     AsFlags               Struct_XCONFIG_STATIC_SETTINGS      1           0
-
 
     ViperAsFlags
     ------------
@@ -186,35 +185,36 @@
     : 1; // bit 7
 
     //u8 unknown : 6; // 1 byte
-        u8 GpuTarget;
-        u8 MemoryTarget;
-        u8 CheckSum;
+        u8 GpuTarget; 
+        u8 MemoryTarget; 
+        u8 CheckSum; 
+
     -----------------------------------------------------------------------------------------------------------
-
-
 
     BackupThermalCalData
     ~~~~~~~~~~~~~~~~~~~~
 
     -----------------------------------------------------------------------------------------------------------
+
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
+
     -----------------------------------------------------------------------------------------------------------
+
     Temperature           union_XCONFIG_STATIC_SETTINGS       16          0                                     // Same as other info
     AnaFuseValue                     char                     1           16
     Thermal               Struct_XCONFIG_STATIC_SETTINGS      6           17
+
     -----------------------------------------------------------------------------------------------------------
-
-
-
-
-
 
     XCONFIG_STATISTIC_SETTINGS 0x1
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     -----------------------------------------------------------------------------------------------------------
+
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
+
     -----------------------------------------------------------------------------------------------------------
+
     CheckSum                     unsigned long                4           0
     Version                      unsigned long                4           4
     XUIDMACAddress                  char[]                    6           8
@@ -228,17 +228,18 @@
     UEMErrors                       char[]                    100         1332
     FPMErrors                       char[]                    56          1432
     LastReportTime               unsigned int                 8           1488
+
     -----------------------------------------------------------------------------------------------------------
-
-
-
 
     XCONFIG_SECURED_SETTINGS 0x2   // This is the other static one right after the SMCBlock
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     -----------------------------------------------------------------------------------------------------------
+
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
+
     -----------------------------------------------------------------------------------------------------------
+
     CheckSum                     Unsigned Long                4           0
     Version                      Unsigned Long                4           4
     OnlineNetworkID                  char[]                   4           8
@@ -256,14 +257,10 @@
     PowerVcsControl      Struct_XCONFIG_POWER_VCS_CONTROL     2           66
     ReservedRegion                   char[]                   444         68
 
-
-
     PowerMode
     ---------
     VIDDelta                     unsigned char                1           0
     Reserved                     unsigned char                1           1
-
-
 
     PowerVCSControl
     ---------------
@@ -272,17 +269,18 @@
     Full                         unsigned short               2           0              8                4
     Quiet                        unsigned short               2           0              4                4
     Fuse                         unsigned short               2           0              0                4
+
     -----------------------------------------------------------------------------------------------------------
-
-
-
 
     XCONFIG_USER_SETTINGS 0x3
     ~~~~~~~~~~~~~~~~~~~~~~~~~
 
     -----------------------------------------------------------------------------------------------------------
+
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
+
     -----------------------------------------------------------------------------------------------------------
+
     CheckSum                     unsigned long                4           0
     Version                      unsigned long                4           4
     TimeZoneBias                 unsigned long                4           8
@@ -335,39 +333,39 @@
     MusicMediaSourceType             char                     1           507
     PhotoMediaSourceType             char                     1           508
 
-
-
-
     XCONFIG_TIMEZONE_DATE
     ---------------------
     Month                        unsigned char                1           0
     Day                          unsigned char                1           1
     DayOfWeek                    unsigned char                1           2
     Hour                         unsigned char                1           3
+
     -----------------------------------------------------------------------------------------------------------
-
-
-
 
     XCONFIG_XNET_MACHINE_ACCOUNT 0x4
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     -----------------------------------------------------------------------------------------------------------
+
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
+
     -----------------------------------------------------------------------------------------------------------
+
     Version                      unsigned long                4           0
     Data                         unsigned long                492         4
+
     -----------------------------------------------------------------------------------------------------------
-
-
-
 
     XCONFIG_XNET_PARAMETERS 0x5   //I believe this is XnetStartupParams which is retrieved at sockinit in xam
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~   // so this is a struct of XNetStartupParams, but that might not be right.
                                   // these Qos things seem to be the "Ping Limit"
+
     -----------------------------------------------------------------------------------------------------------
+
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
+
     -----------------------------------------------------------------------------------------------------------
+
     cfgSizeOfStruct                    unsigned char          1           0
     cfgFlags                           unsigned char          1           1
     cfgSockMaxDgramSockets             unsigned char          1           2
@@ -381,16 +379,18 @@
     cfgQosProbeEntries                 unsigned char          1           10
     cfgQosSrvMaxSimultaneousResponses  unsigned char          1           11
     cfgQosPairWaitTimeInSeconds        unsigned char          1           12
+
     -----------------------------------------------------------------------------------------------------------
-
-
 
     XCONFIG_MEDIA_CENTER_SETTINGS 0x6
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     -----------------------------------------------------------------------------------------------------------
+
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
+
     -----------------------------------------------------------------------------------------------------------
+
     CheckSum                     unsigned long                4           0
     Version                      unsigned long                4           4
     MediaPlayer                     char[]                    20          8
@@ -404,17 +404,15 @@
     ServerName                      char[]                    128         1736
     ServerFlags                     char[]                    4           1864
 
-
-
-
-
-
     XCONFIG_CONSOLE_SETTINGS 0x7
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     -----------------------------------------------------------------------------------------------------------
+
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
+
     -----------------------------------------------------------------------------------------------------------
+
     CheckSum                     unsigned long                4           0
     Version                      unsigned long                4           4
     ScreenSaver                  signed short                 2           8
@@ -426,8 +424,6 @@
     MediaDisableAutoLaunch       signed short                 2           320
     KeyboardLayout               signed short                 2           322
 
-
-
     PlayTimerData
     -------------
     uliResetDate              union_ULARGE_INTEGER            8           0
@@ -435,7 +431,6 @@
     dwTotalPlayTime              unsigned long                4           12
     dwRemainingPlayTime          unsigned long                4           16
 
-
     union_ULARGE_INTEGER
     --------------------
     HighPart                     unsigned long                4           0
@@ -443,36 +438,37 @@
     u                         unnamed_ULARGE_INTEGER          8           0
     QuadPart                     unsigned int                 8           0
 
-
     unnamed_ULARGE_INTEGER
     ----------------------
     HighPart                     unsigned long                4           0
     LowPart                      unsigned long                4           0
+
     -----------------------------------------------------------------------------------------------------------
-
-
-
 
     XCONFIG_DVD_SETTINGS 0x8
     ~~~~~~~~~~~~~~~~~~~~~~~~
 
     -----------------------------------------------------------------------------------------------------------
+
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
+
     -----------------------------------------------------------------------------------------------------------
+
     Version                      unsigned long                4           0
     VolumeID                    unsigned char[]               20          4
     Data                        unsigned char[]               640         24
+
     -----------------------------------------------------------------------------------------------------------
-
-
-
 
     XCONFIG_IPTV_SETTINGS 0x9
     ~~~~~~~~~~~~~~~~~~~~~~~~~
 
     -----------------------------------------------------------------------------------------------------------
+
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
+
     -----------------------------------------------------------------------------------------------------------
+
     CheckSum                     unsigned long                4           0
     Version                      unsigned long                4           4
     ServiceProviderName            wchar_t[]                  120         8
@@ -480,19 +476,18 @@
     SupportInfo                    wchar_t[]                  128         256
     BootstrapServerURL             wchar_t[]                  128         384
 
-
-
     XCONFIG_SYSTEM_SETTINGS 0xA
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     -----------------------------------------------------------------------------------------------------------
+
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
+
     -----------------------------------------------------------------------------------------------------------
+
     Version                      unsigned long                4            0
     AlarmTime                 union_LARGE_INTEGER             8            4
     PreviousFlashVersion         unsigned long                4            12
-
-
 
     union_ULARGE_INTEGER
     --------------------
@@ -501,9 +496,9 @@
     u                         unnamed_ULARGE_INTEGER          8           0
     QuadPart                     unsigned int                 8           0
 
-
     unnamed_ULARGE_INTEGER
     ----------------------
     HighPart                     unsigned long                4           0
     LowPart                      unsigned long                4           0
+
     -----------------------------------------------------------------------------------------------------------

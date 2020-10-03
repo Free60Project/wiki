@@ -1,7 +1,7 @@
 The RF module is believed to be based on DECT
 technology:[1](1 "wikilink") (Dutch)
 
-  - Chips on the RF module:
+  + Chips on the RF module:
 
 :\*Backside:
 
@@ -24,13 +24,12 @@ wireless part will need to be powered when the Xbox is switched off.
 
 The layout of the connectors is as follows:
 
-`    3.3v   usb    usb    gnd`
-`pon     fb1   fb2    gnd    TP17`
-
+ `    3.3v   usb    usb    gnd`
+ `pon     fb1   fb2    gnd    TP17`
 The two usb wires are connected to the southbridge. fb1 and fb2 ('front
 bus') form a slow serial bus, something like I2C but different: the bit
 numbers don't match and the start and stop conditions are different.
-These can be used to control the leds: for examble without AV cable,
+These can be used to control the leds: for examble without AV cable, 
 there is no USB activity on boot, but there is on this front bus.
 Whether the leds can be controlled by USB as well is unsure.
 
@@ -41,4 +40,4 @@ controllers.
 TP17 is an unknown signal, connected to test pin TP17 on the RF module
 pcb
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Xbox360_Hardware](Category_Xbox360_Hardware)

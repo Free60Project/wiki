@@ -11,19 +11,25 @@ console to another. Please help making this idea real\!
 
 For every (hacked) hardware, there is a homebrew lib / toolchain:
 
-  - [Libxenon](LibXenon) for guess what ;)
-  - [libogc](http://www.devkitpro.org/category/libogc/) for Wii,
-    GameCube
-  - [OpenXDK](https://sourceforge.net/projects/openxdk/) for Xbox 1
-  - [devkitPro](http://www.devkitpro.org/) is a toolchain for GameBoy
-    Advance, GP32, Playstation Portable and GameCube.
-  - [SDL](http://www.libsdl.org/) is not technically a homebrew lib, but
-    has been ported to many many platforms.
-  - many others I forgot here
+  + [Libxenon](LibXenon) for guess what ; )
+  + [libogc](http://www.devkitpro.org/category/libogc/) for Wii, 
 
-The point is: Every community is hacking their own homebrew library,
-reinventing/forking functionality for libc, *peripherals* (USB, SD/SDHC,
-NAND, ..), *functionality* (libz, libmad, ..), *storage* (FAT32),
+    GameCube
+
+  + [OpenXDK](https://sourceforge.net/projects/openxdk/) for Xbox 1
+  + [devkitPro](http://www.devkitpro.org/) is a toolchain for GameBoy
+
+    Advance, GP32, Playstation Portable and GameCube.
+
+  + [SDL](http://www.libsdl.org/) is not technically a homebrew lib, but
+
+    has been ported to many many platforms.
+
+  + many others I forgot here
+
+The point is: Every community is hacking their own homebrew library, 
+reinventing/forking functionality for libc, *peripherals* (USB, SD/SDHC, 
+NAND, ..), *functionality* (libz, libmad, ..), *storage* (FAT32), 
 *networking* (lwip, TCP/IP, DHCP, ...), etc.
 
 **It would be really great to have a generic homebrew lib!** Such a lib
@@ -39,12 +45,12 @@ on your new shiny device.
 
 Homebrew libraries tend to cover these common areas:
 
-  - Input (joystick, buttons)
-  - Graphics (2d, 3d -- framebuffer?)
-  - Sound -- waveform, synthesized, mp3/ogg, etc
-  - Storage -- FAT, SD
-  - Networking -- TCP/IP, UDP
-  - USB?
+  + Input (joystick, buttons)
+  + Graphics (2d, 3d -- framebuffer?)
+  + Sound -- waveform, synthesized, mp3/ogg, etc
+  + Storage -- FAT, SD
+  + Networking -- TCP/IP, UDP
+  + USB?
 
 These would be good areas to start with.
 
@@ -53,7 +59,7 @@ These would be good areas to start with.
 First, we need some coders from different homebrew scenes to sit
 together and find similarities in their projects.
 
-Then we need them to write the code ;-)
+Then we need them to write the code ; -)
 
 Ok ok, all that needs to be done is an abstract interface *on top of the
 existing homebrew libraries*. Thats not so much to do after all. Then we
@@ -90,9 +96,9 @@ whole system on top of it.
 [Libpayload](http://www.coreboot.org/Libpayload) is part of the coreboot
 project. It is an abstraction library meant for easy deployment of code
 in boot-loader-comparable environments. It is focused mainly on x86, but
-looks like a promising ground. It contains its own libc implementation,
+looks like a promising ground. It contains its own libc implementation, 
 whereas most homebrew projects are using newlib
 instead.
 
-[Category:Xbox360_Homebrew_Software](../Category_Xbox360_Homebrew_Software)
-[Category:Xbox360_Development](../Category_Xbox360_Development)
+[Category: Xbox360_Homebrew_Software](../Category_Xbox360_Homebrew_Software)
+[Category: Xbox360_Development](../Category_Xbox360_Development)

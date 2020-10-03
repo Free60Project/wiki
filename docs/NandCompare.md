@@ -2,7 +2,7 @@
 
 ### NFO
 
-```
+``` 
 nand compare (v1.4):
 --------------------
 
@@ -16,11 +16,11 @@ nand compare (v1.4):
   please send feedback, bugs, etc. to rab (richardaburton@gmail.com) or post in
   the thread on xbox-scene or xboxhacker
 
-
 the tool has two functions:
 ---------------------------
 
-- compare 2 nand images
+* compare 2 nand images
+
   better than simply using md5 as it tells you which blocks are mismatched, which
   allows you to reread only those that are in error rather than the entire chip
   (speeding up the process)
@@ -38,8 +38,8 @@ the tool has two functions:
         nandpro verify.bin: -w16 2e.bin 2e 1 (patch this new read into verify image)
         (do comparison again, if still bad rewrite just this block and read it back again as above)
 
+* reconstruct image from 3 bad reads
 
-- reconstruct image from 3 bad reads
   assumes that read errors don't occur in same place each time, which is true for
   some read errors (e.g. lpt timing problems), if there is a good reason why you
   can't read something then this may not be true
@@ -54,7 +54,6 @@ the tool has two functions:
   blocks can be recovered, in which case you'll need to get more reads or look for
   a good reason why your reads are so bad
 
-
 version history:
 ----------------
   1.4 (2010/01/23) - support any size image (any number of blocks at 0x4000 + ecc)
@@ -62,13 +61,16 @@ version history:
   1.3 (2009/12/18) - reduce block size for 256/512mb nands (to 0x4000 + ecc) based
                       on user feedback (nandpro uses small block numbering so our
                       output didn't match up with nandpro)
+
                     - make gui more responsive when operating on large nands
+
   1.2 (2009/12/15) - support for 256mb nand
+
                     - use correct block size for 256/512mb nand (0x20000 + ecc)
                     - added progress bar
+
   1.1 (2009/12/13) - support for 512mb nand (assumes same block size as 16mb)
   1.0 (2009/12/12) - first release
 ```
 
-
-[Category:Xbox360_Homebrew_Software](../Category_Xbox360_Homebrew_Software)
+[Category: Xbox360_Homebrew_Software](../Category_Xbox360_Homebrew_Software)

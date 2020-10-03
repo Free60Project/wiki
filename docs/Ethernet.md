@@ -16,7 +16,6 @@ Comes from Integrated Circuit Systems, Inc.
 
 ![An Image](../images/ICS1893BF.jpg)
 
-
 ### BCM5241
 
 [Datasheet](https://docs.broadcom.com/docs/12358209)
@@ -29,8 +28,8 @@ Pinout coming soon...
 
 ### 88W8786U-NAP2
 
-![An Image](../images/88W8786U-NAP2.JPG)
+![An Image](../images/88W8786U-NAP2. JPG)
 
 Comes from Marvell, Inc.
 
-[Category:Xbox360_Hardware](../Category_Xbox360_Hardware)
+[Category: Xbox360_Hardware](../Category_Xbox360_Hardware)

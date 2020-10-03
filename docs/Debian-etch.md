@@ -14,7 +14,7 @@ commands:
 
 **Note: Do not use this, use the modified bash code posted at the bottom of this page.**
 
-```
+``` 
 sudo su
 wget https://web.archive.org/web/20121104151039/http://home.comcast.net/~ssmurf/debianinstall.sh
 sh ./debianinstall.sh
@@ -29,7 +29,7 @@ Xserver-driver.
 
 ## debianinstall.sh
 
-```sh
+``` sh
 #!/bin/bash
 dd if=/dev/zero of=/dev/sda bs=512 count=1
 sfdisk /dev/sda << EOF
@@ -107,4 +107,4 @@ echo "You may now shutdown the xbox360."
 echo "Then continue the install by booting the Xell-Bootloader-sda2."
 ```
 
-[Category:Xbox360_Linux](Category_Xbox360_Linux)
+[Category: Xbox360_Linux](Category_Xbox360_Linux)

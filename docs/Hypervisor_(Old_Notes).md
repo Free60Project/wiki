@@ -20,7 +20,7 @@ hypervisor does interrupts/exceptions
 
 ## Syscalls
 
-```
+``` 
 final:
 
 SC 00: GetVersionCode (e.g. r3=072F8002)
@@ -167,7 +167,7 @@ second: "burn fuses"
 (rumour has it that this is used to make retail boxes out of debug
 boxes)
 
-memory management 0F/10: perhaps page table access code in hypervisor,
+memory management 0F/10: perhaps page table access code in hypervisor, 
 all high level code in kernel
 
 you can't map memory as you like
@@ -185,7 +185,7 @@ reading physical memory = encrypted
 
 data segments are not encrypted, but nearly all code segments
 
-older recovery cd (early 2005), worked on first beta developer kits,
+older recovery cd (early 2005), worked on first beta developer kits, 
 without security enabled:
 
 cd included kernel which included stuff that is encrypted in retail
@@ -205,7 +205,7 @@ hypervisor: sign with private key etc.
 hypervisor can only do physical memory
 
 hashing: load into register base address, length, destination of hash
-buffer, call syscode, hypervisor will hash -\> attack: hash 1 byte,
+buffer, call syscode, hypervisor will hash -\> attack: hash 1 byte, 
 \*itself\*, -\> hangs
 
 hypervisor lies at 0 in VM and physical mem

@@ -9,4 +9,4 @@ Video-Modes. It's a linux tool.
 The source is available on the [free60 GIT Repository](../Free60_Git_Repository)
 in the tools section.
 
-[Category:Xbox360_Development](../Category_Xbox360_Development)
+[Category: Xbox360_Development](../Category_Xbox360_Development)

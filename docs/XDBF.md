@@ -33,7 +33,7 @@ smaller.
 # Entry Table
 
 The Entry Table is made up of entries, each one under a different
-namespace and ID. The table length will be **Entry Table Length** \* 18,
+namespace and ID. The table length will be **Entry Table Length** \* 18, 
 but only the first **Entry Count** are used.
 
 ## Entry Structure
@@ -78,7 +78,7 @@ get the real offset.
 (((**Entry Table Length** \* 18) + (**Free Space Table Length** \* 8)) +
 24) + OffsetSpecifier
 
-Just to explain a bit more,
+Just to explain a bit more, 
 
 **Entry Table Length** \* 18, 18 being the length of each entry, this
 will workout the actual length of the entry table.
@@ -89,4 +89,4 @@ entry, workout the actual length of the free space table.
 \+ 24, 24 is the length of the
 header.
 
-[Category:Xbox360_System_Software](Category_Xbox360_System_Software)
+[Category: Xbox360_System_Software](Category_Xbox360_System_Software)

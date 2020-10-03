@@ -1,9 +1,9 @@
 # NAND Flash System
 
 The Xbox 360 NAND uses a proprietary format created by Microsoft. The
-format is used to store console-specific data (keyvault, config blocks,
+format is used to store console-specific data (keyvault, config blocks, 
 etc) and system data (bootloaders, kernel/hypervisor, dashboard files).
-The NAND is split into two sections - one for storing the keyvault,
+The NAND is split into two sections - one for storing the keyvault, 
 bootloaders and config blocks and one for storing the dashboard files.
 The file are stored using a format which is designed to be transactional
 (each change can be reverted).
@@ -21,13 +21,13 @@ usually made with 16 pages (or 32 for bigblock NANDs)
 All (non-eMMC) NANDs have specific Spare-/Metadata for each page inside
 the NAND. Sometimes it will not be dumped with the NAND, so it has to
 either be added back or redumped. The Metadata contains the pages block
-number, a series of flags and a checksum. Those differ slightly,
+number, a series of flags and a checksum. Those differ slightly, 
 depending on the
 blocksize.
 
 ### Small Block
 
-```c
+``` c
 unsigned char BlockID1; // lba/id = (((BlockID0&0xF)<<8)+(BlockID1))
 unsigned char BlockID0 : 4;
 unsigned char FsUnused0 : 4;
@@ -49,7 +49,7 @@ unsigned char ECC0;
 
 ### Big Block on Small NAND
 
-```c
+``` c
 unsigned char FsSequence0;
 unsigned char BlockID1; // lba/id = (((BlockID0<<8)&0xF)+(BlockID1&0xFF))
 unsigned char BlockID0 : 4; 
@@ -71,7 +71,7 @@ unsigned char ECC0;
 
 ### Big Block
 
-```c
+``` c
 unsigned char BadBlock;
 unsigned char BlockID1; // lba/id = (((BlockID0&0xF)<<8)+(BlockID1&0xFF))
 unsigned char BlockID0 : 4;
@@ -96,7 +96,7 @@ unsigned char ECC0;
 The ECC/EDC checksum uses a custom algorithm - here is C code for
 that:
 
-```cpp
+``` cpp
 int checkEcc(u8* datc, u8* spare)
 {
 unsigned int i=0, val=0;
@@ -159,7 +159,7 @@ finish later
 
 ### XeLL Image Layout
 
-The whole XeLL Image is pretty small with 1,3 MB compared to an original
+The whole XeLL Image is pretty small with 1, 3 MB compared to an original
 Xbox360 NAND-Image which is normally 16 MB or 64 MB.
 
 0x00000000..0x000001ff (0x00000200 bytes) Header
@@ -177,17 +177,24 @@ Xbox360 NAND-Image which is normally 16 MB or 64 MB.
 0x000c0000..0x000fffff (0x00040000 bytes) Xell (backup)
 0x00100000..0x0013ffff (0x00040000 bytes) Xell (main)
 
-- The (hacked) SMC Code is usually seen as Header + Exploit + Padding
+* The (hacked) SMC Code is usually seen as Header + Exploit + Padding
   + the actual SMC, so 0x0000 - 0x3FFF.
-- The Keyvault is the unique "System Information" which holds stuff
+* The Keyvault is the unique "System Information" which holds stuff
+
   like DVDKey, Console Region, Console Serial and other things. Whole
   keyvault is crypted with CPUKey.
-- After that exploitable CB (2BL) and CD (4BL), matching the console
+
+* After that exploitable CB (2BL) and CD (4BL), matching the console
+
   revision, follows.
-- After padding CB/CD theres CE (Base-Kernel 1888) followed by
+
+* After padding CB/CD theres CE (Base-Kernel 1888) followed by
+
   exploitable Patchslots CF/CG (4532 or 4548) and again some padding.
-- At the end of the Image theres a Backup-XeLL, which gets executed if
+
+* At the end of the Image theres a Backup-XeLL, which gets executed if
+
   the original XeLL fails (Bad Update maybe) followed by the original
   XeLL.
 
-[Category:Xbox360 System Software](../Category_Xbox360_System_Software)
+[Category: Xbox360 System Software](../Category_Xbox360_System_Software)

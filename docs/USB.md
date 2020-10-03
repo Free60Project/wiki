@@ -17,11 +17,16 @@ Mod](https://web.archive.org/web/20141105161019/http://www.llamma.com/xbox360/mo
 
 ## Speculation
 
-  - iPod and standard USB flashdrives using the FAT(32)? Filesystem are
+  + iPod and standard USB flashdrives using the FAT(32)? Filesystem are
+
     detected via the 360 media center.(Cannot read NTFS)
-  - The Xbox 360 seems to be able to read the HFS filesystem Mac
+
+  + The Xbox 360 seems to be able to read the HFS filesystem Mac
+
     formatted iPods.
-  - It is unknown if the USB ports can access DMA but it is speculated
+
+  + It is unknown if the USB ports can access DMA but it is speculated
+
     that the USB ports may be read-only. Such speculation is
     questionable, as two-way communication is required to be able to
     communicate with products. Instead, any read-only access control may
@@ -32,4 +37,4 @@ Mod](https://web.archive.org/web/20141105161019/http://www.llamma.com/xbox360/mo
     act as a Slave, a driver \[on the xbox\] would still need to be
     present for any usb endpoints to exist.
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Xbox360_Hardware](Category_Xbox360_Hardware)

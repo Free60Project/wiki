@@ -53,7 +53,7 @@ Might be ~1 cache line
 
 log:
 
-```
+``` 
 f0 35 64 03 de 02 5b 09 b5 7b 81 49 21 e9 d9 77 6e bb c5 d1 62 9e 29 8f e9 3a 6b 7b 4d d0 44 24 15 d4 61 28 e0 e2 ea da e3 b8 34 2e cf bb af 0e
 f0 35 64 03 de 02 5b 09 b5 7b 81 49 21 e9 d9 77 03 58 f6 c0 f0 13 d5 02 4f 57 a1 d0 50 d3 46 6a 15 d4 61 28 e0 e2 ea da e3 b8 34 2e cf bb af 0e
 f0 35 64 03 de 02 5b 09 b5 7b 81 49 21 e9 d9 77 1b d6 a6 3b 3c 6e 68 4f da 75 7f a7 8a 02 e4 53 15 d4 61 28 e0 e2 ea da e3 b8 34 2e cf bb af 0e

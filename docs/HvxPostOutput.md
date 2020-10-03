@@ -1,6 +1,6 @@
 # HvxPostOutput
 
-```cpp
+``` cpp
  static QWORD _declspec(naked) HvxPostOutput(BYTE code)
  {
     __asm
@@ -12,6 +12,6 @@
  }
 ```
 
-HvxPostOutput(0xFF);
+HvxPostOutput(0xFF); 
 
 Returns 0

@@ -8,9 +8,9 @@ secondary CB loader (trinity/some jaspers)
 
 In Summary:
 
-- Slim: 1BL -\> CB_A -\> CB_B -\> CD -\> CF -\> CD -\> HV -\> Kernel -\> Dashboard
-- Phat (older): 1BL -\> CB -\> CD -\> CF -\> CD -\> HV -\> Kernel -\> Dashboard
-- Phat (newer): 1BL -\> CB_A -\> CB_B -\> CD -\> CF -\> CD -\> HV -\> Kernel -\> Dashboard
+* Slim: 1BL -\> CB_A -\> CB_B -\> CD -\> CF -\> CD -\> HV -\> Kernel -\> Dashboard
+* Phat (older): 1BL -\> CB -\> CD -\> CF -\> CD -\> HV -\> Kernel -\> Dashboard
+* Phat (newer): 1BL -\> CB_A -\> CB_B -\> CD -\> CF -\> CD -\> HV -\> Kernel -\> Dashboard
 
 ### 1BL (Inside CPU)
 
@@ -68,7 +68,7 @@ the [Hypervisor](../Hypervisor).
 
 In Summary:
 
-- Phat: 1BL -\> SB -\> SC -\> SD -\> HV -\> Kernel -\> Dashboard
+* Phat: 1BL -\> SB -\> SC -\> SD -\> HV -\> Kernel -\> Dashboard
 
 The devkit bootloaders are nearly identical to their retail
 counterparts; however instead of hardcoded hash checks, devkits verify
@@ -86,49 +86,51 @@ Once control is handed off to the kernel, as denoted by the
 [POST](../POST) output, the kernel does the following (on
 development systems):
 
-- Initialize memory manager
-- Initialize stack(s)
-- Initialize object system (?)
-- Initialize phase 1 thread (?)
-- Phase 1 initialization and processors initialization
-- Initialize keyvault
-- Initialize [HAL](https://en.wikipedia.org/wiki/HAL_(software)) phase 1
-- Initialize SFC driver (?)
-- Initialize security (?)
-- INIT_KEY_EX_VAULT
-- Initialize settings (?)
-- Initialize power mode
-- Initialize video driver
-- Initialize audio driver
-- Initialize boot animation
+* Initialize memory manager
+* Initialize stack(s)
+* Initialize object system (?)
+* Initialize phase 1 thread (?)
+* Phase 1 initialization and processors initialization
+* Initialize keyvault
+* Initialize [HAL](https://en.wikipedia.org/wiki/HAL_(software)) phase 1
+* Initialize SFC driver (?)
+* Initialize security (?)
+* INIT_KEY_EX_VAULT
+* Initialize settings (?)
+* Initialize power mode
+* Initialize video driver
+* Initialize audio driver
+* Initialize boot animation
     - Loads bootanim.xex
-- Initialize SATA driver
-- Initialize [Shadowboot](../Shadowboot) (not on retail
+* Initialize SATA driver
+* Initialize [Shadowboot](../Shadowboot) (not on retail
+
   systems)
-- INIT_DUMP_SYSTEM (?) (not on retail systems)
-- INIT_SYSTEM_ROOT (?)
-- Initialize other drivers
-- Initialize [STFS](../STFS) driver
-- Initialize XAM
+
+* INIT_DUMP_SYSTEM (?) (not on retail systems)
+* INIT_SYSTEM_ROOT (?)
+* Initialize other drivers
+* Initialize [STFS](../STFS) driver
+* Initialize XAM
 
 ## Core OS Executables
 
 After its initialization sequence, the kernel loads the following
 executables (in order)
 
-- xam.xex
-- xbdm.xex
-- xstudio.xex
-- ximecore.xex
-- Xam.Community.xex (from disk)
-- huduiskin.xex
-- xshell.xex (devkits) / dash.xex (retail)
+* xam.xex
+* xbdm.xex
+* xstudio.xex
+* ximecore.xex
+* Xam. Community.xex (from disk)
+* huduiskin.xex
+* xshell.xex (devkits) / dash.xex (retail)
 
 It then unloads the following:
 
-- huduiskin.xex
-- bootanim.xex
+* huduiskin.xex
+* bootanim.xex
 
 By this time the console will have booted into the dashboard
 
-[Category:Xbox360 System Software](../Category_Xbox360_System_Software)
+[Category: Xbox360 System Software](../Category_Xbox360_System_Software)

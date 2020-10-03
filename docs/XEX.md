@@ -14,71 +14,70 @@ uncrypted XEX files in the wild.
 
 The following program dumps what is supposed to be a hash table.
 Actually it has been reported to work with the first official "Backward
-Compatibility" .XEX File from Microsoft. It takes the XEX file as
+Compatibility" . XEX File from Microsoft. It takes the XEX file as
 argument.
 
-`// default.xex table dumper`
-` // only works with the default.xex from the xbox360 emulator update package.`
-` // - th0mas, th0mas.sixbit.org [at] gmail.com`
-` `
-` #include <stdio.h>`
-` #include <string.h>`
-` `
-` #define TABLE_START 0x288`
-` `
-` struct table {`
-`    unsigned int unknown[6];`
-` };`
-` `
-` unsigned int ByteSwap (unsigned int nInt)`
-` {`
-`    union u {unsigned int vi; unsigned char c[sizeof(unsigned int)];};`
-`    union v {unsigned int ni; unsigned char d[sizeof(unsigned int)];};`
-`    union u un;`
-`    union v vn;`
-`    un.vi = nInt;`
-`    vn.d[0]=un.c[3];`
-`    vn.d[1]=un.c[2];`
-`    vn.d[2]=un.c[1];`
-`    vn.d[3]=un.c[0];`
-`    return (vn.ni);`
-` }`
-` `
-` void printTable(struct table *t)`
-` {`
-`    int i;`
-`    for (i = 0; i < 6; i  ) {`
-`       int j = ByteSwap(t->unknown[i]);`
-`       printf("0x%08x ", j);`
-`    }`
-`    printf("\n");`
-` }`
-` `
-` int main(int argc, char **argv)`
-` {`
-`    FILE *fp = fopen(argv[1], "rb");`
-`    struct table tmp;`
-`    int numEntries = 0;`
-`    int i;`
-` `
-`    fseek(fp, TABLE_START, SEEK_SET);`
-`    fread(&numEntries, sizeof(unsigned int), 1, fp);`
-`    numEntries = ByteSwap(numEntries);`
-`    for (i = 0; i < numEntries; i  ) {`
-`         fread(&tmp, sizeof(struct table), 1, fp);`
-`         printTable(&tmp);`
-`    }`
-` }`
-` `
-` `
-
+ `// default.xex table dumper`
+ ` // only works with the default.xex from the xbox360 emulator update package.`
+ ` // - th0mas, th0mas.sixbit.org [at] gmail.com`
+ ` `
+ ` #include <stdio.h>`
+ ` #include <string.h>`
+ ` `
+ ` #define TABLE_START 0x288`
+ ` `
+ ` struct table {`
+ `    unsigned int unknown[6];`
+ ` };`
+ ` `
+ ` unsigned int ByteSwap (unsigned int nInt)`
+ ` {`
+ `    union u {unsigned int vi; unsigned char c[sizeof(unsigned int)];};`
+ `    union v {unsigned int ni; unsigned char d[sizeof(unsigned int)];};`
+ `    union u un;`
+ `    union v vn;`
+ `    un.vi = nInt;`
+ `    vn.d[0]=un.c[3];`
+ `    vn.d[1]=un.c[2];`
+ `    vn.d[2]=un.c[1];`
+ `    vn.d[3]=un.c[0];`
+ `    return (vn.ni);`
+ ` }`
+ ` `
+ ` void printTable(struct table *t)`
+ ` {`
+ `    int i;`
+ `    for (i = 0; i < 6; i  ) {`
+ `       int j = ByteSwap(t->unknown[i]);`
+ `       printf("0x%08x ", j);`
+ `    }`
+ `    printf("\n");`
+ ` }`
+ ` `
+ ` int main(int argc, char **argv)`
+ ` {`
+ `    FILE *fp = fopen(argv[1], "rb");`
+ `    struct table tmp;`
+ `    int numEntries = 0;`
+ `    int i;`
+ ` `
+ `    fseek(fp, TABLE_START, SEEK_SET);`
+ `    fread(&numEntries, sizeof(unsigned int), 1, fp);`
+ `    numEntries = ByteSwap(numEntries);`
+ `    for (i = 0; i < numEntries; i  ) {`
+ `         fread(&tmp, sizeof(struct table), 1, fp);`
+ `         printTable(&tmp);`
+ `    }`
+ ` }`
+ ` `
+ ` `
 # Structure of the XEX File
 
 A XEX file is composed of the following:
 
-  - A 24 bytes XEX Header
-  - Variable-length program/section headers
-  - Program/Section content
+  + A 24 bytes XEX Header
+  + Variable-length program/section headers
+  + Program/Section content
 
 ## XEX Header
 
@@ -97,14 +96,14 @@ Byte ordering: [Big Endian](http://en.wikipedia.org/wiki/Big_Endian).
 
 The Flags field is a bitfield, as shown below:
 
-`bit 0 - Title Module`
-`bit 1 - Exports To Title`
-`bit 2 - System Debugger`
-`bit 3 - DLL Module`
-`bit 4 - Module Patch`
-`bit 5 - Patch Full`
-`bit 6 - Patch Delta`
-`bit 7 - User Mode`
+ `bit 0 - Title Module`
+ `bit 1 - Exports To Title`
+ `bit 2 - System Debugger`
+ `bit 3 - DLL Module`
+ `bit 4 - Module Patch`
+ `bit 5 - Patch Full`
+ `bit 6 - Patch Delta`
+ `bit 7 - User Mode`
 
 ## Optional Headers
 
@@ -181,22 +180,22 @@ compression (hello, xbox1\!).
 
 These appear to be important strings found in the update file
 
-  - Directories?
+  + Directories?
       - XAdu
       - $UPDATES
       - MEDIA
 
-  - \\Device\\CdRom0\\default.xex
+  + \\Device\\CdRom0\\default.xex
 
-  - installupdate.exe
+  + installupdate.exe
 
-  - The xboxkrnl is updated using the updates.
+  + The xboxkrnl is updated using the updates.
 
-  - xam.xex
+  + xam.xex
 
-  - xboxkrnl.exe
+  + xboxkrnl.exe
 
-  - Library includes:
+  + Library includes:
       - XUIRNDR
       - XAUD
       - XGRAPHC
@@ -212,22 +211,27 @@ These appear to be important strings found in the update file
 
 There are currently at least four XEX files freely available on the net:
 
-  - [Original Xbox Game Support November 2005 update](https://web.archive.org/web/20070311061307/http://assets.xbox.com/en-us/backwardcompatibility/default.zip) found on [http://www.xbox.com/en-US/games/backwardscompatibility.htm](https://web.archive.org/web/20090906002445/http://www.xbox.com/en-US/games/backwardscompatibility.htm).
+  + [Original Xbox Game Support November 2005 update](https://web.archive.org/web/20070311061307/http://assets.xbox.com/en-us/backwardcompatibility/default.zip) found on [http://www.xbox.com/en-US/games/backwardscompatibility.htm](https://web.archive.org/web/20090906002445/http://www.xbox.com/en-US/games/backwardscompatibility.htm).
 
-  - [Original Xbox Game Support December 2005 update](https://web.archive.org/web/20070315222633/http://download.microsoft.com/download/5/8/a/58a10dbc-9445-4eed-83d5-22f8ad8ee855/default.zip) found on [http://www.xbox.com/en-US/games/backwardscompatibility.htm](https://web.archive.org/web/20090906002445/http://www.xbox.com/en-US/games/backwardscompatibility.htm).
+  + [Original Xbox Game Support December 2005 update](https://web.archive.org/web/20070315222633/http://download.microsoft.com/download/5/8/a/58a10dbc-9445-4eed-83d5-22f8ad8ee855/default.zip) found on [http://www.xbox.com/en-US/games/backwardscompatibility.htm](https://web.archive.org/web/20090906002445/http://www.xbox.com/en-US/games/backwardscompatibility.htm).
 
-  - [Windows XP Media Center Edition Update Rollup 2](https://web.archive.org/web/20070312113401/http://download.microsoft.com/download/2/8/5/28521E1E-120E-4D05-8310-3E43F2734431/XboxMCELite-ENU.exe) from [http://www.xbox.com/en-US/pcsetup/alldownloads.htm](https://web.archive.org/web/20091029113316/http://www.xbox.com/en-US/pcsetup/alldownloads.htm). Use [cabextract](https://www.cabextract.org.uk/) to extract the executable file, then do the same on mcrdinstaller/ehd.cab inside the archive. This cabinet file contains XboxMcx.xex.
+  + [Windows XP Media Center Edition Update Rollup 2](https://web.archive.org/web/20070312113401/http://download.microsoft.com/download/2/8/5/28521E1E-120E-4D05-8310-3E43F2734431/XboxMCELite-ENU.exe) from [http://www.xbox.com/en-US/pcsetup/alldownloads.htm](https://web.archive.org/web/20091029113316/http://www.xbox.com/en-US/pcsetup/alldownloads.htm). Use [cabextract](https://www.cabextract.org.uk/) to extract the executable file, then do the same on mcrdinstaller/ehd.cab inside the archive. This cabinet file contains XboxMcx.xex.
 
-  - [XBOX 360 HD DVD Update](https://web.archive.org/web/20090422010822/http://www.xbox.com/en-US/hardware/x/xbox360hddvdplayer/downloadredirect.htm) found on [http://www.xbox.com/en-us/hardware/x/xbox360hddvdplayer/download.htm#disc](https://web.archive.org/web/20090805081318/http://www.xbox.com/en-us/hardware/x/xbox360hddvdplayer/download.htm)
+  + [XBOX 360 HD DVD Update](https://web.archive.org/web/20090422010822/http://www.xbox.com/en-US/hardware/x/xbox360hddvdplayer/downloadredirect.htm) found on [http://www.xbox.com/en-us/hardware/x/xbox360hddvdplayer/download.htm#disc](https://web.archive.org/web/20090805081318/http://www.xbox.com/en-us/hardware/x/xbox360hddvdplayer/download.htm)
 
 ## Programs
 
-  - [xextools](https://web.archive.org/web/20070808071312/http://www.neotokyo.phear.org/misc/xextools-0.2.tar.bz2)
+  + [xextools](https://web.archive.org/web/20070808071312/http://www.neotokyo.phear.org/misc/xextools-0.2.tar.bz2)
+
     -- A library and tools for manipulating xex files (xexread
     replacement).
-  - [xexdump](https://web.archive.org/web/20060629000929/http://oskarsapps.mine.nu/xexdump) -- Dumps information
+
+  + [xexdump](https://web.archive.org/web/20060629000929/http://oskarsapps.mine.nu/xexdump) -- Dumps information
+
     about xex files (perl)
-  - [xexdump](http://www.chaosorder.org/xexdump.zip) -- Dumps
+
+  + [xexdump](http://www.chaosorder.org/xexdump.zip) -- Dumps
+
     information about xex files (windows)
 
 ## Executable Format
@@ -304,4 +308,4 @@ XEX files are the default executable format.
     0x184...0x184+(IDC*24)  ImageData0[8], ImageData1[8], ImageData2[8]
     </nowiki>
 
-[Category:Xbox360_System_Software](Category_Xbox360_System_Software)
+[Category: Xbox360_System_Software](Category_Xbox360_System_Software)

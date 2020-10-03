@@ -4,7 +4,7 @@ Development kits have an undocumented, internal feature called 'shadow
 booting' which allows them to enter an alternate boot chain during the
 [boot process](Boot_Process "wikilink"). By placing a specially crafted
 file titled 'xboxromw2d.bin' on the root of the system's hard disk, on
-bootup the system will start, begin the process, then reboot again,
+bootup the system will start, begin the process, then reboot again, 
 finally completing the boot sequence having loaded from the bootloaders
 from the file on disk. Shadowbooting allows you to apply patches to any
 part of the system software stack from the 2BL up without reflashing the
@@ -24,7 +24,7 @@ due to their use with Xbox Live challenge bypass services.
 Unlike full development kits, test kits are limited in their ability to
 do kernel debugging among other restrictions. Test kits run on a
 different software stack than dev kits, and as such require their own
-shadowboot during updates. ISO recoveries contain two shadowboot ROMs,
+shadowboot during updates. ISO recoveries contain two shadowboot ROMs, 
 'xboxromw2d.bin' and 'xboxromtw2d.bin', which will initiate shadowboot
 on dev and test kits, respectively.
 
@@ -48,7 +48,7 @@ varying sizes.
 Found in recovery images, shadowboot files are binaries titled
 'xboxromw2d.bin' and 'xboxromtw2d.bin'. Full development kits will find
 and boot from xboxromw2d.bin and test kits xboxromtw2d.bin. Shadowboot
-files are always 832KB (851,968 bytes).
+files are always 832KB (851, 968 bytes).
 
 Structurally, shadowboot files are nearly identical to [flash
 dumps](NAND_File_System "wikilink"), but for obvious reasons they do not
@@ -101,17 +101,17 @@ On NAND dumps the CF1 offset is 0x080000 while on shadowboot ROMs it is
 The Microsoft copyright notice is as follows (ASCII) followed by a null
 byte terminator (0x00)
 
-`© 2004-2011 Microsoft Corporation. All rights reserved.`
-
+ `© 2004-2011 Microsoft Corporation. All rights reserved.`
 Note that later NAND dumps may have updated the years in this string.
 
 The unknown flag at 0x70 reads 0x0002(0000) on the NAND dump and
 0x0001(0000) on the shadowboot ROMs
 
 The 360FlashTool changelog notes the value at offset 0x71 as the
-'metadata style,' where "0 = Original, 1 = New 16MB, 2 = Large Block"
+'metadata style, ' where "0 = Original, 1 = New 16MB, 2 = Large Block"
 
-  - I am unsure about the size of all of the data after the copyright
+  + I am unsure about the size of all of the data after the copyright
+
     notice, and especially unsure of everything near 0x70.
 
 ## Keyvault
@@ -127,8 +127,8 @@ Development kernels contain a series of subroutines to find, validate
 and execute shadowboot ROMs found on various media. The first subroutine
 in this shadowboot process is
 [ExpTryToShadowBoot](ExpTryToShadowBoot "wikilink"), followed by
-[ExpTryToBootMediaKernel](ExpTryToBootMediaKernel "wikilink"),
-[KiShadowBoot](KiShadowBoot "wikilink"),
+[ExpTryToBootMediaKernel](ExpTryToBootMediaKernel "wikilink"), 
+[KiShadowBoot](KiShadowBoot "wikilink"), 
 [KiQuiesce](KiQuiesce "wikilink"), and finally
 [HvxShadowBoot](HvxShadowBoot "wikilink").
 
@@ -143,10 +143,15 @@ order
 
 1.  Remote - ExpMediaKernelKdRemoteBuffer - "host:\\\\xboxromw2d.bin"
 2.  CDRROM - ExpMediaKernelCdRom0Buffer
+
     "\\\\Device\\\\CdRom0\\\\xboxromw2d.bin"
+
 3.  Flash - Flash media kernelExpMediaKernelFlashBuffer
+
     "\\\\Device\\\\FlashFs\\\\xboxromw2d.bin"
+
 4.  Hard disk - ExpMediaKernelHd0Buffer
+
     "\\\\Device\\\\Harddisk0\\\\Partition1\\\\xboxromw2d.bin"
 
 # Security Measures
@@ -163,18 +168,17 @@ shadowboot ROMs does not.
 Each bootloader holds a random 'salt' value that is used in the
 calculation of its RC4 key.
 
-The key is derived from a 'secret' from the previous bootloader's key,
+The key is derived from a 'secret' from the previous bootloader's key, 
 originating from the hardcoded key in the 1BL. The key is the 16 (0x10)
 byte truncated HMAC-SHA1 digest of the secret appended with a random
 salt.
 
-`key = HMAC-SHA(previous_key + salt)[0:0x10]`
-
-The bootloader's 'payload' (everything after 0x20 for SB/CB,
-SC,SD/CD,SE/CE,CG everything after 0x30 for CF) is encrypted with RC4.
+ `key = HMAC-SHA(previous_key + salt)[0:0x10]`
+The bootloader's 'payload' (everything after 0x20 for SB/CB, 
+SC, SD/CD, SE/CE, CG everything after 0x30 for CF) is encrypted with RC4.
 The decryption process looks like:
 
-`decrypted = encrypted[0:0x10] + key + decrypt_RC4(key,
+`decrypted = encrypted[0:0x10] + key + decrypt_RC4(key, 
 encrypted[0x20:]`
 
 #### 2BL Key
@@ -209,11 +213,11 @@ nearly complete NAND image, the 2BL (and subsequently the 3BL) are still
 protected by signature checks with the 2BL private key.
 
 The fundamental difference in bootloader security between retail and
-devkit is the replacement of precomputed hashes in retail bootloaders,
+devkit is the replacement of precomputed hashes in retail bootloaders, 
 where the only signature checks occur on 2BL, CB, and the 6BL, CF; on
 devkits, most of these hash checks are instead replaced with signature
 checks. On both the cold boot as well as shadowboot, the 2BL is verified
 with a signature check, which subsequently verifies SD with a signature
 check.
 
-[Category:Xbox360 System Software](Category_Xbox360_System_Software)
+[Category: Xbox360 System Software](Category_Xbox360_System_Software)

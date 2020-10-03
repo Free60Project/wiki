@@ -1,51 +1,63 @@
 # Old Main page
 
 **Free60** is a project towards porting GNU/Linux, BSD, Darwin and related open-source operating systems to the Microsoft Xbox 360 video game console.
-	- 3-core **PowerPC**, **3.2** GHz
-	- **512 MB** of RAM
-	- **ATI** graphics
-	- (optional) **20 GB** hard drive
-	- **DVD** drive
-	- 3x **USB** 2.0
-	- 100 MBit **Ethernet**
-	- **TV/VGA** support
+
+  + 3-core **PowerPC**, **3.2** GHz
+  + **512 MB** of RAM
+  + **ATI** graphics
+  + (optional) **20 GB** hard drive
+  + **DVD** drive
+  + 3x **USB** 2.0
+  + 100 MBit **Ethernet**
+  + **TV/VGA** support
+
 ## Status
+
 ### Run Code
 You can run your own code on Xbox 360 systems with kernel versions 4532 and 4548. If you own a box manufactured before 2007, upgrade to one of these versions, but to no later one.
 
 ### Linux Bootloader
+
 A preliminary second-stage boot loader exists.
 
 ### Linux Kernel
+
 Patches for the Linux kernel to support a large part of the Xbox 360 hardware exist. As long as you're waiting for a convenient way to boot, you can set up your cross compiler environment.
 
 #### Linux Distributions
+
 Several [LiveCD](../LiveCD) variants and installation howtos for [Debian-etch](../Debian-etch), [Ubuntu7.04](../Ubuntu7.04) and [Ubuntu7.10](../Ubuntu7.10) are available.
 
 ## Documentation
 
 ### First Steps
+
 Try it out now
 
 How to test out linux (almost) without altering your system.
 
 #### Hardware
-- [CPU](CPU.md)
-- [GPU](GPU.md)
-- [R6T3](R6T3.md)
+
+* [CPU](CPU.md)
+* [GPU](GPU.md)
+* [R6T3](R6T3.md)
 
 #### Software
-- [Kernel](Kernel.md)
-- [Hypervisor](Hypervisor.md)
+
+* [Kernel](Kernel.md)
+* [Hypervisor](Hypervisor.md)
 
 #### Misc
-- [Videos](Videos.md)
-- [FAQ](FAQ.md)
+
+* [Videos](Videos.md)
+* [FAQ](FAQ.md)
 
 ## Communication
+
 There are several ways for you to get in touch with the people behind Free60 and for sharing information between users. We are an open project and therefore explicitly invite anybody to contact us and to [help](Help.md).
 
 ### IRC
+
 29 Sep 2007: 3D Acceleration work has started: tmbinc has released an initial version of his ['gpu' library](https://web.archive.org/web/20130224191548/http://debugmo.de/2007/09/fear-triangles/). It does not yet follow a standard API (like OpenGL), but allows you to play with the 3D GPU.
 
 8 May 2007: Updated LiveCD ready: Stonersmurf mastered the updated [LiveCD](LiveCD.md) including the latest kernel patches. The [Download](http://downloads.sourceforge.net/free60/gentoo-livecd-xenon-beta-v2.iso) is 621MB in size. See the [Release Notes](http://sourceforge.net/project/shownotes.php?group_id=139616&amp;release_id=506402) for details. Here is the [Press Release](Press_Release_2007-05-08)
@@ -84,4 +96,4 @@ rights, please contact us so that we can find a quick solution.
 interoperable software under Sect. 1201 (f) Reverse Engineering
 exception of the DMCA.*
 
-[Category:Template documentation](Category_Template_documentation)
+[Category: Template documentation](Category_Template_documentation)

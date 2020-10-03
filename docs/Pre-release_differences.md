@@ -15,7 +15,7 @@ xedk), although this can be random.
 
 CPU key and 1BL key set to 00...00 (16 bytes of 00's)
 \==Pre-1838== 1640 seems to include some strings to do with xshell
-"\\Device\\Harddisk0\\Partition1\\dashboard.xbx",
+"\\Device\\Harddisk0\\Partition1\\dashboard.xbx", 
 "\\Device\\Harddisk0\\Partition1\\xshell.xex", 1746 doesn't have a
 single mention
 Bootloader names are different, instead of SB/SC/SD/SE/SF/SG it's
@@ -26,10 +26,10 @@ ECC data is different:
 \*2 bytes to indicate block number, but second byte has 0xF0 added to
 it, XOR that byte with 0xF0 to get true number
 
-  - Doesn't indicate where the FS blocks are
-  - Doesn't seem to have bad block management... probably does though
+  + Doesn't indicate where the FS blocks are
+  + Doesn't seem to have bad block management... probably does though
 
-Uses a whole different file system for storing the dashboard files,
+Uses a whole different file system for storing the dashboard files, 
 instead of [SFCX](NAND_File_System "wikilink") it uses
 [FATX](FATX "wikilink")
 Loads more files inside FATX NANDs:
@@ -64,7 +64,7 @@ Also, console security certificate is incomplete-ish:
 \*Part number set to 12345678901
 \*No manufacturing date?
 \*Console type is weird, 0x80000002, normally when it ends in 02 it's
-retail :S
+retail : S
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
-[Category:Xbox360 System Software](Category_Xbox360_System_Software)
+[Category: Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Xbox360 System Software](Category_Xbox360_System_Software)

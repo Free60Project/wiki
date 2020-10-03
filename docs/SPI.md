@@ -19,8 +19,8 @@ consists of the following signals:
 # FAT Motherboard
 
 The Diagram matches following Xbox360 Motherboard-revisions:
-[Xenon](Xenon "wikilink"), [Zephyr](Zephyr "wikilink"),
-[Falcon](Falcon "wikilink"), [Opus](Opus "wikilink"),
+[Xenon](Xenon "wikilink"), [Zephyr](Zephyr "wikilink"), 
+[Falcon](Falcon "wikilink"), [Opus](Opus "wikilink"), 
 [Jasper](Jasper "wikilink").
 ![XBOX360_Fat_NandPro_LPCH2148_PIC18F2455_Diagram.jpg](XBOX360_Fat_NandPro_LPCH2148_PIC18F2455_Diagram.jpg
 "XBOX360_Fat_NandPro_LPCH2148_PIC18F2455_Diagram.jpg")

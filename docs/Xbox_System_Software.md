@@ -57,7 +57,7 @@ filesystem on hard drives/memory units/USB devices/xlaunch.fdf files.
 CD/DVD Media.
 
 **[STFS](STFS "wikilink")** (**S**ecure
-**T**ransacted **F**ile **S**ystem) is used for game saves,
+**T**ransacted **F**ile **S**ystem) is used for game saves, 
 profiles, arcade games, downloadable content and more. STFS is also
 referred to as CON/LIVE/PIRS files, as they are all STFS files, just
 signed with a different header.
@@ -97,4 +97,4 @@ devices.
 **[XMI](XMI "wikilink")**(**X**enon
 **M**usic **I**ndex) is used to index music on the Xbox.
 
-[Category:Xbox360 System Software](Category_Xbox360_System_Software)
+[Category: Xbox360 System Software](Category_Xbox360_System_Software)

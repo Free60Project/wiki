@@ -6,17 +6,17 @@
 
 ![<File:nandpinout.png>](../images/nandpinout.png)
 
-- [Datasheet](https://web.archive.org/web/20150112073857/http://www.hynix.com/datasheet/pdf/flash/HY27US(08_16)281A%20Series(Rev0.6).pdf)
+* [Datasheet](https://web.archive.org/web/20150112073857/http://www.hynix.com/datasheet/pdf/flash/HY27US(08_16)281A%20Series(Rev0.6).pdf)
 
+* SMT socket that should work if you choose to remove yours:
 
-- SMT socket that should work if you choose to remove yours:
   https://web.archive.org/web/20111206034431/http://www.emulation.com:80/cgi-cfm/insert_quantity.cfm?part_number=S%2DTSO%2DSM%2D048%2DA
 
 Attached to [Southbridge](../Southbridge)
 
 ## NAND Points on Motherboard for FAT
 
-![<File:Nandreadpins.jpg>](../images/Nandreadpins.jpg)
+![<File: Nandreadpins.jpg>](../images/Nandreadpins.jpg)
 
 ## NAND Points on Motherboard for SLIM
 
@@ -25,10 +25,10 @@ comming soon
 ## Different Sizes
 
 On different Motherboard Revision also different NANDs were used.
-[Xenon](../Xenon)-, [Zephyr](../Zephyr)-,
+[Xenon](../Xenon)-, [Zephyr](../Zephyr)-, 
 [Falcon](../Falcon)-, [Opus](../Opus)- and some
-[Jasper](../Jasper)-Consoles (Retails) are using 16MB NANDs,
-other [Jasper](../Jasper)-Consoles (Retail),Arcade Bundles which
+[Jasper](../Jasper)-Consoles (Retails) are using 16MB NANDs, 
+other [Jasper](../Jasper)-Consoles (Retail), Arcade Bundles which
 came without a HDD, got a 256MB or 512MB NAND onboard. Only 64MB of
 these 256/512MB NAND are used for system files, the rest is used as an
 internal Memory Unit. All Development-/Demo-/Reviewer-/Test-Kits got at
@@ -44,7 +44,7 @@ either small or large blocks.
 
 **Original SFC (pre-Jasper)**
 
-  - 16MB NAND
+  + 16MB NAND
 
 | Type                            | Size                   |
 | ------------------------------- | ---------------------- |
@@ -55,7 +55,7 @@ either small or large blocks.
 | Raw Page Size (incl. SpareData) | 0x210                  |
 | Usable Filesystem-Size          | 0x3E0                  |
 
-  - 64MB NAND
+  + 64MB NAND
 
 | Type                            | Size                   |
 | ------------------------------- | ---------------------- |
@@ -68,7 +68,7 @@ either small or large blocks.
 
 **New SFC**
 
-  - Small Block: 16MB NAND
+  + Small Block: 16MB NAND
 
 | Type                            | Size                   |
 | ------------------------------- | ---------------------- |
@@ -79,7 +79,7 @@ either small or large blocks.
 | Raw Page Size (incl. SpareData) | 0x210                  |
 | Usable Filesystem-Size          | 0x3E0                  |
 
-  - Large Block: 256/512MB NAND
+  + Large Block: 256/512MB NAND
 
 | Type                            | Size                   |
 | ------------------------------- | ---------------------- |
@@ -94,11 +94,10 @@ either small or large blocks.
 
 Have an address which is without ECC?
 
-`realaddr = (addr / 512) * 528 + (realaddr % (mod) 512 > 0 ? realaddr % (mod) 512 : 0);`
-
+ `realaddr = (addr / 512) * 528 + (realaddr % (mod) 512 > 0 ? realaddr % (mod) 512 : 0);`
 This also works in reverse:
 
-`addr = (realaddr / 528) * 512 + (realaddr % (mod) 528 > 0 ? realaddr % (mod) 528 : 0);`
+ `addr = (realaddr / 528) * 512 + (realaddr % (mod) 528 > 0 ? realaddr % (mod) 528 : 0);`
 
 ## Reading/Writing
 
@@ -121,14 +120,15 @@ Once wired you can read/write to the chip using software such as
 
 In software the NAND is mapped to memory address 0x80000200C8000000.
 
-  - You must be in real-mode to access the space
-  - You can read it byte by byte but it is recommended to follow the
+  + You must be in real-mode to access the space
+  + You can read it byte by byte but it is recommended to follow the
+
     standard and read it in 4 byte blocks
 
 ## Sectors
 
-  - 1: copyright notice, zeros, unencrypted numbers
-  - 2: encrypted data
+  + 1: copyright notice, zeros, unencrypted numbers
+  + 2: encrypted data
 
 @2MB filesystem, unencrypted, but content encrypted, config not
 
@@ -158,7 +158,7 @@ Here is a high-res picture of a premium box with the chip:
 As discussed in this article on the xboxhacker.net forums, this appears
 to be a Atmel 25020 EEPROM. The chip model reads:
 
-```
+``` 
 ATMEL524
 25020AN
 SU18
@@ -170,23 +170,25 @@ Datasheet can be found
 This chip is a low power 2048 bit serial EEPROM according to the
 datasheet.
 
-- If the small chip near the CPU is removed the Xbox will boot up and
+* If the small chip near the CPU is removed the Xbox will boot up and
+
   function just fine \[Darkmoon 360 experiments\]
 
-- According to IBM the CPU has "An interface for a serial EEPROM in
+* According to IBM the CPU has "An interface for a serial EEPROM in
+
   case patch logic configuration was needed during bring-up"
 
 ## Small flash chip on front panel
 
 There is another Atmel chip on the front panel:
 
-[<File:Atmel2.jpg>](../images/Atmel2.jpg)
+[<File: Atmel2.jpg>](../images/Atmel2.jpg)
 
 Atmel 528 serial EEPROM
 
 This chip reads:
 
-```
+``` 
 ATMEL528
 24C04N
 SU18
@@ -205,4 +207,4 @@ datasheet.
 stoker25, open source and semi-complete, has code to do with
 bootloaders/keyvault/filesystem
 
-[Category:Xbox360_Hardware](../Category_Xbox360_Hardware)
+[Category: Xbox360_Hardware](../Category_Xbox360_Hardware)

@@ -1,1 +1,1 @@
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Xbox360_Hardware](Category_Xbox360_Hardware)

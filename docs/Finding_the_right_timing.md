@@ -13,7 +13,7 @@ An ARM7 based Olimex LPC-H2148 was used for this task.
 
 It could look like that:
 
-```c
+``` c
 for(;;)
 {
   post = post_read();
@@ -34,7 +34,7 @@ for(;;)
 }
 ```
 
-Make sure you note memcmp post length ;)
+Make sure you note memcmp post length ; )
 
 ## Using random timing over the full POST length
 
@@ -44,7 +44,7 @@ length.
 
 It could look like that:
 
-```c
+``` c
 for(;;)
 {
   post = read_post();
@@ -69,7 +69,7 @@ for(;;)
 Using a hacked smc that reboots infinitely it will take a good amount of
 time, but it should end up glitching properly.
 
-Make sure you note the timing that glitched ;)
+Make sure you note the timing that glitched ; )
 
 ## Refining the timing, accounting for bell-like curve
 
@@ -82,7 +82,7 @@ range -+50 ticks around previously found glitch timing
 
 It could look like that:
 
-```c
+``` c
 for(;;)
 {
   post = read_post();
@@ -108,9 +108,9 @@ You'll need the timing of at least 20-30 successes. Averaging those
 timings should give you the sweet spot (aka final timing), because
 empirically we found that success rate vs timing is a bell-like curve.
 
-Make sure ... you got it ;)
+Make sure ... you got it ; )
 
 PS: Those pseudo-code examples don't show the slowdown code for the sake
 of clarity.
 
-[Category:Xbox360_Development](../Category_Xbox360_Development)
+[Category: Xbox360_Development](../Category_Xbox360_Development)

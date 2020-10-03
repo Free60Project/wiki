@@ -1,7 +1,8 @@
 # NANDPro
 
 ## NFO
-```
+
+``` 
 ===============================================================================
             SUPPORTED DEVICE INTERFACES
 ===============================================================================
@@ -86,7 +87,6 @@ LPT Hardware:
 
 NandPro v3.0a by Tiros
 
-
 Useage:
 
 To invoke Nand SPI flasher use:
@@ -113,7 +113,6 @@ NandPro xsvf: XsvfInputFilename.xsvf
 
 To invoke usb post monitor use:
 NandPro post: PostLogFileName.txt
-
 
 ===============================================================================
 ===============================================================================
@@ -168,7 +167,6 @@ To connect an LED to the DBG pin:
 
 3.3V---/\/\330/\/\--->|-------DBG 3 (37)
 
-
 Make the following connections from the LPC2148 to the cpld
 level shifter outputs:
 
@@ -182,7 +180,6 @@ P1.20   Post4   EXT2.9          A1                      33 (24)
 P1.21   Post5   EXT2.10         D3                      32 (23)
 P1.22   Post6   EXT2.11         E1                      31 (22)
 P1.23   Post7   EXT2.12         G1                      30 (18)
-
 
 Make the following connections from the main board post outputs to the
 cpld level shifter inputs:
@@ -198,7 +195,6 @@ Post4                   43 (33)
 Post5                   44 (34)
 Post6                   1  (35)
 Post7                   2  (36)
-
 
 Post monitor typical command line:
    Nandpro post: PostLog.txt
@@ -268,7 +264,6 @@ nandpro vnand.bin: -w16 python.ECC
 Write to a dev:, from another RAW file, fixing ECC while writing:
 nandpro dev: -w16 DumpWithErrors.bin
 
-
 General nand flashing notes:
 
 SPARE is the 16 bytes following a data block.
@@ -311,7 +306,6 @@ Only vnand: device may be forced!
 
 Example:
 nandpro vnand.bin: -r64 rawkv.bin 1 1 :AA3020
-
 
 READING WILL OVER-WRITE AN EXISTING FILE WITHOUT WARNING!
 NEW LOG FILE WILL OVERWRITE OLD WITHOUT WARNING!
@@ -368,4 +362,4 @@ DO NOT LEAVE LPT CABLE CONNECTED WHEN CONSOLE DOES NOT HAVE AC POWER!
 //
 ```
 
-[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)
+[Category: Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)

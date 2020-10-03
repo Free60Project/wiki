@@ -2,99 +2,102 @@
 
 ## General Information
 
-![<File:Media-remote.jpg>](../images/Media-remote.jpg)
+![<File: Media-remote.jpg>](../images/Media-remote.jpg)
 
 Standard Media Remote•The standard remote (as opposed to the Universal
 Media Remote) was only released in limited quantities with Xbox 360
 premium packages at launch.
 
-- The difference between the Universal Media Remote and the Standard
+* The difference between the Universal Media Remote and the Standard
+
   Remote appears to just be the button additions.
-- The remote uses the IR port located on the front of the Xbox 360.
-- Some Windows Media Center Edition computers recognize this remote as
+
+* The remote uses the IR port located on the front of the Xbox 360.
+* Some Windows Media Center Edition computers recognize this remote as
+
   a normal Media Center remote.
 
 ### Confirmed Facts
 
-  - All Windows Media Center remotes are recognized by the Xbox 360.
+  + All Windows Media Center remotes are recognized by the Xbox 360.
 
 ### Linux Facts
 
 Big remote Big remote
 
-  - IRCODE , Function
-  - {'26','Button Y'},
-  - {'25','Button B'},
-  - {'24','DVD menu'},
-  - {'23','BACK'},
-  - {'22','OK'},
-  - {'20','Button left'},
-  - {'21','Button right'},
-  - {'19','Stop button'},
-  - {'18','Pause button'},
-  - {'17','Rec button'},
-  - {'16','Play button'},
-  - {'15','Fast rewind \<\<'},
-  - {'14','fast foward \>\>'},
-  - {'11','Volume down'},
-  - {'10','Volume up'},
-  - {'09','Button 9 on ke\*ypad part'},
-  - {'08','Button 8 on ke\*ypad part'},
-  - {'07','Button 7 on ke\*ypad part'},
-  - {'06','Button 6 on ke\*ypad part'},
-  - {'05','Button 5 on ke\*ypad part'},
-  - {'04','Button 4 on keypad part'},
-  - {'03','Button 3 on keypad part'},
-  - {'02','Button 2 on keypad part'},
-  - {'01','Button 1 on keypad part'},
-  - {'00','Button 0 on keypad part'},
-  - {'1a','Go to ending \>|'},
-  - {'1b','Go to beginning |\<'},
-  - {'1c','Unknown'},
-  - {'1d','100 on remote'},
-  - {'1e','Button up'},
-  - {'1f','Button down'},
-  - {'0a','Clear'},
-  - {'0b','ENTER'},
-  - {'0c','Unknown'},
-  - {'0d','Windows Media Start'},
-  - {'0e','Mute'},
-  - {'0f','Info'},
-  - {'4f','Display'},
-  - {'51','Title'},
-  - {'64','Big X button on top, use as alternative 'on'?'},
-  - {'68','Button X'},
-  - {'66','Button A '},
-  - {'6c','Channel up'},
-  - {'6d','Channel down'};
+  + IRCODE , Function
+  + {'26', 'Button Y'}, 
+  + {'25', 'Button B'}, 
+  + {'24', 'DVD menu'}, 
+  + {'23', 'BACK'}, 
+  + {'22', 'OK'}, 
+  + {'20', 'Button left'}, 
+  + {'21', 'Button right'}, 
+  + {'19', 'Stop button'}, 
+  + {'18', 'Pause button'}, 
+  + {'17', 'Rec button'}, 
+  + {'16', 'Play button'}, 
+  + {'15', 'Fast rewind \<\<'}, 
+  + {'14', 'fast foward \>\>'}, 
+  + {'11', 'Volume down'}, 
+  + {'10', 'Volume up'}, 
+  + {'09', 'Button 9 on ke\*ypad part'}, 
+  + {'08', 'Button 8 on ke\*ypad part'}, 
+  + {'07', 'Button 7 on ke\*ypad part'}, 
+  + {'06', 'Button 6 on ke\*ypad part'}, 
+  + {'05', 'Button 5 on ke\*ypad part'}, 
+  + {'04', 'Button 4 on keypad part'}, 
+  + {'03', 'Button 3 on keypad part'}, 
+  + {'02', 'Button 2 on keypad part'}, 
+  + {'01', 'Button 1 on keypad part'}, 
+  + {'00', 'Button 0 on keypad part'}, 
+  + {'1a', 'Go to ending \>|'}, 
+  + {'1b', 'Go to beginning |\<'}, 
+  + {'1c', 'Unknown'}, 
+  + {'1d', '100 on remote'}, 
+  + {'1e', 'Button up'}, 
+  + {'1f', 'Button down'}, 
+  + {'0a', 'Clear'}, 
+  + {'0b', 'ENTER'}, 
+  + {'0c', 'Unknown'}, 
+  + {'0d', 'Windows Media Start'}, 
+  + {'0e', 'Mute'}, 
+  + {'0f', 'Info'}, 
+  + {'4f', 'Display'}, 
+  + {'51', 'Title'}, 
+  + {'64', 'Big X button on top, use as alternative 'on'?'}, 
+  + {'68', 'Button X'}, 
+  + {'66', 'Button A '}, 
+  + {'6c', 'Channel up'}, 
+  + {'6d', 'Channel down'}; 
 
 the small remote 'image insert here'
 
-  - IRCODE , Function
-  - {'64','guide'},
-  - {'19','stop'},
-  - {'18','pause'},
-  - {'16','play'},
-  - {'15','rewind'},
-  - {'14','fast forward'},
-  - {'1A','chapter next'},
-  - {'1B','chapter prev'},
-  - {'4F','display'},
-  - {'51','title'},
-  - {'24','dvd menu'},
-  - {'23','back'},
-  - {'0F','info'},
-  - {'1E','up'},
-  - {'1F','down'},
-  - {'20','left'},
-  - {'21','right'},
-  - {'22','ok'},
-  - {'12','A'},
-  - {'25','B'},
-  - {'13','X'},
-  - {'26','Y'},
-  - {'0D','windows'},
-  - {'17','record'};
+  + IRCODE , Function
+  + {'64', 'guide'}, 
+  + {'19', 'stop'}, 
+  + {'18', 'pause'}, 
+  + {'16', 'play'}, 
+  + {'15', 'rewind'}, 
+  + {'14', 'fast forward'}, 
+  + {'1A', 'chapter next'}, 
+  + {'1B', 'chapter prev'}, 
+  + {'4F', 'display'}, 
+  + {'51', 'title'}, 
+  + {'24', 'dvd menu'}, 
+  + {'23', 'back'}, 
+  + {'0F', 'info'}, 
+  + {'1E', 'up'}, 
+  + {'1F', 'down'}, 
+  + {'20', 'left'}, 
+  + {'21', 'right'}, 
+  + {'22', 'ok'}, 
+  + {'12', 'A'}, 
+  + {'25', 'B'}, 
+  + {'13', 'X'}, 
+  + {'26', 'Y'}, 
+  + {'0D', 'windows'}, 
+  + {'17', 'record'}; 
 
 ### Proof of concept code by Icekiller
 
@@ -122,6 +125,7 @@ the small remote 'image insert here'
         endwait = clock() + seconds * CLOCKS_PER_SEC;
         while (clock() < endwait) {
         }
+
     }
 
     int main(int argc, char **argv)
@@ -311,6 +315,6 @@ The remote control works as a lowbase of the xbox360, so the power on
 and off still work in Linux, also you can get all the IR codes into
 linux. So 'if' a Mediacenter is ever ported to Xbox 360 Linux, you could
 use the official remote. (IR codes and info retrieved by Icekiller, with
-SMC.C from tmbinc, small remote by kwkward)
+SMC. C from tmbinc, small remote by kwkward)
 
-[Category:Xbox360_Hardware](../Category_Xbox360_Hardware)
+[Category: Xbox360_Hardware](../Category_Xbox360_Hardware)

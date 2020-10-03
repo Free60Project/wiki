@@ -10,8 +10,7 @@ Xbox 360.
 
 ## Kernel Version
 
-`You need an Xbox with a kernel version of 4532 or 4548. `
-
+ `You need an Xbox with a kernel version of 4532 or 4548. `
 You can check your kernel version in "System -\> Console Settings -\>
 System Info". The line at the bottom contains your kernel version in the
 format K:2.0.nnnn.0, where nnnn is your four digit kernel version.
@@ -82,7 +81,7 @@ and cannot be attached to a PC serial port directly. Even if you are
 working with xorloser's loader, a serial cable can be very useful for
 debugging purposes.
 
-[Category:Xbox360_Development](Category_Xbox360_Development)
-[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
-[Category:Support](Category_Support)
+[Category: Xbox360_Development](Category_Xbox360_Development)
+[Category: Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)
+[Category: Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Support](Category_Support)
