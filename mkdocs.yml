@@ -3,4 +3,4 @@ site_name: Free60 Wiki archive
 nav:
     - Home: "index.md"
     - ToDo: "!TODO.md"
-theme: mkdocs
+theme: material
