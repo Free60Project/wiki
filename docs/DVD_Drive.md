@@ -9,10 +9,10 @@ unsigned code.
 
 There are at least four different types of DVD drives used in the 360:
 
-  - Hitachi-LG GDR-3120L (Multiple ROM revisions)
-  - Toshiba/Samsung TS-H943 (MS25 / MS28)
-  - BenQ VAD6038
-  - Lite-On DG16D2S
+- Hitachi-LG GDR-3120L (Multiple ROM revisions)
+- Toshiba/Samsung TS-H943 (MS25 / MS28)
+- BenQ VAD6038
+- Lite-On DG16D2S
 
 The model you get depends on where your Xbox was manufactured, when it
 was manufactured, what batch it was in and a lot of other factors.

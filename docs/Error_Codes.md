@@ -1,6 +1,6 @@
 # Error codes
 
-![<File:Xbox360> bsod 02.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Xbox360_bsod_02.jpg)
+![<File:e74.jpg>](../images/e74.jpg)
 
 "System error. Contact Xbox Customer Support."
 
