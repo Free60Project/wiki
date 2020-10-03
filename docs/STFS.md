@@ -184,6 +184,7 @@ field:
 | 0x40000   | Cache File          |
 | 0x2000000 | Community Game      |
 | 0x80000   | Game Demo           |
+| 0x7000    | Game on Demand      |
 | 0x20000   | Gamer Picture       |
 | 0xA0000   | Game Title          |
 | 0xC0000   | Game Trailer        |
