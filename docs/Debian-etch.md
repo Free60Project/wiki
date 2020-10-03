@@ -1,20 +1,20 @@
 # Install Debian Etch from the Gentoo LiveCD
 
-**Warning: This script will WIPE your Xbox 360 harddisk (/dev/sda) and install Debian Etch**
+**Warning**: This script will WIPE your Xbox 360 harddisk (/dev/sda) and install Debian Etch
 
 `debianinstall.sh` will create two partitions. 1 GB swap on sda1 and the
 rest of the disk as a root-filesystem on sda2. Run the script as root
 from the Gentoo LiveCD v2. You will need a DHCP-server on your network
 for this script.
 
-## How do I run it?
+## How do I run it
 
-Click "Application \> Accessories \> Terminal" and type the following
+Click "Application > Accessories > Terminal" and type the following
 commands:
 
 **Note: Do not use this, use the modified bash code posted at the bottom of this page.**
 
-```
+```sh
 sudo su
 wget https://web.archive.org/web/20121104151039/http://home.comcast.net/~ssmurf/debianinstall.sh
 sh ./debianinstall.sh

@@ -13,10 +13,8 @@ You need to remove this panel before lifting the front panel•Then remove
 both side pannels by inserting a small iron tool into the holes, and
 popping out the place holders
 
-  - Slowly lift up the Front panel, by unlocking the 4 plastic
-    placesholders about 4cm
-  - Then insert a small tool in each hole of the backplate and onpup the
-    back side
+- Slowly lift up the Front panel, by unlocking the 4 plastic placesholders about 4cm
+- Then insert a small tool in each hole of the backplate and open up the back side
 
 You now can lift up the upper part of the casing
 

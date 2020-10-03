@@ -1,18 +1,18 @@
 # Install Debian Lenny from the Gentoo LiveCD
 
-**Warning: This script will WIPE your Xbox 360 harddisk (/dev/sda) and install Debian Lenny**
+**Warning**: This script will WIPE your Xbox 360 harddisk (/dev/sda) and install Debian Lenny
 
 lennyinstall.sh will create two partitions. 1 GB swap on sda1 and the
 rest of the disk as a root-filesystem on sda2. Run the script as root
 from the Gentoo LiveCD v2. You will need a DHCP-server on your network
 for this script.
 
-## How do I run it?
+## How do I run it
 
-Click "Application \> Accessories \> Terminal" and type the following
+Click "Application > Accessories > Terminal" and type the following
 commands:
 
-``
+``sh
 sudo su
 wget https://web.archive.org/web/20141025060051/http://home.comcast.net/~ssmurf/lennyinstall.sh
 sh ./lennyinstall.sh

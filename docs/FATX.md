@@ -55,11 +55,11 @@ The configuration is the first 2 sectors (0x400 bytes) of the Data0000
 and is created when the device is configured. It contains info about the
 device and is secured with a signature. The layout is as follows:
 
-**Type 1 (Certificate size = 0x228)**
+#### Type 1 (Certificate size = 0x228)
 
 | Offset | Length     | Description                          |
 | ------ | ---------- | ------------------------------------ |
-| 0      | 0x1A8      | \[\[Console_Security_Certificate   |
+| 0      | 0x1A8      | [Console Security Certificate](Console_Security_Certificate)   |
 | 0x1A8  | 0x80       | Signature (part of the console cert) |
 | 0x228  | 0x14       | Device ID                            |
 | 0x23C  | 4 (UINT32) | Certificate size (0x228)             |
@@ -68,7 +68,7 @@ device and is secured with a signature. The layout is as follows:
 | 0x24A  | 2 (UINT16) | Write speed in KBs                   |
 | 0x24C  | 0x1B4      | Padding (0x00)                       |
 
-**Type 2 (Certificate size = 0x100)**
+#### Type 2 (Certificate size = 0x100)
 
 | Offset | Length     | Description              |
 | ------ | ---------- | ------------------------ |

@@ -71,24 +71,20 @@ Bad Ideas are as follows:
   - Network compromise
       - Fuzzing services/network connections
   - File system drivers
-      - Manipulating entries like the partition table, etc [Hard Drive
-        Mod.htm \[1](https://web.archive.org/web/20141105161019/http://llamma.com:80/xbox360/mods/USB%20Hard%20Drive%20Mod.htm)\]
+      - Manipulating entries like the partition table, etc [Hard Drive Mod.htm](https://web.archive.org/web/20141105161019/http://llamma.com:80/xbox360/mods/USB%20Hard%20Drive%20Mod.htm)]
   - Decompression routines
       - Cause a buffer overflow
 
 #### Hardware
 
   - DMA attack
-      - Someone has developed an exploit for Firewire DMA [FireWire -
-        all your memory belongs to
-        us](https://web.archive.org/web/20130216101933/http://md.hudora.de/presentations#firewire-cansecwest)
+      - Someone has developed an exploit for Firewire DMA [FireWire - all your memory belongs to us](https://web.archive.org/web/20130216101933/http://md.hudora.de/presentations#firewire-cansecwest)
       - Firewire can copy data between two firewire hdd without using
         the cpu at all (no irq gestion ...)
       - Maybe retrieve some data that can't be retrieved
       - USB and IDE that have DMA
           - Maybe it doesn't work with non-Firewire devices
-      - Video: [\[2](https://web.archive.org/web/20060427215314/http://lufgi4.informatik.rwth-aachen.de/movies/)\]
-        [for linux](http://libquicktime.sourceforge.net/)
+      - Video: [[2]](https://web.archive.org/web/20060427215314/http://lufgi4.informatik.rwth-aachen.de/movies/)
   - Manipulated USB
     device
       - Webcam
@@ -106,7 +102,7 @@ Bad Ideas are as follows:
     has some basic bitswapping and xor-ing which was defeated quickly,
     maybe potential to change it?
       - Good technical thread
-        [here]https://web.archive.org/web/20060820135835/http://www.xboxhacker.net:80/forums/index.php?topic=76.0) at
+        [here](https://web.archive.org/web/20060820135835/http://www.xboxhacker.net:80/forums/index.php?topic=76.0) at
         xboxhacker.net. Unfortunately, it starts in the name of backups,
         but it contains large amounts of insight as to how the DVD
         system functions. Signing code would still be a problem, but
@@ -123,8 +119,7 @@ Bad Ideas are as follows:
         home-made ones (using some dac of some
         cards(video-cards,tv-cards))
       - Easiest way to do DAQ is to use an NI DAQ system of allmost any
-        kind (w/ fast enough DAC, something like FLASH-DAC)
-        [\[3](http://www.ni.com/dataacquisition/)\]
+        kind (w/ fast enough DAC, something like FLASH-DAC) [[3]](http://www.ni.com/dataacquisition/)
       - Develop program for a snatching data from the bus. with high
         input impendances, megaohm range. If somebody is able to get
         those DAQ systems, i'm going to write a program for snatching

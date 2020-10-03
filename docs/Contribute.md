@@ -45,9 +45,8 @@ currently seeking.
 
 ## Editing The Wiki
 
-This website is a [Wiki](http://en.wikipedia.org/wiki/Wiki) -- a
-collection of web pages, whose content may be edited anonymously, over
-the internet.
+This website is a [Wiki](http://en.wikipedia.org/wiki/Wiki)
+collection of web pages, whose content may be edited anonymously, over the internet.
 
 ### Care and Feeding
 

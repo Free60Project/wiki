@@ -1,6 +1,6 @@
 # Install Debian 6 "Squeeze" from a Linux LiveCD
 
-**WARNING: This script will WIPE your Xbox 360 internal harddisk (/dev/sda) and install Debian 6**
+**Warning**: This script will WIPE your Xbox 360 harddisk (/dev/sda) and install Debian 6
 
 **If you have XeXmenu or another dashboard homebrew on that drive, you
 will loose it all: Follow these instructions only if you understand what
@@ -16,7 +16,7 @@ this script.
 Click "Application \> Accessories \> Terminal" and type the following
 commands:
 
-``
+``sh
 sudo su
 wget `<http://file.libxenon.org/free60/linux/script/debian_squeeze.sh>
 sh ./debian_squeeze.sh

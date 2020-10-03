@@ -8,9 +8,9 @@ secondary CB loader (trinity/some jaspers)
 
 In Summary:
 
-- Slim: 1BL -\> CB_A -\> CB_B -\> CD -\> CF -\> CD -\> HV -\> Kernel -\> Dashboard
-- Phat (older): 1BL -\> CB -\> CD -\> CF -\> CD -\> HV -\> Kernel -\> Dashboard
-- Phat (newer): 1BL -\> CB_A -\> CB_B -\> CD -\> CF -\> CD -\> HV -\> Kernel -\> Dashboard
+- Slim: 1BL -> CB_A -> CB_B -> CD -> CF -> CD -> HV -> Kernel -> Dashboard
+- Phat (older): 1BL -> CB -> CD -> CF -> CD -> HV -> Kernel -> Dashboard
+- Phat (newer): 1BL -> CB_A -> CB_B -> CD -> CF -> CD -> HV -> Kernel -> Dashboard
 
 ### 1BL (Inside CPU)
 
@@ -68,7 +68,7 @@ the [Hypervisor](../Hypervisor).
 
 In Summary:
 
-- Phat: 1BL -\> SB -\> SC -\> SD -\> HV -\> Kernel -\> Dashboard
+- Phat: 1BL -> SB -> SC -> SD -> HV -> Kernel -> Dashboard
 
 The devkit bootloaders are nearly identical to their retail
 counterparts; however instead of hardcoded hash checks, devkits verify
