@@ -7,3 +7,4 @@ Thumbs.db
 
 # mkdocs build dir
 site/
+venv
