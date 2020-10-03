@@ -25,6 +25,7 @@ Contributions are very welcome. Here's how you can help:
 ### Step by step instructions
 
 **NOTE**: The following instructions are targeted towards Unix OS' - needed steps on windows may vary.
+**NOTE 2**: You need python3 and python3-venv installed. Please look at your OS' package manager to find the correct packages.
 
 1. At first: Fork the repository to your account!
 
@@ -43,7 +44,7 @@ git clone https://github.com/<username>/wiki.git
 3. Prepare your python virtual environment and dependencies
 
 ```
-# Nagivate to the cloned
+# Navigate to the cloned repo
 cd wiki/
 
 # Create a python3 virtual environment in your cloned repository
