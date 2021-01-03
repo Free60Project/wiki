@@ -9,23 +9,23 @@
     packages, but I would recommend xmission.
 3.  Make sure you install the necessary devs libs:
 
-`GCC `
-`Make `
-`Git `
-`build-essential `
-`texinfo `
-`Etc.`
+* `GCC `
+* `Make `
+* `Git `
+* `build-essential `
+* `texinfo `
+* `Etc.`
 
 # Linux
 
 ### Prerequisites
 
-`libgmp3-dev`
-`libmpfr-dev`
-`libmpc-dev`
-`texinfo`
-`git-core`
-`build-essential`
+* `libgmp3-dev`
+* `libmpfr-dev`
+* `libmpc-dev`
+* `texinfo`
+* `git-core`
+* `build-essential`
 
 # Mac OS X
 
@@ -43,10 +43,12 @@ build.log), then do the mentioned workaround in gcc-4.4.0/gcc directory
 (changing Make-lang.in), then disable the rebuild of binutils, gcc
 (first stage) and newlib by setting
 
-`BUILD_BINUTILS=false`
-`BUILD_GCC=false`
-`BUILD_NEWLIB=false`
-`BUILD_GCC_SECOND=true`
+```
+BUILD_BINUTILS=false
+BUILD_GCC=false
+BUILD_NEWLIB=false
+BUILD_GCC_SECOND=true
+```
 
 in the build-xenon-toolchain. Then retry the build. It should finish the
 build.
@@ -55,9 +57,11 @@ build.
 
 Run the following commands through the console your using:
 
-`git clone `<git://github.com/Free60Project/libxenon.git>
-`cd libxenon/toolchain`
-`./build-xenon-toolchain toolchain`
+```
+git clone <git://github.com/Free60Project/libxenon.git>
+cd libxenon/toolchain
+./build-xenon-toolchain toolchain
+```
 
 The toolchain should start building (Note: This might take some time).
 
@@ -78,15 +82,19 @@ superuser before typing the commands in the following block.
 Note: If not, append "sudo" before those commands (example: "sudo mkdir
 -p /usr/local/xenon")
 
-`mkdir -p /usr/local/xenon`
-`chown -R your_regular_user:your_regular_user /usr/local/xenon`
-`# exit the superuser-environment now!`
+```
+mkdir -p /usr/local/xenon
+chown -R your_regular_user:your_regular_user /usr/local/xenon
+# exit the superuser-environment now!
+```
 
 Then we grab the toolchain from git and build it
 
-`git clone `<git://github.com/Free60Project/libxenon.git>
-`cd libxenon/toolchain`
-`./build-xenon-toolchain toolchain`
+```
+git clone <git://github.com/Free60Project/libxenon.git>
+cd libxenon/toolchain`
+./build-xenon-toolchain toolchain
+```
 
 Note: If gcc building, 2nd stage, fails for you, do "apt-get install
 libgmp4-dev" and restart building process.
@@ -98,29 +106,35 @@ error:
 
 Do the following:
 
-`cd gcc-4.6.1`
-`wget `<ftp://ftp.gmplib.org/pub/gmp-5.0.2/gmp-5.0.2.tar.bz2>
-`tar xvjf gmp-5.0.2.tar.bz2 && mv gmp-5.0.2 gmp`
-`wget `<http://www.multiprecision.org/downloads/mpc-0.9.tar.gz>
-`tar xvzf mpc-0.9.tar.gz && mv mpc-0.9 mpc `
-`wget `<https://www.mpfr.org/mpfr-3.0.1/mpfr-3.0.1.tar.gz>
-`tar xvzf mpfr-3.0.1.tar.gz && mv mpfr-3.0.1 mpfr`
-`cd ..`
-`./build-xenon-toolchain toolchain`
+```
+cd gcc-4.6.1
+wget <ftp://ftp.gmplib.org/pub/gmp-5.0.2/gmp-5.0.2.tar.bz2>
+tar xvjf gmp-5.0.2.tar.bz2 && mv gmp-5.0.2 gmp
+wget <http://www.multiprecision.org/downloads/mpc-0.9.tar.gz>
+tar xvzf mpc-0.9.tar.gz && mv mpc-0.9 mpc 
+wget <https://www.mpfr.org/mpfr-3.0.1/mpfr-3.0.1.tar.gz>
+tar xvzf mpfr-3.0.1.tar.gz && mv mpfr-3.0.1 mpfr
+cd ..
+./build-xenon-toolchain toolchain
+```
 
 At the end of compiling it will tell you to add paths to your ~/.bashrc
 - that's an improper solution.
 Rather do it the following way:
 
-`# Get superuser rights first!`
-`touch /etc/profile.d/devkitxenon.sh`
-`chmod +x /etc/profile.d/devkitxenon.sh`
-`# Now open the file and insert the two export lines`
-`nano /etc/profile.d/devkitxenon.sh`
-`# Insert the lines below in the text editor!`
+```
+# Get superuser rights first!
+touch /etc/profile.d/devkitxenon.sh
+chmod +x /etc/profile.d/devkitxenon.sh
+# Now open the file and insert the two export lines
+nano /etc/profile.d/devkitxenon.sh
+# Insert the lines below in the text editor!
+```
 
-`export DEVKITXENON="/usr/local/xenon"`
-`export PATH="$PATH:$DEVKITXENON/bin:$DEVKITXENON/usr/bin"`
+```
+export DEVKITXENON="/usr/local/xenon"
+export PATH="$PATH:$DEVKITXENON/bin:$DEVKITXENON/usr/bin"
+```
 
 Press Ctrl+O for saving the file and press ENTER if it asks for a
 filename Press Ctrl+X for closing nano
