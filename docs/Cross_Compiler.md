@@ -21,7 +21,7 @@ well.
 
 ## Using the Xenon Toolchain
 
-The easiest way to set up a complete cross compiler toolchain is the [Xenon Toolchain](../Compiling_the_Toolchain).
+The easiest way to set up a complete cross compiler toolchain is the [Xenon Toolchain](../Xenon_Toolchain).
 Its using current gcc and does not take as long as crossotool to compile.
 
 
