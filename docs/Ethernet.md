@@ -47,7 +47,7 @@ There are different models of this board used:
 ![Marvell 88W8786U-NAP2](../images/88W8786U-NAP2.JPG)
 ![Module front](../images/x360s_wifi_module_front.jpg)
 ![Module back](../images/x360s_wifi_module_back.jpg)
-![Module pinout](../images/x360s_wifi_module_front.jpg)
+![Module pinout](../images/x360s_wifi_module_pinout.jpg)
 
 
 [Category:Xbox360_Hardware](../Category_Xbox360_Hardware)
