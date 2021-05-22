@@ -27,10 +27,27 @@ Pinout coming soon...
 
 ## WLAN Chip
 
-### 88W8786U-NAP2
+### Xbox 360 Slim - Internal Wifi module
 
-![An Image](../images/88W8786U-NAP2.JPG)
+The Xbox 360 Slim family (Corona/Trinity/Winchester) comes with an internal wifi module.
 
-Comes from Marvell, Inc.
+It is connected to the motherboard via USB protocol, it uses 3,3V VCC instead of 5V!
+
+Generic info:
+
+- Wifi Chipset: Marvell 88W8786U-NAP2
+- Flash: Winbond W25X40BVSNIG (4Mbit / 512kB)
+- USB IDs: 045e:0765
+
+There are different models of this board used:
+
+- Model 1400, X850272-007, U72H003 GP 800571 REV.0, FCC: C3K1400
+- Model 1488, X858591-002, Marvell B52 REV 3.0, FCC: C3K1488
+
+![Marvell 88W8786U-NAP2](../images/88W8786U-NAP2.JPG)
+![Module front](../images/x360s_wifi_module_front.jpg)
+![Module back](../images/x360s_wifi_module_back.jpg)
+![Module pinout](../images/x360s_wifi_module_front.jpg)
+
 
 [Category:Xbox360_Hardware](../Category_Xbox360_Hardware)
