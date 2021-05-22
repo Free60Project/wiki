@@ -19,6 +19,10 @@
 - The memory cards are USB devices, albeit with custom connectors and
   with 3.3V power (not 5V).
 
+## Pinout
+
+![Memory unit pinout](../images/memory_unit_pinout.jpg)
+
 ## Inside the memory unit
 
 ### Flash Contents
