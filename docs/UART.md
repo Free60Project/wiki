@@ -74,7 +74,7 @@ Process](Boot_Process "wikilink").
 
 ### Diagram ALL
 
-![UART all](../images/uart_all.jpg)
+![UART all](../images/Uart_all.jpg)
 
 You can either use the GND pin on the header (might be difficult to
 solder for the inexperienced) or some alternative GND pin like the one
