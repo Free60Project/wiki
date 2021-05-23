@@ -2,7 +2,7 @@ The XBox 360 has an UART in the Southbridge.
 
 ## Registers
 
-To configure the UART, write to register 0x8000 0200 EA00 101C (real
+To configure the UART, write to register `0x8000 0200 EA00 101C` (real
 mode)
 
 | Register value | Configuration |
@@ -11,9 +11,9 @@ mode)
 | 0xB2010000     | 38400,8,N,1   |
 | 0x63010000     | 19200,8,N,1   |
 
-To send a byte, do a 32 bit write to 0x8000 0200 EA00 1014. After you
-sent something to the serial port, the status should be read from 0x8000
-0200 EA00 1018.
+To send a byte, do a 32 bit write to `0x8000 0200 EA00 1014`. After you
+sent something to the serial port, the status should be read from `0x8000
+0200 EA00 1018`.
 
 ## Sample code
 
@@ -70,11 +70,11 @@ Process](Boot_Process "wikilink").
 
 ### Diagram FAT
 
-![<File:J2B1_SCON.png>](J2B1_SCON.png "File:J2B1_SCON.png")
+![J2B1 SCON](../images/J2B1_SCON.png)
 
 ### Diagram ALL
 
-![<File:uart_all.jpg>](uart_all.jpg "File:uart_all.jpg")
+![UART all](../images/uart_all.jpg)
 
 You can either use the GND pin on the header (might be difficult to
 solder for the inexperienced) or some alternative GND pin like the one
