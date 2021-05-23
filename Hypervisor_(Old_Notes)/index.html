@@ -1,0 +1,563 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
+    
+    
+      
+        <title>Hypervisor (old notes) - Free60 Wiki archive</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bde7dde4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hypervisor-old-notes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Free60 Wiki archive" class="md-header__button md-logo" aria-label="Free60 Wiki archive" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Free60 Wiki archive
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Hypervisor (old notes)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Free60 Wiki archive" class="md-nav__button md-logo" aria-label="Free60 Wiki archive" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Free60 Wiki archive
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Hardware/" class="md-nav__link">
+        Hardware
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_System_Software/" class="md-nav__link">
+        System Software
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Homebrew_Software/" class="md-nav__link">
+        Homebrew Software
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Linux/" class="md-nav__link">
+        Linux
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Development/" class="md-nav__link">
+        Development
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Support/" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%21TODO/" class="md-nav__link">
+        ToDo
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#syscalls" class="md-nav__link">
+    Syscalls
+  </a>
+  
+    <nav class="md-nav" aria-label="Syscalls">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sc-22-burn-fuses" class="md-nav__link">
+    SC 22 (Burn fuses)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="hypervisor-old-notes">Hypervisor (old notes)</h1>
+<p>no booting details known changes between beta hardware and final: alpha
+hardware = macintosh beta = ? looks like retail, but no encryption
+second beta =! retail</p>
+<p>tried to dump RAM could only dump virtual memory ram is at 8000_0000
+southbridge: pci config space, mapped to VM, accessible by user apps
+memory at bottom looks random/encrypted, might be hypervisor 256 KB</p>
+<p>8040_0000 xbox kernel starts, MZ header</p>
+<p>read memory using debug interface: everything is in plaintext, you can
+read kernel + app (dashboard etc.), i.e. virtual memory is not encrypted</p>
+<p>kernel interesting to disassemble communication with hypervisor using
+syscalls</p>
+<p>hypervisor does interrupts/exceptions</p>
+<h2 id="syscalls">Syscalls</h2>
+<pre><code>final:
+
+SC 00: GetVersionCode (e.g. r3=072F8002)
+
+SC 01: KeStartupProcessors
+
+SC 02: unknown KiQuiesce
+
+SC 03: KeFlushEntireTb
+
+SC 04: called in FlushMultipleTb
+
+SC 05: ??
+
+SC 06: KeGetSpecialPurposeRegister (r3=0x3F5)
+
+SC 07: KeSetSpecialPurposeRegister
+
+SC 08: KeGetSocRegister(r3=???)/KeGetPWMRegister(r3=60000)/
+KeGetPRVRegister(r3=61000)
+
+SC 09: KeSetSocRegister
+
+SC 0A: KeStartupProcessors
+
+SC 0B: called in ReserveKernelPtes
+
+SC 0C: called from MmAllocatePhysicalMemoryEx
+
+SC 0D: setAD16
+
+SC 0E: KeEnablePPUPerformanceMonitor
+
+SC 0F: called from MmGetPhysicalAddress
+
+SC 10: called from MmDbgReleaseAddress
+
+SC 11: XexpLoadFile calls it, seems to get privkey
+
+r4 = phys addr (of header?) offset: +8
+
+r5 = region
+
+r6 = ?? offset: +4
+
+r7 = ?? size?
+
+SC 12: called from MmAllocateImageMemory
+
+SC 13: called from MmAllocateImageMemory
+
+SC 14: called in XexpLoadFile
+
+SC 15: called in XexpLoadFile
+
+SC 16: called in XexpCompleteImageLoad
+
+SC 17: called in XexpCompleteImageLoad
+
+SC 18: called in XexpLoadFile, XexpCompleteImageLoad
+
+SC 19: unload?
+
+SC 1A: unload?
+
+SC 1B: unload?
+
+SC 1c: called on XexpTitleTerminateNotification
+
+SC 1d: KeCreateUserMode
+
+SC 1e: KeDeleteUserMode
+
+SC 1f: Flush TLB
+
+SC 20: set power
+
+SC 21: shadow boot
+
+SC 22: Burn fuses
+
+SC 23: FSB interrupt related
+
+SC 24: KeLockL2
+
+SC 25:
+
+SC 26
+
+SC 27
+
+SC 28
+
+SC 29
+
+SC 2A
+
+SC 2B
+
+SC 2C: SataCdRomHvVerifyLBA
+
+SC 2D
+
+SC 2E: XeKeysInitialize (r3, r4 = address)
+
+SC 2F: XeKeysGetKeyProperties
+
+SC 30: XeKeysGetStatus
+
+SC 31: XeKeysGenerateRandomKey
+
+SC 32: XeKeysGetFactoryChallenge
+
+SC 33: XeKeysSetFactoryResponse
+
+SC 34: XeKeysSaveBootLoader
+
+SC 35: XeKeysSaveKeyVault
+
+SC 36: XeKeysSetKey
+
+SC 37: XeKeysGetKey
+
+SC 38: XeKeysGetDigest
+
+SC 39: XeKeysQwNeRsaPrvCrypt
+
+SC 3D: XeKeysDesCbc. r6: address, r5: context
+
+SC 3F: XeKeysSaveSystemUpdate
+
+SC 40:
+XeKeysExecute
+</code></pre>
+<h3 id="sc-22-burn-fuses">SC 22 (Burn fuses)</h3>
+<p>tested on 2 kernels</p>
+<p>first: SC "access fuses"</p>
+<p>second: "burn fuses"</p>
+<p>(rumour has it that this is used to make retail boxes out of debug
+boxes)</p>
+<p>memory management 0F/10: perhaps page table access code in hypervisor,
+all high level code in kernel</p>
+<p>you can't map memory as you like</p>
+<p>network adapter in the southbridge</p>
+<p>debug code dumps registers with names</p>
+<p>it is possible to dump physical memory using network adapter DMA
+accesses</p>
+<p>not perfect dump</p>
+<p>reading physical memory = encrypted</p>
+<p>data segments are not encrypted, but nearly all code segments</p>
+<p>older recovery cd (early 2005), worked on first beta developer kits,
+without security enabled:</p>
+<p>cd included kernel which included stuff that is encrypted in retail
+version</p>
+<p>includes hypervisor code! it is old, but...</p>
+<p>getspr: SC 6</p>
+<p>setspr: SC 7 -> possible to see implementation of basic syscall
+handling</p>
+<p>function in hypervisor to chain-run a new kernel from the old kernel</p>
+<p>hypervisor: sign with private key etc.</p>
+<p>hypervisor can only do physical memory</p>
+<p>hashing: load into register base address, length, destination of hash
+buffer, call syscode, hypervisor will hash -> attack: hash 1 byte,
+*itself*, -> hangs</p>
+<p>hypervisor lies at 0 in VM and physical mem</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a1609d9a.min.js"></script>
+      
+    
+  </body>
+</html>

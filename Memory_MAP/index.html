@@ -1,0 +1,575 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
+    
+    
+      
+        <title>Memory map - Free60 Wiki archive</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bde7dde4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#memory-map" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Free60 Wiki archive" class="md-header__button md-logo" aria-label="Free60 Wiki archive" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Free60 Wiki archive
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Memory map
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Free60 Wiki archive" class="md-nav__button md-logo" aria-label="Free60 Wiki archive" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Free60 Wiki archive
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Hardware/" class="md-nav__link">
+        Hardware
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_System_Software/" class="md-nav__link">
+        System Software
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Homebrew_Software/" class="md-nav__link">
+        Homebrew Software
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Linux/" class="md-nav__link">
+        Linux
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Development/" class="md-nav__link">
+        Development
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Support/" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%21TODO/" class="md-nav__link">
+        ToDo
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#physical-mapping" class="md-nav__link">
+    Physical Mapping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pcidevice-mapping" class="md-nav__link">
+    PCI/Device Mapping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smc-area" class="md-nav__link">
+    SMC Area
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encryption" class="md-nav__link">
+    Encryption
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="memory-map">Memory map</h1>
+<h2 id="physical-mapping">Physical Mapping</h2>
+<table>
+<thead>
+<tr>
+<th>Address</th>
+<th>Size</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>c000xxxx</code></td>
+<td>0x10000</td>
+<td>Initial "Kernel" (bootloader, not real kernel), mapped L2-Cache?</td>
+</tr>
+<tr>
+<td><code>c8xxxxxx</code></td>
+<td>0x1000000</td>
+<td>memory mapped NAND flash (RO, 1:1, no OoB(ECC))</td>
+</tr>
+<tr>
+<td><code>c9xxxxxx</code></td>
+<td>0x1000000</td>
+<td>???</td>
+</tr>
+<tr>
+<td><code>d0xxxxxx</code></td>
+<td>0x1000000</td>
+<td>PCI config space. Device number etc. is encoded in address, as usual</td>
+</tr>
+<tr>
+<td><code>e0000000</code></td>
+<td>???</td>
+<td>Host-Bridge</td>
+</tr>
+<tr>
+<td><code>e1000000</code></td>
+<td>???</td>
+<td>BIU</td>
+</tr>
+<tr>
+<td><code>ea000000</code></td>
+<td>0x10000</td>
+<td>PCI Bridge</td>
+</tr>
+<tr>
+<td><code>ec800000</code></td>
+<td>0x10000</td>
+<td>GPU</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pcidevice-mapping">PCI/Device Mapping</h2>
+<table>
+<thead>
+<tr>
+<th>Address</th>
+<th>Size</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0x(200)ea001000</code></td>
+<td>0x100</td>
+<td>System Management Controller</td>
+</tr>
+<tr>
+<td><code>0x(200)ea001200</code></td>
+<td>0x30</td>
+<td>SATA Controller CDRom</td>
+</tr>
+<tr>
+<td><code>0x(200)ea001300</code></td>
+<td>0x30</td>
+<td>SATA Controller HDD</td>
+</tr>
+<tr>
+<td><code>0x(200)ea001400</code></td>
+<td>0x80</td>
+<td>Fast Ethernet Adapter</td>
+</tr>
+<tr>
+<td><code>0x(200)ea001600</code></td>
+<td>0x40</td>
+<td>Audio Controller</td>
+</tr>
+<tr>
+<td><code>0x(200)ea001800</code></td>
+<td>0x400</td>
+<td>XMA Decoder</td>
+</tr>
+<tr>
+<td><code>0x(200)ea002000</code></td>
+<td>0x1000</td>
+<td>OHCI Controller 0</td>
+</tr>
+<tr>
+<td><code>0x(200)ea003000</code></td>
+<td>0x1000</td>
+<td>EHCI Controller 0</td>
+</tr>
+<tr>
+<td><code>0x(200)ea004000</code></td>
+<td>0x1000</td>
+<td>OHCI Controller 1</td>
+</tr>
+<tr>
+<td><code>0x(200)ea005000</code></td>
+<td>0x1000</td>
+<td>EHCI Controller 1</td>
+</tr>
+<tr>
+<td><code>0x(200)ea00c000</code></td>
+<td>0x400</td>
+<td>Secure Flash Controller</td>
+</tr>
+</tbody>
+</table>
+<h2 id="smc-area">SMC Area</h2>
+<table>
+<thead>
+<tr>
+<th>Address</th>
+<th>Size</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0x(200)ea001000</code></td>
+<td>0x10</td>
+<td>Bus Control</td>
+</tr>
+<tr>
+<td><code>0x(200)ea001010</code></td>
+<td>0x10</td>
+<td>UART</td>
+</tr>
+<tr>
+<td><code>0x(200)ea001020</code></td>
+<td>0x10</td>
+<td>GPIO Port ??</td>
+</tr>
+<tr>
+<td><code>0x(200)ea001030</code></td>
+<td>0x10</td>
+<td>GPIO Port ??</td>
+</tr>
+<tr>
+<td><code>0x(200)ea001040</code></td>
+<td>0x10</td>
+<td>GPIO Port ??</td>
+</tr>
+<tr>
+<td><code>0x(200)ea001050</code></td>
+<td>0x10</td>
+<td>SMI ???</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="encryption">Encryption</h2>
+<p>Dumps of physical memory</p>
+<p>Changed 1 byte in software, dumped again, 16 bytes changed again.</p>
+<p>Might be ~1 cache line</p>
+<p>(0, 1, 2, ...)</p>
+<p>log:</p>
+<pre><code>f0 35 64 03 de 02 5b 09 b5 7b 81 49 21 e9 d9 77 6e bb c5 d1 62 9e 29 8f e9 3a 6b 7b 4d d0 44 24 15 d4 61 28 e0 e2 ea da e3 b8 34 2e cf bb af 0e
+f0 35 64 03 de 02 5b 09 b5 7b 81 49 21 e9 d9 77 03 58 f6 c0 f0 13 d5 02 4f 57 a1 d0 50 d3 46 6a 15 d4 61 28 e0 e2 ea da e3 b8 34 2e cf bb af 0e
+f0 35 64 03 de 02 5b 09 b5 7b 81 49 21 e9 d9 77 1b d6 a6 3b 3c 6e 68 4f da 75 7f a7 8a 02 e4 53 15 d4 61 28 e0 e2 ea da e3 b8 34 2e cf bb af 0e
+f0 35 64 03 de 02 5b 09 b5 7b 81 49 21 e9 d9 77 38 03 ff f0 61 99 e6 8c b0 3b 2f bb b6 70 06 53 15 d4 61 28 e0 e2 ea da e3 b8 34 2e cf bb af 0e
+f0 35 64 03 de 02 5b 09 b5 7b 81 49 21 e9 d9 77 0f 55 01 b1 61 9b 35 34 4d ce f4 e8 bb eb cc 4a 15 d4 61 28 e0 e2 ea da e3 b8 34 2e cf bb af 0e
+f0 35 64 03 de 02 5b 09 b5 7b 81 49 21 e9 d9 77 fc ce 87 2c 30 c0 1c 4f e7 65 da d4 e4 df f6 2b 15 d4 61 28 e0 e2 ea da e3 b8 34 2e cf bb af 0e
+f0 35 64 03 de 02 5b 09 b5 7b 81 49 21 e9 d9 77 e5 5d f3 38 d9 05 c0 8e 7a a9 b5 a2 fe 11 4c b3 15 d4 61 28 e0 e2 ea da e3 b8 34 2e cf bb af 0e
+f0 35 64 03 de 02 5b 09 b5 7b 81 49 21 e9 d9 77 84 83 5d 34 55 9b e4 06 26 03 1b f3 0b e9 0f b8 15 d4 61 28 e0 e2 ea da e3 b8 34 2e cf bb af 0e
+f0 35 64 03 de 02 5b 09 b5 7b 81 49 21 e9 d9 77 ba 4d 72 2b cd 0b e9 0c 2b aa ed 53 ea b0 63 49 15 d4 61 28 e0 e2 ea da e3 b8 34 2e cf bb af 0e
+</code></pre>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a1609d9a.min.js"></script>
+      
+    
+  </body>
+</html>

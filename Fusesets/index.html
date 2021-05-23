@@ -1,0 +1,517 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
+    
+    
+      
+        <title>Understanding the Xbox 360's Fusesets - Free60 Wiki archive</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bde7dde4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#understanding-the-xbox-360s-fusesets" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Free60 Wiki archive" class="md-header__button md-logo" aria-label="Free60 Wiki archive" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Free60 Wiki archive
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Understanding the Xbox 360's Fusesets
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Free60 Wiki archive" class="md-nav__button md-logo" aria-label="Free60 Wiki archive" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Free60 Wiki archive
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Hardware/" class="md-nav__link">
+        Hardware
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_System_Software/" class="md-nav__link">
+        System Software
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Homebrew_Software/" class="md-nav__link">
+        Homebrew Software
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Linux/" class="md-nav__link">
+        Linux
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Development/" class="md-nav__link">
+        Development
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Support/" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%21TODO/" class="md-nav__link">
+        ToDo
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-they-look-like" class="md-nav__link">
+    What They Look Like
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#their-real-binary-values" class="md-nav__link">
+    Their Real Binary Values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fusesets-00-and-01" class="md-nav__link">
+    Fusesets 00 and 01
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fuseset-02" class="md-nav__link">
+    Fuseset 02
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fusesets-03-06" class="md-nav__link">
+    Fusesets 03-06
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fusesets-07-11" class="md-nav__link">
+    Fusesets 07-11
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="understanding-the-xbox-360s-fusesets">Understanding the Xbox 360's Fusesets</h1>
+<p>The Xbox 360's Xenon CPU has 768 bits of eFUSE, a technology invented by
+IBM, and implemented in some of it's processors. eFUSEs are hardware
+fuses on the CPU, and can be "blown" to a binary value (1 being blown,
+and 0 being un-blown) in the Xbox 360, there are 768 fuses, that make up
+the fusesets. Though each fuseset can be blown individually, they are
+blown in groups of 8 to make a hexadecimal value for the CPU key, and
+fuseline 00, instead of a binary value, which is what XeLL will actually
+display. Technically, there are only 192 viewable fuses.</p>
+<h2 id="what-they-look-like">What They Look Like</h2>
+<p><img alt="Xell_fusesets.jpg" src="../images/Xell_fusesets.jpg" />
+<img alt="Gentoo_fuses.jpg" src="../images/Gentoo_fuses.jpg" /></p>
+<p><strong>Once you aquire the fusesets (From either XeLL or dump32 in Linux)
+they look like this:</strong></p>
+<pre><code>fuseset 00: C0FFFFFFFFFFFFFF
+fuseset 01: 0F0F0F0F0F0F0FF0
+fuseset 02: 0F00000000000000
+fuseset 03: 9FB0174015744DAF
+fuseset 04: 9FB0174015744DAF
+fuseset 05: D569BAD6958DAE9D
+fuseset 06: D569BAD6958DAE9D
+fuseset 07: FFFF000000000000
+fuseset 08: 0000000000000000
+fuseset 09: 0000000000000000
+fuseset 10: 0000000000000000
+fuseset 11: 0000000000000000
+</code></pre>
+<h2 id="their-real-binary-values">Their Real Binary Values</h2>
+<p><strong>If you were actually reading the fuses, they would look like this (0
+being an un-burned fuse, and 1 being a burned fuse) There should be 768
+ones and zeros here, hence the "768 Bits" of eFUSE. This doesn't mean
+anything, but is just to show how the eFUSE's are actually set up.</strong></p>
+<pre><code>Fuseset 00: 1100011111111111111
+Fuseset 01: 0101010101010110
+Fuseset 02: 0100000000000000
+Fuseset 03: 1001111110110000000101110100000000010101011101000101000000000000
+Fuseset 04: 1001111110110000000101110100000000010101011101000101000000000000
+Fuseset 05: 1101010101101001101110101101011010010101100011011011000000000000
+Fuseset 06: 1101010101101001101110101101011010010101100011011011000000000000
+Fuseset 07: 1111000000000000
+Fuseset 08: 0000000000000000
+Fuseset 09: 0000000000000000
+Fuseset 10: 0000000000000000
+Fuseset 11: 0000000000000000
+</code></pre>
+<h2 id="fusesets-00-and-01">Fusesets 00 and 01</h2>
+<p>These are burned at the factory, after the console is manufactured, they
+show whether the console is a devkit or not. They also disable CPU JTAG
+after the console's flash is programed.</p>
+<pre><code>Retail fuseset 01: 0F0F0F0F0F0F0FF0
+Devkit fuseset 01: 0F0F0F0F0F0F0F0F
+</code></pre>
+<h2 id="fuseset-02">Fuseset 02</h2>
+<p>This is the lockdown counter for the 2BL/CB (The 2nd Bootloader, stored
+in NAND Flash) One of these are burned everytime the console updates
+it's bootloader (Which isn't very often) this is the reason that there
+is no way to recover a JTAG that has been updated to 2.0.8***.0, even
+is you have the CPU key, (2BL is encrypted with the CPU/1BL key, but is
+signed with Microsoft's private key so you can't change the lockdown
+counter in the NAND. The bootloader will fail signature checks, and
+panic)</p>
+<h2 id="fusesets-03-06">Fusesets 03-06</h2>
+<p>These make up the CPU key. These start out as all zero's, and are burned
+presumably at random when the console boots for the first time, they are
+used to encrypt the keyvault, and the bootloader sections. The CPU key
+is unique to each console, and is sometimes refered to as the "per-box
+key" To find the CPU key, add fusesets 03, and 05, <strong>OR</strong> 04 and 06. For
+example, this console's CPU key would be
+<code>9FB0174015744DAFD569BAD6958DAE9D</code>.</p>
+<h2 id="fusesets-07-11">Fusesets 07-11</h2>
+<p>These make up the console's "Lockdown Counter." They are blown after
+each dashboard update starting with the update from 4532/4548 to 4598.
+They prevent a previous version of the dashboard from being run on an
+updated console. There are enough eFUSEs in this section for Microsoft
+to update the console roughly 80 times. The lockdown counter of this
+console is at FFFF00000..., this means that it has received 4 dashboard
+updates since 2.0.4548.0 ran on it. Microsoft originally intended to
+only blow an eFUSE when a system update patched a critical vulnerability
+(Like the Hypervisor vulnerability in 4532 and 4548) but has now decided
+to blow an eFUSE with every update since the update to 4598. In the
+NAND's 6BL(CF) section, there is another lockdown counter that
+should(Under normal circumstances) match the fuselines on the CPU. If it
+doesn't match, the console will panic on boot, and will show a RRoD.
+Now, here's the good part! If we know the CPU key of the console, we
+can decrypt the 6BL, and change the lockdown counter in the NAND to
+match the one on the console, and therefore run an older dashboard.
+Since the 6BL isn't signed with Microsoft's private key, we can edit it
+as we please, so long as we have our CPU key.</p>
+<h1 id="dumping-the-fusesets">Dumping the fusesets</h1>
+<p>This is how the bootloaders do it</p>
+<pre><code class="language-c">QWORD getFuseline(DWORD fuse)
+{
+    if ((fuse * 0x40) &lt; 0x300)
+        return *(QWORD*)0x8000020000020000ULL + ((fuse * 0x40) &lt;&lt; 3);
+    return 0;
+}
+
+void DumpFuses()
+{
+    QWORD fuses[12] = { 0 };
+
+    printf(&quot;Fuses:\n&quot;);
+    for (int i = 0; i &lt; 12; i++)
+    {
+        fuses[i] = getFuseline(i);
+        printf(&quot;Fuse [%02d]: %016llX\n&quot;, i, fuses[i]);
+    }
+}
+</code></pre>
+<p><a href="../Category_Xbox360_System_Software">Category:Xbox360 System Software</a>
+<a href="../Category_Xbox360_Hardware">Category:Xbox360_Hardware</a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a1609d9a.min.js"></script>
+      
+    
+  </body>
+</html>

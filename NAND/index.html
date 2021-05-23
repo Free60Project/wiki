@@ -1,0 +1,724 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
+    
+    
+      
+        <title>NAND - Free60 Wiki archive</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bde7dde4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#nand" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Free60 Wiki archive" class="md-header__button md-logo" aria-label="Free60 Wiki archive" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Free60 Wiki archive
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              NAND
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Free60 Wiki archive" class="md-nav__button md-logo" aria-label="Free60 Wiki archive" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Free60 Wiki archive
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Hardware/" class="md-nav__link">
+        Hardware
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_System_Software/" class="md-nav__link">
+        System Software
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Homebrew_Software/" class="md-nav__link">
+        Homebrew Software
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Linux/" class="md-nav__link">
+        Linux
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Development/" class="md-nav__link">
+        Development
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Support/" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%21TODO/" class="md-nav__link">
+        ToDo
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#flash-memory" class="md-nav__link">
+    Flash memory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nand-points-on-motherboard-for-fat" class="md-nav__link">
+    NAND Points on Motherboard for FAT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nand-points-on-motherboard-for-slim" class="md-nav__link">
+    NAND Points on Motherboard for SLIM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#different-sizes" class="md-nav__link">
+    Different Sizes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flash-controllers" class="md-nav__link">
+    Flash Controllers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simple-calculations" class="md-nav__link">
+    Simple Calculations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#readingwriting" class="md-nav__link">
+    Reading/Writing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sectors" class="md-nav__link">
+    Sectors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nand-file-system" class="md-nav__link">
+    NAND File System
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bad-blocks" class="md-nav__link">
+    Bad Blocks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#small-flash-chip-close-to-cpu" class="md-nav__link">
+    Small flash chip close to CPU
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#small-flash-chip-on-front-panel" class="md-nav__link">
+    Small flash chip on front panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools" class="md-nav__link">
+    Tools
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="nand">NAND</h1>
+<p><img alt="Flash.jpg" src="../images/Flash.jpg" title="Flash.jpg" /></p>
+<h2 id="flash-memory">Flash memory</h2>
+<p><img alt="&lt;File:nandpinout.png&gt;" src="../images/nandpinout.png" /></p>
+<ul>
+<li>
+<p><a href="https://web.archive.org/web/20150112073857/http://www.hynix.com/datasheet/pdf/flash/HY27US(08_16)281A%20Series(Rev0.6).pdf">Datasheet</a></p>
+</li>
+<li>
+<p>SMT socket that should work if you choose to remove yours:
+  https://web.archive.org/web/20111206034431/http://www.emulation.com:80/cgi-cfm/insert_quantity.cfm?part_number=S%2DTSO%2DSM%2D048%2DA</p>
+</li>
+</ul>
+<p>Attached to <a href="../Southbridge">Southbridge</a></p>
+<h2 id="nand-points-on-motherboard-for-fat">NAND Points on Motherboard for FAT</h2>
+<p><img alt="&lt;File:Nandreadpins.jpg&gt;" src="../images/Nandreadpins.jpg" /></p>
+<h2 id="nand-points-on-motherboard-for-slim">NAND Points on Motherboard for SLIM</h2>
+<p>comming soon</p>
+<h2 id="different-sizes">Different Sizes</h2>
+<p>On different Motherboard Revision also different NANDs were used.
+<a href="../Xenon">Xenon</a>-, <a href="../Zephyr">Zephyr</a>-,
+<a href="../Falcon">Falcon</a>-, <a href="../Opus">Opus</a>- and some
+<a href="../Jasper">Jasper</a>-Consoles (Retails) are using 16MB NANDs,
+other <a href="../Jasper">Jasper</a>-Consoles (Retail),Arcade Bundles which
+came without a HDD, got a 256MB or 512MB NAND onboard. Only 64MB of
+these 256/512MB NAND are used for system files, the rest is used as an
+internal Memory Unit. All Development-/Demo-/Reviewer-/Test-Kits got at
+least a 64MB NAND. Depending on the NAND Size either Small- or
+Large-Block Flash Controllers get used.</p>
+<h2 id="flash-controllers">Flash Controllers</h2>
+<p>The Flash Controller decides how to handle the NAND Memory. There are
+currently two types, the Old/Original SFC which handles the NAND with
+small block and the new SFC (Codename: Panda?) which handles the NAND as
+either small or large blocks.</p>
+<p><strong>Original SFC (pre-Jasper)</strong></p>
+<ul>
+<li>16MB NAND</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Block Size</td>
+<td>0x4000 (16KB)</td>
+</tr>
+<tr>
+<td>Block Count</td>
+<td>0x400</td>
+</tr>
+<tr>
+<td>Page Size</td>
+<td>0x200</td>
+</tr>
+<tr>
+<td>Pages per Block</td>
+<td>Block size / Page size</td>
+</tr>
+<tr>
+<td>Raw Page Size (incl. SpareData)</td>
+<td>0x210</td>
+</tr>
+<tr>
+<td>Usable Filesystem-Size</td>
+<td>0x3E0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>64MB NAND</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Block Size</td>
+<td>0x4000 (16KB)</td>
+</tr>
+<tr>
+<td>Block Count</td>
+<td>0x1000</td>
+</tr>
+<tr>
+<td>Page Size</td>
+<td>0x200</td>
+</tr>
+<tr>
+<td>Pages per Block</td>
+<td>Block size / Page size</td>
+</tr>
+<tr>
+<td>Raw Page Size (incl. SpareData)</td>
+<td>0x210</td>
+</tr>
+<tr>
+<td>Usable Filesystem-Size</td>
+<td>0xF80</td>
+</tr>
+</tbody>
+</table>
+<p><strong>New SFC</strong></p>
+<ul>
+<li>Small Block: 16MB NAND</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Block Size</td>
+<td>0x4000 (16KB)</td>
+</tr>
+<tr>
+<td>Block Count</td>
+<td>0x400</td>
+</tr>
+<tr>
+<td>Page Size</td>
+<td>0x200</td>
+</tr>
+<tr>
+<td>Pages per Block</td>
+<td>Block size / Page size</td>
+</tr>
+<tr>
+<td>Raw Page Size (incl. SpareData)</td>
+<td>0x210</td>
+</tr>
+<tr>
+<td>Usable Filesystem-Size</td>
+<td>0x3E0</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Large Block: 256/512MB NAND</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Block Size</td>
+<td>0x20000 (128KB)</td>
+</tr>
+<tr>
+<td>Block Count (non-MU)</td>
+<td>0x1000</td>
+</tr>
+<tr>
+<td>Page Size</td>
+<td>0x200</td>
+</tr>
+<tr>
+<td>Pages per Block</td>
+<td>Block size / Page size</td>
+</tr>
+<tr>
+<td>Raw Page Size (incl. SpareData)</td>
+<td>0x210</td>
+</tr>
+<tr>
+<td>Usable Filesystem-Size</td>
+<td>0x1E0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="simple-calculations">Simple Calculations</h2>
+<p>Have an address which is without ECC?</p>
+<p><code>realaddr = (addr / 512) * 528 + (realaddr % (mod) 512 &gt; 0 ? realaddr % (mod) 512 : 0);</code></p>
+<p>This also works in reverse:</p>
+<p><code>addr = (realaddr / 528) * 512 + (realaddr % (mod) 528 &gt; 0 ? realaddr % (mod) 528 : 0);</code></p>
+<h2 id="readingwriting">Reading/Writing</h2>
+<p>The Flash can be written or read using a number of methods. If you have
+the old shader hack running the easiest is using <a href="../lflash">lflash</a>.
+You can also wire LPT directly to the flash using this
+<a href="http://img19.imageshack.us/img19/5198/wiringforxenondiagram.jpg">diagram</a>.
+As well, you can build your own USB SPI Flasher with <a href="http://img35.imageshack.us/img35/8949/xbox360usbflasher.png">this
+diagram</a>
+and use <a href="http://nds.cmamod.com/x360/PICFLASH_v3b_plus2.zip">these
+binaries</a>. Flash the
+PicXboot.hex to your PIC, then use the programmer from <a href="http://www.megaupload.com/?d=X6TBNFDC">this
+picflash</a> to flash the
+picflash.hex to the PIC through USB in bootloader mode. Once the device
+is flashed, you can then install it using the drivers from NandPro or
+use TeamXecuters NANDX drivers.</p>
+<p>Once wired you can read/write to the chip using software such as
+<a href="../NandPro">NandPro</a>.</p>
+<p>In software the NAND is mapped to memory address 0x80000200C8000000.</p>
+<ul>
+<li>You must be in real-mode to access the space</li>
+<li>You can read it byte by byte but it is recommended to follow the
+    standard and read it in 4 byte blocks</li>
+</ul>
+<h2 id="sectors">Sectors</h2>
+<ul>
+<li>1: copyright notice, zeros, unencrypted numbers</li>
+<li>2: encrypted data</li>
+</ul>
+<p>@2MB filesystem, unencrypted, but content encrypted, config not</p>
+<h2 id="nand-file-system">NAND File System</h2>
+<p>Informations about the Filesystem on the Xbox360 NAND Flash can be found
+<a href="../NAND_File_System">here</a></p>
+<h2 id="bad-blocks">Bad Blocks</h2>
+<p>Its possible that bad blocks appears when reading/writing to the NAND.
+For solving these look at the following page: <a href="../NAND#Bad_Blocks">Bad Blocks</a></p>
+<h2 id="small-flash-chip-close-to-cpu">Small flash chip close to CPU</h2>
+<p>Some 360s have a small flash chip near the CPU, some don't as seen in
+the following pictures.</p>
+<p>No chip:</p>
+<p><img alt="&lt;File:x360Pro_noeeprom.jpg&gt;" src="../images/x360Pro_noeeprom.jpg" /></p>
+<p>Here is a high-res picture of a premium box with the chip:</p>
+<p><img alt="eeprom.jpg" src="../images/eeprom.jpg" /></p>
+<p>As discussed in this article on the xboxhacker.net forums, this appears
+to be a Atmel 25020 EEPROM. The chip model reads:</p>
+<pre><code>ATMEL524
+25020AN
+SU18
+</code></pre>
+<p>Datasheet can be found
+<a href="https://web.archive.org/web/20061005163428/http://www.atmel.com/dyn/resources/prod_documents/doc3348.pdf">here</a>.</p>
+<p>This chip is a low power 2048 bit serial EEPROM according to the
+datasheet.</p>
+<ul>
+<li>
+<p>If the small chip near the CPU is removed the Xbox will boot up and
+  function just fine [Darkmoon 360 experiments]</p>
+</li>
+<li>
+<p>According to IBM the CPU has "An interface for a serial EEPROM in
+  case patch logic configuration was needed during bring-up"</p>
+</li>
+</ul>
+<h2 id="small-flash-chip-on-front-panel">Small flash chip on front panel</h2>
+<p>There is another Atmel chip on the front panel:</p>
+<p><a href="../images/Atmel2.jpg"><File:Atmel2.jpg></a></p>
+<p>Atmel 528 serial EEPROM</p>
+<p>This chip reads:</p>
+<pre><code>ATMEL528
+24C04N
+SU18
+</code></pre>
+<p>Datasheet can be found
+<a href="https://web.archive.org/web/20061224151351/http://www.atmel.com/dyn/resources/prod_documents/doc0180.pdf">here</a></p>
+<p>This chip is a low power 4096 bit serial EEPROM according to the
+datasheet.</p>
+<h2 id="tools">Tools</h2>
+<p>360 Flash Tool, which is easy to find
+<a href="http://www.megaupload.com/?d=LGF518J0">Xbox 360 NAND Editor</a> by
+stoker25, open source and semi-complete, has code to do with
+bootloaders/keyvault/filesystem</p>
+<p><a href="../Category_Xbox360_Hardware">Category:Xbox360_Hardware</a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a1609d9a.min.js"></script>
+      
+    
+  </body>
+</html>

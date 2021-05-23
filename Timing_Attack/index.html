@@ -1,0 +1,680 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
+    
+    
+      
+        <title>Timing Attack - Free60 Wiki archive</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bde7dde4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#purpose" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Free60 Wiki archive" class="md-header__button md-logo" aria-label="Free60 Wiki archive" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Free60 Wiki archive
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Timing Attack
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Free60 Wiki archive" class="md-nav__button md-logo" aria-label="Free60 Wiki archive" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Free60 Wiki archive
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Hardware/" class="md-nav__link">
+        Hardware
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_System_Software/" class="md-nav__link">
+        System Software
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Homebrew_Software/" class="md-nav__link">
+        Homebrew Software
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Linux/" class="md-nav__link">
+        Linux
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Development/" class="md-nav__link">
+        Development
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Support/" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%21TODO/" class="md-nav__link">
+        ToDo
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#purpose" class="md-nav__link">
+    Purpose
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memcmp-flaw" class="md-nav__link">
+    Memcmp Flaw
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procedure" class="md-nav__link">
+    Procedure
+  </a>
+  
+    <nav class="md-nav" aria-label="Procedure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dump-nand" class="md-nav__link">
+    Dump NAND
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#patch-cb" class="md-nav__link">
+    Patch CB
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flash-image" class="md-nav__link">
+    Flash Image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attack-hash" class="md-nav__link">
+    Attack Hash
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#upgrade-kernel" class="md-nav__link">
+    Upgrade Kernel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-cpu-key" class="md-nav__link">
+    Get CPU Key
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#results" class="md-nav__link">
+    Results
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#speculation" class="md-nav__link">
+    Speculation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-situation" class="md-nav__link">
+    Current Situation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Timing Attack</h1>
+                
+                <p><strong>Valid as of December 7th 2007</strong></p>
+<p>The timing attack is used allow machines with kernel 4552 or higher to
+downgrade to a vulnerable kernel. The purpose of the timing attack is to
+find the required hash values for the altered CB section in a base
+kernel (1888). The lockdown counter in the CB section is changed to a
+higher value to allow the base kernel (1888) to bypass the restrictive
+lockdown counter check during boot-up. The check is what makes it
+impossible to just flash the NAND and downgrade to a vulnerable kernel.</p>
+<p>The community at <a href="http://www.xboxhacker.net/">XboxHacker</a> made this
+project possible,
+<a href="http://www.xboxhacker.net/index.php?action=profile;u=4505">Arnezami</a>
+found the Timing Attack vector and figured out the basic concept, and
+<a href="http://www.xboxhacker.net/index.php?action=profile;u=610">Robinsod</a>
+built the necessary downgrader hardware and measurement software
+required to perform the attack.</p>
+<h2 id="purpose">Purpose</h2>
+<p>A good explanation by arnezami
+<a href="http://www.xboxhacker.net/index.php?topic=8319.msg52847#msg52847">1</a>:</p>
+<p><code>[With the CPU key] can we not resign the essential parts of the HV, or anything else, with a modified bootloader?</code>
+<code>All executable code on the xbox is (one way or another) signed by a RSA key. MS has the private RSA key and thats</code>
+<code>why we will never be able to sign our own executable code. This is what prevents us from running anything different</code>
+<code>than what MS has build (like the kernel and bootloaders). This has nothing to do with the cpu key. The only thing we</code>
+<code>can do with the cpu key is choose which version of the kernel/bootloader we want to run. But we cannot make changes</code>
+<code>to any of these versions themselves.</code></p>
+<p><code>Then why downgrade?</code>
+<code>Because two kernel versions MS build (4532,4548) have a tiny flaw. And when we have our cpu key we can choose to</code>
+<code>run these (old) kernels and exploit them by running a patched KK game. After running the exploit we have complete</code>
+<code>control over the xbox (but not before that). This means to be able to run homebrew or linux we now have to start the</code>
+<code>game, press ok, insert a disc etc.</code><a href="https://web.archive.org/web/20100305163742/http://www.xboxhacker.net/index.php?topic=8319.msg52847"><code>More</code></a></p>
+<p><em>Visual representation of the process:</em></p>
+<p><img alt="Image:Timing attack visual
+representation.png" src="../images/Timing_attack_visual_representation.png" title="Image:Timing attack visual representation.png" /></p>
+<h2 id="memcmp-flaw">Memcmp Flaw</h2>
+<p>A
+<a href="http://www.cplusplus.com/reference/clibrary/cstring/memcmp.html">memcmp</a>
+function is used to check the CB-auth HMAC-hash value. The value is
+16-bytes long and is done byte-by-byte wise. By changing one byte at a
+time it's possible to determine if a byte is the valid (true) by
+measuring the time to compare a false and a true value. Measuring each
+byte will in the end reveal the correct hash and the boot process can
+continue.</p>
+<p>The time differences for a valid and false value is about 2200
+microseconds.</p>
+<p>Possibilities: 16 bytes * 256 different possibility for each byte,
+total 4096 tries. Statistically only half has to be tried, 2048 tries.</p>
+<h2 id="procedure">Procedure</h2>
+<p>The official documentation by robinsod for the downgrader hardware and
+downgrading process can be downloaded from the <a href="https://web.archive.org/web/20090927172952/http://www.xboxhacker.net/index.php?topic=8555.msg54228">Timing Attack
+thread</a>
+over at XboxHacker.</p>
+<h3 id="dump-nand">Dump NAND</h3>
+<p>Use Infectus or custom hardware (memorycard reader) to make a valid dump
+of the current NAND.</p>
+<ul>
+<li><a href="Xbox_360_Infectus" title="wikilink">Xbox 360 Infectus Kernel Dump</a></li>
+</ul>
+<p><img alt="Image:Infectus Read NAND.PNG" src="Infectus_Read_NAND.PNG" title="Image:Infectus Read NAND.PNG" /></p>
+<h3 id="patch-cb">Patch CB</h3>
+<p><em>Get a plain 1888 base kernel and patch the CB lockdown counter with the
+LDV (LockDownValue) from the CF section in the NAND dump.</em></p>
+<ol>
+<li>Get the 1888 base kernel from the "usual places".</li>
+<li>Download
+    <a href="https://web.archive.org/web/20090518120000/http://www.xboxhacker.net:80/index.php?topic=8555.msg54509">Degraded.exe</a>
+    to automate the build of a new 1888 image with the SMC, Keyvault,
+    CB, CD and CE sections from the NAND dump. The LDV (fuse count) will
+    be corrected for CB (which is why you need to find a new hash) and
+    the hash value is set to all zeroes.</li>
+</ol>
+<p>An external 1888 base kernel is needed because essential system files
+for 1888 is overwritten in the 4552 update and later, making it
+impossible to use the NAND dump to create a new 1888 image.</p>
+<p>In Degraded.exe click 'Settings', set the 1BL Key to
+<strong>'DD88AD0C9ED669E7B56794FB68563EFA</strong>', select the folder where the
+<strong>1888 file system</strong> is located, and set 'File System Start' to
+<strong>'39</strong>'.</p>
+<p><img alt="Image:Timing attack degraded
+settings.PNG" src="../images/Timing_attack_degraded_settings.PNG" title="Image:Timing attack degraded settings.PNG" /></p>
+<p>Select the NAND dump file under 'Flash Dump' and click 'Build Downgrader
+Image'.</p>
+<p><img alt="Image:Timing attack degraded.PNG" src="../images/Timing_attack_degraded.PNG" title="Image:Timing attack degraded.PNG" /></p>
+<ul>
+<li><a href="https://web.archive.org/web/20090518120000/http://www.xboxhacker.net/index.php?topic=8555.msg54509">Downgrading
+    Tools</a></li>
+</ul>
+<h3 id="flash-image">Flash Image</h3>
+<p><em>Flash the new 1888 base kernel build to the NAND.</em></p>
+<p>Connect Infectus chip to the Xbox 360 again, erase and flash the new
+patched 1888 base kernel image.</p>
+<ul>
+<li><a href="Xbox_360_Infectus" title="wikilink">Xbox 360 Infectus Kernel Dump</a></li>
+</ul>
+<p><img alt="Image:Infectus Write NAND.PNG" src="../images/Infectus_Write_NAND.PNG" title="Image:Infectus Write NAND.PNG" /></p>
+<h3 id="attack-hash">Attack Hash</h3>
+<p><em>Attack the HMAC-hash value using the timing hardware and DGTool.</em></p>
+<ol>
+<li>Build the <a href="Xbox_360_Downgrader_Hardware" title="wikilink">downgrader
+    hardware</a> and connect a
+    serial port cable and power/ground (3.3v or 5v) from the 360 or an
+    external power supply (USB) to the downgrader hardware.</li>
+<li>Connect the USB cable to the Infectus chip. The Infectus is required
+    to flash the NAND page for the CB section with a new value for each
+    new guess (every ~2 seconds).</li>
+<li>Create a folder with the 3 following files; DGTool.exe, Infectus.dll
+    and SiUSBXp.dll. Move the 1888 image to this folder too, e.g.
+    Infectus_5787_downgraded_1888.bin.</li>
+<li>Open a new command-prompt, by Start -> Run -> 'cmd'. Change
+    directory (cd) to the folder where the DGTool.exe is located.</li>
+<li>DGTool normally only needs 2 arguments to start; one being the COM-
+    or serial port the downgrader hardware is connected to and the other
+    is the filename of the patched 1888 image.</li>
+</ol>
+<p><code>DGTool.exe 1 Infectus_5787_downgraded_1888.bin</code></p>
+<p>Enter the command above and press enter. Now power on the Xbox 360 and
+wait for the 3 red lights to start blinking, aka Red Ring Of Death
+(RROD). Press enter once more to start the timing process. Let it run
+for a little over an hour (around 1 hour 10 minutes seems to be normal)
+and the correct hash value will hopefully be discovered. If successful
+the last line of text should state <strong>'BOOT!</strong>'.</p>
+<ul>
+<li><a href="Xbox_360_Downgrader_Hardware" title="wikilink">Xbox 360 Downgrader
+    Hardware</a></li>
+</ul>
+<p><img alt="Image:Timing attack dgtool.PNG" src="../images/Timing_attack_dgtool.PNG" title="Image:Timing attack dgtool.PNG" /></p>
+<h3 id="upgrade-kernel">Upgrade Kernel</h3>
+<p><em>Once you can boot the 1888 base kernel, you can apply the vulnerable
+4532 or 4548 update to use the King King exploit.</em></p>
+<p>Download the <a href="http://rapidshare.com/files/61387474/HD_DVD_10-2006.zip.html">4532 HD DVD
+update</a>,
+extract the files into a folder, and burn the content on a regular CD-R.
+Insert the CD-R into the Xbox 360 and you will be prompted that a update
+is required.</p>
+<p><img alt="Image:Timing attack 1888 boot
+success.jpg" src="../images/Timing_attack_1888_boot_success.jpg" title="Image:Timing attack 1888 boot success.jpg" /></p>
+<p><img alt="Image:Xbox 4532 Kernel.JPG" src="Xbox_4532_Kernel.JPG" title="Image:Xbox 4532 Kernel.JPG" /></p>
+<h3 id="get-cpu-key">Get CPU Key</h3>
+<p><em>Boot a modified King Kong game disc and launch Gentoo Linux to get the
+CPU Key.</em></p>
+<ol>
+<li>Patch the King Kong game image with the <a href="King_Kong_Hack" title="wikilink">King Kong
+    exploit</a> and burn it to a DVD+R Dual
+    Layer disc.</li>
+<li>Burn the latest Gentoo Xenon release (as of writing beta2) from
+    <a href="https://github.com/Free60Project">free60.org</a> to a CD-R and insert the disc
+    after pressing 'Start' on the modified King Kong disc.</li>
+<li>Download the
+    <a href="http://home.x-pec.com/~ivc/sites/ivc/xbox360/files/arnezamidump32.tgz">dump32</a>
+    application to dump the fusesets to find the CPU Key of the
+machine.</li>
+</ol>
+<p><code>wget</code><a href="http://home.x-pec.com/~ivc/sites/ivc/xbox360/files/arnezamidump32.tgz">http://home.x-pec.com/~ivc/sites/ivc/xbox360/files/arnezamidump32.tgz</a>
+<code>tar zxvf arnezamidump32.tgz</code>
+<code>cd arnezamidump32</code>
+<code>sudo ./dump32</code></p>
+<p><img alt="Image:Dump32 Finished and List.png" src="../images/Dump32_Finished_and_List.png" title="Image:Dump32 Finished and List.png" /></p>
+<p>Save the FUSES.TXT file to a USB memorystick, upload it to
+yousendit.com, mail it to yourself, or use the 'scp' or 'ftp' utility to
+transfer it over the network to a computer.</p>
+<p>The CPU Key is found by combining line 3 + 5 in the FUSES.TXT file.</p>
+<p>It is now possible to upgrade to latest kernel (as of writing 5787) and
+then downgrade to a lower version again using the <a href="https://web.archive.org/web/20090523033421/http://www.xboxhacker.net/index.php?topic=7691.msg55126#msg55126">360 Flash
+Tool</a>.
+Insert the correct CPU Key in the 360 Flash Tool and patching the LDV
+(LockDownValue) in the CB/CE/CF section to that of the latest update.</p>
+<ul>
+<li><a href="Kernel" title="wikilink">Kernel</a></li>
+<li><a href="King_Kong_Hack" title="wikilink">King Kong Hack</a></li>
+</ul>
+<h2 id="results">Results</h2>
+<p>All of my runs can be found on the page below.</p>
+<ul>
+<li><a href="Xbox_360_Timing_Attack_Results" title="wikilink">Xbox 360 Timing Attack
+    Results</a></li>
+</ul>
+<h2 id="speculation">Speculation</h2>
+<p>arnezami:</p>
+<p><code>MS cannot fix this problem by simply changing the memcmp function in a future kernel version. Thats not</code>
+<code>gonna help them. The weakness is that the byte-wise memcmp function is in the 1888 kernel/bootloader</code>
+<code>(and they cannot change that one anymore of course).</code><a href="https://web.archive.org/web/20160406102612/http://www.xboxhacker.net/index.php?topic=8319.msg53026"><code>2</code></a></p>
+<p>tmbinc:</p>
+<p><code>sure, microsoft can change the 2BL, and burn a fuse (of the fuseline 2) so that an old 2BL doesn't work anymore...</code><a href="https://web.archive.org/web/20090522031302/http://www.xboxhacker.net/index.php?topic=8319.msg53055"><code>3</code></a></p>
+<p>arnezami:</p>
+<p><code>Ah. Right. If they can indeed burn these fuses at row 2 than you wouldn't be able to run any of the lower</code>
+<code>kernel versions anymore.</code><a href="hhttps://web.archive.org/web/20160406045828/http://www.xboxhacker.net/index.php?topic=8319.msg53073"><code>4</code></a></p>
+<p><code>Been thinking about this. I'm now pretty sure when row 2 of the fuses is burned your xbox won't be able to</code>
+<code>downgrade or run homebrew anymore (it appears the fuse count number is indeed RSA signed).</code><a href="https://web.archive.org/web/20160406102927/http://www.xboxhacker.net/index.php?topic=8319.msg53077"><code>5</code></a></p>
+<p>surrido:</p>
+<p><code>you could if it makes you happy wire a switch to the R6T3 and keep it on while being in live and turn it</code>
+<code>of when you receive an update.</code><a href="https://web.archive.org/web/20160406121008/http://www.xboxhacker.net/index.php?topic=8319.msg53191"><code>6</code></a></p>
+<p>tmbinc:</p>
+<p><code>No, a switch at R6T3 doesn't help. It's not the resistor which presence can be detected, but the result</code>
+<code>to the fuse (burned or not).</code></p>
+<p><code>So his question is completely valid: If you remove the resistor, you could end up with an unbootable box</code>
+<code>after the next update. But at least you could restore a previous flash. (If you want, you could *then*</code>
+<code>re-attach the resistor, and update again, of course loosing the possibility to downgrade).</code><a href="https://web.archive.org/web/20160406060313/http://www.xboxhacker.net/index.php?topic=8319.msg53197"><code>7</code></a></p>
+<h2 id="current-situation">Current Situation</h2>
+<p>The last <a href="Kernel">2007 fall update</a>, 6683, is
+still vulnerable and can be downgraded by timing attacking the HMAC-hash
+value. The update is still vulnerable because the CB (2BL) section of
+the kernel did not change after the update, only the main CE/CF
+sections. No other fuses than the obligatory fuseline 7 (to match the
+LockDownValue in CE/FE) were blown.</p>
+<p>The latest revisions of the Xbox 360, the
+<a href="Xbox_360_Revisions" title="wikilink">Falcon</a>, has a newer basekernel and CB
+section, 1921, and this version is patched against the
+memcmp-vulnerability
+<a href="https://web.archive.org/web/20090523022729/http://www.xboxhacker.net/index.php?topic=8555.msg58882">8</a>.
+Making timing attack on these machines impossible until another
+vulnerability is found.</p>
+<p>This might suggest that only newer machines from factory can be patched
+to fix the memcmp-function in CB.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="http://beta.ivc.no/wiki/index.php/Xbox_360_Timing_Attack">Original Wiki page - Thx
+    ivc!</a></li>
+<li><a href="https://web.archive.org/web/20090801082642/http://www.xboxhacker.net/index.php?topic=8555.0">Timing Attack</a></li>
+<li><a href="https://web.archive.org/web/20090529065610/http://www.xboxhacker.net/index.php?topic=8556.0">Timing Attach - Thanks and stupid
+    questions</a></li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a1609d9a.min.js"></script>
+      
+    
+  </body>
+</html>

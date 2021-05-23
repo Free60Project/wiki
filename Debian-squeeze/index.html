@@ -1,0 +1,521 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
+    
+    
+      
+        <title>Install Debian 6 "Squeeze" from a Linux LiveCD - Free60 Wiki archive</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bde7dde4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#install-debian-6-squeeze-from-a-linux-livecd" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Free60 Wiki archive" class="md-header__button md-logo" aria-label="Free60 Wiki archive" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Free60 Wiki archive
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Install Debian 6 "Squeeze" from a Linux LiveCD
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Free60 Wiki archive" class="md-nav__button md-logo" aria-label="Free60 Wiki archive" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Free60 Wiki archive
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Hardware/" class="md-nav__link">
+        Hardware
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_System_Software/" class="md-nav__link">
+        System Software
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Homebrew_Software/" class="md-nav__link">
+        Homebrew Software
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Linux/" class="md-nav__link">
+        Linux
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Development/" class="md-nav__link">
+        Development
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Support/" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%21TODO/" class="md-nav__link">
+        ToDo
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-run-it" class="md-nav__link">
+    How do I run it?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debootstrapping-script" class="md-nav__link">
+    debootstrapping script
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix-possible-xorg-fail" class="md-nav__link">
+    Fix possible xorg fail
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="install-debian-6-squeeze-from-a-linux-livecd">Install Debian 6 "Squeeze" from a Linux LiveCD</h1>
+<p><strong>Warning</strong>: This script will WIPE your Xbox 360 harddisk (/dev/sda) and install Debian 6</p>
+<p><strong>If you have XeXmenu or another dashboard homebrew on that drive, you
+will loose it all: Follow these instructions only if you understand what
+you are doing.</strong></p>
+<p><code>debian_squeeze.sh</code> will create two partitions. 1 GB swap on sda1 and the
+rest of the disk as a root-filesystem on sda2. Run the script as root
+from the a Linux LiveCD. You will need a DHCP-server on your network for
+this script.</p>
+<h2 id="how-do-i-run-it">How do I run it?</h2>
+<p>Click "Application > Accessories > Terminal" and type the following
+commands:</p>
+<p><code>sh
+sudo su
+wget `&lt;http://file.libxenon.org/free60/linux/script/debian_squeeze.sh&gt;
+sh ./debian_squeeze.sh</code></p>
+<p>Reboot the 360 when you are told. Boot with
+(Linux kernel binary)[http://file.libxenon.org/latest_kern&gt;],
+supply correct "root=" parameter via kboot.conf (*kboot currently only supported via
+xell-reloaded-testing builds), boot the kernel/system and login as user:
+xbox, password: xbox. Have fun :)
+(If you are not having fun, let us know about the errors you are experiencing.)</p>
+<h2 id="debootstrapping-script">debootstrapping script</h2>
+<p><strong>debian_squeeze.sh</strong></p>
+<pre><code class="language-sh">#!/bin/bash
+# set the date to anything except 1/1/1970 since this causes issues
+# time is now also set after first boot by .bashrc script below
+date -s 1/1/2009
+# if /dev/sda is mounted then paritions get wiped by dd but sfdisk fails!
+swapoff /dev/sda1
+umount /mnt/debian
+# partition and mkfs hdd (all data is lost!)
+dd if=/dev/zero of=/dev/sda bs=512 count=1
+sfdisk /dev/sda &lt;&lt; EOF
+,124,S
+,,L
+EOF
+dd if=/dev/zero of=/dev/sda2 bs=512 count=1
+mkfs.ext3 /dev/sda2
+mkswap /dev/sda1
+sync; sync; sync
+swapon /dev/sda1
+# setup paths
+mkdir /mnt/debian
+mount /dev/sda2 /mnt/debian
+cd /mnt/debian
+mkdir /mnt/debian/work
+cd /mnt/debian/work
+# download extract and run debootstrap
+wget http://ftp.nl.debian.org/debian/pool/main/d/debootstrap/debootstrap_1.0.38_all.deb
+ar -xf debootstrap_1.0.38_all.deb
+cd /mnt/debian
+zcat &lt; /mnt/debian/work/data.tar.gz | tar xv
+export DEBOOTSTRAP_DIR=/mnt/debian/usr/share/debootstrap
+export PATH=$PATH:/mnt/debian/usr/sbin
+debootstrap --arch powerpc squeeze /mnt/debian ftp://mirrors.kernel.org/debian/
+# create needed files on hdd
+echo Xenon &gt; /mnt/debian/etc/hostname
+cat &gt; /mnt/debian/etc/fstab &lt;&lt; EOF
+/dev/sda2     /          ext3     defaults   0   0
+/dev/sda1     none    swap    sw           0   0
+proc            /proc    proc    defaults  0   0
+EOF
+cat &gt; /mnt/debian/etc/network/interfaces &lt;&lt; EOF
+iface lo inet loopback
+auto lo
+auto eth0
+iface eth0 inet dhcp
+EOF
+cat &gt; /mnt/debian/etc/apt/sources.list &lt;&lt; EOF
+deb ftp://mirrors.kernel.org/debian/&gt;squeeze main contrib non-free
+EOF
+#Change root-pwd to &quot;xbox&quot; inside chroot
+chroot /mnt/debian echo &quot;root:xbox&quot; | chroot /mnt/debian /usr/sbin/chpasswd
+# Add user: xbox with password: xbox
+chroot /mnt/debian /usr/sbin/useradd -m -d /home/xbox -p paRRy2CC47LXY xbox
+# create .second_stage script on hdd
+cat &gt;&gt; /mnt/debian/root/.second_stage &lt;&lt; EOF
+#!/bin/bash
+date -s 1/1/2009
+apt-get update
+apt-get install ntp wget openssh-server locales -y --force-yes
+dpkg-reconfigure locales
+apt-get install gnome -y
+echo &quot;AVAHI_DAEMON_START=0&quot; &gt; /etc/default/avahi-daemon
+/etc/init.d/networking restart
+cd /usr/lib/xorg/modules/drivers/
+wget -O xenosfb_drv.so http://file.libxenon.org/free60/linux/xenosfb/xenosfb_drv.so_squeeze
+cd /etc/X11/
+wget http://file.libxenon.org/free60/linux/xenosfb/xorg.conf
+rm -r -f /work/
+echo &quot;Installation completed.&quot;
+echo &quot;To boot the system: Reboot and load the kernel with correct root= params.&quot;
+echo &quot;You should be greeted by a fresh install of Debian 6 Squeeze&quot;
+EOF
+chmod a+x /mnt/debian/root/.second_stage
+# Execute second part of installation in the chroot environment
+mount -t proc none /mnt/debian/proc
+mount --rbind /dev /mnt/debian/dev
+cp -L /etc/resolv.conf /mnt/debian/etc/resolv.conf
+chroot /mnt/debian /root/.second_stage
+umount /mnt/debian/dev /mnt/debian/proc /mnt/debian
+</code></pre>
+<h2 id="fix-possible-xorg-fail">Fix possible xorg fail</h2>
+<p>After it has finished installing and has rebooted into gnome open a new
+shell by typing <em>Ctrl+Alt+F6</em> or <em>Ctrl+Alt+F1</em> and type,</p>
+<p><code>sudo dpkg-reconfigure xserver-xorg</code></p>
+<p>Then follow the instructions below.</p>
+<ol>
+<li>Attempt to autodetect video hardware? > No</li>
+<li>X Server Driver: Xenosfb</li>
+<li>Generic Video Card > Enter</li>
+<li>Video card’s bus identifier: Press enter for default</li>
+<li>Amount of memory: Press enter for default</li>
+<li>Use kernel framebuffer device interface? > Yes</li>
+<li>Autodetect keyboard layout? > Yes</li>
+<li>Keyboard layout: us</li>
+<li>XKB rule set to use: xorg</li>
+<li>Keyboard model: choose your rule set based on the options</li>
+<li>Keyboard variant: leave blank if you’re in the U.S.</li>
+<li>Keyboard options: Leave as default</li>
+<li>Mouse Protocol: ImPS/2</li>
+<li>Emulate a 3 button mouse? > Your choice</li>
+<li>Xorg server modules: Default</li>
+<li>Write default Files section to configuration file? > Yes</li>
+<li>Attempt monitor detection? > Yes</li>
+<li>Use generic monitor if it doesn’t detect it.</li>
+<li>Video modes to be used by the X server: 1280x768 (1024x768 if garbled)</li>
+<li>Method for selecting the monitor characteristics: Medium</li>
+<li>Monitors best video mode: Choose what’s best for your monitor.</li>
+<li>Write monitor sync ranges to the configuration file? > Yes</li>
+<li>Desired default color depth in bits: 24.</li>
+</ol>
+<p>After that go back to gnome by typing <em>Ctrl+Alt+F7</em>.</p>
+<p>Reboot X by typing <em>Ctrl+Alt+Backspace</em>.</p>
+<p><a href="../Category_Xbox360_Linux">Category:Xbox360_Linux</a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a1609d9a.min.js"></script>
+      
+    
+  </body>
+</html>

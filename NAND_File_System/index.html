@@ -1,0 +1,605 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.5">
+    
+    
+      
+        <title>NAND Flash System - Free60 Wiki archive</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bde7dde4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#nand-flash-system" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Free60 Wiki archive" class="md-header__button md-logo" aria-label="Free60 Wiki archive" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Free60 Wiki archive
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              NAND Flash System
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Free60 Wiki archive" class="md-nav__button md-logo" aria-label="Free60 Wiki archive" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Free60 Wiki archive
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Hardware/" class="md-nav__link">
+        Hardware
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_System_Software/" class="md-nav__link">
+        System Software
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Homebrew_Software/" class="md-nav__link">
+        Homebrew Software
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Linux/" class="md-nav__link">
+        Linux
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Xbox360_Development/" class="md-nav__link">
+        Development
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Category_Support/" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%21TODO/" class="md-nav__link">
+        ToDo
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nand-basic-format" class="md-nav__link">
+    NAND Basic Format
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#metadata" class="md-nav__link">
+    Metadata
+  </a>
+  
+    <nav class="md-nav" aria-label="Metadata">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#small-block" class="md-nav__link">
+    Small Block
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#big-block-on-small-nand" class="md-nav__link">
+    Big Block on Small NAND
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#big-block" class="md-nav__link">
+    Big Block
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-detectioncorrection-code" class="md-nav__link">
+    Error Detection/Correction Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nand-format" class="md-nav__link">
+    NAND Format
+  </a>
+  
+    <nav class="md-nav" aria-label="NAND Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#system-management-controller" class="md-nav__link">
+    System Management Controller
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xell-image-layout" class="md-nav__link">
+    XeLL Image Layout
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="nand-flash-system">NAND Flash System</h1>
+<p>The Xbox 360 NAND uses a proprietary format created by Microsoft. The
+format is used to store console-specific data (keyvault, config blocks,
+etc) and system data (bootloaders, kernel/hypervisor, dashboard files).
+The NAND is split into two sections - one for storing the keyvault,
+bootloaders and config blocks and one for storing the dashboard files.
+The file are stored using a format which is designed to be transactional
+(each change can be reverted).</p>
+<h2 id="nand-basic-format">NAND Basic Format</h2>
+<p>The NAND uses a series of pages to combine into blocks, which are small
+snippets of data (usually 512 bytes) which each have an EDC tag at the
+end (an extra 16 bytes or 64 in bigblock). These pages are each part of
+a specific block (which can be identified with the EDC), which is
+usually made with 16 pages (or 32 for bigblock NANDs)</p>
+<h2 id="metadata">Metadata</h2>
+<p>All (non-eMMC) NANDs have specific Spare-/Metadata for each page inside
+the NAND. Sometimes it will not be dumped with the NAND, so it has to
+either be added back or redumped. The Metadata contains the pages block
+number, a series of flags and a checksum. Those differ slightly,
+depending on the
+blocksize.</p>
+<h3 id="small-block">Small Block</h3>
+<pre><code class="language-c">unsigned char BlockID1; // lba/id = (((BlockID0&amp;0xF)&lt;&lt;8)+(BlockID1))
+unsigned char BlockID0 : 4;
+unsigned char FsUnused0 : 4;
+unsigned char FsSequence0; // Not reversed
+unsigned char FsSequence1;
+unsigned char FsSequence2;
+unsigned char BadBlock;
+unsigned char FsSequence3;
+unsigned char FsSize1; // ((FsSize0&lt;&lt;8)+FsSize1) = cert size
+unsigned char FsSize0;
+unsigned char FsPageCount; // free pages left in block (ie: if 3 pages are used by cert then this would be 29:0x1d)
+unsigned char FsUnused1[0x2];
+unsigned char FsBlockType : 6;
+unsigned char ECC3 : 2;
+unsigned char ECC2; // 14 bit ECD
+unsigned char ECC1;
+unsigned char ECC0;
+</code></pre>
+<h3 id="big-block-on-small-nand">Big Block on Small NAND</h3>
+<pre><code class="language-c">unsigned char FsSequence0;
+unsigned char BlockID1; // lba/id = (((BlockID0&lt;&lt;8)&amp;0xF)+(BlockID1&amp;0xFF))
+unsigned char BlockID0 : 4; 
+unsigned char FsUnused0 : 4;
+unsigned char FsSequence1;
+unsigned char FsSequence2;
+unsigned char BadBlock;
+unsigned char FsSequence3;
+unsigned char FsSize1; // (((FsSize0&lt;&lt;8)&amp;0xFF)+(FsSize1&amp;0xFF)) = cert size
+unsigned char FsSize0;
+unsigned char FsPageCount; // free pages left in block (ie: if 3 pages are used by cert then this would be 29:0x1d)
+unsigned char FsUnused1[2];
+unsigned char FsBlockType : 6;
+unsigned char ECC3 : 2;
+unsigned char ECC2; // 14 bit ECD
+unsigned char ECC1;
+unsigned char ECC0;
+</code></pre>
+<h3 id="big-block">Big Block</h3>
+<pre><code class="language-c">unsigned char BadBlock;
+unsigned char BlockID1; // lba/id = (((BlockID0&amp;0xF)&lt;&lt;8)+(BlockID1&amp;0xFF))
+unsigned char BlockID0 : 4;
+unsigned char FsUnused0 : 4;
+unsigned char FsSequence2; // oddly, compared to before these are reversed...?
+unsigned char FsSequence1;
+unsigned char FsSequence0;
+unsigned char FsUnused1;
+unsigned char FsSize1; // FS: 06 ((FsSize0&lt;&lt;16)+(FsSize1&lt;&lt;8)+FsSize2) = cert size
+unsigned char FsSize0; // FS: 20
+unsigned char FsPageCount; // FS: 04 free pages left in block (multiples of 4 pages, ie if 3f then 3f*4 pages are free after)
+unsigned char FsUnused2[0x2];
+unsigned char FsBlockType : 6; // FS: 2a bitmap: 2c (both use FS: vals for size), mobiles
+unsigned char ECC3 : 2;
+unsigned char ECC2; // 14 bit ECD
+unsigned char ECC1;
+unsigned char ECC0;
+</code></pre>
+<h2 id="error-detectioncorrection-code">Error Detection/Correction Code</h2>
+<p>The ECC/EDC checksum uses a custom algorithm - here is C code for
+that:</p>
+<pre><code class="language-cpp">int checkEcc(u8* datc, u8* spare)
+{
+unsigned int i=0, val=0;
+unsigned char edc[4] = {0,0,0,0};
+unsigned long * data = (unsigned long*) datc;
+
+unsigned int v=0;
+// printf(&quot;original ECC  : %02x %02x %02x %02x &quot;, (spare[0xC] &amp; 0xC0), spare[0xD],spare[0xE],spare[0xF]);
+
+for (i = 0; i &lt; 0x1066; i++)
+{
+   if (!(i &amp; 31))
+   {
+       if (i == 0x1000)
+       data = (unsigned long*)spare;
+       v = ~*data++; // byte order: LE 
+   }
+       val ^= v &amp; 1;
+       v&gt;&gt;=1;
+       if (val &amp; 1)
+           val ^= 0x6954559;
+   val &gt;&gt;= 1;
+}
+
+val = ~val;
+
+edc[0] = (val &lt;&lt; 6) &amp; 0xC0;
+edc[1] = (val &gt;&gt; 2) &amp; 0xFF;
+edc[2] = (val &gt;&gt; 10) &amp; 0xFF;
+edc[3] = (val &gt;&gt; 18) &amp; 0xFF;
+
+if(((spare[0xC] &amp; 0xC0) != edc[0])||(spare[0xD] != edc[1])||(spare[0xE] != edc[2])||(spare[0xF] != edc[3]))
+   return ECC_FAILED;
+
+return ECC_CORRECT;
+}
+</code></pre>
+<h2 id="nand-format">NAND Format</h2>
+<p>The first byte of a NAND image should always be 0xFF. If it isn't 0xFF
+this isn't a valid image. Another thing which should be checked is the
+copyright header, which is located at 0x10 in the NAND. This string
+should be read in two parts (skipping the year out, as it changes
+depending when that xbox was made) and then checked against a control
+string (although some valid images have this string changed to
+zeropair).</p>
+<p>At 0x2 in the NAND the version of the flash is stored (2bytes). Further
+on at 0x8 the offset of the CB is stored, followed by the CF1 offset
+(4bytes each).</p>
+<p>At 0x6C the offset to the keyvault is located (4bytes). Up from that at
+0x78 the length of the SMC and offset to the SMC are stored (4bytes
+each).</p>
+<h3 id="system-management-controller">System Management Controller</h3>
+<p>finish later</p>
+<h3 id="xell-image-layout">XeLL Image Layout</h3>
+<p>The whole XeLL Image is pretty small with 1,3 MB compared to an original
+Xbox360 NAND-Image which is normally 16 MB or 64 MB.</p>
+<p>0x00000000..0x000001ff (0x00000200 bytes) Header
+0x00000200..0x000003ff (0x00000200 bytes) Exploit
+0x00000400..0x00000fff (0x00000c00 bytes) Padding
+0x00001000..0x00003fff (0x00003000 bytes) SMC
+0x00004000..0x00007fff (0x00004000 bytes) Keyvault
+0x00008000..0x000117ff (0x00009800 bytes) CB 1921
+0x00011800..0x00016ebf (0x000056c0 bytes) CD 1921
+0x00016ec0..0x0006cf2f (0x00056070 bytes) CE 1888
+0x0006cf30..0x0006ffff (0x000030d0 bytes) Padding
+0x00070000..0x000744bf (0x000044c0 bytes) CF 4532
+0x000744c0..0x000a33ff (0x0002ef40 bytes) CG 4532
+0x000a3400..0x000bffff (0x0001cc00 bytes) Padding
+0x000c0000..0x000fffff (0x00040000 bytes) Xell (backup)
+0x00100000..0x0013ffff (0x00040000 bytes) Xell (main)</p>
+<ul>
+<li>The (hacked) SMC Code is usually seen as Header + Exploit + Padding</li>
+<li>the actual SMC, so 0x0000 - 0x3FFF.</li>
+<li>The Keyvault is the unique "System Information" which holds stuff
+  like DVDKey, Console Region, Console Serial and other things. Whole
+  keyvault is crypted with CPUKey.</li>
+<li>After that exploitable CB (2BL) and CD (4BL), matching the console
+  revision, follows.</li>
+<li>After padding CB/CD theres CE (Base-Kernel 1888) followed by
+  exploitable Patchslots CF/CG (4532 or 4548) and again some padding.</li>
+<li>At the end of the Image theres a Backup-XeLL, which gets executed if
+  the original XeLL fails (Bad Update maybe) followed by the original
+  XeLL.</li>
+</ul>
+<p><a href="../Category_Xbox360_System_Software">Category:Xbox360 System Software</a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.d351de03.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a1609d9a.min.js"></script>
+      
+    
+  </body>
+</html>
