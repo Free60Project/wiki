@@ -2,7 +2,7 @@
 
 A block is the smallest logically addressable unit of data that a
 specified device can transfer in an input/output operation. For XBOX
-360s that is either 16KB or 132KB.
+360s that is either 16KB or 128KB.
 
 ## What is a BAD BLOCK?
 
