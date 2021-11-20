@@ -20,7 +20,7 @@ You can check out the source code using git with the following command:
 
 ## Installing libXenon
 
-To use **libXenon** you need a proper isntallation of [Xenon Toolchain](../Compiling_the_Toolchain) first.
+To use **libXenon** you need a proper installation of [Xenon Toolchain](../Compiling_the_Toolchain) first.
 You just go into the toolchain-directory which holds `build-xenon-toolchain` and execute:
 
 ` ./build-xenon-toolchain libxenon`
