@@ -39,7 +39,7 @@ CB(_B) loads and decrypts CD into ram, it computes a RotSumSha1 of CD
 and checks it against the known hash. If it matches CB(_B) jumps to CD.
 
 Methods to dump the CB bootloaders and examples of them reversed can be
-found here: [CB Code](../CB_Code)
+found here: [CB Code](CB_Code.md)
 
 ### CD
 
@@ -62,7 +62,7 @@ decrypting CF. To verify it, it computes a RotSumSha1 and checks it
 against the known hash. If it matches, it uses LZX delta decompress to
 apply the patch to the base kernel in memory. Once its done, it jumps
 back to CD and once CD has finished up, it jumps to the reset vector in
-the [Hypervisor](../Hypervisor).
+the [Hypervisor](Hypervisor.md).
 
 ## Devkit
 
@@ -83,7 +83,7 @@ Because devkits do not update over the air, they use a pre-patched SE
 ### Kernel
 
 Once control is handed off to the kernel, as denoted by the
-[POST](../POST) output, the kernel does the following (on
+[POST](POST.md) output, the kernel does the following (on
 development systems):
 
 - Initialize memory manager
@@ -103,12 +103,12 @@ development systems):
 - Initialize boot animation
     - Loads bootanim.xex
 - Initialize SATA driver
-- Initialize [Shadowboot](../Shadowboot) (not on retail
+- Initialize [Shadowboot](Shadowboot.md) (not on retail
   systems)
 - INIT_DUMP_SYSTEM (?) (not on retail systems)
 - INIT_SYSTEM_ROOT (?)
 - Initialize other drivers
-- Initialize [STFS](../STFS) driver
+- Initialize [STFS](STFS.md) driver
 - Initialize XAM
 
 ## Core OS Executables
@@ -131,4 +131,4 @@ It then unloads the following:
 
 By this time the console will have booted into the dashboard
 
-[Category:Xbox360 System Software](../Category_Xbox360_System_Software)
+[Category:Xbox360 System Software](Category_Xbox360_System_Software.md)
