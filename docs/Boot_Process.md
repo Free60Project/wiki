@@ -18,7 +18,7 @@ Loads and decrypts CB(_A) into ram, it computes a RotSumSha1 of CB(_A)
 and uses it to verify its RSA signature. If the signature is valid, 1BL
 jumps to CB(_A).
 
-You can find reversed pseudocode of the 1bl here: [1BL Code](../1bl_Code)
+You can find reversed pseudocode of the 1bl here: [1BL Code](1bl_Code.md)
 
 ### CB
 
