@@ -24,12 +24,12 @@
     Version                       unsigned long               4           0x04
     FirstPowerOnDate                 char[]                   5           0x08      // key 0x1 5 bytes
     Reserved                         char                     1           0x0D
-    SMCBlock                      union <unnamed-tag>         256         0x0E
+    SMCBlock                      union_SMC_BLOCK             256         0x0E
 
     -----------------------------------------------------------------------------------------------------------
 
 
-    SMCBlock
+    SMC_BLOCK
     ~~~~~~~~
 
     -----------------------------------------------------------------------------------------------------------
@@ -38,7 +38,7 @@
     StuctureVersion               unsigned char               1           0x0E
     ConfigSource                  unsigned char               1           0x0F
     ClockSelect                      char                     1           0x10
-    FanOverride           Struct_XCONFIG_STATIC_SETTINGS      2           0x11
+    FanOverride                struct_FAN_OVERRIDE            2           0x11
     pad1                             char[]                   1           0x13
 
     RadioEnable                      char                     1           0x14            0                1       //This is the "bit field" at offset 6   ;// 1 byte total for this bitfield
@@ -48,39 +48,39 @@
     ScreenToolExecutionCount         char                     1           0x14            4                2
 
     pad2                             char[]                   3           0x15
-    Temperature           union_XCONFIG_STATIC_SETTINGS       16          0x18
+    Temperature                union_TEMPERATURE              16          0x18
     AnaFuseValue                     char                     1           0x28
-    Thermal               Struct_XCONFIG_STATIC_SETTINGS      6           0x29
+    Thermal                      struct_Thermal               6           0x29
     pad3                         unsigned char[]              1           0x2F
-    Viper vFlags          Struct_XCONFIG_STATIC_SETTINGS      4           0x30
+    Viper vFlags                  struct_VIPER                4           0x30
 
     pad4                         unsigned char[]              190         0x34
 
-    BackupThermalCalData  union_XCONFIG_STATIC_SETTINGS       23          0xF2
+    BackupThermalCalData    union_BACKUP_THERMAL_CAL_DATA     23          0xF2
     pad5                         unsigned char[]              3           0x109
     DoNotUse                     unsigned char[]              2           0x10C
 
 
 
-    FanOverride
+    FAN_OVERRIDE
     ~~~~~~~~~~~
 
     -----------------------------------------------------------------------------------------------------------
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
     -----------------------------------------------------------------------------------------------------------
-    Cpu                    Struct_XCONFIG_STATIC_SETTINGS     1           0
-    Gpu                    Struct_XCONFIG_STATIC_SETTINGS     1           0
+    Cpu                    struct_FAN_OVERRIDE_CPU            1           0
+    Gpu                    struct_FAN_OVERRIDE_GPU            1           0
 
     // 01111111 <- normally disabled as 0x7F
     Enable : 1; // says 7 is bit 0
     Speed  : 7; // says 0 bit 7
 
-    FanOverrideCpu
+    FAN_OVERRIDE_CPU
     --------------
     Speed                        unsigned char                1           0              0                7
     Enable                       unsigned char                1           0              7                1
 
-    FanOverrideGpu
+    FAN_OVERRIDE_GPU
     --------------
     Speed                        unsigned char                1           0              0                7
     Enable                       unsigned char                1           0              7                1
@@ -90,43 +90,43 @@
 
 
 
-    Temperature
+    TEMPERATURE
     ~~~~~~~~~~~
 
     -------------------------------------------------------------------------------
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
     -----------------------------------------------------------------------------------------------------------
     TempCalData                  unsigned short[]             16          0
-    Constant               Struct_XCONFIG_STATIC_SETTINGS     16          0
+    Constant               struct_TEMPERATURE_CONSTANT        16          0
 
 
-    TemperatureConstant
+    TEMPERATURE_CONSTANT
     -------------------
-    Cpu                    Struct_XCONFIG_STATIC_SETTINGS     4           0
-    Gpu                    Struct_XCONFIG_STATIC_SETTINGS     4           4
-    Edram                  Struct_XCONFIG_STATIC_SETTINGS     4           8
-    Board                  Struct_XCONFIG_STATIC_SETTINGS     4           12
+    Cpu                   struct_TEMPERATURE_CONSTANT_CPU     4           0
+    Gpu                   struct_TEMPERATURE_CONSTANT_GPU     4           4
+    Edram                struct_TEMPERATURE_CONSTANT_EDRAM    4           8
+    Board                struct_TEMPERATURE_CONSTANT_BOARD    4           12
 
 
-    TemperatureConstantBoard
+    TEMPERATURE_CONSTANT_BOARD
     ------------------------
     Gain                         unsigned short               2           0
     Offset                       unsigned short               2           2
 
 
-    TemperatureConstantCpu
+    TEMPERATURE_CONSTANT_CPU
     ------------------------
     Gain                         unsigned short               2           0
     Offset                       unsigned short               2           2
 
 
-    TemperatureConstantGpu
+    TEMPERATURE_CONSTANT_GPU
     ------------------------
     Gain                         unsigned short               2           0
     Offset                       unsigned short               2           2
 
 
-    TemperatureConstantEdram
+    TEMPERATURE_CONSTANT_EDRAM
     ------------------------
     Gain                         unsigned short               2           0
     Offset                       unsigned short               2           2
@@ -134,24 +134,24 @@
 
 
 
-    Thermal
+    THERMAL
     ~~~~~~~
 
     -----------------------------------------------------------------------------------------------------------
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
     -----------------------------------------------------------------------------------------------------------
-    SetPoint               Struct_XCONFIG_STATIC_SETTINGS     3           0
-    Overload               Struct_XCONFIG_STATIC_SETTINGS     3           3
+    SetPoint                struct_THERMAL_SET_POINT          3           0
+    Overload                struct_THERMAL_OVERLOAD           3           3
 
 
-    ThermalSetPoint
+    THERMAL_SET_POINT
     ---------------
     Cpu                          Unsigned char                1           0
     Gpu                          Unsigned char                1           1
     Edram                        Unsigned char                1           2
 
 
-    ThermalOverload
+    THERMAL_OVERLOAD
     ---------------
     Cpu                          Unsigned char                1           0
     Gpu                          Unsigned char                1           1
@@ -160,25 +160,25 @@
 
 
 
-    Viper
+    VIPER
     ~~~~~
 
     ------------------------------------------------------------------------------------------------------------
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
     -----------------------------------------------------------------------------------------------------------
-    Flags                 union_XCONFIG_STATIC_SETTINGS       1           0
+    Flags                      union_VIPER_FLAGS              1           0
     GpuTarget                    unsigned char                1           1
     MemoryTarget                 unsigned char                1           2
     Checksum                     unsigned char                1           3
 
 
-    ViperFlags
+    VIPER_FLAGS
     -----------
     AsUCHAR                      Unsigned char                1           0
-    AsFlags               Struct_XCONFIG_STATIC_SETTINGS      1           0
+    AsFlags                  struct_VIPER_AS_FLAGS            1           0
 
 
-    ViperAsFlags
+    VIPER_AS_FLAGS
     ------------
     MemoryVoltageNotSetting      Unsigned char                1           0              6                1
     : 1; // bit 6 (bit 5 thru 0 unused
@@ -193,15 +193,15 @@
 
 
 
-    BackupThermalCalData
+    BACKUP_THERMAL_CALS
     ~~~~~~~~~~~~~~~~~~~~
 
     -----------------------------------------------------------------------------------------------------------
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
     -----------------------------------------------------------------------------------------------------------
-    Temperature           union_XCONFIG_STATIC_SETTINGS       16          0                                     // Same as other info
+    Temperature                  union_TEMPERATURE            16          0                                     // Same as other info
     AnaFuseValue                     char                     1           16
-    Thermal               Struct_XCONFIG_STATIC_SETTINGS      6           17
+    Thermal                      struct_THERMAL               6           17
     -----------------------------------------------------------------------------------------------------------
 
 
@@ -252,20 +252,20 @@
     DVDRegion                    unsigned long                4           52
     ResetKey                     unsigned long                4           56
     SystemFlags                  unsigned long                4           60
-    PowerMode               Struct_XCONFIG_POWER_MODE         2           64
-    PowerVcsControl      Struct_XCONFIG_POWER_VCS_CONTROL     2           66
+    PowerMode               struct_XCONFIG_POWER_MODE         2           64
+    PowerVcsControl      struct_XCONFIG_POWER_VCS_CONTROL     2           66
     ReservedRegion                   char[]                   444         68
 
 
 
-    PowerMode
+    POWER_MODE
     ---------
     VIDDelta                     unsigned char                1           0
     Reserved                     unsigned char                1           1
 
 
 
-    PowerVCSControl
+    POWER_VCS_CONTROL
     ---------------
     Configured                   unsigned short               2           0              15               1
     Reserved                     unsigned short               2           0              12               3
@@ -428,7 +428,7 @@
 
 
 
-    PlayTimerData
+    PLAY_TIME_DATA
     -------------
     uliResetDate              union_ULARGE_INTEGER            8           0
     dwPlayTimerFrequency         unsigned long                4           8
