@@ -9,7 +9,8 @@ nav:
     - Development: "Category_Xbox360_Development.md"
     - Support: "Category_Support.md"
     - ToDo: "!TODO.md"
-theme: material
+theme:
+  name: material
   palette:
     - scheme: default
       toggle:
