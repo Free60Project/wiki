@@ -104,6 +104,6 @@ Guide: [Here](https://web.archive.org/web/20100315185435/http://forums.xbox-scen
 
 [Debian etch](../Debian-etch) install Script (Recommended)
 
-[Ubuntu 7.10](../Ubuntu7.10) install Script
+[Ubuntu 7.10](../Ubuntu7_10) install Script
 
-[Category:Support](../Category_Support)
+[Category: Support](../Category_Support)

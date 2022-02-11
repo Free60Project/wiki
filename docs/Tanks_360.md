@@ -1,4 +1,4 @@
-### General Info
+# Tanks 360
 
 ### NFO
 
@@ -13,4 +13,4 @@
     Thanks to Mattie for the idea
     Thanks to STK50 for all you have done. Hope one day to work with you again.
 
-[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)
+[Category: Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)

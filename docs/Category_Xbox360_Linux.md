@@ -20,8 +20,8 @@
 
 [Ubuntu](../Ubuntu)
 
-[Ubuntu 11.10](../Ubuntu11.10)
+[Ubuntu 11.10](../Ubuntu11_10)
 
-[Ubuntu 7.10](../Ubuntu7.10)
+[Ubuntu 7.10](../Ubuntu7_10)
 
 [Xenos Framebuffer](../Xenos_Framebuffer)

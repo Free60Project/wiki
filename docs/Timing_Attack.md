@@ -37,8 +37,7 @@ A good explanation by arnezami
 *Visual representation of the process:*
 
 ![Image:Timing attack visual
-representation.png](./images/Timing_attack_visual_representation.png
-"Image:Timing attack visual representation.png")
+representation.png]images/Timing_attack_visual_representation.png)
 
 ## Memcmp Flaw
 
@@ -69,10 +68,9 @@ over at XboxHacker.
 Use Infectus or custom hardware (memorycard reader) to make a valid dump
 of the current NAND.
 
-  - [Xbox 360 Infectus Kernel Dump](Xbox_360_Infectus "wikilink")
+  - [Xbox 360 Infectus Kernel Dump](Xbox_360_Infectus)
 
-![Image:Infectus Read NAND.PNG](Infectus_Read_NAND.PNG
-"Image:Infectus Read NAND.PNG")
+![Infectus Screenshot](images/Infectus_Read_NAND.PNG)
 
 ### Patch CB
 
@@ -96,18 +94,14 @@ In Degraded.exe click 'Settings', set the 1BL Key to
 **1888 file system** is located, and set 'File System Start' to
 **'39**'.
 
-![Image:Timing attack degraded
-settings.PNG](./images/Timing_attack_degraded_settings.PNG
-"Image:Timing attack degraded settings.PNG")
+![Image:Timing attack degraded settings](images/Timing_attack_degraded_settings.PNG)
 
 Select the NAND dump file under 'Flash Dump' and click 'Build Downgrader
 Image'.
 
-![Image:Timing attack degraded.PNG](./images/Timing_attack_degraded.PNG
-"Image:Timing attack degraded.PNG")
+![Degraded Screenshot](images/Timing_attack_degraded.PNG)
 
-  - [Downgrading
-    Tools](https://web.archive.org/web/20090518120000/http://www.xboxhacker.net/index.php?topic=8555.msg54509)
+  - [Downgrading Tools](https://web.archive.org/web/20090518120000/http://www.xboxhacker.net/index.php?topic=8555.msg54509)
 
 ### Flash Image
 
@@ -116,17 +110,16 @@ Image'.
 Connect Infectus chip to the Xbox 360 again, erase and flash the new
 patched 1888 base kernel image.
 
-  - [Xbox 360 Infectus Kernel Dump](Xbox_360_Infectus "wikilink")
+  - [Xbox 360 Infectus Kernel Dump](Xbox_360_Infectus)
 
-![Image:Infectus Write NAND.PNG](./images/Infectus_Write_NAND.PNG
-"Image:Infectus Write NAND.PNG")
+![Image](images/Infectus_Write_NAND.PNG)
 
 ### Attack Hash
 
 *Attack the HMAC-hash value using the timing hardware and DGTool.*
 
 1.  Build the [downgrader
-    hardware](Xbox_360_Downgrader_Hardware "wikilink") and connect a
+    hardware](Xbox_360_Downgrader_Hardware) and connect a
     serial port cable and power/ground (3.3v or 5v) from the 360 or an
     external power supply (USB) to the downgrader hardware.
 2.  Connect the USB cable to the Infectus chip. The Infectus is required
@@ -150,29 +143,23 @@ for a little over an hour (around 1 hour 10 minutes seems to be normal)
 and the correct hash value will hopefully be discovered. If successful
 the last line of text should state **'BOOT\!**'.
 
-  - [Xbox 360 Downgrader
-    Hardware](Xbox_360_Downgrader_Hardware "wikilink")
+  - [Xbox 360 Downgrader Hardware](Xbox_360_Downgrader_Hardware)
 
-![Image:Timing attack dgtool.PNG](./images/Timing_attack_dgtool.PNG
-"Image:Timing attack dgtool.PNG")
+![DGTool Screenshot](images/Timing_attack_dgtool.PNG)
 
 ### Upgrade Kernel
 
 *Once you can boot the 1888 base kernel, you can apply the vulnerable
 4532 or 4548 update to use the King King exploit.*
 
-Download the [4532 HD DVD
-update](http://rapidshare.com/files/61387474/HD_DVD_10-2006.zip.html),
+Download the [4532 HD DVD update](https://download.digiex.net/Consoles/Xbox360/Dashboards/2.0.4532.0.zip),
 extract the files into a folder, and burn the content on a regular CD-R.
 Insert the CD-R into the Xbox 360 and you will be prompted that a update
 is required.
 
-![Image:Timing attack 1888 boot
-success.jpg](./images/Timing_attack_1888_boot_success.jpg
-"Image:Timing attack 1888 boot success.jpg")
+![Image:Timing attack 1888 boot success.jpg](images/Timing_attack_1888_boot_success.jpg)
 
-![Image:Xbox 4532 Kernel.JPG](Xbox_4532_Kernel.JPG
-"Image:Xbox 4532 Kernel.JPG")
+![Image](images/Xbox_4532_Kernel.JPG)
 
 ### Get CPU Key
 
@@ -180,7 +167,7 @@ success.jpg](./images/Timing_attack_1888_boot_success.jpg
 CPU Key.*
 
 1.  Patch the King Kong game image with the [King Kong
-    exploit](King_Kong_Hack "wikilink") and burn it to a DVD+R Dual
+    exploit](King_Kong_Hack) and burn it to a DVD+R Dual
     Layer disc.
 2.  Burn the latest Gentoo Xenon release (as of writing beta2) from
     [free60.org](https://github.com/Free60Project) to a CD-R and insert the disc
@@ -190,13 +177,14 @@ CPU Key.*
     application to dump the fusesets to find the CPU Key of the
 machine.
 
-`wget `<http://home.x-pec.com/~ivc/sites/ivc/xbox360/files/arnezamidump32.tgz>
-`tar zxvf arnezamidump32.tgz`
-`cd arnezamidump32`
-`sudo ./dump32`
+```sh
+wget http://home.x-pec.com/~ivc/sites/ivc/xbox360/files/arnezamidump32.tgz
+tar zxvf arnezamidump32.tgz
+cd arnezamidump32
+sudo ./dump32
+```
 
-![Image:Dump32 Finished and List.png](./images/Dump32_Finished_and_List.png
-"Image:Dump32 Finished and List.png")
+![Dump32 Finished screenshot w/ list](images/Dump32_Finished_and_List.png "Dump32 finished")
 
 Save the FUSES.TXT file to a USB memorystick, upload it to
 yousendit.com, mail it to yourself, or use the 'scp' or 'ftp' utility to
@@ -210,15 +198,14 @@ Tool](https://web.archive.org/web/20090523033421/http://www.xboxhacker.net/index
 Insert the correct CPU Key in the 360 Flash Tool and patching the LDV
 (LockDownValue) in the CB/CE/CF section to that of the latest update.
 
-  - [Kernel](Kernel "wikilink")
-  - [King Kong Hack](King_Kong_Hack "wikilink")
+  - [Kernel](Kernel)
+  - [King Kong Hack](King_Kong_Hack)
 
 ## Results
 
 All of my runs can be found on the page below.
 
-  - [Xbox 360 Timing Attack
-    Results](Xbox_360_Timing_Attack_Results "wikilink")
+  - [Xbox 360 Timing Attack Results](Xbox_360_Timing_Attack_Results)
 
 ## Speculation
 
@@ -264,7 +251,7 @@ sections. No other fuses than the obligatory fuseline 7 (to match the
 LockDownValue in CE/FE) were blown.
 
 The latest revisions of the Xbox 360, the
-[Falcon](Xbox_360_Revisions "wikilink"), has a newer basekernel and CB
+[Falcon](Xbox_360_Revisions), has a newer basekernel and CB
 section, 1921, and this version is patched against the
 memcmp-vulnerability
 [8](https://web.archive.org/web/20090523022729/http://www.xboxhacker.net/index.php?topic=8555.msg58882).
@@ -276,8 +263,6 @@ to fix the memcmp-function in CB.
 
 ## References
 
-  - [Original Wiki page - Thx
-    ivc\!](http://beta.ivc.no/wiki/index.php/Xbox_360_Timing_Attack)
+  - [Original Wiki page - Thx ivc\!](http://beta.ivc.no/wiki/index.php/Xbox_360_Timing_Attack)
   - [Timing Attack](https://web.archive.org/web/20090801082642/http://www.xboxhacker.net/index.php?topic=8555.0)
-  - [Timing Attach - Thanks and stupid
-    questions](https://web.archive.org/web/20090529065610/http://www.xboxhacker.net/index.php?topic=8556.0)
+  - [Timing Attach - Thanks and stupid questions](https://web.archive.org/web/20090529065610/http://www.xboxhacker.net/index.php?topic=8556.0)

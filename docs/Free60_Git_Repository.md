@@ -6,12 +6,12 @@ commands
 
 LibXenon
 
-```
+```sh
 git clone git://github.com/Free60Project/libxenon.git
 ```
 
 XeLL
-```
+```sh
 git clone git://github.com/Free60Project/xell.git
 ```
 
@@ -21,4 +21,4 @@ https://github.com/Free60Project
 For LibXenon projects - check out the appropriate Github organization:
 https://github.com/LibxenonProject
 
-[Category:Xbox360_Development](../Category_Xbox360_Development)
+[Category: Xbox 360 Development](../Category_Xbox360_Development)

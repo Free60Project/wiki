@@ -19,9 +19,9 @@ servers. The latest version of Ubuntu, 10.04 (Lucid Lynx), is such an
 LTS version, and was released on April 29, 2010.
 
 It is possible to boot Ubuntu by using an Xbox 360 which has had the
-[SMC Hack](SMC_Hack "wikilink") applied.
+[SMC Hack](SMC_Hack) applied.
 
 You find the current working Ubuntu-installationscript here:
-[Ubuntu7.10](Ubuntu7.10 "wikilink")
+[Ubuntu 7.10](Ubuntu7_10)
 
-[Category:Xbox360_Linux](Category_Xbox360_Linux)
+[Category: Xbox 360 Linux](../Category_Xbox360_Linux)

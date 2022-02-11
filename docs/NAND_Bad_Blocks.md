@@ -44,7 +44,7 @@ kernel are stored uses the Reserve Block Method.
 
 ## XBOX 16MB NAND BLOCK Management
 
-![<File:16MB.png>](../images/16MB.png)
+![16MB NAND Block Diagram](images/16MB.png)
 
 If you noticed in the memory table above any Badblocks encountered are
 consecutively moved to the Reserved BadBlock Area. The first Bad
@@ -67,7 +67,7 @@ as ‘xbr.bin’. And have made a full-backup and have already injected your
 Key Vault and Configuration Blocks into ‘xbr.bin’. The commands would be
 as follow:
 
-```
+```sh
 nandpro xbr.bin: -r16 badblock168.bin 168 1
 nandpro xbr.bin: -w16 badblock168.bin 3FF 1
 nandpro xbr.bin: -r16 badblock1F6.bin 1F6 1
@@ -156,11 +156,11 @@ Lastly the bad block needs to erased to prevent any corruption:
 data doesn't match that of the page, the SMC will deem it a bad block
 anyway and then look to the spare area for a relocated block.)
 
-\--[Xb0xGuru](User:Xb0xGuru) 15:19, 24 February 2013 (UTC)
+\--Xb0xGuru 15:19, 24 February 2013 (UTC)
 
 ## XBOX 256/512MB NAND BLOCK Management
 
-![<File:256-512MB.png>](256-512MB.png "File:256-512MB.png")
+![256-512MB Block Management Diagram](images/256-512MB.png "256-512MB Block Management Diagram")
 
 ### Understanding 256/512 MB memory map, and Nandpro’s translation:
 
@@ -275,11 +275,11 @@ Lastly the bad block needs to erased to prevent any corruption:
 data doesn't match that of the page, the SMC will deem it a bad block
 anyway and then look to the spare area for a relocated block.)
 
-\--[Xb0xGuru](User:Xb0xGuru "wikilink") 15:19, 24 February 2013 (UTC)
+\--[Xb0xGuru](User:Xb0xGuru) 15:19, 24 February 2013 (UTC)
 
 Source:
 [google-docs](https://web.archive.org/web/20100713001647/https://docs.google.com/View?id=dnfmv5h_23gw47ddgs) \(archive.org mirror\) &
 [XBH, posted by trancy](http://www.xboxhacker.org/index.php?topic=13618.0)
 
-[Category:Xbox360_Hardware](../Category_Xbox360_Hardware)
-[Category:Xbox360 System Software](../Category_Xbox360_System_Software)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)
+[Category: Xbox 360 System Software](../Category_Xbox360_System_Software)

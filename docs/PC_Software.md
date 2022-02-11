@@ -1,6 +1,6 @@
 ### NAND Tools
 
-Name: **[NandCompare](NandCompare "wikilink")**
+Name: **[NandCompare](NandCompare)**
 
 Description: Check/verify your Xbox 360 NAND dumps and potentially even
 repair them if you have at least 3 'bad' dumps.
@@ -10,7 +10,7 @@ Author: Rab at [XBH](https://web.archive.org/web/20130401183654/http://www.xboxh
 Download:
 [v1.3](https://web.archive.org/web/20141025002121/http://dwl.xbox-scene.com/xbox360pc/nandtools/NandCompare-v1.3.rar)
 
-Name: **[NandPro](NandPro "wikilink")**
+Name: **[NandPro](NandPro)**
 
 Description: Read/write NAND dumps and repair the spare bytes / ECC
 sections.
@@ -20,7 +20,7 @@ Author: Tiros at
 
 Download: xbins
 
-Name: **[360FlashTool](360FlashTool "wikilink")**
+Name: **[360FlashTool](360FlashTool)**
 
 Description: Decrypt and extract various parts of an Xbox NAND dump.
 
@@ -34,7 +34,7 @@ to continue develop this great app.
 Download:
 [0.97](http://www.one-winged-angelz.eu/XBOX360/Apps/360_Flash_Dump_Tool/360_Flash_Tool_v0.97.rar)
 
-Name: **[NANDFS](NANDFS "wikilink")**
+Name: **[NANDFS](NANDFS)**
 
 Description: Add/remove/extract files from a NAND dump. Open source.
 
@@ -45,4 +45,4 @@ Download: [v.45d binaries](https://web.archive.org/web/20120312092545/http://sto
 [v.45d
 source](https://web.archive.org/web/20120312093849/http://stoker25.com/files/NANDFS45d-src.zip)
 
-[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)
+[Category: Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)

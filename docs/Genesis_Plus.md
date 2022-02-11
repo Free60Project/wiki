@@ -1,6 +1,6 @@
 # Genesis Plus emulator
 
-## General Info
+## General Information
 
 Source: <http://www.multiupload.com/6QYQL218GB>
 
@@ -31,4 +31,4 @@ Thanks:
   Charles MacDonald
 ```
 
-[Category:Xbox360_Homebrew_Software](../Category_Xbox360_Homebrew_Software)
+[Category: Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)

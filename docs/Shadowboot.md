@@ -1,8 +1,8 @@
-# General Information
+# Shadowboot
 
 Development kits have an undocumented, internal feature called 'shadow
 booting' which allows them to enter an alternate boot chain during the
-[boot process](Boot_Process "wikilink"). By placing a specially crafted
+[boot process](Boot_Process). By placing a specially crafted
 file titled 'xboxromw2d.bin' on the root of the system's hard disk, on
 bootup the system will start, begin the process, then reboot again,
 finally completing the boot sequence having loaded from the bootloaders
@@ -51,7 +51,7 @@ and boot from xboxromw2d.bin and test kits xboxromtw2d.bin. Shadowboot
 files are always 832KB (851,968 bytes).
 
 Structurally, shadowboot files are nearly identical to [flash
-dumps](NAND_File_System "wikilink"), but for obvious reasons they do not
+dumps](NAND_File_System), but for obvious reasons they do not
 contain mobiles or filesystems.
 
 | File Structure |
@@ -126,11 +126,11 @@ untouched by the shadowboot bootloader.
 Development kernels contain a series of subroutines to find, validate
 and execute shadowboot ROMs found on various media. The first subroutine
 in this shadowboot process is
-[ExpTryToShadowBoot](ExpTryToShadowBoot "wikilink"), followed by
-[ExpTryToBootMediaKernel](ExpTryToBootMediaKernel "wikilink"),
-[KiShadowBoot](KiShadowBoot "wikilink"),
-[KiQuiesce](KiQuiesce "wikilink"), and finally
-[HvxShadowBoot](HvxShadowBoot "wikilink").
+[ExpTryToShadowBoot](ExpTryToShadowBoot), followed by
+[ExpTryToBootMediaKernel](ExpTryToBootMediaKernel),
+[KiShadowBoot](KiShadowBoot),
+[KiQuiesce](KiQuiesce), and finally
+[HvxShadowBoot](HvxShadowBoot).
 
 The fact that these subroutines cannot be find in bootloaders prior to
 SE implies that the system must fully reach the kernel before rebooting
@@ -216,4 +216,4 @@ checks. On both the cold boot as well as shadowboot, the 2BL is verified
 with a signature check, which subsequently verifies SD with a signature
 check.
 
-[Category:Xbox360 System Software](Category_Xbox360_System_Software)
+[Category: Xbox 360 System Software](../Category_Xbox360_System_Software)

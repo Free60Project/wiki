@@ -1,3 +1,3 @@
-1.  REDIRECT [Falcon](Falcon "wikilink")
+1.  REDIRECT [Falcon](../Falcon)
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)

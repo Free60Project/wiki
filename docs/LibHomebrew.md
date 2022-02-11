@@ -94,5 +94,5 @@ looks like a promising ground. It contains its own libc implementation,
 whereas most homebrew projects are using newlib
 instead.
 
-[Category:Xbox360_Homebrew_Software](../Category_Xbox360_Homebrew_Software)
-[Category:Xbox360_Development](../Category_Xbox360_Development)
+[Category: Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)
+[Category: Xbox 360 Development](../Category_Xbox360_Development)

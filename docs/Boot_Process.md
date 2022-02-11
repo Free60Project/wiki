@@ -131,4 +131,4 @@ It then unloads the following:
 
 By this time the console will have booted into the dashboard
 
-[Category:Xbox360 System Software](../Category_Xbox360_System_Software)
+[Category: Xbox 360 System Software](../Category_Xbox360_System_Software)

@@ -1,6 +1,6 @@
 The **System Management Controller (SMC)** is an
-[8051/8052](8051_8052 "wikilink") core inside the
-[Southbridge](Southbridge "wikilink"). It manages the power sequencing,
+[8051/8052](8051_8052) core inside the
+[Southbridge](Southbridge). It manages the power sequencing,
 and is always active when the Xbox 360 has (standby or full) power
 applied. It controls the frontpanel, has a Realtime clock, decodes IR,
 manages temperatures, fans, DVDROM tray and a bunch of other things. It
@@ -17,9 +17,7 @@ Communication between kernel and SMC happens over a bidirectional FIFO
 All messages and replies are 16 byte long and have the command id in the
 first byte.
 
-<code>
-
-```
+```c
 void smc_send(void *msg)
 {
       while (!(readl(0xea001084) & 4))    // wait for FIFO ready
@@ -31,17 +29,14 @@ void smc_send(void *msg)
 }
 ```
 
-</code>
-
 ### Receiving a Reply
 
 Some messages have replies, which will be returned as 16 byte sequence
 similar to the message (they also have the command id in the first
 byte).
 
-<code>
 
-```
+```c
 int smc_read_reply(void *msg)
 {
       if (!(readl(0xea001094) & 4))       // do we have a reply?
@@ -54,13 +49,11 @@ int smc_read_reply(void *msg)
 }
 ```
 
-</code>
-
 ## Command Messages
 
 | ID                                   | Len     | Example                                                    | Purpose                    |
 | ------------------------------------ | ------- | ---------------------------------------------------------- | -------------------------- |
-| [0x82](SMC_Command_0x82 "wikilink")  | 2-3     | "\\x82\\0x04\\0x31\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0" | set standby/power          |
+| [0x82](SMC_Command_0x82)  | 2-3     | "\\x82\\0x04\\0x31\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0" | set standby/power          |
 | 0x85                                 | ?       | ?                                                          | set real time clock        |
 | 0x88                                 | ?       | ?                                                          | set fan algorithm          |
 | 0x89                                 | ?       | ?                                                          | set fan speed (cpu/gpu?)   |
@@ -77,7 +70,7 @@ int smc_read_reply(void *msg)
 
 | ID                                   | Len      | Example Query                                        | Example Reply                | Purpose                      |
 | ------------------------------------ | -------- | ---------------------------------------------------- | ---------------------------- | ---------------------------- |
-| [0x01](SMC_Command_0x01 "wikilink")  | 1:6      | "\\x01\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0" | `01 12 00 00 00 00`          | power on type                |
+| [0x01](SMC_Command_0x01)  | 1:6      | "\\x01\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0" | `01 12 00 00 00 00`          | power on type                |
 | 0x04                                 | 1:11     | "\\x04\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0" | `04 602f 212223 01 00000000` | real time clock              |
 | 0x07                                 | 1:10     | "\\x07\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0" | `07ff 241b 2fa4 2cfa 262c`   | read temps                   |
 | 0x0a                                 | 1:2      | "\\x0a\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0\\0" | `0a 60`                      | request tray state           |
@@ -93,4 +86,4 @@ int smc_read_reply(void *msg)
 | ---- | ----- | --------------- | --------- |
 | 0x83 | 2     | `83 64`         | SMC event |
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)

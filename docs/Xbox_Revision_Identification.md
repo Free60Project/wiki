@@ -6,21 +6,18 @@ precisely. First you have to locate the used Video Encoder Chip\!
 ## Determine Video-Chip
 
 The VideoChip is located in the marked area:
-![<File:Vchip-location.jpg>](Vchip-location.jpg
-"File:Vchip-location.jpg")
+![Vchip location](images/Vchip-location.jpg)
 
 Find out which chip your xbox has\!
 
 **CONEXTANT**
-![<File:conextant_video.jpg>](conextant_video.jpg
-"File:conextant_video.jpg")
+![conextant video](images/Conextant_video.jpg)
 
 **FOCUS**
-![<File:focus_video.jpg>](focus_video.jpg "File:focus_video.jpg")
+![focus video](images/Focus_video.jpg)
 
 **XCALIBUR**
-![<File:xcalibur_video.jpg>](xcalibur_video.jpg
-"File:xcalibur_video.jpg")
+![xcalibur video](images/Xcalibur_video.jpg)
 
 ### I got a CONEXTANT chip
 
@@ -2609,4 +2606,4 @@ unknown
 
 </table>
 
-Retrieved from "<http://www.xbox-linux.org/wiki/Xbox_Versions_HOWTO>"
+Retrieved from http://www.xbox-linux.org/wiki/Xbox_Versions_HOWTO

@@ -17,3 +17,5 @@ long.
 | 0x8    | 0x4    | unsigned integer | Loader entrypoint                          |
 | 0xC    | 0x4    | unsigned integer | Loader length (including header)           |
 | 0x10   | 0x10   | bytes            | HMAC salt (used for decrypting the loader) |
+
+[Category: Xbox 360 System Software](../Category_Xbox360_System_Software)

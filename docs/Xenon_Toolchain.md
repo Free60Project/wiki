@@ -1,6 +1,8 @@
-# Windows
+# Xenon Toolchain
 
-### Installing Cygwin
+## Windows
+
+#### Installing Cygwin
 
 1.  Download [Cygwin](http://cygwin.com/install.html). Once it's done,
     run the installer. Set the Install Directory to C:\\Cygwin, or what
@@ -8,17 +10,16 @@
 2.  When prompted for a server, select anyone, they all have the same
     packages, but I would recommend xmission.
 3.  Make sure you install the necessary devs libs:
+    * `GCC `
+    * `Make `
+    * `Git `
+    * `build-essential `
+    * `texinfo `
+    * `Etc.`
 
-* `GCC `
-* `Make `
-* `Git `
-* `build-essential `
-* `texinfo `
-* `Etc.`
+## Linux
 
-# Linux
-
-### Prerequisites
+#### Prerequisites
 
 * `libgmp3-dev`
 * `libmpfr-dev`
@@ -27,9 +28,9 @@
 * `git-core`
 * `build-essential`
 
-# Mac OS X
+## Mac OS X
 
-### Prerequisites
+#### Prerequisites
 
 1.  Install Xcode.
 2.  Install macports, then "sudo port install mpfr gmp git-core wget"
@@ -43,7 +44,7 @@ build.log), then do the mentioned workaround in gcc-4.4.0/gcc directory
 (changing Make-lang.in), then disable the rebuild of binutils, gcc
 (first stage) and newlib by setting
 
-```
+```makefile
 BUILD_BINUTILS=false
 BUILD_GCC=false
 BUILD_NEWLIB=false
@@ -53,11 +54,11 @@ BUILD_GCC_SECOND=true
 in the build-xenon-toolchain. Then retry the build. It should finish the
 build.
 
-# Building the Toolchain
+## Building the Toolchain
 
 Run the following commands through the console your using:
 
-```
+```sh
 git clone <git://github.com/Free60Project/libxenon.git>
 cd libxenon/toolchain
 ./build-xenon-toolchain toolchain
@@ -65,15 +66,16 @@ cd libxenon/toolchain
 
 The toolchain should start building (Note: This might take some time).
 
-# Full process of installation
+## Full process of installation
 
 To give people a start who are not used to Linux but want to start
 coding, here it goes. In this example I am refering to Ubuntu/Debian.
 
-First we install
-dependencies
+First we install dependencies
 
-`apt-get install libgmp3-dev libmpfr-dev libmpc-dev texinfo git-core gettext build-essential`
+```sh
+apt-get install libgmp3-dev libmpfr-dev libmpc-dev texinfo git-core gettext build-essential
+```
 
 Now we create the target directory for the Toolchain & Libxenon and own
 it by the current user
@@ -82,7 +84,7 @@ superuser before typing the commands in the following block.
 Note: If not, append "sudo" before those commands (example: "sudo mkdir
 -p /usr/local/xenon")
 
-```
+```sh
 mkdir -p /usr/local/xenon
 chown -R your_regular_user:your_regular_user /usr/local/xenon
 # exit the superuser-environment now!
@@ -90,7 +92,7 @@ chown -R your_regular_user:your_regular_user /usr/local/xenon
 
 Then we grab the toolchain from git and build it
 
-```
+```sh
 git clone <git://github.com/Free60Project/libxenon.git>
 cd libxenon/toolchain`
 ./build-xenon-toolchain toolchain
@@ -106,7 +108,7 @@ error:
 
 Do the following:
 
-```
+```sh
 cd gcc-4.6.1
 wget <ftp://ftp.gmplib.org/pub/gmp-5.0.2/gmp-5.0.2.tar.bz2>
 tar xvjf gmp-5.0.2.tar.bz2 && mv gmp-5.0.2 gmp
@@ -122,7 +124,7 @@ At the end of compiling it will tell you to add paths to your ~/.bashrc
 - that's an improper solution.
 Rather do it the following way:
 
-```
+```sh
 # Get superuser rights first!
 touch /etc/profile.d/devkitxenon.sh
 chmod +x /etc/profile.d/devkitxenon.sh
@@ -131,7 +133,7 @@ nano /etc/profile.d/devkitxenon.sh
 # Insert the lines below in the text editor!
 ```
 
-```
+```sh
 export DEVKITXENON="/usr/local/xenon"
 export PATH="$PATH:$DEVKITXENON/bin:$DEVKITXENON/usr/bin"
 ```
@@ -141,4 +143,4 @@ filename Press Ctrl+X for closing nano
 
 Have fun compiling your code ;)
 
-[Category:Xbox360_Development](Category_Xbox360_Development)
+[Category: Xbox 360 Development](../Category_Xbox360_Development)

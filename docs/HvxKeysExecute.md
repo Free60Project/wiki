@@ -1,3 +1,8 @@
+---
+hide:
+    - toc
+---
+
 # HvxKeysExecute
 
 HvxKeysExecute is a syscall to execute a payload in privileged mode

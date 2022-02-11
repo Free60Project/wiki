@@ -1,10 +1,10 @@
 **XDBF** (**X**box **D**ata **B**ase **F**ile) files are used by the
 Xbox 360 as a generic database. It is used as the format for
-[GPD](GPD "wikilink") (**G**amer **P**rofile **D**ata) and
-[SPA](SPA "wikilink") (**S**tatistics, **P**resence and
+[GPD](GPD) (**G**amer **P**rofile **D**ata) and
+[SPA](SPA) (**S**tatistics, **P**resence and
 **A**chievements) files. SPA files are linked into an Xbox 360
 executable during compilation and are used by the dashboard to generate
-the GPD, Save Game ([STFS](STFS "wikilink")) Meta-Data and Images. In
+the GPD, Save Game ([STFS](STFS)) Meta-Data and Images. In
 the XAM the DataFile class handles all of the operations associated with
 these files.
 
@@ -89,4 +89,4 @@ entry, workout the actual length of the free space table.
 \+ 24, 24 is the length of the
 header.
 
-[Category:Xbox360_System_Software](Category_Xbox360_System_Software)
+[Category: Xbox 360 System Software](../Category_Xbox360_System_Software)

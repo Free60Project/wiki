@@ -14,11 +14,9 @@ Here is what you can do to help this project:
   - Documentation: We need the individual bits\&pieces, for example from
     xboxhacker.net, nicely assembled into wiki pages, Howtos etc. This
     does not require coding skills\!
-  - Head over to
-    **[here](../Category:Pages_that_need_to_be_cleaned_up)**
+  - Head over to **[here](../Category_Pages_that_need_to_be_cleaned_up)**
     for a list of pages that need some work done on them.
-  - Or you can go
-    **[here](../Category:Pages_with_missing_images)** for a
+  - Or you can go **[here](../Category_Pages_with_missing_images)** for a
     list of pages that need images uploaded.
   - Take a look at wiibrew.org: They have nice categories for the
     available software, features applications etc.
@@ -91,4 +89,4 @@ plus interactivity over serial / IR remote or USB controller), or
 possibly in a Linux initramfs (which is easier to implement, but locks
 the user in to one single kernel)
 
-[Category:Support](../Category_Support)
+[Category: Support](../Category_Support)

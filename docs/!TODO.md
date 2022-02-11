@@ -152,21 +152,19 @@ Timing_Attack.md 246 below
 Timing_Attack.md 255 "anchor" broken
 
 
-Ubuntu11.10.md 62 not available
+Ubuntu11_10.md 68 below
 
-Ubuntu11.10.md 68 below
+Ubuntu11_10.md 84 below
 
-Ubuntu11.10.md 84 below
+Ubuntu11_10.md 85 below
 
-Ubuntu11.10.md 85 below
+Ubuntu11_10.md 87 below
 
-Ubuntu11.10.md 87 below
+Ubuntu11_10.md 88 below
 
-Ubuntu11.10.md 88 below
+Ubuntu11_10.md 89 below
 
-Ubuntu11.10.md 89 below
-
-Ubuntu11.10.md 91-94 dont think the command will work 
+Ubuntu11_10.md 91-94 dont think the command will work 
 
 
 Utilities.md 9 below

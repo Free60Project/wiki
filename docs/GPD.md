@@ -20,7 +20,7 @@ titles.
 | 4     | Title                                                                     |
 | 5     | String                                                                    |
 | 6     | Achievement Security (created by GFWL for offline unlocked achievements?) |
-| 6     | Avatar Award (360 only, this is only stored with in the \[\[PEC           |
+| 6     | Avatar Award (360 only, this is only stored with in the PEC           |
 
 ### Entry IDs
 
@@ -355,4 +355,4 @@ IDs in Sync List between last and next are
 pushed
 //confirm?
 
-[Category:Xbox360_System_Software](../Category_Xbox360_System_Software)
+[Category: Xbox 360 System Software](../Category_Xbox360_System_Software)

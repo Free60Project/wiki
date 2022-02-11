@@ -1,1 +1,1 @@
-1.  REDIRECT [Trinity](Trinity "wikilink")
+1.  REDIRECT [Trinity](Trinity)

@@ -3,7 +3,7 @@ Slim. It is the sixth motherboard revision. It was originally believed
 that it's codename was **Valhalla**, but after looking through debug
 files it was found that this is not the case. It no longer has Memory
 Unit ports. It has a special port for connecting the
-[Kinect](Kinect "wikilink") peripheral, which provides power to the
+[Kinect](Kinect) peripheral, which provides power to the
 device instead of plugging it in seperately. It also features a single
 chip that contains the CPU, GPU and eDRAM, with a 45nm die size. The
 Xbox 360 Slim, and as a result, the motherboard are much smaller than
@@ -25,4 +25,4 @@ replaced with a single red power light on any errors.
   - No more RROD, simple red power light on error (unknown on more
     detail)
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)

@@ -19,7 +19,7 @@ sent something to the serial port, the status should be read from `0x8000
 
 Init UART speed:
 
-```
+```asm
     li        %r7, 0x0200
     oris      %r7, %r7, 0x8000
     sldi      %r7, %r7, 32
@@ -32,8 +32,8 @@ Init UART speed:
 
 Send char '\!' to the serial port (UART):
 
-```
-        li %r8, '!'
+```asm
+    li %r8, '!'
     slwi %r8, %r8, 24
     stw %r8, 0x1014(%r7)        # send the character
     sync
@@ -46,7 +46,7 @@ Send char '\!' to the serial port (UART):
 
 Get char from the serial port (UART):
 
-```
+```asm
      lis %r4, 0x8000
      ori %r4, %r4, 0x200
      rldicr %r4, %r4, 32,31
@@ -65,24 +65,24 @@ Get char from the serial port (UART):
 ## Serial Console
 
 The Serial Console can be very useful when debugging the [Linux
-Kernel](Linux_Kernel "wikilink") or diagnosing the [Boot
-Process](Boot_Process "wikilink").
+Kernel](Linux_Kernel) or diagnosing the [Boot
+Process](Boot_Process).
 
 ### Diagram FAT
 
-![J2B1 SCON](../images/J2B1_SCON.png)
+![J2B1 SCON](images/J2B1_SCON.png)
 
 ### Diagram ALL
 
-![UART all](../images/Uart_all.jpg)
+![UART all](images/Uart_all.jpg)
 
 You can either use the GND pin on the header (might be difficult to
 solder for the inexperienced) or some alternative GND pin like the one
-from the [Stereo DAC](Stereo_DAC "wikilink") nearby the J2B1 header.
+from the [Stereo DAC](Stereo_DAC) nearby the J2B1 header.
 
 Note that you will probably need a [Level
-Shifter](Level_Shifter "wikilink") to connect the 3.3V RX/TX pins to
-your [PC Serial Port](PC_Serial_Port "wikilink") (which usually uses
+Shifter](Level_Shifter) to connect the 3.3V RX/TX pins to
+your [PC Serial Port](PC_Serial_Port) (which usually uses
 +/-12V)
 
 The Level Shifter can be either powered from the standby 3.3V on pin 7
@@ -93,6 +93,6 @@ It is also possible to use some cheap [cell phone data
 cables](http://wiki.openwrt.org/oldwiki/openwrtdocs/customizing/hardware/serial_console#cellphone.data.cables)
 as a PC interface.
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
-[Category:Xbox360_Development](Category_Xbox360_Development)
-[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)
+[Category: Xbox 360 Development](../Category_Xbox360_Development)
+[Category: Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)

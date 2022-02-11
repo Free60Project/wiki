@@ -60,4 +60,4 @@ information on an exposed bus again though.
   - [http://g-prime.net/x360/open/](https://web.archive.org/web/20090110154123/http://www.g-prime.net/x360/open/) \(archive.org mirror\)
   - [http://www.darkmoon.org/xbox360_photos.htm](https://web.archive.org/web/20150609103520/http://www.darkmoon.org/xbox360_photos.htm) \(archive.org mirror\)
 
-[Category:Xbox360_Hardware](../Category_Xbox360_Hardware)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)

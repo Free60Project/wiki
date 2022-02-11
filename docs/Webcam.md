@@ -1,4 +1,6 @@
-![Vision.cam.jpg](Vision.cam.jpg "Vision.cam.jpg")
+# Xbox Live Vision Camera
+
+![Xbox Live Vision Camera](images/Vision.cam.jpg "Xbox Live Vision Camera")
 
 The web cam, also known as Xbox Vision Cam, that you can buy separate
 from the xbox 360 is just a little web cam that you can twist and move
@@ -11,4 +13,4 @@ chatting audio is heard through the microphone. They aren't as popular
 as they used to be probably because of the Kinect having all of these
 features and much more built in.
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)

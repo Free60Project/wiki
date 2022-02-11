@@ -1,5 +1,5 @@
 The means for unprivileged code to query the
-[Hypervisor](Hypervisor "wikilink") for privileged tasks.
+[Hypervisor](Hypervisor) for privileged tasks.
 
 # Making a System Call
 
@@ -7,8 +7,7 @@ Anywhere in unprivileged code you can make a system call by loading r0
 with the call ID and executing the 'sc' instruction. Some system calls
 take additional parameters in r3-r9
 
-```
-
+```asm
     # Send 0xFF to POST output
     li r3, 0xFF
     li r0, 0xD

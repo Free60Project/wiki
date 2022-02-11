@@ -1,3 +1,8 @@
+---
+hide:
+    - toc
+---
+
 # CB Code
 
 Some notes on the mfg version to start with:

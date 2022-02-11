@@ -1,7 +1,7 @@
-**SPA** files are contained inside [XEX](XEX "wikilink") files or within
-Updates or DLC. They are just a [XDBF](XDBF "wikilink") file, they are
-used by the dashboard for [GPD](GPD "wikilink") creation and [Xbox
-LIVE](Xbox_LIVE "wikilink") information.
+**SPA** files are contained inside [XEX](XEX) files or within
+Updates or DLC. They are just a [XDBF](XDBF) file, they are
+used by the dashboard for [GPD](GPD) creation and [Xbox
+LIVE](Xbox_LIVE) information.
 
 # Record Table
 
@@ -249,4 +249,4 @@ string.
 | 2      | 2                 | UInt16 | String Length |
 | 4      | **String Length** | String | String        |
 
-[Category:Xbox360_System_Software](Category_Xbox360_System_Software)
+[Category: Xbox 360 System Software](../Category_Xbox360_System_Software)

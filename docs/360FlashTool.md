@@ -1,10 +1,15 @@
-# General Info
+---
+hide:
+    - toc
+---
+
+# 360 Flash Tool
 
 ## NFO
 
-```
-This tool will allow you to decrypt and extract various parts of a XBox360 flash dump.
-This tool will allow you to decrypt/encrypt and extract various parts of a XBOX360 flash dump and much more!!
+```sh
+This tool will allow you to decrypt and extract various parts of a Xbox 360 flash dump.
+This tool will allow you to decrypt/encrypt and extract various parts of a Xbox 360 flash dump and much more!!
 The flash is devided into 2 major parts
 
 1) The Cx sections (CB,CD,CE & 0,1 or 2 CF & CG sections).
@@ -241,4 +246,4 @@ xboxkrnl.4552.exe The base HV & kernel, patched to 4552
 - Initial Release
 ```
 
-[Category:Xbox360_Homebrew_Software](../Category_Xbox360_Homebrew_Software)
+[Category: Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)

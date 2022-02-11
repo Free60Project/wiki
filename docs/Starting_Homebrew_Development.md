@@ -1,10 +1,10 @@
 ## Requirements
 
   - Linux/MAC OS/Mingw (a virtual machine will just do fine)
-  - Installed [Xenon Toolchain](Compiling_the_Toolchain "wikilink") and
-    [LibXenon](LibXenon "wikilink") of course
-  - [LibXenon](LibXenon "wikilink") pulled from [Free60 Git
-    Repository](Free60_Git_Repository "wikilink")
+  - Installed [Xenon Toolchain](Compiling_the_Toolchain) and
+    [LibXenon](LibXenon) of course
+  - [LibXenon](LibXenon) pulled from [Free60 Git
+    Repository](Free60_Git_Repository)
   - Knowledge of C/C++
 
 ## Getting into it
@@ -16,7 +16,7 @@ Programming](https://github.com/Free60Project/libxenon.org-forum/blob/master/xbo
  
 You could start looking at a code example and write a program which
 (almost) everbody starts with: [Hello World
-:)](LibXenon_Examples "wikilink")
+:)](LibXenon_Examples)
 
-[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)
-[Category:Xbox360_Development](Category_Xbox360_Development)
+[Category: Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)
+[Category: Xbox 360 Development](../Category_Xbox360_Development)

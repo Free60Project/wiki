@@ -1,4 +1,4 @@
 1.  REDIRECT
-[XeLL](XeLL "wikilink")
+[XeLL](../XeLL)
 
-[Category:Xbox360_Homebrew_Software‏](Category_Xbox360_Homebrew_Software.md‏ "wikilink")
+[Category: Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)

@@ -8,7 +8,7 @@ well as links to their respective pages.
 '''NOTE TO MAINTAINERS: ''' This page is often ripped apart by spam
 bots\! Please check and revert any unwanted changes regularly\!
 
-## [Xenon](Xenon_(Motherboard) "wikilink") (V1)
+## [Xenon](Xenon_(Motherboard)) (V1)
 
 The original Xbox 360 configuration used in the initial Premium and Core
 machines released in the end of November 2005.
@@ -26,7 +26,7 @@ the GPU chip warps away from the motherboard because of excessive heat.
     also come with Lite-On drive if it was refurbished.
   - Highly unlikely to have glue around the CPU but it IS possible.
 
-## [Zephyr](Zephyr "wikilink") (V2)
+## [Zephyr](Zephyr) (V2)
 
 Zephyr was the first revision with HDMI connector.
 It was introduced with the Xbox 360 Elite in May 2007.
@@ -46,7 +46,7 @@ motherboard.
   - Shipping with Hitachi 78 or 79 and **BenQ** DVD-Drive. May also have
     Lite-On if it was refurbished.
 
-## [Falcon](Falcon "wikilink") (V3)
+## [Falcon](Falcon) (V3)
 
 All Xbox 360 Premium machines and Arcade machines made in August 2007
 introduced the new 65 nm CPU accompanied with a new cooler and still 90
@@ -68,7 +68,7 @@ costs.
   - 3 pin fan connector
   - Shipping with Hitachi 79, BenQ and new Lite-On 7XXX series DVD-Drive
 
-## [Opus](Opus "wikilink") (V3.1)
+## [Opus](Opus) (V3.1)
 
 This is an intermediate motherboard with 65nm CPU and 90nm GPU, new
 coolers, but no HDMI. It will be used in Xenon chassis for repairs and
@@ -92,7 +92,7 @@ a Xenon chassis and case.
   - **Opus only available from Xenon being repaired by MS**.
   - Very Rare
 
-## [Jasper](Jasper "wikilink") (V4)
+## [Jasper](Jasper) (V4)
 
 Jasper introduced the 65nm GPU to reduce power usage and cost further.
 The new power supply is rated for 150 Watt, down from 175 Watt on the
@@ -128,7 +128,7 @@ Same as Jasper (V4), minor changes.
   - Consoles: Arcade 512MB, Elite 120GB & 250GB, Modern Warfare 2
     consoles and Final Fantasy 13 consoles
   - 65nm [eDRAM](http://en.wikipedia.org/wiki/EDRAM) (?)
-  - New [Southbridge](Southbridge "wikilink") chipset
+  - New [Southbridge](Southbridge) chipset
   - Arcade Edition Larger Flash 256MB and **512MB** to accommodate NXE
     (Removes 256MB Memory Card)
   - Shipping with Lite-On 8XXXV2/9XXX DVD-Drivers.
@@ -137,7 +137,7 @@ Same as Jasper (V4), minor changes.
   - Special edition consoles: Modern Warfare 2 Consoles
   - Last of the original style 360 systems
 
-## Trinity/[Valhalla](Valhalla "wikilink") (V5) \[New Slim Xbox 360\]
+## Trinity/[Valhalla](Valhalla) (V5) \[New Slim Xbox 360\]
 
   - Consoles: 4GB Arcade, Elite 250GB and Halo Reach Console
   - Unified single chip with CPU, GPU and
@@ -176,4 +176,4 @@ Corona Sources:
 [Source 1](http://en.wikipedia.org/wiki/Xbox_360_technical_specifications#List_of_revisions)
 [Source 2](https://web.archive.org/web/20160515071713/http://www.xboxhacker.org/index.php?topic=17143.0)
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)

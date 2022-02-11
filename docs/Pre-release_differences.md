@@ -30,8 +30,8 @@ it, XOR that byte with 0xF0 to get true number
   - Doesn't seem to have bad block management... probably does though
 
 Uses a whole different file system for storing the dashboard files,
-instead of [SFCX](NAND_File_System "wikilink") it uses
-[FATX](FATX "wikilink")
+instead of [SFCX](NAND_File_System) it uses
+[FATX](FATX)
 Loads more files inside FATX NANDs:
 \*drivers.xex
 \*xnet.xex
@@ -66,5 +66,5 @@ Also, console security certificate is incomplete-ish:
 \*Console type is weird, 0x80000002, normally when it ends in 02 it's
 retail :S
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
-[Category:Xbox360 System Software](Category_Xbox360_System_Software)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)
+[Category: Xbox 360 System Software](../Category_Xbox360_System_Software)

@@ -11,5 +11,5 @@ your file/nand.
 The source is available on the [free60 GIT Repository](Free60_Git_Repository) in the tools
 section.
 
-[Category:Xbox360_Homebrew_Software](../Category_Xbox360_Homebrew_Software)
-[Category:Xbox360_Linux](../Category_Xbox360_Linux)
+[Category: Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)
+[Category: Xbox 360 Linux](../Category_Xbox360_Linux)

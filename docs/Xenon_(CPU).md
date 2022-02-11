@@ -1,5 +1,6 @@
-![KL_Microsoft_XBOX_380_CPU_ES.jpg‎](KL_Microsoft_XBOX_380_CPU_ES.jpg‎
-"KL_Microsoft_XBOX_380_CPU_ES.jpg‎") **Xenon** is the CPU that is used
+# Xenon CPU
+
+![Xenon CPU](images/KL_Microsoft_XBOX_380_CPU_ES.jpg "KL_Microsoft_XBOX_380_CPU_ES.jpg") **Xenon** is the CPU that is used
 in the Xbox 360. The processor, internally codenamed *Waternoose* by IBM
 and XCPU by Microsoft. "The basic design is a 64-bit *PowerPC*
 architecture, with the complete *PowerPC ISA available*."
@@ -54,21 +55,17 @@ hardware threads available to games. Each individual core also includes
 
 ## External Links
 
-  - [Application-customized CPU design: The Microsoft Xbox 360 CPU
-    story](https://web.archive.org/web/20081205055833/http://www-128.ibm.com:80/developerworks/power/library/pa-fpfxbox/index.html?ca=drs-)
+  - [Application-customized CPU design: The Microsoft Xbox 360 CPU story](https://web.archive.org/web/20081205055833/http://www-128.ibm.com:80/developerworks/power/library/pa-fpfxbox/index.html?ca=drs-)
     Jeffrey Brown, Distinguished Engineer, IBM
-  - ["Power" Architecture
-    Technology]https://web.archive.org/web/20090213042736/http://www.ibm.com/developerworks/power) at IBM
-  - [SoC drawer: The resource
-    view](http://www.ibm.com/developerworks/library/pa-soc1/) at IBM
+  - ["Power" Architecture Technology](https://web.archive.org/web/20090213042736/http://www.ibm.com/developerworks/power) at IBM
+  - [SoC drawer: The resource view](http://www.ibm.com/developerworks/library/pa-soc1/) at IBM
     (mentions Xbox CPU design. Gets nitty gritty on resources and
     scheduling, i/o interconnects, & on chip memory)
   - Just like being there: Papers from the Fall Processor Forum 2005:
    [Application-customized CPU design](https://web.archive.org/web/20090501114949/www.ibm.com/developerworks/power/library/pa-fpfxbox/)
    at IBM (Explore the customized IBM PowerPC processor designed for
    the Microsoft XBox 360)
-  - [Xenon hardware overview](https://xbox-scene.xbins.org/forums/index.php?showtopic=231928)
-    by Pete Isensee, Development Lead, Xbox Advanced Technology Group,
+  - [Xenon hardware overview](https://xbox-scene.xbins.org/forums/index.php?showtopic=231928) by Pete Isensee, Development Lead, Xbox Advanced Technology Group,
     written some time before 23 June 2004
   - [Ars Technica explains the Xenon CPU](http://arstechnica.com/old/content/2005/06/xbox360-2.ars)
   - [Xbox360 CPU](http://en.wikipedia.org/wiki/Xenon_(processor)) at
@@ -76,7 +73,6 @@ hardware threads available to games. Each individual core also includes
   - [PowerPC 970](http://en.wikipedia.org/wiki/PowerPC_G5) at Wikipedia
   - [PowerPC](http://en.wikipedia.org/wiki/PowerPC) at Wikipedia
   - [POWER4](http://en.wikipedia.org/wiki/POWER4) at Wikipedia
-  - [CPU Chip for Xbox 360 Manufacturing Overview, FSB, PPC Core, VMX & FPU, & L2 Cache block diagrams](https://web.archive.org/web/20100328024533/http://www.ccw.com.cn/notebook/pczx/sy/htm2005/20051028_16OMI.htm)
-    from IBM
+  - [CPU Chip for Xbox 360 Manufacturing Overview, FSB, PPC Core, VMX & FPU, & L2 Cache block diagrams](https://web.archive.org/web/20100328024533/http://www.ccw.com.cn/notebook/pczx/sy/htm2005/20051028_16OMI.htm) from IBM
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)

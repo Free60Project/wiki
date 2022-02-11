@@ -23,4 +23,4 @@
 - 21.6 GB/s front-side bus
 - [Southbridge](../Southbridge) bandwidth of 500 MB/s.
 
-[Category:Xbox360_Hardware](../Category_Xbox360_Hardware)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)

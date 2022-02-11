@@ -1,3 +1,8 @@
+---
+hide:
+    - toc
+---
+
 # 1BL - Pseudocode
 
 Have not reversed all of the hardware error subroutines.

@@ -31,7 +31,7 @@ Contributions are very welcome. Here's how you can help:
 
 2. Clone the forked repository (change <username> to your actual username)
 
-```
+```sh
 # SSH
 git clone git@github.com:<username>/wiki.git
 
@@ -43,7 +43,7 @@ git clone https://github.com/<username>/wiki.git
 
 3. Prepare your python virtual environment and dependencies
 
-```
+```sh
 # Navigate to the cloned repo
 cd wiki/
 
@@ -56,7 +56,7 @@ source venv/bin/activate
 
 4. Install needed python dependencies using python package manager -> pip
 
-```
+```sh
 pip install mkdocs mkdocs-material
 ```
 
@@ -66,19 +66,19 @@ pip install mkdocs mkdocs-material
 6. When you are done, use the following steps to build & preview the documentation / changes locally.
 
 Build the documentation
-```
+```sh
 make build
 ```
 
 Serve the documentation
-```
+```sh
 make serve
 ```
 
 7. Once you are happy and the added changes are looking proper, you are ready to submit your work.
 
 Add modified files for commiting
-```
+```sh
 git add docs/<edited_file>.md
 git add docs/<edited_file_2>.md
 ...
@@ -86,7 +86,7 @@ git add docs/<edited_file_2>.md
 
 Create a new commit
 
-```
+```sh
 git commit
 
 # Now in the upcoming editor, describe the changes you made.
@@ -94,7 +94,7 @@ git commit
 
 Push the changes to your forked repository
 
-```
+```sh
 git push
 ```
 

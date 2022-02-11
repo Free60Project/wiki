@@ -1,12 +1,11 @@
 # Introduction
 
-[<File:Wlan>back.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_back.jpg)
+![Back of the Wireless LAN adapter](images/Wlan_back.jpg)
 
 FCC ID:C3K-WKS168
 IC: 3048A-WKS168
 
-The [Wireless Network
-Adapter](https://web.archive.org/web/20150226023206/http://www.xbox.com:80/en-US/xbox-360/accessories/cablesnetworking/Xbox360WirelessNNetworkingAdapter)
+The [Wireless Network Adapter](https://web.archive.org/web/20150226023206/http://www.xbox.com:80/en-US/xbox-360/accessories/cablesnetworking/Xbox360WirelessNNetworkingAdapter)
 is a dual-band (2.4/5GHz) 802.11a/b/g interface for the Xbox 360.
 
 This is a standard USB 2.0 device, and although it is designed to clamp
@@ -16,17 +15,17 @@ below.
 
 # Disassembly
 
-[<File:Wlan> all pieces.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_all_pieces.jpg)
+[Image](images/Wlan_all_pieces.jpg)
 
 Disassembled; bottom and top covers, PCB, USB cable and antenna
 
-[<File:Wlan> back opened.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_back_opened.jpg)
+[Image](images/Wlan_back_opened.jpg)
 
 PCB underside, with [Hannstar Board Corp.](http://www.hannstarboard.com/wps/wcm/connect/english/tw) inscription.
 
 # Integrated Circuits
 
-[<File:Wlan> front opened.jpg](http://www.free60.org/index.php5?title=Special:Upload&wpDestFile=Wlan_front_opened.jpg)
+[Image](images/Wlan_front_opened.jpg)
 
 PCB upper-side, showing the major ICs
 
@@ -81,5 +80,4 @@ from
 
 *Baseband Processor Product Selection table*
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
-[Category:Pages with missing images](Category_Pages_with_missing_images)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)

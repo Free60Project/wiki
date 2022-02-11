@@ -1,1 +1,1 @@
-1.  REDIRECT [UART](UART "wikilink")
+1.  REDIRECT [UART](UART)

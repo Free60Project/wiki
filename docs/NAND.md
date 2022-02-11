@@ -1,10 +1,10 @@
 # NAND
 
-![Flash.jpg](../images/Flash.jpg "Flash.jpg")
+![Flash Chip](images/Flash.jpg "Flash Chip")
 
 ## Flash memory
 
-![<File:nandpinout.png>](../images/nandpinout.png)
+![NAND Pinout](images/Nandpinout.png "NAND Pinout")
 
 - [Datasheet](https://web.archive.org/web/20150112073857/http://www.hynix.com/datasheet/pdf/flash/HY27US(08_16)281A%20Series(Rev0.6).pdf)
 
@@ -16,11 +16,11 @@ Attached to [Southbridge](../Southbridge)
 
 ## NAND Points on Motherboard for FAT
 
-![<File:Nandreadpins.jpg>](../images/Nandreadpins.jpg)
+![NAND Points on FAT Motherboard](images/Nandreadpins.jpg)
 
 ## NAND Points on Motherboard for SLIM
 
-comming soon
+coming soon...
 
 ## Different Sizes
 
@@ -104,17 +104,12 @@ This also works in reverse:
 
 The Flash can be written or read using a number of methods. If you have
 the old shader hack running the easiest is using [lflash](../lflash).
-You can also wire LPT directly to the flash using this
-[diagram](http://img19.imageshack.us/img19/5198/wiringforxenondiagram.jpg).
-As well, you can build your own USB SPI Flasher with [this
-diagram](http://img35.imageshack.us/img35/8949/xbox360usbflasher.png)
-and use [these
-binaries](http://nds.cmamod.com/x360/PICFLASH_v3b_plus2.zip). Flash the
-PicXboot.hex to your PIC, then use the programmer from [this
-picflash](http://www.megaupload.com/?d=X6TBNFDC) to flash the
+You can also wire LPT directly to the flash using this [diagram](http://img19.imageshack.us/img19/5198/wiringforxenondiagram.jpg).
+As well, you can build your own USB SPI Flasher with [this diagram](http://img35.imageshack.us/img35/8949/xbox360usbflasher.png)
+and use [these binaries](http://nds.cmamod.com/x360/PICFLASH_v3b_plus2.zip). Flash the
+PicXboot.hex to your PIC, then use the programmer from [this picflash](http://www.megaupload.com/?d=X6TBNFDC) to flash the
 picflash.hex to the PIC through USB in bootloader mode. Once the device
-is flashed, you can then install it using the drivers from NandPro or
-use TeamXecuters NANDX drivers.
+is flashed, you can then install it using the drivers from NandPro or use TeamXecuters NANDX drivers.
 
 Once wired you can read/write to the chip using software such as
 [NandPro](../NandPro).
@@ -134,7 +129,7 @@ In software the NAND is mapped to memory address 0x80000200C8000000.
 
 ## NAND File System
 
-Informations about the Filesystem on the Xbox360 NAND Flash can be found
+Informations about the Filesystem on the Xbox 360 NAND Flash can be found
 [here](../NAND_File_System)
 
 ## Bad Blocks
@@ -149,11 +144,11 @@ the following pictures.
 
 No chip:
 
-![<File:x360Pro_noeeprom.jpg>](../images/x360Pro_noeeprom.jpg)
+![No EEPROM](images/X360Pro_noeeprom.jpg "X360Pro with No EEPROM")
 
 Here is a high-res picture of a premium box with the chip:
 
-![eeprom.jpg](../images/eeprom.jpg)
+![EEPROM](images/Eeprom.jpg "EEPROM")
 
 As discussed in this article on the xboxhacker.net forums, this appears
 to be a Atmel 25020 EEPROM. The chip model reads:
@@ -180,7 +175,7 @@ datasheet.
 
 There is another Atmel chip on the front panel:
 
-[<File:Atmel2.jpg>](../images/Atmel2.jpg)
+File:Atmel2.jpg <!-- This image has never actually appeard on the wiki archive. A new image can be taken by anyone with the correct hardware. -->
 
 Atmel 528 serial EEPROM
 
@@ -200,9 +195,8 @@ datasheet.
 
 ## Tools
 
-360 Flash Tool, which is easy to find
-[Xbox 360 NAND Editor](http://www.megaupload.com/?d=LGF518J0) by
-stoker25, open source and semi-complete, has code to do with
-bootloaders/keyvault/filesystem
+- 360 Flash Tool, which is not easy to find
+- [Xbox 360 NAND Editor](http://www.megaupload.com/?d=LGF518J0) by stoker25,
+  open source and semi-complete, has code to do with bootloaders/keyvault/filesystem
 
-[Category:Xbox360_Hardware](../Category_Xbox360_Hardware)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)

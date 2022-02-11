@@ -50,5 +50,4 @@
 | 2.0.20353.2     | 2.0.12625.0       | XeDK                                                                                                                                                                                        |
 | 2.0.20500.1     | 2.0.13139.0       | XeDK                                                                                                                                                                                        |
 
-[Category:Xbox360 System
-Software](Category_Xbox360_System_Software)
+[Category: Xbox 360 System Software](../Category_Xbox360_System_Software)
