@@ -1,4 +1,4 @@
-name: build
+name: Build and Deploy
 on:
   push:
     branches:
@@ -6,14 +6,11 @@ on:
 
 jobs:
   build:
-    name: Deploy docs
     runs-on: ubuntu-latest
     steps:
       - name: Checkout master
-        uses: actions/checkout@v1
-
-      - name: Deploy docs
+        uses: actions/checkout@v2.4.0
+      - name: Deploy MkDocs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
