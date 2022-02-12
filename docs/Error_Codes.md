@@ -1,8 +1,6 @@
 # Error codes
 
-![<File:e74.jpg>](../images/e74.jpg)
-
-"System error. Contact Xbox Customer Support."
+![Error 74](images/e74.jpg "System error. Contact Xbox Customer Support.")
 
 ## General Information
 
@@ -43,5 +41,6 @@ Error 79 has been known during obvious signs of graphic corruption.
 - Error 74 can be fixed by disconnecting and reconnecting the hard
   drive. This would be in contrast to the Dennis-Mooney-Quote.
 
-[Category:Xbox360 System Software](Category_Xbox360_System_Software)
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Xbox 360 System Software](../Category_Xbox360_System_Software)
+
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)

@@ -62,7 +62,7 @@ Source Code (incl. Makefile): [Download](http://file.libxenon.org/free60/libxeno
 All of these samples/programs include a Makefile, so its easy to compile
 them with the [Toolchain](../Compiling_the_Toolchain).
 
-```
+```sh
 cd into_the_directory
 make CROSS_COMPILE=xenon-
 ```
@@ -73,5 +73,5 @@ move all the sourcecode-files of your project into a folder "source" so
 the Makefile can find
 them.
 
-[Category:Xbox360_Homebrew_Software](../Category_Xbox360_Homebrew_Software)
-[Category:Xbox360_Development](../Category_Xbox360_Development)
+[Category: Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)
+[Category: Xbox 360 Development](../Category_Xbox360_Development)

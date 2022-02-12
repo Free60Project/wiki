@@ -2,7 +2,7 @@
 
 ## Note
 Old notes on the Xbox 360 Hypervisor can be found here: [Hypervisor (Old
-Notes)](Hypervisor_(Old_Notes) "wikilink")
+Notes)](Hypervisor_(Old_Notes))
 
 ## What is a Hypervisor?
 

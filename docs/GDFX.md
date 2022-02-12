@@ -41,4 +41,4 @@ The 32nd segment seems to be a descriptor.
 | TEMPORARY | 0x00000100 |
 
 
-[Category:Xbox360_System_Software](../Category_Xbox360_System_Software)
+[Category: Xbox 360 System Software](../Category_Xbox360_System_Software)

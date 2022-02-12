@@ -42,4 +42,4 @@ int result = ObDeleteSymbolicLink( "\\??\\hdd:" );
 
 As above, use `RtlInitAnsiString` to make the string
 
-[Category:Xbox360 System Software](../Category_Xbox360_System_Software)
+[Category: Xbox 360 System Software](../Category_Xbox360_System_Software)

@@ -47,7 +47,7 @@ will summarize the instructions from the crosstool-howto:
 1. **Download and unpack** the crosstool scripts. E.g. in your home
 directory type:
 
-```
+```sh
 wget http://kegel.com/crosstool/crosstool-0.43.tar.gz
 tar -xzvf crosstool-0.43.tar.gz
 ```
@@ -58,14 +58,14 @@ and make them writable for your user. We are using the default which is
 `su` before typing these commands and replace `$USER` with your username
 or use `sudo` like in the example:
 
-```
+```sh
 sudo mkdir /opt/crosstool
 sudo chown $USER /opt/crosstool
 ```
 
 3. **Run the compilation script** for the powerpc target.
 
-```
+```sh
 cd crosstool-0.43/
 ./demo-powerpc-970.sh
 ```
@@ -76,10 +76,10 @@ from the mainboard of your Xbox 360... Compilation of your cross compiler will j
 5. **When finished**, you may want to add your cross compiler binaries to your PATH environment
 variable.
 
-```
+```sh
 export PATH=$PATH:/opt/crosstool/gcc-4.1.0-glibc-2.3.6/powerpc64-unknown-linux-gnu/bin
 ```
 
 You're done. Feel free to configure and compile your [Linux Kernel](../Linux_Kernel).
 
-[Category:Xbox360_Development](../Category_Xbox360_Development)
+[Category: Xbox 360 Development](../Category_Xbox360_Development)

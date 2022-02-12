@@ -11,8 +11,6 @@ GPU chip warps away from the motherboard because of excessive heat.
   - Shipping with Hitachi and Samsung DVD-Drive
   - Highly unlikely to have glue around the CPU but it IS possible.
 
-![<File:Xbox> 360 revisions xenon
-motherboard.jpg](Xbox_360_revisions_xenon_motherboard.jpg
-"File:Xbox 360 revisions xenon motherboard.jpg")
+![Xbox 360 Xenon Motherboard](images/Xbox_360_revisions_xenon_motherboard.jpg "Xenon Revision Motherboard")
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)

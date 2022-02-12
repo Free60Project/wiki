@@ -1,7 +1,5 @@
 # Attack
 
-## From Free60
-
 This page was created when knowledge was low, everything on here is
 impossible, due to the 360's hypervisor. The only exploit there is and
 ever will be is the King Kong/JTAG (SMC)/or any other exploit for the
@@ -36,10 +34,8 @@ Bad Ideas are as follows:
         sloppy, it might be possible to have a second step that then
         compromises the actual Xbox 360 security.
   - Patched games
-      - [Patching
-        (French)](https://web.archive.org/web/20100201124753/http://www.presence-pc.com/actualite/kong-ubi-13474/)
-      - (Early Versions?) King Kong will need a patch in order to be
-        playable on some screens
+      - [Patching (French)](https://web.archive.org/web/20100201124753/http://www.presence-pc.com/actualite/kong-ubi-13474/)
+      - (Early Versions?) King Kong will need a patch in order to be playable on some screens
       - The patch needs a HDD
   - Manipulated media files
       - Images, Music Files, Video
@@ -84,7 +80,7 @@ Bad Ideas are as follows:
       - Maybe retrieve some data that can't be retrieved
       - USB and IDE that have DMA
           - Maybe it doesn't work with non-Firewire devices
-      - Video: [[2]](https://web.archive.org/web/20060427215314/http://lufgi4.informatik.rwth-aachen.de/movies/)
+      - Video: [\[2\]](https://web.archive.org/web/20060427215314/http://lufgi4.informatik.rwth-aachen.de/movies/)
   - Manipulated USB
     device
       - Webcam
@@ -214,4 +210,4 @@ First guy is absolutely retarded \>_\> - Thilo
   Both frameworks are fairly large and complex and it could be a possible
   candy store for exploits.
 
-[Category:Support](Category_Support)
+[Category: Support](../Category_Support)

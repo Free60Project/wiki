@@ -1,11 +1,11 @@
 **XeLL** is the Xenon Linux Loader. It's a second-stage bootloader which
-is loaded by a [loader](Run_Code "wikilink").
+is loaded by a [loader](Run_Code).
 
 XeLL catches CPU threads, sets them up, loads an ELF file from either
 network (tftp) or CDROM (ISO9660), and launches it. It's made to boot
 linux. Thus it also contains a flat device tree for linux. However, it
 should be able to load other ELF files as well, like apps based on
-[libXenon](libXenon "wikilink").
+[libXenon](libXenon).
 
 [lwIP](https://en.wikipedia.org/wiki/LwIP) is used for networking. Network
 config is currently hardcoded in network.c (and main.c), and probably
@@ -35,8 +35,8 @@ aswell - branch: 2stages (which is the standard branch)
 ### Building and running
 
 0\. **Make sure** that you have a working [Cross
-Compiler](Cross_Compiler "wikilink") toolchain and
-[LibXenon](LibXenon "wikilink").
+Compiler](Cross_Compiler) toolchain and
+[LibXenon](LibXenon).
 
 1\. **Grab** the sources from the git repository:
 
@@ -55,14 +55,14 @@ Now compile it
 
 `   make CROSS=powerpc64-unknown-linux-gnu-`
 
-3a. Use the [JTAG Hack](JTAG_Hack "wikilink") or [Reset Glitch
-Hack](Reset_Glitch_Hack "wikilink")- you can even upgrade XeLL via USB.
+3a. Use the [JTAG Hack](JTAG_Hack) or [Reset Glitch
+Hack](Reset_Glitch_Hack)- you can even upgrade XeLL via USB.
 
 3b. Deprecated: load **xell-readcd.bin** using the
-[readcd](readcd "wikilink") method and a patched King Kong game.
+[readcd](readcd) method and a patched King Kong game.
 
 3c. Deprecated: **use the serial loader** from Crawler360 to download
-**xell-serial.bin** to your Xbox360 and run
+**xell-serial.bin** to your Xbox 360 and run
 it.
 
-[Category:Xbox360_Homebrew_Software‏](Category_Xbox360_Homebrew_Software.md‏ "wikilink")
+[Category: Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)

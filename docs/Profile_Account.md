@@ -373,4 +373,4 @@ passwords.
 `           Russian`
 `       };`
 
-[Category:Xbox360 System Software](Category_Xbox360_System_Software)
+[Category: Xbox 360 System Software](../Category_Xbox360_System_Software)

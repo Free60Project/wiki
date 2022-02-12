@@ -24,4 +24,4 @@ Currently missing are:
   available.
 - IR remote support
 
-[Category:Xbox360_Linux](Category_Xbox360_Linux)
+[Category: Xbox 360 Linux](../Category_Xbox360_Linux)

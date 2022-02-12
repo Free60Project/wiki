@@ -25,8 +25,8 @@
 
 - Where can I find the latest news?
   Relevant news items are posted on the [front
-  page](Main_Page "wikilink"). For what else has changed on the Wiki,
-  see the [recent changes](Special:RecentChanges "wikilink").
+  page](Main_Page). For what else has changed on the Wiki,
+  see the [recent changes](Special:RecentChanges).
 
 - Will I void my warranty by taking my machine apart?
   Yes. There is a tamper-proof seal that must be broken to get any
@@ -42,4 +42,4 @@
   your Non-Disclosure Agreement, while tainting the project at the
   same time. Note, however, IANAL and TINLA.
 
-[Category:Support](../Category_Support)
+[Category: Support](../Category_Support)

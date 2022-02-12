@@ -1,4 +1,4 @@
-### General Info
+# Xmenu
 
 ### NFO
 
@@ -45,4 +45,4 @@ Ge0rG and ssmurf, because they are nice guys :)
 Cpasjuste @ mydedibox.fr
 ```
 
-[Category:Xbox360_Homebrew_Software‏](Category_Xbox360_Homebrew_Software.md‏ "wikilink")
+[Category: Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)

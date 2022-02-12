@@ -1,8 +1,7 @@
 There are ten sets of pin headers on the board. They are numbered
 according to the PCB sections (J *X* *Y* *N*).
 
-![<File:HeaderLocations.png>](HeaderLocations.png
-"File:HeaderLocations.png")
+![Header Locations](images/HeaderLocations.png)
 
 | ID   | \#Pins | Purpose                |
 | ---- | ------ | ---------------------- |
@@ -56,6 +55,6 @@ according to the PCB sections (J *X* *Y* *N*).
 | 8      |     | Unknown |
 
 
-scheme: <https://web.archive.org/web/20070320235201/http://people.zeelandnet.nl/kbgeldof/j2b1_conn.JPG>
+[Scheme](images/j2b1_conn.jpg)
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)

@@ -11,11 +11,10 @@ display. Technically, there are only 192 viewable fuses.
 
 ## What They Look Like
 
-![Xell_fusesets.jpg](../images/Xell_fusesets.jpg)
-![Gentoo_fuses.jpg](../images/Gentoo_fuses.jpg)
+![XeLL Fuses](images/Xell_fusesets.jpg "Fuses in XeLL")
+![Gentoo Fuses](images/Gentoo_fuses.jpg "Fuses in Gentoo (dump32)")
 
-**Once you aquire the fusesets (From either XeLL or dump32 in Linux)
-they look like this:**
+**Once you aquire the fusesets (From either XeLL or dump32 in Linux) they look like this:**
 
 ```
 fuseset 00: C0FFFFFFFFFFFFFF
@@ -132,5 +131,6 @@ void DumpFuses()
 }
 ```
 
-[Category:Xbox360 System Software](../Category_Xbox360_System_Software)
-[Category:Xbox360_Hardware](../Category_Xbox360_Hardware)
+[Category: Xbox 360 System Software](../Category_Xbox360_System_Software)
+
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)

@@ -32,4 +32,4 @@
   - [How to Disassemble the "Screwless" Xbox 360](https://web.archive.org/web/20060206091315/http://digg.com/gaming/How_To_Disassemble_The_Screwless_XBOX_360) at digg.com (archiv.org)
   - [Xbox 360 Exposed](http://www.informit.com/articles/article.asp?p=430626&seqNum=1&rl=1)
 
-[Category:Support](../Category_Support)
+[Category: Support](../Category_Support)

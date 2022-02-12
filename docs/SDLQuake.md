@@ -1,4 +1,4 @@
-### General Info
+# SDL Quake
 
 ### NFO
 
@@ -14,4 +14,4 @@
 
     Enjoy :)
 
-[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)
+[Category: Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)

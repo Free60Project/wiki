@@ -48,5 +48,5 @@ holds at least the following:
 ` Option        "UseFBDev"      "true"`
 `EndSection`
 
-[Category:Xbox360_Development](Category_Xbox360_Development)
-[Category:Xbox360_Linux](Category_Xbox360_Linux)
+[Category: Xbox 360 Development](../Category_Xbox360_Development)
+[Category: Xbox 360 Linux](../Category_Xbox360_Linux)

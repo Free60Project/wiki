@@ -1,5 +1,5 @@
 **PEC** (Profile Embedded Content) files are used by the Xbox 360 as an
-additional layer of security on profiles. Certain [GPD](GPD "wikilink")
+additional layer of security on profiles. Certain [GPD](GPD)
 files are relocated inside the PEC file. The PEC file stores information
 on avatar clothes/items, and is just another STFS package. With this
 said you must properly rehash and resign the PEC file to avoid the Xbox
@@ -23,16 +23,16 @@ below).
 # Notes
 
 The Console ID at 0x275 must match the Console ID located in the
-[Console Security Certificate](Console_Security_Certificate "wikilink"),
-otherwise the Xbox360 will see it as a corrupted file.
+[Console Security Certificate](Console_Security_Certificate),
+otherwise the Xbox 360 will see it as a corrupted file.
 
 The signature located in the [Console Security
-Certificate](Console_Security_Certificate "wikilink") is signed using
+Certificate](Console_Security_Certificate) is signed using
 the hash at location 0x228. (SHA1 hash from 0x23C - 0x1000)
 
 From 0x1000 the rest of the file is the standard block portion of
-[STFS](STFS "wikilink"), with data block 0 starting at 0x3000, and hash
+[STFS](STFS), with data block 0 starting at 0x3000, and hash
 table 0 at 0x1000/0x2000. The PEC file always has 2 hash tables (type 1
 package).
 
-[Category:Xbox360_System_Software](Category_Xbox360_System_Software)
+[Category: Xbox 360 System Software](../Category_Xbox360_System_Software)

@@ -1,16 +1,16 @@
 The Xbox's **Original Software** is composed of many things, including
 the bootloaders, the kernel, the dashboard and more.
 
-# [Bootloaders](Bootloaders "wikilink")
+# [Bootloaders](Bootloaders)
 
 The Xbox 360 system uses a series of
-[bootloaders](bootloaders "wikilink") to load the hv/kernel and
+[bootloaders](bootloaders) to load the hv/kernel and
 dashboard. These loaders are explained at [Boot
-Process](Boot_Process "wikilink").
+Process](Boot_Process).
 
-# [Hypervisor](Hypervisor "wikilink")
+# [Hypervisor](Hypervisor)
 
-The [Hypervisor](Hypervisor "wikilink") is the main operating system
+The [Hypervisor](Hypervisor) is the main operating system
 being run on the console. It looks after the kernel and stops things
 like buffer overflows from happening. It also manages a lot of the
 security aspects of the 360, including memory encryption and region
@@ -18,9 +18,9 @@ protection. It has code to handle the XeKeys (keyvault + some static
 ones) and XEXs. The end-user of an Xbox would never have any knowledge
 of the hypervisor, it's only really interesting for hackers.
 
-# [Kernel](Kernel "wikilink")
+# [Kernel](Kernel)
 
-The Xbox 360's [Kernel](Kernel "wikilink") is responsible for low level
+The Xbox 360's [Kernel](Kernel) is responsible for low level
 hardware communication and more. This is the main part of the 360, the
 kernel is where all the user-based stuff happens. The drivers for
 accessing most of the hardware is located in the Kernel, along with
@@ -38,9 +38,9 @@ format K:2.0.*nnnnn*.0, where *nnnnn* is your kernel version.
 A lot of fun things are inside XAM. XAM handles gamer profiles and
 online interactivity, so as you can guess not a lot of information is
 made public about it. XeDevWiki hopes to change that. XAM handles such
-things as [XDBF](XDBF "wikilink") (**X**box **D**ata**b**ase **F**ile)
-files ([GPD](GPD "wikilink") (**G**amer **P**rogress
-**D**ata)/[SPA](SPA "wikilink")) and [PEC](PEC "wikilink") (**P**rofile
+things as [XDBF](XDBF) (**X**box **D**ata**b**ase **F**ile)
+files ([GPD](GPD) (**G**amer **P**rogress
+**D**ata)/[SPA](SPA)) and [PEC](PEC) (**P**rofile
 **E**mbedded **C**ontent) files.
 
 # File Systems
@@ -48,53 +48,53 @@ files ([GPD](GPD "wikilink") (**G**amer **P**rogress
 The Xbox 360 uses various File Systems for storing games, user content
 and more.
 
-**[FATX](FATX "wikilink")** (**F**ile
+**[FATX](FATX)** (**F**ile
 **A**llocation **T**able for **X**box) is used as the storage
 filesystem on hard drives/memory units/USB devices/xlaunch.fdf files.
 
-**[GDFX](GDFX "wikilink")**/XSF (**G**ame
+**[GDFX](GDFX)**/XSF (**G**ame
 **D**isc **F**ormat for **X**box) is the filesystem used on X360
 CD/DVD Media.
 
-**[STFS](STFS "wikilink")** (**S**ecure
+**[STFS](STFS)** (**S**ecure
 **T**ransacted **F**ile **S**ystem) is used for game saves,
 profiles, arcade games, downloadable content and more. STFS is also
 referred to as CON/LIVE/PIRS files, as they are all STFS files, just
 signed with a different header.
 
-**[(SFCX](SFCX "wikilink")** **S**ecure
+**[(SFCX](SFCX)** **S**ecure
 **F**ile **C**ache for **X**box) :is used for cache storage for games.
 
-**[NAND File System](NAND_File_System "wikilink")** is used to store the
+**[NAND File System](NAND_File_System)** is used to store the
 bootloaders, kernel, keyvault and other files on the
-[NAND](NAND "wikilink").
+[NAND](NAND).
 
-# [File Formats](File_Formats "wikilink")
+# [File Formats](File_Formats)
 
-The Xbox 360 also uses different [File Formats](File_Formats "wikilink")
+The Xbox 360 also uses different [File Formats](File_Formats)
 for storage of data, as storage on the Xbox is limited, these files are
 usually binary. [XeNTaX.com](http://wiki.XeNTaX.com) is a DataBase of
 hundreds of different file formats, which may be of help.
 
-**[PEC](PEC "wikilink")** (**P**rofile
+**[PEC](PEC)** (**P**rofile
 **E**mbedded **C**ontent) is used as another layer of security
 inside profiles.
 
-**[STFS](STFS "wikilink")** (**S**ecure
+**[STFS](STFS)** (**S**ecure
 **T**ransacted **F**ile **S**ystem) is used for secure storage of
 files on memory
 devices.
 
-**[XDBF](XDBF "wikilink")**/**[GPD](GPD "wikilink")**/**[SPA](SPA "wikilink")**
+**[XDBF](XDBF)**/**[GPD](GPD)**/**[SPA](SPA)**
 (**X**box **D**ash**b**oard
 **F**ile/**G**amer **P**rofile **D**ata/**S**tatistics, **P**resence and
 **A**chievements) is used for profiles
 (achievements/settings/titles) and games (achievements/strings/ratings).
 
-**[XEX](XEX "wikilink")** (**X**enon
+**[XEX](XEX)** (**X**enon
 **Ex**ecutable) is the executable format used by the Xbox 360.
 
-**[XMI](XMI "wikilink")**(**X**enon
+**[XMI](XMI)**(**X**enon
 **M**usic **I**ndex) is used to index music on the Xbox.
 
-[Category:Xbox360 System Software](Category_Xbox360_System_Software)
+[Category: Xbox 360 System Software](../Category_Xbox360_System_Software)

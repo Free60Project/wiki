@@ -9,4 +9,4 @@
 | XeLL_Reloaded  | Xenon Linux Loader **RELOADED**. Consists of 2 stages, works on both, JTAG and RGH  |
 
 
-[Category:Xbox360_Homebrew_Software](../Category_Xbox360_Homebrew_Software)
+[Category: Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)

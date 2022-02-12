@@ -1,1 +1,1 @@
-1.  REDIRECT [Xenos (GPU)](Xenos_(GPU) "wikilink")
+1.  REDIRECT [Xenos (GPU)](../Xenos_(GPU))

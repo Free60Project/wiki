@@ -1,6 +1,6 @@
-# The JTAG/SMC Hack
+# The JTAG / SMC Hack
 
-There is a new hack which can boot homebrew code in less than 5 seconds.
+There is a ~~new~~ hack which can boot homebrew code in less than 5 seconds.
 See at the end of this document for a description how the hack works.
 For now, all we need to know is that this is a new way to exploit the
 well-known 4532 kernel, in a way which also works on updated machines,
@@ -15,34 +15,33 @@ Please also notice that from a functional side, the result will be the
 same as the KK-hack; it's just much faster, works on more hardware and
 is more reliable. So it replaces the KK-hack, not less and not more.
 
-Technical details are available
-[here](http://free60.git.sourceforge.net/git/gitweb.cgi?p=free60/tools;a=blob_plain;f=imgbuild/hack.txt;hb=HEAD).
+Technical details are available [here](http://free60.git.sourceforge.net/git/gitweb.cgi?p=free60/tools;a=blob_plain;f=imgbuild/hack.txt;hb=HEAD).
 
 ## Required Soldering
 
 The SMC Hack requires bridging 3 points on the motherboard (for trigger
 the exploit by JTAG), as well as having a way to read and write with
-your Nand [Flash](Flash "wikilink")
+your Nand [Flash](Flash)
 
-\- The JTAG points are available for a number of consoles
+The JTAG points are available for a number of consoles
 
-**Xenon**: ![X_Jtag_free60.png‎](./images/X_Jtag_free60.png "X_Jtag_free60.png‎")
+### Xenon
+![Xenon Jtag Diagram](images/X_Jtag_free60.png)
 
-**Falcon**, **Zephyr**, **Opus** &*' Jasper*':
-![ZFOJ_Jtag_free60.jpg‎](./images/ZFOJ_Jtag_free60.jpg "ZFOJ_Jtag_free60.jpg‎")
+### Falcon, Zephyr, Opus, Jasper
+![ZFOJ Jtag Diagram](images/ZFOJ_Jtag_free60.jpg)
 
-**Falcon**, **Zephyr**, **Opus** &*' Jasper*' Reverse Jtag:
-![Reversejatg.jpg‎](.images/Reversejatg.jpg‎ "Reversejatg.jpg‎")
+#### Reverse Jtag
+![Reverse JTAG](images/Reverse_JTAG.jpg)
 
-\- To read and write the Nand Flash (using SPI protocol by LPT and a
-printer cable), there is a friendly tutorial at [NAND
-Reading](NAND_Reading "wikilink")
+- To read and write the Nand Flash (using SPI protocol by LPT and a
+printer cable), there is a friendly tutorial at [NAND Reading](NAND_Reading)
 
-There are other ways to read and write the Nand Flash that are valid
-(such as infectus modchip)
+    There are other ways to read and write the Nand Flash that are valid
+    (such as infectus modchip)
 
-  - All the diodes used in SPI and JTAG are "switching diodes" proposed
-    are: BAT41, 1N4148, or 1N4153
+      - All the diodes used in SPI and JTAG are "switching diodes" proposed
+        are: BAT41, 1N4148, or 1N4153
 
 ## Building a Homebrew-Kernel
 
@@ -51,102 +50,95 @@ There are other ways to read and write the Nand Flash that are valid
 #### What you need
 
   - Latest build.py Script from GIT
-  - CB/CD-files matching for your Xbox Revision (called CB.xxxx/CD.xxxx
-    here, where xxxx is the version)
+  - CB/CD-files matching for your Xbox Revision (called `CB.xxxx/CD.xxxx` here, where `xxxx` is the version)
+    - Xenon: 1921
+    - Zephyr: 4558
+    - Falcon: 5770
+    - Jasper: 6712, 6723
 
-\-Xenon: 1921
-
-\-Zephyr: 4558
-
-\-Falcon: 5770
-
-\-Jasper: 6712, 6723
-
-  - Hacked SMC Code matching your Xbox Revision (called smc_hacked.bin
-    here) ATM only available for XENON / falcon / zephyr / opus(as of
-    recently)
+  - Hacked SMC Code matching your Xbox Revision (called smc_hacked.bin here)
+    ATM only available for XENON / falcon / zephyr / opus(as of recently)
   - The 1888 Basekernel (called 1888image.bin here)
   - Xbox 360 Dashboard Update Version 4532 (HD_DVD_10-2006.zip)
   - wxPirs to extract xboxupd.bin from 4532-Update
-  - Compiled XELL (xell-1f.bin, also the same file named
-    xell-backup.bin)
+  - Compiled XELL (xell-1f.bin, also the same file named xell-backup.bin)
 
 #### How-to
 
-1\. **Check out the latest free60-tools** with GIT
+1. **Check out the latest free60-tools** with GIT
+   ```sh
+   git clone https://github.com/Free60Project/tools.git
+   ```
 
-`git clone `<git://free60.git.sourceforge.net/gitroot/free60/tools/>
+2. **Extract xboxupd.bin** with WxPirs from the unzipped 4532-Dashboard-Update
 
-2\. **Extract xboxupd.bin** with WxPirs from the unzipped
-4532-Dashboard-Update
-
-3\. **Copy the files** xboxupd.bin, 1888image.bin, CB.xxxx/CB.xxxx,
+3. **Copy the files** xboxupd.bin, 1888image.bin, CB.xxxx/CB.xxxx,
 smc.hacked and the two XeLL files xell-1f.bin and xell-backup.bin to
 /tools/imgbuild/input (you need to create the folder first). Also create
 a folder "output" in /tools/imgbuild/
 
-4\. **Edit build.py** to contain the Secret 1BL Key in this format
-(Example-Key:
-010F0E0C0ED669E7B56794FB68563EFA)
+4. **Edit build.py** to contain the Secret 1BL Key in this format<br/>
+  (Example-Key: 010F0E0C0ED669E7B56794FB68563EFA)
+    ```py
+    secret_1BL = "\x01\x0F\x0E\x0C\x0E\xD6\x69\xE7\xB5\x67\x94\xFB\x68\x56\x3E\xFA"
+    ```
 
-`secret_1BL = "\x01\x0F\x0E\x0C\x0E\xD6\x69\xE7\xB5\x67\x94\xFB\x68\x56\x3E\xFA"`
+6. **Start build.py** with the following command
+    ```sh
+    python build.py input/1888image.bin input/CB.xxxx input/CD.xxxx input/xboxupd.bin input/xell-backup.bin input/xell-1f.bin input/smc_hacked.bin
+    ```
 
-5\. **Start build.py** with the following
-command
+    If everything works out the Script should output something similar to this
 
-`python build.py input/1888image.bin input/CB.xxxx input/CD.xxxx input/xboxupd.bin input/xell-backup.bin input/xell-1f.bin input/smc_hacked.bin`
+    ```
+    * found flash image, unpacking and decrypting...
+     ECC'ed - will unecc.
+     Found 2BL (build 1888) at 00008000
+     Found 4BL (build 1888) at 0000e1e0
+     Found 5BL (build 1888) at 000138d0
+     * found (hopefully) decrypted CB
+     * found (hopefully) raw CD
+     * found update
+     Found 6BL (build 4532) at 00000000
+     Found 7BL (build 4532) at 000044c0
+     * found XeLL binary, must be linked to 1c000000
+     * found XeLL binary, must be linked to 1c000000
+     * found decrypted SMC
+     * we found the following parts:
+     CB: 1921
+     CD: 1921
+     CE: 1888
+     CF: 4532
+     CG: 4532
+     * checking if all files decrypted properly... ok
+     * checking required versions... ok
+     * Fixing up the hacked SMC code with the target address
+     * this image will be valid *only* for: xenon
+     * zero-pairing...
+     * constructing new image...
+     * base size: 70000
+     * compiling payload stub
+     * Flash Layout:
+     0x00000000..0x000001ff (0x00000200 bytes) Header
+     0x00000200..0x000003ff (0x00000200 bytes) Exploit
+     0x00000400..0x00000fff (0x00000c00 bytes) Padding
+     0x00001000..0x00003fff (0x00003000 bytes) SMC
+     0x00004000..0x00007fff (0x00004000 bytes) Keyvault
+     0x00008000..0x000117ff (0x00009800 bytes) CB 1921
+     0x00011800..0x00016ebf (0x000056c0 bytes) CD 1921
+     0x00016ec0..0x0006cf2f (0x00056070 bytes) CE 1888
+     0x0006cf30..0x0006ffff (0x000030d0 bytes) Padding
+     0x00070000..0x000744bf (0x000044c0 bytes) CF 4532
+     0x000744c0..0x000a33ff (0x0002ef40 bytes) CG 4532
+     0x000a3400..0x000bffff (0x0001cc00 bytes) Padding
+     0x000c0000..0x000fffff (0x00040000 bytes) Xell (backup)
+     0x00100000..0x0013ffff (0x00040000 bytes) Xell (main)
+     * Encoding ECC...
+     Written into output/image_00000000.ecc
+     ! please flash output/image_*.ecc, and setup your JTAG device to do the DMA read from 00000200
+    ```
 
-If everything works out the Script should output something similar to
-this
-
-`* found flash image, unpacking and decrypting...`
-` ECC'ed - will unecc.`
-` Found 2BL (build 1888) at 00008000`
-` Found 4BL (build 1888) at 0000e1e0`
-` Found 5BL (build 1888) at 000138d0`
-` * found (hopefully) decrypted CB`
-` * found (hopefully) raw CD`
-` * found update`
-` Found 6BL (build 4532) at 00000000`
-` Found 7BL (build 4532) at 000044c0`
-` * found XeLL binary, must be linked to 1c000000`
-` * found XeLL binary, must be linked to 1c000000`
-` * found decrypted SMC`
-` * we found the following parts:`
-` CB: 1921`
-` CD: 1921`
-` CE: 1888`
-` CF: 4532`
-` CG: 4532`
-` * checking if all files decrypted properly... ok`
-` * checking required versions... ok`
-` * Fixing up the hacked SMC code with the target address`
-` * this image will be valid *only* for: xenon`
-` * zero-pairing...`
-` * constructing new image...`
-` * base size: 70000`
-` * compiling payload stub`
-` * Flash Layout:`
-` 0x00000000..0x000001ff (0x00000200 bytes) Header`
-` 0x00000200..0x000003ff (0x00000200 bytes) Exploit`
-` 0x00000400..0x00000fff (0x00000c00 bytes) Padding`
-` 0x00001000..0x00003fff (0x00003000 bytes) SMC`
-` 0x00004000..0x00007fff (0x00004000 bytes) Keyvault`
-` 0x00008000..0x000117ff (0x00009800 bytes) CB 1921`
-` 0x00011800..0x00016ebf (0x000056c0 bytes) CD 1921`
-` 0x00016ec0..0x0006cf2f (0x00056070 bytes) CE 1888`
-` 0x0006cf30..0x0006ffff (0x000030d0 bytes) Padding`
-` 0x00070000..0x000744bf (0x000044c0 bytes) CF 4532`
-` 0x000744c0..0x000a33ff (0x0002ef40 bytes) CG 4532`
-` 0x000a3400..0x000bffff (0x0001cc00 bytes) Padding`
-` 0x000c0000..0x000fffff (0x00040000 bytes) Xell (backup)`
-` 0x00100000..0x0013ffff (0x00040000 bytes) Xell (main)`
-` * Encoding ECC...`
-` Written into output/image_00000000.ecc`
-` ! please flash output/image_*.ecc, and setup your JTAG device to do the DMA read from 00000200`
-` `
-
-6\. **Finished\!** Your ready-to-be-flashed Image is located in the
+7. **Finished!** Your ready-to-be-flashed Image is located in the
 output-folder, called image_00000000.ecc
 
 ### Updating a hacked image
@@ -161,16 +153,17 @@ output-folder, called image_00000000.ecc
 
 #### How-to
 
-1\. **Checkout free60-tools, extract xboxupd.bin** as described above.
+1. **Checkout free60-tools, extract xboxupd.bin** as described above.
 
-2\. **Copy files** hacked-image.bin, xboxupd.bin and xell-1f.bin to
+2. **Copy files** hacked-image.bin, xboxupd.bin and xell-1f.bin to
 /tools/imgbuild/ and create a folder "output" there.
 
-3\. **Start build.py** with following command:
+3. **Start build.py** with following command:
+  ```sh
+  python build.py hacked-image.bin xboxupd.bin xell-1f.bin
+  ```
 
-`python build.py hacked-image.bin xboxupd.bin xell-1f.bin`
-
-4\. **Finished\!** Your updated hacked-image was written into the output
+4. **Finished!** Your updated hacked-image was written into the output
 directory and is ready to be flashed.
 
 #### Alternative
@@ -180,25 +173,24 @@ USB-Update feauture.
 
 #### How-to
 
-1\. **Format a compatible USB Drive** to FAT16/32.
+1. **Format a compatible USB Drive** to FAT16/32.
 
-2\. **Put 'xell-1f.bin' renamed to 'updxell.bin' into the Root** of the
+2. **Put 'xell-1f.bin' renamed to 'updxell.bin' into the Root** of the
 USB Drive.
 
-3\. **Turn on XeLL-Xbox 360** with attached USB Drive.
+3. **Turn on XeLL-Xbox 360** with attached USB Drive.
 
-4\. XeLL should recognize USB Drive and tell you **'\* found XeLL
+4. XeLL should recognize USB Drive and tell you **'\* found XeLL
 update. press power NOW if you don't want to update.'**
 
-5\. **Wait for XeLL to tell you '\*update done**' and **unplug the USB
+5. **Wait for XeLL to tell you '\*update done**' and **unplug the USB
 Drive** so it won't upgrade on the next startup.
 
-6\. **Reboot Xbox 360** and enjoy a fresh XeLL.
+6. **Reboot Xbox 360** and enjoy a fresh XeLL.
 
 ### Extracting SMC/CB/CD from a hacked image
 
 #### What you need
-
   - Latest build.py Script from GIT
   - Hacked Kernel-Image (hacked-image.bin)
   - Xbox 360 Dashboard Update Version 4532 (HD_DVD_10-2006.zip)
@@ -206,16 +198,18 @@ Drive** so it won't upgrade on the next startup.
 
 #### How-to
 
-1\. **Checkout free60-tools, extract xboxupd.bin** as described above
+1. **Checkout free60-tools, extract xboxupd.bin** as described above
 
-2\. **Copy files** hacked-image.bin and xboxupd.bin to /tools/imgbuild/
+2. **Copy files** hacked-image.bin and xboxupd.bin to /tools/imgbuild/
 and create a folder "output" there
 
-3\. **Start build.py** with following command
+3. **Start build.py** with following command
 
-`python build.py hacked-image.bin xboxupd.bin`
+```sh
+python build.py hacked-image.bin xboxupd.bin
+```
 
-4\. **Finished\!** Decrypted SMC, CB and CD data was written into the
+4. **Finished!** Decrypted SMC, CB and CD data was written into the
 output directory
 
 ### Build a full 16MB Image out of the small one created by build-script
@@ -224,7 +218,9 @@ Just use this simple command (input/backup.ecc is your nand backup, and
 output/full.ecc is a 16MB image you can
 flash)
 
-`cp input/backup.ecc output/full.ecc; dd if=output/image_00000000.ecc of=output/full.ecc conv=notrunc`
+```sh
+cp input/backup.ecc output/full.ecc; dd if=output/image_00000000.ecc of=output/full.ecc conv=notrunc
+```
 
 ### Using the 1920to1921 script
 
@@ -236,17 +232,18 @@ flash)
 
 #### How-to
 
-1\. **Rename** 1921 CB file to CB.1921 (no file extension) and 1920 CD
+1. **Rename** 1921 CB file to CB.1921 (no file extension) and 1920 CD
 to CD.1920
 
-2\. **Move** both files to /tools/imgbuild/input/
+2. **Move** both files to /tools/imgbuild/input/
 
-3\. **Start 1920to1921.py** with following
-command:
+3. **Start 1920to1921.py** with following command:
 
-`python 1920to1921.py xxxx (where xxxx is the CD Version you want to create, i.e 1921, 4558, 5770)`
+```sh
+python 1920to1921.py xxxx (where xxxx is the CD Version you want to create, i.e 1921, 4558, 5770)
+```
 
-4\. **Finished\!** Script should tell you "great, hash matches\!" and
+4. **Finished!** Script should tell you "great, hash matches!" and
 write the appropriative CD to the input folder.
 
 # Technical details
@@ -254,7 +251,7 @@ write the appropriative CD to the input folder.
 To understand this new hack, let's first look at what made the KK
 exploit possible: A fatal bug in the Hypervisor's Syscall Handler,
 introduced in the 4532 kernel update. For more details, take a look at
-<http://www.securityfocus.com/archive/1/461489/30/0/threaded> which
+http://www.securityfocus.com/archive/1/461489/30/0/threaded which
 explains the problem in great detail.
 
 The KK exploit exploited the kernel bug by modifying an unsigned shader
@@ -563,7 +560,7 @@ touched at all).
 
 ## Troubleshooting
 
-### Q: "The power supply goes red when plugging in power\!"
+### Q: "The power supply goes red when plugging in power!"
 
 A: You shorted a power pin, probably V33_SB, the one attached to the
 NAND flash. Carefully look for solder residues. Use a lot of flux and a
@@ -619,7 +616,7 @@ Post code 6C:
 
 Post code 10:
 
-  - Our code is running\! That's great, but it failed copying the
+  - Our code is running! That's great, but it failed copying the
     XeLL-payload from flash. Try booting into the alternate loader (see
     below in the "exploit loader" section), or reflash.
 
@@ -704,7 +701,7 @@ in the following way:
       - output '\>'
       - receive characters
       - after 10 consecutive 'x', stop upload
-      - output '\!'
+      - output '!'
       - run
 
 This allows some kind of recovery if you want to update the in-flash
@@ -726,5 +723,5 @@ By default, the following memory map is used:
 
 But this can be tweaked.
 
-[Category:Xbox360 System Software](Category_Xbox360_System_Software)
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Xbox 360 System Software](../Category_Xbox360_System_Software)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)

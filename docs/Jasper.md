@@ -48,4 +48,4 @@ Same as Jasper (V4) other than some minor changes.
   - Special edition consoles: Modern Warfare 2 Consoles
   - Last of the original style 360 systems
 
-[Category:Xbox360_Hardware](../Category_Xbox360_Hardware)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)

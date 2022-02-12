@@ -1,4 +1,4 @@
-## General Information
+# USB
 
 •The Xbox 360 comes with 3 standard USB 2.0 ports. (2 on the front and 1
 on the back)
@@ -6,7 +6,7 @@ on the back)
 The Xbox 360 added official support for using USB drives as a mean of
 storing Xbox 360 files on April 6, 2010. Files are stored to the flash
 drive by using files within a hidden folder (Root\\Xbox360\\) that use
-the [FATX](FATX "wikilink") file system.
+the [FATX](FATX) file system.
 
 ## Confirmed Facts
 
@@ -32,4 +32,4 @@ Mod](https://web.archive.org/web/20141105161019/http://www.llamma.com/xbox360/mo
     act as a Slave, a driver \[on the xbox\] would still need to be
     present for any usb endpoints to exist.
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)

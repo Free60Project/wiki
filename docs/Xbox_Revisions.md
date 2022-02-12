@@ -1,1 +1,1 @@
-1.  REDIRECT [Xbox 360 Motherboards](Xbox_360_Motherboards "wikilink")
+1.  REDIRECT [Xbox 360 Motherboards](Xbox_360_Motherboards)

@@ -19,9 +19,7 @@ was manufactured, what batch it was in and a lot of other factors.
 
 ## General Information
 
-![<File:Dvd>](../images/custom power connector.jpg)
-
-Close-up of the custom power connector.
+![Close-up of the custom power connector](images/custom_power_connector.jpg)
 
 - The Xbox 360 was launched with a standard dual layer DVD-ROM drive
   manufactured by Hitachi-LG.
@@ -45,9 +43,7 @@ Close-up of the custom power connector.
 
 ## Confirmed Facts
 
-![<File:Dvdmobo.jpg>](../images/Dvdmobo.jpg)
-
-Close-up of DVD-Drive Motherboard
+![Close-up of DVD-Drive Motherboard](images/Dvdmobo.jpg)
 
 - The main processor of the LG DVD-ROM drive is an Panasonic
   MN103S94FDA
@@ -74,7 +70,7 @@ Close-up of DVD-Drive Motherboard
 
 ## On-Disc format
 
-![<File:Bca.jpg>](../images/Bca.jpg)
+![BCA](images/Bca.jpg)
 
 the 2 different sections and the BCA area of the DVD-ROM are visible
 here.360 discs, like Xbox1 discs, have a lower number of sectors encoded
@@ -93,13 +89,13 @@ visible. It probably contains empty/weak sectors (reading really broken
 frames is always a bit difficult. Someone with the proper equipment
 might want to check this).
 
-![<File:Bcatest6.jpg>](../images/Bcatest6.jpg)
+![BCA Test](images/Bcatest6.jpg)
 
 Evidence that the BCA is not used by the Xbox 360. The tools which can
 be used for this are basically the same as for Xbox1, just that the data
 offset was different there. There are "scene-tools" which are of course
 so top secret that you never heard about them which can do this. They
-can be hacked for xbox360 (by just modifiying the read offset), and
+can be hacked for Xbox 360 (by just modifiying the read offset), and
 there you go.
 
 (Of course the "how to get your drive's firmware to do this" is highly
@@ -110,5 +106,6 @@ opening up the DVD-Rom drive from inside out, Inserting a large DVD,
 then lifting it up vertically to do not trigger the eject mode, and then
 inserting a Original XBOX disc will also give you access)
 
-[Category:Xbox360_Hardware](../Category_Xbox360_Hardware)
-[Category:Pages with missing images](../Category_Pages_with_missing_images)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)
+
+[Category: Pages with missing images](../Category_Pages_with_missing_images)

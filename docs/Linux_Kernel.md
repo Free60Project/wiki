@@ -4,7 +4,7 @@ There is a set of 7 patches available sent to the linuxppc mailing list
 on 08 March 2007, which have to be applied to Linux 2.6.20. If you're
 interested in kernel development and/or adding new features, please take
 a look at [Linux Kernel
-Development](Linux_Kernel_Development "wikilink").
+Development](Linux_Kernel_Development).
 
 - [(patch 1/7) xenon: add PCI Vendor ID:
   Microsoft](http://ozlabs.org/pipermail/linuxppc-dev/2007-March/032705.html)
@@ -41,7 +41,7 @@ Kernel for your Xbox are (unverified):
 1. Get the source for the Kernel from
     [kernel.org](http://www.kernel.org) and unpack it.
 
-```
+```sh
 cd /usr/src
 wget http://www.kernel.org/pub/linux/kernel/v2.6/linux-2.6.21.tar.bz2
 tar -xvjf linux-2.6.21.tar.bz2
@@ -49,7 +49,7 @@ tar -xvjf linux-2.6.21.tar.bz2
 
 2.  Download and apply the Xenon patch/patchset matching your kernel.
 
-```
+```sh
 cd linux-2.6.21/
 for patch in pci_ids.h.diff linux-2.6.21-xenon-cpu.diff linux-2.6.21-xenon.diff \
              linux-2.6.21-xenon-enet.diff linux-2.6.21-xenon-platform.diff \
@@ -85,14 +85,14 @@ are available now, but considered highly experimental.
 1. Get the source for the Linux 2.6.38.8 Kernel from kernel.org and
     unpack it.
 
-  ```
+  ```sh
   wget http://www.kernel.org/pub/linux/kernel/v2.6/linux-2.6.38.8.tar.bz2
   tar -xvjf linux-2.6.38.8.tar.bz2
   ```
 
 2.  Download and apply the experimental Xenon patch & kernel config.
 
-    ```
+    ```sh
     wget -O xenon_config http://sourceforge.net/projects/free60/files/Linux%20Kernel/xenon_config/download
     wget -O patch-2.6.38.8-xbox0.11.1.diff http://sourceforge.net/projects/free60/files/Linux%20Kernel/v2.6.38/patch-2.6.38.8-xbox0.11.1.diff/download
     cd linux-2.6.38.8/
@@ -121,7 +121,7 @@ Remember, these patches are Experimental!
     setup.
 
     Example:
-    ```
+    ```sh
     CONFIG_CMDLINE="root=nfs video=xenonfb console=tty0 nfsroot=192.168.1.1:/mnt/nfsroot/xbox rw ip=dhcp"
     ```
 2.  Make sure that the IP Plug and Play (`CONFIG_IP_PNP*` in .config) options match your ip setup method.
@@ -130,4 +130,4 @@ Remember, these patches are Experimental!
 
 [http://home.comcast.net/~ssmurf/XeLL-Bootloader-sda2-v2.6.24.3.tar.gz](https://web.archive.org/web/20141025055552/http://home.comcast.net/~ssmurf/XeLL-Bootloader-sda2-v2.6.24.3.tar.gz) \(archive.org)
 
-[Category:Xbox360_Linux](../Category_Xbox360_Linux)
+[Category: Xbox 360 Linux](../Category_Xbox360_Linux)

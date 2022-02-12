@@ -1,1 +1,1 @@
-1.  REDIRECT [NAND_Reading](NAND_Reading "wikilink")
+1.  REDIRECT [NAND_Reading](NAND_Reading)

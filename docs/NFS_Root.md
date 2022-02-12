@@ -85,7 +85,7 @@ this:
 
 Edit the NFSroot to be your IP address and adjust the path correctly.
 
-Alternative: Use [kboot.conf](kboot.conf "wikilink") to pass a custom
+Alternative: Use [kboot.conf](https://github.com/Free60Project/xell-reloaded/blob/master/kboot.conf) to pass a custom
 CMDLINE to the Server. If you want to do this you set:
 
 `CONFIG_CMDLINE_BOOL=n`

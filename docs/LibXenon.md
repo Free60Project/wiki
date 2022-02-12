@@ -40,5 +40,5 @@ or in \#libXenon on EFnet IRC, <irc://irc.efnet.fr/libXenon>
 Example code illustrating **libXenon** use can be found on the [LibXenon Examples](../LibXenon_Examples)
 page.
 
-[Category:Xbox360_Homebrew_Software](../Category_Xbox360_Homebrew_Software)
-[Category:Xbox360_Development](../Category_Xbox360_Development)
+[Category: Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)
+[Category: Xbox 360 Development](../Category_Xbox360_Development)

@@ -13,7 +13,7 @@ functionality.
 | Title            | Description                                        |
 | ---------------- | -------------------------------------------------- |
 | Xenon_Toolchain  | GCC Cross Compiler and associated utilities        |
-| LibXenon         | Library to interact with xbox360 specific Hardware |
+| LibXenon         | Library to interact with Xbox 360 specific Hardware |
 
 ## Framework libraries
 
@@ -41,4 +41,4 @@ functionality.
 | --------------- | --------------- | ----------------------- |
 | Placeholder    | Placeholder      | Description Placeholder |
 
-[Category:Xbox360_Development](../Category_Xbox360_Development)
+[Category: Xbox 360 Development](../Category_Xbox360_Development)

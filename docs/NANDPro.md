@@ -368,4 +368,4 @@ DO NOT LEAVE LPT CABLE CONNECTED WHEN CONSOLE DOES NOT HAVE AC POWER!
 //
 ```
 
-[Category:Xbox360_Homebrew_Software](Category_Xbox360_Homebrew_Software)
+[Category: Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)

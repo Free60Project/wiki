@@ -1,13 +1,10 @@
-# General Information
+# Hard Drive Disk
 
-![Hdd_unscrew.jpg](../images/Hdd_unscrew.jpg)
-The Xbox 360 harddisk with case, Downside
+![Underside of the 360 HDD](images/Hdd_unscrew.jpg "The Xbox 360 harddisk with case, Downside")
 
-![Hd_open4.jpg](../images/Hd_open4.jpg)
-The HDD inside its case
+![HDD inside the case](images/Hd_open4.jpg "The hard drive inside its case")
 
-![Hd_outL.jpg](../images/Hd_outL.jpg)
-The HDD outside of its metalcasing
+![HDD outside the case](images/Hd_outL.jpg "The hard drive outside of its metal casing")
 
 - The drive is manufactured by Samsung (Seagate Drives have been used
   in some systems. Unknown if contents are the same) and is required
@@ -21,7 +18,7 @@ The HDD outside of its metalcasing
   HD)
 - Capacity: 18.63 GB
 
-![Samsung_HDD_Front.jpg](../images/Samsung_HDD_Front.jpg)
+![Front of samsung hard drive](images/Samsung_HDD_Front.jpg "Samsung hard drive")
 
 ## Seagate details:
 
@@ -72,7 +69,7 @@ locations and the FATX format itself.
 
 ## Power connector
 
-![satapinout3.jpg](../images/satapinout3.jpg)
+![SATA Pinout](images/Satapinout3.jpg "SATA Pinout")
 
 | Pin # | Signal Name | On XBOX 360 | Signal Description                |
 | ----- | ----------- | ----------- | --------------------------------- |
@@ -96,8 +93,7 @@ This (probably) explains why normal 3.5" sata drives won't even spin up
 (missing 12V). So if you want to use a 3.5" drive you need to connect
 your own 12V.
 
-This table plus more info can be found in the electrical specification
-[here](https://web.archive.org/web/20060509104841/http://www.sata-io.org/docs/PHYii%20Spec%20Rev%201_0%20052604.pdf).
+This table plus more info can be found in the electrical specification [here](https://web.archive.org/web/20060509104841/http://www.sata-io.org/docs/PHYii%20Spec%20Rev%201_0%20052604.pdf).
 (Table 17, Page 117)
 
 ## External Links
@@ -107,4 +103,4 @@ This table plus more info can be found in the electrical specification
   - [http://www.xbox-linux.org/wiki/Xbox_Partitioning_and_Filesystem_Details]
   - [http://www.xbox-linux.org/wiki/Differences_between_Xbox_FATX_and_MS-DOS_FAT]
 
-[Category:Xbox360_Hardware](Category_Xbox360_Hardware)
+[Category: Xbox 360 Hardware](../Category_Xbox360_Hardware)
