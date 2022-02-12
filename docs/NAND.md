@@ -104,12 +104,15 @@ This also works in reverse:
 
 The Flash can be written or read using a number of methods. If you have
 the old shader hack running the easiest is using [lflash](../lflash).
-You can also wire LPT directly to the flash using this [diagram](http://img19.imageshack.us/img19/5198/wiringforxenondiagram.jpg).
-As well, you can build your own USB SPI Flasher with [this diagram](http://img35.imageshack.us/img35/8949/xbox360usbflasher.png)
-and use [these binaries](http://nds.cmamod.com/x360/PICFLASH_v3b_plus2.zip). Flash the
-PicXboot.hex to your PIC, then use the programmer from [this picflash](http://www.megaupload.com/?d=X6TBNFDC) to flash the
-picflash.hex to the PIC through USB in bootloader mode. Once the device
-is flashed, you can then install it using the drivers from NandPro or use TeamXecuters NANDX drivers.
+
+You can also wire LPT directly to the flash using this
+[diagram](http://img19.imageshack.us/img19/5198/wiringforxenondiagram.jpg).
+As well, you can build your own USB SPI Flasher with [this
+diagram](http://img35.imageshack.us/img35/8949/xbox360usbflasher.png)
+and use [these binaries](https://sourceforge.net/projects/free60/files/PicFlash/PICFLASH_v3b_plus2.zip).
+Flash the PicXboot.hex to your PIC, then use the programmer from this picflash to flash the
+picflash.hex to the PIC through USB in bootloader mode. Once the device is flashed,
+
 
 Once wired you can read/write to the chip using software such as
 [NandPro](../NandPro).
