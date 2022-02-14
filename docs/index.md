@@ -9,7 +9,7 @@ To submit changes:
 
 ## Categories
 
-[Xbox 360_Hardware](../Category_Xbox360_Hardware)
+[Xbox 360 Hardware](../Category_Xbox360_Hardware)
 [Xbox 360 System Software](../Category_Xbox360_System_Software)
 
 [Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)
