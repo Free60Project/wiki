@@ -2,7 +2,7 @@
 
 no booting details known changes between beta hardware and final: alpha
 hardware = macintosh beta = ? looks like retail, but no encryption
-second beta =\! retail
+second beta =! retail
 
 tried to dump RAM could only dump virtual memory ram is at 8000_0000
 southbridge: pci config space, mapped to VM, accessible by user apps
@@ -191,7 +191,7 @@ without security enabled:
 cd included kernel which included stuff that is encrypted in retail
 version
 
-includes hypervisor code\! it is old, but...
+includes hypervisor code! it is old, but...
 
 getspr: SC 6
 

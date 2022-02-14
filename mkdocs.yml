@@ -1,14 +1,5 @@
- 
-site_name: Free60 Wiki archive
-nav:
-    - Home: "index.md"
-    - Hardware: "Category_Xbox360_Hardware.md"
-    - System Software: "Category_Xbox360_System_Software.md"
-    - Homebrew Software: "Category_Xbox360_Homebrew_Software.md"
-    - Linux: "Category_Xbox360_Linux.md"
-    - Development: "Category_Xbox360_Development.md"
-    - Support: "Category_Support.md"
-    - ToDo: "!TODO.md"
+site_name: Free60 Wiki
+repo_url: https://github.com/Free60Project/wiki
 theme:
   name: material
   palette:
@@ -20,6 +11,10 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -27,3 +22,107 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tilde
+nav:
+    - Home:
+      - 'index.md'
+      - Attack: 'Support/Attack.md'
+      - Contribute: 'Support/Contribute.md'
+      - Help: 'Support/Help.md'
+      - Frequently Asked Questions: 'Support/FAQ.md'
+      - IRC: 'Support/IRC.md'
+      - Links: 'Support/Links.md'
+    - Hacks:
+      - Reset Glitch Hack (RGH): 'Xbox-360-Hacks/Reset_Glitch_Hack.md'
+      - SMC Hack (JTAG): 'Xbox-360-Hacks/SMC_Hack.md'
+      - King Kong Hack: 'Xbox-360-Hacks/King_Kong_Hack.md'
+    - Hardware:
+      - Accessories:
+        - 'Xbox-360-Hardware/Accessories/Chatpad.md'
+        - 'Xbox-360-Hardware/Accessories/GamePad.md'
+        - 'Xbox-360-Hardware/Accessories/Headset.md'
+        - 'Xbox-360-Hardware/Accessories/Media_Remote.md'
+        - 'Xbox-360-Hardware/Accessories/Memory_Unit.md'
+      - Console:
+        - Revisions:
+          - 'Xbox-360-Hardware/Console/Revisions/Falcon.md'
+          - 'Xbox-360-Hardware/Console/Revisions/Jasper.md'
+          - 'Xbox-360-Hardware/Console/Revisions/Trinity.md'
+        - 'Xbox-360-Hardware/Console/Case.md'
+        - 'Xbox-360-Hardware/Console/DVD_Drive.md'
+        - 'Xbox-360-Hardware/Console/Ethernet.md'
+        - 'Xbox-360-Hardware/Fusesets.md'
+        - 'Xbox-360-Hardware/Console/HDD.md'
+        - 'Xbox-360-Hardware/Console/Memory.md'
+        - 'Xbox-360-Hardware/Console/Motherboard.md'
+      - 'Xbox-360-Hardware/8051_8052.md'
+      - 'Xbox-360-Hardware/Level_Shifter.md'
+      - NAND:
+        - 'Xbox-360-Hardware/index.md'
+        - 'Xbox-360-Hacks/NAND_Bad_Blocks.md'
+        - 'Xbox-360-Hacks/NAND_Reading.md'
+    - System Software:
+      - 'Xbox-360-System-Software/index.md'
+      - File Formats:
+        - FMIM: 'Xbox-360-System-Software/Formats/FMIM.md'
+        - GPD: 'Xbox-360-System-Software/Formats/GPD.md'
+        - PEC: 'Xbox-360-System-Software/Formats/PEC.md'
+        - STFS: 'Xbox-360-System-Software/Formats/STFS.md'
+        - XDBF: 'Xbox-360-System-Software/Formats/XDBF.md'
+        - XCP: 'Xbox-360-System-Software/Formats/XCP.md'
+        - XEX: 'Xbox-360-System-Software/Formats/XEX.md'
+      - Error Codes: 'Xbox-360-System-Software/Error_Codes.md'
+      - System Software: 'Xbox-360-System-Software/360_System_Software.md'
+    - Homebrew:
+      - 'Xbox-360-Homebrew/index.md'
+    - Linux:
+      - LFlash: 'Xbox-360-Linux/Lflash.md'
+      - Linux Distros:
+        - 'Xbox-360-Linux/Distros/index.md'
+        - LiveCD: 'Xbox-360-Linux/Distros/LiveCD.md'
+        - Debian:
+          - 'Etch': 'Xbox-360-Linux/Distros/Debian/etch.md'
+          - 'Lenny': 'Xbox-360-Linux/Distros/Debian/lenny.md'
+          - 'Squeeze': 'Xbox-360-Linux/Distros/Debian/squeeze.md'
+        - Ubuntu:
+          - 'Xbox-360-Linux/Distros/Ubuntu/index.md'
+          - '7.10': 'Xbox-360-Linux/Distros/Ubuntu/7_10.md'
+          - '11.10': 'Xbox-360-Linux/Distros/Ubuntu/11_10.md'
+      - Linux Kernel: 'Xbox-360-Linux/Linux_Kernel.md'
+      - Linux Kernel Development: 'Xbox-360-Linux/Linux_Kernel_Development.md'
+      - Xenos Framebuffer: 'Xbox-360-Development/Xenos_Framebuffer.md'
+    - Development:
+      - Cross-Compiler: 'Xbox-360-Development/Cross_Compiler.md'
+      - Dumpana: 'Xbox-360-Development/Dumpana.md'
+      - Finding the right timing: 'Xbox-360-Development/Finding_the_right_timing.md'
+      - Free60 Git Repo: 'Xbox-360-Development/Free60_Git_Repository.md'
+      - LibHomebrew: 'Xbox-360-Development/LibHomebrew.md'
+      - LibXenon: 'Xbox-360-Development/LibXenon.md'
+      - Xenos Framebuffer: 'Xbox-360-Development/Xenos_Framebuffer.md'
+    - ToDo: '!TODO.md'
+plugins:
+  search: {}
+  redirects:
+    redirect_maps:
+      # Original Wiki -> MkDocs Wiki
+      'wiki/Home_Page.md': 'index.md'
+      'wiki/Secure_Transacted_File_System.md': 'Xbox-360-System-Software/Formats/STFS.md'
+      'wiki/XContent.md': 'Xbox-360-System-Software/Formats/STFS.md'
+      'wiki/Xbox-Software.md': 'Xbox-360-System-Software/360_System_Software.md'
+      'wiki/XTAF.md': 'Xbox-360-System-Software/FATX.md'
+      'wiki/XeLL.md': 'Xbox-360-Homebrew/Tools/XeLL.md'
+      'wiki/XeLLous.md': 'Xbox-360-Homebrew/Tools/XeLL.md'
+      'wiki/XeLl_Reloaded.md': 'Xbox-360-Homebrew/Tools/XeLL.md'
+      'wiki/Xenos.md': 'Xbox-360-Hardware/Console/Xenos_(GPU).md'
+      'wiki/SMS_Plus.md': 'Xbox-360-Homebrew/Emulators/Sega_Master_System_Plus.md'
+      # MkDocs Wiki Changes
+      'STFS.md': 'Xbox-360-System-Software/Formats/STFS.md'
+      'FATX.md': 'Xbox-360-System-Software/FATX.md'
+      'Xbox-System-Software.md': 'Xbox-360-System-Software/360_System_Software.md'
+      'XeLL.md': 'Xbox-360-Homebrew/Tools/XeLL.md'
+      'XeLLous.md': 'Xbox-360-Homebrew/Tools/XeLL.md'
+      'XeLL_Reloaded.md': 'Xbox-360-Homebrew/Tools/XeLL.md'
+      'Xenos_(GPU).md': 'Xbox-360-Hardware/Console/Xenos_(GPU).md'
+      # Additional
+      'Secure_Transacted_File_System.md': 'Xbox-360-System-Software/Formats/STFS.md'
+      'Xbox_OS.md': 'Xbox-360-System-Software/360_System_Software.md'
+      'Xenos.md': 'Xbox-360-Hardware/Console/Xenos_(GPU).md'

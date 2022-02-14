@@ -1,5 +1,5 @@
 **The following has been written on April 1st, 2010. Happy April fool's
-day\!**
+day!**
 
 In a leaked private e-mail to current Free60 project maintainer Georg
 Lukas, Microsoft Interactive Entertainment Business has stated to

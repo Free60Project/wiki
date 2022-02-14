@@ -1,14 +1,14 @@
 # With opening the console
 
 When you open your Xbox Console you can determine the Revision
-precisely. First you have to locate the used Video Encoder Chip\!
+precisely. First you have to locate the used Video Encoder Chip!
 
 ## Determine Video-Chip
 
 The VideoChip is located in the marked area:
 ![Vchip location](images/Vchip-location.jpg)
 
-Find out which chip your xbox has\!
+Find out which chip your xbox has!
 
 **CONEXTANT**
 ![conextant video](images/Conextant_video.jpg)

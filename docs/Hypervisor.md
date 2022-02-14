@@ -88,7 +88,7 @@ interrupt is not recoverable.
 
 ## Cryptography
 
-Retail 17511 - These offsets are subject to change\!
+Retail 17511 - These offsets are subject to change!
 
 | Cryptography Functions |
 | ---------------------- |

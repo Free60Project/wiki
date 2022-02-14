@@ -1,6 +1,7 @@
 # Free60 wiki - archive
 
-[![GitHub Workflow - Build](https://img.shields.io/github/workflow/status/Free60Project/wiki/build?label=build)](https://github.com/Free60Project/wiki/actions?query=workflow%3Abuild)
+[![Build and Deploy](https://github.com/Free60Project/wiki/actions/workflows/build.yml/badge.svg)](https://github.com/Free60Project/wiki/actions/workflows/build.yml)
+[![pages-build-deployment](https://github.com/Free60Project/wiki/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Free60Project/wiki/actions/workflows/pages/pages-build-deployment)
 
 Free60 MediaWiki archive.
 

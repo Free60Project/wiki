@@ -141,7 +141,7 @@ wait for the 3 red lights to start blinking, aka Red Ring Of Death
 (RROD). Press enter once more to start the timing process. Let it run
 for a little over an hour (around 1 hour 10 minutes seems to be normal)
 and the correct hash value will hopefully be discovered. If successful
-the last line of text should state **'BOOT\!**'.
+the last line of text should state **'BOOT!**'.
 
   - [Xbox 360 Downgrader Hardware](Xbox_360_Downgrader_Hardware)
 
@@ -263,6 +263,6 @@ to fix the memcmp-function in CB.
 
 ## References
 
-  - [Original Wiki page - Thx ivc\!](http://beta.ivc.no/wiki/index.php/Xbox_360_Timing_Attack)
+  - [Original Wiki page - Thx ivc!](http://beta.ivc.no/wiki/index.php/Xbox_360_Timing_Attack)
   - [Timing Attack](https://web.archive.org/web/20090801082642/http://www.xboxhacker.net/index.php?topic=8555.0)
   - [Timing Attach - Thanks and stupid questions](https://web.archive.org/web/20090529065610/http://www.xboxhacker.net/index.php?topic=8556.0)
