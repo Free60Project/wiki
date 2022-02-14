@@ -118,8 +118,7 @@ patched 1888 base kernel image.
 
 *Attack the HMAC-hash value using the timing hardware and DGTool.*
 
-1.  Build the [downgrader
-    hardware](Xbox_360_Downgrader_Hardware) and connect a
+1.  Build the [downgrader hardware](Xbox_360_Downgrader_Hardware) and connect a
     serial port cable and power/ground (3.3v or 5v) from the 360 or an
     external power supply (USB) to the downgrader hardware.
 2.  Connect the USB cable to the Infectus chip. The Infectus is required
@@ -251,7 +250,7 @@ sections. No other fuses than the obligatory fuseline 7 (to match the
 LockDownValue in CE/FE) were blown.
 
 The latest revisions of the Xbox 360, the
-[Falcon](Xbox_360_Revisions), has a newer basekernel and CB
+[Falcon](Xbox_360_Revisions/Falcon), has a newer basekernel and CB
 section, 1921, and this version is patched against the
 memcmp-vulnerability
 [8](https://web.archive.org/web/20090523022729/http://www.xboxhacker.net/index.php?topic=8555.msg58882).

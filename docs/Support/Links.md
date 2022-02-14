@@ -25,7 +25,7 @@
 
   - [More 360 pictures](http://flickr.com/photos/consti/sets/1323780/) (somewhere in .eu?)
   - [High resolution motherboard pic, with heatsinks](http://www.informit.com/content/images/art_fogie_xbox360/elementLinks/fogie_fig09.jpg) (from informit.com article)
-  - [Lot of pictures](http://theconsolewars.blogspot.com/2005/08/smartxx-xbox-360-dissection-mutilation.html), [archive.org mirror](https://web.archive.org/web/20060321055032/http://theconsolewars.blogspot.com/2005/08/smartxx-xbox-360-dissection-mutilation.html)
+  - [Lot of pictures](http://theconsolewars.blogspot.com/2005/08/smartxx-dissection-mutilation.html), [archive.org mirror](https://web.archive.org/web/20060321055032/http://theconsolewars.blogspot.com/2005/08/smartxx-xbox-360-dissection-mutilation.html)
 
 ## Disassembly
 

@@ -15,4 +15,4 @@
     v2: add big block support
     v1: initial version
 
-[Category: Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)
+[Category: Homebrew Software](/Homebrew)
