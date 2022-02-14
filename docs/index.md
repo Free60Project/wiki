@@ -1,4 +1,4 @@
-# Free60.org Wiki archive
+# Free60.org Wiki
 
 Welcome to the archive of Free60.org Mediawiki.
 
