@@ -1,14 +1,5 @@
- 
-site_name: Free60 Wiki archive
-nav:
-    - Home: "index.md"
-    - Hardware: "Category_Xbox360_Hardware.md"
-    - System Software: "Category_Xbox360_System_Software.md"
-    - Homebrew Software: "Category_Xbox360_Homebrew_Software.md"
-    - Linux: "Category_Xbox360_Linux.md"
-    - Development: "Category_Xbox360_Development.md"
-    - Support: "Category_Support.md"
-    - ToDo: "!TODO.md"
+site_name: Free60 Wiki
+repo_url: https://github.com/Free60Project/wiki
 theme:
   name: material
   palette:
@@ -20,6 +11,10 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -27,3 +22,135 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tilde
+nav:
+    - Home:
+      - 'index.md'
+      - Attack: 'Support/Attack.md'
+      - Contribute: 'Support/Contribute.md'
+      - Help: 'Support/Help.md'
+      - Frequently Asked Questions: 'Support/FAQ.md'
+      - IRC: 'Support/IRC.md'
+      - Links: 'Support/Links.md'
+    - Hacks:
+      - Reset Glitch Hack (RGH): 'Hacks/Reset_Glitch_Hack.md'
+      - SMC Hack (JTAG): 'Hacks/SMC_Hack.md'
+      - King Kong Hack: 'Hacks/King_Kong_Hack.md'
+    - Hardware:
+      - Accessories:
+        - Chatpad: 'Hardware/Accessories/Chatpad.md'
+        - GamePad (Controller): 'Hardware/Accessories/GamePad.md'
+        - Headset: 'Hardware/Accessories/Headset.md'
+        - Media Remote: 'Hardware/Accessories/Media_Remote.md'
+        - Memory Unit: 'Hardware/Accessories/Memory_Unit.md'
+      - Console:
+        - Revisions:
+          - 'Hardware/Console/Revisions/index.md'
+          - Identification: 'Hardware/Console/Revisions/Identification.md'
+          - Falcon / Opus: 'Hardware/Console/Revisions/Falcon.md'
+          - Jasper: 'Hardware/Console/Revisions/Jasper.md'
+          - Trinity / Valhalla: 'Hardware/Console/Revisions/Trinity.md'
+        - Case: 'Hardware/Console/Case.md'
+        - DVD Drive: 'Hardware/Console/DVD_Drive.md'
+        - Ethernet: 'Hardware/Console/Ethernet.md'
+        - Fusesets: 'Hardware/Fusesets.md'
+        - HDD: 'Hardware/Console/HDD.md'
+        - Memory: 'Hardware/Console/Memory.md'
+        - Motherboard: 'Hardware/Console/Motherboard.md'
+        - RF Module: 'Hardware/Console/RF_Module.md'
+      - 'Hardware/8051_8052.md'
+      - Level Shifter: 'Hardware/Level_Shifter.md'
+      - NAND:
+        - 'Hardware/index.md'
+        - Bad Blocks: 'Hacks/NAND_Bad_Blocks.md'
+        - Reading: 'Hacks/NAND_Reading.md'
+      - Pre-release Differences: 'Pre-release_differences.md'
+    - System Software:
+      - File Formats:
+        - FMIM: 'System-Software/Formats/FMIM.md'
+        - GPD: 'System-Software/Formats/GPD.md'
+        - PEC: 'System-Software/Formats/PEC.md'
+        - SPA: 'System-Software/Formats/SPA.md'
+        - STFS: 'System-Software/Formats/STFS.md'
+        - XDBF: 'System-Software/Formats/XDBF.md'
+        - XCP: 'System-Software/Formats/XCP.md'
+        - XEX: 'System-Software/Formats/XEX.md'
+      - File Systems:
+        - FATX: 'System-Software/Systems/FATX.md'
+        - GDFX: 'System-Software/Systems/GDFX.md'
+      - Error Codes: 'System-Software/Error_Codes.md'
+      - Kernel: 'System-Software/Kernel.md'
+      - Pre-release Differences: 'Pre-release_differences.md'
+      - System Software: 'System-Software/360_System_Software.md'
+      - Shadowboot: 'System-Software/Shadowboot.md'
+      - XConfig: 'System-Software/XConfig.md'
+      - XDK Kernel: 'System-Software/XDK_Kernel.md'
+    - Homebrew:
+      - 'Homebrew/index.md'
+    - Linux:
+      - LFlash: 'Linux/Lflash.md'
+      - Linux Distros:
+        - 'Linux/Distros/index.md'
+        - LiveCD: 'Linux/Distros/LiveCD.md'
+        - Debian:
+          - 'Etch': 'Linux/Distros/Debian/etch.md'
+          - 'Lenny': 'Linux/Distros/Debian/lenny.md'
+          - 'Squeeze': 'Linux/Distros/Debian/squeeze.md'
+        - Ubuntu:
+          - 'Linux/Distros/Ubuntu/index.md'
+          - '7.10': 'Linux/Distros/Ubuntu/7_10.md'
+          - '11.10': 'Linux/Distros/Ubuntu/11_10.md'
+      - Linux Kernel: 'Linux/Linux_Kernel.md'
+      - Linux Kernel Development: 'Linux/Linux_Kernel_Development.md'
+      - Xenos Framebuffer: 'Development/Xenos_Framebuffer.md'
+    - Development:
+      - Cross-Compiler: 'Development/Cross_Compiler.md'
+      - Dumpana: 'Development/Dumpana.md'
+      - Finding the right timing: 'Development/Finding_the_right_timing.md'
+      - Free60 Git Repo: 'Development/Free60_Git_Repository.md'
+      - LibHomebrew: 'Development/LibHomebrew.md'
+      - LibXenon:
+        - 'Development/LibXenon/index.md'
+        - Examples: 'Development/LibXenon/Examples.md'
+        - Xenon Toolchain: 'Development/Xenon_Toolchain.md'
+      - Xenos Framebuffer: 'Development/Xenos_Framebuffer.md'
+    - ToDo: '!TODO.md'
+plugins:
+  search: {}
+  redirects:
+    redirect_maps:
+      # Original Wiki -> MkDocs Wiki
+      'wiki/Home_Page.md': 'index.md'
+      'wiki/Reading_Out_nand.md': 'Hacks/NAND_Reading.md'
+      'wiki/Secure_Transacted_File_System.md': 'System-Software/Formats/STFS.md'
+      'wiki/SMS_Plus.md': 'Homebrew/Emulators/Sega_Master_System_Plus.md'
+      'wiki/Toolchain.md': 'Development/Xenon_Toolchain.md'
+      'wiki/XContent.md': 'System-Software/Formats/STFS.md'
+      'wiki/XTAF.md': 'System-Software/Systems/FATX.md'
+      'wiki/XeLL.md': 'Homebrew/Tools/XeLL.md'
+      'wiki/XeLLous.md': 'Homebrew/Tools/XeLL.md'
+      'wiki/XeLl_Reloaded.md': 'Homebrew/Tools/XeLL.md'
+      'wiki/Xenos.md': 'Hardware/Console/Xenos_(GPU).md'
+      'wiki/Xbox_Revisions.md': 'Hardware/Console/Revisions/index.md'
+      'wiki/Opus.md': 'Hardware/Console/Revisions/Falcon.md'
+      'wiki/Valhalla.md': 'Hardware/Console/Revisions/Trinity.md'
+      'wiki/Xbox-Software.md': 'System-Software/360_System_Software.md'
+      'wiki/SFCX.md': 'Hardware/Console/Southbridge.md'
+      # MkDocs Wiki Changes
+      'STFS.md': 'System-Software/Formats/STFS.md'
+      'FATX.md': 'System-Software/Systems/FATX.md'
+      'Xbox-System-Software.md': 'System-Software/360_System_Software.md'
+      'XeLL.md': 'Homebrew/Tools/XeLL.md'
+      'XeLLous.md': 'Homebrew/Tools/XeLL.md'
+      'XeLL_Reloaded.md': 'Homebrew/Tools/XeLL.md'
+      'Xenos_(GPU).md': 'Hardware/Console/Xenos_(GPU).md'
+      'SFCX.md': 'Hardware/Console/Southbridge.md'
+      # Additional
+      'Development/Toolchain.md': 'Development/Xenon_Toolchain.md'
+      'System-Software/Formats/Secure_Transacted_File_System.md': 'System-Software/Formats/STFS.md'
+      'Secure_Transacted_File_System.md': 'System-Software/Formats/STFS.md'
+      'Xbox_OS.md': 'System-Software/360_System_Software.md'
+      'Xenos.md': 'Hardware/Console/Xenos_(GPU).md'
+      'Hardware/Revisions/Opus.md': 'Hardware/Console/Revisions/Falcon.md'
+      'Hardware/Revisions/Valhalla.md': 'Hardware/Console/Revisions/Trinity.md'
+      'Toolchain.md': 'Development/Xenon_Toolchain.md'
+      'Hardware/Console/SFCX.md': 'Hardware/Console/Southbridge.md'

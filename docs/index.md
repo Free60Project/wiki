@@ -1,4 +1,4 @@
-# Free60.org Wiki archive
+# Free60.org Wiki
 
 Welcome to the archive of Free60.org Mediawiki.
 
@@ -9,21 +9,21 @@ To submit changes:
 
 ## Categories
 
-[Xbox 360_Hardware](../Category_Xbox360_Hardware)
-[Xbox 360 System Software](../Category_Xbox360_System_Software)
+[Xbox 360 Hardware](/Hardware)
+[Xbox 360 System Software](/System_Software)
 
-[Xbox 360 Homebrew Software](../Category_Xbox360_Homebrew_Software)
-[Xbox 360 Linux](../Category_Xbox360_Linux)
-[Xbox 360 Development](../Category_Xbox360_Development)
+[Xbox 360 Homebrew Software](/Homebrew)
+[Xbox 360 Linux](/Linux)
+[Xbox 360 Development](/Development)
 
-[Support](../Category_Support)
+[Support](/Support)
 
-[Pages with missing images](../Category_Pages_with_missing_images)
-[Template documentation](../Category_Template_documentation)
+[Pages with missing images](/Pages_with_missing_images)
+[Template documentation](/Template_documentation)
 
 ## To-do
 
-[TODO](!TODO)
+[TODO](/!TODO)
 
 ## Index
 
@@ -293,7 +293,7 @@ To submit changes:
 
 [XTAF](XTAF)
 
-[Xbox 360 Motherboards](Xbox_360_Motherboards)
+[Xbox 360 Motherboards](Motherboards)
 
 [Xbox Revision Identification](Xbox_Revision_Identification)
 

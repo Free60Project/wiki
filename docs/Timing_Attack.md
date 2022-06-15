@@ -118,8 +118,7 @@ patched 1888 base kernel image.
 
 *Attack the HMAC-hash value using the timing hardware and DGTool.*
 
-1.  Build the [downgrader
-    hardware](Xbox_360_Downgrader_Hardware) and connect a
+1.  Build the [downgrader hardware](Xbox_360_Downgrader_Hardware) and connect a
     serial port cable and power/ground (3.3v or 5v) from the 360 or an
     external power supply (USB) to the downgrader hardware.
 2.  Connect the USB cable to the Infectus chip. The Infectus is required
@@ -141,7 +140,7 @@ wait for the 3 red lights to start blinking, aka Red Ring Of Death
 (RROD). Press enter once more to start the timing process. Let it run
 for a little over an hour (around 1 hour 10 minutes seems to be normal)
 and the correct hash value will hopefully be discovered. If successful
-the last line of text should state **'BOOT\!**'.
+the last line of text should state **'BOOT!**'.
 
   - [Xbox 360 Downgrader Hardware](Xbox_360_Downgrader_Hardware)
 
@@ -251,7 +250,7 @@ sections. No other fuses than the obligatory fuseline 7 (to match the
 LockDownValue in CE/FE) were blown.
 
 The latest revisions of the Xbox 360, the
-[Falcon](Xbox_360_Revisions), has a newer basekernel and CB
+[Falcon](Xbox_360_Revisions/Falcon), has a newer basekernel and CB
 section, 1921, and this version is patched against the
 memcmp-vulnerability
 [8](https://web.archive.org/web/20090523022729/http://www.xboxhacker.net/index.php?topic=8555.msg58882).
@@ -263,6 +262,6 @@ to fix the memcmp-function in CB.
 
 ## References
 
-  - [Original Wiki page - Thx ivc\!](http://beta.ivc.no/wiki/index.php/Xbox_360_Timing_Attack)
+  - [Original Wiki page - Thx ivc!](http://beta.ivc.no/wiki/index.php/Xbox_360_Timing_Attack)
   - [Timing Attack](https://web.archive.org/web/20090801082642/http://www.xboxhacker.net/index.php?topic=8555.0)
   - [Timing Attach - Thanks and stupid questions](https://web.archive.org/web/20090529065610/http://www.xboxhacker.net/index.php?topic=8556.0)
