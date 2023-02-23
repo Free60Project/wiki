@@ -495,21 +495,6 @@
     Version                      unsigned long                4            0
     AlarmTime                 union_LARGE_INTEGER             8            4
     PreviousFlashVersion         unsigned long                4            12
-
-
-
-    union_ULARGE_INTEGER
-    --------------------
-    HighPart                     unsigned long                4           0
-    LowPart                      unsigned long                4           4
-    u                         unnamed_ULARGE_INTEGER          8           0
-    QuadPart                     unsigned int                 8           0
-
-
-    unnamed_ULARGE_INTEGER
-    ----------------------
-    HighPart                     unsigned long                4           0
-    LowPart                      unsigned long                4           0
     -----------------------------------------------------------------------------------------------------------
 
 
