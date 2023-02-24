@@ -320,10 +320,10 @@
     ParentalControlHintAnswer       char[]                    32          381
     ParentalControlOverride         char[]                    32          413
     MusicPlaybackMode            unsigned long                4           445
-    MusicVolume                    double                     4           449
-    MusicFlags                   unsigned long                4           453
-    ArcadeFlags                  unsigned long                4           457
-    ParentalControlVersion             unsigned long          4           461
+    MusicVolume                     float                     4           449
+    MusicFlags                          unsigned long         4           453
+    ArcadeFlags                         unsigned long         4           457
+    ParentalControlVersion              unsigned long         4           461
     ParentalControlTv                   unsigned long         4           465
     ParentalControlTvRating             unsigned long         4           469
     ParentalControlExplicitVideo        unsigned long         4           473
@@ -332,9 +332,9 @@
     ParentalControlUnratedVideoRating   unsigned long         4           485
     VideoOutputBlackLevels              unsigned long         4           489
     VideoPlayerDisplayMode              unsigned char         1           493
-    AlternativeVideoTimingIDs    unsigned long                4           494
-    VideoDriverOptions           unsigned long                4           498
-    MusicUIFlags                 unsigned long                4           502
+    AlternativeVideoTimingIDs           unsigned long         4           494
+    VideoDriverOptions                  unsigned long         4           498
+    MusicUIFlags                        unsigned long         4           502
     VideoMediaSourceType             char                     1           506
     MusicMediaSourceType             char                     1           507
     PhotoMediaSourceType             char                     1           508
@@ -360,7 +360,7 @@
     Field Name                       Type                Field Size     Offset    Bit Position       Bit Length
     -----------------------------------------------------------------------------------------------------------
     Version                      unsigned long                4           0
-    Data                         unsigned long                492         4
+    Data                        unsigned char[]               492         4
     -----------------------------------------------------------------------------------------------------------
 
 
@@ -426,13 +426,13 @@
     WirelessSettings            unsigned char[]               256         12
     CameraSettings               unsigned long                4           268
     CameraSettingsReserved      unsigned char[]               28          272
-    PlayTimerData            struct_XCONFIG_PLAYTIMERDATA     20          300
+    PlayTimerData         struct_XCONFIG_PLAY_TIMER_DATA      20          300
     MediaDisableAutoLaunch       signed short                 2           320
     KeyboardLayout               signed short                 2           322
 
 
 
-    PLAY_TIME_DATA
+    PLAY_TIMER_DATA
     -------------
     uliResetDate              union_ULARGE_INTEGER            8           0
     dwPlayTimerFrequency         unsigned long                4           8
@@ -495,21 +495,6 @@
     Version                      unsigned long                4            0
     AlarmTime                 union_LARGE_INTEGER             8            4
     PreviousFlashVersion         unsigned long                4            12
-
-
-
-    union_ULARGE_INTEGER
-    --------------------
-    HighPart                     unsigned long                4           0
-    LowPart                      unsigned long                4           4
-    u                         unnamed_ULARGE_INTEGER          8           0
-    QuadPart                     unsigned int                 8           0
-
-
-    unnamed_ULARGE_INTEGER
-    ----------------------
-    HighPart                     unsigned long                4           0
-    LowPart                      unsigned long                4           0
     -----------------------------------------------------------------------------------------------------------
 
 
