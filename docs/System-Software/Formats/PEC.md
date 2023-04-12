@@ -35,4 +35,4 @@ From 0x1000 the rest of the file is the standard block portion of
 table 0 at 0x1000/0x2000. The PEC file always has 2 hash tables (type 1
 package).
 
-[System Software](/System_Software)
+[System Software](/System-Software)
