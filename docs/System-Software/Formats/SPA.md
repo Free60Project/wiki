@@ -248,4 +248,4 @@ string.
 | 2      | 2                 | UInt16 | String Length |
 | 4      | **String Length** | String | String        |
 
-[System Software](/System_Software)
+[System Software](/System-Software)
