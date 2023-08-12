@@ -140,7 +140,7 @@ If the **Metadata Version** field is set to 2, the format is slightly changed.
 | 0x0379 | 0x24                                 | [Volume Descriptor](#Volume_Descriptor) | Volume Descriptor                                 |
 | 0x039D | 0x4                                  | signed int                              | Data File Count                                   |
 | 0x03A1 | 0x8                                  | signed long                             | Data File Combined Size                           |
-| 0x0389 | 0x4                                  | int (STFS = 0, SVOD = 1)                | Descriptor type                                   |
+| 0x03A9 | 0x4                                  | int (STFS = 0, SVOD = 1)                | Descriptor type                                   |
 | 0x03AD | 0x4                                  | int                                     | Reserved                                          |
 | 0x03B1 | 0x4C                                 | byte\[\]                                | Padding                                           |
 | 0x03FD | 0x14                                 | bytes                                   | Device ID                                         |
@@ -161,7 +161,7 @@ If the **Metadata Version** field is set to 2, the format is slightly changed.
 | 0x03B1 | 0x10                                 | byte\[\]     | Series ID                       |
 | 0x03C1 | 0x10                                 | byte\[\]     | Season ID                       |
 | 0x03D1 | 0x2                                  | signed short | Season Number                   |
-| 0x03D5 | 0x2                                  | signed short | Episode Number                  |
+| 0x03D3 | 0x2                                  | signed short | Episode Number                  |
 | 0x03D5 | 0x28                                 | byte\[\]     | Padding                         |
 | 0x171A | 0x3D00 (thumbnail size)              | image        | Thumbnail Image                 |
 | 0x541A | 0x300 (each 0x80 = different locale) | image        | Additional Display Names        |
