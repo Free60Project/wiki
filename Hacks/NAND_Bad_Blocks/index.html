@@ -1,0 +1,2783 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../Hardware/">
+      
+      
+        <link rel="next" href="../NAND_Reading/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+    
+    
+      
+        <title>Bad Blocks - Free60 Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#what-is-a-block" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Free60 Wiki" class="md-header__button md-logo" aria-label="Free60 Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Free60 Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Bad Blocks
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Free60Project/wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Reset_Glitch_Hack/" class="md-tabs__link">
+        Hacks
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Hardware/Accessories/Chatpad/" class="md-tabs__link md-tabs__link--active">
+        Hardware
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../System-Software/Formats/FMIM/" class="md-tabs__link">
+        System Software
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Homebrew/" class="md-tabs__link">
+        Homebrew
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Linux/Lflash/" class="md-tabs__link">
+        Linux
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Development/Cross_Compiler/" class="md-tabs__link">
+        Development
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../%21TODO/" class="md-tabs__link">
+      ToDo
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Free60 Wiki" class="md-nav__button md-logo" aria-label="Free60 Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Free60 Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Free60Project/wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../..">Home</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Home" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Support/Attack/" class="md-nav__link">
+        Attack
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Support/Contribute/" class="md-nav__link">
+        Contribute
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Support/Help/" class="md-nav__link">
+        Help
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Support/FAQ/" class="md-nav__link">
+        Frequently Asked Questions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Support/IRC/" class="md-nav__link">
+        IRC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Support/Links/" class="md-nav__link">
+        Links
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
+          Hacks
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Hacks" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Hacks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Reset_Glitch_Hack/" class="md-nav__link">
+        Reset Glitch Hack (RGH)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SMC_Hack/" class="md-nav__link">
+        SMC Hack (JTAG)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../King_Kong_Hack/" class="md-nav__link">
+        King Kong Hack
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="true">
+          Hardware
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Hardware" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Hardware
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_1" tabindex="0" aria-expanded="false">
+          Accessories
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Accessories" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Accessories
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Accessories/Chatpad/" class="md-nav__link">
+        Chatpad
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Accessories/GamePad/" class="md-nav__link">
+        GamePad (Controller)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Accessories/Headset/" class="md-nav__link">
+        Headset
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Accessories/Media_Remote/" class="md-nav__link">
+        Media Remote
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Accessories/Memory_Unit/" class="md-nav__link">
+        Memory Unit
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" tabindex="0" aria-expanded="false">
+          Console
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Console" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Console
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_2_1" type="checkbox" id="__nav_3_2_1" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Hardware/Console/Revisions/">Revisions</a>
+          
+            <label for="__nav_3_2_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Revisions" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Revisions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/Revisions/Identification/" class="md-nav__link">
+        Identification
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/Revisions/Falcon/" class="md-nav__link">
+        Falcon / Opus
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/Revisions/Jasper/" class="md-nav__link">
+        Jasper
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/Revisions/Trinity/" class="md-nav__link">
+        Trinity / Valhalla
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/Case/" class="md-nav__link">
+        Case
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/DVD_Drive/" class="md-nav__link">
+        DVD Drive
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/Ethernet/" class="md-nav__link">
+        Ethernet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Fusesets/" class="md-nav__link">
+        Fusesets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/HDD/" class="md-nav__link">
+        HDD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/Memory/" class="md-nav__link">
+        Memory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/Motherboard/" class="md-nav__link">
+        Motherboard
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/RF_Module/" class="md-nav__link">
+        RF Module
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/8051_8052/" class="md-nav__link">
+        8051 / 8052
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Level_Shifter/" class="md-nav__link">
+        Level Shifter
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" checked>
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Hardware/">NAND</a>
+          
+            <label for="__nav_3_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="NAND" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          NAND
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Bad Blocks
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Bad Blocks
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-block" class="md-nav__link">
+    What is a BLOCK?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-bad-block" class="md-nav__link">
+    What is a BAD BLOCK?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-determine-bad-blocks" class="md-nav__link">
+    How to determine BAD BLOCKS?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-happens-when-a-bad-block-develops" class="md-nav__link">
+    What happens when a BAD BLOCK develops?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-the-reserve-block-method-work" class="md-nav__link">
+    How does the Reserve Block Method work?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xbox-16mb-nand-block-management" class="md-nav__link">
+    XBOX 16MB NAND BLOCK Management
+  </a>
+  
+    <nav class="md-nav" aria-label="XBOX 16MB NAND BLOCK Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-i-read-my-nand-i-have-badblocks-where-is-that-data-stored" class="md-nav__link">
+    When I read my nand I have Badblocks where is that data stored?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-would-i-remap-the-badblocks-in-the-diagram-with-nandpro" class="md-nav__link">
+    How would I remap the BadBlocks in the diagram with nandpro?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-using-xellous-to-flash-do-i-need-to-remap-badblocks" class="md-nav__link">
+    If using XeLLous to flash do I need to remap Badblocks?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-have-a-badblock-between-blocks-0x000-and-0x050-and-cant-boot-into-xell-free60-version" class="md-nav__link">
+    I have a Badblock between blocks 0x000 and 0x050, and can’t boot into Xell (free60 version).
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-have-a-badblock-between-blocks-0x000-and-0x050-and-cant-boot-into-xell-rgh-team-xecuter-dgx-version" class="md-nav__link">
+    I have a Badblock between blocks 0x000 and 0x050, and can’t boot into Xell (RGH / Team-Xecuter DGX version).
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xbox-256512mb-nand-block-management" class="md-nav__link">
+    XBOX 256/512MB NAND BLOCK Management
+  </a>
+  
+    <nav class="md-nav" aria-label="XBOX 256/512MB NAND BLOCK Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-256512-mb-memory-map-and-nandpros-translation" class="md-nav__link">
+    Understanding 256/512 MB memory map, and Nandpro’s translation:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-i-read-my-nand-i-have-badblocks-where-is-that-data-stored_1" class="md-nav__link">
+    When I read my nand I have Badblocks where is that data stored?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-would-i-remap-the-badblocks-in-the-diagram-with-nandpro_1" class="md-nav__link">
+    How would I remap the BadBlocks in the diagram with nandpro?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-using-xellous-to-flash-do-i-need-to-remap-badblocks_1" class="md-nav__link">
+    If using XeLLous to flash do I need to remap Badblocks?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-have-a-badblock-between-blocks-0x000-and-0x050-and-cant-boot-into-xell-free60-version_1" class="md-nav__link">
+    I have a Badblock between blocks 0x000 and 0x050, and can’t boot into Xell (free60 version).
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-have-a-badblock-between-blocks-0x000-and-0x050-and-cant-boot-into-xell-rgh-team-xecuter-dgx-version_1" class="md-nav__link">
+    I have a Badblock between blocks 0x000 and 0x050, and can’t boot into Xell (RGH / Team-Xecuter DGX version).
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NAND_Reading/" class="md-nav__link">
+        Reading
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pre-release_differences/" class="md-nav__link">
+        Pre-release Differences
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="false">
+          System Software
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="System Software" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          System Software
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_1" tabindex="0" aria-expanded="false">
+          File Formats
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="File Formats" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          File Formats
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Formats/FMIM/" class="md-nav__link">
+        FMIM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Formats/GPD/" class="md-nav__link">
+        GPD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Formats/PEC/" class="md-nav__link">
+        PEC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Formats/SPA/" class="md-nav__link">
+        SPA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Formats/STFS/" class="md-nav__link">
+        STFS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Formats/XDBF/" class="md-nav__link">
+        XDBF
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Formats/XCP/" class="md-nav__link">
+        XCP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Formats/XEX/" class="md-nav__link">
+        XEX
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_2" tabindex="0" aria-expanded="false">
+          File Systems
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="File Systems" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          File Systems
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Systems/FATX/" class="md-nav__link">
+        FATX
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Systems/GDFX/" class="md-nav__link">
+        GDFX
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Error_Codes/" class="md-nav__link">
+        Error Codes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Kernel/" class="md-nav__link">
+        Kernel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pre-release_differences/" class="md-nav__link">
+        Pre-release Differences
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/360_System_Software/" class="md-nav__link">
+        System Software
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Shadowboot/" class="md-nav__link">
+        Shadowboot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/XConfig/" class="md-nav__link">
+        XConfig
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/XDK_Kernel/" class="md-nav__link">
+        XDK Kernel
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Homebrew/">Homebrew</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Homebrew" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Homebrew
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6" tabindex="0" aria-expanded="false">
+          Linux
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Linux" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Linux
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Lflash/" class="md-nav__link">
+        LFlash
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Linux/Distros/">Linux Distros</a>
+          
+            <label for="__nav_6_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Linux Distros" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Linux Distros
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Distros/LiveCD/" class="md-nav__link">
+        LiveCD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6_2_3" type="checkbox" id="__nav_6_2_3" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6_2_3" tabindex="0" aria-expanded="false">
+          Debian
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Debian" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Debian
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Distros/Debian/etch/" class="md-nav__link">
+        Etch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Distros/Debian/lenny/" class="md-nav__link">
+        Lenny
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Distros/Debian/squeeze/" class="md-nav__link">
+        Squeeze
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6_2_4" type="checkbox" id="__nav_6_2_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Linux/Distros/Ubuntu/">Ubuntu</a>
+          
+            <label for="__nav_6_2_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Ubuntu" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Ubuntu
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Distros/Ubuntu/7_10/" class="md-nav__link">
+        7.10
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Distros/Ubuntu/11_10/" class="md-nav__link">
+        11.10
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Linux_Kernel/" class="md-nav__link">
+        Linux Kernel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Linux_Kernel_Development/" class="md-nav__link">
+        Linux Kernel Development
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Development/Xenos_Framebuffer/" class="md-nav__link">
+        Xenos Framebuffer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7" tabindex="0" aria-expanded="false">
+          Development
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Development" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Development
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Development/Cross_Compiler/" class="md-nav__link">
+        Cross-Compiler
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Development/Dumpana/" class="md-nav__link">
+        Dumpana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Development/Finding_the_right_timing/" class="md-nav__link">
+        Finding the right timing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Development/Free60_Git_Repository/" class="md-nav__link">
+        Free60 Git Repo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Development/LibHomebrew/" class="md-nav__link">
+        LibHomebrew
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_7_6" type="checkbox" id="__nav_7_6" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Development/LibXenon/">LibXenon</a>
+          
+            <label for="__nav_7_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="LibXenon" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_6">
+          <span class="md-nav__icon md-icon"></span>
+          LibXenon
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Development/LibXenon/Examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Development/Xenon_Toolchain/" class="md-nav__link">
+        Xenon Toolchain
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Development/Xenos_Framebuffer/" class="md-nav__link">
+        Xenos Framebuffer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%21TODO/" class="md-nav__link">
+        ToDo
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-block" class="md-nav__link">
+    What is a BLOCK?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-a-bad-block" class="md-nav__link">
+    What is a BAD BLOCK?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-determine-bad-blocks" class="md-nav__link">
+    How to determine BAD BLOCKS?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-happens-when-a-bad-block-develops" class="md-nav__link">
+    What happens when a BAD BLOCK develops?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-the-reserve-block-method-work" class="md-nav__link">
+    How does the Reserve Block Method work?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xbox-16mb-nand-block-management" class="md-nav__link">
+    XBOX 16MB NAND BLOCK Management
+  </a>
+  
+    <nav class="md-nav" aria-label="XBOX 16MB NAND BLOCK Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-i-read-my-nand-i-have-badblocks-where-is-that-data-stored" class="md-nav__link">
+    When I read my nand I have Badblocks where is that data stored?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-would-i-remap-the-badblocks-in-the-diagram-with-nandpro" class="md-nav__link">
+    How would I remap the BadBlocks in the diagram with nandpro?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-using-xellous-to-flash-do-i-need-to-remap-badblocks" class="md-nav__link">
+    If using XeLLous to flash do I need to remap Badblocks?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-have-a-badblock-between-blocks-0x000-and-0x050-and-cant-boot-into-xell-free60-version" class="md-nav__link">
+    I have a Badblock between blocks 0x000 and 0x050, and can’t boot into Xell (free60 version).
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-have-a-badblock-between-blocks-0x000-and-0x050-and-cant-boot-into-xell-rgh-team-xecuter-dgx-version" class="md-nav__link">
+    I have a Badblock between blocks 0x000 and 0x050, and can’t boot into Xell (RGH / Team-Xecuter DGX version).
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#xbox-256512mb-nand-block-management" class="md-nav__link">
+    XBOX 256/512MB NAND BLOCK Management
+  </a>
+  
+    <nav class="md-nav" aria-label="XBOX 256/512MB NAND BLOCK Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-256512-mb-memory-map-and-nandpros-translation" class="md-nav__link">
+    Understanding 256/512 MB memory map, and Nandpro’s translation:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-i-read-my-nand-i-have-badblocks-where-is-that-data-stored_1" class="md-nav__link">
+    When I read my nand I have Badblocks where is that data stored?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-would-i-remap-the-badblocks-in-the-diagram-with-nandpro_1" class="md-nav__link">
+    How would I remap the BadBlocks in the diagram with nandpro?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-using-xellous-to-flash-do-i-need-to-remap-badblocks_1" class="md-nav__link">
+    If using XeLLous to flash do I need to remap Badblocks?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-have-a-badblock-between-blocks-0x000-and-0x050-and-cant-boot-into-xell-free60-version_1" class="md-nav__link">
+    I have a Badblock between blocks 0x000 and 0x050, and can’t boot into Xell (free60 version).
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i-have-a-badblock-between-blocks-0x000-and-0x050-and-cant-boot-into-xell-rgh-team-xecuter-dgx-version_1" class="md-nav__link">
+    I have a Badblock between blocks 0x000 and 0x050, and can’t boot into Xell (RGH / Team-Xecuter DGX version).
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+
+  <h1>Bad Blocks</h1>
+
+<h2 id="what-is-a-block">What is a BLOCK?</h2>
+<p>A block is the smallest logically addressable unit of data that a
+specified device can transfer in an input/output operation. For XBOX
+360s that is either 16KB or 128KB.</p>
+<h2 id="what-is-a-bad-block">What is a BAD BLOCK?</h2>
+<p>Bad Blocks are blocks that contain one or more invalid bits whose
+reliability is not guaranteed. Bad Blocks may be present when the device
+is shipped, or may develop during the lifetime of the device.</p>
+<h2 id="how-to-determine-bad-blocks">How to determine BAD BLOCKS?</h2>
+<p>In one block there are n Pages, all have a fixed size of 528 Bytes
+(nomatter if the Block is 16K or 128K). Every Page has 16 Byte big ECC
+data at its end. The block itself does not have ECC data, only the pages
+have! In theory the whole block gets filled with zeros if its bad,
+practicly it's not like that. So, if the first 12 Bytes of the page's
+ECC data is nulled, the page is marked bad, so the whole block is
+aswell. The remaining 4 Bytes of the ECC is the CRC Data. If the first
+12 Bytes of ECC is 0xFF the page has no data (empty, but NOT faulty) and
+if it hold anything else than 0x00 or 0xFF then the page is filled with
+data.</p>
+<h2 id="what-happens-when-a-bad-block-develops">What happens when a BAD BLOCK develops?</h2>
+<p>There are two methods to replace the block.</p>
+<ul>
+<li>
+<ol>
+<li>Skip Block Method</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Reserve Block Method</li>
+</ol>
+</li>
+</ul>
+<h2 id="how-does-the-reserve-block-method-work">How does the Reserve Block Method work?</h2>
+<p>Blocks are not skipped but rather they are re-directed to a Reserved
+Block Area used specifically for Bad Block replacement. The Reserved
+Block Area also stores/saves the Bad Block Table that keeps track of the
+re-mapped “developed Bad Blocks”. Which method does the XBOX employ?</p>
+<p>Short answer both. In 16MB nands the XBOX exclusively uses the Reserve
+Block Method, while in 256MB or 512MB nands it uses both. The MU area of
+the nand uses the Skip Block Method, while the area where the dash and
+kernel are stored uses the Reserve Block Method.</p>
+<h2 id="xbox-16mb-nand-block-management">XBOX 16MB NAND BLOCK Management</h2>
+<p><img alt="16MB NAND Block Diagram" src="../images/16MB.png" /></p>
+<p>If you noticed in the memory table above any Badblocks encountered are
+consecutively moved to the Reserved BadBlock Area. The first Bad
+Block(0x168) is moved to Block 0x3FF in the reserved area, the
+next(0x1F6) is moved to 0X3FE, and it continues until all Bad Blocks
+have been remapped.</p>
+<h3 id="when-i-read-my-nand-i-have-badblocks-where-is-that-data-stored">When I read my nand I have Badblocks where is that data stored?</h3>
+<p>When reading your nand any Badblocks would have already been remapped to
+the reserve area. This is important to keep in mind, specifically when
+you encounter Badblocks where crucial data is kept such as blocks
+0x001(Key Vault), 0x3DE(First Config Block), and 0x3DF(Second Config
+Block).</p>
+<h3 id="how-would-i-remap-the-badblocks-in-the-diagram-with-nandpro">How would I remap the BadBlocks in the diagram with nandpro?</h3>
+<p>Assuming your attempting to flash the latest release of XBReboot named
+as ‘xbr.bin’. And have made a full-backup and have already injected your
+Key Vault and Configuration Blocks into ‘xbr.bin’. The commands would be
+as follow:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>nandpro<span class="w"> </span>xbr.bin:<span class="w"> </span>-r16<span class="w"> </span>badblock168.bin<span class="w"> </span><span class="m">168</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>nandpro<span class="w"> </span>xbr.bin:<span class="w"> </span>-w16<span class="w"> </span>badblock168.bin<span class="w"> </span>3FF<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>nandpro<span class="w"> </span>xbr.bin:<span class="w"> </span>-r16<span class="w"> </span>badblock1F6.bin<span class="w"> </span>1F6<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>nandpro<span class="w"> </span>xbr.bin:<span class="w"> </span>-w16<span class="w"> </span>badblock1F6.bin<span class="w"> </span>3FE<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>nandpro<span class="w"> </span>xbr.bin:<span class="w"> </span>-r16<span class="w"> </span>badblock23A.bin<span class="w"> </span>23A<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>nandpro<span class="w"> </span>xbr.bin:<span class="w"> </span>-w16<span class="w"> </span>badblock23A.bin<span class="w"> </span>3FD<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>nandpro<span class="w"> </span>xbr.bin:<span class="w"> </span>-r16<span class="w"> </span>badblock308.bin<span class="w"> </span><span class="m">308</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>nandpro<span class="w"> </span>xbr.bin:<span class="w"> </span>-w16<span class="w"> </span>badblock308.bin<span class="w"> </span>3FC<span class="w"> </span><span class="m">1</span>
+</code></pre></div>
+<h3 id="if-using-xellous-to-flash-do-i-need-to-remap-badblocks">If using XeLLous to flash do I need to remap Badblocks?</h3>
+<p>According to the XeLLous release notes no, it is suppose to be one of
+the main features of the update. That is not to say bugs might not be
+encountered. If you encounter suspicious issues, and believe it might be
+related to a bad flash, then I recommend flashing manually with nandpro
+or using trancy’s XBR-Flash for
+Linux.</p>
+<h3 id="i-have-a-badblock-between-blocks-0x000-and-0x050-and-cant-boot-into-xell-free60-version">I have a Badblock between blocks 0x000 and 0x050, and can’t boot into Xell (free60 version).</h3>
+<p>First of all ensure your using the free60 version of Xell. Next you will
+need to backup the location of the remapped BadBlocks like so (Remeber
+your first Badblock always goes to 3FF, and each following Badblock gets
+remapped as illustrated in the diagram):</p>
+<p><code>nandpro lpt: -r16 backup3FF.bin 3FF 1</code></p>
+<p>Assuming your first Badblock was at 0x010, you will need to remap the
+free60 Xell data that was intended to be stored in that block. Like
+this.</p>
+<p><code>nandpro xell.bin: -r16 xell10.bin 10 1</code>
+<code>nandpro lpt: -w16 xell10.bin 3FF 1</code></p>
+<p>Lastly the bad block needs to erased to prevent any corruption:</p>
+<p><code>nandpro lpt: -e16 10 1</code></p>
+<p>(EDIT: The bad block may not need to be erased. If the CRC in the ECC
+data doesn't match that of the page, the SMC will deem it a bad block
+anyway and then look to the spare area for a relocated
+block.)</p>
+<h3 id="i-have-a-badblock-between-blocks-0x000-and-0x050-and-cant-boot-into-xell-rgh-team-xecuter-dgx-version">I have a Badblock between blocks 0x000 and 0x050, and can’t boot into Xell (RGH / Team-Xecuter DGX version).</h3>
+<p>XeLL for RGH/DGX is written with +w16 ('+' to signify the recreation of
+ECC data) so you cannot simply -r16 from image_00000000.ecc (or
+DGX.ecc) as it's not seen by NANDPro as a valid VNAND.</p>
+<p>Therefore, the following steps must be carried out:</p>
+<p>Assuming your first Badblock was at 0x010,</p>
+<ol>
+<li>Make a copy of your original NAND</li>
+</ol>
+<p><code>copy nanddump.bin tempnand.bin</code></p>
+<ol>
+<li>Write the ECC to your NAND as per normal:</li>
+</ol>
+<p><code>nandpro [LPT|USB]: +w16 image_00000000.ecc.</code></p>
+<p>At this point you should confirm that you get an 'error xxx writing to
+xxx' message. This is perfectly normal.</p>
+<ol>
+<li>Write the ECC to tempnand.bin using NANDPro:</li>
+</ol>
+<p><code>nandpro tempnand.bin: +w16 image_00000000.ecc</code></p>
+<ol>
+<li>Read block 0x010 from your newly written-to VNAND:</li>
+</ol>
+<p><code>nandpro tempnand.bin: -r16 010.bin 10 1</code></p>
+<p>5. Write the block to the same place in the spare area as the original
+relocated bad block. If this is the first bad block, it should be 0x3FF
+but check using 360 Flash Dump Tool, xNANDHealer, J-Runner etc to ensure
+this is the case.</p>
+<p><code>nandpro [LPT|USB]: -w16 010.bin 3FF</code></p>
+<p>Lastly the bad block needs to erased to prevent any corruption:</p>
+<p><code>nandpro lpt: -e16 10 1</code></p>
+<p>(EDIT: The bad block may not need to be erased. If the CRC in the ECC
+data doesn't match that of the page, the SMC will deem it a bad block
+anyway and then look to the spare area for a relocated block.)</p>
+<p>--Xb0xGuru 15:19, 24 February 2013 (UTC)</p>
+<h2 id="xbox-256512mb-nand-block-management">XBOX 256/512MB NAND BLOCK Management</h2>
+<p><img alt="256-512MB Block Management Diagram" src="../images/256-512MB.png" title="256-512MB Block Management Diagram" /></p>
+<h3 id="understanding-256512-mb-memory-map-and-nandpros-translation">Understanding 256/512 MB memory map, and Nandpro’s translation:</h3>
+<p>The block size in 256/512 Nands is 132 KB (135168 Bytes). This is a
+little different then how Nandpro references and addresses blocks. No
+matter the Block size of your nand nandpro uses a block size of 16 KB
+that means that for every Badblock in the 256/512 MB nandpro will report
+8 consecutive errors.</p>
+<p>If you noticed in the memory table above any Badblocks encountered are
+consecutively moved to the Reserved BadBlock Area. The first Badblock
+(0x0F8) is moved to Block 0xFF8 (16 KB) or Block 0x1FF (132 KB) in the
+reserved area, any consecutive Badblocks would of been moved to blocks
+0xFF0 (16 KB) or Block 0x1FE (132 KB) and so forth.</p>
+<h3 id="when-i-read-my-nand-i-have-badblocks-where-is-that-data-stored_1">When I read my nand I have Badblocks where is that data stored?</h3>
+<p>When reading your nand any Badblocks would have already been remapped to
+the reserve area. This is important to keep in mind, specifically when
+you encounter Badblocks where crucial data is kept such as blocks
+0x001(Key Vault), 0xEF7(Config Block),.</p>
+<h3 id="how-would-i-remap-the-badblocks-in-the-diagram-with-nandpro_1">How would I remap the BadBlocks in the diagram with nandpro?</h3>
+<p>Assuming your attempting to flash the latest release of XBReboot named
+as ‘xbr.bin’. And have made a full-backup and have already injected your
+Key Vault and Configuration Blocks into ‘xbr.bin’. The commands would be
+as follow:</p>
+<p><code>nandpro xbr.bin: -r16 badblockF8.bin F8 8</code>
+<code>nandpro xbr.bin: -w16 badblockF8.bin FF8 8</code></p>
+<p>Is 8 correct? Yes remember nandpro reference blocks in sizes of 16 KB,
+but 256/512 MB have a block size of 132 KB. 132/16 is equal to 8, that
+why you need to use 8.</p>
+<h3 id="if-using-xellous-to-flash-do-i-need-to-remap-badblocks_1">If using XeLLous to flash do I need to remap Badblocks?</h3>
+<p>According to the XeLLous release notes no, it is suppose to be one of
+the main features of the update. That is not to say bugs might not be
+encountered. If you encounter suspicious issues, and believe it might be
+related to a bad flash, then I recommend flashing manually with nandpro
+or using trancy’s XBR-Flash for
+Linux.</p>
+<h3 id="i-have-a-badblock-between-blocks-0x000-and-0x050-and-cant-boot-into-xell-free60-version_1">I have a Badblock between blocks 0x000 and 0x050, and can’t boot into Xell (free60 version).</h3>
+<p>First of all ensure your using the free60 version of Xell. Next you will
+need to backup the location of the remapped BadBlocks like so (Remeber
+your first Badblock always goes to 0xFF8, and each following Badblock
+gets remapped to the spare):</p>
+<p><code>nandpro lpt: -r256 backupFF8.bin FF8 8</code></p>
+<p>Assuming your first Badblock was at 0x010 followed by seven more errors,
+you will need to remap the free60 Xell data that was intended to be
+stored in that block. Like this.</p>
+<p><code>nandpro xell.bin: -r16 xell10.bin 10 8</code>
+<code>nandpro lpt: -w16 xell10.bin FF8 8</code></p>
+<p>Lastly the bad block needs to erased to prevent any corruption:</p>
+<p><code>nandpro lpt: -e16 10 1</code></p>
+<p>(EDIT: The bad block may not need to be erased. If the CRC in the ECC
+data doesn't match that of the page, the SMC will deem it a bad block
+anyway and then look to the spare area for a relocated
+block.)</p>
+<h3 id="i-have-a-badblock-between-blocks-0x000-and-0x050-and-cant-boot-into-xell-rgh-team-xecuter-dgx-version_1">I have a Badblock between blocks 0x000 and 0x050, and can’t boot into Xell (RGH / Team-Xecuter DGX version).</h3>
+<p>XeLL for RGH/DGX is written with +w16 ('+' to signify the recreation of
+ECC data) so you cannot simply -r16 from image_00000000.ecc (or
+DGX.ecc) as it's not seen by NANDPro as a valid VNAND.</p>
+<p>Therefore, the following steps must be carried out:</p>
+<p>Assuming your first Badblock was at 0x010,</p>
+<p>1. Make a copy of your original NAND</p>
+<p><code>copy nanddump.bin tempnand.bin</code></p>
+<p>2. Write the ECC to your NAND as per normal:</p>
+<p><code>nandpro [LPT|USB]: +w16 image_00000000.ecc</code></p>
+<p>At this point you should confirm that you get an 'error xxx writing to
+xxx' message. This is perfectly normal.</p>
+<p>3. Write the ECC to tempnand.bin using NANDPro:</p>
+<p><code>nandpro tempnand.bin: +w16 image_00000000.ecc</code></p>
+<p>4. Read block 0x010 from your newly written-to VNAND:</p>
+<p><code>nandpro tempnand.bin: -r16 010.bin 10 8</code></p>
+<p>5. Write the block to the same place in the spare area as the original
+relocated bad block. If this is the first bad block, it should be 0x3FF
+but check using 360 Flash Dump Tool, xNANDHealer, J-Runner etc to ensure
+this is the case.</p>
+<p><code>nandpro [LPT|USB]: -w16 010.bin FF8</code></p>
+<p>Lastly the bad block needs to erased to prevent any corruption:</p>
+<p><code>nandpro lpt: -e16 10 8</code></p>
+<p>(EDIT: The bad block may not need to be erased. If the CRC in the ECC
+data doesn't match that of the page, the SMC will deem it a bad block
+anyway and then look to the spare area for a relocated block.)</p>
+<p>--<a href="User:Xb0xGuru">Xb0xGuru</a> 15:19, 24 February 2013 (UTC)</p>
+<p>Source:
+<a href="https://web.archive.org/web/20100713001647/https://docs.google.com/View?id=dnfmv5h_23gw47ddgs">google-docs</a> (archive.org mirror) &amp;
+<a href="http://www.xboxhacker.org/index.php?topic=13618.0">XBH, posted by trancy</a></p>
+<p><a href="/Hardware">Category: Hardware</a>
+<a href="/System_Software">Category: System Software</a></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+    
+  </body>
+</html>

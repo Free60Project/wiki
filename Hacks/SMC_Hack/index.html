@@ -1,0 +1,3367 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Reset_Glitch_Hack/">
+      
+      
+        <link rel="next" href="../King_Kong_Hack/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+    
+    
+      
+        <title>SMC Hack (JTAG) - Free60 Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-jtag-smc-hack" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Free60 Wiki" class="md-header__button md-logo" aria-label="Free60 Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Free60 Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SMC Hack (JTAG)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Free60Project/wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        Home
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Reset_Glitch_Hack/" class="md-tabs__link md-tabs__link--active">
+        Hacks
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Hardware/Accessories/Chatpad/" class="md-tabs__link">
+        Hardware
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../System-Software/Formats/FMIM/" class="md-tabs__link">
+        System Software
+      </a>
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Homebrew/" class="md-tabs__link">
+        Homebrew
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Linux/Lflash/" class="md-tabs__link">
+        Linux
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Development/Cross_Compiler/" class="md-tabs__link">
+        Development
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../%21TODO/" class="md-tabs__link">
+      ToDo
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Free60 Wiki" class="md-nav__button md-logo" aria-label="Free60 Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Free60 Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Free60Project/wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../..">Home</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Home" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Home
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Support/Attack/" class="md-nav__link">
+        Attack
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Support/Contribute/" class="md-nav__link">
+        Contribute
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Support/Help/" class="md-nav__link">
+        Help
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Support/FAQ/" class="md-nav__link">
+        Frequently Asked Questions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Support/IRC/" class="md-nav__link">
+        IRC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Support/Links/" class="md-nav__link">
+        Links
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="true">
+          Hacks
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Hacks" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Hacks
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Reset_Glitch_Hack/" class="md-nav__link">
+        Reset Glitch Hack (RGH)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          SMC Hack (JTAG)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        SMC Hack (JTAG)
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#required-soldering" class="md-nav__link">
+    Required Soldering
+  </a>
+  
+    <nav class="md-nav" aria-label="Required Soldering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xenon" class="md-nav__link">
+    Xenon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#falcon-zephyr-opus-jasper" class="md-nav__link">
+    Falcon, Zephyr, Opus, Jasper
+  </a>
+  
+    <nav class="md-nav" aria-label="Falcon, Zephyr, Opus, Jasper">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reverse-jtag" class="md-nav__link">
+    Reverse Jtag
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-a-homebrew-kernel" class="md-nav__link">
+    Building a Homebrew-Kernel
+  </a>
+  
+    <nav class="md-nav" aria-label="Building a Homebrew-Kernel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from-scratch" class="md-nav__link">
+    From scratch
+  </a>
+  
+    <nav class="md-nav" aria-label="From scratch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-you-need" class="md-nav__link">
+    What you need
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to" class="md-nav__link">
+    How-to
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating-a-hacked-image" class="md-nav__link">
+    Updating a hacked image
+  </a>
+  
+    <nav class="md-nav" aria-label="Updating a hacked image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-you-need_1" class="md-nav__link">
+    What you need
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to_1" class="md-nav__link">
+    How-to
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative" class="md-nav__link">
+    Alternative
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to_2" class="md-nav__link">
+    How-to
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extracting-smccbcd-from-a-hacked-image" class="md-nav__link">
+    Extracting SMC/CB/CD from a hacked image
+  </a>
+  
+    <nav class="md-nav" aria-label="Extracting SMC/CB/CD from a hacked image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-you-need_2" class="md-nav__link">
+    What you need
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to_3" class="md-nav__link">
+    How-to
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-a-full-16mb-image-out-of-the-small-one-created-by-build-script" class="md-nav__link">
+    Build a full 16MB Image out of the small one created by build-script
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-1920to1921-script" class="md-nav__link">
+    Using the 1920to1921 script
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the 1920to1921 script">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-you-need_3" class="md-nav__link">
+    What you need
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to_4" class="md-nav__link">
+    How-to
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../King_Kong_Hack/" class="md-nav__link">
+        King Kong Hack
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="false">
+          Hardware
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Hardware" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Hardware
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_1" tabindex="0" aria-expanded="false">
+          Accessories
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Accessories" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Accessories
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Accessories/Chatpad/" class="md-nav__link">
+        Chatpad
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Accessories/GamePad/" class="md-nav__link">
+        GamePad (Controller)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Accessories/Headset/" class="md-nav__link">
+        Headset
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Accessories/Media_Remote/" class="md-nav__link">
+        Media Remote
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Accessories/Memory_Unit/" class="md-nav__link">
+        Memory Unit
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3_2" tabindex="0" aria-expanded="false">
+          Console
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Console" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Console
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_2_1" type="checkbox" id="__nav_3_2_1" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Hardware/Console/Revisions/">Revisions</a>
+          
+            <label for="__nav_3_2_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Revisions" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Revisions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/Revisions/Identification/" class="md-nav__link">
+        Identification
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/Revisions/Falcon/" class="md-nav__link">
+        Falcon / Opus
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/Revisions/Jasper/" class="md-nav__link">
+        Jasper
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/Revisions/Trinity/" class="md-nav__link">
+        Trinity / Valhalla
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/Case/" class="md-nav__link">
+        Case
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/DVD_Drive/" class="md-nav__link">
+        DVD Drive
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/Ethernet/" class="md-nav__link">
+        Ethernet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Fusesets/" class="md-nav__link">
+        Fusesets
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/HDD/" class="md-nav__link">
+        HDD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/Memory/" class="md-nav__link">
+        Memory
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/Motherboard/" class="md-nav__link">
+        Motherboard
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Console/RF_Module/" class="md-nav__link">
+        RF Module
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/8051_8052/" class="md-nav__link">
+        8051 / 8052
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hardware/Level_Shifter/" class="md-nav__link">
+        Level Shifter
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3_5" type="checkbox" id="__nav_3_5" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Hardware/">NAND</a>
+          
+            <label for="__nav_3_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="NAND" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          NAND
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NAND_Bad_Blocks/" class="md-nav__link">
+        Bad Blocks
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../NAND_Reading/" class="md-nav__link">
+        Reading
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pre-release_differences/" class="md-nav__link">
+        Pre-release Differences
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="false">
+          System Software
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="System Software" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          System Software
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_1" tabindex="0" aria-expanded="false">
+          File Formats
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="File Formats" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          File Formats
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Formats/FMIM/" class="md-nav__link">
+        FMIM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Formats/GPD/" class="md-nav__link">
+        GPD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Formats/PEC/" class="md-nav__link">
+        PEC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Formats/SPA/" class="md-nav__link">
+        SPA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Formats/STFS/" class="md-nav__link">
+        STFS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Formats/XDBF/" class="md-nav__link">
+        XDBF
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Formats/XCP/" class="md-nav__link">
+        XCP
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Formats/XEX/" class="md-nav__link">
+        XEX
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_2" tabindex="0" aria-expanded="false">
+          File Systems
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="File Systems" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          File Systems
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Systems/FATX/" class="md-nav__link">
+        FATX
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Systems/GDFX/" class="md-nav__link">
+        GDFX
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Error_Codes/" class="md-nav__link">
+        Error Codes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Kernel/" class="md-nav__link">
+        Kernel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Pre-release_differences/" class="md-nav__link">
+        Pre-release Differences
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/360_System_Software/" class="md-nav__link">
+        System Software
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/Shadowboot/" class="md-nav__link">
+        Shadowboot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/XConfig/" class="md-nav__link">
+        XConfig
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../System-Software/XDK_Kernel/" class="md-nav__link">
+        XDK Kernel
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Homebrew/">Homebrew</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Homebrew" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Homebrew
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6" tabindex="0" aria-expanded="false">
+          Linux
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Linux" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Linux
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Lflash/" class="md-nav__link">
+        LFlash
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6_2" type="checkbox" id="__nav_6_2" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Linux/Distros/">Linux Distros</a>
+          
+            <label for="__nav_6_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Linux Distros" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Linux Distros
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Distros/LiveCD/" class="md-nav__link">
+        LiveCD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6_2_3" type="checkbox" id="__nav_6_2_3" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6_2_3" tabindex="0" aria-expanded="false">
+          Debian
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Debian" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Debian
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Distros/Debian/etch/" class="md-nav__link">
+        Etch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Distros/Debian/lenny/" class="md-nav__link">
+        Lenny
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Distros/Debian/squeeze/" class="md-nav__link">
+        Squeeze
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_6_2_4" type="checkbox" id="__nav_6_2_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Linux/Distros/Ubuntu/">Ubuntu</a>
+          
+            <label for="__nav_6_2_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Ubuntu" data-md-level="3">
+        <label class="md-nav__title" for="__nav_6_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Ubuntu
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Distros/Ubuntu/7_10/" class="md-nav__link">
+        7.10
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Distros/Ubuntu/11_10/" class="md-nav__link">
+        11.10
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Linux_Kernel/" class="md-nav__link">
+        Linux Kernel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Linux_Kernel_Development/" class="md-nav__link">
+        Linux Kernel Development
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Development/Xenos_Framebuffer/" class="md-nav__link">
+        Xenos Framebuffer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7" tabindex="0" aria-expanded="false">
+          Development
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Development" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Development
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Development/Cross_Compiler/" class="md-nav__link">
+        Cross-Compiler
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Development/Dumpana/" class="md-nav__link">
+        Dumpana
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Development/Finding_the_right_timing/" class="md-nav__link">
+        Finding the right timing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Development/Free60_Git_Repository/" class="md-nav__link">
+        Free60 Git Repo
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Development/LibHomebrew/" class="md-nav__link">
+        LibHomebrew
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_7_6" type="checkbox" id="__nav_7_6" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../Development/LibXenon/">LibXenon</a>
+          
+            <label for="__nav_7_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="LibXenon" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_6">
+          <span class="md-nav__icon md-icon"></span>
+          LibXenon
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Development/LibXenon/Examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Development/Xenon_Toolchain/" class="md-nav__link">
+        Xenon Toolchain
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Development/Xenos_Framebuffer/" class="md-nav__link">
+        Xenos Framebuffer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%21TODO/" class="md-nav__link">
+        ToDo
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#required-soldering" class="md-nav__link">
+    Required Soldering
+  </a>
+  
+    <nav class="md-nav" aria-label="Required Soldering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xenon" class="md-nav__link">
+    Xenon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#falcon-zephyr-opus-jasper" class="md-nav__link">
+    Falcon, Zephyr, Opus, Jasper
+  </a>
+  
+    <nav class="md-nav" aria-label="Falcon, Zephyr, Opus, Jasper">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reverse-jtag" class="md-nav__link">
+    Reverse Jtag
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-a-homebrew-kernel" class="md-nav__link">
+    Building a Homebrew-Kernel
+  </a>
+  
+    <nav class="md-nav" aria-label="Building a Homebrew-Kernel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from-scratch" class="md-nav__link">
+    From scratch
+  </a>
+  
+    <nav class="md-nav" aria-label="From scratch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-you-need" class="md-nav__link">
+    What you need
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to" class="md-nav__link">
+    How-to
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating-a-hacked-image" class="md-nav__link">
+    Updating a hacked image
+  </a>
+  
+    <nav class="md-nav" aria-label="Updating a hacked image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-you-need_1" class="md-nav__link">
+    What you need
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to_1" class="md-nav__link">
+    How-to
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative" class="md-nav__link">
+    Alternative
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to_2" class="md-nav__link">
+    How-to
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extracting-smccbcd-from-a-hacked-image" class="md-nav__link">
+    Extracting SMC/CB/CD from a hacked image
+  </a>
+  
+    <nav class="md-nav" aria-label="Extracting SMC/CB/CD from a hacked image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-you-need_2" class="md-nav__link">
+    What you need
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to_3" class="md-nav__link">
+    How-to
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-a-full-16mb-image-out-of-the-small-one-created-by-build-script" class="md-nav__link">
+    Build a full 16MB Image out of the small one created by build-script
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-1920to1921-script" class="md-nav__link">
+    Using the 1920to1921 script
+  </a>
+  
+    <nav class="md-nav" aria-label="Using the 1920to1921 script">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-you-need_3" class="md-nav__link">
+    What you need
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to_4" class="md-nav__link">
+    How-to
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+
+<h1 id="the-jtag-smc-hack">The JTAG / SMC Hack</h1>
+<p>There is a <del>new</del> hack which can boot homebrew code in less than 5 seconds.
+See at the end of this document for a description how the hack works.
+For now, all we need to know is that this is a new way to exploit the
+well-known 4532 kernel, in a way which also works on updated machines,
+unless they have been updated by the summer '09 update. It also works on
+all hardware types.</p>
+<p>This document is a technical description meant for people who want to
+undestand the hack. If you don't understand a word, calm down - there
+probably will be future releaes, howtos etc.</p>
+<p>Please also notice that from a functional side, the result will be the
+same as the KK-hack; it's just much faster, works on more hardware and
+is more reliable. So it replaces the KK-hack, not less and not more.</p>
+<p>Technical details are available <a href="http://free60.git.sourceforge.net/git/gitweb.cgi?p=free60/tools;a=blob_plain;f=imgbuild/hack.txt;hb=HEAD">here</a>.</p>
+<h2 id="required-soldering">Required Soldering</h2>
+<p>The SMC Hack requires bridging 3 points on the motherboard (for trigger
+the exploit by JTAG), as well as having a way to read and write with
+your Nand <a href="Flash">Flash</a></p>
+<p>The JTAG points are available for a number of consoles</p>
+<h3 id="xenon">Xenon</h3>
+<p><img alt="Xenon Jtag Diagram" src="../images/X_Jtag_free60.png" /></p>
+<h3 id="falcon-zephyr-opus-jasper">Falcon, Zephyr, Opus, Jasper</h3>
+<p><img alt="ZFOJ Jtag Diagram" src="../images/ZFOJ_Jtag_free60.jpg" /></p>
+<h4 id="reverse-jtag">Reverse Jtag</h4>
+<p><img alt="Reverse JTAG" src="../images/Reverse_JTAG.jpg" /></p>
+<ul>
+<li>
+<p>To read and write the Nand Flash (using SPI protocol by LPT and a
+printer cable), there is a friendly tutorial at <a href="NAND_Reading">NAND Reading</a></p>
+<p>There are other ways to read and write the Nand Flash that are valid
+(such as infectus modchip)</p>
+<ul>
+<li>All the diodes used in SPI and JTAG are "switching diodes" proposed
+    are: BAT41, 1N4148, or 1N4153</li>
+</ul>
+</li>
+</ul>
+<h2 id="building-a-homebrew-kernel">Building a Homebrew-Kernel</h2>
+<h3 id="from-scratch">From scratch</h3>
+<h4 id="what-you-need">What you need</h4>
+<ul>
+<li>Latest build.py Script from GIT</li>
+<li>
+<p>CB/CD-files matching for your Xbox Revision (called <code>CB.xxxx/CD.xxxx</code> here, where <code>xxxx</code> is the version)</p>
+<ul>
+<li>Xenon: 1921</li>
+<li>Zephyr: 4558</li>
+<li>Falcon: 5770</li>
+<li>Jasper: 6712, 6723</li>
+</ul>
+</li>
+<li>
+<p>Hacked SMC Code matching your Xbox Revision (called smc_hacked.bin here)
+    ATM only available for XENON / falcon / zephyr / opus(as of recently)</p>
+</li>
+<li>The 1888 Basekernel (called 1888image.bin here)</li>
+<li>Xbox 360 Dashboard Update Version 4532 (HD_DVD_10-2006.zip)</li>
+<li>wxPirs to extract xboxupd.bin from 4532-Update</li>
+<li>Compiled XELL (xell-1f.bin, also the same file named xell-backup.bin)</li>
+</ul>
+<h4 id="how-to">How-to</h4>
+<ol>
+<li>
+<p><strong>Check out the latest free60-tools</strong> with GIT
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Free60Project/tools.git
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Extract xboxupd.bin</strong> with WxPirs from the unzipped 4532-Dashboard-Update</p>
+</li>
+<li>
+<p><strong>Copy the files</strong> xboxupd.bin, 1888image.bin, CB.xxxx/CB.xxxx,
+smc.hacked and the two XeLL files xell-1f.bin and xell-backup.bin to
+/tools/imgbuild/input (you need to create the folder first). Also create
+a folder "output" in /tools/imgbuild/</p>
+</li>
+<li>
+<p><strong>Edit build.py</strong> to contain the Secret 1BL Key in this format<br/>
+  (Example-Key: 010F0E0C0ED669E7B56794FB68563EFA)
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">secret_1BL</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\x01\x0F\x0E\x0C\x0E\xD6\x69\xE7\xB5\x67\x94\xFB\x68\x56\x3E\xFA</span><span class="s2">&quot;</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Start build.py</strong> with the following command
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python<span class="w"> </span>build.py<span class="w"> </span>input/1888image.bin<span class="w"> </span>input/CB.xxxx<span class="w"> </span>input/CD.xxxx<span class="w"> </span>input/xboxupd.bin<span class="w"> </span>input/xell-backup.bin<span class="w"> </span>input/xell-1f.bin<span class="w"> </span>input/smc_hacked.bin
+</code></pre></div></p>
+<p>If everything works out the Script should output something similar to this</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>* found flash image, unpacking and decrypting...
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a> ECC&#39;ed - will unecc.
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a> Found 2BL (build 1888) at 00008000
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a> Found 4BL (build 1888) at 0000e1e0
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a> Found 5BL (build 1888) at 000138d0
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a> * found (hopefully) decrypted CB
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a> * found (hopefully) raw CD
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a> * found update
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a> Found 6BL (build 4532) at 00000000
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a> Found 7BL (build 4532) at 000044c0
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a> * found XeLL binary, must be linked to 1c000000
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a> * found XeLL binary, must be linked to 1c000000
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a> * found decrypted SMC
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a> * we found the following parts:
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a> CB: 1921
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a> CD: 1921
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a> CE: 1888
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a> CF: 4532
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a> CG: 4532
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a> * checking if all files decrypted properly... ok
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a> * checking required versions... ok
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a> * Fixing up the hacked SMC code with the target address
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a> * this image will be valid *only* for: xenon
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a> * zero-pairing...
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a> * constructing new image...
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a> * base size: 70000
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a> * compiling payload stub
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a> * Flash Layout:
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a> 0x00000000..0x000001ff (0x00000200 bytes) Header
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a> 0x00000200..0x000003ff (0x00000200 bytes) Exploit
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a> 0x00000400..0x00000fff (0x00000c00 bytes) Padding
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a> 0x00001000..0x00003fff (0x00003000 bytes) SMC
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a> 0x00004000..0x00007fff (0x00004000 bytes) Keyvault
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a> 0x00008000..0x000117ff (0x00009800 bytes) CB 1921
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a> 0x00011800..0x00016ebf (0x000056c0 bytes) CD 1921
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a> 0x00016ec0..0x0006cf2f (0x00056070 bytes) CE 1888
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a> 0x0006cf30..0x0006ffff (0x000030d0 bytes) Padding
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a> 0x00070000..0x000744bf (0x000044c0 bytes) CF 4532
+<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a> 0x000744c0..0x000a33ff (0x0002ef40 bytes) CG 4532
+<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a> 0x000a3400..0x000bffff (0x0001cc00 bytes) Padding
+<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a> 0x000c0000..0x000fffff (0x00040000 bytes) Xell (backup)
+<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a> 0x00100000..0x0013ffff (0x00040000 bytes) Xell (main)
+<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a> * Encoding ECC...
+<a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a> Written into output/image_00000000.ecc
+<a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a> ! please flash output/image_*.ecc, and setup your JTAG device to do the DMA read from 00000200
+</code></pre></div>
+</li>
+<li>
+<p><strong>Finished!</strong> Your ready-to-be-flashed Image is located in the
+output-folder, called image_00000000.ecc</p>
+</li>
+</ol>
+<h3 id="updating-a-hacked-image">Updating a hacked image</h3>
+<h4 id="what-you-need_1">What you need</h4>
+<ul>
+<li>Latest build.py Script from GIT</li>
+<li>Hacked Kernel-Image (hacked-image.bin)</li>
+<li>Xbox 360 Dashboard Update Version 4532 (HD_DVD_10-2006.zip)</li>
+<li>wxPirs to extract xboxupd.bin from 4532-Update</li>
+<li>Compiled XELL (xell-1f.bin)</li>
+</ul>
+<h4 id="how-to_1">How-to</h4>
+<ol>
+<li>
+<p><strong>Checkout free60-tools, extract xboxupd.bin</strong> as described above.</p>
+</li>
+<li>
+<p><strong>Copy files</strong> hacked-image.bin, xboxupd.bin and xell-1f.bin to
+/tools/imgbuild/ and create a folder "output" there.</p>
+</li>
+<li>
+<p><strong>Start build.py</strong> with following command:
+  <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>python<span class="w"> </span>build.py<span class="w"> </span>hacked-image.bin<span class="w"> </span>xboxupd.bin<span class="w"> </span>xell-1f.bin
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Finished!</strong> Your updated hacked-image was written into the output
+directory and is ready to be flashed.</p>
+</li>
+</ol>
+<h4 id="alternative">Alternative</h4>
+<p>If you are using XeLL-compile after 31. August 09 you could use the
+USB-Update feauture.</p>
+<h4 id="how-to_2">How-to</h4>
+<ol>
+<li>
+<p><strong>Format a compatible USB Drive</strong> to FAT16/32.</p>
+</li>
+<li>
+<p><strong>Put 'xell-1f.bin' renamed to 'updxell.bin' into the Root</strong> of the
+USB Drive.</p>
+</li>
+<li>
+<p><strong>Turn on XeLL-Xbox 360</strong> with attached USB Drive.</p>
+</li>
+<li>
+<p>XeLL should recognize USB Drive and tell you <strong>'* found XeLL
+update. press power NOW if you don't want to update.'</strong></p>
+</li>
+<li>
+<p><strong>Wait for XeLL to tell you '*update done</strong>' and <strong>unplug the USB
+Drive</strong> so it won't upgrade on the next startup.</p>
+</li>
+<li>
+<p><strong>Reboot Xbox 360</strong> and enjoy a fresh XeLL.</p>
+</li>
+</ol>
+<h3 id="extracting-smccbcd-from-a-hacked-image">Extracting SMC/CB/CD from a hacked image</h3>
+<h4 id="what-you-need_2">What you need</h4>
+<ul>
+<li>Latest build.py Script from GIT</li>
+<li>Hacked Kernel-Image (hacked-image.bin)</li>
+<li>Xbox 360 Dashboard Update Version 4532 (HD_DVD_10-2006.zip)</li>
+<li>wxPirs to extract xboxupd.bin from 4532 Update</li>
+</ul>
+<h4 id="how-to_3">How-to</h4>
+<ol>
+<li>
+<p><strong>Checkout free60-tools, extract xboxupd.bin</strong> as described above</p>
+</li>
+<li>
+<p><strong>Copy files</strong> hacked-image.bin and xboxupd.bin to /tools/imgbuild/
+and create a folder "output" there</p>
+</li>
+<li>
+<p><strong>Start build.py</strong> with following command</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>python<span class="w"> </span>build.py<span class="w"> </span>hacked-image.bin<span class="w"> </span>xboxupd.bin
+</code></pre></div>
+<ol>
+<li><strong>Finished!</strong> Decrypted SMC, CB and CD data was written into the
+output directory</li>
+</ol>
+<h3 id="build-a-full-16mb-image-out-of-the-small-one-created-by-build-script">Build a full 16MB Image out of the small one created by build-script</h3>
+<p>Just use this simple command (input/backup.ecc is your nand backup, and
+output/full.ecc is a 16MB image you can
+flash)</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>cp<span class="w"> </span>input/backup.ecc<span class="w"> </span>output/full.ecc<span class="p">;</span><span class="w"> </span>dd<span class="w"> </span><span class="k">if</span><span class="o">=</span>output/image_00000000.ecc<span class="w"> </span><span class="nv">of</span><span class="o">=</span>output/full.ecc<span class="w"> </span><span class="nv">conv</span><span class="o">=</span>notrunc
+</code></pre></div>
+<h3 id="using-the-1920to1921-script">Using the 1920to1921 script</h3>
+<h4 id="what-you-need_3">What you need</h4>
+<ul>
+<li>Latest 1920to1921.py Script from GIT</li>
+<li>decrypted 1921 CB (2BL)</li>
+<li>decrypted 1920 CD (4BL)</li>
+</ul>
+<h4 id="how-to_4">How-to</h4>
+<ol>
+<li>
+<p><strong>Rename</strong> 1921 CB file to CB.1921 (no file extension) and 1920 CD
+to CD.1920</p>
+</li>
+<li>
+<p><strong>Move</strong> both files to /tools/imgbuild/input/</p>
+</li>
+<li>
+<p><strong>Start 1920to1921.py</strong> with following command:</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>python<span class="w"> </span>1920to1921.py<span class="w"> </span>xxxx<span class="w"> </span><span class="o">(</span>where<span class="w"> </span>xxxx<span class="w"> </span>is<span class="w"> </span>the<span class="w"> </span>CD<span class="w"> </span>Version<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>create,<span class="w"> </span>i.e<span class="w"> </span><span class="m">1921</span>,<span class="w"> </span><span class="m">4558</span>,<span class="w"> </span><span class="m">5770</span><span class="o">)</span>
+</code></pre></div>
+<ol>
+<li><strong>Finished!</strong> Script should tell you "great, hash matches!" and
+write the appropriative CD to the input folder.</li>
+</ol>
+<h1 id="technical-details">Technical details</h1>
+<p>To understand this new hack, let's first look at what made the KK
+exploit possible: A fatal bug in the Hypervisor's Syscall Handler,
+introduced in the 4532 kernel update. For more details, take a look at
+http://www.securityfocus.com/archive/1/461489/30/0/threaded which
+explains the problem in great detail.</p>
+<p>The KK exploit exploited the kernel bug by modifying an unsigned shader
+to do a series of so-called memory exports, an operation where the GPU
+can write the results of a pixel or vertex shader into physical memory.
+The shader was written to overwrite the Idle-thread context to make the
+kernel jump at a certain position in memory, with some registers nder
+our control. In order to control all registers, a second step was
+necessary, this time by jumping into the interrupt restore handler. This
+finally allows all CPU general purpose registers to be filled with
+etermined values. The program counter could be restored to a syscall
+instruction in the kernel, with register values prefilled so that they
+would trigger the exploit.</p>
+<p>The exploit basically allows jumping into any 32-bit address in
+hypervisor space. To jump into an arbitrary location, we just used a
+"mtctr, bctr"-register pair in hypervisor, which would redirect
+execution low into any 64-bit address. This is important, since we need
+to clear the upper 32bit (i.e.,set the MSB to disable the HRMO), since
+the code we want to jump to is in unencrypted memory.</p>
+<p>This code would usually load a second-stage loader, for example XeLL,
+into memory, and start it. XeLL would then attempt to catch all cpu
+threads (because just the primary thread is affected by our exploit),
+and load the user code, for example from DVD.</p>
+<p>So, the following memory areas are involved:</p>
+<ul>
+<li>Idle Thread context, at 00130360 in physical memory</li>
+</ul>
+<p>This stores the stack pointer (and some other stuff) when the idle
+thread was suspended. By changing the stack pointer, and then waiting
+for the kernel to switch to the idle thread, the stack pointer can be
+brought into our control. Part of the context switch is also a context
+restore, based on the new stack pointer.</p>
+<ul>
+<li>Context restore, part 1, arbitrary location, KK expl. uses 80130AF0</li>
+</ul>
+<p>The thread-context restore doesn't restore all registers, but let's us
+control the NIP (the "next instruction" pointer). We setup NIP to point
+to the interrupt context restore, which does a SP-relative load of most
+registers.</p>
+<ul>
+<li>Context restore, part 2, same base location as part 1</li>
+</ul>
+<p>We just re-use the same stack pointer, because the areas where the first
+context restore and the interrupt context restore load from do not
+overlap. The second context restore allows us to pre-set all registers
+with arbitrary 64 bit values.</p>
+<ul>
+<li>The HV offset, at 00002080 for syscall 0x46 on 4532</li>
+</ul>
+<p>Because of the HV bug, we can write this offset into unencrypted memory,
+giving us the possibility to jump into any location in the hypervisor
+space (i.e. with a certain "encryption prefix"). We usually write
+00000350 here, which points to a "mtctr %r4; bctr" instruction pair in
+hypervisor, which lets us jump to %r4.</p>
+<ul>
+<li>Our loader code, at an arbitrary location</li>
+</ul>
+<p>This code will be executed from hypervisor. It's the first of our code
+which will be executed. %r4 on the syscall entry has to point to this
+code.</p>
+<p>Only the idle thread context and the HV offset have fixed addresses.
+It's easily possible to merge this so that only two distinct blocks
+needs to be written into memory, but it's not possible to merge this
+into a single block.</p>
+<p>Fortunately, the NAND controller allows doing DMA reads where the
+payload data is split from the "ECC"-data. Each page has 512 bytes of
+payload, and 16 bytes of ECC data. Thus, a single DMA read can be used
+to load all required memory addresses. We chose the Payload to read the
+Idle Thread Context, the Context Restores and the loader code. The ECC
+data will carry the HV offset.</p>
+<p>To do a DMA read, the following NAND registers need to be written:</p>
+<p>ea00c01c Address for Payload ea00c020 Adresss for ECC ea00c00c address
+inside NAND ea00c008 command: read DMA (07)</p>
+<p>The System Management Controller (SMC) is a 8051 core inside the
+Southbridge. It manages the power sequencing, and is always active when
+the Xbox 360 has (standby or full) power applied. It controls the
+frontpanel buttons, has a Realtime clock, decodes IR, controls
+temperatures and fans and the DVDROM tray. It talks with the frontpanel
+board to set the LEDs. When the system is running, the kernel can
+communicate with the SMC, for example to query the realtime clock, open
+the dvd-tray etc. This happens over a bidirectional FIFO (at ea001080 /
+ea001090). See the XeLL SMC code for details.</p>
+<p>The SMC can read the NAND, because it requires access to a special NAND
+page which contains a SMC config block. This block contains calibration
+information for the thermal diodes, and the thermal targets etc. The
+8051 core has access to NAND registers, which are mapped into the 8051
+SFRs. It uses the same protocol as the kernel uses, so it writes an
+address, does a "READ" command, and then reads the data out of the
+"DATA" registers.</p>
+<p>It could also do a "READ (DMA)"-command. So by hacking the SMC, we could
+make the box do the exploit, without any shader - the SMC can access the
+NAND controller all the time, even when the kernel is running (though it
+will likely interfere with the kernel). So, we just trigger the DMA read
+when the kernel has been loaded, and everything is fine.</p>
+<p>Right?</p>
+<p>Well, that would be too easy. While most NAND registers are mapped, the
+DMA address registers (1c, 20) are not. We can DMA, but only to the
+default address of zero (or wherever the kernel last DMAed into). Fail.</p>
+<p>The GPU, the (H)ANA (the "scaler" - which in fact doesn't scale at all,
+it's "just" a set of DACs, and, since Zephyr, a DVI/HDMI encoder), the
+Southbridge and the CPU have their JTAG ports exposed on the board. They
+are unpopulated headers, but the signals are there. CPU JTAG is a
+different (complex) story, and SB JTAG doesn't offset much
+funcationality. ANA JTAG is boring since the ANA doesn't sit on any
+interesting bus. That leaves GPU JTAG.</p>
+<p>GPU JTAG was reverse-engineered until a point where arbitrary PCI writes
+are possible, up to a certain point. So that makes it possible to talk
+to each PCI device in the system, including the NAND controller. So we
+can simply use THAT instead of the SMC to start the DMA?</p>
+<p>Right?</p>
+<p>Well, not quite. The problem is that the "VM code", the code which does
+a lot of system initialization, like the memory (that code is also
+responsible for generating the 01xx "RROD"-Errors), sets a certain bit
+in some GPU register, which disables the JTAG interface. The VM code is
+executed way before the kernel is active. So this is fail, too.</p>
+<p>But the combination works - by programming the DMA target address via
+JTAG, and launching the attack via SMC. The attack can be launched as
+soon as the kernel is running, and quite early, it does query the SMC
+for the RTC. We abuse this call to start the attack instead, which is a
+perfect point for us.</p>
+<p>But how do we run an exploitable kernel at all? Most machines are
+updated already. Let me refresh your knowledge about the boot process
+again:</p>
+<h3 id="1bl-bootrom">1BL (Bootrom)</h3>
+<p>Buried deep inside the CPU die, this ~32kb of ROM code is responsible
+for reading the 2BL from NAND-flash and decrypts it into the embedded
+SRAM in the CPU. It verifies the hash of the decrypted image with a
+signed block at the beginning of the 2BL, and will stop execution if
+this hash mismatches. This code also contains a number of test
+functions, which can be activated by pulling the 5 "POST IN"-pins, which
+are available on the backside of the PCB. None of these tests looks
+particulary interesting (from an exploitation perspective) - they mostly
+seem to be related to the FSB (the bus between CPU and GPU). This code
+is fixed, and all systems use identical code here.</p>
+<h3 id="2bl-cb">2BL ("CB")</h3>
+<p>This code is usually located at 0x8000 in NAND flash. It's decrypted by
+1BL, and runs from internal SRAM.</p>
+<p>It does a basic hardware initialization, and contains the "fuse check
+code", which verifies the "2BL version". The fuses store the expected
+version. The 2BL stores a "Version" and a "AllowedMask" (=bitfield), and
+this is usually stored at address 0x3B1 /
+0x3B2..0x3B3.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>Xenon</th>
+<th>Zephyr</th>
+<th>Falcon</th>
+<th>Jasper</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>0003</td>
+<td>1888, 1901, 1902</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td>1920</td>
+<td></td>
+<td></td>
+<td></td>
+<td>"new zeropair code"</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0010</td>
+<td>1921</td>
+<td>4558</td>
+<td>5760,5761,5770</td>
+<td>6712</td>
+<td>TA-fixed</td>
+</tr>
+</tbody>
+</table>
+<p>It then verifies the pairing information stored in the 2BL header. Part
+of this verification is a checksum check of the NAND area which was used
+to load the SMC code from.</p>
+<p>It also contains a virtual machine and some code to run on this machine.
+The virtual machine code, which is pretty complicated, does the
+following things:</p>
+<ul>
+<li>Initialisation of the PCI-Bridge</li>
+<li>Disable the GPU PCIE JTAG test port</li>
+<li>initialize the serial port</li>
+<li>talk to the SMC to clear the "handshake"-bit</li>
+<li>initialize memory</li>
+<li>hopefully not: generate RROD if memory init fails</li>
+</ul>
+<p>After that, the external (512MB) memory will be initialized and usable.
+2BL then decrypts the 4BL into this memory. Memory encryption will
+already be enabled - no executable code is *ever* written unencrypted.</p>
+<h3 id="4bl-cd">4BL ("CD")</h3>
+<p>This code is responsible for checking and unpacking 5BL, as well as
+applying update patches. First, the fuses are read to determine the
+console "Update Sequence", a number which basically counts the number of
+updates installed. Since updates are, in the same way as 2BL, paired to
+a console, this allows to configure the console in a way that no old
+update will be used. So each update slot stores the maximum value of
+burned fuses (well, essentially the exact value). The base kernel also
+has an associated value, usually zero, but this can be changed in the
+2BL pairing data block. This is what the timing-attack increments, in
+order to revert to the 1888 kernel.</p>
+<h3 id="5bl-hvkernel">5BL ("HV/Kernel")</h3>
+<p>The HV and kernel are merged into a single image, which is compressed
+with a proprietary algorithm (LDIC).</p>
+<h3 id="6bl-cf-7bl-cg">6BL ("CF"), 7BL ("CG")</h3>
+<p>This is part of a system upgrade. Each console has a so-called "Base
+Kernel", which is the 1888 kernel which was available on launch back in
+2005. Then there are two "update slots" - areas of 64k each (128k on
+Jasper), which contain a 6BL and 7BL. 6BL is code which applies the
+update, using a clever delta-compression. 7BL is the actual
+delta-compressed update, essentially a binary diff.</p>
+<p>Oh, updates are >64k. So only the first 64k are actually stored in the
+update slots, the rest is stored in the filesystem as a special file.
+Since 6BL doesn't contain a filesystem parser, a blockmap is added in
+6BL which points to the sectors which contain the rest of the update.</p>
+<h3 id="zero-pairing">Zero-Pairing</h3>
+<p>Now there is a special situation: If the 2BL pairing block is all-zero,
+the pairing block will not be checked. However, a bit is set so that the
+kernel doesn't boot the dashboard binary, but a special binary called
+"MfgBootLauncher", where "Mfg" probably stands for "Manufacturing". So
+this is a leftover of the production process, where the flash image is
+used on all hardware, probably also before any CPU-key has been
+programmed.</p>
+<p>By abusing this feature, this allows us easily to produce a flash image
+which runs on all hardware. However, 4BL won't look at update slots when
+it detects this mode, so we end up in the 1888 base kernel. And we can't
+run the dashboard, so it's impossible to escape this mode.</p>
+<p>Previously, this has been deemed very uninteresting, because first the
+1888 isn't exploitable by the KK exploit, and second because it's
+impossible to run the KK game anyway.</p>
+<p>However, starting with 2BL version 1920, an interesting thing happened:
+The encryption key for 4BL is generated with the help of the CPU-key
+now. That means that without the CPU-key, it's not possible to decrypt
+the 4BL anymore. Note that each 2BL has exactly a single valid 4BL
+binary - 2BL contains a hardcoded hash for the 4BL, and doesn't use RSA.</p>
+<p>However, zero'ed pairing data is detected, the CPU-key is NOT used in
+this process, like it was previously. That also means that you cannot
+just zero-out the pairing data anymore - the 4BL would be decrypted with
+the wrong key then. Instead you need to decrypt the 4BL (which requires
+knowing the CPU key), and re-encrypt it with the old algorithm.</p>
+<p>However, 1920 was suspectible to the timing attack - so a CPU-key
+recovery was possible on one console, which allowed us to decrypt the
+1920 4BL. That 4BL shows a very intersting change: Whenever zero-pairing
+is detected, the update slots are not ignored anymore. Instead, if the
+update-slots are zero-paired as well, they are applied.</p>
+<p>This change allows us to boot any kernel, provided we have a (1920 and
+up) 2BL/4BL set which runs on that machine. This is very important,
+because we can build up an image now which runs into the 4532 kernel,
+regardless on how many update fuses are set. However, the 2BL revocation
+process must be passed, so we are not completely independent of the
+fuses, still. But since we use zero-pairing, the SMC hash doesn't matter
+anymore (there are other ways to work around the SMC hash problem, like
+the TA, but we get this for free). Still, we boot into the
+MfgBootLauncher (into the 4532 version now, which does a red/green
+blinking thingie - you'll notice once you see it, it's very unique and
+doesn't look like any RROD or so). But thanks to the SMC/JTAG hack
+described above, this allows us to launch our attack from this state.</p>
+<p>Newer consoles (which have the TA fix) don't run 1920 anymore. They run,
+for example, 1921. The problem is that we cannot run HV code on these
+machines, so we don't know the CPU key. However, when comparing the 1921
+and 1920 2BL (which we can still decrypt), the only change is the
+addition of the timing attack fix (i.e. replacing two memcmp instances
+with a memdiff function). Also, we know the expected hash value of the
+decrypted 4BL. Based on a 1920 4BL, and the guess what has changed
+functionally, and the new size of the 4BL, we were able to guess the
+modifications, which yields an image which passes the 2BL hash check.
+Note that this is not a hash collision - we did merely derive the exact
+image by applying the changes between 1920 2BL and 1921 2BL into 1920
+4BL, yielding the 1921 4BL.</p>
+<p>The 1921 2BL theoretically runs on all machines so far, even TA-proof
+ones. But it crashes on Zephyr, Falcon and Jasper. The reason is the VM
+code, which doesn't cover the different GPUs (Xenon has 90nm GPU, Zephyr
+and Falcon have 80nm, Jasper has 60nm, so there are 3 GPU revisions in
+total).</p>
+<p>But the step from 1921 to, say, 4558, is even smaller. It's just the
+different version number, plus a slight difference in the memcpy code,
+which again can be ported over from 2BL.</p>
+<p>Jasper's 67xx is a different thing, since this code adds support for the
+largeblock flash used in "Arcade"-Jasper units. We have used some magic
+to retrieve this code.</p>
+<p>So we now have ALL 4BL versions. Isn't that great? It means that ALL
+machines can run the 4532 kernel. The good news is also that the 4532
+kernel supports falcon consoles, and runs long enough to also work on
+jasper consoles (because we exploit way before the different GPU is
+touched at all).</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="q-the-power-supply-goes-red-when-plugging-in-power">Q: "The power supply goes red when plugging in power!"</h3>
+<p>A: You shorted a power pin, probably V33_SB, the one attached to the
+NAND flash. Carefully look for solder residues. Use a lot of flux and a
+properly-heated soldering
+iron.</p>
+<h3 id="q-the-power-supply-stays-yellow-when-i-press-the-power-button-and-nothing-else-happens">Q: "The power supply stays yellow when I press the power button, and nothing else happens."</h3>
+<p>A: The SMC code is invalid. This can be a misconnected flashrom, an
+illegal image, a bad flash or simply a bad SMC code. Verify:</p>
+<ul>
+<li>Electrical connections first.</li>
+<li>Did you flash with the proper ECC settings? The flash images we are
+    working with usually contain raw ECC information, i.e. 512+16 bytes
+    per sector. Make sure your flash programmer is not modifying these
+    16 bytes, but writing those as they are.</li>
+<li>Have you used the right SMC image?</li>
+</ul>
+<h3 id="q-the-fans-run-at-full-speed-immediately">Q: "The fans run at full speed immediately."</h3>
+<p>A: This is very likely a bad SMC config sector. Did you flash all the
+parts generated by the image creation tool at the proper position? Note
+that offsets are given as payload offsets, not counting ECC bytes.
+Usually this matches what your average NAND programmer tells you, but in
+case you re-assembled these into a single image, take care to properly
+convert the offsets.</p>
+<h3 id="q-i-get-e79">Q: "I get E79"</h3>
+<p>A: This means that, congratulations, your console is still booting into
+a kernel, and just cannot go further (which was to be exepcted, given
+that there is no filesystem anymore). You're almost there, but for some
+reasons, the DMA attack didn't run. This can be either that you didn't
+used a patched SMC, or that the target address wasn't inserted properly.</p>
+<h3 id="q-console-powers-on-but-i-get-a-black-screen">Q: "Console powers on, but I get a black screen."</h3>
+<p>A: Well, there are many reasons here again. First, wait some time (~1
+minute), and see if you get a RROD. If you do, the VM code failed to
+handshake with the SMC (error code XXXX), which usually means that it
+crashed, and the SMC watchdog triggered until it retried too often. Did
+you use the proper 2BL/4BL image for your machine type? Did you use a
+recent enough SMC version? Since the VM code took more and more time
+(from roughly a half second in 1888 to several seconds in 1920), the SMC
+code was modified to time out later. Be sure to use a known-good SMC
+version, if possible, based on the version which was installed before.
+If you don't get a RROD, please try checking your POST code. You can do
+this via CPU jtag, or by measuring the 8 POST pins.</p>
+<p>Post code 6C:</p>
+<ul>
+<li>The exploit failed, somehow.</li>
+</ul>
+<p>Post code 10:</p>
+<ul>
+<li>Our code is running! That's great, but it failed copying the
+    XeLL-payload from flash. Try booting into the alternate loader (see
+    below in the "exploit loader" section), or reflash.</li>
+</ul>
+<p>Post code 11:</p>
+<ul>
+<li>Exploit code ran, and jumped into XeLL. XeLL crashed. Try alternate
+    loader, or do serial upload for recovery, if you really screwed up
+    both the primary and secondary loader. (You failed, in that case.)</li>
+</ul>
+<p>Post codes >= 0x80:</p>
+<ul>
+<li>Those are errors from the bootloader. Please check the disassembly
+    of those loaders to see what's wrong exactly. It shouldn't happen
+    unless you have a bad flash.</li>
+</ul>
+<p>Post code 0xA0:</p>
+<ul>
+<li>Your 2BL didn't want to run on your hardware due to the 2BL
+    revocation fuses. Use a more recent 2BL/4BL set for your hardware.
+    If you're already running {1921, 4558, 5770, 6712} then you're out
+    of luck. Your box was already updated to a newer 2BL, which likely
+    fixed what we used to exploit. Restore R6T3, restore the flash
+    image, and use this console for playing games. Get another console,
+    and try again.</li>
+</ul>
+<p>Please note that some hardware elements are not properly initialized at
+the early time of the exploit. This affects:</p>
+<p>CPU:</p>
+<ul>
+<li>The CPU is initialized in low-power mode, where it runs at
+    quarter-speed.</li>
+</ul>
+<p>Setting the CPU power mode is possible, of course, but needs to be
+reverse-engineered from the corresponding hypervisor syscall.</p>
+<p>GPU:</p>
+<ul>
+<li>A full screen setup is required, including the programming of the
+    ANA-chip. Code is available for setting up a 640x480 VGA mode,
+    support for other resolutions needs to be added.</li>
+<li>EDRAM must be "trained". This is what fails when the E-74 error is
+    displayed. The code is rather complex, and has been
+    reverse-enginnered, but doesn't run properly yet. However, it has
+    been shown to work a bit, and can likely be tweaked to work
+    properly.</li>
+</ul>
+<p>SATA:</p>
+<ul>
+<li>SATA likely needs some reset sequence. Linux kernel does this fine,
+    but XeLL doesn't work.</li>
+</ul>
+<p>All of these issues are expected to be fixed.</p>
+<p>This hack can also be used to reboot into a Microsoft kernel, in order
+to keep the possibility of playing games locally. This is not within the
+scope of this document, and is actually not related to this hack at all.
+This hack allows you the execution of software - and YOU decide what
+software that should be. It could be linux, your favourite emulator, or
+a rebooter.</p>
+<p>Note that we do not support patching the Microsoft kernel for piracy
+under any circumstances. Also, playing on LIVE with a modified console
+won't be possible without getting banned, ever. There are already
+challenges in place which detect any unauthorized modification. We urge
+you to not abuse this hack for piracy.</p>
+<h2 id="exploit-loader">EXPLOIT LOADER</h2>
+<p>The first own code which is executed is a small loader, which operates
+in the following way:</p>
+<ul>
+<li>If a character is present on the serial port, it will be read.<ul>
+<li>if that character is '@', we will enter serial upload mode.</li>
+<li>if that character is ' ', we will use the backup bootloader</li>
+</ul>
+</li>
+<li>if not serial upload mode:<ul>
+<li>POST 0x10</li>
+<li>read bootloader from flash (either backup or normal)</li>
+<li>POST 0x11</li>
+<li>run</li>
+</ul>
+</li>
+<li>serial upload mode:<ul>
+<li>output '>'</li>
+<li>receive characters</li>
+<li>after 10 consecutive 'x', stop upload</li>
+<li>output '!'</li>
+<li>run</li>
+</ul>
+</li>
+</ul>
+<p>This allows some kind of recovery if you want to update the in-flash
+bootloader.</p>
+<p>The used addresses are the following:</p>
+<ul>
+<li>FLASH_BASE is the location in flash of the backup bootloader,</li>
+<li>FLASH_BASE + 0x40000 is the location of the main bootloader,</li>
+<li>CODE_BASE is the memory address of the bootloader in ram.</li>
+</ul>
+<p>By default, the following memory map is used:</p>
+<p>00000000..00100000: SMC, KV, CB, CD, CE, CF, CG, backup bootloader
+00100000..00140000: main bootloader
+00140000..00f7c000: empty space
+00f7c000 : smc config block
+00ffc000 : exploit buffer</p>
+<p>But this can be tweaked.</p>
+<p><a href="/System_Software">Category: System Software</a>
+<a href="/Hardware">Category: Hardware</a></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+    
+  </body>
+</html>
