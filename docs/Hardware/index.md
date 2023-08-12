@@ -1,31 +1,21 @@
 # Hardware
 
-[RF Module](../RF_Module)
+## Sub-categories:
 
-[Run Code](../Run_Code)
+- [Accessories](./Accessories)
+- [Console](./Console)
 
-[Southbridge](../Southbridge)
+## Pages
 
-[Stereo DAC](../Stereo_DAC)
+- [8051 / 8052](./8051_8052)
+- [Fusesets](./Fusesets)
+- [Level Shifter](./Level_Shifter)
+- [R6T3](./R6T3)
 
-[Trinity](../Trinity)
+<!--- Missing Pages:
+
+[Run Code](Run_Code)
 
 [UART](../UART)
 
-[USB](../USB)
-
-[Webcam](../Webcam)
-
-[Wifi Adapter](../Wifi_Adapter)
-
-[Xbox 360 Motherboard](../Xbox_360_Motherboard)
-
-[Xenon](../Xenon)
-
-[Xenon (CPU)](../Xenon_(CPU))
-
-[Xenon (Motherboard)](../Xenon_(Motherboard))
-
-[Xenos (GPU)](../Xenos_(GPU))
-
-[Zephyr](../Zephyr)
+--->

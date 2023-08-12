@@ -1,16 +1,13 @@
-The XBox 360 motherboard has gone through several changes over the
+# Xbox 360 Motherboard Revisions
+
+The Xbox 360 motherboard has gone through several changes over the
 years. These changes often reduced die sizes of various chips (CPU
-(Xenon), GPU (Xenos), [eDRAM](http://en.wikipedia.org/wiki/EDRAM),
-etc.), added new features (HDMI, etc.) and patched the SMC/JTAG exploit.
+(Xenon), GPU (Xenos), [eDRAM],etc.), added new features (HDMI, etc.)
+and patched the SMC/JTAG exploit.
 This pages lists off all known motherboard revisions, their changes as
 well as links to their respective pages.
 
-<!--- Not an issue with GitHub PRS - halotroop2288
-'''NOTE TO MAINTAINERS: ''' This page is often ripped apart by spam
-bots! Please check and revert any unwanted changes regularly!
---->
-
-## [Xenon](Xenon_(Motherboard)) (V1)
+## [Xenon](Xenon) (V1)
 
 The original Xbox 360 configuration used in the initial Premium and Core
 machines released in the end of November 2005.
@@ -20,7 +17,7 @@ the GPU chip warps away from the motherboard because of excessive heat.
   - Consoles : Core, Pro/Premium 20GB
   - 90nm IBM CPU
   - 90nm ATI GPU and 90nm on-chip
-    [eDRAM](http://en.wikipedia.org/wiki/EDRAM)
+    [eDRAM]
   - Low profile GPU cooler
   - Standard CPU cooler
   - 203 Watt output power supply (16.5 A)
@@ -37,7 +34,7 @@ motherboard.
 
   - Consoles: Arcade, Pro/Premium 20GB, Elite 120GB and Halo 3 Console
   - 90nm IBM CPU & ATI GPU
-  - 90nm [eDRAM](http://en.wikipedia.org/wiki/EDRAM)
+  - 90nm [eDRAM]
   - 203 Watt PSU (16.5 A)
   - **HDMI** video output
   - Updated motherboard layout
@@ -48,7 +45,7 @@ motherboard.
   - Shipping with Hitachi 78 or 79 and **BenQ** DVD-Drive. May also have
     Lite-On if it was refurbished.
 
-## [Falcon](Falcon) (V3)
+## [Falcon](./Falcon) (V3)
 
 All Xbox 360 Premium machines and Arcade machines made in August 2007
 introduced the new 65 nm CPU accompanied with a new cooler and still 90
@@ -60,7 +57,7 @@ costs.
   - Consoles: Arcade, Pro/Premium 20GB & 60GB, Elite 120GB
   - **65nm** IBM CPU
   - **90nm** ATI GPU
-  - **80nm** on-chip [eDRAM](http://en.wikipedia.org/wiki/EDRAM).
+  - **80nm** on-chip [eDRAM].
   - HDMI Video Output
   - **175 Watt** PSU (2V rated for 14.2A, new connector)
   - New CPU Heat sink + the GPU heat sink with heat pipe
@@ -70,7 +67,7 @@ costs.
   - 3 pin fan connector
   - Shipping with Hitachi 79, BenQ and new Lite-On 7XXX series DVD-Drive
 
-## [Opus](Opus) (V3.1)
+## [Opus](./Falcon#Opus) (V3.1)
 
 This is an intermediate motherboard with 65nm CPU and 90nm GPU, new
 coolers, but no HDMI. It will be used in Xenon chassis for repairs and
@@ -82,8 +79,7 @@ a Xenon chassis and case.
   - Consoles: Core, Pro/Premium 20GB
   - Falcon based board
   - 65nm IBM CPU
-  - 90nm ATI GPU with 80nm on-chip
-    [eDRAM](http://en.wikipedia.org/wiki/EDRAM)
+  - 90nm ATI GPU with 80nm on-chip [eDRAM]
   - **No HDMI** Video Output
   - 175 Watt PSU (2V rated for 14.2A, new connector)
   - Updated Heat sinks
@@ -94,7 +90,7 @@ a Xenon chassis and case.
   - **Opus only available from Xenon being repaired by MS**.
   - Very Rare
 
-## [Jasper](Jasper) (V4)
+## [Jasper](Jasper#jasper-v40) (V4)
 
 Jasper introduced the 65nm GPU to reduce power usage and cost further.
 The new power supply is rated for 150 Watt, down from 175 Watt on the
@@ -108,8 +104,7 @@ a memory unit or the hard drive.
   - Consoles: Arcade 256MB & 512MB, Pro/Premium 60GB, Elite 120GB &
     250GB and Resident Evil 5 console
   - 65nm IBM CPU
-  - **65nm** ATI GPU with 80nm on-chip
-    [eDRAM](http://en.wikipedia.org/wiki/EDRAM)
+  - **65nm** ATI GPU with 80nm on-chip [eDRAM]
   - **150 Watt** PSU (12V rated for 12.1A, new connector)
   - Arcade Edition Larger Flash **256MB** or 512MB Hynix HY27UF082G2B
     on-board flash, up from 16MB HY27US08281A flash, to accommodate the
@@ -123,13 +118,13 @@ a memory unit or the hard drive.
   - Least likely to red ring of death (RRoD) due to the less heat being
     outputted by the chips
 
-## Jasper (V4.1)
+## [Jasper](./Jasper#Jasper-v41) (V4.1)
 
 Same as Jasper (V4), minor changes.
 
   - Consoles: Arcade 512MB, Elite 120GB & 250GB, Modern Warfare 2
     consoles and Final Fantasy 13 consoles
-  - 65nm [eDRAM](http://en.wikipedia.org/wiki/EDRAM) (?)
+  - 65nm [eDRAM] (?)
   - New [Southbridge](Southbridge) chipset
   - Arcade Edition Larger Flash 256MB and **512MB** to accommodate NXE
     (Removes 256MB Memory Card)
@@ -139,11 +134,10 @@ Same as Jasper (V4), minor changes.
   - Special edition consoles: Modern Warfare 2 Consoles
   - Last of the original style 360 systems
 
-## Trinity/[Valhalla](Valhalla) (V5) \[New Slim Xbox 360\]
+## [Trinity](./Trinity)/Valhalla (V5) \[New Slim Xbox 360\]
 
   - Consoles: 4GB Arcade, Elite 250GB and Halo Reach Console
-  - Unified single chip with CPU, GPU and
-    [eDRAM](http://en.wikipedia.org/wiki/EDRAM) at 45nm process.
+  - Unified single chip with CPU, GPU and [eDRAM] at 45nm process.
   - 16MB NAND
   - 135 Watt PSU
   - 802.11n Wi-Fi integrated
@@ -155,20 +149,24 @@ Same as Jasper (V4), minor changes.
   - No more RROD, simple red power light on error (unknown on more
     detail)
 
-## Corona (?)
+## Corona (V5.1)
+
+<!--- Needs rewrite with updated information and its own page
 
 Referenced in 20353 xbdm.dll, nothing known right now, possibly the
 newer cheaper XDKs?
 
 Information on this board so far:
 
-  - Many say that it is a Trinity Revision (Trinity v2)
+-->
+
   - Console: Forza 4 250 GB (This board was found in a Forza 4 bundle)
   - Manufacture Date: 8-17-2011
   - No HANA Chip, it's integrated into the Southbridge
   - 115 W PSU
   - CPU: 45 nm Combined Chip (Basicaly the CPU and GPU are combined)
   - HDMI Enabled
+
 
 The interesting thing is that it seems that Microsoft knew about the
 Reset Glitch Hack, so they removed the HANA Chip. So it seems Microsoft
@@ -179,3 +177,5 @@ Corona Sources:
 [Source 2](https://web.archive.org/web/20160515071713/http://www.xboxhacker.org/index.php?topic=17143.0)
 
 [Category: Hardware](/Hardware)
+
+[eDRAM]:http://en.wikipedia.org/wiki/EDRAM
