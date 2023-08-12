@@ -137,7 +137,7 @@ If the **Metadata Version** field is set to 2, the format is slightly changed.
 | 0x0368 | 0x4                                  | int                                     | Save Game ID                                      |
 | 0x036C | 0x5                                  | byte\[\]                                | Console ID                                        |
 | 0x0371 | 0x8                                  | byte\[\]                                | Profile ID                                        |
-| 0x0379 | 0x24                                 | [Volume Descriptor](#Volume_Descriptor) | Volume Descriptor                                 |
+| 0x0379 | 0x24                                 | [Volume Descriptor](#volume-descriptor) | Volume Descriptor                                 |
 | 0x039D | 0x4                                  | signed int                              | Data File Count                                   |
 | 0x03A1 | 0x8                                  | signed long                             | Data File Combined Size                           |
 | 0x03A9 | 0x4                                  | int (STFS = 0, SVOD = 1)                | Descriptor type                                   |
@@ -251,7 +251,7 @@ Block 0 starts at 0x3000, and hash table 0 at 0x1000/0x2000.
 | 0x000  | 0x228  | Console_Security_Certificate       | Console Security Certificate     |
 | 0x228  | 0x14   | bytes                              | SHA1 hash from 0x23C-0x1000      |
 | 0x23C  | 0x8    | signed long                        | Unknown                          |
-| 0x244  | 0x24   | [Volume Descriptor](#STFS_2)       | Volume Descriptor (STFS)         |
+| 0x244  | 0x24   | [Volume Descriptor](#volume-descriptor)       | Volume Descriptor (STFS)         |
 | 0x268  | 0x4    | signed int                         | Unknown                          |
 | 0x26C  | 0x8    | bytes                              | Profile ID                       |
 | 0x274  | 0x1    | byte                               | Unknown                          |
@@ -507,4 +507,4 @@ internal int ComputeLevelNHashBlockNumber(int xBlock, int xLevel)
   problems with creation, some prefer to use XLAST)
 - XLAST inside the Xbox 360 SDK can create LIVE/PIRS packages, but it is illegal to share it.
 
-[System Software](System_Software)
+[System Software](/System-Software)

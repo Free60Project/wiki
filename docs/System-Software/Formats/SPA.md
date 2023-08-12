@@ -1,6 +1,6 @@
-**SPA** files are contained inside [XEX](XEX) files or within
-Updates or DLC. They are just a [XDBF](XDBF) file, they are
-used by the dashboard for [GPD](GPD) creation and [Xbox LIVE](Xbox_LIVE) information.
+**SPA** files are contained inside [XEX](../XEX) files or within
+Updates or DLC. They are just a [XDBF](../XDBF) file, they are
+used by the dashboard for [GPD](../GPD) creation and [Xbox LIVE](Xbox_LIVE) information.
 
 # Record Table
 
@@ -248,4 +248,4 @@ string.
 | 2      | 2                 | UInt16 | String Length |
 | 4      | **String Length** | String | String        |
 
-[System Software](System_Software)
+[System Software](/System-Software)
