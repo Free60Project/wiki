@@ -58,7 +58,7 @@ source venv/bin/activate
 4. Install needed python dependencies using python package manager -> pip
 
 ```sh
-pip install mkdocs mkdocs-material
+pip install -r requirements.txt
 ```
 
 5. At this point, load up the clone repository in a text editor that has live-markdown preview function.
@@ -68,12 +68,12 @@ pip install mkdocs mkdocs-material
 
 Build the documentation
 ```sh
-make build
+make build --strict
 ```
 
 Serve the documentation
 ```sh
-make serve
+make serve --strict
 ```
 
 7. Once you are happy and the added changes are looking proper, you are ready to submit your work.
