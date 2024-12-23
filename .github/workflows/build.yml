@@ -1,16 +1,18 @@
-name: Build and Deploy
-on:
-  push:
-    branches:
-      - master
+name: Build site
+on: [push, pull_request]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout master
-        uses: actions/checkout@v2.4.0
-      - name: Deploy MkDocs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Install python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      - name: Install deps
+        run: pip install -U -r requirements.txt
+      - name: Build
+        run: mkdocs build --strict
