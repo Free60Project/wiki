@@ -1,7 +1,7 @@
 build: ## Build docs locally
-	mkdocs build --clean
+	mkdocs build --strict --clean
 
 serve: ## Serve live version of your docs
-	mkdocs serve
+	mkdocs serve --strict
 
 all: build
