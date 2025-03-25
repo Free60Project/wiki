@@ -17,60 +17,60 @@ Actually it has been reported to work with the first official "Backward
 Compatibility" .XEX File from Microsoft. It takes the XEX file as
 argument.
 
-`// default.xex table dumper`
-` // only works with the default.xex from the xbox360 emulator update package.`
-` // - th0mas, th0mas.sixbit.org [at] gmail.com`
-` `
-` #include <stdio.h>`
-` #include <string.h>`
-` `
-` #define TABLE_START 0x288`
-` `
-` struct table {`
-`    unsigned int unknown[6];`
-` };`
-` `
-` unsigned int ByteSwap (unsigned int nInt)`
-` {`
-`    union u {unsigned int vi; unsigned char c[sizeof(unsigned int)];};`
-`    union v {unsigned int ni; unsigned char d[sizeof(unsigned int)];};`
-`    union u un;`
-`    union v vn;`
-`    un.vi = nInt;`
-`    vn.d[0]=un.c[3];`
-`    vn.d[1]=un.c[2];`
-`    vn.d[2]=un.c[1];`
-`    vn.d[3]=un.c[0];`
-`    return (vn.ni);`
-` }`
-` `
-` void printTable(struct table *t)`
-` {`
-`    int i;`
-`    for (i = 0; i < 6; i  ) {`
-`       int j = ByteSwap(t->unknown[i]);`
-`       printf("0x%08x ", j);`
-`    }`
-`    printf("\n");`
-` }`
-` `
-` int main(int argc, char **argv)`
-` {`
-`    FILE *fp = fopen(argv[1], "rb");`
-`    struct table tmp;`
-`    int numEntries = 0;`
-`    int i;`
-` `
-`    fseek(fp, TABLE_START, SEEK_SET);`
-`    fread(&numEntries, sizeof(unsigned int), 1, fp);`
-`    numEntries = ByteSwap(numEntries);`
-`    for (i = 0; i < numEntries; i  ) {`
-`         fread(&tmp, sizeof(struct table), 1, fp);`
-`         printTable(&tmp);`
-`    }`
-` }`
-` `
-` `
+```c
+// default.xex table dumper
+// only works with the default.xex from the xbox360 emulator update package.
+// - th0mas, th0mas.sixbit.org@gmail.com
+
+#include <stdio.h>
+#include <string.h>
+
+#define TABLE_START 0x288
+
+struct table {
+   unsigned int unknown[6];
+};
+
+unsigned int ByteSwap (unsigned int nInt)
+{
+   union u { unsigned int vi; unsigned char c[sizeof(unsigned int)]; };
+   union v { unsigned int ni; unsigned char d[sizeof(unsigned int)]; };
+   union u un;
+   union v vn;
+   un.vi = nInt;
+   vn.d[0]=un.c[3];
+   vn.d[1]=un.c[2];
+   vn.d[2]=un.c[1];
+   vn.d[3]=un.c[0];
+   return (vn.ni);`
+}
+
+void printTable(struct table *t)
+{
+   int i;
+   for (i = 0; i < 6; i++) {
+      int j = ByteSwap(t->unknown[i]);
+      printf("0x%08x ", j);
+   }
+   printf("\n");
+}
+
+int main(int argc, char **argv)
+{
+   FILE *fp = fopen(argv[1], "rb");
+   struct table tmp;
+   int numEntries = 0;
+   int i;
+
+   fseek(fp, TABLE_START, SEEK_SET);
+   fread(&numEntries, sizeof(unsigned int), 1, fp);
+   numEntries = ByteSwap(numEntries);
+   for (i = 0; i < numEntries; i++) {
+        fread(&tmp, sizeof(struct table), 1, fp);
+        printTable(&tmp);
+   }
+}
+```
 
 # Structure of the XEX File
 
