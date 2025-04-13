@@ -154,3 +154,176 @@ plugins:
       'Hardware/Revisions/Valhalla.md': 'Hardware/Console/Revisions/Trinity.md'
       'Toolchain.md': 'Development/Xenon_Toolchain.md'
       'Hardware/Console/SFCX.md': 'Hardware/Console/Southbridge.md'
+
+
+      # Fix broken links
+      # 1. Development
+      'Cross_Compiler.md': 'Development/Cross_Compiler.md'  
+      'Dumpana.md': 'Development/Dumpana.md'
+      'Finding_the_right_timing.md': 'Development/Finding_the_right_timing.md'
+      'Free60_Git_Repository.md': 'Development/Free60_Git_Repository.md'
+      'LibHomebrew.md': 'Development/LibHomebrew.md'
+      'List_of_development_tools.md': 'Development/List_of_development_tools.md'  
+      'Run_Code.md': 'Development/Run_Code.md'
+      'Starting_Homebrew_Development.md': 'Development/Starting_Homebrew_Development.md'
+      'System_Calls.md': 'Development/System_Calls.md'
+      'UART.md': 'Development/UART.md'
+      'Xenon_Toolchain.md': 'Development/Xenon_Toolchain.md'
+      'Compiling_the_Toolchain.md': 'Development/Xenon_Toolchain.md'
+      'Xenos_Framebuffer.md': 'Development/Xenos_Framebuffer.md'
+      # 1.1 Development/LibXenon
+      'LibXenon.md': 'Development/LibXenon/index.md'
+      'LibXenon_Examples.md': 'Development/LibXenon/Examples.md'
+      # 2. Hacks
+      'King_Kong_Hack.md': 'Hacks/King_Kong_Hack.md'
+      'NAND_Bad_Blocks.md': 'Hacks/NAND_Bad_Blocks.md'
+      'NAND_Reading.md': 'Hacks/NAND_Reading.md'
+      'Dump_Flash_the_NAND.md': 'Hacks/NAND_Reading.md'
+      'Reset_Glitch_Hack.md': 'Hacks/Reset_Glitch_Hack.md'
+      'SMC_Hack.md': 'Hacks/SMC_Hack.md'
+      'SPI_Programmer.md': 'Hacks/SPI_Programmer.md'
+      # 3. Hardware
+      '8051_8052.md': 'Hardware/8051_8052.md'
+      'Fusesets.md': 'Hardware/Fusesets.md'
+      'Level_Shifter.md': 'Hardware/Level_Shifter.md'
+      'R6T3.md': 'Hardware/R6T3.md'
+      # 3.1 Hardware/Accessories
+      'Gamepad_Keyboard.md': "Hardware/Accessories/Chatpad.md"
+      'GamePad.md': "Hardware/Accessories/GamePad.md"
+      'Headset.md': "Hardware/Accessories/Headset.md"
+      'Media_Remote.md': "Hardware/Accessories/Media_Remote.md"
+      'Memory_Unit.md': "Hardware/Accessories/Memory_Unit.md"
+      'Play_and_Charge_Kit.md': "Hardware/Accessories/Play_and_Charge_Kit.md"
+      'Webcam.md': "Hardware/Accessories/Webcam.md"
+      'Wifi_Adapter.md': "Hardware/Accessories/Wifi_Adapter.md"
+      # 3.2 Hardware/Console
+      'Case.md': "Hardware/Console/Case.md"
+      'DVD_Drive.md': "Hardware/Console/DVD_Drive.md"
+      'Ethernet.md': "Hardware/Console/Ethernet.md"
+      'HDD.md': "Hardware/Console/HDD.md"
+      'Memory.md': "Hardware/Console/Memory.md"
+      'Motherboard.md': "Hardware/Console/Motherboard.md"
+      'Northbridge.md': "Hardware/Console/Northbridge.md"
+      'Pin_Headers.md': "Hardware/Console/Pin_Headers.md"
+      'RF_Module.md': "Hardware/Console/RF_Module.md"
+      'SMC.md': "Hardware/Console/SMC.md"
+      'SMC_Command_0x01.md': "Hardware/Console/SMC_Command_0x01.md"
+      'SMC_Command_0x82.md': "Hardware/Console/SMC_Command_0x82.md"
+      'Southbridge.md': "Hardware/Console/Southbridge.md"
+      'SPI.md': "Hardware/Console/SPI.md"
+      'Stereo_DAC.md': "Hardware/Console/Stereo_DAC.md"
+      'USB.md': "Hardware/Console/USB.md"
+      'Xenon_(CPU).md': "Hardware/Console/Xenon_(CPU).md"
+      'Xenon_(Motherboard).md': "Hardware/Console/Xenon_(Motherboard).md"
+      'Xenos_(GPU).md': "Hardware/Console/Xenos_(GPU).md"
+      'CPU.md': "Hardware/Console/Xenon_(CPU).md"
+      'GPU.md': "Hardware/Console/Xenos_(GPU).md"
+      # 3.2.1 Hardware/Console/NAND/
+      'NAND.md': "Hardware/Console/NAND/index.md"
+      'Flash.md': "Hardware/Console/NAND/index.md"
+      # 3.2.2 Hardware/Console/Revisions/
+      'Falcon.md': "Hardware/Console/Revisions/Falcon.md"
+      'Identification.md': "Hardware/Console/Revisions/Identification.md"
+      'Xbox_Revision_Identification.md': "Hardware/Console/Revisions/Identification.md"
+      'Xbox_Revisions.md': "Hardware/Console/Revisions/index.md"
+      'Jasper.md': "Hardware/Console/Revisions/Jasper.md"
+      'Trinity.md': "Hardware/Console/Revisions/Trinity.md"
+      'Zephyr.md': "Hardware/Console/Revisions/Zephyr.md"
+      # 4. Homebrew
+      'List_of_homebrew_applications.md': "Homebrew/List_of_homebrew_applications.md"      
+      'List_of_homebrew_emulators.md': "Homebrew/List_of_homebrew_emulators.md"      
+      'Emulators.md': "Homebrew/List_of_homebrew_emulators.md"      
+      'List_of_homebrew_games.md': "Homebrew/List_of_homebrew_games.md"      
+      'Homebrew_Games.md': "Homebrew/List_of_homebrew_games.md"      
+      'Homebrew_Launchers.md': "Homebrew/List_of_homebrew_loaders.md"      
+      'List_of_homebrew_loaders.md': "Homebrew/List_of_homebrew_loaders.md"      
+      'List_of_system_tools.md': "Homebrew/List_of_system_tools.md"      
+      # 4.1 Homebrew/Apps
+      'XMENU.md': "Homebrew/Apps/XMENU.md"      
+      'XMPlayer.md': "Homebrew/Apps/XMPlayer.md"      
+      # 4.2 Homebrew/Emulators
+      'Genesis_Plus.md': "Homebrew/Emulators/Genesis_Plus.md"      
+      'Mupen64-360.md': "Homebrew/Emulators/Mupen64-360.md"      
+      'PCSXR-Xenon.md': "Homebrew/Emulators/PCSXR-Xenon.md"      
+      'Sega_Genesis_Plus_GX.md': "Homebrew/Emulators/Sega_Genesis_Plus_GX.md"      
+      'Sega_Master_System_Plus.md': "Homebrew/Emulators/Sega_Master_System_Plus.md"      
+      'Snes9x-Gx.md': "Homebrew/Emulators/Snes9x-Gx.md"      
+      # 4.3 Homebrew/Games
+      'Pong.md': "Homebrew/Games/Pong.md"      
+      'SDLQuake.md': "Homebrew/Games/SDLQuake.md"      
+      'Tanks_360.md': "Homebrew/Games/Tanks_360.md"      
+      # 4.4 Homebrew/PC-Software
+      '360FlashTool.md': "Homebrew/PC-Software/360FlashTool.md"
+      'PC_Software.md': "Homebrew/PC-Software/index.md"
+      'List_of_PC_utilities.md': "Homebrew/PC-Software/List_of_PC_utilities.md"
+      'NandCompare.md': "Homebrew/PC-Software/NandCompare.md"
+      'NANDPro.md': "Homebrew/PC-Software/NANDPro.md"
+      # 4.5 Homebrew/Tools
+      'XeLL.md': "Homebrew/Tools/XeLL.md"
+      # 5. Linux
+      'Lflash.md': "Linux/Lflash.md"
+      'Linux_Kernel.md': "Linux/Linux_Kernel.md"
+      'Linux_Kernel_Development.md': "Linux/Linux_Kernel_Development.md"
+      'List_of_Unix_Distributions.md': "Linux/List_of_Unix_Distributions.md"
+      # 5.1 Linux/Distros
+      'Linux_Distributions.md': "Linux/Distros/index.md"
+      'LiveCD.md': "Linux/Distros/LiveCD.md"
+      # 5.1.1 Linux/Distros/Debian
+      'Debian-etch.md': "Linux/Distros/Debian/etch.md"
+      'Debian-lenny.md': "Linux/Distros/Debian/lenny.md"
+      'Debian-squeeze.md': "Linux/Distros/Debian/squeeze.md"
+      # 5.1.2 Linux/Distros/Ubuntu
+      'Ubuntu.md': "Linux/Distros/Ubuntu/index.md"
+      'Ubuntu11_10.md': "Linux/Distros/Ubuntu/11_10.md"
+      'Ubuntu7_10.md': "Linux/Distros/Ubuntu/7_10.md"
+      # 6. Support
+      'Attack.md': 'Support/Attack.md'
+      'Contribute.md': 'Support/Contribute.md'
+      'FAQ.md': 'Support/FAQ.md'
+      'Help.md': 'Support/Help.md'
+      'IRC.md': 'Support/IRC.md'
+      'Links.md': 'Support/Links.md'
+      # 6. System-Software
+      '1bl_Code.md': "System-Software/1bl_Code.md"
+      '360_System_Software.md': "System-Software/360_System_Software.md"
+      '849x_System_Update.md': "System-Software/849x_System_Update.md"
+      'Boot_Process.md': "System-Software/Boot_Process.md"
+      'Bootloaders.md': "System-Software/Bootloaders.md"
+      'CB_Code.md': "System-Software/CB_Code.md"
+      'Console_Security_Certificate.md': "System-Software/Console_Security_Certificate.md"
+      'Error_Codes.md': "System-Software/Error_Codes.md"
+      'HvxExpansionInstall.md': "System-Software/HvxExpansionInstall.md"
+      'HvxKeysExecute.md': "System-Software/HvxKeysExecute.md"
+      'HvxPostOutput.md': "System-Software/HvxPostOutput.md"
+      'Kernel.md': "System-Software/Kernel.md"
+      'Kernel_Exports.md': "System-Software/Kernel_Exports.md"
+      'Memory_Map.md': "System-Software/Memory_Map.md"
+      'NAND_File_System.md': "System-Software/NAND_File_System.md"
+      'Profile_Account.md': "System-Software/Profile_Account.md"
+      'Reversing_the_bootloaders.md': "System-Software/Reversing_the_bootloaders.md"
+      'SFCX.md': "System-Software/SFCX.md"
+      'Shadowboot.md': "System-Software/Shadowboot.md"
+      'XConfig.md': "System-Software/XConfig.md"
+      'XDK_Kernel.md': "System-Software/XDK_Kernel.md"
+      # 6.1 System-Software/Formats
+      'FMIM.md': "System-Software/Formats/FMIM.md"
+      'GPD.md': "System-Software/Formats/GPD.md"
+      'PEC.md': "System-Software/Formats/PEC.md"
+      'SPA.md': "System-Software/Formats/SPA.md"
+      'STFS.md': "System-Software/Formats/STFS.md"
+      'XCP.md': "System-Software/Formats/XCP.md"
+      'XDBF.md': "System-Software/Formats/XDBF.md"
+      'XEX.md': "System-Software/Formats/XEX.md"
+      # 6.1 System-Software/Systems
+      'FATX.md': "System-Software/Systems/FATX.md"
+      'GDFX.md': "System-Software/Systems/GDFX.md"
+
+      #these are duplicates
+      # 7.1 Xbox-360-Homebrew/Apps
+      #'XMPlayer.md': "System-Xbox-360-Homebrew/XMPlayer.md" 
+      # 7.2 Xbox-360-Homebrew/PC-Software
+      #'List_of_PC_utilities.md': "Xbox-360-Homebrew/PC-Software/List_of_PC_utilities.md"
+      #'PC_Software.md': "Xbox-360-Homebrew/PC-Software/List_of_PC_utilities.md"
+
+
+

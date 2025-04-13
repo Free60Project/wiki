@@ -18,9 +18,9 @@
 
 [Wifi Adapter](../Wifi_Adapter)
 
-[Xbox 360 Motherboard](../Xbox_360_Motherboard)
+[Xbox 360 Motherboard](../Motherboard)
 
-[Xenon](../Xenon)
+[Xenon](../Xenon_(Disambiguation))
 
 [Xenon (CPU)](../Xenon_(CPU))
 

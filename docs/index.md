@@ -9,21 +9,16 @@ To submit changes:
 
 ## Categories
 
-[Xbox 360 Hardware](/Hardware)
-[Xbox 360 System Software](/System_Software)
-
-[Xbox 360 Homebrew Software](/Homebrew)
-[Xbox 360 Linux](/Linux)
-[Xbox 360 Development](/Development)
-
-[Support](/Support)
-
-[Pages with missing images](/Pages_with_missing_images)
-[Template documentation](/Template_documentation)
+* [Xbox 360 Hardware](/Hardware)
+* [Xbox 360 Homebrew Software](/Homebrew)
+* [Xbox 360 Linux](/Linux_Distributions)
+* [Xbox 360 Development](/Development)
 
 ## To-do
+* [TODO](/!TODO)
+* [Pages with missing images](/!Pages_with_missing_images)
+* [Pages that need updates](/!Pages_That_Need_Updates)
 
-[TODO](/!TODO)
 
 ## Index
 
@@ -37,35 +32,29 @@ To submit changes:
 |                               | [Dump Flash the NAND](Dump_Flash_the_NAND)           | [Toolchain](Compiling_the_Toolchain)                         |
 |                               | [Ethernet](Ethernet)                                 | [Console Security Certificate](Console_Security_Certificate) |
 |                               | [Falcon](Falcon)                                     | [Cross Compiler](Cross_Compiler)                             |
-|                               | [Finding the right timing](Finding_the_right_timing) | [Dashboard](Dashboard)                                       |
-|                               | [Flash](Flash)                                       | [Debian-etch](Debian-etch)                                   |
-|                               | [Fusesets](Fusesets)                                 | [Debian-lenny](Debian-lenny)                                 |
-|                               | [GamePad](GamePad)                                   | [Debian-squeeze](Debian-squeeze)                             |
-|                               | [Gamepad Keyboard](Gamepad_Keyboard)                 | [Dumpana](Dumpana)                                           |
-|                               | [GPU](GPU)                                           |                                                              |
-|                               | [HDD](HDD)                                           | [Emulators](Emulators)                                       |
-|                               | [Harddrive](Harddrive)                               | [FATX](FATX)                                                 |
-|                               | [Headset](Headset)                                   |                                                              |
-|                               | [Motherboard](Motherboard)                           | [Flash Filesystem](Flash_Filesystem)                         |
-|                               | [Jasper](Jasper)                                     | [GDFX](GDFX)                                                 |
-|                               | [Level Shifter](Level_Shifter)                       | [GPD](GPD)                                                   |
+|                               | [Finding the right timing](Finding_the_right_timing) | [Debian-etch](Debian-etch)                                   |
+|                               | [Flash](Flash)                                       | [Debian-lenny](Debian-lenny)                                 |
+|                               | [Fusesets](Fusesets)                                 | [Debian-squeeze](Debian-squeeze)                             |
+|                               | [GamePad](GamePad)                                   | [Dumpana](Dumpana)                                           |
+|                               | [Gamepad Keyboard](Gamepad_Keyboard)                 | [Emulators](Emulators)			                              |
+|                               | [GPU](GPU)                                           | [FATX](FATX)				                                  |
+|                               | [HDD](HDD)                                           | [GDFX](GDFX)                                                 |
+|                               | [Headset](Headset)                                   | [GPD](GPD)                                                   |
+|                               | [Motherboard](Motherboard)                           | 										                      |
+|                               | [Jasper](Jasper)                                     |                                               				  |
+|                               | [Level Shifter](Level_Shifter)                       |                                                			  |
+
 
 
 [Free60 Git Repository](Free60_Git_Repository)
-
-[Generic Xbox 360 File Container](Generic_Xbox_360_File_Container)
 
 [Genesis Plus](Genesis_Plus)
 
 [Help](Help)
 
-[Histogram](Histogram)
-
 [Homebrew Games](Homebrew_Games)
 
 [Homebrew Launchers](Homebrew_Launchers)
-
-[Homebrew Repository](Homebrew_Repository)
 
 [HvxExpansionInstall](HvxExpansionInstall)
 
@@ -85,8 +74,6 @@ To submit changes:
 
 [King Kong Hack](King_Kong_Hack)
 
-[Launchers](Launchers)
-
 [Lflash](Lflash)
 
 [LibHomebrew](LibHomebrew)
@@ -95,19 +82,9 @@ To submit changes:
 
 [LibXenon Examples](LibXenon_Examples)
 
-[Lib Homebrew](Lib_Homebrew)
-
-[Libraries](Libraries)
-
-[Libxenonexamples](Libxenonexamples)
-
 [Links](Links)
 
-[Linux Bootloader](Linux_Bootloader)
-
 [Linux Distributions](Linux_Distributions)
-
-[Linux Distros](Linux_Distros)
 
 [Linux Kernel](Linux_Kernel)
 
@@ -116,8 +93,6 @@ To submit changes:
 [List of PC utilities](List_of_PC_utilities)
 
 [List of Unix Distributions](List_of_Unix_Distributions)
-
-[List of all homebrew](List_of_all_homebrew)
 
 [List of development tools](List_of_development_tools)
 
@@ -133,17 +108,15 @@ To submit changes:
 
 [LiveCD](LiveCD)
 
-[Mainboard](Mainboard)
-
 [Media Remote](Media_Remote)
 
 [Memory](Memory)
 
-[Memory MAP](Memory_MAP)
-
 [Memory Unit](Memory_Unit)
 
 [Modesetting](Modesetting)
+
+[Motherboard](Motherboard)
 
 [Mupen64-360](Mupen64-360)
 
@@ -165,7 +138,7 @@ To submit changes:
 
 [Old Main Page](Old_Main_Page)
 
-[Opus](Opus)
+[Original Xbox Revision Identification](Xbox_Revision_Identification)
 
 [Other OS Loader](Other_OS_Loader)
 
@@ -189,13 +162,9 @@ To submit changes:
 
 [R6T3](R6T3)
 
-[README](README)
-
 [RF Module](RF_Module)
 
 [Rawflash](Rawflash)
-
-[Reading Out nand](Reading_Out_nand)
 
 [Reset Glitch Hack](Reset_Glitch_Hack)
 
@@ -226,8 +195,6 @@ To submit changes:
 [SPI Programmer](SPI_Programmer)
 
 [STFS](STFS)
-
-[Sandbox](Sandbox)
 
 [Secure Transacted File System](Secure_Transacted_File_System)
 
@@ -269,8 +236,6 @@ To submit changes:
 
 [Utilities](Utilities)
 
-[Valhalla](Valhalla)
-
 [Webcam](Webcam)
 
 [Wifi Adapter](Wifi_Adapter)
@@ -291,17 +256,9 @@ To submit changes:
 
 [XMPlayer](XMPlayer)
 
-[XTAF](XTAF)
-
-[Xbox 360 Motherboards](Motherboards)
-
-[Xbox Revision Identification](Xbox_Revision_Identification)
+[XTAF](XFAT)
 
 [Xbox Revisions](Xbox_Revisions)
-
-[Xbox Software](Xbox_Software)
-
-[Xbox System Software](Xbox_System_Software)
 
 [XeLL](XeLL)
 
@@ -309,7 +266,7 @@ To submit changes:
 
 [XeLLous](XeLLous)
 
-[Xenon](Xenon)
+[Xenon](Xenon_(Disambiguation))
 
 [Xenon (CPU)](Xenon_(CPU))
 
