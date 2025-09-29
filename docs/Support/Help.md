@@ -1,13 +1,9 @@
-## IRC
+## IRC/Discord
 
-Server ⇒ <font color="purple">irc.oftc.net</font>(irc.oftc.net)
-Channel ⇒ \#free60 ; \#free60-chat ; \#free60-dev
-or if theres nobody replying try:
+For real-time chat, for either support or to help with the project, you can
+join us on [IRC](/Support/IRC/) or [Discord](/Support/Discord/).
 
-Server ⇒ <font color="purple">irc.efnet.nl</font>
-Channel ⇒ \#libxenon
-
-\== Want to Help? ==
+## Want to Help?
 
 Here is what you can do to help this project:
 

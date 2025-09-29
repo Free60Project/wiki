@@ -58,7 +58,7 @@ source venv/bin/activate
 4. Install needed python dependencies using python package manager -> pip
 
 ```sh
-pip install mkdocs mkdocs-material
+pip install mkdocs mkdocs-material mkdocs-redirects
 ```
 
 5. At this point, load up the clone repository in a text editor that has live-markdown preview function.
