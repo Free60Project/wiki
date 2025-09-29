@@ -32,8 +32,7 @@ already! - See bottom of [Xenon Toolchain](../Compiling_the_Toolchain)-page if i
 ## Support
 
 **libXenon** (or **devkitxenon**) stuff is best discussed in
-\#free60-noos on the OFTC IRC network , <irc://irc.oftc.net/free60-noos>
-or in \#libXenon on EFnet IRC, <irc://irc.efnet.fr/libXenon>
+the [IRC](/Support/IRC/) or [Discord](/Support/Discord/)
 
 ## Sample Code
 

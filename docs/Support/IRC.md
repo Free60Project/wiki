@@ -1,22 +1,15 @@
-Join us on the Free60 IRC channel at <irc://irc.oftc.net/free60-chat>
-(server irc.oftc.net, channel **\#free60-chat**)
+Join us in the Free60 IRC channel **\#free60** at
+[irc.libera.chat](https://libera.chat/) to discuss the Free60 project, the
+Linux kernel ports, LibXenon and LibXenon homebrew, and XeLL Reloaded.
 
-To contribute new information and speak with devs, come to
-<irc://irc.oftc.net/free60> (server irc.oftc.net, channel **\#free60**)
-
-There's also a channel for the guys on EFNET which is currently the most
-active channel of all three.
-
-Catch us in **#libxenon** on EFnet!
-
-Free60 and oftc.net are happy to facilitate the means for information
+Free60 and Libera.Chat are happy to facilitate the means for information
 gathering and dissemination. But, we have some basic guidelines we need
 you to follow.
 
 ## Guidelines
 
 We're not trying to be dictators, we just want everyone to get along.
-[OFTC](http://www.oftc.net/) is a civil network and we'd like to keep it
+[Libera](https://libera.chat/) is a civil network and we'd like to keep it
 that way.
 
 ### Basic Guidelines
@@ -40,15 +33,13 @@ that way.
 
   - \#free60 is NOT a distribution point for pirated/illegal material,
     be it software or even documentation. We have zero-tolerance towards
-    any related discussion. That also goes for use ofÂ !list or other
-    such commands. You have been warned.
+    any related discussion.
 
 ### Asking Questions
 
 #### Before Asking
 
-  - Search the wiki for an answer.
-  - Search the mailing list.
+  - Search the wiki and [GitHub](https://github.com/Free60Project) for an answer.
 
 #### While Asking
 
@@ -63,31 +54,8 @@ that way.
     post that info.
   - Stick around to help others after you.
 
-### Use the right channel
-
-There are two channels in OFTC currently for public use:
-
-1.  **#free60** is for technical and development discussion, for idle chat
-    seek #free60-chat.
-2.  **#free60-chat** is for general discussion on or off topic for free60
-    and is loosely controlled.
-
-And one public channel on EFNET
-
-1.  **#libxenon** for everything from LibXenon and Linux till XeLL
-
-  - Currently neither channel is moderated ( m) though if conversations
-    get out of hand or anything of that nature we reserve the right to
-    place higher restrictions.
-  - Both channels will receive the same updates about important
-    information.
-  - You can hang out in both, but make sure you questions are for the
-    right channel.
-
 ## Conclusion
 
 Thank you for your interest in Free60, enjoy your stay!
-
-<iframe src="https://webchat.oftc.net/?channels=%23free60%2C%23free60-chat" width="647" height="400"></iframe>
 
 [Category: Support](../Category_Support)
