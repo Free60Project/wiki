@@ -1,12 +1,19 @@
-Join us in the Free60 IRC channel **\#free60** at
+Join us in the Free60 IRC channel(s) **\#free60** at
 [irc.libera.chat](https://libera.chat/) to discuss the Free60 project, the
 Linux kernel ports, LibXenon and LibXenon homebrew, and XeLL Reloaded.
+
+## Free60 Channel List
+
+* **\#free60** for general Free60 discussion.
+* **\#free60-libxenon** for LibXenon.
+* **\#free60-linux** for the Free60 Linux patches.
+* **\#free60-xell** for XeLL Reloaded.
+
+## Guidelines
 
 Free60 and Libera.Chat are happy to facilitate the means for information
 gathering and dissemination. But, we have some basic guidelines we need
 you to follow.
-
-## Guidelines
 
 We're not trying to be dictators, we just want everyone to get along.
 [Libera](https://libera.chat/) is a civil network and we'd like to keep it
@@ -28,12 +35,14 @@ that way.
 
   - Please don't run any bots without prior permission from an op.
 
-  - Channel opertator status is not a privilege, but rather a
+  - Channel operator status is not a privilege, but rather a
     responsibilty. Asking for such will more than likely get you banned.
 
   - \#free60 is NOT a distribution point for pirated/illegal material,
     be it software or even documentation. We have zero-tolerance towards
     any related discussion.
+  
+  - Messages sent in the IRC channels are forwarded to the Discord guild.
 
 ### Asking Questions
 
