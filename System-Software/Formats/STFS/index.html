@@ -1,0 +1,4208 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../SPA/">
+      
+      
+        <link rel="next" href="../XDBF/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>STFS - Free60 Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#stfs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Free60 Wiki" class="md-header__button md-logo" aria-label="Free60 Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Free60 Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              STFS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Free60Project/wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Hacks/Reset_Glitch_Hack/" class="md-tabs__link">
+          
+  
+    
+  
+  Hacks
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Hardware/Accessories/Chatpad/" class="md-tabs__link">
+          
+  
+    
+  
+  Hardware
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../FMIM/" class="md-tabs__link">
+          
+  
+    
+  
+  System Software
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Homebrew/" class="md-tabs__link">
+          
+  
+    
+  
+  Homebrew
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Linux/Lflash/" class="md-tabs__link">
+          
+  
+    
+  
+  Linux
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Development/Cross_Compiler/" class="md-tabs__link">
+          
+  
+    
+  
+  Development
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../%21TODO/" class="md-tabs__link">
+        
+  
+    
+  
+  ToDo
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Free60 Wiki" class="md-nav__button md-logo" aria-label="Free60 Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Free60 Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Free60Project/wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../.." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Support/IRC/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IRC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Support/Discord/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Discord
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Support/Contribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contribute
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Support/Help/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Help
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Support/FAQ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frequently Asked Questions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Support/Links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Links
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hacks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Hacks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hacks/Reset_Glitch_Hack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reset Glitch Hack (RGH)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hacks/SMC_Hack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SMC Hack (JTAG)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hacks/King_Kong_Hack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    King Kong Hack
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hardware
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Hardware
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Accessories
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Accessories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/Accessories/Chatpad/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chatpad
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/Accessories/GamePad/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GamePad (Controller)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/Accessories/Headset/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Headset
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/Accessories/Media_Remote/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Media Remote
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/Accessories/Memory_Unit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Memory Unit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Console
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Console
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Hardware/Console/Revisions/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Revisions
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Revisions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/Console/Revisions/Identification/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Identification
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/Console/Revisions/Falcon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Falcon / Opus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/Console/Revisions/Jasper/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jasper
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/Console/Revisions/Trinity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trinity / Valhalla
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/Console/Case/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Case
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/Console/DVD_Drive/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DVD Drive
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/Console/Ethernet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ethernet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/Fusesets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fusesets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/Console/HDD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HDD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/Console/Memory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Memory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/Console/Motherboard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Motherboard
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/Console/RF_Module/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RF Module
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/8051_8052/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8051 / 8052
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hardware/Level_Shifter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Level Shifter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Hardware/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    NAND
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            NAND
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hacks/NAND_Bad_Blocks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bad Blocks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Hacks/NAND_Reading/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reading
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Pre-release_differences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre-release Differences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    System Software
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            System Software
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    File Formats
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            File Formats
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../FMIM/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FMIM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../GPD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PEC/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PEC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SPA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SPA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    STFS
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../XDBF/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XDBF
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../XCP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XCP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../XEX/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XEX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    File Systems
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            File Systems
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Systems/FATX/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FATX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Systems/GDFX/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GDFX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Error_Codes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Error Codes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Kernel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kernel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Pre-release_differences/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pre-release Differences
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../360_System_Software/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System Software
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Shadowboot/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shadowboot
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../XConfig/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XConfig
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../XDK_Kernel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    XDK Kernel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Homebrew/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Homebrew
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Homebrew
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Linux
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Linux
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Linux/Lflash/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LFlash
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Linux/Distros/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Linux Distros
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Linux Distros
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Linux/Distros/LiveCD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LiveCD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2_3" id="__nav_6_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Debian
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Debian
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Linux/Distros/Debian/etch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Etch
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Linux/Distros/Debian/lenny/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lenny
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Linux/Distros/Debian/squeeze/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Squeeze
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Linux/Distros/Ubuntu/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Ubuntu
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6_2_4" id="__nav_6_2_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Ubuntu
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Linux/Distros/Ubuntu/7_10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7.10
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Linux/Distros/Ubuntu/11_10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11.10
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Linux/Linux_Kernel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux Kernel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Linux/Linux_Kernel_Development/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Linux Kernel Development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Development/Xenos_Framebuffer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Xenos Framebuffer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Development
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Development/Cross_Compiler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cross-Compiler
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Development/Dumpana/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dumpana
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Development/Finding_the_right_timing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Finding the right timing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Development/Free60_Git_Repository/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Free60 Git Repo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Development/LibHomebrew/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LibHomebrew
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Development/LibXenon/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    LibXenon
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_6" id="__nav_7_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_6">
+            <span class="md-nav__icon md-icon"></span>
+            LibXenon
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Development/LibXenon/Examples/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Examples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Development/Xenon_Toolchain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Xenon Toolchain
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Development/Xenos_Framebuffer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Xenos Framebuffer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%21TODO/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ToDo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="stfs">STFS</h1>
+<p><strong>STFS</strong> (Secure Transacted File System) is the file system used by the
+Xbox 360 for all packages created and downloaded by the system. It is
+protected using a series of SHA1 hashes and a RSA signature. STFS is
+commonly found in Xbox 360 Content Packages (XContent), but is not
+limited to those only as the PEC (Profile Embedded Content) files employ
+STFS. The two known categories for STFS are read-only and writeable.
+Read-only content packages are found with a PIRS/LIVE signed header and
+writeable content packages are console signed (CON).</p>
+<p>The 360 uses packages to transfer saves/content/games/pictures and more.
+Most packages start with the strings PIRS, LIVE or "CON ", some are even
+embedded inside gamer profiles (using the PEC format described below).
+All of these are STFS content packages which hold the real files along
+with metadata that the dashboard reads like the title, the licenses and
+the RSA signature which is used to verify the package.</p>
+<p>The acronym STFS stands for Secure Transacted File System, which shows
+how the packages are secure (signature and hashes) and transacted
+(multiple file / directory revisions)</p>
+<p>LIVE and PIRS files come from Xbox Live, these are signed using a
+private key that only Microsoft has. The console uses a public key which
+is hardcoded inside it to verify the package and make sure the person is
+allowed to use it. CON files are created by the console for saves and
+profiles. The console uses its own private key to sign CON files. Many
+editors are available for saves and profiles which can be used with no
+modification to the console.</p>
+<p>Throughout an STFS package, there is a series of SHA1 hashes used to
+verify the package, and help with downloads (if a block isn't valid, it
+can be redownloaded). The hashes are located at certain parts of the
+file, a way of calculating where is (will be!) down below.</p>
+<h1 id="volume-descriptor">Volume Descriptor</h1>
+<p>There are 2 types of volume descriptor a content file may have, one for
+STFS packages and another for SVOD</p>
+<h3 id="stfs_1">STFS</h3>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Length</th>
+<th>Type</th>
+<th>Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x00</td>
+<td>0x01</td>
+<td>byte</td>
+<td>Volume descriptor size (0x24)</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>0x01</td>
+<td>byte</td>
+<td>Reserved</td>
+</tr>
+<tr>
+<td>0x02</td>
+<td>0x01</td>
+<td>byte</td>
+<td>Block Seperation</td>
+</tr>
+<tr>
+<td>0x03</td>
+<td>0x02</td>
+<td>signed short</td>
+<td>File Table Block Count</td>
+</tr>
+<tr>
+<td>0x05</td>
+<td>0x03</td>
+<td>signed int24</td>
+<td>File Table Block Number</td>
+</tr>
+<tr>
+<td>0x08</td>
+<td>0x14</td>
+<td>byte[]</td>
+<td>Top Hash Table Hash</td>
+</tr>
+<tr>
+<td>0x1C</td>
+<td>0x04</td>
+<td>signed int</td>
+<td>Total Allocated Block Count</td>
+</tr>
+<tr>
+<td>0x20</td>
+<td>0x04</td>
+<td>signed int</td>
+<td>Total Unallocated Block Count</td>
+</tr>
+</tbody>
+</table>
+<h3 id="svod">SVOD</h3>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Length</th>
+<th>Type</th>
+<th>Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x00</td>
+<td>0x01</td>
+<td>byte</td>
+<td>Volume descriptor size (0x24)</td>
+</tr>
+<tr>
+<td>0x01</td>
+<td>0x01</td>
+<td>byte</td>
+<td>Block Cache Element Count</td>
+</tr>
+<tr>
+<td>0x02</td>
+<td>0x01</td>
+<td>byte</td>
+<td>Worker Thread Processor</td>
+</tr>
+<tr>
+<td>0x03</td>
+<td>0x01</td>
+<td>byte</td>
+<td>Worker Thread Priority</td>
+</tr>
+<tr>
+<td>0x04</td>
+<td>0x14</td>
+<td>byte[]</td>
+<td>Hash</td>
+</tr>
+<tr>
+<td>0x18</td>
+<td>0x01</td>
+<td>byte</td>
+<td>Device features</td>
+</tr>
+<tr>
+<td>0x19</td>
+<td>0x03</td>
+<td>uint24</td>
+<td>Data block count</td>
+</tr>
+<tr>
+<td>0x1C</td>
+<td>0x03</td>
+<td>uint24</td>
+<td>Data block offset</td>
+</tr>
+<tr>
+<td>0x1F</td>
+<td>0x05</td>
+<td>byte[]</td>
+<td>Padding/reserved</td>
+</tr>
+</tbody>
+</table>
+<h1 id="content-packages">Content Packages</h1>
+<h3 id="header">Header</h3>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Length</th>
+<th>Type</th>
+<th>Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x4</td>
+<td>ascii string</td>
+<td>Magic</td>
+</tr>
+</tbody>
+</table>
+<h4 id="magic">Magic</h4>
+<p>The magic can be one of the following:</p>
+<table>
+<thead>
+<tr>
+<th>Signature Type</th>
+<th>Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"CON "</td>
+<td>Signed by a console. Found on many files such as cache files, profiles, saved games.</td>
+</tr>
+<tr>
+<td>PIRS</td>
+<td>Signed by Microsoft. Found on files delivered by Microsoft through non-Xbox Live means such as system updates.</td>
+</tr>
+<tr>
+<td>LIVE</td>
+<td>Signed by Microsoft. Found on files delivered over Xbox Live such as items from the Marketplace like themes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="signatures">Signatures</h2>
+<h3 id="con">CON</h3>
+<p>The following is used for Console Signed ("CON ") packages, and is used by the Xbox as the format for signatures generated by it:</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Length</th>
+<th>Type</th>
+<th>Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x004</td>
+<td>0x2</td>
+<td>byte[]</td>
+<td>Public Key Certificate Size</td>
+</tr>
+<tr>
+<td>0x006</td>
+<td>0x5</td>
+<td>byte[]</td>
+<td>Certificate Owner Console ID</td>
+</tr>
+<tr>
+<td>0x00B</td>
+<td>0x14</td>
+<td>ascii string</td>
+<td>Certificate Owner Console Part Number</td>
+</tr>
+<tr>
+<td>0x01F</td>
+<td>0x1</td>
+<td>byte</td>
+<td>Certificate Owner Console Type (1 for devkit, 2 for retail)</td>
+</tr>
+<tr>
+<td>0x020</td>
+<td>0x8</td>
+<td>ascii string</td>
+<td>Certificate Date of Generation</td>
+</tr>
+<tr>
+<td>0x028</td>
+<td>0x4</td>
+<td>byte[]</td>
+<td>Public Exponent</td>
+</tr>
+<tr>
+<td>0x02C</td>
+<td>0x80</td>
+<td>byte[]</td>
+<td>Public Modulus</td>
+</tr>
+<tr>
+<td>0x0AC</td>
+<td>0x100</td>
+<td>byte[]</td>
+<td>Certificate Signature</td>
+</tr>
+<tr>
+<td>0x1AC</td>
+<td>0x80</td>
+<td>byte[]</td>
+<td>Signature</td>
+</tr>
+</tbody>
+</table>
+<h3 id="live-pirs">LIVE / PIRS</h3>
+<p>and for remotely signed (LIVE/PIRS) packages:</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Length</th>
+<th>Type</th>
+<th>Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x004</td>
+<td>0x100</td>
+<td>byte[]</td>
+<td>Package Signature</td>
+</tr>
+<tr>
+<td>0x104</td>
+<td>0x128</td>
+<td>byte[]</td>
+<td>Padding</td>
+</tr>
+</tbody>
+</table>
+<p>The Package Signature is generated using the value at 0x32C (Content ID/Header SHA1).</p>
+<h2 id="metadata">Metadata</h2>
+<p>If the <strong>Metadata Version</strong> field is set to 2, the format is slightly changed.</p>
+<h3 id="version-1">Version 1</h3>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Length</th>
+<th>Type</th>
+<th>Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x022C</td>
+<td>0x100</td>
+<td>license entries (see below)</td>
+<td>Licensing Data (used to check package owner)</td>
+</tr>
+<tr>
+<td>0x032C</td>
+<td>0x14</td>
+<td>byte[]</td>
+<td>Header SHA1 Hash (from 0x344 to first hash table)</td>
+</tr>
+<tr>
+<td>0x0340</td>
+<td>0x4</td>
+<td>int</td>
+<td>HeaderSize</td>
+</tr>
+<tr>
+<td>0x0344</td>
+<td>0x4</td>
+<td>signed int</td>
+<td>Content Type (see below)</td>
+</tr>
+<tr>
+<td>0x0348</td>
+<td>0x4</td>
+<td>signed int</td>
+<td>Metadata Version (see below)</td>
+</tr>
+<tr>
+<td>0x034C</td>
+<td>0x8</td>
+<td>signed long</td>
+<td>Content Size</td>
+</tr>
+<tr>
+<td>0x0354</td>
+<td>0x4</td>
+<td>int</td>
+<td>Media ID</td>
+</tr>
+<tr>
+<td>0x0358</td>
+<td>0x4</td>
+<td>signed int</td>
+<td>Version (system/title updates)</td>
+</tr>
+<tr>
+<td>0x035C</td>
+<td>0x4</td>
+<td>signed int</td>
+<td>Base Version (system/title updates)</td>
+</tr>
+<tr>
+<td>0x0360</td>
+<td>0x4</td>
+<td>int</td>
+<td>Title ID</td>
+</tr>
+<tr>
+<td>0x0364</td>
+<td>0x1</td>
+<td>byte</td>
+<td>Platform (Xbox 360 = 2/PC = 4)</td>
+</tr>
+<tr>
+<td>0x0365</td>
+<td>0x1</td>
+<td>byte</td>
+<td>Executable Type</td>
+</tr>
+<tr>
+<td>0x0366</td>
+<td>0x1</td>
+<td>byte</td>
+<td>Disc Number</td>
+</tr>
+<tr>
+<td>0x0367</td>
+<td>0x1</td>
+<td>byte</td>
+<td>Disc In Set</td>
+</tr>
+<tr>
+<td>0x0368</td>
+<td>0x4</td>
+<td>int</td>
+<td>Save Game ID</td>
+</tr>
+<tr>
+<td>0x036C</td>
+<td>0x5</td>
+<td>byte[]</td>
+<td>Console ID</td>
+</tr>
+<tr>
+<td>0x0371</td>
+<td>0x8</td>
+<td>byte[]</td>
+<td>Profile ID</td>
+</tr>
+<tr>
+<td>0x0379</td>
+<td>0x24</td>
+<td><a href="#volume-descriptor">Volume Descriptor</a></td>
+<td>Volume Descriptor</td>
+</tr>
+<tr>
+<td>0x039D</td>
+<td>0x4</td>
+<td>signed int</td>
+<td>Data File Count</td>
+</tr>
+<tr>
+<td>0x03A1</td>
+<td>0x8</td>
+<td>signed long</td>
+<td>Data File Combined Size</td>
+</tr>
+<tr>
+<td>0x03A9</td>
+<td>0x4</td>
+<td>int (STFS = 0, SVOD = 1)</td>
+<td>Descriptor type</td>
+</tr>
+<tr>
+<td>0x03AD</td>
+<td>0x4</td>
+<td>int</td>
+<td>Reserved</td>
+</tr>
+<tr>
+<td>0x03B1</td>
+<td>0x4C</td>
+<td>byte[]</td>
+<td>Padding</td>
+</tr>
+<tr>
+<td>0x03FD</td>
+<td>0x14</td>
+<td>bytes</td>
+<td>Device ID</td>
+</tr>
+<tr>
+<td>0x0411</td>
+<td>0x900 (each 0x80 = different locale)</td>
+<td>UTF-8 string</td>
+<td>Display Name</td>
+</tr>
+<tr>
+<td>0x0D11</td>
+<td>0x900 (each 0x80 = different locale)</td>
+<td>UTF-8 string</td>
+<td>Display Description</td>
+</tr>
+<tr>
+<td>0x1611</td>
+<td>0x80</td>
+<td>UTF-8 string</td>
+<td>Publisher Name</td>
+</tr>
+<tr>
+<td>0x1691</td>
+<td>0x80</td>
+<td>UTF-8 string</td>
+<td>Title Name</td>
+</tr>
+<tr>
+<td>0x1711</td>
+<td>0x1</td>
+<td>byte</td>
+<td>Transfer Flags (see below)</td>
+</tr>
+<tr>
+<td>0x1712</td>
+<td>0x4</td>
+<td>signed int</td>
+<td>Thumbnail Image Size</td>
+</tr>
+<tr>
+<td>0x1716</td>
+<td>0x4</td>
+<td>signed int</td>
+<td>Title Thumbnail Image Size</td>
+</tr>
+<tr>
+<td>0x171A</td>
+<td>0x4000 (thumbnail size)</td>
+<td>image <!--what kind?--></td>
+<td>Thumbnail Image</td>
+</tr>
+<tr>
+<td>0x571A</td>
+<td>0x4000 (title thumbnail size)</td>
+<td>image <!--bitmap maybe?--></td>
+<td>Title Thumbnail Image</td>
+</tr>
+</tbody>
+</table>
+<h3 id="version-2">Version 2</h3>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Length</th>
+<th>Type</th>
+<th>Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x03B1</td>
+<td>0x10</td>
+<td>byte[]</td>
+<td>Series ID</td>
+</tr>
+<tr>
+<td>0x03C1</td>
+<td>0x10</td>
+<td>byte[]</td>
+<td>Season ID</td>
+</tr>
+<tr>
+<td>0x03D1</td>
+<td>0x2</td>
+<td>signed short</td>
+<td>Season Number</td>
+</tr>
+<tr>
+<td>0x03D3</td>
+<td>0x2</td>
+<td>signed short</td>
+<td>Episode Number</td>
+</tr>
+<tr>
+<td>0x03D5</td>
+<td>0x28</td>
+<td>byte[]</td>
+<td>Padding</td>
+</tr>
+<tr>
+<td>0x171A</td>
+<td>0x3D00 (thumbnail size)</td>
+<td>image</td>
+<td>Thumbnail Image</td>
+</tr>
+<tr>
+<td>0x541A</td>
+<td>0x300 (each 0x80 = different locale)</td>
+<td>image</td>
+<td>Additional Display Names</td>
+</tr>
+<tr>
+<td>0x571A</td>
+<td>0x3D00 (title thumbnail size)</td>
+<td>image</td>
+<td>Title Thumbnail Image</td>
+</tr>
+<tr>
+<td>0x941A</td>
+<td>0x300 (each 0x80 = different locale)</td>
+<td>image</td>
+<td>Additional Display Descriptions</td>
+</tr>
+</tbody>
+</table>
+<h3 id="license-entries">License Entries</h3>
+<p>For every entry in the license data
+field:</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Length</th>
+<th>Type</th>
+<th>Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x8</td>
+<td>signed long</td>
+<td>License ID (XUID / PUID / console id)</td>
+</tr>
+<tr>
+<td>0x8</td>
+<td>0x4</td>
+<td>signed int</td>
+<td>License Bits</td>
+</tr>
+<tr>
+<td>0xC</td>
+<td>0x4</td>
+<td>signed int</td>
+<td>License Flags</td>
+</tr>
+</tbody>
+</table>
+<h3 id="content-types">Content Types</h3>
+<!-- These look suspiciously like bit flags... Should we say that in this section? -->
+
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0000001</td>
+<td>Saved Game</td>
+</tr>
+<tr>
+<td>0x0000002</td>
+<td>Marketplace Content</td>
+</tr>
+<tr>
+<td>0x0000003</td>
+<td>Publisher</td>
+</tr>
+<tr>
+<td>0x0001000</td>
+<td>Xbox 360 Title</td>
+</tr>
+<tr>
+<td>0x0002000</td>
+<td>IPTV Pause Buffer</td>
+</tr>
+<tr>
+<td>0x0004000</td>
+<td>Installed Game</td>
+</tr>
+<tr>
+<td>0x0005000</td>
+<td>Xbox Original Game</td>
+</tr>
+<tr>
+<td>0x0005000</td>
+<td>Xbox Title</td>
+</tr>
+<tr>
+<td>0x0007000</td>
+<td>Game on Demand</td>
+</tr>
+<tr>
+<td>0x0009000</td>
+<td>Avatar Item</td>
+</tr>
+<tr>
+<td>0x0010000</td>
+<td>Profile</td>
+</tr>
+<tr>
+<td>0x0020000</td>
+<td>Gamer Picture</td>
+</tr>
+<tr>
+<td>0x0030000</td>
+<td>Theme</td>
+</tr>
+<tr>
+<td>0x0040000</td>
+<td>Cache File</td>
+</tr>
+<tr>
+<td>0x0050000</td>
+<td>Storage Download</td>
+</tr>
+<tr>
+<td>0x0060000</td>
+<td>Xbox Saved Game</td>
+</tr>
+<tr>
+<td>0x0070000</td>
+<td>Xbox Download</td>
+</tr>
+<tr>
+<td>0x0080000</td>
+<td>Game Demo</td>
+</tr>
+<tr>
+<td>0x0090000</td>
+<td>Video</td>
+</tr>
+<tr>
+<td>0x00A0000</td>
+<td>Game Title</td>
+</tr>
+<tr>
+<td>0x00B0000</td>
+<td>Installer</td>
+</tr>
+<tr>
+<td>0x00C0000</td>
+<td>Game Trailer</td>
+</tr>
+<tr>
+<td>0x00D0000</td>
+<td>Arcade Title</td>
+</tr>
+<tr>
+<td>0x00E0000</td>
+<td>XNA</td>
+</tr>
+<tr>
+<td>0x00F0000</td>
+<td>License Store</td>
+</tr>
+<tr>
+<td>0x0100000</td>
+<td>Movie</td>
+</tr>
+<tr>
+<td>0x0200000</td>
+<td>TV</td>
+</tr>
+<tr>
+<td>0x0300000</td>
+<td>Music Video</td>
+</tr>
+<tr>
+<td>0x0400000</td>
+<td>Game Video</td>
+</tr>
+<tr>
+<td>0x0500000</td>
+<td>Podcast Video</td>
+</tr>
+<tr>
+<td>0x0600000</td>
+<td>Viral Video</td>
+</tr>
+<tr>
+<td>0x2000000</td>
+<td>Community Game</td>
+</tr>
+</tbody>
+</table>
+<h3 id="transfer-flags">Transfer Flags</h3>
+<p>These are bit flags, <strong>don't treat them as an enum!</strong></p>
+<table>
+<thead>
+<tr>
+<th>Bit #</th>
+<th>Flag Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0b00000001</td>
+<td>None <!-- Yet? --></td>
+</tr>
+<tr>
+<td>1</td>
+<td>0b00000010</td>
+<td>None</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0b00000100</td>
+<td>Deep Link Supported</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0b00001000</td>
+<td>Disable Network Storage</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0b00010000</td>
+<td>Kinect Enabled</td>
+</tr>
+<tr>
+<td>5</td>
+<td>0b00100000</td>
+<td>Move-Only Transfer</td>
+</tr>
+<tr>
+<td>6</td>
+<td>0b01000000</td>
+<td>Device ID Transfer</td>
+</tr>
+<tr>
+<td>7</td>
+<td>0b10000000</td>
+<td>Profile ID Transfer</td>
+</tr>
+</tbody>
+</table>
+<h1 id="profile-embedded-content-pec">Profile Embedded Content (PEC)</h1>
+<p>When extra security is needed for content which is already using STFS,
+PEC files may be used to add an extra layer on top. PEC files use the
+STFS descriptor and algorithms, but has no similarity with content
+packages.</p>
+<p>PEC files are only currently used for avatar items/clothing.</p>
+<p>Block 0 starts at 0x3000, and hash table 0 at 0x1000/0x2000.</p>
+<h2 id="header_1">Header</h2>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Length</th>
+<th>Type</th>
+<th>Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x000</td>
+<td>0x228</td>
+<td>Console_Security_Certificate</td>
+<td>Console Security Certificate</td>
+</tr>
+<tr>
+<td>0x228</td>
+<td>0x14</td>
+<td>bytes</td>
+<td>SHA1 hash from 0x23C-0x1000</td>
+</tr>
+<tr>
+<td>0x23C</td>
+<td>0x8</td>
+<td>signed long</td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td>0x244</td>
+<td>0x24</td>
+<td><a href="#volume-descriptor">Volume Descriptor</a></td>
+<td>Volume Descriptor (STFS)</td>
+</tr>
+<tr>
+<td>0x268</td>
+<td>0x4</td>
+<td>signed int</td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td>0x26C</td>
+<td>0x8</td>
+<td>bytes</td>
+<td>Profile ID</td>
+</tr>
+<tr>
+<td>0x274</td>
+<td>0x1</td>
+<td>byte</td>
+<td>Unknown</td>
+</tr>
+<tr>
+<td>0x275</td>
+<td>0x5</td>
+<td>bytes</td>
+<td>Console ID</td>
+</tr>
+</tbody>
+</table>
+<h1 id="file-listing">File Listing</h1>
+<p>The value at 0x37E (File Table Block Number on the structure above)
+determines where the file table begins. As it is a block number, you
+will have to convert it to an offset. Here is some code in C# for
+converting:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">internal</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">BlockToOffset</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">xBlock</span><span class="p">)</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">{</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">xReturn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">xBlock</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">0</span><span class="n">xFFFFFF</span><span class="p">)</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="n">xReturn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="m">1</span><span class="p">;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="k">else</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">        </span><span class="n">xReturn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(((</span><span class="n">MetaData</span><span class="p">.</span><span class="n">HeaderSize</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">0</span><span class="n">xFFF</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="m">0</span><span class="n">xF000</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="n">xBlock</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="m">12</span><span class="p">));</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">xReturn</span><span class="p">;</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">}</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="k">internal</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">ComputeDataBlockNumber</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">xBlock</span><span class="p">)</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">{</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">xBlockShift</span><span class="p">;</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(((</span><span class="n">MetaData</span><span class="p">.</span><span class="n">HeaderSize</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">0</span><span class="n">xFFF</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="m">0</span><span class="n">xF000</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="n">xB000</span><span class="p">)</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">        </span><span class="n">xBlockShift</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">    </span><span class="k">else</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="nf">if</span><span class="w"> </span><span class="p">((</span><span class="n">MetaData</span><span class="p">.</span><span class="n">Descriptor</span><span class="p">.</span><span class="n">BlockSeperation</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">        </span><span class="n">xBlockShift</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">    </span><span class="k">else</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">        </span><span class="n">xBlockShift</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">xBase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">((</span><span class="n">xBlock</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">0</span><span class="n">xAA</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">0</span><span class="n">xAA</span><span class="p">);</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">Header</span><span class="p">.</span><span class="n">Magic</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">XContent_Header</span><span class="p">.</span><span class="n">Header_Magic</span><span class="p">.</span><span class="n">CON</span><span class="p">)</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">        </span><span class="n">xBase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">xBase</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">xBlockShift</span><span class="p">);</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">xReturn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">xBase</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">xBlock</span><span class="p">);</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">xBlock</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">0</span><span class="n">xAA</span><span class="p">)</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">        </span><span class="n">xBase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">((</span><span class="n">xBlock</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">0</span><span class="n">x70E4</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">0</span><span class="n">x70E4</span><span class="p">);</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">Header</span><span class="p">.</span><span class="n">Magic</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">XContent_Header</span><span class="p">.</span><span class="n">Header_Magic</span><span class="p">.</span><span class="n">CON</span><span class="p">)</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">            </span><span class="n">xBase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">xBase</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">xBlockShift</span><span class="p">);</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">        </span><span class="n">xReturn</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">xBase</span><span class="p">;</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">xBlock</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="m">0</span><span class="n">x70E4</span><span class="p">)</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">            </span><span class="n">xBase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">((</span><span class="n">xBlock</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">0</span><span class="n">x4AF768</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">0</span><span class="n">x4AF768</span><span class="p">);</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">Header</span><span class="p">.</span><span class="n">Magic</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">xBlockShift</span><span class="p">)</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">                </span><span class="n">xBase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">xBase</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="m">1</span><span class="p">);</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">            </span><span class="n">xReturn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">xReturn</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">xBase</span><span class="p">);</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">xReturn</span><span class="p">;</span>
+<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="p">}</span>
+</code></pre></div>
+<p>Each embedded file starts at a 4096 byte boundary. The optional space
+between embedded files is filled with null bytes.</p>
+<p>The file listing consists of entries which have the format below. The
+listing ends with an entry consisting of only null
+bytes.</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Length</th>
+<th>Type</th>
+<th>Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x28</td>
+<td>ASCII string</td>
+<td>File name, null-padded</td>
+</tr>
+<tr>
+<td>0x28</td>
+<td>0x1</td>
+<td>byte</td>
+<td>Length of file name, plus flags</td>
+</tr>
+<tr>
+<td>0x29</td>
+<td>0x3</td>
+<td>signed int24</td>
+<td>Number of blocks allocated for file (little endian)</td>
+</tr>
+<tr>
+<td>0x2C</td>
+<td>0x3</td>
+<td>signed int24</td>
+<td>Copy of 0x29</td>
+</tr>
+<tr>
+<td>0x2F</td>
+<td>0x3</td>
+<td>signed int24</td>
+<td>Starting block number of file (little endian)</td>
+</tr>
+<tr>
+<td>0x32</td>
+<td>0x2</td>
+<td>signed short</td>
+<td>Path indicator (big endian)</td>
+</tr>
+<tr>
+<td>0x34</td>
+<td>0x4</td>
+<td>int32</td>
+<td>Size of file in bytes (big endian)</td>
+</tr>
+<tr>
+<td>0x38</td>
+<td>0x4</td>
+<td>signed int32</td>
+<td>Update date/time stamp of file</td>
+</tr>
+<tr>
+<td>0x3C</td>
+<td>0x4</td>
+<td>signed int32</td>
+<td>Access date/time stamp of file</td>
+</tr>
+</tbody>
+</table>
+<p>Byte 0x28 also has two flags: bit 6 and bit 7. If bit 6 is set it means
+that all of the blocks in the file are consecutive. Bit 7 indicates that
+the file is a directory.
+The first 6 bits 0-5, are the length of the filename.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">public</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="n">Boolean</span><span class="w"> </span><span class="n">IsDirectory</span><span class="c1">//bit 7</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">{</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="k">get</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">Flags</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="m">128</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">128</span><span class="p">;</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="k">set</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">value</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">IsDirectory</span><span class="p">)</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">            </span><span class="n">Flags</span><span class="w"> </span><span class="o">^=</span><span class="w"> </span><span class="m">128</span><span class="p">;</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="p">}</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="c1">//public System.Boolean IsUnknown//bit 6</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="c1">//{</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="c1">//    get</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="c1">//    {</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="c1">//        return (Flags &amp; 64) == 64;</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="c1">//    }</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="c1">//    set</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="c1">//    {</span>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="c1">//        if (value != IsUnknown)</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="c1">//        {</span>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="c1">//            Flags ^= 64;</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="c1">//        }</span>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="c1">//    }</span>
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="c1">//}</span>
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="k">public</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="n">Byte</span><span class="w"> </span><span class="n">NameLength</span><span class="c1">//first 6 bits</span>
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="p">{</span>
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="w">    </span><span class="k">get</span>
+<a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Byte</span><span class="p">)(</span><span class="n">Flags</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="m">63</span><span class="p">);</span>
+<a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="w">    </span><span class="k">set</span>
+<a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="w">        </span><span class="n">Flags</span><span class="w"> </span><span class="o">^=</span><span class="w"> </span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Byte</span><span class="p">)(</span><span class="k">value</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="n">NameLength</span><span class="p">);</span>
+<a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="p">}</span>
+</code></pre></div>
+<p>The path indicator indicates the path of the file. -1 (0xFFFF) means
+that the file is in the root directory, any other value V refers to the
+(sub)directory which is listed as the Vth entry in the listing (counting
+from 0). Directories can nest.</p>
+<p>The
+<a href="http://en.wikipedia.org/wiki/File_Allocation_Table#Directory_table">FAT</a>
+format is used for the date/time stamps of the files.</p>
+<h1 id="hash-tables-block-offsets">Hash Tables / Block Offsets</h1>
+<p>A block is 0x1000 (4096) bytes and the first block is located at 0xC000.
+Every 0xAA (170) blocks there is a block that contains a hash of each
+block and every 0xAA*0xAA (0x70E4) blocks there is another table
+(presumably hashing the 0xAA table blocks). This means that when using a
+block number from a file listing you need to account for the hash tables
+which are not included in the block numbering system. For example block
+171 is actually located where you would expect block 172 to reside ((171
++ int(171/170)) * 0x1000 + 0xC000).</p>
+<table>
+<thead>
+<tr>
+<th>Offset</th>
+<th>Length</th>
+<th>Type</th>
+<th>Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x0</td>
+<td>0x14</td>
+<td>byte</td>
+<td>Hash(SHA1)</td>
+</tr>
+<tr>
+<td>0x14</td>
+<td>0x1</td>
+<td>byte</td>
+<td>Status byte</td>
+</tr>
+<tr>
+<td>0x15</td>
+<td>0x3</td>
+<td>int24</td>
+<td>Next block</td>
+</tr>
+</tbody>
+</table>
+<p>The status byte is very important when injecting files into a package.
+Here are the meanings of them.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x00</td>
+<td>Unused Block</td>
+</tr>
+<tr>
+<td>0x40</td>
+<td>Free Block (previously used) 0x80 Used Block</td>
+</tr>
+<tr>
+<td>0x80</td>
+<td>Used Block</td>
+</tr>
+<tr>
+<td>0xC0</td>
+<td>Newly Allocated Block</td>
+</tr>
+</tbody>
+</table>
+<p>Files are not always stored in consecutive blocks, you have to find the
+corresponding hash table record and read the next block number (similar
+to cluster maps in FAT).</p>
+<p>Here is some C# code for converting a block to it's hash table
+position(<strong>it may not work perfectly!</strong>):</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">internal</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">ComputeLevelNHashBlockNumber</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">xBlock</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">xLevel</span><span class="p">)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">{</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">xBlockShift</span><span class="p">;</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(((</span><span class="n">MetaData</span><span class="p">.</span><span class="n">HeaderSize</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">0</span><span class="n">xFFF</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="m">0</span><span class="n">xF000</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="n">xB000</span><span class="p">)</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">        </span><span class="n">xBlockShift</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="k">else</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="nf">if</span><span class="w"> </span><span class="p">((</span><span class="n">MetaData</span><span class="p">.</span><span class="n">Descriptor</span><span class="p">.</span><span class="n">BlockSeperation</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="n">xBlockShift</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="k">else</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="n">xBlockShift</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="kt">int</span><span class="p">[]</span><span class="w"> </span><span class="n">xBlockStep</span><span class="p">;</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(((</span><span class="n">MetaData</span><span class="p">.</span><span class="n">HeaderSize</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">0</span><span class="n">xFFF</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="m">0</span><span class="n">xF000</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="n">xB000</span><span class="p">)</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">        </span><span class="n">xBlockStep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="p">[]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="m">0</span><span class="n">xAC</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x723A</span><span class="w"> </span><span class="p">};</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">    </span><span class="k">else</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">    </span><span class="nf">if</span><span class="w"> </span><span class="p">((</span><span class="n">MetaData</span><span class="p">.</span><span class="n">Descriptor</span><span class="p">.</span><span class="n">BlockSeperation</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">        </span><span class="n">xBlockStep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="p">[]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="m">0</span><span class="n">xAB</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x718F</span><span class="w"> </span><span class="p">};</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">    </span><span class="k">else</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">        </span><span class="n">xBlockStep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="p">[]</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="m">0</span><span class="n">xAC</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="n">x723A</span><span class="w"> </span><span class="p">};</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">xReturn</span><span class="p">;</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">xBase</span><span class="p">;</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">xStep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">xBlockStep</span><span class="p">[</span><span class="m">1</span><span class="p">];</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">xLevel</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="p">)</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">        </span><span class="n">xReturn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">xBlock</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">0</span><span class="n">xAA</span><span class="p">);</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">        </span><span class="n">xStep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">xReturn</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">xBlockStep</span><span class="p">[</span><span class="m">0</span><span class="p">]);</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">xReturn</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="m">0</span><span class="p">)</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">            </span><span class="n">xReturn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">xBlock</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">0</span><span class="n">x70E4</span><span class="p">);</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="w">            </span><span class="n">xBase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">xReturn</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">);</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">Header</span><span class="p">.</span><span class="n">Magic</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">XContent_Header</span><span class="p">.</span><span class="n">Header_Magic</span><span class="p">.</span><span class="n">CON</span><span class="p">)</span>
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="w">                </span><span class="n">xStep</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="p">(</span><span class="n">xBase</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">xBlockShift</span><span class="p">);</span>
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="w">            </span><span class="k">else</span>
+<a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a><span class="w">                </span><span class="n">xStep</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">xBase</span><span class="p">;</span>
+<a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a>
+<a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">xReturn</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="p">)</span>
+<a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a><span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="n">xStep</span><span class="p">;</span>
+<a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a><span class="w">            </span><span class="k">else</span>
+<a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a><span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">Header</span><span class="p">.</span><span class="n">Magic</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">XContent_Header</span><span class="p">.</span><span class="n">Header_Magic</span><span class="p">.</span><span class="n">CON</span><span class="p">)</span>
+<a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a><span class="w">                    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">xStep</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="m">1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">xBlockShift</span><span class="p">));</span>
+<a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a><span class="w">                </span><span class="k">else</span>
+<a id="__codelineno-2-45" name="__codelineno-2-45" href="#__codelineno-2-45"></a><span class="w">                    </span><span class="nf">return</span><span class="w"> </span><span class="p">(</span><span class="n">xStep</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">);</span>
+<a id="__codelineno-2-46" name="__codelineno-2-46" href="#__codelineno-2-46"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-2-47" name="__codelineno-2-47" href="#__codelineno-2-47"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-2-48" name="__codelineno-2-48" href="#__codelineno-2-48"></a><span class="w">        </span><span class="k">else</span>
+<a id="__codelineno-2-49" name="__codelineno-2-49" href="#__codelineno-2-49"></a><span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="n">xStep</span><span class="p">;</span>
+<a id="__codelineno-2-50" name="__codelineno-2-50" href="#__codelineno-2-50"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-2-51" name="__codelineno-2-51" href="#__codelineno-2-51"></a><span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="nf">if</span><span class="w"> </span><span class="p">(</span><span class="n">xLevel</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">1</span><span class="p">)</span>
+<a id="__codelineno-2-52" name="__codelineno-2-52" href="#__codelineno-2-52"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-2-53" name="__codelineno-2-53" href="#__codelineno-2-53"></a><span class="w">        </span><span class="n">xReturn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">xBlock</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="m">0</span><span class="n">x70E4</span><span class="p">);</span>
+<a id="__codelineno-2-54" name="__codelineno-2-54" href="#__codelineno-2-54"></a><span class="w">        </span><span class="n">xBase</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">xReturn</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">xStep</span><span class="p">);</span>
+<a id="__codelineno-2-55" name="__codelineno-2-55" href="#__codelineno-2-55"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">xReturn</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="m">0</span><span class="p">)</span>
+<a id="__codelineno-2-56" name="__codelineno-2-56" href="#__codelineno-2-56"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-2-57" name="__codelineno-2-57" href="#__codelineno-2-57"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">Header</span><span class="p">.</span><span class="n">Magic</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">XContent_Header</span><span class="p">.</span><span class="n">Header_Magic</span><span class="p">.</span><span class="n">CON</span><span class="p">)</span>
+<a id="__codelineno-2-58" name="__codelineno-2-58" href="#__codelineno-2-58"></a><span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">xBase</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="p">(</span><span class="m">1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">xBlockShift</span><span class="p">));</span>
+<a id="__codelineno-2-59" name="__codelineno-2-59" href="#__codelineno-2-59"></a><span class="w">            </span><span class="k">else</span>
+<a id="__codelineno-2-60" name="__codelineno-2-60" href="#__codelineno-2-60"></a><span class="w">                </span><span class="nf">return</span><span class="w"> </span><span class="p">(</span><span class="n">xBase</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="p">);</span>
+<a id="__codelineno-2-61" name="__codelineno-2-61" href="#__codelineno-2-61"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-2-62" name="__codelineno-2-62" href="#__codelineno-2-62"></a><span class="w">        </span><span class="k">else</span>
+<a id="__codelineno-2-63" name="__codelineno-2-63" href="#__codelineno-2-63"></a><span class="w">            </span><span class="nf">return</span><span class="w"> </span><span class="p">(</span><span class="n">xBase</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">xBlockStep</span><span class="p">[</span><span class="m">0</span><span class="p">]);</span>
+<a id="__codelineno-2-64" name="__codelineno-2-64" href="#__codelineno-2-64"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-2-65" name="__codelineno-2-65" href="#__codelineno-2-65"></a><span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="nf">if</span><span class="w"> </span><span class="p">(</span><span class="n">xLevel</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2</span><span class="p">)</span>
+<a id="__codelineno-2-66" name="__codelineno-2-66" href="#__codelineno-2-66"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-2-67" name="__codelineno-2-67" href="#__codelineno-2-67"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">xStep</span><span class="p">;</span>
+<a id="__codelineno-2-68" name="__codelineno-2-68" href="#__codelineno-2-68"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-2-69" name="__codelineno-2-69" href="#__codelineno-2-69"></a><span class="w">    </span><span class="k">else</span>
+<a id="__codelineno-2-70" name="__codelineno-2-70" href="#__codelineno-2-70"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-2-71" name="__codelineno-2-71" href="#__codelineno-2-71"></a><span class="w">        </span><span class="k">throw</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="nf">Exception</span><span class="p">(</span><span class="s">&quot;Level Unknown: &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">xLevel</span><span class="p">.</span><span class="n">ToString</span><span class="p">());</span>
+<a id="__codelineno-2-72" name="__codelineno-2-72" href="#__codelineno-2-72"></a><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="m">0</span><span class="n">xFFFFFF</span><span class="p">;</span>
+<a id="__codelineno-2-73" name="__codelineno-2-73" href="#__codelineno-2-73"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-2-74" name="__codelineno-2-74" href="#__codelineno-2-74"></a><span class="p">}</span>
+</code></pre></div>
+<h1 id="tools">Tools</h1>
+<ul>
+<li><a href="https://github.com/Gualdimar/Velocity/releases/">Velocity</a> can create, open, view and extract most STFS files, and other Xbox and Xbox 360 files.</li>
+<li><a href="https://github.com/rene0/xbox360/blob/master/extract360.py">extract360.py</a> is an (old) tool (Python 2.5 required) to analyze and extract these archive files.</li>
+<li><a href="http://memeover.arkem.org/2011/04/py360-xbox-360-file-system-tools.html">py360</a> can read STFS files</li>
+<li><a href="http://gael360.free.fr/">wxPirs 1.1</a> can extract from LIVE/PIRS files fine, but as it doesn't use hash tables properly it doesn't work well with CON files.</li>
+<li>A newer tool was released by DJ Shepherd called <a href="http://skunkiebutt.com/?page_id=362">Le Fluffie</a>, which can create and extract from CON/LIVE/PIRS files (but it has some
+  problems with creation, some prefer to use XLAST)</li>
+<li>XLAST inside the Xbox 360 SDK can create LIVE/PIRS packages, but it is illegal to share it.</li>
+</ul>
+<p><a href="/System-Software">System Software</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
