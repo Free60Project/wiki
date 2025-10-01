@@ -26,7 +26,7 @@ coming soon...
 
 On different Motherboard Revision also different NANDs were used.
 [Xenon](../Xenon_(Motherboard).md)-, [Zephyr](../Revisions/Zephyr.md)-,
-[Falcon](../Revisions/Falcon.md)-, [Opus](../Revisions/Falcon.md#Opus)- and some
+[Falcon](../Revisions/Falcon.md)-, [Opus](../Revisions/Falcon.md#opus)- and some
 [Jasper](../Revisions/Jasper.md)-Consoles (Retails) are using 16MB NANDs,
 other [Jasper](../Revisions/Jasper.md)-Consoles (Retail),Arcade Bundles which
 came without a HDD, got a 256MB or 512MB NAND onboard. Only 64MB of
@@ -138,7 +138,7 @@ Informations about the Filesystem on the Xbox 360 NAND Flash can be found
 ## Bad Blocks
 
 Its possible that bad blocks appears when reading/writing to the NAND.
-For solving these look at the following page: [Bad Blocks](#Bad_Blocks)
+For solving these look at the following page: [Bad Blocks](../../../Hacks/NAND_Bad_Blocks.md)
 
 ## Small flash chip close to CPU
 

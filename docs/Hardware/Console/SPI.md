@@ -19,7 +19,7 @@ consists of the following signals:
 
 The Diagram matches following Xbox 360 Motherboard-revisions:
 [Xenon](./Xenon_(Motherboard).md), [Zephyr](./Revisions/Zephyr.md),
-[Falcon](./Revisions/Falcon.md), [Opus](./Revisions/Falcon.md#Opus),
+[Falcon](./Revisions/Falcon.md), [Opus](./Revisions/Falcon.md#opus),
 [Jasper](./Revisions/Jasper.md).
 ![Xbox 360 FAT NANDPro Diagram](../../Hacks/images/XBOX360_Fat_NandPro_LPCH2148_PIC18F2455_Diagram.jpg)
 

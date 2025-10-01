@@ -133,7 +133,7 @@ To submit changes:
 
 [Old Main Page](./Old_Main_Page.md)
 
-[Opus](./Hardware/Console/Revisions/Falcon.md#Opus)
+[Opus](./Hardware/Console/Revisions/Falcon.md#opus)
 
 [Other OS Loader](./Other_OS_Loader.md)
 

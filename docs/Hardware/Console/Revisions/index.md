@@ -70,7 +70,7 @@ costs.
   - 3 pin fan connector
   - Shipping with Hitachi 79, BenQ and new Lite-On 7XXX series DVD-Drive
 
-## [Opus](Falcon.md#Opus) (V3.1)
+## [Opus](Falcon.md#opus) (V3.1)
 
 This is an intermediate motherboard with 65nm CPU and 90nm GPU, new
 coolers, but no HDMI. It will be used in Xenon chassis for repairs and

@@ -14,7 +14,7 @@ as Microsoft has corrected mistakes or added/improved existing features.
 
 :\*[Falcon](./Revisions/Falcon.md) (65nm Chipset revision)
 
-:\*[Opus](./Revisions/Falcon.md#Opus)
+:\*[Opus](./Revisions/Falcon.md#opus)
 
 :\*[Jasper](./Revisions/Jasper.md) (Onboard Memory Unit)
 
