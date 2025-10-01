@@ -21,7 +21,7 @@ die size from 90nm to 65nm, and the GPU's eDRAM die size from 90nm to
 ## Opus
 
 **Opus** motherboards started to appear in July 2008, to people who had
-sent in their RRoD [Xenon](../Xenon_(Motherboard)) consoles.
+sent in their RRoD [Xenon](../Xenon_(Motherboard).md) consoles.
 The Opus motherboard is essentially a Falcon motherboard, without the
 HDMI connector, so that they could fit into the original Xenon cases
 they were shipped in.
@@ -41,4 +41,4 @@ they were shipped in.
   - **Opus only available from Xenon being repaired by MS**
   - Very Rare
 
-[Category: Hardware](/Hardware)
+[Category: Hardware](../../index.md)

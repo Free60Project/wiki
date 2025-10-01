@@ -1,7 +1,7 @@
 # Bootloaders
 
 The Xbox 360 system uses a series of bootloaders to load the hv/kernel
-and dashboard. These loaders are explained at [Boot Process](../Boot_Process).
+and dashboard. These loaders are explained at [Boot Process](./Boot_Process.md).
 
 ## Header
 
@@ -18,4 +18,4 @@ long.
 | 0xC    | 0x4    | unsigned integer | Loader length (including header)           |
 | 0x10   | 0x10   | bytes            | HMAC salt (used for decrypting the loader) |
 
-[System Software](/System-Software)
+

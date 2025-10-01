@@ -368,4 +368,4 @@ DO NOT LEAVE LPT CABLE CONNECTED WHEN CONSOLE DOES NOT HAVE AC POWER!
 //
 ```
 
-[Category: Homebrew Software](/Homebrew)
+[Category: Homebrew Software](../index.md)

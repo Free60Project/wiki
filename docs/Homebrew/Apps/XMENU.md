@@ -45,4 +45,4 @@ Ge0rG and ssmurf, because they are nice guys :)
 Cpasjuste @ mydedibox.fr
 ```
 
-[Category: Homebrew Software](/Homebrew)
+[Category: Homebrew Software](../index.md)

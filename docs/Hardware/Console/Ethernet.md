@@ -50,4 +50,4 @@ There are different models of this board used:
 ![Module pinout](images/x360s_wifi_module_pinout.jpg)
 
 
-[Category: Hardware](/Hardware)
+[Category: Hardware](../index.md)

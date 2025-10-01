@@ -2,7 +2,7 @@
 
 These **Development Tools** can help you develop legal homebrew
 applications and games for the Xbox 360. The most important tool for
-Xbox 360 development is [Xenon Toolchain](/Development/Xenon_Toolchain), a
+Xbox 360 development is [Xenon Toolchain](./Xenon_Toolchain.md), a
 port of the GCC toolchain along with supporting system libraries. The
 development tools listed below make development easier or to add
 additional functionality.
@@ -40,4 +40,4 @@ additional functionality.
 | --------------- | --------------- | ----------------------- |
 | Placeholder    | Placeholder      | Description Placeholder |
 
-[Category: Development](/Development)
+

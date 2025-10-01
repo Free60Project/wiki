@@ -67,4 +67,3 @@ that way.
 
 Thank you for your interest in Free60, enjoy your stay!
 
-[Category: Support](../Category_Support)

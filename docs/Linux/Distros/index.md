@@ -1,10 +1,10 @@
 # Linux distributions
 
-* [LiveCD](/Linux/LiveCD)
-* [Ubuntu 7.10](/Linux/Ubuntu/7_10)
-* [Ubuntu 11.10](/Linux/Ubuntu/11_10)
-* [Debian-etch](/Linux/Debian/etch)
-* [Debian-lenny](/Linux/Debian/lenny)
-* [Debian-squeeze](/Linux/Debian/squeeze)
+* [LiveCD](./LiveCD.md)
+* [Ubuntu 7.10](./Ubuntu/7_10.md)
+* [Ubuntu 11.10](./Ubuntu/11_10.md)
+* [Debian-etch](./Debian/etch.md)
+* [Debian-lenny](./Debian/lenny.md)
+* [Debian-squeeze](./Debian/squeeze.md)
 
-[Category: Linux](/Linux)
+

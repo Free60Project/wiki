@@ -117,4 +117,4 @@ knew their base address.
 
 Retrieved from "<http://www.xbox-linux.org/wiki/SMBus_Controller>"
 
-[Category: Xbox_Hardware](../Category:Xbox_Hardware)
+[Category: Hardware](./Hardware/index.md)

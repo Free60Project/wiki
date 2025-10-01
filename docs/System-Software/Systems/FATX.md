@@ -59,7 +59,7 @@ device and is secured with a signature. The layout is as follows:
 
 | Offset | Length     | Description                          |
 | ------ | ---------- | ------------------------------------ |
-| 0      | 0x1A8      | [Console Security Certificate](Console_Security_Certificate)   |
+| 0      | 0x1A8      | [Console Security Certificate](../Console_Security_Certificate.md)   |
 | 0x1A8  | 0x80       | Signature (part of the console cert) |
 | 0x228  | 0x14       | Device ID                            |
 | 0x23C  | 4 (UINT32) | Certificate size (0x228)             |
@@ -168,7 +168,7 @@ previously formatted it.
 | ------ | ------ | ------------ | ------------ |
 | 0x0    | 0x4    | ascii string | "Josh" magic |
 
-The [Console Security Certificate](../Console_Security_Certificate)(Inc 0x80 sig)
+The [Console Security Certificate](../Console_Security_Certificate.md)(Inc 0x80 sig)
 then,
 
 | Offset | Length | Type                 | Information                              |
@@ -314,4 +314,4 @@ number.
 - 64 KB (0x10000, 0x80 SPC)
 
 
-[System Software](System_Software)
+

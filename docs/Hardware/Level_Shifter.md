@@ -13,6 +13,6 @@ Solder all according to this picture.
 ![Xbox 360 RS232 Diagram](images/360_rs232_build.png)
 
 Now you just hook it up like on the diagram showed on this page:
-[Serial Console](../Serial_Console)
+[Serial Console](../Serial_Console.md)
 
-[Category: Hardware](/Hardware)
+[Category: Hardware](./index.md)

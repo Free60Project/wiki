@@ -8,4 +8,4 @@
 | NANDPro      | Read/write NAND dumps and repair the spare bytes / ECC sections. It can also flash CPLDs or log POST-Codes. |
 | 360FlashTool | Display, Decrypt and extract various parts of an Xbox NAND dump.                                            |
 
-[Category: Homebrew Software](/Homebrew)
+[Category: Homebrew Software](index.md)

@@ -25,4 +25,4 @@ with a torx T10 screw driver.
 
 ![Motherboard](images/Therm_removed.jpg)
 
-[Category: Hardware](/Hardware)
+[Category: Hardware](../index.md)

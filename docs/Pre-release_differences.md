@@ -35,7 +35,7 @@ it, XOR that byte with 0xF0 to get true number
   - Doesn't seem to have bad block management... probably does though
 
 Uses a whole different file system for storing the dashboard files,
-instead of [SFCX](NAND_File_System) it uses [FATX](FATX)
+instead of [SFCX](./System-Software/NAND_File_System.md) it uses [FATX](./System-Software/Systems/FATX.md)
 Loads more files inside FATX NANDs:
 * drivers.xex
 * xnet.xex
@@ -70,5 +70,5 @@ Also, console security certificate is incomplete-ish:
 * No manufacturing date?
 * Console type is weird, 0x80000002, normally when it ends in 02 it's retail :S
 
-[Category: Hardware](/Hardware)
-[Category: System Software](/System_Software)
+[Category: Hardware](./Hardware/index.md)
+

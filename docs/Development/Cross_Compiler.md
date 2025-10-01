@@ -1,9 +1,9 @@
 # Cross Compiler
 
-The Xbox 360 [CPU](../Xenon_(CPU)) is based on IBM's Power
+The Xbox 360 [CPU](../Hardware/Console/Xenon_(CPU).md) is based on IBM's Power
 Architecture. Unless you have a machine with PowerPC CPU and Linux
 running (such as an older Mac or a PS3), you need to set up a cross
-compiler toolchain in order to compile code like the [Linux Kernel](../Linux_Kernel)
+compiler toolchain in order to compile code like the [Linux Kernel](../Linux/Linux_Kernel.md)
 for your Xbox 360.
 
 A typical cross compiler toolchain for the GNU compiler collection
@@ -21,7 +21,7 @@ well.
 
 ## Using the Xenon Toolchain
 
-The easiest way to set up a complete cross compiler toolchain is the [Xenon Toolchain](../Xenon_Toolchain).
+The easiest way to set up a complete cross compiler toolchain is the [Xenon Toolchain](./Xenon_Toolchain.md).
 Its using current gcc and does not take as long as crossotool to compile.
 
 
@@ -70,7 +70,7 @@ cd crosstool-0.43/
 ./demo-powerpc-970.sh
 ```
 
-4. **Get a drink**, go for a walk or use the time to remove the resistor [R6T3](../R6T3)
+4. **Get a drink**, go for a walk or use the time to remove the resistor [R6T3](../Hardware/R6T3.md)
 from the mainboard of your Xbox 360... Compilation of your cross compiler will just take a while.
 
 5. **When finished**, you may want to add your cross compiler binaries to your PATH environment
@@ -80,6 +80,6 @@ variable.
 export PATH=$PATH:/opt/crosstool/gcc-4.1.0-glibc-2.3.6/powerpc64-unknown-linux-gnu/bin
 ```
 
-You're done. Feel free to configure and compile your [Linux Kernel](../Linux_Kernel).
+You're done. Feel free to configure and compile your [Linux Kernel](../Linux/Linux_Kernel.md).
 
-[Category: Development](/Development)
+

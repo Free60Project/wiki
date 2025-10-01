@@ -107,4 +107,4 @@ echo "You may now shutdown the xbox360."
 echo "Then continue the install by booting the Xell-Bootloader-sda2."
 ```
 
-[Category: Linux](/Linux)
+

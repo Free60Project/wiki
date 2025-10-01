@@ -11,4 +11,4 @@ decoupling on the Digital and Analogue supply pins and 'CAP' pin
 thin. Voltage regs are miles away and have other components deriving
 power from the same rail's, which also has really thin traces.
 
-[Hardware](/Hardware)
+[Hardware](../index.md)

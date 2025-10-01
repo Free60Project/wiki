@@ -42,4 +42,4 @@ int result = ObDeleteSymbolicLink( "\\??\\hdd:" );
 
 As above, use `RtlInitAnsiString` to make the string
 
-[System Software](System_Software)
+

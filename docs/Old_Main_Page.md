@@ -20,7 +20,7 @@ A preliminary second-stage boot loader exists.
 Patches for the Linux kernel to support a large part of the Xbox 360 hardware exist. As long as you're waiting for a convenient way to boot, you can set up your cross compiler environment.
 
 #### Linux Distributions
-Several [LiveCD](../LiveCD) variants and installation howtos for [Debian-etch](../Debian-etch), [Ubuntu 7.04](../Ubuntu7_04) and [Ubuntu 7.10](../Ubuntu7_10) are available.
+Several [LiveCD](./Linux/Distros/LiveCD.md) variants and installation howtos for [Debian-etch](./Linux/Distros/Debian/etch.md), Ubuntu 7.04 and [Ubuntu 7.10](./Linux/Distros/Ubuntu/7_10.md) are available.
 
 ## Documentation
 
@@ -30,41 +30,41 @@ Try it out now
 How to test out linux (almost) without altering your system.
 
 #### Hardware
-- [CPU](../CPU)
-- [GPU](../GPU)
-- [R6T3](../R6T3)
+- [CPU](./Hardware/Console/Xenon_(CPU).md)
+- [GPU](./Hardware/Console/Xenos_(GPU).md)
+- [R6T3](./Hardware/R6T3.md)
 
 #### Software
-- [Kernel](../Kernel)
-- [Hypervisor](../Hypervisor)
+- [Kernel](./System-Software/Kernel.md)
+- [Hypervisor](./Hypervisor.md)
 
 #### Misc
-- [Videos](../Videos)
-- [FAQ](../FAQ)
+- Videos
+- [FAQ](./Support/FAQ.md)
 
 ## Communication
-There are several ways for you to get in touch with the people behind Free60 and for sharing information between users. We are an open project and therefore explicitly invite anybody to contact us and to [help](Help).
+There are several ways for you to get in touch with the people behind Free60 and for sharing information between users. We are an open project and therefore explicitly invite anybody to contact us and to [help](./Support/Help.md).
 
 ### IRC
 29 Sep 2007: 3D Acceleration work has started: tmbinc has released an initial version of his ['gpu' library](https://web.archive.org/web/20130224191548/http://debugmo.de/2007/09/fear-triangles/). It does not yet follow a standard API (like OpenGL), but allows you to play with the 3D GPU.
 
-8 May 2007: Updated LiveCD ready: Stonersmurf mastered the updated [LiveCD](LiveCD) including the latest kernel patches. The [Download](http://downloads.sourceforge.net/free60/gentoo-livecd-xenon-beta-v2.iso) is 621MB in size. See the [Release Notes](http://sourceforge.net/project/shownotes.php?group_id=139616&amp;release_id=506402) for details. Here is the [Press Release](Press_Release_2007-05-08)
+8 May 2007: Updated LiveCD ready: Stonersmurf mastered the updated [LiveCD](./Linux/Distros/LiveCD.md) including the latest kernel patches. The [Download](http://downloads.sourceforge.net/free60/gentoo-livecd-xenon-beta-v2.iso) is 621MB in size. See the [Release Notes](http://sourceforge.net/project/shownotes.php?group_id=139616&amp;release_id=506402) for details. Here is the Press Release.
 
-**1 May 2007: We now have a fix for Samsung users** We will soon release an updated [LiveCD](LiveCD). If you want to build your own kernel, see [Linux Kernel Development](Linux_Kernel_Development) for patches against linux-2.6.21.
+**1 May 2007: We now have a fix for Samsung users** We will soon release an updated [LiveCD](./Linux/Distros/LiveCD.md). If you want to build your own kernel, see [Linux Kernel Development](./Linux/Linux_Kernel_Development.md) for patches against linux-2.6.21.
 
-**1 Apr 2007: X.org driver and a new LiveCD** No April Fools' Day joke. We have released a preliminary [X.org driver](http://sourceforge.net/project/showfiles.php?group_id=139616&amp;package_id=227107) and Cpasjuste has built a new [LiveCD](LiveCD) which makes use of it. Unfortunately, support for Samsung drives and sound drivers are still missing.
+**1 Apr 2007: X.org driver and a new LiveCD** No April Fools' Day joke. We have released a preliminary [X.org driver](http://sourceforge.net/project/showfiles.php?group_id=139616&amp;package_id=227107) and Cpasjuste has built a new [LiveCD](./Linux/Distros/LiveCD.md) which makes use of it. Unfortunately, support for Samsung drives and sound drivers are still missing.
 
 **30 Mar 2007: Gentoo Minimal LiveCD** Cpasjuste has combined the Kernel patches and latest Xell into a LiveCD. The [download](http://sourceforge.net/project/showfiles.php?group_id=139616) is about 90MB in size and since it uses the *readcd* boot method, you may soon be able to boot it without soldering a serial connection to your Xbox 360 mainboard.
 
-**20 Mar 2007: Linux Bootloader available** tmbinc has come up with a [Linux Bootloader](Linux_Bootlader), which handles CPU initialization and loads the [Linux Kernel](Linux_Kernel) either from network or CDROM.
+**20 Mar 2007: Linux Bootloader available** tmbinc has come up with a Linux Bootloader, which handles CPU initialization and loads the [Linux Kernel](./Linux/Linux_Kernel.md) either from network or CDROM.
 
-**8 Mar 2007: First Linux patchset available** Felix Domke posted a patchset for the [Linux Kernel 2.6.20 Kernel](Linux_Kernel) to the Linux-PPC mailing list.
+**8 Mar 2007: First Linux patchset available** Felix Domke posted a patchset for the [Linux Kernel 2.6.20 Kernel](./Linux/Linux_Kernel.md) to the Linux-PPC mailing list.
 
 **1 Mar 2007: Hypervisor privilege-escalation vulnerability** Some "Anonymous Hacker"; published a [security advisory](http://www.securityfocus.com/archive/1/461489) that will make it possible to run alternative operating systems on the Xbox 360.
 
-**30 Dec 2006: Homebrew mock-up at 23C3** An "Anonymous Hacker" showed a Xbox 360 running unsigned code at 23C3 conference. See more in the [Videos](Videos) section.
+**30 Dec 2006: Homebrew mock-up at 23C3** An "Anonymous Hacker" showed a Xbox 360 running unsigned code at 23C3 conference. See more in the Videos section.
 
-**7 Mar 2006: CPU Datasheet** More great work from [Speedy22] this time he has created a datasheet for the Xbox 360's [CPU](CPU). It can be found [here](https://web.archive.org/web/20061022203457/http://www.dave-bell.co.uk/~speedy22/XBOX360cpu15data.pdf).
+**7 Mar 2006: CPU Datasheet** More great work from [Speedy22] this time he has created a datasheet for the Xbox 360's [CPU](./Hardware/Console/Xenon_(CPU).md). It can be found [here](https://web.archive.org/web/20061022203457/http://www.dave-bell.co.uk/~speedy22/XBOX360cpu15data.pdf).
 
 -----
 
@@ -84,4 +84,4 @@ rights, please contact us so that we can find a quick solution.
 interoperable software under Sect. 1201 (f) Reverse Engineering
 exception of the DMCA.*
 
-[Category:Template documentation](/Category_Template_documentation)
+[Category:Template documentation](./Category_Template_documentation.md)

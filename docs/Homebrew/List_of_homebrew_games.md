@@ -9,4 +9,4 @@
 | SDLQuake   | The famous FPS Quake, built via SDL |
 
 
-[Category: Homebrew Software](/Homebrew)
+[Category: Homebrew Software](./index.md)

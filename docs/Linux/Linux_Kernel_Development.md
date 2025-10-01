@@ -13,7 +13,7 @@ Currently we have the following patches working against 2.6.33 kernel:
 - Pad Support
 
 User:Bertl is currently working on them. Please contact him you want to
-help on the [IRC](IRC).
+help on the [IRC](../Support/IRC.md).
 
 Currently missing are:
 
@@ -24,4 +24,4 @@ Currently missing are:
   available.
 - IR remote support
 
-[Category: Linux](/Linux)
+

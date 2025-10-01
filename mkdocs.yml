@@ -1,5 +1,7 @@
 site_name: Free60 Wiki
+site_description: Archive from Free60 MediaWiki.
 repo_url: https://github.com/Free60Project/wiki
+
 theme:
   name: material
   palette:
@@ -15,13 +17,31 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.indexes
+    - content.action.view
+    - content.action.edit
+
 markdown_extensions:
+  - attr_list
   - pymdownx.highlight:
       anchor_linenums: true
+      use_pygments: true
+      pygments_lang_class: true
+  - pymdownx.magiclink
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tilde
+
+validation:
+  nav:
+    omitted_files: ignore
+    not_found: warn
+    absolute_links: warn
+  links:
+    not_found: warn
+    absolute_links: warn
+    unrecognized_links: warn
+
 nav:
     - Home:
       - 'index.md'
@@ -65,7 +85,7 @@ nav:
         - Reading: 'Hacks/NAND_Reading.md'
       - Pre-release Differences: 'Pre-release_differences.md'
     - System Software:
-      - File Formats:
+      - File Formats: 
         - FMIM: 'System-Software/Formats/FMIM.md'
         - GPD: 'System-Software/Formats/GPD.md'
         - PEC: 'System-Software/Formats/PEC.md'
@@ -114,6 +134,7 @@ nav:
         - Xenon Toolchain: 'Development/Xenon_Toolchain.md'
       - Xenos Framebuffer: 'Development/Xenos_Framebuffer.md'
     - ToDo: '!TODO.md'
+
 plugins:
   search: {}
   redirects:

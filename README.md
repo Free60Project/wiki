@@ -16,7 +16,7 @@ Contributions are very welcome. Here's how you can help:
 - Correct spelling / grammar
 - Fix links
 
-### Workflow
+## Workflow
 
 1. __Fork__ this repo
 1. Make changes
@@ -26,6 +26,7 @@ Contributions are very welcome. Here's how you can help:
 ### Step by step instructions
 
 **NOTE**: The following instructions are targeted towards Unix OS' - needed steps on windows may vary.
+
 **NOTE 2**: You need python3 and python3-venv installed. Please look at your OS' package manager to find the correct packages.
 
 1. At first: Fork the repository to your account!
@@ -42,41 +43,22 @@ or
 git clone https://github.com/<username>/wiki.git
 ```
 
-3. Prepare your python virtual environment and dependencies
+3. Navigate into wiki repository folder
 
 ```sh
-# Navigate to the cloned repo
 cd wiki/
-
-# Create a python3 virtual environment in your cloned repository
-python -m venv venv
-
-# Activate the virtual environment
-source venv/bin/activate
 ```
 
-4. Install needed python dependencies using python package manager -> pip
+4. Choose one of the two deployment methods below.
 
 ```sh
 pip install mkdocs mkdocs-material mkdocs-redirects
 ```
 
-5. At this point, load up the clone repository in a text editor that has live-markdown preview function.
+5. At this point, load up the cloned repository in a text editor that has live-markdown preview function.
   - For example: Visual Studio Code. Instructions: (https://code.visualstudio.com/Docs/languages/markdown)
 
-6. When you are done, use the following steps to build & preview the documentation / changes locally.
-
-Build the documentation
-```sh
-make build
-```
-
-Serve the documentation
-```sh
-make serve
-```
-
-7. Once you are happy and the added changes are looking proper, you are ready to submit your work.
+6. Once you are happy and the added changes are looking proper, you are ready to submit your work.
 
 Add modified files for commiting
 ```sh
@@ -100,3 +82,44 @@ git push
 ```
 
 8. Send a Pull Request :)
+
+## Deployment / Usage of mkdocs
+
+### Native deployment
+
+1. Create & activate python virtual-environment (might need dependency `python3-venv`, see: <https://docs.python.org/3/library/venv.html>)
+
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
+2. Install mkdocs and dependencies
+
+```
+pip install -r requirements.txt
+```
+
+3. Edit docs and verify with the following commands:
+
+Serve the documentation (<http://127.0.0.1:8000>)
+```
+mkdocs serve --strict
+```
+
+Build the documentation
+```
+mkdocs build --strict
+```
+
+### Docker deployment
+
+1. Execute docker container:
+
+```
+docker compose up
+```
+
+2. Navigate to <http://127.0.0.1:8000>
+3. Make your changes and verify the formatting / linking still checks out.
+

@@ -10,7 +10,7 @@ Linux, which gives some advantages regarding system utilization.
 
 ## Getting libXenon
 
-**libXenon** is work-in-progress, and is available from [Free60 Git Repository](../Free60_Git_Repository)
+**libXenon** is work-in-progress, and is available from [Free60 Git Repository](../Free60_Git_Repository.md)
 
 You can check out the source code using git with the following command:
 
@@ -20,24 +20,24 @@ You can check out the source code using git with the following command:
 
 ## Installing libXenon
 
-To use **libXenon** you need a proper installation of [Xenon Toolchain](../Compiling_the_Toolchain) first.
+To use **libXenon** you need a proper installation of [Xenon Toolchain](https://github.com/Free60Project/libxenon) first.
 You just go into the toolchain-directory which holds `build-xenon-toolchain` and execute:
 
 ` ./build-xenon-toolchain libxenon`
 
 This will download and install a fresh copy of **libXenon** Libraries to
 the `$DEVKITXENON`-path (Which should be defined in your ~/.bashrc
-already! - See bottom of [Xenon Toolchain](../Compiling_the_Toolchain)-page if it isn't!)
+already! - See bottom of [Xenon Toolchain](https://github.com/Free60Project/libxenon)-page if it isn't!)
 
 ## Support
 
 **libXenon** (or **devkitxenon**) stuff is best discussed in
-the [IRC](/Support/IRC/) or [Discord](/Support/Discord/)
+the [IRC](../../Support/IRC.md) or [Discord](../../Support/Discord.md)
 
 ## Sample Code
 
-Example code illustrating **libXenon** use can be found on the [LibXenon Examples](/Development/LibXenon/Examples)
+Example code illustrating **libXenon** use can be found on the [LibXenon Examples](./Examples.md)
 page.
 
-[Category: Homebrew Software](/Homebrew)
-[Category: Development](/Development)
+[Category: Homebrew Software](../../Homebrew/index.md)
+

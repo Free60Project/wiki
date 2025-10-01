@@ -149,4 +149,4 @@ After that go back to gnome by typing *Ctrl+Alt+F7*.
 
 Reboot X by typing *Ctrl+Alt+Backspace*.
 
-[Category: Linux](/Linux)
+

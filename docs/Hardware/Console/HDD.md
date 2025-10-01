@@ -38,7 +38,7 @@
 - The harddisk is not locked in any way. A completely zero drive will
   only be read by the Xbox 360 if the relevent headers are in place on
   the disk.
-- A [FATX](../FATX) partition exists on the drive
+- A [FATX](../../System-Software/Systems/FATX.md) partition exists on the drive
 - For a drive to be considered valid it must have the 'Plain text HDD
   info' and MS logo PNG. If these elements do not exist then no HDD is
   detected. So there is no way for third parties to manufacture HDDs
@@ -55,7 +55,7 @@
 - There is no information at this time that leads us to believe the
   HDD is encrypted, there are plenty of clear text entries that can be
   read.
-- The [FATX](../FATX) partitions on the drive seem to be a
+- The [FATX](../../System-Software/Systems/FATX.md) partitions on the drive seem to be a
   [Big Endian](http://en.wikipedia.org/wiki/Big_Endian) version of the
   1st Generation Xbox's FATX filesystem. Work is underway to modify
   the Linux kernel driver to verify this. There is some initial
@@ -63,8 +63,8 @@
 
 ## Drive contents
 
-The Xbox uses the [FATX](../FATX) format for its partitions. The
-[FATX](../FATX) page has more information about the partition
+The Xbox uses the [FATX](../../System-Software/Systems/FATX.md) format for its partitions. The
+[FATX](../../System-Software/Systems/FATX.md) page has more information about the partition
 locations and the FATX format itself.
 
 ## Power connector
@@ -103,4 +103,4 @@ This table plus more info can be found in the electrical specification [here](ht
   - [http://www.xbox-linux.org/wiki/Xbox_Partitioning_and_Filesystem_Details]
   - [http://www.xbox-linux.org/wiki/Differences_between_Xbox_FATX_and_MS-DOS_FAT]
 
-[Category: Hardware](/Hardware)
+[Category: Hardware](../index.md)

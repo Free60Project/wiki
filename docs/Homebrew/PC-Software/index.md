@@ -2,7 +2,7 @@
 
 ## NAND Tools
 
-### [NandCompare](NandCompare)
+### [NandCompare](./NandCompare.md)
 
 #### Description:
 Check/verify your Xbox 360 NAND dumps and potentially even
@@ -14,7 +14,7 @@ Rab at [XBH](https://web.archive.org/web/20130401183654/http://www.xboxhacker.ne
 #### Download:
 - [v1.3](https://web.archive.org/web/20141025002121/http://dwl.xbox-scene.com/xbox360pc/nandtools/NandCompare-v1.3.rar)
 
-### [NandPro](NandPro)
+### [NandPro](./NANDPro.md)
 
 #### Description:
 Read/write NAND dumps and repair the spare bytes / ECC sections.
@@ -26,7 +26,7 @@ Tiros at [XBH](https://web.archive.org/web/20160609045245/http://www.xboxhacker.
 - xbins <!-- haha RIP -->
 - [360-HQ](https://www.360-hq.com/xbox360-homebrew-77-NandPro.html)
 
-### [360FlashTool](360FlashTool)
+### [360FlashTool](./360FlashTool.md)
 
 #### Description:
 Decrypt and extract various parts of an Xbox NAND dump.
@@ -40,7 +40,7 @@ developing a couple of people (Redline99, Tiros and MODFREAKz) decided to contin
 #### Download:
 - [0.97](http://www.one-winged-angelz.eu/XBOX360/Apps/360_Flash_Dump_Tool/360_Flash_Tool_v0.97.rar)
 
-### **[NANDFS](NANDFS)**
+### **NANDFS**
 
 Description: Add/remove/extract files from a NAND dump. Open source.
 
@@ -59,4 +59,4 @@ Description: Add/remove/extract files from a NAND dump. Open source.
 | NANDPro      | Read/write NAND dumps and repair the spare bytes / ECC sections. It can also flash CPLDs or log POST-Codes. |
 | 360FlashTool | Display, Decrypt and extract various parts of an Xbox NAND dump.                                            |
 
-[Category: Homebrew Software](/Homebrew)
+[Category: Homebrew Software](../index.md)

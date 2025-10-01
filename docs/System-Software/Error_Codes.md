@@ -41,5 +41,5 @@ Error 79 has been known during obvious signs of graphic corruption.
 - Error 74 can be fixed by disconnecting and reconnecting the hard
   drive. This would be in contrast to the Dennis-Mooney-Quote.
 
-[Category: System Software](/System_Software)
-[Category: Hardware](/Hardware)
+
+[Category: Hardware](../Hardware/index.md)

@@ -131,5 +131,5 @@ void DumpFuses()
 }
 ```
 
-[Category: System Software](/System_Software)
-[Category: Hardware](/Hardware)
+
+[Category: Hardware](./index.md)

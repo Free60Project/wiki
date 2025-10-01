@@ -12,7 +12,7 @@
 - SMT socket that should work if you choose to remove yours:
   https://web.archive.org/web/20111206034431/http://www.emulation.com:80/cgi-cfm/insert_quantity.cfm?part_number=S%2DTSO%2DSM%2D048%2DA
 
-Attached to [Southbridge](../Southbridge)
+Attached to [Southbridge](../Southbridge.md)
 
 ## NAND Points on Motherboard for FAT
 
@@ -25,10 +25,10 @@ coming soon...
 ## Different Sizes
 
 On different Motherboard Revision also different NANDs were used.
-[Xenon](../Xenon)-, [Zephyr](../Zephyr)-,
-[Falcon](../Falcon)-, [Opus](../Opus)- and some
-[Jasper](../Jasper)-Consoles (Retails) are using 16MB NANDs,
-other [Jasper](../Jasper)-Consoles (Retail),Arcade Bundles which
+[Xenon](../Xenon_(Motherboard).md)-, [Zephyr](../Revisions/Zephyr.md)-,
+[Falcon](../Revisions/Falcon.md)-, [Opus](../Revisions/Falcon.md#opus)- and some
+[Jasper](../Revisions/Jasper.md)-Consoles (Retails) are using 16MB NANDs,
+other [Jasper](../Revisions/Jasper.md)-Consoles (Retail),Arcade Bundles which
 came without a HDD, got a 256MB or 512MB NAND onboard. Only 64MB of
 these 256/512MB NAND are used for system files, the rest is used as an
 internal Memory Unit. All Development-/Demo-/Reviewer-/Test-Kits got at
@@ -103,7 +103,7 @@ This also works in reverse:
 ## Reading/Writing
 
 The Flash can be written or read using a number of methods. If you have
-the old shader hack running the easiest is using [lflash](../lflash).
+the old shader hack running the easiest is using [lflash](../../../Linux/Lflash.md).
 
 You can also wire LPT directly to the flash using this
 [diagram](http://img19.imageshack.us/img19/5198/wiringforxenondiagram.jpg).
@@ -115,7 +115,7 @@ picflash.hex to the PIC through USB in bootloader mode. Once the device is flash
 
 
 Once wired you can read/write to the chip using software such as
-[NandPro](../NandPro).
+[NandPro](../../../Homebrew/PC-Software/NANDPro.md).
 
 In software the NAND is mapped to memory address 0x80000200C8000000.
 
@@ -133,12 +133,12 @@ In software the NAND is mapped to memory address 0x80000200C8000000.
 ## NAND File System
 
 Informations about the Filesystem on the Xbox 360 NAND Flash can be found
-[here](../NAND_File_System)
+[here](../../.././System-Software/NAND_File_System.md)
 
 ## Bad Blocks
 
 Its possible that bad blocks appears when reading/writing to the NAND.
-For solving these look at the following page: [Bad Blocks](../NAND#Bad_Blocks)
+For solving these look at the following page: [Bad Blocks](../../../Hacks/NAND_Bad_Blocks.md)
 
 ## Small flash chip close to CPU
 
@@ -178,7 +178,7 @@ datasheet.
 
 There is another Atmel chip on the front panel:
 
-![Atmel2](/images/Noimage.png) <!-- This image (Atmel2.jpg) has never actually appeard on the wiki archive. A new image can be taken by anyone with the correct hardware. -->
+![Atmel2](../../../images/Noimage.png) <!-- This image (Atmel2.jpg) has never actually appeard on the wiki archive. A new image can be taken by anyone with the correct hardware. -->
 
 Atmel 528 serial EEPROM
 
@@ -202,4 +202,4 @@ datasheet.
 - [Xbox 360 NAND Editor](http://www.megaupload.com/?d=LGF518J0) by stoker25,
   open source and semi-complete, has code to do with bootloaders/keyvault/filesystem
 
-[Category: Hardware](/Hardware)
+[Category: Hardware](../../index.md)

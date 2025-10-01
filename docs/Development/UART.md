@@ -65,8 +65,8 @@ Get char from the serial port (UART):
 ## Serial Console
 
 The Serial Console can be very useful when debugging the [Linux
-Kernel](Linux_Kernel) or diagnosing the [Boot
-Process](Boot_Process).
+Kernel](../Linux/Linux_Kernel.md) or diagnosing the [Boot
+Process](../System-Software/Boot_Process.md).
 
 ### Diagram FAT
 
@@ -78,11 +78,11 @@ Process](Boot_Process).
 
 You can either use the GND pin on the header (might be difficult to
 solder for the inexperienced) or some alternative GND pin like the one
-from the [Stereo DAC](Stereo_DAC) nearby the J2B1 header.
+from the [Stereo DAC](../Hardware/Console/Stereo_DAC.md) nearby the J2B1 header.
 
 Note that you will probably need a [Level
-Shifter](Level_Shifter) to connect the 3.3V RX/TX pins to
-your [PC Serial Port](PC_Serial_Port) (which usually uses
+Shifter](../Hardware/Level_Shifter.md) to connect the 3.3V RX/TX pins to
+your PC Serial Port (which usually uses
 +/-12V)
 
 The Level Shifter can be either powered from the standby 3.3V on pin 7
@@ -93,6 +93,6 @@ It is also possible to use some cheap [cell phone data
 cables](http://wiki.openwrt.org/oldwiki/openwrtdocs/customizing/hardware/serial_console#cellphone.data.cables)
 as a PC interface.
 
-[Category: Hardware](/Hardware)
-[Category: Development](/Development)
-[Category: Homebrew Software](/Homebrew)
+[Category: Hardware](../Hardware/index.md)
+
+[Category: Homebrew Software](../Homebrew/index.md)

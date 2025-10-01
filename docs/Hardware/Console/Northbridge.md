@@ -1,7 +1,7 @@
 # Northbridge
 
 The Xbox 360's North Bridge is integrated into the system's [Xenos
-(GPU)](Xenos_(GPU)) and shares a memory controller with it.
+(GPU)](./Xenos_(GPU).md) and shares a memory controller with it.
 
   - 128-bit GDDR3 Memory Controller @ 1.4GHz (22.4GB/s)
 
@@ -13,6 +13,6 @@ The Xbox 360's North Bridge is integrated into the system's [Xenos
 
 ::\*90nm Process
 
-  - 500MB/s read/write (1GB/s total) SIS [Southbridge](../Southbridge) interface (PCI express)
+  - 500MB/s read/write (1GB/s total) SIS [Southbridge](./Southbridge.md) interface (PCI express)
 
-[Category: Hardware](/Hardware)
+[Category: Hardware](../index.md)

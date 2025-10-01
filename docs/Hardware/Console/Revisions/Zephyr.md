@@ -2,9 +2,9 @@
 and was originally exclusively available only with Elite consoles.
 **Zephyr** was the first Xbox 360 motherboard revision to have HDMI.
 
-Performing the [SMC Hack](SMC_Hack) requires a slightly
+Performing the [SMC Hack](../../../Hacks/SMC_Hack.md) requires a slightly
 different set of connections to
-[Xenon](Xenon_(Motherboard)) motherboards.
+[Xenon](../Xenon_(Motherboard).md) motherboards.
 
   - Consoles: Arcade, Pro/Premium 20GB, Elite 120GB, and Halo 3 Console
   - 90nm IBM CPU & ATI GPU
@@ -19,4 +19,4 @@ different set of connections to
   - Shipping with Hitachi 78 or 79 and **BenQ** DVD-Drive. May also have
     Lite-On drive if it was refurbished.
 
-[Category: Hardware](/Hardware)
+[Category: Hardware](../../index.md)

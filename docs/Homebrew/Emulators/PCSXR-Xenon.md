@@ -52,4 +52,4 @@
 ```
 
 
-[Category: Homebrew Software](/Homebrew)
+[Category: Homebrew Software](../index.md)

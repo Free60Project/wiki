@@ -33,7 +33,7 @@ format K:2.0.XXXX.0, where XXXX is your kernel version.
 | 2.0.13146.0 | May 19, 2011       | Reflashes the DVD drives to support XGD3 Media : PLDS DG-16D4S, PBDS VAD6038 and PLDS DG-16D2S, to a new stock firmware : 0272, 04421C, 02510C. Also patches Samsung MS25 & MS28 Anti-Piracy 2.5 scheme updated. Support for the new XGD3 disk format for games, adds 1GB of usable disk space and extra anti-piracy features to new games Adds a new 1 hour Auto-Off setting in addition to the 6 hour Auto-Off setting previously available. Adds PayPal support as a payment option for all Xbox Live users. Minor bugfix. |
 
 
-Please note: In order to use the [SMC Hack](../SMC_Hack), you must not have installed any
+Please note: In order to use the [SMC Hack](../Hacks/SMC_Hack.md), you must not have installed any
 of the 849x kernel updates.
 
-[System Software](System_Software)
+
