@@ -1,7 +1,7 @@
 ## IRC/Discord
 
 For real-time chat, for either support or to help with the project, you can
-join us on [IRC](/Support/IRC/) or [Discord](/Support/Discord/).
+join us on [IRC](IRC.md) or [Discord](Discord.md).
 
 ## Want to Help?
 

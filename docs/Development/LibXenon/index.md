@@ -32,7 +32,7 @@ already! - See bottom of [Xenon Toolchain](https://github.com/Free60Project/libx
 ## Support
 
 **libXenon** (or **devkitxenon**) stuff is best discussed in
-the [IRC](/Support/IRC/) or [Discord](/Support/Discord/)
+the [IRC](../../Support/IRC.md) or [Discord](../../Support/Discord.md)
 
 ## Sample Code
 

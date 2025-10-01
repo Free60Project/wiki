@@ -10,7 +10,7 @@ To submit changes:
 
 3. Send a Pull Request
 
-Join us on [IRC](/Support/IRC/) or [Discord](/Support/Discord/)!
+Join us on [IRC](Support/IRC.md) or [Discord](Support/Discord.md)!
 
 ## Categories
 
