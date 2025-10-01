@@ -45,11 +45,11 @@ validation:
 nav:
     - Home:
       - 'index.md'
-      - Attack: 'Support/Attack.md'
+      - IRC: 'Support/IRC.md'
+      - Discord: 'Support/Discord.md'
       - Contribute: 'Support/Contribute.md'
       - Help: 'Support/Help.md'
       - Frequently Asked Questions: 'Support/FAQ.md'
-      - IRC: 'Support/IRC.md'
       - Links: 'Support/Links.md'
     - Hacks:
       - Reset Glitch Hack (RGH): 'Hacks/Reset_Glitch_Hack.md'

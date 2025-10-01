@@ -51,7 +51,9 @@ cd wiki/
 
 4. Choose one of the two deployment methods below.
 
-... DEPLOYMENT / STARTUP of mkdocs ...
+```sh
+pip install mkdocs mkdocs-material mkdocs-redirects
+```
 
 5. At this point, load up the cloned repository in a text editor that has live-markdown preview function.
   - For example: Visual Studio Code. Instructions: (https://code.visualstudio.com/Docs/languages/markdown)

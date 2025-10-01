@@ -15,8 +15,6 @@ There are guides to dump via USB, but compared to this it's quite
 expensive and easily found with a search. Maybe someone will add one
 later on.
 
-If you're facing any problems, feel free to ask in \#free60 on OFTC. :)
-
 Moreover thanks to tmbinc, Tiros, Redline and all else involved (feel
 free to add their names) for their great work! :)
 
