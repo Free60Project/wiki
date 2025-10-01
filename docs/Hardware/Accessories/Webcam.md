@@ -13,4 +13,4 @@ chatting audio is heard through the microphone. They aren't as popular
 as they used to be probably because of the Kinect having all of these
 features and much more built in.
 
-[Category: Hardware](/Hardware)
+[Category: Hardware](../index.md)

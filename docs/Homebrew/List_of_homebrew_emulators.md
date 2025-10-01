@@ -10,4 +10,4 @@
 | Sega_Master_System_Plus |  Sega Master Plus is a freeware, open-source, portable emulator for the Sega Master System and Game Gear consoles. |
 | Snes9x-Gx               | The first SNES emulator to run natively on the xbox 360 created using LibXenon                                     |
 
-[Category: Homebrew Software](/Homebrew)
+[Category: Homebrew Software](./index.md)

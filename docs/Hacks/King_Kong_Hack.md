@@ -17,7 +17,7 @@ kernel on brand new xbox 360s. Note, I have just bought a premium pack
 with a MFG date of 16th May 2006, and the kernel version was 5759, so a
 new kernel on a 2006's Xbox 360.
 
-Source: [Run_Code](../Run_Code)
+Source: [Run_Code](../Development/Run_Code.md)
 
 ## 2. Upgrading the kernel to 4532
 
@@ -36,7 +36,7 @@ updater using the cached Kernel Updater, which is newer then the Kernel
 4532! If you don't remove the HDD, then the Kernel Updater will use the
 cached Kernel Updater from the HDD and not from the CD!
 
-Source: [Run_Code](../Run_Code)
+Source: [Run_Code](../Development/Run_Code.md)
 
 Download: [Here](http://www.360mods.net/Downloads/details/id=76.html)
 
@@ -60,7 +60,7 @@ here for site policy reasons, but the net is your friend again.
 There are two King Kong patches available right now. The first was the
 one by Crawler360: Launch the modified game, press START on the title
 screen, and a very simple loader will be launched that allows uploading
-your code through a [serial cable](../Serial_Console). There is
+your code through a [serial cable](../Serial_Console.md). There is
 a newer patch in the wild by xorloser, which allows booting directly
 from CDROM.
 
@@ -102,8 +102,6 @@ some penguins.
 
 Guide: [Here](https://web.archive.org/web/20100315185435/http://forums.xbox-scene.com/index.php?showtopic=595543)
 
-[Debian etch](/Linux/Debian/etch) install Script (Recommended)
+[Debian etch](../Linux/Distros/Debian/etch.md) install Script (Recommended)
 
-[Ubuntu 7.10](/Linux/Ubuntu/7_10) install Script
-
-[Category: Support](/Support)
+[Ubuntu 7.10](../Linux/Distros/Ubuntu/7_10.md) install Script

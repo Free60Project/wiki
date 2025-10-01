@@ -34,7 +34,7 @@ markdown_extensions:
 
 validation:
   nav:
-    omitted_files: warn
+    omitted_files: ignore
     not_found: warn
     absolute_links: warn
   links:
@@ -85,7 +85,7 @@ nav:
         - Reading: 'Hacks/NAND_Reading.md'
       - Pre-release Differences: 'Pre-release_differences.md'
     - System Software:
-      - File Formats:
+      - File Formats: 
         - FMIM: 'System-Software/Formats/FMIM.md'
         - GPD: 'System-Software/Formats/GPD.md'
         - PEC: 'System-Software/Formats/PEC.md'

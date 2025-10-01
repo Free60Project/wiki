@@ -1,13 +1,13 @@
 ## Utilities
 
-### **[Lflash](Lflash)**
+### **[Lflash](./Linux/Lflash.md)**
 
 #### Description:
 A NAND Flasher for xbox360, currently only working with 16MB NAND. For use with Linux. Official Site: www.free60.org
 
 Download: [Free60 GIT](http://free60.git.sourceforge.net/git/gitweb.cgi?p=free60/tools;a=tree;f=lflash;hb=HEAD)
 
-### **[Dumpana](Dumpana)**
+### **[Dumpana](./Development/Dumpana.md)**
 
 #### Description:
 Tool for dumping ANA (Graphic Scaler Chip) registers. For use with Linux.
@@ -18,7 +18,7 @@ Official Site: www.free60.org
 - [Free60 GIT](http://free60.git.sourceforge.net/git/gitweb.cgi?p=free60/tools;a=tree;f=dumpana;hb=HEAD)
 
 
-### [Rawflash](Rawflash) v2
+### [Rawflash](./Rawflash.md) v2
 
 #### Description:
 A tool for flashing rawimages (already properly remapped) to NAND,
@@ -32,4 +32,4 @@ directly via LibXenon application
 #### Download:
 [libxenon.org archive](https://github.com/Free60Project/libxenon.org-forum/blob/master/_attachments/rawflash_v4.zip)
 
-[Category: Homebrew Software](/Homebrew)
+[Category: Homebrew Software](./Homebrew/index.md)

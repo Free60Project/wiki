@@ -29,4 +29,4 @@ Sony](https://web.archive.org/web/20100803155746/http://www.haxnetwork.net/2010/
     Kind regards,
     XXX
 
-[Category: Template documentation](/Category_Template_documentation)
+[Category: Template documentation](./Category_Template_documentation.md)

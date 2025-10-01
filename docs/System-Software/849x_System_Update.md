@@ -14,4 +14,4 @@ Free60 (www.free60.org) is a project that aims to enable Xbox 360 users to run h
 
 Felix and Michael have repeatedly argued that game console manufacturers should open up their platforms to Linux and homebrew, similar to what Sony has done with the PlayStation 3, before they removed the functionality of course.
 
-[System Software](System_Software)
+

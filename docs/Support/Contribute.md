@@ -2,9 +2,9 @@
 
 ## From Free60
 
-We really appreciate your interest in the [Free60](../Main_Page)
+We really appreciate your interest in the [Free60](../index.md)
 Project, and especially your enthusiasm to want to contribute! If you
-haven't yet, please have a look at our [Goals](../Goals).
+haven't yet, please have a look at our [Goals](../!TODO.md)
 
 ## Eligibility
 
@@ -35,12 +35,12 @@ Free60 please read on into the Editing the Wiki section.
 
 ### Donations
 
-Currently [Free60](../Main_Page) has no plans to incorporate or
+Currently [Free60](../index.md) has no plans to incorporate or
 provide other such means for easy monetary donations to the project as a
 whole. If you feel like you have hardware or money that you want to
 contribute to the project, feel free to donate directly to developers
 and members. Free60 is not responsible for such donations.
-Check [Stuff we need](../Stuff_we_need) for a list of items developers are
+Check Stuff we need for a list of items developers are
 currently seeking.
 
 ## Editing The Wiki
@@ -74,4 +74,4 @@ vulnerable to [vandalism](https://web.archive.org/web/20060927204136/https://en.
 Spotting and reverting cases of vandalism can be anywhere from time
 consuming, to trivial a task. Either way, this is greatly appreciated.
 
-[Category: Support](../Category_Support)
+

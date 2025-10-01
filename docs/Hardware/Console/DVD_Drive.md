@@ -19,7 +19,7 @@ was manufactured, what batch it was in and a lot of other factors.
 
 ## General Information
 
-![Close-up of the custom power connector](/images/Noimage.png)
+![Close-up of the custom power connector](../../images/Noimage.png)
 
 - The Xbox 360 was launched with a standard dual layer DVD-ROM drive
   manufactured by Hitachi-LG.
@@ -30,7 +30,7 @@ was manufactured, what batch it was in and a lot of other factors.
   non-standard power connector (2×6 pins, roughly 2mm spacing; Molex
   Milli-Grid look similar, and Hirose make them, too).
 - Xbox internally calls it `\\Device\\CdRom0\\`
-- The raw file system ([XDVDFS](../XDVDFS)) on the disk is
+- The raw file system XDVDFS on the disk is
   similar to the file system on the original Xbox disks. Multiple
   tools are out there that will extract raw ISOs.
 - Modified firmware exists for every DVD Drive model, to allow playing
@@ -38,12 +38,12 @@ was manufactured, what batch it was in and a lot of other factors.
 - Two different DVD-ROM versions can be interchanged between Xbox 360s
   if the DVD key (stored in the drive firmware) is changed to match
   that of the target 360's original drive. Some
-  [Kernel](../Kernel) versions (\>= 4532?) also require the
+  [Kernel](../../System-Software/Kernel.md) versions (\>= 4532?) also require the
   drive to report as the same model as the original drive.
 
 ## Confirmed Facts
 
-![Close-up of DVD-Drive Motherboard](/images/Noimage.png)
+![Close-up of DVD-Drive Motherboard](../../images/Noimage.png)
 
 - The main processor of the LG DVD-ROM drive is an Panasonic
   MN103S94FDA
@@ -70,7 +70,7 @@ was manufactured, what batch it was in and a lot of other factors.
 
 ## On-Disc format
 
-![BCA](/images/Noimage.png)
+![BCA](../../images/Noimage.png)
 
 the 2 different sections and the BCA area of the DVD-ROM are visible
 here.360 discs, like Xbox1 discs, have a lower number of sectors encoded
@@ -89,7 +89,7 @@ visible. It probably contains empty/weak sectors (reading really broken
 frames is always a bit difficult. Someone with the proper equipment
 might want to check this).
 
-![BCA Test](/images/Noimage.png)
+![BCA Test](../../images/Noimage.png)
 
 Evidence that the BCA is not used by the Xbox 360. The tools which can
 be used for this are basically the same as for Xbox1, just that the data
@@ -106,6 +106,6 @@ opening up the DVD-Rom drive from inside out, Inserting a large DVD,
 then lifting it up vertically to do not trigger the eject mode, and then
 inserting a Original XBOX disc will also give you access)
 
-[Category: Hardware](/Hardware)
+[Category: Hardware](../index.md)
 
-[Category: Pages with missing images](/Pages_with_missing_images)
+[Category: Pages with missing images](../../!Pages_That_Need_Updates.md)

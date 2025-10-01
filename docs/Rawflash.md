@@ -15,4 +15,4 @@
     v2: add big block support
     v1: initial version
 
-[Category: Homebrew Software](/Homebrew)
+[Category: Homebrew Software](./Homebrew/index.md)

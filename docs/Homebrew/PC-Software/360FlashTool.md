@@ -246,4 +246,4 @@ xboxkrnl.4552.exe The base HV & kernel, patched to 4552
 - Initial Release
 ```
 
-[Category: Homebrew Software](/Homebrew)
+[Category: Homebrew Software](../index.md)

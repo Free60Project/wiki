@@ -1,11 +1,11 @@
 # NAND reading
 
 This tutorial explains how to read the Xbox360's
-[NAND](NAND)/Flash via a PC's parallel/"printer" port in as
+[NAND](../Hardware/Console/NAND/index.md)/Flash via a PC's parallel/"printer" port in as
 clean and easy as possible a way. The same method is used to dump all
-models of the Xbox 360 ([Xenon](Xenon),
-[Zephyr](Zephyr), [Falcon](Falcon),
-[Opus](Opus), [Jasper](Jasper)).
+models of the Xbox 360 ([Xenon](../Hardware/Console/Xenon_(Motherboard).md),
+[Zephyr](../Hardware/Console/Revisions/Zephyr.md), [Falcon](../Hardware/Console/Revisions/Falcon.md),
+[Opus](../Hardware/Console/Revisions/Falcon.md#Opus), [Jasper](../Hardware/Console/Revisions/Jasper.md)).
 
 Please keep quick & dirty setups and speculation out or, in case some
 guesswork is really needed, flag them, so this article and the whole

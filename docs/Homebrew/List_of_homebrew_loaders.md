@@ -9,4 +9,4 @@
 | XeLL_Reloaded  | Xenon Linux Loader **RELOADED**. Consists of 2 stages, works on both, JTAG and RGH  |
 
 
-[Category: Homebrew Software](/Homebrew)
+[Category: Homebrew Software](./index.md)

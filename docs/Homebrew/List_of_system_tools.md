@@ -8,4 +8,4 @@
 | Dumpana  | Tool for dumping ANA (Graphic Scaler Chip) registers. For use with Linux.                             |
 | Rawflash | A tool for flashing rawimages (already properly remapped) to NAND, directly via LibXenon application. |
 
-[Category: Homebrew Software](/Homebrew)
+[Category: Homebrew Software](./index.md)

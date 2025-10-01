@@ -21,4 +21,4 @@ https://github.com/Free60Project
 For LibXenon projects - check out the appropriate Github organization:
 https://github.com/LibxenonProject
 
-[Category: Development](Development)
+

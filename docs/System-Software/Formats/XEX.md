@@ -304,4 +304,4 @@ XEX files are the default executable format.
     0x184...0x184+(IDC*24)  ImageData0[8], ImageData1[8], ImageData2[8]
     </nowiki>
 
-[System Software](/System-Software)
+

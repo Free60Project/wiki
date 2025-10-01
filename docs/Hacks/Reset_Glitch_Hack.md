@@ -499,5 +499,5 @@ engineering, beta testing. Razkar, tuxuser, Ced2911: beta testing. cjak,
 Redline99, SeventhSon, tmbinc, anyone I forgot... : Prior reverse
 engineering and/or hacking work on the 360.
 
-[Category: System Software](/System_Software)
-[Category: Hardware](/Hardware)
+
+[Category: Hardware](../Hardware/index.md)

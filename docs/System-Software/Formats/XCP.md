@@ -29,5 +29,5 @@ xcp files are not new to the Xbox 360.
   - Keys needed for extraction.
   - Need tools to create our own without the Xbox SDK
 
-[System Software](/System-Software)
-[Category: Pages That Need Updates](/!Pages-That-Need-Updates)
+
+[Category: Pages That Need Updates](../../%21Pages-That-Need-Updates.md

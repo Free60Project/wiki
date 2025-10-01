@@ -65,4 +65,4 @@ inserting a 3.3 Volts positive regulator between VUSB (red) and VCC on
 rated for 5V - if anyone has a spare trash controller he could try it
 without fear of frying the pad...
 
-[Category: Hardware](/Hardware)
+[Category: Hardware](../index.md)

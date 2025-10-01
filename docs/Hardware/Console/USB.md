@@ -6,7 +6,7 @@ on the back)
 The Xbox 360 added official support for using USB drives as a mean of
 storing Xbox 360 files on April 6, 2010. Files are stored to the flash
 drive by using files within a hidden folder (Root\\Xbox360\\) that are
-mounted with the [FATX](FATX) file system.
+mounted with the [FATX](../../System-Software/Systems/FATX.md) file system.
 
 ## Confirmed Facts
 
@@ -31,4 +31,4 @@ SEE: [USB Hard Drive Mod](https://web.archive.org/web/20141105161019/http://www.
     act as a Slave, a driver \[on the xbox\] would still need to be
     present for any usb endpoints to exist.
 
-[Category: Hardware](/Hardware)
+[Category: Hardware](../index.md)

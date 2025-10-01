@@ -57,4 +57,4 @@ according to the PCB sections (J *X* *Y* *N*).
 
 [Scheme](images/j2b1_conn.jpg)
 
-[Category: Hardware](/Hardware)
+[Category: Hardware](../index.md)

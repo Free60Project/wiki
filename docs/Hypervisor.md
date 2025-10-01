@@ -1,7 +1,7 @@
 # Hypervisor
 
 ## Note
-Old notes on the Xbox 360 Hypervisor can be found here: [Hypervisor (Old Notes)](Hypervisor_(Old_Notes))
+Old notes on the Xbox 360 Hypervisor can be found here: [Hypervisor (Old Notes)](./Hypervisor_(Old_Notes).md)
 
 ## What is a Hypervisor?
 
@@ -18,7 +18,7 @@ decryption and the enforcement of access restrictions on memory.
 Thanks to the
 [work](http://www.securityfocus.com/archive/1/461489/30/0/threaded) of
 an anonymous hacker, a flaw in the hypervisor has been discovered on
-certain versions of the [Xbox 360 kernel](System-Software/Kernel), allowing
+certain versions of the [Xbox 360 kernel](./System-Software/Kernel.md), allowing
 the injection of code, which has not been cryptographically signed by
 Microsoft.
 
@@ -176,4 +176,4 @@ Hypervisor that can preform various tasks on the system, for example
 getting the value of a special cpu register or printing to the console's
 post bus. When a system call is preformed, the cpu generates a syscall
 interrupt and jumps to the appropriate handler. System calls are
-described more here: [System Calls](System-Software/System_Calls)
+described more here: [System Calls](./Development/System_Calls.md)

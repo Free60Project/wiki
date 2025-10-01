@@ -1,6 +1,6 @@
 # System Calls
 
-The means for unprivileged code to query the [Hypervisor](Hypervisor) for privileged tasks.
+The means for unprivileged code to query the [Hypervisor](../Hypervisor.md) for privileged tasks.
 
 # Making a System Call
 

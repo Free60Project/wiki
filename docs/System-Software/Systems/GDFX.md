@@ -41,4 +41,4 @@ The 32nd segment seems to be a descriptor.
 | TEMPORARY | 0x00000100 |
 
 
-[System Software](System_Software)
+

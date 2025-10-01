@@ -16,4 +16,4 @@
 | Debian-lenny   | Linux Deboostrap-script for Debian 5 "lenny"       |
 | Debian-squeeze | Linux Deboostrap-script for Debian 6 "squeeze"     |
 
-[Category: Linux](/Linux)
+

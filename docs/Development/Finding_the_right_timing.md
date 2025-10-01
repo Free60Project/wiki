@@ -113,4 +113,4 @@ Make sure ... you got it ;)
 PS: Those pseudo-code examples don't show the slowdown code for the sake
 of clarity.
 
-[Category: Development](/Development)
+

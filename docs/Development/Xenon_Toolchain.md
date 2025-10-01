@@ -143,4 +143,4 @@ filename Press Ctrl+X for closing nano
 
 Have fun compiling your code ;)
 
-[Category: Development](/Development)
+

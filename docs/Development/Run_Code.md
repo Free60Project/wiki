@@ -1,5 +1,5 @@
-**This is outdated! Use [JTAG Hack](JTAG_Hack) or [Reset
-Glitch Hack](Reset_Glitch_Hack)!**
+**This is outdated! Use [SMC Hack](../Hacks/SMC_Hack.md) or [Reset
+Glitch Hack](../Hacks/Reset_Glitch_Hack.md)!**
 
 Thanks to the work of "Anonymous Hacker" and "Crawler360", it is now
 possible to run your own code on an Xbox 360 with full (hypervisor)
@@ -82,7 +82,6 @@ and cannot be attached to a PC serial port directly. Even if you are
 working with xorloser's loader, a serial cable can be very useful for
 debugging purposes.
 
-[Category: Development](/Development)
-[Category: Homebrew Software](/Homebrew)
-[Category: Hardware](/Hardware)
-[Category: Support](/Support)
+
+[Category: Homebrew Software](../Homebrew/index.md)
+[Category: Hardware](../Hardware/index.md)

@@ -281,5 +281,5 @@ Source:
 [google-docs](https://web.archive.org/web/20100713001647/https://docs.google.com/View?id=dnfmv5h_23gw47ddgs) \(archive.org mirror\) &
 [XBH, posted by trancy](http://www.xboxhacker.org/index.php?topic=13618.0)
 
-[Category: Hardware](/Hardware)
-[Category: System Software](/System_Software)
+[Category: Hardware](../Hardware/index.md)
+

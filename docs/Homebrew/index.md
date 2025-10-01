@@ -1,67 +1,65 @@
 # Homebrew Software
 
-[360FlashTool](../360FlashTool)
+[360FlashTool](./PC-Software/360FlashTool.md)
 
-[Genesis Plus](../Genesis_Plus)
+[Genesis Plus](./Emulators/Genesis_Plus.md)
 
-[Lflash](../Lflash)
+[Lflash](../Linux/Lflash.md)
 
-[LibHomebrew](../LibHomebrew)
+[LibHomebrew](../Development/LibHomebrew.md)
 
-[LibXenon](../LibXenon)
+[LibXenon](../Development/LibXenon/index.md)
 
-[LibXenon Examples](../LibXenon_Examples)
+[LibXenon Examples](../Development/LibXenon/Examples.md)
 
-[List of homebrew applications](../List_of_homebrew_applications)
+[List of homebrew applications](./List_of_homebrew_applications.md)
 
-[List of homebrew emulators](../List_of_homebrew_emulators)
+[List of homebrew emulators](./List_of_homebrew_emulators.md)
 
-[List of homebrew games](../List_of_homebrew_games)
+[List of homebrew games](./List_of_homebrew_games.md)
 
-[List of homebrew_loaders](../List_of_homebrew_loaders)
+[List of homebrew_loaders](./List_of_homebrew_loaders.md)
 
-[List of PC utilities](../List_of_PC_utilities)
+[List of PC utilities](./List_of_PC_utilities.md)
 
-[List of system tools](../List_of_system_tools)
+[List of system tools](./List_of_system_tools.md)
 
-[Mupen64-360](../Mupen64-360)
+[Mupen64-360](./Emulators/Mupen64-360.md)
 
-[NandCompare](../NandCompare)
+[NandCompare](./PC-Software/NandCompare.md)
 
-[NANDPro](../NANDPro)
+[NANDPro](./PC-Software/NANDPro.md)
 
-[PCSXR Xenon](../PCSXR_Xenon)
+[PCSXR Xenon](./Emulators/PCSXR-Xenon.md)
 
-[PC Software](../PC_Software)
+[PC Software](./PC-Software/index.md)
 
-[Pong](../Pong)
+[Pong](./Games/Pong.md)
 
-[Rawflash](../Rawflash)
+[Rawflash](../Rawflash.md)
 
-[Run Code](../Run_Code)
+[Run Code](../Development/Run_Code.md)
 
-[SDLQuake](../SDLQuake)
+[SDLQuake](./Games/SDLQuake.md)
 
-[Sega Genesis_Plus_GX](../Sega_Genesis_Plus_GX)
+[Sega Genesis_Plus_GX](./Emulators/Sega_Genesis_Plus_GX.md)
 
-[Sega Master_System_Plus](../Sega_Master_System_Plus)
+[Sega Master_System_Plus](./Emulators/Sega_Master_System_Plus.md)
 
-[Snes9x-Gx](../Snes9x-Gx)
+[Snes9x-Gx](./Emulators/Snes9x-Gx.md)
 
-[Starting Homebrew Development](../Starting_Homebrew_Development)
+[Starting Homebrew Development](../Development/Starting_Homebrew_Development.md)
 
-[Tanks 360](../Tanks_360)
+[Tanks 360](./Games/Tanks_360.md)
 
-[UART](../UART)
+[UART](../Development/UART.md)
 
-[Utilities](../Utilities)
+[Utilities](../Utilities.md)
 
-[XeLL](../XeLL)
+[XeLL](./Tools/XeLL.md)
 
-[XeLL Reloaded](../XeLL_Reloaded)
+[XMENU](./Apps/XMENU.md)
 
-[XMENU](../XMENU)
+[XMPlayer](./Apps/XMPlayer.md)
 
-[XMPlayer](../XMPlayer)
-
-[ZLX Browser](../ZLX_Browser)
+[ZLX Browser](../ZLX_Browser.md)

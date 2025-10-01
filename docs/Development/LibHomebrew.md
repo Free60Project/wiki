@@ -11,7 +11,7 @@ console to another. Please help making this idea real!
 
 For every (hacked) hardware, there is a homebrew lib / toolchain:
 
-  - [Libxenon](LibXenon) for guess what ;)
+  - [Libxenon](./LibXenon/index.md) for guess what ;)
   - [libogc](http://www.devkitpro.org/category/libogc/) for Wii,
     GameCube
   - [OpenXDK](https://sourceforge.net/projects/openxdk/) for Xbox 1
@@ -94,5 +94,5 @@ looks like a promising ground. It contains its own libc implementation,
 whereas most homebrew projects are using newlib
 instead.
 
-[Category: Homebrew Software](/Homebrew)
-[Category: Development](/Development)
+[Category: Homebrew Software](../Homebrew/index.md)
+
