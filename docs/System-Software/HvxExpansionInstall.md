@@ -5,7 +5,7 @@ hide:
 
 # HvxExpansionInstall
 
-A system call for "installing" code under [Hypervisor](/Hypervisor) context.
+A system call for "installing" code under [Hypervisor](../Hypervisor.md) context.
 Registers an HvxExpansion structure in the expansion table
 
 ## Reversed Pseudocode

@@ -1,11 +1,11 @@
 # General
 
-To communicate with the [Flash Controller](NAND#Flash_Controllers) you need a device which
-is capable of the [Xbox 360's SPI Protocol](SPI). There are
+To communicate with the Flash Controller you need a device which
+is capable of the [Xbox 360's SPI Protocol](../Hardware/Console/SPI.md). There are
 ready-to-use devices you can buy or, if you aren't afraid of soldering
 your own hardware, DIY homebrew devices. Basically: Get the device
 programmed (if needed) and solder it according to the
-[Diagram](SPI) to your Xbox's mainboard - you can start
+[Diagram](../Hardware/Console/SPI.md) to your Xbox's mainboard - you can start
 reading/writing to your NAND after installing the needed drivers.
 
 # DIY / Homebrew
@@ -52,4 +52,4 @@ Description coming later...
 There are several ready-to-use professional products like: Team Xecuter
 NAND-X, Maximus 360NandFlasher, Matrix SPI Programmer etc. They arrive
 preprogrammed and can be used directly with Software like
-[NANDPro](NANDPro) to interact with the NAND Flash.
+[NANDPro](../Homebrew/PC-Software/NANDPro.md) to interact with the NAND Flash.

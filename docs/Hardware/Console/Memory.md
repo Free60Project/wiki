@@ -21,6 +21,6 @@
       bus
 - 256 GB/s memory bandwidth to eDRAM
 - 21.6 GB/s front-side bus
-- [Southbridge](../Southbridge) bandwidth of 500 MB/s.
+- [Southbridge](./Southbridge.md) bandwidth of 500 MB/s.
 
-[Category: Hardware](/Hardware)
+[Category: Hardware](../index.md)

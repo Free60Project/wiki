@@ -68,7 +68,7 @@ over at XboxHacker.
 Use Infectus or custom hardware (memorycard reader) to make a valid dump
 of the current NAND.
 
-  - [Xbox 360 Infectus Kernel Dump](Xbox_360_Infectus)
+  - Xbox 360 Infectus Kernel Dump
 
 ![Infectus Screenshot](images/Infectus_Read_NAND.PNG)
 
@@ -110,7 +110,7 @@ Image'.
 Connect Infectus chip to the Xbox 360 again, erase and flash the new
 patched 1888 base kernel image.
 
-  - [Xbox 360 Infectus Kernel Dump](Xbox_360_Infectus)
+  - Xbox 360 Infectus Kernel Dump
 
 ![Image](images/Infectus_Write_NAND.PNG)
 
@@ -118,7 +118,7 @@ patched 1888 base kernel image.
 
 *Attack the HMAC-hash value using the timing hardware and DGTool.*
 
-1.  Build the [downgrader hardware](Xbox_360_Downgrader_Hardware) and connect a
+1.  Build the downgrader hardware and connect a
     serial port cable and power/ground (3.3v or 5v) from the 360 or an
     external power supply (USB) to the downgrader hardware.
 2.  Connect the USB cable to the Infectus chip. The Infectus is required
@@ -142,7 +142,7 @@ for a little over an hour (around 1 hour 10 minutes seems to be normal)
 and the correct hash value will hopefully be discovered. If successful
 the last line of text should state **'BOOT!**'.
 
-  - [Xbox 360 Downgrader Hardware](Xbox_360_Downgrader_Hardware)
+  - Xbox 360 Downgrader Hardware
 
 ![DGTool Screenshot](images/Timing_attack_dgtool.PNG)
 
@@ -166,7 +166,7 @@ is required.
 CPU Key.*
 
 1.  Patch the King Kong game image with the [King Kong
-    exploit](King_Kong_Hack) and burn it to a DVD+R Dual
+    exploit](./Hacks/King_Kong_Hack.md) and burn it to a DVD+R Dual
     Layer disc.
 2.  Burn the latest Gentoo Xenon release (as of writing beta2) from
     [free60.org](https://github.com/Free60Project) to a CD-R and insert the disc
@@ -197,15 +197,15 @@ Tool](https://web.archive.org/web/20090523033421/http://www.xboxhacker.net/index
 Insert the correct CPU Key in the 360 Flash Tool and patching the LDV
 (LockDownValue) in the CB/CE/CF section to that of the latest update.
 
-  - [Kernel](Kernel)
-  - [King Kong Hack](King_Kong_Hack)
+  - [Kernel](./System-Software/Kernel.md)
+  - [King Kong Hack](./Hacks/King_Kong_Hack.md)
 
 ## Results
 
 All of my runs can be found on the page below.
 
-  - [Xbox 360 Timing Attack Results](Xbox_360_Timing_Attack_Results)
-
+  - Xbox 360 Timing Attack Results
+  
 ## Speculation
 
 arnezami:
@@ -242,7 +242,7 @@ tmbinc:
 
 ## Current Situation
 
-The last [2007 fall update](Kernel), 6683, is
+The last [2007 fall update](./System-Software/Kernel.md), 6683, is
 still vulnerable and can be downgraded by timing attacking the HMAC-hash
 value. The update is still vulnerable because the CB (2BL) section of
 the kernel did not change after the update, only the main CE/CF
@@ -250,7 +250,7 @@ sections. No other fuses than the obligatory fuseline 7 (to match the
 LockDownValue in CE/FE) were blown.
 
 The latest revisions of the Xbox 360, the
-[Falcon](Xbox_360_Revisions/Falcon), has a newer basekernel and CB
+[Falcon](./Hardware/Console/Revisions/Falcon.md), has a newer basekernel and CB
 section, 1921, and this version is patched against the
 memcmp-vulnerability
 [8](https://web.archive.org/web/20090523022729/http://www.xboxhacker.net/index.php?topic=8555.msg58882).

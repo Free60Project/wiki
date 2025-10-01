@@ -1,9 +1,9 @@
 ## Requirements
 
   - Linux/MAC OS/Mingw (a virtual machine will just do fine)
-  - Installed [Xenon Toolchain](Compiling_the_Toolchain) and
-    [LibXenon](LibXenon) of course
-  - [LibXenon](LibXenon) pulled from [Free60 Git Repository](Free60_Git_Repository)
+  - Installed [Xenon Toolchain](https://github.com/Free60Project/libxenon) and
+    [LibXenon](./LibXenon/index.md) of course
+  - [LibXenon](./LibXenon/index.md) pulled from [Free60 Git Repository](./Free60_Git_Repository.md)
   - Knowledge of C/C++
 
 ## Getting into it
@@ -13,8 +13,7 @@ develop LibXenon applications: [Setup your PC for LibXenon Programming](https://
  [\[PDF\]](https://github.com/Free60Project/libxenon.org-forum/blob/master/_attachments/Setup%20your%20PC%20for%20LibXenon%20Programming_v1.1a.pdf)
 
 You could start looking at a code example and write a program which
-(almost) everbody starts with: [Hello World
-:)](LibXenon_Examples)
+(almost) everbody starts with: [Hello World:)](./LibXenon/Examples.md)
 
-[Category: Homebrew Software](/Homebrew)
-[Category: Development](/Development)
+[Category: Homebrew Software](../Hardware/index.md)
+

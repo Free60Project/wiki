@@ -1,31 +1,29 @@
 # Hardware
 
-[RF Module](../RF_Module)
+[RF Module](./Console/RF_Module.md)
 
-[Run Code](../Run_Code)
+[Run Code](../Development/Run_Code.md)
 
-[Southbridge](../Southbridge)
+[Southbridge](./Console/Southbridge.md)
 
-[Stereo DAC](../Stereo_DAC)
+[Stereo DAC](./Console/Stereo_DAC.md)
 
-[Trinity](../Trinity)
+[Trinity](./Console/Revisions/Trinity.md)
 
-[UART](../UART)
+[UART](../Development/UART.md)
 
-[USB](../USB)
+[USB](./Console/USB.md)
 
-[Webcam](../Webcam)
+[Webcam](./Accessories/Webcam.md)
 
-[Wifi Adapter](../Wifi_Adapter)
+[Wifi Adapter](./Accessories/Wifi_Adapter.md)
 
-[Xbox 360 Motherboard](../Xbox_360_Motherboard)
+[Xbox 360 Motherboard](./Console/Motherboard.md)
 
-[Xenon](../Xenon)
+[Xenon (CPU)](./Console/Xenon_(CPU).md)
 
-[Xenon (CPU)](../Xenon_(CPU))
+[Xenon (Motherboard)](./Console/Xenon_(Motherboard).md)
 
-[Xenon (Motherboard)](../Xenon_(Motherboard))
+[Xenos (GPU)](./Console/Xenos_(GPU).md)
 
-[Xenos (GPU)](../Xenos_(GPU))
-
-[Zephyr](../Zephyr)
+[Zephyr](./Console/Revisions/Zephyr.md)

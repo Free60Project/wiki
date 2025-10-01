@@ -14,9 +14,9 @@ Here is what you can do to help this project:
   - Documentation: We need the individual bits\&pieces, for example from
     xboxhacker.net, nicely assembled into wiki pages, Howtos etc. This
     does not require coding skills!
-  - Head over to **[here](../Category_Pages_that_need_to_be_cleaned_up)**
+  - Head over to **[here](../!TODO.md)**
     for a list of pages that need some work done on them.
-  - Or you can go **[here](../Category_Pages_with_missing_images)** for a
+  - Or you can go **[here](../!Pages_with_missing_images.md)** for a
     list of pages that need images uploaded.
   - Take a look at wiibrew.org: They have nice categories for the
     available software, features applications etc.
@@ -48,7 +48,7 @@ Some documentation will either not exist, or won't be made available
   - Chain of trust: how execution integrity is designed to work
   - Chinks in the armor: Holes in the chain of trust
   - <s>Hard drive locking (if any) and</s> filesystem details
-    ([Harddrive](../HDD))
+    ([Harddrive](../Hardware/Console/HDD.md))
   - Wireless hardware and software protocol for controllers
   - Xbox1 software emulation details
 
@@ -89,4 +89,4 @@ plus interactivity over serial / IR remote or USB controller), or
 possibly in a Linux initramfs (which is easier to implement, but locks
 the user in to one single kernel)
 
-[Category: Support](../Category_Support)
+

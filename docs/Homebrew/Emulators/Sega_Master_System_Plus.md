@@ -20,4 +20,4 @@ Source: <http://www.multiupload.com/62T7RVYB5A>
       Tmbinc
       Charles MacDonald
 
-[Category: Homebrew Software](/Homebrew)
+[Category: Homebrew Software](../index.md)

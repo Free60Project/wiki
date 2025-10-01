@@ -1,5 +1,5 @@
 The RF module is believed to be based on DECT
-technology:[1](1) (Dutch)
+technology: (Dutch)
 
   - Chips on the RF module:
 
@@ -41,4 +41,4 @@ controllers.
 TP17 is an unknown signal, connected to test pin TP17 on the RF module
 pcb
 
-[Category: Hardware](/Hardware)
+[Category: Hardware](../index.md)

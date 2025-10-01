@@ -13,4 +13,4 @@
     Thanks to Mattie for the idea
     Thanks to STK50 for all you have done. Hope one day to work with you again.
 
-[Category: Homebrew Software](/Homebrew)
+[Category: Homebrew Software](../index.md)

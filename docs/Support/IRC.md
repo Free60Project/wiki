@@ -90,4 +90,4 @@ Thank you for your interest in Free60, enjoy your stay!
 
 <iframe src="https://webchat.oftc.net/?channels=%23free60%2C%23free60-chat" width="647" height="400"></iframe>
 
-[Category: Support](../Category_Support)
+

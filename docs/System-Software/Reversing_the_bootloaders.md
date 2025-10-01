@@ -15,7 +15,7 @@ scene.
 ## Finding the entrypoint
 
 The entrypoint of the loader is located at offset 0x8-0xC in the [loader
-header](Bootloaders), once you've found the entrypoint the
+header](Bootloaders.md), once you've found the entrypoint the
 reversing can begin.
 
 ## Analyzing the loader
@@ -106,7 +106,7 @@ decryption routines quite easily.
     function.
   - All of the bootloaders have a function to handle post output during
     boot. If you find that function, you can follow its references and
-    use the post codes from [POST](POST) to step through each
+    use the post codes from [POST](../POST.md) to step through each
     bootloader and figure out what each one is doing.
   - Please keep in mind that the newest versions of the bootloaders had
     their post codes removed due to the RGH hack relying on them.
@@ -132,5 +132,5 @@ decryption routines quite easily.
 
 The following bootloaders have already been reversed and posted:
 
-  - [1bl Code](1bl_Code)
-  - [CB Code](CB_Code)
+  - [1bl Code](./1bl_Code.md)
+  - [CB Code](./CB_Code.md)

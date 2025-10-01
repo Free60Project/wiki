@@ -60,7 +60,7 @@ Source Code (incl. Makefile): [Download](http://file.libxenon.org/free60/libxeno
 ### Compiling LibXenon Code
 
 All of these samples/programs include a Makefile, so its easy to compile
-them with the [Toolchain](../Compiling_the_Toolchain).
+them with the [Toolchain](https://github.com/Free60Project/libxenon).
 
 ```sh
 cd into_the_directory
@@ -73,5 +73,5 @@ move all the sourcecode-files of your project into a folder "source" so
 the Makefile can find
 them.
 
-[Category: Homebrew Software](/Homebrew)
-[Category: Development](/Development)
+[Category: Homebrew Software](../../Homebrew/index.md)
+

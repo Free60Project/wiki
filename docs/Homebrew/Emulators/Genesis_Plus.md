@@ -31,4 +31,4 @@ Thanks:
   Charles MacDonald
 ```
 
-[Category: Homebrew Software](/Homebrew)
+[Category: Homebrew Software](../index.md)

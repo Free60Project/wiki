@@ -9,320 +9,266 @@ To submit changes:
 
 ## Categories
 
-[Xbox 360 Hardware](/Hardware)
-[Xbox 360 System Software](/System_Software)
+[Xbox 360 Hardware](./Hardware/index.md)
+[Xbox 360 Homebrew Software](./Homebrew/index.md)
 
-[Xbox 360 Homebrew Software](/Homebrew)
-[Xbox 360 Linux](/Linux)
-[Xbox 360 Development](/Development)
-
-[Support](/Support)
-
-[Pages with missing images](/Pages_with_missing_images)
-[Template documentation](/Template_documentation)
+[Pages with missing images](./!Pages_with_missing_images.md)
 
 ## To-do
 
-[TODO](/!TODO)
+[TODO](./!TODO.md)
 
 ## Index
 
-| Generic                       | Hardware                                             | Software                                                     |
-| ----------------------------- | ---------------------------------------------------- | ------------------------------------------------------------ |
-|[Attack](Attack)               | [8051 8052](8051_8052)                               | [1bl Code](1bl_Code)                                         |
-|[Boot Process](Boot_Process)   | [CPU](CPU)                                           | [360FlashTool](360FlashTool)                                 |
-|[Contribute](Contribute)       | [Case](Case)                                         | [849x System Update](849x_System_Update)                     |
-|[Error Codes](Error_Codes)     | [Chatpad](Chatpad)                                   | [Bootloader](Bootloaders)                                    |
-|[FAQ](FAQ)                     | [DVD Drive](DVD_Drive)                               | [CB Code](CB_Code)                                           |
-|                               | [Dump Flash the NAND](Dump_Flash_the_NAND)           | [Toolchain](Compiling_the_Toolchain)                         |
-|                               | [Ethernet](Ethernet)                                 | [Console Security Certificate](Console_Security_Certificate) |
-|                               | [Falcon](Falcon)                                     | [Cross Compiler](Cross_Compiler)                             |
-|                               | [Finding the right timing](Finding_the_right_timing) | [Dashboard](Dashboard)                                       |
-|                               | [Flash](Flash)                                       | [Debian-etch](Debian-etch)                                   |
-|                               | [Fusesets](Fusesets)                                 | [Debian-lenny](Debian-lenny)                                 |
-|                               | [GamePad](GamePad)                                   | [Debian-squeeze](Debian-squeeze)                             |
-|                               | [Gamepad Keyboard](Gamepad_Keyboard)                 | [Dumpana](Dumpana)                                           |
-|                               | [GPU](GPU)                                           |                                                              |
-|                               | [HDD](HDD)                                           | [Emulators](Emulators)                                       |
-|                               | [Harddrive](Harddrive)                               | [FATX](FATX)                                                 |
-|                               | [Headset](Headset)                                   |                                                              |
-|                               | [Motherboard](Motherboard)                           | [Flash Filesystem](Flash_Filesystem)                         |
-|                               | [Jasper](Jasper)                                     | [GDFX](GDFX)                                                 |
-|                               | [Level Shifter](Level_Shifter)                       | [GPD](GPD)                                                   |
+| Generic                     					     | Hardware                                       		| Software                                                     				        |
+| ---------------------------------------------------| -----------------------------------------------------| ----------------------------------------------------------------------------------|
+|[Attack](./Support/Attack.md)      		         | [8051 8052](./Hardware/8051_8052.md)             	| [1bl Code](./System-Software/1bl_Code.md)          			 				    |
+|[Boot Process](./System-Software/Boot_Process.md)   | [CPU](./Hardware/Console/Xenon_(CPU).md)       		| [360FlashTool](./Homebrew/PC-Software/360FlashTool.md)          					|
+|[Contribute](./Support/Contribute.md)  		     | [Case](./Hardware/Console/Case.md)             		| [849x System Update](./System-Software/849x_System_Update.md) 					|
+|[Error Codes](./System-Software/Error_Codes.md)     | [Chatpad](./Hardware/Accessories/Chatpad.md)         | [Bootloader](./System-Software/Bootloaders.md)                			        |
+|[FAQ](./Support/FAQ.md)                 		     | [DVD Drive](./Hardware/Console/DVD_Drive.md)  	    | [CB Code](./System-Software/CB_Code.md)                        				    |
+|                                                    | [NAND_Reading](./Hacks/NAND_Reading.md)              | [Toolchain](https://github.com/Free60Project/libxenon)           				    |
+|               					                 | [Ethernet](./Hardware/Console/Ethernet.md)           | [Console Security Certificate](./System-Software/Console_Security_Certificate.md) |
+|               					                 | [Falcon](./Hardware/Console/Revisions/Falcon.md)     | [Cross Compiler](./Development/Cross_Compiler.md)                  	            |
+|               					                 | [NAND](./Hardware/Console/NAND/index.md)             | [Debian-etch](./Linux/Distros/Debian/etch.md)                                     |
+|               					                 | [Fusesets](./Hardware/Fusesets.md)                   | [Debian-lenny](./Linux/Distros/Debian/lenny.md)                                   |
+|               					                 | [GamePad](./Hardware/Accessories/GamePad.md)         | [Debian-squeeze](./Linux/Distros/Debian/squeeze.md)                               |
+|               					                 | [Chatpad](./Hardware/Accessories/Chatpad.md)         | [Dumpana](./Development/Dumpana.md)                                               |
+|               					                 | [GPU](./Hardware/Console/Xenos_(GPU).md)             | [Emulators](./Homebrew/List_of_homebrew_emulators.md)                             |
+|               					                 | [Harddrive](./Hardware/Console/HDD.md)               | [FATX](./System-Software/Systems/FATX.md)											|
+|               					                 | [Headset](./Hardware/Accessories/Headset.md)         | [Flash Filesystem](./System-Software/NAND_File_System.md)                         |                    
+|               					                 | [Motherboard](./Hardware/Console/Motherboard.md)     | [GDFX](./System-Software/Systems/GDFX.md)                                         |
+|               					                 | [Jasper](./Hardware/Console/Revisions/Jasper.md)     | [GPD](./System-Software/Formats/GPD.md)                                           |
+|               					                 | [Level Shifter](./Hardware/Level_Shifter.md)         |  															                        | 
+|               					                 |                      							    | 																			        | 
 
 
-[Free60 Git Repository](Free60_Git_Repository)
+[Free60 Git Repository](./Development/Free60_Git_Repository.md)
 
-[Generic Xbox 360 File Container](Generic_Xbox_360_File_Container)
+[Genesis Plus](./Homebrew/Emulators/Genesis_Plus.md)
 
-[Genesis Plus](Genesis_Plus)
+[Help](./Support/Help.md)
 
-[Help](Help)
+[HvxExpansionInstall](./System-Software/HvxExpansionInstall.md)
 
-[Histogram](Histogram)
+[HvxKeysExecute](./System-Software/HvxKeysExecute.md)
 
-[Homebrew Games](Homebrew_Games)
+[HvxPostOutput](./System-Software/HvxPostOutput.md)
 
-[Homebrew Launchers](Homebrew_Launchers)
+[Hypervisor](./Hypervisor.md)
 
-[Homebrew Repository](Homebrew_Repository)
+[Hypervisor (Old Notes)](./Hypervisor_(Old_Notes).md)
 
-[HvxExpansionInstall](HvxExpansionInstall)
+[IRC](./Support/IRC.md)
 
-[HvxKeysExecute](HvxKeysExecute)
+[Kernel](./System-Software/Kernel.md)
 
-[HvxPostOutput](HvxPostOutput)
+[Kernel Exports](./System-Software/Kernel_Exports.md)
 
-[Hypervisor](Hypervisor)
+[King Kong Hack](./Hacks/King_Kong_Hack.md)
 
-[Hypervisor (Old Notes)](Hypervisor_(Old_Notes))
+[Lflash](./Linux/Lflash.md)
 
-[IRC](IRC)
+[LibHomebrew](./Development/LibHomebrew.md)
 
-[Kernel](Kernel)
+[LibXenon](./Development/LibXenon/index.md)
 
-[Kernel Exports](Kernel_Exports)
+[LibXenon Examples](./Development/LibXenon/Examples.md)
 
-[King Kong Hack](King_Kong_Hack)
+[Links](./Support/Links.md)
 
-[Launchers](Launchers)
+[Linux Distros](./Linux/Distros/index.md)
 
-[Lflash](Lflash)
+[Linux Kernel](./Linux/Linux_Kernel.md)
 
-[LibHomebrew](LibHomebrew)
+[Linux Kernel Development](./Linux/Linux_Kernel_Development.md)
 
-[LibXenon](LibXenon)
+[List of PC utilities](./Homebrew/List_of_PC_utilities.md)
 
-[LibXenon Examples](LibXenon_Examples)
+[List of Unix Distributions](./Linux/List_of_Unix_Distributions.md)
 
-[Lib Homebrew](Lib_Homebrew)
+[List of all homebrew](./Homebrew/index.md)
 
-[Libraries](Libraries)
+[List of development tools](./Development/List_of_development_tools.md)
 
-[Libxenonexamples](Libxenonexamples)
+[List of homebrew applications](./Homebrew/List_of_homebrew_applications.md)
 
-[Links](Links)
+[List of homebrew emulators](./Homebrew/List_of_homebrew_emulators.md)
 
-[Linux Bootloader](Linux_Bootloader)
+[List of homebrew games](./Homebrew/List_of_homebrew_games.md)
 
-[Linux Distributions](Linux_Distributions)
+[List of homebrew loaders](./Homebrew/List_of_homebrew_loaders.md)
 
-[Linux Distros](Linux_Distros)
+[List of system tools](./Homebrew/List_of_system_tools.md)
 
-[Linux Kernel](Linux_Kernel)
+[LiveCD](./Linux/Distros/LiveCD.md)
 
-[Linux Kernel Development](Linux_Kernel_Development)
+[Media Remote](./Hardware/Accessories/Memory_Unit.md)
 
-[List of PC utilities](List_of_PC_utilities)
+[Memory](./Hardware/Console/Memory.md)
 
-[List of Unix Distributions](List_of_Unix_Distributions)
+[Memory MAP](./System-Software/Memory_Map.md)
 
-[List of all homebrew](List_of_all_homebrew)
+[Memory Unit](./Hardware/Accessories/Memory_Unit.md)
 
-[List of development tools](List_of_development_tools)
+[Modesetting](./Modesetting.md)
 
-[List of homebrew applications](List_of_homebrew_applications)
+[Mupen64-360](./Homebrew/Emulators/Mupen64-360.md)
 
-[List of homebrew emulators](List_of_homebrew_emulators)
+[NAND](./Hardware/Console/NAND/index.md)
 
-[List of homebrew games](List_of_homebrew_games)
+[NAND: Bad Blocks](./Hacks/NAND_Bad_Blocks.md)
 
-[List of homebrew loaders](List_of_homebrew_loaders)
+[NANDPro](./Homebrew/PC-Software/NANDPro.md)
 
-[List of system tools](List_of_system_tools)
+[NAND File System](./System-Software/NAND_File_System.md)
 
-[LiveCD](LiveCD)
+[NAND Reading](./Hacks/NAND_Reading.md)
 
-[Mainboard](Mainboard)
+[NFS Root](./NFS_Root.md)
 
-[Media Remote](Media_Remote)
+[NandCompare](./Homebrew/PC-Software/NandCompare.md)
 
-[Memory](Memory)
+[Northbridge](./Hardware/Console/Northbridge.md)
 
-[Memory MAP](Memory_MAP)
+[Old Main Page](./Old_Main_Page.md)
 
-[Memory Unit](Memory_Unit)
+[Opus](./Hardware/Console/Revisions/Falcon.md#opus)
 
-[Modesetting](Modesetting)
+[Other OS Loader](./Other_OS_Loader.md)
 
-[Mupen64-360](Mupen64-360)
+[PCSXR-Xenon](./Homebrew/Emulators/PCSXR-Xenon.md)
 
-[NAND](NAND)
+[PC Software](./Homebrew/PC-Software/index.md)
 
-[NAND: Bad Blocks](NAND_Bad_Blocks)
+[PEC](./System-Software/Formats/PEC.md)
 
-[NANDPro](NANDPro)
+[POST](./POST.md)
 
-[NAND File System](NAND_File_System)
+[Pin Headers](./Hardware/Console/Pin_Headers.md)
 
-[NAND Reading](NAND_Reading)
+[Play and Charge Kit](./Hardware/Accessories/Play_and_Charge_Kit.md)
 
-[NFS Root](NFS_Root)
+[Pong](./Homebrew/Games/Pong.md)
 
-[NandCompare](NandCompare)
+[Pre-release differences](./Pre-release_differences.md)
 
-[Northbridge](Northbridge)
+[Profile: Account](./System-Software/Profile_Account.md)
 
-[Old Main Page](Old_Main_Page)
+[R6T3](./Hardware/R6T3.md)
 
-[Opus](Opus)
+[RF Module](./Hardware/Console/RF_Module.md)
 
-[Other OS Loader](Other_OS_Loader)
+[Rawflash](./Rawflash.md)
 
-[PCSXR-Xenon](PCSXR-Xenon)
+[Reading Out nand](./Hacks/NAND_Reading.md)
 
-[PC Software](PC_Software)
+[Reset Glitch Hack](./Hacks/Reset_Glitch_Hack.md)
 
-[PEC](PEC)
+[Reversing the bootloaders](./System-Software/Reversing_the_bootloaders.md)
 
-[POST](POST)
+[Run Code](./Development/Run_Code.md)
 
-[Pin Headers](Pin_Headers)
+[SDLQuake](./Homebrew/Games/SDLQuake.md)
 
-[Play and Charge Kit](Play_and_Charge_Kit)
+[SFCX](./System-Software/SFCX.md)
 
-[Pong](Pong)
+[SMBus Controller](./SMBus_Controller.md)
 
-[Pre-release differences](Pre-release_differences)
+[SMC](./Hardware/Console/SMC.md)
 
-[Profile: Account](Profile_Account)
+[SMC Command 0x01](./Hardware/Console/SMC_Command_0x01.md)
 
-[R6T3](R6T3)
+[SMC Command 0x82](./Hardware/Console/SMC_Command_0x82.md)
 
-[README](README)
+[SMC Hack](./Hacks/SMC_Hack.md)
 
-[RF Module](RF_Module)
+[SMS Plus](./Homebrew/Emulators/Sega_Master_System_Plus.md)
 
-[Rawflash](Rawflash)
+[SPA](./System-Software/Formats/SPA.md)
 
-[Reading Out nand](Reading_Out_nand)
+[SPI](./Hardware/Console/SPI.md)
 
-[Reset Glitch Hack](Reset_Glitch_Hack)
+[SPI Programmer](./Hacks/SPI_Programmer.md)
 
-[Reversing the bootloaders](Reversing_the_bootloaders)
+[STFS](./System-Software/Formats/STFS.md)
 
-[Run Code](Run_Code)
+[Secure Transacted File System](./System-Software/Formats/STFS.md)
 
-[SDLQuake](SDLQuake)
+[Sega Master System Plus](./Homebrew/Emulators/Sega_Master_System_Plus.md)
 
-[SFCX](SFCX)
+[Serial Console](./Serial_Console.md)
 
-[SMBus Controller](SMBus_Controller)
+[Shadowboot](./System-Software/Shadowboot.md)
 
-[SMC](SMC)
+[Snes9x-Gx](./Homebrew/Emulators/Snes9x-Gx.md)
 
-[SMC Command 0x01](SMC_Command_0x01)
+[Southbridge](./Hardware/Console/Southbridge.md)
 
-[SMC Command 0x82](SMC_Command_0x82)
+[Starting Homebrew Development](./Development/Starting_Homebrew_Development.md)
 
-[SMC Hack](SMC_Hack)
+[Stereo DAC](./Hardware/Console/Stereo_DAC.md)
 
-[SMS Plus](SMS_Plus)
+[System Calls](./Development/System_Calls.md)
 
-[SPA](SPA)
+[Tanks 360](./Homebrew/Games/Tanks_360.md)
 
-[SPI](SPI)
+[Timing Attack](./Timing_Attack.md)
 
-[SPI Programmer](SPI_Programmer)
+[Trinity](./Hardware/Console/Revisions/Trinity.md)
 
-[STFS](STFS)
+[UART](./Development/UART.md)
 
-[Sandbox](Sandbox)
+[USB](./Hardware/Console/USB.md)
 
-[Secure Transacted File System](Secure_Transacted_File_System)
+[Ubuntu](./Linux/Distros/Ubuntu/index.md)
 
-[Sega Genesis Plus GX](Sega_Genesis_Plus_GX)
+[Ubuntu 11.10](./Linux/Distros/Ubuntu/11_10.md)
 
-[Sega Master System Plus](Sega_Master_System_Plus)
+[Ubuntu 7.10](./Linux/Distros/Ubuntu/7_10.md)
 
-[Serial Console](Serial_Console)
+[Utilities](./Utilities.md)
 
-[Shadowboot](Shadowboot)
+[Webcam](./Hardware/Accessories/Webcam.md)
 
-[Snes9x-Gx](Snes9x-Gx)
+[Wifi Adapter](./Hardware/Accessories/Wifi_Adapter.md)
 
-[Southbridge](Southbridge)
+[XCP](./System-Software/Formats/XCP.md)
 
-[Starting Homebrew Development](Starting_Homebrew_Development)
+[XConfig](./System-Software/XConfig.md)
 
-[Stereo DAC](Stereo_DAC)
+[XDBF](./System-Software/Formats/XDBF.md)
 
-[System Calls](System_Calls)
+[XDK Kernel](./System-Software/XDK_Kernel.md)
 
-[Tanks 360](Tanks_360)
+[XEX](./System-Software/Formats/XEX.md)
 
-[Timing Attack](Timing_Attack)
+[XMENU](./Homebrew/Apps/XMENU.md)
 
-[Toolchain](Toolchain)
+[XMPlayer](./Homebrew/Apps/XMPlayer.md)
 
-[Trinity](Trinity)
+[Xbox 360 Motherboards](./Hardware/Console/Motherboard.md)
 
-[UART](UART)
+[Xbox Revision Identification](./Hardware/Console/Revisions/Identification.md)
 
-[USB](USB)
+[Xbox Revisions](./Hardware/Console/Revisions/index.md)
 
-[Ubuntu](Ubuntu)
+[Xbox 360 System Software](./System-Software/360_System_Software.md)
 
-[Ubuntu 11.10](Ubuntu11_10)
+[XeLL](./Homebrew/Tools/XeLL.md)
 
-[Ubuntu 7.10](Ubuntu7_10)
+[Xenon](./Xenon_(Disambiguation).md)
 
-[Utilities](Utilities)
+[Xenon (CPU)](./Hardware/Console/Xenon_(CPU).md)
 
-[Valhalla](Valhalla)
+[Xenon (Motherboard)](./Hardware/Console/Xenon_(Motherboard).md)
 
-[Webcam](Webcam)
+[Xenon Toolchain](./Development/Xenon_Toolchain.md)
 
-[Wifi Adapter](Wifi_Adapter)
+[Xenos (GPU)](./Hardware/Console/Xenos_(GPU).md)
 
-[XCP](XCP)
+[Xenos Framebuffer](./Development/Xenos_Framebuffer.md)
 
-[XConfig](XConfig)
+[ZLX Browser](ZLX_Browser.md)
 
-[XContent](XContent)
-
-[XDBF](XDBF)
-
-[XDK Kernel](XDK_Kernel)
-
-[XEX](XEX)
-
-[XMENU](XMENU)
-
-[XMPlayer](XMPlayer)
-
-[XTAF](XTAF)
-
-[Xbox 360 Motherboards](Motherboards)
-
-[Xbox Revision Identification](Xbox_Revision_Identification)
-
-[Xbox Revisions](Xbox_Revisions)
-
-[Xbox Software](Xbox_Software)
-
-[Xbox System Software](Xbox_System_Software)
-
-[XeLL](XeLL)
-
-[XeLL Reloaded](XeLL_Reloaded)
-
-[XeLLous](XeLLous)
-
-[Xenon](Xenon)
-
-[Xenon (CPU)](Xenon_(CPU))
-
-[Xenon (Motherboard)](Xenon_(Motherboard))
-
-[Xenon Toolchain](Xenon_Toolchain)
-
-[Xenos](Xenos)
-
-[Xenos (GPU)](Xenos_(GPU))
-
-[Xenos Framebuffer](Xenos_Framebuffer)
-
-[ZLX Browser](ZLX_Browser)
-
-[Zephyr](Zephyr)
+[Zephyr](./Hardware/Console/Revisions/Zephyr.md)

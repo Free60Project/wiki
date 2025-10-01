@@ -8,17 +8,17 @@ as Microsoft has corrected mistakes or added/improved existing features.
 
 - Known revisions include:
 
-:\*[Xenon](../Xenon_(Motherboard)) (Launch hardware)
+:\*[Xenon](./Xenon_(Motherboard).md) (Launch hardware)
 
-:\*[Zephyr](../Zephyr) (Elite)
+:\*[Zephyr](./Revisions/Zephyr.md) (Elite)
 
-:\*[Falcon](../Falcon) (65nm Chipset revision)
+:\*[Falcon](./Revisions/Falcon.md) (65nm Chipset revision)
 
-:\*[Opus](../Opus)
+:\*[Opus](./Revisions/Falcon.md#opus)
 
-:\*[Jasper](../Jasper) (Onboard Memory Unit)
+:\*[Jasper](./Revisions/Jasper.md) (Onboard Memory Unit)
 
-:\*[Trinity](../Trinity) (Slim)
+:\*[Trinity](./Revisions/Trinity.md) (Slim)
 
 ## Details
 
@@ -60,4 +60,4 @@ information on an exposed bus again though.
   - [http://g-prime.net/x360/open/](https://web.archive.org/web/20090110154123/http://www.g-prime.net/x360/open/) \(archive.org mirror\)
   - [http://www.darkmoon.org/xbox360_photos.htm](https://web.archive.org/web/20150609103520/http://www.darkmoon.org/xbox360_photos.htm) \(archive.org mirror\)
 
-[Category: Hardware](/Hardware)
+[Category: Hardware](../index.md)

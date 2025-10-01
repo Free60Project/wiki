@@ -2,7 +2,7 @@
 
 ![Xenon CPU](images/KL_Microsoft_XBOX_380_CPU_ES.jpg)
 
-**Xenon** (not to be confused with [Xenos](Xenos_(GPU))) is the CPU that is used
+**Xenon** (not to be confused with [Xenos](Xenos_(GPU).md)) is the CPU that is used
 in the Xbox 360. The processor, internally codenamed *Waternoose* by IBM
 and XCPU by Microsoft. "The basic design is a 64-bit *PowerPC*
 architecture, with the complete *PowerPC ISA available*."
@@ -77,4 +77,4 @@ hardware threads available to games. Each individual core also includes
   - [POWER4](http://en.wikipedia.org/wiki/POWER4) at Wikipedia
   - [CPU Chip for Xbox 360 Manufacturing Overview, FSB, PPC Core, VMX & FPU, & L2 Cache block diagrams](https://web.archive.org/web/20100328024533/http://www.ccw.com.cn/notebook/pczx/sy/htm2005/20051028_16OMI.htm) from IBM
 
-[Category: Hardware](/Hardware)
+[Category: Hardware](../index.md)

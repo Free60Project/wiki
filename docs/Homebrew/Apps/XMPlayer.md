@@ -62,4 +62,4 @@
     tuxuser
     [c0z]
 
-[Category: Homebrew Software](/Homebrew)
+[Category: Homebrew Software](../index.md)

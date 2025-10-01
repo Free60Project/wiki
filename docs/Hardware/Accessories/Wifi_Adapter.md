@@ -1,6 +1,6 @@
 # Introduction
 
-![Back of the Wireless LAN adapter](/images/Noimage.png) <!-- Needs a new photo -->
+![Back of the Wireless LAN adapter](../../images/Noimage.png) <!-- Needs a new photo -->
 
 FCC ID:C3K-WKS168
 IC: 3048A-WKS168
@@ -15,17 +15,17 @@ below.
 
 # Disassembly
 
-[All Pieces of the Wifi Adapter Laid out](/images/Noimage.png) <!-- Needs a new photo -->
+[All Pieces of the Wifi Adapter Laid out](../../images/Noimage.png) <!-- Needs a new photo -->
 
 Disassembled; bottom and top covers, PCB, USB cable and antenna
 
-[Wireless LAN Adapter Opened (Back)](/images/Noimage.png) <!-- Needs a new photo -->
+[Wireless LAN Adapter Opened (Back)](../../images/Noimage.png) <!-- Needs a new photo -->
 
 PCB underside, with [Hannstar Board Corp.](http://www.hannstarboard.com/wps/wcm/connect/english/tw) inscription.
 
 # Integrated Circuits
 
-[Wireless LAN Adapter Opened (Front)](/images/Noimage.png) <!-- Needs a new photo -->
+[Wireless LAN Adapter Opened (Front)](../../images/Noimage.png) <!-- Needs a new photo -->
 
 PCB upper-side, showing the major ICs
 
@@ -80,5 +80,5 @@ from
 
 *Baseband Processor Product Selection table*
 
-[Category: Hardware](/Hardware)
-[Category: Pages That Need Updates](/!Pages-That-Need-Updates)
+[Category: Hardware](../index.md)
+[Category: Pages That Need Updates](../../%21Pages-That-Need-Updates.md

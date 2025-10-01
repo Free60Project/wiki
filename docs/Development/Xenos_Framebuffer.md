@@ -48,5 +48,5 @@ holds at least the following:
 ` Option        "UseFBDev"      "true"`
 `EndSection`
 
-[Category: Development](/Development)
-[Category: Linux](/Linux)
+
+

@@ -8,8 +8,8 @@ your file/nand.
 
 ## Source
 
-The source is available on the [free60 GIT Repository](Free60_Git_Repository) in the tools
+The source is available on the [free60 GIT Repository](../Development/Free60_Git_Repository.md) in the tools
 section.
 
-[Category: Homebrew Software](/Homebrew)
-[Category: Linux](/Linux)
+[Category: Homebrew Software](../Homebrew/index.md)
+

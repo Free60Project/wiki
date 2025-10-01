@@ -1,6 +1,6 @@
 # Xenos GPU
 
-**Xenos** (not to be confused with [Xenon](/Xenon_(Disambiguation))) is a custom graphics processing unit (GPU) designed by ATI,
+**Xenos** (not to be confused with [Xenon](../..//Xenon_(Disambiguation).md)) is a custom graphics processing unit (GPU) designed by ATI,
 used in the Xbox 360. Developed under the codename "C1," it is in many
 ways related to the R500 desktop PC graphics card series and therefore
 very similar to an ATI Radeon X1900 as far as features and performance
@@ -8,8 +8,8 @@ are concerned. However, the Xenos introduced many new design ideas that
 were later adopted in the R600 series. The package contains two separate
 silicon dies, the GPU and an eDRAM, featuring a total of 337 million
 transistors. For infos about Xenos Framebuffer/Xenosfb click
-[HERE](Xenos_Framebuffer) and for infos about modesetting
-[HERE](Modesetting)
+[HERE](../../Development/Xenos_Framebuffer.md) and for infos about modesetting
+[HERE](../../Modesetting.md)
 
 ## Specifications
 
@@ -69,4 +69,4 @@ framebuffer blit functions, or is everybody mmap()ing? -- Ge0rG 15:03,
     Arch](http://developer.amd.com/wordpress/media/2012/10/R700-Family_Instruction_Set_Architecture.pdf)
     at developer.amd.com
 
-[Category: Hardware](/Hardware)
+[Category: Hardware](../index.md)

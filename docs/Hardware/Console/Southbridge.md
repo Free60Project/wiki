@@ -1,1 +1,1 @@
-[Category: Hardware](/Hardware)
+[Category: Hardware](../index.md)

@@ -2,7 +2,7 @@
 
 **GPD** (**G**ame **P**rofile **D**ata) files are used by the Xbox 360
 to store information inside a profile. They are based on the
-[XDBF](../XDBF) format. Profiles are composed of many of these
+[XDBF](./XDBF.md) format. Profiles are composed of many of these
 files, each named under their respective titles id (e.g. 4D5307E6.gpd
 for Halo 3). The dashboard GPD (`FFFE07D1.gpd`) contains information and
 sync information about all the
@@ -238,7 +238,7 @@ public System.Byte[] Data
 These entries are only located in the FFFE07D1 gpd. To get to them, the
 id for the XDBF entry is the title ID of the game, and the XDBF entry
 type is String. For more information see
-[XDBF](../XDBF)
+[XDBF](./XDBF.md)
 
 | Offset | Length          | Type           | Information                       |
 | ------ | --------------- | -------------- | --------------------------------- |
@@ -293,7 +293,7 @@ Title images are also available online:
 
 ## Avatar Award Entries
 
-The entries are only supported within the [PEC](../PEC) version
+The entries are only supported within the [PEC](./PEC.md) version
 of the GPD. The images for the avatar awards, are stored in the game GPD
 for that
 game.
@@ -355,4 +355,4 @@ IDs in Sync List between last and next are
 pushed
 //confirm?
 
-[System Software](/System-Software)
+

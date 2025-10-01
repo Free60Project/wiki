@@ -4,7 +4,7 @@ There is a set of 7 patches available sent to the linuxppc mailing list
 on 08 March 2007, which have to be applied to Linux 2.6.20. If you're
 interested in kernel development and/or adding new features, please take
 a look at [Linux Kernel
-Development](Linux_Kernel_Development).
+Development](./Linux_Kernel_Development.md).
 
 - [(patch 1/7) xenon: add PCI Vendor ID:
   Microsoft](http://ozlabs.org/pipermail/linuxppc-dev/2007-March/032705.html)
@@ -21,8 +21,8 @@ Development](Linux_Kernel_Development).
 - [(patch 7/7) xenon: add framebuffer support
   (ugly)](http://ozlabs.org/pipermail/linuxppc-dev/2007-March/032708.html)
 
-To run linux, you need to use [XeLL Bootloader](../XeLL) available right now. To compile
-the kernel, you need to set up a [Cross compiler](../Toolchain) toolchain (unless
+To run linux, you need to use [XeLL Bootloader](../Homebrew/Tools/XeLL.md) available right now. To compile
+the kernel, you need to set up a [Cross compiler](../Development/Cross_Compiler.md) toolchain (unless
 you already have another PowerPC Linux machine).
 
 ## Prerequisites
@@ -75,7 +75,7 @@ done
 
     If everything goes well, you will end up with a file
     arch/powerpc/boot/zImage.xenon containing the kernel which can be loaded
-    by [XeLL](XeLL).
+    by [XeLL](../Homebrew/Tools/XeLL.md).
 
 ## Configuring and Compiling the 2.6.38.8 Kernel (experimental)
 
@@ -117,7 +117,7 @@ Remember, these patches are Experimental!
 ## Rootfilesystem via NFS
 
 1.  Configure the kernel (CONFIG_CMDLINE in .config) for NFS (see
-    [NFS-Tutorial](../NFS_Root) for details) to match your local
+    [NFS-Tutorial](../NFS_Root.md) for details) to match your local
     setup.
 
     Example:
@@ -130,4 +130,4 @@ Remember, these patches are Experimental!
 
 [http://home.comcast.net/~ssmurf/XeLL-Bootloader-sda2-v2.6.24.3.tar.gz](https://web.archive.org/web/20141025055552/http://home.comcast.net/~ssmurf/XeLL-Bootloader-sda2-v2.6.24.3.tar.gz) \(archive.org)
 
-[Category: Linux](/Linux)
+
