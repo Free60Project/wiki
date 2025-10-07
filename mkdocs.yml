@@ -52,6 +52,7 @@ nav:
       - Frequently Asked Questions: 'Support/FAQ.md'
       - Links: 'Support/Links.md'
     - Hacks:
+      - Bad Update Hack: 'Hacks/Bad_Update_Hack.md'
       - Reset Glitch Hack (RGH): 'Hacks/Reset_Glitch_Hack.md'
       - SMC Hack (JTAG): 'Hacks/SMC_Hack.md'
       - King Kong Hack: 'Hacks/King_Kong_Hack.md'
