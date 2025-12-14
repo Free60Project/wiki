@@ -6,5 +6,4 @@
 * [Debian-etch](./Debian/etch.md)
 * [Debian-lenny](./Debian/lenny.md)
 * [Debian-squeeze](./Debian/squeeze.md)
-
-
+* [Debian-sid](./Debian/sid.md)
