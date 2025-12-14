@@ -1,6 +1,6 @@
-Following https://github.com/SED4906/xenon-porting-notes/blob/main/README.md
-Above incurs necessary background knowledge of Gentoo and cross compilation toolchains.
-Reference also: https://wiki.gentoo.org/wiki/Crossdev#Manual_build
+# gentoo-2025
+
+This is all possible thanks to SED4906 with their patch: https://github.com/SED4906/xenon-porting-notes/blob/main/README.md
 
 To begin a Gentoo host system is needed. It can be a hardware box or a virtual box. QEMU is not really welcome here due to speed and possible issues compiling with what will end up being a custom instruction set. 
 
