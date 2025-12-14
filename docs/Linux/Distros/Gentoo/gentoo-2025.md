@@ -1,13 +1,10 @@
-# gentoo-2025
 Following https://github.com/SED4906/xenon-porting-notes/blob/main/README.md
 Above incurs necessary background knowledge of Gentoo and cross compilation toolchains.
 Reference also: https://wiki.gentoo.org/wiki/Crossdev#Manual_build
 
 To begin a Gentoo host system is needed. It can be a hardware box or a virtual box. QEMU is not really welcome here due to speed and possible issues compiling with what will end up being a custom instruction set. 
 
-Condensed steps from from to back:
-
-On a Gentoo host:
+On a Gentoo host follow these steps below.
 1. `emerge --ask sys-devel/crossdev`
 2. `emerge --ask app-eselect/eselect-repository`
 3. `eselect repository create crossdev`
