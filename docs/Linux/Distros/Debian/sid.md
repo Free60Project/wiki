@@ -45,6 +45,8 @@ The resulting `.bin` files are the updated XeLL release artifacts. There are a f
     - rename xell-gggggg.bin to `updxell.bin` and place it on the root of a FAT32 formatted USB drive. Boot via the eject button for XeLL to auto update. *RGH consoles*
     - rebuild the NAND with the appropriate xell image as it was done originally as per whatever instructions. *any console*
 
+**Very important note here! Using `updxell` should be considered a last resort and only done if you have the hardware to undo it. In certain older builds of XeLL included with Jrunner this feature can brick the NAND!**
+
 ## Linux Installation
 
 The kernel can be set up to boot a root filesystem on the Xbox 360 Xenon platform just like any other. Research the Linux
