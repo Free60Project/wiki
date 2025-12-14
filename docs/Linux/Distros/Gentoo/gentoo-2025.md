@@ -5,6 +5,7 @@ This is all possible thanks to SED4906 with their patch: https://github.com/SED4
 To begin a Gentoo host system is needed. It can be a hardware box or a virtual box. QEMU is not really welcome here due to speed and possible issues compiling with what will end up being a custom instruction set. 
 
 On a Gentoo host follow these steps below.
+
 1. `emerge --ask sys-devel/crossdev`
 2. `emerge --ask app-eselect/eselect-repository`
 3. `eselect repository create crossdev`
