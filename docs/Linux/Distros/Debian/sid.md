@@ -2,13 +2,14 @@
 
 Big thanks to all of the wonderful people working on, with and adjacent to the Free60 Project for making this possible! These are the instructions that I have been following on my adventure running Linux on the 360 in 2025. It is not bulletproof as things are in constant change for now. The result is a Debian system that boots and you can install stuff on but is not optimized **at all**.
 
-Special thanks:
-TechFlash
-rwf93
-SED4906
-InvoxiPlaysGames
-quarky
-tuxuser
+**Special thanks!:**
+- TechFlash
+- rwf93
+- SED4906
+- InvoxiPlaysGames
+- quarky
+- tuxuser
+- JoJo Autoboy
 
 ## Kernel Compilation
 
@@ -39,11 +40,12 @@ too old to boot any binaries built with newer toolchain. At present it is easies
 3. `make`
 
 The resulting `.bin` files are the updated XeLL release artifacts. There are a few options now depending on preference:
-    - rename xell-2f.bin to `xell.bin` and place it beside a XeLL Launch binary. *JTAG consoles*
-    - rename xell-2f.bin to `updxell.bin` and place it on the root of a FAT32 formatted USB drive. Boot via the eject button for XeLL to auto update. *JTAG consoles*
-    - rename xell-gggggg.bin to `xell.bin` and place it beside a XeLL Launch binary. *RGH consoles*
-    - rename xell-gggggg.bin to `updxell.bin` and place it on the root of a FAT32 formatted USB drive. Boot via the eject button for XeLL to auto update. *RGH consoles*
-    - rebuild the NAND with the appropriate xell image as it was done originally as per whatever instructions. *any console*
+
+- rename xell-2f.bin to `xell.bin` and place it beside a XeLL Launch binary. *JTAG consoles*
+- rename xell-2f.bin to `updxell.bin` and place it on the root of a FAT32 formatted USB drive. Boot via the eject button for XeLL to auto update. *JTAG consoles*
+- rename xell-gggggg.bin to `xell.bin` and place it beside a XeLL Launch binary. *RGH consoles*
+- rename xell-gggggg.bin to `updxell.bin` and place it on the root of a FAT32 formatted USB drive. Boot via the eject button for XeLL to auto update. *RGH consoles*
+- rebuild the NAND with the appropriate xell image as it was done originally as per whatever instructions. *any console*
 
 **Very important note here! Using `updxell` should be considered a last resort and only done if you have the hardware to undo it. In certain older builds of XeLL included with Jrunner this feature can brick the NAND!**
 
@@ -64,12 +66,12 @@ This guide will focus on Debian forky/sid ppc64 with systemd.
 
 ### Prerequisites
 
-One must install these packages on their host operating system:
-    - qemu
-    - qemu-user-static
-    - qemu-system-ppc
-    - binfmt
-    - debootstrap
+One must install these packages on their host operating system for Debian as an example:
+- qemu
+- qemu-user-static
+- qemu-system-ppc
+- binfmt
+- debootstrap
 
 ### USB HDD Installation
 
@@ -186,6 +188,8 @@ timeout=30
 linux_usb_616_maxcpu="uda0:/vmlinux616 root=/dev/sdb3 rootfstype=ext4 console=tty0 panic=60 maxcpus=6 coherent_pool=16M rootwait video=xenosfb noplymouth"
 ```
 
+KBoot will just pass the text to the kernel. Reference here for an exhaustive list of Linux kernel cmdline options: https://www.kernel.org/doc/html/v4.14/admin-guide/kernel-parameters.html
+
 ## Boot and enjoy!
 
 1. Place the kboot.conf file on the first partition of the USB HDD which is fat32. Place also the custom kernel with it's custom naming.
@@ -208,16 +212,15 @@ https://wiki.debian.org/ZRam - Set up ZRAM in userland to maximize RAM usage. Th
 
 Compiling things on console from source with `make` usually benefits most from `-j2` in general. It's a balance. Higher jobs are more performant with ZRAM enabled.
 
-Something at the 360 hardware level does not manage USB devices well. If you're not seeing a device reported by Linux, power cycle the console fully
-for 30 seconds by unplugging the PSU.
+Something at the 360 hardware level does not manage USB devices well. If you're not seeing a device reported by Linux, power cycle the console fully for 30 seconds by unplugging the PSU.
 
-libpixman-1-0 ships with altivec enabled, which doesn't work due to the 360s special flavor of the instruction set. Installing it from git after `./configure --disable-vmx` works fine after. 
-    - `apt-src` is a good friend to have. Most packages can be entirely rebuilt as desired from source using this tool.
-    - `grep -Ri altivec` for example in a Debian package source directory format will tell one how that particular package's build system wants a variable declared, how and where.
+`libpixman-1-0` ships with altivec enabled which doesn't work due to the 360s special flavor of the instruction set. Installing it from git after `./configure --disable-vmx` works fine after. 
+
+`apt-src` is a good friend to have. Most packages can be entirely rebuilt as desired from source using this tool.
+- `grep -Ri altivec` for example in a Debian package source directory format will tell one how that particular package's build system wants a variable declared, how and where.
 
 https://docs.mesa3d.org/install.html
 This may be a lead on how to finally get some kind of acceleration working on 360 Linux.
 Since the GPU accel already works in Libxenon in general, albeit requiring compiled shaders. Perhaps a rudimentary shader can be loaded and applied to all of Xorg to allow some GPU acceleration to happen broadly?'
 
-Todo 
-add to kboot PARTUUID of root = d7d4b5ef-02
+There is a powerpc32 port of Debian as well. All the same instructions apply though package support seems to be behind that of ppc64. 
