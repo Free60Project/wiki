@@ -21,8 +21,7 @@ This will take a while to complete the first stage of the build which is the con
 11. Install remaining patches as per SED's notes - and any others you find or figure out along the way.
 12. Install the portage tree with `emerge-powerpc64-unknown-linux-gnu --sync`
 
-At this point one can proceed as they wish with configuring the system. In fact it is basically an unpacked stage 3 tarball within `/usr/powerpc64-unknown-linux-gnu`. This is what I have tested so far:
-- `emerge-powerpc64-unknown-linux-gnu --ask xorg-server xf86-input-evdev xterm twm`
+At this point one can proceed as they wish with configuring the system. In fact it is basically an unpacked stage 3 tarball within `/usr/powerpc64-unknown-linux-gnu`. This is what I have tested so far: `emerge-powerpc64-unknown-linux-gnu --ask xorg-server xf86-input-evdev xterm twm`
 
 There is a major caveat: more complicated packages hate being cross compiled but may compile absolutely fine in a native environment. Some packages with cross compilation issues:
 - librsvg
@@ -31,10 +30,10 @@ There is a major caveat: more complicated packages hate being cross compiled but
 - qtcore specifically since it relies on a qt-specific bootstrap which fails in a crossdev environment
 
 In cases like these or other annoying packages the options are either:
-    - Compile it on the console
-        - some packages may be impossible to compile on the console (looking at you, git) even with large swap space and zram due to resource constraints.
-    - Compile it in QEMU
-        - it's very slow but may be able to get around things that either fail cross compilation, or consume too many resources to be comppiled on the console.
+- Compile it on the console
+    - some packages may be impossible to compile on the console (looking at you, git) even with large swap space and zram due to resource constraints.
+- Compile it in QEMU
+    - it's very slow but may be able to get around things that either fail cross compilation, or consume too many resources to be comppiled on the console.
 `emerge`ing packages on the console will indeed work but may be extremely slow as compared to modern systems for certain packages. Make sure to set only `-j2 -l1` for `MAKEOPTS`. Although the processor has 6 threads available using any more than 1 I have found actually results in staggeringly worse compile times. The RAM quickly becomes saturated and most of the compile time is spent on swapping.
 
 If using QEMU you want to observe this guide: https://wiki.gentoo.org/wiki/Embedded_Handbook/General/Compiling_with_QEMU_user_chroot
@@ -115,13 +114,18 @@ linux_nfs="/tftpboot/zImage.xenon root=/dev/nfs nfsroot=192.168.1.254:/mnt/nfsro
 
 # Links
 
-https://wiki.gentoo.org/wiki/Handbook:PPC64 - general install applicable to the console-side crossdev install once booted
-https://wiki.gentoo.org/wiki/Crossdev#Manual_build - building the system that the console will boot
-https://wiki.gentoo.org/wiki/Embedded_Handbook/General/Compiling_with_QEMU_user_chroot - scamming "native" compiles by emulating the ppc64 processor environment
-https://wiki.gentoo.org/wiki/Gentoo_Binary_Host_Quickstart - crossdev comes setup out of the box to build binpkgs, nfs is an easy winner for sharing packages (or SSH)
+https://wiki.gentoo.org/wiki/Handbook:PPC64 : general install applicable to the console-side crossdev install once booted
+
+https://wiki.gentoo.org/wiki/Crossdev#Manual_build : building the system that the console will boot
+
+https://wiki.gentoo.org/wiki/Embedded_Handbook/General/Compiling_with_QEMU_user_chroot : scamming native compiles by emulating the ppc64 processor environment
+
+https://wiki.gentoo.org/wiki/Gentoo_Binary_Host_Quickstart : crossdev comes setup out of the box to build binpkgs, nfs is an easy winner for sharing packages (or SSH)
 
 # Extras
 
-sysctl.conf
-vm.swappiness=200 - maximize swap usage
-vm.min_free_kbytes=16384 - minimum free real memory
+- sysctl.conf
+    - vm.swappiness=200
+        - maximize swap usage
+    - vm.min_free_kbytes=16384
+        - minimum free real memory
