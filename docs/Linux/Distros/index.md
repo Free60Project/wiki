@@ -8,3 +8,4 @@
 * [Debian-squeeze](./Debian/squeeze.md)
 * [Debian-sid](./Debian/sid.md)
 * [Gentoo](./Gentoo/gentoo-2025.md)
+* [ArchPOWER](./Arch/archpower.md)
