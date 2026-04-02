@@ -118,7 +118,7 @@ following:
 | Offset | Length | Type         | Information                              |
 | ------ | ------ | ------------ | ---------------------------------------- |
 | 0x0    | 0x4    | unsigned int | Header ID (see below)                    |
-| 0x4    | 0x8    | unsigned int | Header Data / Offset to data (see below) |
+| 0x4    | 0x4    | unsigned int | Header Data / Offset to data (see below) |
 
 To handle the data you would first check to see what its size is, to do
 this you need to AND the Header ID by 0xFF.
