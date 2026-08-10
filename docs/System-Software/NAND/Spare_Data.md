@@ -2,7 +2,7 @@
 
 Reccomended Reading:
 
-* [NAND Hardware](../Hardware/Console/NAND/index.md)
+* [NAND Hardware](../../Hardware/Console/NAND.md)
 
 ## NAND Basic Format
 

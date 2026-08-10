@@ -1,11 +1,15 @@
+# NOTE
+
+In 2026 it is not reccomended to read your NAND with an LPT cable / port. It takes much longer then an [SPI Programmer](./SPI_Programmer.md) and requires old hardware with LPT access.
+
 # NAND reading
 
 This tutorial explains how to read the Xbox360's
-[NAND](../Hardware/Console/NAND/index.md)/Flash via a PC's parallel/"printer" port in as
+[NAND](../../Hardware/Console/NAND.md)/Flash via a PC's parallel/"printer" port in as
 clean and easy as possible a way. The same method is used to dump all
-models of the Xbox 360 ([Xenon](../Hardware/Console/Xenon_(Motherboard).md),
-[Zephyr](../Hardware/Console/Revisions/Zephyr.md), [Falcon](../Hardware/Console/Revisions/Falcon.md),
-[Opus](../Hardware/Console/Revisions/Falcon.md#opus), [Jasper](../Hardware/Console/Revisions/Jasper.md)).
+models of the Xbox 360 ([Xenon](../../Hardware/Console/Xenon_(Motherboard).md),
+[Zephyr](../../Hardware/Console/Revisions/Zephyr.md), [Falcon](../../Hardware/Console/Revisions/Falcon.md),
+[Opus](../../Hardware/Console/Revisions/Falcon.md#opus), [Jasper](../../Hardware/Console/Revisions/Jasper.md)).
 
 Please keep quick & dirty setups and speculation out or, in case some
 guesswork is really needed, flag them, so this article and the whole

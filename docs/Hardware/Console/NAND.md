@@ -12,7 +12,7 @@
 - SMT socket that should work if you choose to remove yours:
   https://web.archive.org/web/20111206034431/http://www.emulation.com:80/cgi-cfm/insert_quantity.cfm?part_number=S%2DTSO%2DSM%2D048%2DA
 
-Attached to [Southbridge](../Southbridge.md)
+Attached to [Southbridge](./Southbridge.md)
 
 ## NAND Points on Motherboard for FAT
 
@@ -26,12 +26,15 @@ coming soon...
 
 On different Motherboard Revision also different NANDs were used.
 [Xenon](../Xenon_(Motherboard).md)-, [Zephyr](../Revisions/Zephyr.md)-,
-[Falcon](../Revisions/Falcon.md)-, [Opus](../Revisions/Falcon.md#opus)- and some
-[Jasper](../Revisions/Jasper.md)-Consoles (Retails) are using 16MB NANDs,
-other [Jasper](../Revisions/Jasper.md)-Consoles (Retail),Arcade Bundles which
-came without a HDD, got a 256MB or 512MB NAND onboard. Only 64MB of
+[Falcon](../Revisions/Falcon.md)-, [Trinity](../Revisions/Trinity.md)-, and some
+[Jasper](../Revisions/Jasper.md)-Consoles (Retails) use 16MB NANDs.
+
+Other [Jasper](../Revisions/Jasper.md)-Consoles (Retail), Arcade Bundles which
+came without a HDD, got a 256MB or 512MB Big Block NAND onboard. Only 64MB of
 these 256/512MB NAND are used for system files, the rest is used as an
-internal Memory Unit. All Development-/Demo-/Reviewer-/Test-Kits got at
+internal FATX Memory Unit. 
+
+All Development-/Demo-/Reviewer-/Test-Kits got at
 least a 64MB NAND. Depending on the NAND Size either Small- or
 Large-Block Flash Controllers get used.
 
@@ -102,20 +105,13 @@ This also works in reverse:
 
 ## Reading/Writing
 
-The Flash can be written or read using a number of methods. If you have
-the old shader hack running the easiest is using [lflash](../../../Linux/Lflash.md).
+The Flash can be written or read using a number of methods.
 
-You can also wire LPT directly to the flash using this
-[diagram](http://img19.imageshack.us/img19/5198/wiringforxenondiagram.jpg).
-As well, you can build your own USB SPI Flasher with [this
-diagram](http://img35.imageshack.us/img35/8949/xbox360usbflasher.png)
-and use [these binaries](https://sourceforge.net/projects/free60/files/PicFlash/PICFLASH_v3b_plus2.zip).
-Flash the PicXboot.hex to your PIC, then use the programmer from this picflash to flash the
-picflash.hex to the PIC through USB in bootloader mode. Once the device is flashed,
+- If you are on a retail flash, the easiest is using a [SPI Programmer](../NAND/SPI_Programmer.md)
 
+- If you have the old KK hack, the easiest is using [lflash](../../../Linux/Lflash.md).
 
-Once wired you can read/write to the chip using software such as
-[NandPro](../../../Homebrew/PC-Software/NANDPro.md).
+- If you are on RGH / JTAG, the easiest is using [XeLL-Reloaded](../../../Homebrew/Tools/XeLL.md)
 
 In software the NAND is mapped to memory address 0x80000200C8000000.
 
@@ -133,12 +129,12 @@ In software the NAND is mapped to memory address 0x80000200C8000000.
 ## NAND File System
 
 Informations about the Filesystem on the Xbox 360 NAND Flash can be found
-[here](../../.././System-Software/NAND_File_System.md)
+[here](../../.././System-Software/NAND/Image.md)
 
 ## Bad Blocks
 
 Its possible that bad blocks appears when reading/writing to the NAND.
-For solving these look at the following page: [Bad Blocks](../../../Hacks/NAND_Bad_Blocks.md)
+For solving these look at the following page: [Bad Blocks](../NAND/Bad_Blocks.md)
 
 ## Small flash chip close to CPU
 
@@ -198,8 +194,10 @@ datasheet.
 
 ## Tools
 
+- [J-Runner with Extras](https://github.com/J-Runner-With-Extras/J-Runner-with-Extras), AIO NAND Builder and Flasher
 - 360 Flash Tool, which is not easy to find
-- [Xbox 360 NAND Editor](http://www.megaupload.com/?d=LGF518J0) by stoker25,
-  open source and semi-complete, has code to do with bootloaders/keyvault/filesystem
+<!--- [Xbox 360 NAND Editor](http://www.megaupload.com/?d=LGF518J0) by stoker25, open source and semi-complete, has code to do with bootloaders/keyvault/filesystem -->
 
 [Category: Hardware](../../index.md)
+
+[Category: Pages That Need Updating](../%21Pages-That-Need-Updates.md)
