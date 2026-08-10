@@ -48,12 +48,12 @@ RadioEnable: This is the "bit field" at offset 6; 1 byte total for this bitfield
 | Temperature              | union_TEMPERATURE             | 16         | 0x18   |              |            |
 | AnaFuseValue             | char                          | 1          | 0x28   |              |            |
 | Thermal                  | struct_Thermal                | 6          | 0x29   |              |            |
-| pad3                     | char[]                        | 1          | 0x2F   |              |            |
+| pad3                     | unsigned char[]               | 1          | 0x2F   |              |            |
 | Viper vFlags             | struct_VIPER                  | 4          | 0x30   |              |            |
-| pad4                     | char[]                        | 190        | 0x34   |              |            |
+| pad4                     | unsigned char[]               | 190        | 0x34   |              |            |
 | BackupThermalCalData     | union_BACKUP_THERMAL_CAL_DATA | 23         | 0xF2   |              |            |
-| pad5                     | char[]                        | 3          | 0x109  |              |            |
-| DoNotUse                 | char[]                        | 2          | 0x10C  |              |            |
+| pad5                     | unsigned char[]               | 3          | 0x109  |              |            |
+| DoNotUse                 | unsigned char[]               | 2          | 0x10C  |              |            |
 
 ## FAN_OVERRIDE
 
