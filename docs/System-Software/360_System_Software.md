@@ -66,7 +66,7 @@ signed with a different header.
 **F**ile **C**ache for **X**box) :is used for cache storage for games.
 
 **[NAND File System](./NAND_File_System.md)** is used to store the
-bootloaders, kernel, keyvault and other files on the
+system files (XAM, Dashboard, etc) on the
 [NAND](../Hardware/Console/NAND/index.md).
 
 # File Formats
