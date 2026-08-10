@@ -1,4 +1,15 @@
-# Created by venv; see https://docs.python.org/3/library/venv.html
+# macOS
+.DS_Store
+._.DS_Store
+
+# Windows
+Thumbs.db
+
+# mkdocs build dir
+site/
+venv
+
+# venv
 include
 lib
 lib64

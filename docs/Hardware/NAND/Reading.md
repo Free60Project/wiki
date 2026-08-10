@@ -12,14 +12,16 @@ reading/writing to your NAND after installing the needed drivers.
 # [PicoFlasher](./PicoFlasher.md)
 
 Recommended SPI Programmer in 2026. Only requires a Pi Pico and soldering skills.
+Fast reads and writes.
 
 # [DIY SPI Programmer](./SPI_Programmer.md)
 
-Legacy method to build your own SPI Programmer.
+Legacy method to build your own SPI Programmer. Slow reads and writes.
 
 # [LPT Programmer](./LPT_Programmer.md)
 
 Legacy method to read the NAND flash directly using a Parallel Port.
+Extremely slow reads and writes.
 
 
 # Other Methods
@@ -34,13 +36,13 @@ In order of most recommended to least recommended, they are:
 - ISD Flashing
 - CPLD Timing Flashing
 
-## TX JR-Programmer (Propriatary)
+## TX JR-Programmer (Proprietary)
 
-- NAND, no eMMC
+- NAND, no eMMC, Slow
 - ISD Flashing
 - CPLD Timing Flashing
 
-## TX NAND-X (Propriatary)
+## TX NAND-X (Proprietary)
 
-- NAND, no eMMC
+- NAND, no eMMC, Slow
 - CPLD Timing Flashing
