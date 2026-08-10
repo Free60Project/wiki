@@ -1,6 +1,6 @@
 # NOTE
 
-In 2026 it is not reccomended to read your NAND with an LPT cable / port. It takes much longer then an [SPI Programmer](./SPI_Programmer.md) and requires old hardware with LPT access.
+In 2026 it is not reccomended to read your NAND with an LPT cable / port. It takes much longer then [Other Flashers](./Reading.md) and requires old hardware with LPT access.
 
 # NAND reading
 
@@ -80,12 +80,13 @@ V0.88a CD FIXED \[22/08/2009\])
 ::\*NAND Compare and Reconstruction Tool - (compare 2 nand images or
 reconstruct image from 3 bad reads)
 
+<!-- All dead and excluded from wayback machine
 ## Photos
 
 [1](http://www.abload.de/img/exsamplewek4.jpg)
 [2](http://www.abload.de/img/example2sf3m.jpg)
 [3](http://www.abload.de/img/example3kdbk.jpg)
-
+-->
 ## Steps:
 
 ### Preparing the cable
@@ -114,7 +115,9 @@ unneeded pin (e.g., 15) to the needed one (e.g., 14).
 I (some11) bought a LPT Cable (Nikkai LPT Parallel Printer Cable
 \[L79BT\]) from Maplins.
 
+<!-- Dead image link
 <http://i45.tinypic.com/29lhggk.jpg>
+-->
 
 Here is the wire color map output:
 

@@ -2,7 +2,7 @@
 
 The SPI bus (Serial Peripheral Interface) on the Xbox 360 is mainly used
 for communicating with the [NAND-Flash Controller (SFCX)](../../System-Software/SFCX.md),
-an [SPI Programmer](../../Hacks/SPI_Programmer.md) is needed for this. The bus
+an [SPI Programmer](../NAND/Reading.md) is needed for this. The bus
 consists of the following signals:
 
 | Name | Description          |

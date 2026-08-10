@@ -2,10 +2,10 @@
 
 Reccomended Reading:
 
-* [NAND Hardware](../Hardware/Console/NAND/index.md)
-* [NAND Spare Data](./NAND_Spare_Data.md)
-* [NAND File System](./NAND_File_System.md)
-* [Bootloaders](./Bootloaders.md)
+* [NAND Hardware](../../Hardware/Console/NAND.md)
+* [NAND Spare Data](./Spare_Data.md)
+* [NAND File System](./File_System.md)
+* [Bootloaders](../Bootloaders.md)
 
 ## Introduction
 
@@ -55,7 +55,7 @@ All NAND images use the same initial layout and design:
 | 0x4000 | 0x4000 | Keyvault           |
 | 0x8000 |        | Initial BL Chain   |
 |        |        | Late BL Chain      |
-|        |        | [NAND FlashFS](./NAND_File_System.md)       |
+|        |        | [NAND FlashFS](./File_System.md)       |
 
 ## Initial Bootloader Chain
 
@@ -69,7 +69,7 @@ The initial bootloader chain can change greatly between motherboard types, versi
 | 3BL   | N/A        |
 | 4BL   | CD         |
 
-**Phat consoles > Kernel 14699**
+**Phat consoles > Kernel 14699, **
 **All slim consoles**
 
 | Slot  | Bootloader |

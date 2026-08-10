@@ -81,9 +81,9 @@ nav:
       - 'Hardware/8051_8052.md'
       - Level Shifter: 'Hardware/Level_Shifter.md'
       - NAND:
-        - 'Hardware/NAND/index.md'
+        - 'Hardware/Console/NAND.md'
         - Bad Blocks: 'Hardware/NAND/Bad_Blocks.md'
-        - Reading: 'Hardware/NAND/LPT_Reading.md'
+        - Reading: 'Hardware/NAND/Reading.md'
       - Pre-release Differences: 'Pre-release_differences.md'
     - System Software:
       - File Formats: 
@@ -98,6 +98,10 @@ nav:
       - File Systems:
         - FATX: 'System-Software/Systems/FATX.md'
         - GDFX: 'System-Software/Systems/GDFX.md'
+      - NAND:
+        - Image: 'System-Software/NAND/Image.md'
+        - Filesystem: 'System-Software/NAND/File_System.md'
+        - Spare Data: 'System-Software/NAND/Spare_Data.md'
       - Error Codes: 'System-Software/Error_Codes.md'
       - Kernel: 'System-Software/Kernel.md'
       - Pre-release Differences: 'Pre-release_differences.md'
@@ -142,7 +146,7 @@ plugins:
     redirect_maps:
       # Original Wiki -> MkDocs Wiki
       'wiki/Home_Page.md': 'index.md'
-      'wiki/Reading_Out_nand.md': 'Hardware/Console/NAND/LPT_Reading.md'
+      'wiki/Reading_Out_nand.md': 'Hardware/NAND/LPT_Programmer.md'
       'wiki/Secure_Transacted_File_System.md': 'System-Software/Formats/STFS.md'
       'wiki/SMS_Plus.md': 'Homebrew/Emulators/Sega_Master_System_Plus.md'
       'wiki/Toolchain.md': 'Development/Xenon_Toolchain.md'
@@ -179,5 +183,6 @@ plugins:
       # NAND Cleanup
       'System-Software/NAND_File_System.md': 'System-Software/NAND/File_System.md'
       'Hacks/NAND_Bad_Blocks.md': 'Hardware/NAND/Bad_Blocks.md'
-      'Hacks/NAND_Reading.md': 'Hardware/NAND/LPT_Reading.md'
+      'Hacks/NAND_Reading.md': 'Hardware/NAND/Reading.md'
       'Hacks/SPI_Programmer.md': 'Hardware/NAND/SPI_Programmer.md'
+      'Hacks/LPT_Programmer.md': 'Hardware/NAND/LPT_Programmer.md'

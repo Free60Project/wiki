@@ -2,8 +2,8 @@
 
 Recommended Reading:
 
-* [NAND Hardware](../Hardware/Console/NAND/index.md)
-* [NAND Spare Data](./NAND_Spare_Data.md)
+* [NAND Hardware](../../Hardware/Console/NAND.md)
+* [NAND Spare Data](./Spare_Data.md)
 
 The Xbox 360 NAND FlashFS is a custom proprietary format, very similar to FAT12 / FAT16.
 
@@ -63,7 +63,7 @@ On Small / Big Block NANDs, the FlashFS metadata is stored in the spare data.
 | `[C..F]` | ECC (26-bit computed CRC) |
 
 The FlashFS root block is identified by scanning spare data for blocks with
-`block_type == 0x30` and a non-zero sequence number — the highest sequence wins.
+`block_type == 0x30` and a non-zero sequence number, the highest sequence wins.
 
 The FlashFS block chain is linked purely through the **blockmap** stored in the root block's
 data pages (even pages = blockmap, odd pages = file entries). Each `uint16_t` entry in the

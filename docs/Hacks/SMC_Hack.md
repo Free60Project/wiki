@@ -21,7 +21,7 @@ Technical details are available [here](http://free60.git.sourceforge.net/git/git
 
 The SMC Hack requires bridging 3 points on the motherboard (for trigger
 the exploit by JTAG), as well as having a way to read and write with
-your Nand [Flash](../Hardware/Console/NAND/index.md)
+your Nand [Flash](../Hardware/NAND/Reading.md)
 
 The JTAG points are available for a number of consoles
 
@@ -34,8 +34,7 @@ The JTAG points are available for a number of consoles
 #### Reverse Jtag
 ![Reverse JTAG](images/Reverse_JTAG.jpg)
 
-- To read and write the Nand Flash (using SPI protocol by LPT and a
-printer cable), there is a friendly tutorial at [NAND Reading](./NAND_Reading.md)
+- To read and write the Nand Flash, there is a friendly tutorial at [NAND Reading](../Hardware/NAND/Reading.md)
 
     There are other ways to read and write the Nand Flash that are valid
     (such as infectus modchip)

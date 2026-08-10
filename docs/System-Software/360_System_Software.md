@@ -65,9 +65,9 @@ signed with a different header.
 **[(SFCX](./SFCX.md)** **S**ecure
 **F**ile **C**ache for **X**box) :is used for cache storage for games.
 
-**[NAND File System](./NAND_File_System.md)** is used to store the
+**[NAND File System](./NAND/File_System.md)** is used to store the
 system files (XAM, Dashboard, etc) on the
-[NAND](../Hardware/Console/NAND/index.md).
+[NAND](../Hardware/Console/NAND.md).
 
 # File Formats
 

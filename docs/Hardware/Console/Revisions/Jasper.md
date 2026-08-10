@@ -6,7 +6,7 @@ Xbox 360. On Jasper motherboards found within Arcade SKUs, this Xbox 360
 [memory unit](../../Accessories/Memory_Unit.md) to facilitate the
 NXE Dashboard.
 
-The connections required to [dump/flash the NAND](../../../Hacks/NAND_Reading.md)
+The connections required to [dump/flash the NAND](../../NAND/Reading.md)
 are the **same** as all previous models.
 
 Performing the [SMC Hack](../../../Hacks/SMC_Hack.md) requires the same wiring

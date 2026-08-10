@@ -32,16 +32,16 @@ Join us on [IRC](Support/IRC.md) or [Discord](Support/Discord.md)!
 |[Contribute](./Support/Contribute.md)  		     | [Case](./Hardware/Console/Case.md)             		| [849x System Update](./System-Software/849x_System_Update.md) 					|
 |[Error Codes](./System-Software/Error_Codes.md)     | [Chatpad](./Hardware/Accessories/Chatpad.md)         | [Bootloader](./System-Software/Bootloaders.md)                			        |
 |[FAQ](./Support/FAQ.md)                 		     | [DVD Drive](./Hardware/Console/DVD_Drive.md)  	    | [CB Code](./System-Software/CB_Code.md)                        				    |
-|                                                    | [NAND_Reading](./Hacks/NAND_Reading.md)              | [Toolchain](https://github.com/Free60Project/libxenon)           				    |
+|                                                    | [NAND_Reading](./Hardware/NAND/Reading.md)              | [Toolchain](https://github.com/Free60Project/libxenon)           				    |
 |               					                 | [Ethernet](./Hardware/Console/Ethernet.md)           | [Console Security Certificate](./System-Software/Console_Security_Certificate.md) |
 |               					                 | [Falcon](./Hardware/Console/Revisions/Falcon.md)     | [Cross Compiler](./Development/Cross_Compiler.md)                  	            |
-|               					                 | [NAND](./Hardware/Console/NAND/index.md)             | [Debian-etch](./Linux/Distros/Debian/etch.md)                                     |
+|               					                 | [NAND](./Hardware/Console/NAND.md)             | [Debian-etch](./Linux/Distros/Debian/etch.md)                                     |
 |               					                 | [Fusesets](./Hardware/Fusesets.md)                   | [Debian-lenny](./Linux/Distros/Debian/lenny.md)                                   |
 |               					                 | [GamePad](./Hardware/Accessories/GamePad.md)         | [Debian-squeeze](./Linux/Distros/Debian/squeeze.md)                               |
 |               					                 | [Chatpad](./Hardware/Accessories/Chatpad.md)         | [Dumpana](./Development/Dumpana.md)                                               |
 |               					                 | [GPU](./Hardware/Console/Xenos_(GPU).md)             | [Emulators](./Homebrew/List_of_homebrew_emulators.md)                             |
 |               					                 | [Harddrive](./Hardware/Console/HDD.md)               | [FATX](./System-Software/Systems/FATX.md)											|
-|               					                 | [Headset](./Hardware/Accessories/Headset.md)         | [Flash Filesystem](./System-Software/NAND_File_System.md)                         |                    
+|               					                 | [Headset](./Hardware/Accessories/Headset.md)         | [Flash Filesystem](./System-Software/NAND/File_System.md)                         |                    
 |               					                 | [Motherboard](./Hardware/Console/Motherboard.md)     | [GDFX](./System-Software/Systems/GDFX.md)                                         |
 |               					                 | [Jasper](./Hardware/Console/Revisions/Jasper.md)     | [GPD](./System-Software/Formats/GPD.md)                                           |
 |               					                 | [Level Shifter](./Hardware/Level_Shifter.md)         |  															                        | 
@@ -120,15 +120,15 @@ Join us on [IRC](Support/IRC.md) or [Discord](Support/Discord.md)!
 
 [Mupen64-360](./Homebrew/Emulators/Mupen64-360.md)
 
-[NAND](./Hardware/Console/NAND/index.md)
+[NAND](./Hardware/Console/NAND.md)
 
-[NAND: Bad Blocks](./Hacks/NAND_Bad_Blocks.md)
+[NAND: Bad Blocks](./Hardware/NAND/Bad_Blocks.md)
 
 [NANDPro](./Homebrew/PC-Software/NANDPro.md)
 
-[NAND File System](./System-Software/NAND_File_System.md)
+[NAND File System](./System-Software/NAND/File_System.md)
 
-[NAND Reading](./Hacks/NAND_Reading.md)
+[NAND Reading](./Hardware/NAND/Reading.md)
 
 [NFS Root](./NFS_Root.md)
 
@@ -166,7 +166,7 @@ Join us on [IRC](Support/IRC.md) or [Discord](Support/Discord.md)!
 
 [Rawflash](./Rawflash.md)
 
-[Reading Out nand](./Hacks/NAND_Reading.md)
+[Reading Out nand](./Hardware/NAND/Reading.md)
 
 [Reset Glitch Hack](./Hacks/Reset_Glitch_Hack.md)
 
@@ -194,7 +194,7 @@ Join us on [IRC](Support/IRC.md) or [Discord](Support/Discord.md)!
 
 [SPI](./Hardware/Console/SPI.md)
 
-[SPI Programmer](./Hacks/SPI_Programmer.md)
+[SPI Programmer](./Hardware/NAND/SPI_Programmer.md)
 
 [STFS](./System-Software/Formats/STFS.md)
 

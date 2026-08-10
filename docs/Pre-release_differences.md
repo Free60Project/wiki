@@ -35,7 +35,7 @@ it, XOR that byte with 0xF0 to get true number
   - Doesn't seem to have bad block management... probably does though
 
 Uses a whole different file system for storing the dashboard files,
-instead of [SFCX](./System-Software/NAND_File_System.md) it uses [FATX](./System-Software/Systems/FATX.md)
+instead of [SFCX](./System-Software/NAND/File_System.md) it uses [FATX](./System-Software/Systems/FATX.md)
 Loads more files inside FATX NANDs:
 * drivers.xex
 * xnet.xex

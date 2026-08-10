@@ -25,11 +25,11 @@ coming soon...
 ## Different Sizes
 
 On different Motherboard Revision also different NANDs were used.
-[Xenon](../Xenon_(Motherboard).md)-, [Zephyr](../Revisions/Zephyr.md)-,
-[Falcon](../Revisions/Falcon.md)-, [Trinity](../Revisions/Trinity.md)-, and some
-[Jasper](../Revisions/Jasper.md)-Consoles (Retails) use 16MB NANDs.
+[Xenon](./Xenon_(Motherboard).md)-, [Zephyr](./Revisions/Zephyr.md)-,
+[Falcon](./Revisions/Falcon.md)-, [Trinity](./Revisions/Trinity.md)-, and some
+[Jasper](./Revisions/Jasper.md)-Consoles (Retails) use 16MB NANDs.
 
-Other [Jasper](../Revisions/Jasper.md)-Consoles (Retail), Arcade Bundles which
+Other [Jasper](./Revisions/Jasper.md)-Consoles (Retail), Arcade Bundles which
 came without a HDD, got a 256MB or 512MB Big Block NAND onboard. Only 64MB of
 these 256/512MB NAND are used for system files, the rest is used as an
 internal FATX Memory Unit. 
@@ -109,9 +109,9 @@ The Flash can be written or read using a number of methods.
 
 - If you are on a retail flash, the easiest is using a [SPI Programmer](../NAND/SPI_Programmer.md)
 
-- If you have the old KK hack, the easiest is using [lflash](../../../Linux/Lflash.md).
+- If you have the old KK hack, the easiest is using [lflash](../../Linux/Lflash.md).
 
-- If you are on RGH / JTAG, the easiest is using [XeLL-Reloaded](../../../Homebrew/Tools/XeLL.md)
+- If you are on RGH / JTAG, the easiest is using [XeLL-Reloaded](../../Homebrew/Tools/XeLL.md)
 
 In software the NAND is mapped to memory address 0x80000200C8000000.
 
@@ -129,7 +129,7 @@ In software the NAND is mapped to memory address 0x80000200C8000000.
 ## NAND File System
 
 Informations about the Filesystem on the Xbox 360 NAND Flash can be found
-[here](../../.././System-Software/NAND/Image.md)
+[here](../../System-Software/NAND/Image.md)
 
 ## Bad Blocks
 
@@ -174,7 +174,7 @@ datasheet.
 
 There is another Atmel chip on the front panel:
 
-![Atmel2](../../../images/Noimage.png) <!-- This image (Atmel2.jpg) has never actually appeard on the wiki archive. A new image can be taken by anyone with the correct hardware. -->
+![Atmel2](../../images/Noimage.png) <!-- This image (Atmel2.jpg) has never actually appeard on the wiki archive. A new image can be taken by anyone with the correct hardware. -->
 
 Atmel 528 serial EEPROM
 
@@ -200,4 +200,4 @@ datasheet.
 
 [Category: Hardware](../../index.md)
 
-[Category: Pages That Need Updating](../%21Pages-That-Need-Updates.md)
+[Category: Pages That Need Updating](../../%21Pages_That_Need_Updates.md)

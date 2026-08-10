@@ -51,7 +51,7 @@ and boot from xboxromw2d.bin and test kits xboxromtw2d.bin. Shadowboot
 files are always 832KB (851,968 bytes).
 
 Structurally, shadowboot files are nearly identical to [flash
-dumps](./NAND_File_System.md), but for obvious reasons they do not
+dumps](./NAND/File_System.md), but for obvious reasons they do not
 contain mobiles or filesystems.
 
 | File Structure |
