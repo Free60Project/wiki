@@ -60,8 +60,10 @@ show whether the console is a devkit or not. They also disable CPU JTAG
 after the console's flash is programed.
 
 ```
-Retail fuseset 01: 0F0F0F0F0F0F0FF0
+Retail (Phat) fuseset 01: 0F0F0F0F0F0F0FF0
+Retail (Slim) fuseset 01: 0F0F0F0F0F0FF0F0
 Devkit fuseset 01: 0F0F0F0F0F0F0F0F
+Test kit fuseset 01: 0F0F0F0F0F0FF00F
 ```
 
 ## Fuseset 02
