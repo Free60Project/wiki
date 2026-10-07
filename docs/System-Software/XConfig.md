@@ -409,5 +409,3 @@ XNetStartupParams configuration parameters retrieved at socket initialization in
 | Version              | unsigned long       | 4          | 0x00   |
 | AlarmTime            | union_LARGE_INTEGER | 8          | 0x04   |
 | PreviousFlashVersion | unsigned long       | 4          | 0x0C   |
-
-[Category: Pages That Need Updating](../%21Pages-That-Need-Updates.md)
