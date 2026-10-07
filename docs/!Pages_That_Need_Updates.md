@@ -9,4 +9,3 @@ Some pages need edits to remain useful or become more beautiful.
   - halotroop2288 is working on this!
   - https://gitlab.com/0x8081/libxcp/-/blob/main/src/xcp.h
   - https://gitlab.com/0x8081/libxcp/-/blob/main/src/xcp.c
-- [XConfig](./System-Software/XConfig.md)'s spec (Notes section) should be converted to a markdown table.
