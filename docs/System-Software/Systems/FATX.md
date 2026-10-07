@@ -210,29 +210,39 @@ one, the Xbox will only see the number of sectors defined in the
 
 # Chainmap and directories
 
-To find the offset of the chainmap, take the offset of the position and
-add 4096 (0x1000) to it. Each entry in the chainmap is either an
-unsigned int or a unsigned short, depending on the number of clusters
-inside the partition.
+## Layout calculation
 
-To work out the cluster size, take the Sectors per Cluster value and
-multiply it by 512 (0x200).
+Given a partition with sector size `S` and length `L` sectors:
 
-To work out the number of clusters, divide the partitions size by the
-cluster size and that's have the number of clusters.
+1. Compute the FAT alignment: `A = round_up(S, 0x1000)`. For 512-byte
+   sectors this is 0x1000 (4 KB).
 
-If the number of clusters is below 65520 (0xFFF0), then the drive uses
-2-byte chainmap entries, otherwise it uses 4-byte chainmap entries. The
-size of the chainmap is the size of the chainmap entries multiplied by
-the partitions cluster count.
+2. The cluster size in bytes is `C = S * sectors_per_cluster`. The
+   kernel rejects the volume if `C < A`.
 
-To get a clusters offset, you need to work out the offset of the file
-data area. This is determined by taking the chainmap offset and adding
-it's size to it. You then simply times the cluster index (minus 1) by
-the cluster size and add it to the file data offset.
+3. The chainmap (FAT) starts at byte offset `A` from the partition
+   start (sector `A / S`).
 
-To get a clusters chainmap entrys offset, times the cluster index by the
-chain map entry size and add that to the chainmap offset.
+4. Compute the maximum cluster count:
+   `max_clusters = L / sectors_per_cluster + 1`.
+
+5. If `max_clusters` is below 65520 (0xFFF0), each chainmap entry is
+   2 bytes (FAT16), otherwise 4 bytes (FAT32).
+
+6. The chainmap size in bytes is
+   `fat_size = round_up(max_clusters * entry_size, A)`.
+
+7. The data region starts at `data_start = A / S + fat_size / S`
+   sectors from the partition start. The actual number of data clusters
+   is `(L - data_start) / sectors_per_cluster`.
+   The kernel rejects the volume if this exceeds 0x10000000.
+
+To get a cluster's byte offset within the partition, compute the data
+region start (chainmap offset + chainmap size), then add
+`(cluster_index - 1) * C`.
+
+To get a cluster's chainmap entry offset, multiply the cluster index by
+the entry size and add the chainmap offset.
 
 ### Files
 
