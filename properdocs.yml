@@ -3,7 +3,7 @@ site_description: Archive from Free60 MediaWiki.
 repo_url: https://github.com/Free60Project/wiki
 
 theme:
-  name: material
+  name: materialx
   palette:
     - scheme: default
       toggle:
