@@ -5,7 +5,7 @@
 
 Free60 MediaWiki archive.
 
-Python framework `mkdocs` is used to render the Markdown documentation.
+Python framework `properdocs` (formerly known as: `mkdocs`) is used to render the Markdown documentation.
 
 ## Contribute
 
@@ -49,11 +49,9 @@ git clone https://github.com/<username>/wiki.git
 cd wiki/
 ```
 
-4. Choose one of the two deployment methods below.
+4. Choose one of the two deployment methods below and follow their instructions:
 
-```sh
-pip install mkdocs mkdocs-material mkdocs-redirects
-```
+[Native](#native-deployment) or [Docker](#docker-deployment)
 
 5. At this point, load up the cloned repository in a text editor that has live-markdown preview function.
   - For example: Visual Studio Code. Instructions: (https://code.visualstudio.com/Docs/languages/markdown)
@@ -83,7 +81,7 @@ git push
 
 8. Send a Pull Request :)
 
-## Deployment / Usage of mkdocs
+## Deployment / Usage of properdocs
 
 ### Native deployment
 
@@ -104,12 +102,12 @@ pip install -r requirements.txt
 
 Serve the documentation (<http://127.0.0.1:8000>)
 ```
-mkdocs serve --strict
+properdocs serve --strict
 ```
 
 Build the documentation
 ```
-mkdocs build --strict
+properdocs build --strict
 ```
 
 ### Docker deployment
@@ -117,9 +115,10 @@ mkdocs build --strict
 1. Execute docker container:
 
 ```
-docker compose up
+docker compose up --build --force-recreate
 ```
+
 
 2. Navigate to <http://127.0.0.1:8000>
 3. Make your changes and verify the formatting / linking still checks out.
-
+4. Teardown docker compose stack again: `docker compose down`
