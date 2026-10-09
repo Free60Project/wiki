@@ -120,6 +120,7 @@ nav:
           - 'Linux/Distros/Ubuntu/index.md'
           - '7.10': 'Linux/Distros/Ubuntu/7_10.md'
           - '11.10': 'Linux/Distros/Ubuntu/11_10.md'
+        - Arch: 'Linux/Distros/Arch/archPOWER_networkboot.md'
       - Linux Kernel: 'Linux/Linux_Kernel.md'
       - Linux Kernel Development: 'Linux/Linux_Kernel_Development.md'
       - Xenos Framebuffer: 'Development/Xenos_Framebuffer.md'
