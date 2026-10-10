@@ -1,2 +1,4 @@
-mkdocs-material
-mkdocs-redirects
+properdocs==1.6.7
+pymdown-extensions==12.1
+mkdocs-redirects==1.2.3
+mkdocs-materialx==10.2.0
