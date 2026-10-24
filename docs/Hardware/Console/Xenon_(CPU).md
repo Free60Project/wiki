@@ -12,7 +12,7 @@ core has two symmetric hardware threads (SMT), for a total of six
 hardware threads available to games. Each individual core also includes
 32 KiB of L1 instruction cache and 32 KiB of L1 data cache.
 
-## Specifications
+## Specifications (Waternoose DD2)
 
   - The package is a 2-2-2 FC-PBGA, measuring 31mm by 31mm
   - 168 mm2 die size; one cpu core is about 28mm2

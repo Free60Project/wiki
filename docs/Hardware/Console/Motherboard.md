@@ -8,17 +8,23 @@ as Microsoft has corrected mistakes or added/improved existing features.
 
 - Known revisions include:
 
-:\*[Xenon](./Xenon_(Motherboard).md) (Launch hardware)
+  - [Xenon](./Xenon_(Motherboard).md) (Launch hardware)
 
-:\*[Zephyr](./Revisions/Zephyr.md) (Elite)
+  - [Zephyr](./Revisions/Zephyr.md) (Launch Elite hardware, later trickled down to 20 GB "Premium" consoles)
 
-:\*[Falcon](./Revisions/Falcon.md) (65nm Chipset revision)
-
-:\*[Opus](./Revisions/Falcon.md#opus)
-
-:\*[Jasper](./Revisions/Jasper.md) (Onboard Memory Unit)
-
-:\*[Trinity](./Revisions/Trinity.md) (Slim)
+  - [Falcon](./Revisions/Falcon.md) (65 nm CPU revision)
+    - [Opus](./Revisions/Falcon.md#opus)
+  
+  - [Jasper](./Revisions/Jasper.md) (On-board Memory Unit, 65 nm GPU)
+    - [Tonasket](./Revisions/Jasper.md#Tonasket) (65 nm eDRAM, minor revision)
+    
+  - [Trinity](./Revisions/Trinity.md) (Launch Xbox 360 S hardware)
+ 
+  - [Corona](./Revisions/Corona.md)
+    - [Waitsburg](./Revisions/Corona.md#Waitsburg) (Minor revision)
+    - [Stingray](./Revisions/Corona.md#Stingray) (Launch Xbox 360 E hardware)
+ 
+  - [Barracuda](./Revisions/Barracuda.md) (28 nm XCGPU revision for Xbox 360 E, patched RGH exploit)
 
 ## Details
 

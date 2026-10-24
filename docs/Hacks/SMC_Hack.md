@@ -246,7 +246,7 @@ python 1920to1921.py xxxx (where xxxx is the CD Version you want to 
 4. **Finished!** Script should tell you "great, hash matches!" and
 write the appropriative CD to the input folder.
 
-# Technical details
+## Technical details
 
 To understand this new hack, let's first look at what made the KK
 exploit possible: A fatal bug in the Hypervisor's Syscall Handler,

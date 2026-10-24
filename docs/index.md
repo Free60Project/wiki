@@ -254,9 +254,7 @@ Join us on [IRC](Support/IRC.md) or [Discord](Support/Discord.md)!
 
 [Xbox 360 Motherboards](./Hardware/Console/Motherboard.md)
 
-[Xbox Revision Identification](./Hardware/Console/Revisions/Identification.md)
-
-[Xbox Revisions](./Hardware/Console/Revisions/index.md)
+[Xbox 360 Revisions](.Identification/Hardware/Console/Revisions/index.md)
 
 [Xbox 360 System Software](./System-Software/360_System_Software.md)
 

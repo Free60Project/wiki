@@ -3,15 +3,15 @@ technology: (Dutch)
 
   - Chips on the RF module:
 
-:\*Backside:
+    - Backside:
 
-::\*ATMEL528 24C04N I2C EEPROM
+      - ATMEL528 24C04N I2C EEPROM
 
-::\*MS VS55RC
+      - *MS VS55RC
 
-:\*Frontside (Under metal shield):
+    - Frontside (Under metal shield):
 
-::\*MS VS55RB
+        - MS VS55RB
 
 The RF Module also contains 4 red/green leds, 1 green led in the middle
 of the power button, 1 switch. The multi color leds are connected to the
