@@ -34,7 +34,7 @@ markdown_extensions:
 
 validation:
   nav:
-    omitted_files: ignore
+    omitted_files: warn
     not_found: warn
     absolute_links: warn
   links:
